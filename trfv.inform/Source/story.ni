@@ -5,6 +5,8 @@ The story genre is "horror".
 The release number is 1.
 The story creation year is 2018.
 
+Include Threaded Conversation by Chris Conley.
+
 The nursery is a room.
 
 The railroad is a room.
