@@ -11,11 +11,7 @@ LICENSE file.
 
 The game is written in the Inform 7 programming language, using
 version 6M62, the most recent version available at the time of
-writing.  The non-web version was written for an older version of 
-Inform using the GLIMMR library to provide graphic hyperlink 
-buttons in a classic interpreter. This version is built with 
-Vorple 3 (preview), which leverages Javascript and CSS to do the
-same thing, but in a browser. 
+writing.
 
 You can download the compiler and IDE as a single
 package from http://www.inform7.com
