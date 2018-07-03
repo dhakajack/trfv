@@ -62,6 +62,6 @@ WARNING!!
 
 	DO NOT do any version control operations (commit, push, and particularly, 
 	pull, update, and merge) while the Inform IDE  is still open.  When the IDE 
-	'saves', it destroys and recreates  the whole cerveux.inform/ directory, thus
+	'saves', it destroys and recreates  the whole trfv.inform/ directory, thus
 	possibly eradicating and changes you may have downloaded.  
 
