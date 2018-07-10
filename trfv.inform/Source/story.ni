@@ -15,7 +15,6 @@ CHAPTER 2 - Locations
 
 Part 1 - DAN8 Hillside Path
 
-
 DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1 and northwest of PLA1.
 
 Printed name of DAN8 is "Hillside Path (Jack Welch)".
