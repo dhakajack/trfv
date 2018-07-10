@@ -1,0 +1,15 @@
+Chapter 1 - Do Not Change Any Of This
+
+Include Cragne Suite by Ryan Veeder.
+
+[Don't mess with other people's rooms!]
+
+DAN is a region.
+
+DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1 and northwest of PLA1.
+
+Part 1 - DAN8 Hillside Path
+
+Printed name of DAN8 is "ROOM NAME (AUTHOR NAME)".
+
+Description of DAN8 is "DESCRIPTION OF ROOM."
