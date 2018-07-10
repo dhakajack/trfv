@@ -16,10 +16,7 @@ writing.
 You can download the compiler and IDE as a single
 package from http://www.inform7.com
 
-Vorple is available at http://vorple-if.com/doc/
-
-When compiled, the source code produces glulxe bytecode, which the 
-vorple interpreter executes via javascript:
+When compiled, the source code produces glulxe bytecode:
 
   http://www.eblong.com/zarf/glulx/
 
