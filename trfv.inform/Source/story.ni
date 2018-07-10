@@ -9,19 +9,33 @@ Book 1 - Set Up
 
 CHAPTER 1 - Includes
 
-Include Threaded Conversation by Chris Conley.
+Include Cragne Suite by Ryan Veeder.
 
-CHAPTER 2 - Locations
+CHAPTER 2 - Locations 
 
-The RX is a room. The printed name of RX is "nursery".
+Part 1 - DAN8 Hillside Path
 
-The RY is a room.  The printed name of RY is "rail pile".
+
+DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1 and northwest of PLA1.
+
+Printed name of DAN8 is "Hillside Path (Jack Welch)".
+
+Description of DAN8 is "DESCRIPTION OF ROOM."
+
+Part 2 - M2F3 Nursery
+
+The M2F3 is a room. [TODO: add region and exits]
+
+Printed name of M2F3 is "Nursery (Ben Collins-Sussman)".
+
+Description of M2F3 is "DESCRIPTION OF ROOM."
 
 CHAPTER 3 - People
 
-RX-Carol is a person in RX.
+DAN8-Cristabell is a person in DAN8.
 
-RY-Cristabell is a person in RY.
+M2F3-Carol is a person in M2F3.
+
 
 Book 3 - Actual Things in the Actual Game
 
