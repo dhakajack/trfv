@@ -23,23 +23,29 @@ Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
 Description of DAN8 is "DESCRIPTION OF ROOM."
 
+The commentary of DAN8 is "DAN8 Commentary".
+
 Part 2 - M2F3 Nursery
 
-The M2F3 is a room. [TODO: add region and exits]
+M2F is a region.
+
+The M2F3 is a room in M2F. M2F3 is north from M2F2.
 
 Printed name of M2F3 is "Nursery (Ben Collins-Sussman)".
 
 Description of M2F3 is "DESCRIPTION OF ROOM."
 
+The commentary of M2F3 is "M2F3 Commentary".
+
 CHAPTER 3 - People
 
 Part 1 - Christabell
 
-DAN8-Christabell is a person in DAN8.
+DAN8-Christabell is a female person in DAN8.
 
 Part 2 - Carol
 
-M2F3-Carol is a person in M2F3.
+M2F3-Carol is a female person in M2F3.
 
 Book 3 - Actual Things in the Actual Game
 
@@ -63,7 +69,7 @@ Chapter 1 - Test Chamber
 The Extradimensional Test Chamber is a room. 
 The Extradimensional Test Chamber is down from DAN8.
 M2F3 is down from the Extradimensional Test Chamber.
-The description of the Extradimensional Test Chamber is "The EDT facility was put in place temporarily by Dimension Dwarf contractor to allow testing of walking in and out of the two rooms under development.[paragraph break]The nursery is below the test chamber and the hillside is above it."
+The description of the Extradimensional Test Chamber is "The EDT facility was put in place temporarily by Dimension Dwarf contractors to allow testing of walking in and out of the two rooms under development.[paragraph break]The nursery is below the test chamber and the hillside is above it (in a hyperdimensional sense)."
 
 Chapter 2 - Font Testing
 
