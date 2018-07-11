@@ -1,0 +1,15 @@
+Chapter 1 - Do Not Change Any Of This
+
+Include Cragne Suite by Ryan Veeder.
+
+[Don't mess with other people's rooms!]
+
+M2F is a region.
+
+M2F3 is a room in M2F. M2F3 is north from M2F2.
+
+Part 1 - M2F3 Nursery
+
+Printed name of M2F3 is "ROOM NAME (AUTHOR NAME)".
+
+Description of M2F3 is "ROOM DESCRIPTION."
