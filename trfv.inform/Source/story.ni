@@ -21,10 +21,31 @@ DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1 and northwest
 
 Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
+The commentary of DAN8 is "DAN8 Commentary".
+
 Description of DAN8 is "[if unvisited]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile.[else]A silent, unnatural clearing surrounded by foreboding granite cliffs.  Decrepit vegetation fights for footholds at the edges, while an enormous pile of rusted railway tracks looms in the center of it all. Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
+The cliffs are scenery in DAN8. The description of cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  Understand "cliff" or "granite" or "wall" or "hill" or "hillside" or "mica" as the cliffs.
 
-The commentary of DAN8 is "DAN8 Commentary".
+Instead of climbing the cliffs, say "Even champion rock-climbers couldn't scale these cliffs."
+
+The clearing is scenery in DAN8.  The description of the clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  Understand "bowl" or "ampitheater" as the clearing.
+
+The trail is scenery in DAN8.  The description of the trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".  Understand "trails" or "trailhead" or "trailheads" as the trail.	
+
+The weeds are scenery in DAN8.  The description of the weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".  Understand "hedge" or "bramble" or "shrub" or "tree" or "vegetation" or "stumps" as the weeds.
+
+The dirt is scenery in DAN8.  The description of the dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  Understand "soil" or "ground" as the dirt.  
+
+Instead of smelling the dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
+
+The sky is scenery in DAN8. The description of the sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". Understand "clouds" as the sky.
+
+The mound is scenery in DAN8.  The description of the mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky.[or]A tall pile of rusted railway tracks.[stopping]".  Understand "pile" or "lump" or "track" or "tracks" or "iron" or "altar" or "sticks" as the mound.
+
+
+
+
 
 Part 2 - M2F3 Nursery
 
@@ -46,7 +67,15 @@ CHAPTER 3 - People
 
 Part 4 - Christabell
 
-DAN8-Christabell is a female person in DAN8.
+DAN8-Christabell is a female person in DAN8.  The printed name of DAN8-Christabell is "the bonnet-clad woman". Understand "woman" or "Christabell" as DAN8-Christabell. 
+
+The description of DAN8-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break]She holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][or][first contact][or]A bonnet-clad woman with an intense gaze.[stopping]".
+
+Understand "talk to [someone]" as a mistake ("[italic type]To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.[roman type]").
+
+To say first contact:
+	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]".
+	
 
 Part 5 - Carol
 
