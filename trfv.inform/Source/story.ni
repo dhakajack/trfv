@@ -71,7 +71,7 @@ DAN8-Christabell is a female person in DAN8.  The printed name of DAN8-Christabe
 
 The description of DAN8-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break]She holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][or][first contact][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
-Understand "talk to [someone]" as a mistake ("[italic type]To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.[roman type]").
+Understand "talk to [someone]" as a mistake ("[italic type]For conversation, try to ASK ABOUT a subject or TELL ABOUT a subject.[roman type]").
 
 To say first contact:
 	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]".
