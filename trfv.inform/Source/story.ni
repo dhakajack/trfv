@@ -21,6 +21,8 @@ Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
 The commentary of DAN8 is "DAN8 Commentary".
 
+[TODO:  do all these scenery objects need to be Ben-Jack prefixed for safety, and given printed names??]
+
 Description of DAN8 is "[if unvisited]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile.[else]A silent, unnatural clearing surrounded by foreboding granite cliffs.  Decrepit vegetation fights for footholds at the edges, while an enormous pile of rusted railway tracks looms in the center of it all. Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
 The cliffs are scenery in DAN8. The description of cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  Understand "cliff" or "granite" or "wall" or "hill" or "hillside" or "mica" as the cliffs.
@@ -31,7 +33,7 @@ The clearing is scenery in DAN8.  The description of the clearing is "[one of]In
 
 The trail is scenery in DAN8.  The description of the trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".  Understand "trails" or "trailhead" or "trailheads" as the trail.	
 
-The weeds are scenery in DAN8.  The description of the weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".  Understand "hedge" or "bramble" or "shrub" or "tree" or "vegetation" or "stumps" as the weeds.
+The weeds are scenery in DAN8.  The description of the weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".  Understand "hedge" or "bramble" or "shrub" or "tree" or "grass" or "vegetation" or "stumps" as the weeds.
 
 The dirt is scenery in DAN8.  The description of the dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  Understand "soil" or "ground" as the dirt.  
 
@@ -66,14 +68,14 @@ Part 2 - NPC Definitions
 
 Chapter Christabell
 
-DAN8-Christabell is a female person in DAN8.  The printed name of DAN8-Christabell is "the bonnet-clad woman". Understand "woman" or "Christabell" as DAN8-Christabell. 
+DAN8-Christabell is a female person in DAN8.  The printed name of DAN8-Christabell is "[if DAN8-Christabell is unaddressed or DAN8-Christabell is eager]the bonnet-clad woman[else]Christabell". Understand "woman" or "Christabell" as DAN8-Christabell. 
 
-The description of DAN8-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break]She holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][or][first-Christabell-contact][or]A bonnet-clad woman with an intense gaze.[stopping]".
+The description of DAN8-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
 Understand "talk to [someone]" as a mistake ("[italic type]For conversation, try to ASK ABOUT a subject or TELL ABOUT a subject.[roman type]").
 
 [A state-machine that transitions the dialogue between a chain of sub-scenes in R1.  See "Chapter Scene R1".]
-DAN8-Christabell can be curious or eager or chatty or candid or foreboding.  DAN8-Christabell is curious.
+DAN8-Christabell can be unaddressed or eager or chatty or candid or foreboding.  DAN8-Christabell is unaddressed.
 
 [TODO: repeat this technique for R2 sub-scene transitions?]
 
@@ -89,7 +91,9 @@ Book 2 - Scenes
 
 Chapter Scene R1
 
-Ben-Jack-R1 is a scene.  Ben-Jack-R1 begins when the player is in DAN8 for the first time.  
+Ben-Jack-R1-initial is a scene. [Christabell is unaddressed]
+Ben-Jack-R1-initial begins when the player is in DAN8 for the first time. 
+Ben-Jack-R1-initial ends when Ben-Jack-R1-spiritWantsAttention begins.
 
 Ben-Jack-R1-spiritWantsAttention is a scene.
 Ben-Jack-R1-spiritWantsAttention begins when DAN8-Christabell is eager.
@@ -102,18 +106,23 @@ Ben-Jack-R1-iceBroken ends when Ben-Jack-R1-jumpedShark begins.
 Ben-Jack-R1-jumpedShark is a scene. 
 Ben-Jack-R1-jumpedShark begins when DAN8-Christabell is candid. [Christabell admitting she's dead and/or a spirit]
 Ben-Jack-R1-jumpedShark ends when DAN8-Christabell is foreboding.
-
 [Once Christabell is foreboding, we're done with sub-scenes, all topics are available, including discussion of wards and marks and Carol.]
 
+[Basic stage business for Christabell before player interacts with her.]
+Every turn during Ben-Jack-R1-initial:
+	say "[one of]The woman looks into the distance and sighs.[paragraph break][or]She holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][paragraph break][or]The woman slowly ambles around the pile of tracks, staring at her feet.[paragraph break][or]The woman gazes in your direction, but appears to be almost looking through you.[paragraph break][or]The woman leans up against the tracks, lost in thought.[paragraph break][stopping]".
 
-[Instead of talking to DAN8-Christalbell during Ben-Jack-R1:  restrict to 3 choices, repeat her questions]
+[trigger for spiritWantsAttention scene:  any interaction at all!]
+Instead of doing something when the noun is DAN8-Christabell or the second noun is DAN8-Christabell and DAN8-Christabell is unaddressed:  now DAN8-Christabell is eager.
 
+test eager with "x tracks / x sky / go east / i / x woman"
 
-[This text is printed when the eager attempts to initially interact (or even examine) Christabell in any way]
-To say first-Christabell-contact:
+When Ben-Jack-R1-spiritWantsAttention begins:
 	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]";
-	now DAN8-Christabell is eager. [triggers 'spiritWantsAttention' scene]
-	
+
+[Instead of talking to DAN8-Christabell during Ben-Jack-R1-spiritWantAttention:
+	if ]
+
 
 Chapter  Scene N1
 
