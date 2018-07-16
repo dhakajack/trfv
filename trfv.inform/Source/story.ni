@@ -122,7 +122,7 @@ When Ben-Jack-R1-spiritWantsAttention begins:
 
 [Stage business while awaiting Naomi's reply]
 Every turn during Ben-Jack-R1-spiritWantsAttention:
-	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][paragraph break][or][quotation mark]Hello? Pray answer![quotation mark][paragraph break][or]The woman seems more desperate now.  [quotation mark]Milady, do you see me?[quotation mark][paragraph break][or]The woman nervously stares at you, waiting.[paragraph break][stopping]".
+	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][paragraph break][or][quotation mark]Hello? Pray answer!  Can you understand me?[quotation mark][paragraph break][or]The woman seems more desperate now.  [quotation mark]Milady, do you see me?[quotation mark][paragraph break][or]The woman stares at you nervously, waiting for a (seemingly nonsensical) yes-or-no acknowledgement of her presence.[paragraph break][stopping]".
 
 [TODO:  wasn't able to use "for the first/second time" in conjunction with "during spiritWantsAttention".  This is my hack.]
 The player has a number called Ben-Jack-guiltLevel.  The Ben-Jack-guiltLevel of the player is 0.
@@ -134,12 +134,16 @@ Before going during Ben-Jack-R1-spiritWantsAttention:
 		say "[one of][italic type]Screw politeness,[roman type] you say to yourself. [italic type]This day has been weird enough. Whoever she is, if she’s just going to loom at you in the darkness, that’s her problem.[roman type][paragraph break]With renewed determination, you steam off towards the trail, glad to be quit of her.[paragraph break][quotation mark]Fine, then, waifsome Trompe[quotation mark] she mutters.[quotation mark]Stickly Clod. Upstuckt Wench! Be that like. I expect not Civility from a Crâne, their Rudeness does tell the Tale. Be off then, and the long Vigil I onely will endurre.[quotation mark][paragraph break][or]You wander off, ignoring the woman.[stopping]”;
 		continue the action.	
 
+Instead of saying no during Ben-Jack-R1-spiritWantsAttention:
+	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the Gifte of specktral Seight, you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself. [quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark] She stares at the black face of the surrounding cliffs for inspiration.[or]She appears utterly puzzled at your reply.[stopping]".
 
-[nstead of going during Ben-Jack-R1-spiritWantsAttention:
-	say "[one of]Although this unexpected encounter is unnerving, the stranger[apostrophe]s eager smile puts you at ease. [italic type]Perhaps she is lost,[roman type] you think. [italic type]Maybe she is one of Peter[apostrophe]s cousins. In any event, it would be the height of impoliteness to just wander off.[roman type][paragraph break][quotation mark]So, you can then? See me, that is?[quotation mark][or]seconddddd[stopping]".]
-	
-[Saying "yes", "no", "hello", "goodbye"' or any action that Conversational Framework infers as starting a conversation:]	
-After saying hello to DAN8-Christabell:  now DAN8-Christabell is chatty.  [iceBroken scene trigger]
+Instead of saying yes during Ben-Jack-R1-spiritWantsAttention:
+	now DAN8-Christabell is chatty. [iceBroken trigger]
+
+When Ben-Jack-R1-iceBroken begins:
+	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]".
+
+
 
 
 Chapter Scene N1
