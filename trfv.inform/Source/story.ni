@@ -141,8 +141,30 @@ Instead of saying yes during Ben-Jack-R1-spiritWantsAttention:
 	now DAN8-Christabell is chatty. [iceBroken trigger]
 
 When Ben-Jack-R1-iceBroken begins:
-	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]".
+	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]";
 
+
+Seight is a subject.  Understand "sight" or "spectral" or "spektral" as Seight.
+After quizzing or informing DAN8-Christabell about Seight:
+	now DAN8-Christabell is candid;  [triggers jumpTheShark scene]
+	say "yes I like apples.".
+
+
+[so straightforward!  but Topic is super-limited (see docs 16.13)-- can't get 'learnings' column to work at all.  :-( ]
+[
+After asking DAN8-Christabell about a topic listed in the Table of R1 Asks, say "[response entry]".
+After telling DAN8-Christabell about a topic listed in the Table of R1 Tells, say "[response entry]".
+
+Table of R1 Asks
+Topic	Response	Learnings
+"apple" or "applefruit"	"An apple is a kind of fruit, like a banana."	"banana"
+"banana"	"Bananas are best eaten when yellow."
+
+Table of R1 Tells
+Topic	Response	Learnings
+"apple" or "applefruit"	"Yes, I love apples too."
+"banana"	"I'm sorry to hear about the banana."
+]
 
 
 
