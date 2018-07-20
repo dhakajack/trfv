@@ -57,11 +57,11 @@ Description of M2F3 is "DESCRIPTION OF ROOM."
 The commentary of M2F3 is "M2F3 Commentary".
 
 
-Chapter The benjack Continuum
+Chapter The benjack realm
 
 [Region is normally the way to do this, but the rooms are already part of DAN and M2F regions, 
 and a room isn't allowed to be in more than one region!]
-Definition:  a room is in the benjack Continuum if it is DAN8 or it is M2F3.
+Definition:  a room is in the benjack-realm if it is DAN8 or it is M2F3.
 
 
 Part 2 - NPC Definitions
@@ -148,34 +148,34 @@ Before quizzing or informing DAN8-Christabell about a subject for the first time
 	say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Estate, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to Christabell, and she rewards you with a smile and rapt attention.";
 		continue the action.
 
-benjack-PC is a subject. Understand "self/myself/me" as benjack-PC.
+benjack-PC is a subject. Understand "self/myself/me" as benjack-PC when the player is in the benjack-realm.
 After informing DAN8-Christabell about benjack-PC:
 	say "[quotation mark]Well,[quotation mark] you begin, [quotation mark]I am Naomi, and you probably already know my husband, [bold type]Peter[roman type] -- Peter [bold type]Cragne[roman type]..[quotation mark][paragraph break]Christabell shakes her head, [quotation mark]A Crâne? No, I have not the Pleasure of his Acquitenance, or at least not yet. But I am sure there are many Hereabouts unknown to me of Late.[quotation mark][paragraph break][quotation mark]Yes, he[apostrophe]s a little introverted, so I’m not surprised,[quotation mark] you continue. [quotation mark]In fact, while he[apostrophe]s met my entire family, I have not even met his parents -- yet. No pressure there, right?[quotation mark][paragraph break][quotation mark]Assuredly, so.[quotation mark][paragraph break][quotation mark]We took this opportunity to shoot up to [bold type]Vermont[roman type] and I figure we[apostrophe]ll do the family thing and while we[apostrophe]re at it a little touring around: Ben & Jerry[apostrophe]s, some covered bridges, get a bucket of maple syrup -- or however they sell it -- and check out some of the mountains. Two birds with one stone![quotation mark][paragraph break][quotation mark]Just two? Indeed, what you have laid out sounds a fruitful Application of your Labours.[quotation mark][paragraph break]".
 	
 test icebreak with "up/x woman/yes/tell woman about self"
 
-benjack-Peter is a subject.  Understand "husband" as benjack-Peter.
+benjack-Peter is a subject.  Understand "husband" as benjack-Peter when the player is in the benjack-realm..
 After informing DAN8-Christabell about benjack-Peter:
 	say "[quotation mark]As for Peter, my husband, what you see is what you get: he’s a lovable teddy bear.[quotation mark][paragraph break][quotation mark]Is he?[quotation mark][paragraph break][quotation mark]Yes, but a bit of a workaholic. He puts in a full day, but then he’s up all night with the books. I’ve never seen anyone pour their soul out so much over a job.[quotation mark][paragraph break][quotation mark]Into what Sorte of Bookes does he pour his Soul?[quotation mark][paragraph break][quotation mark]At this point, he’s management, so mostly going over audit summaries. In truth, he’d rather do the bean counting himself. Crunching numbers floats his boat.[quotation mark][paragraph break][quotation mark]I am amazed to hear such news as you have to tell; the Worlde is greatly changed since my [bold type]youth[roman type].[quotation mark][paragraph break]"
 
-benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont.
+benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the player is in the benjack-realm..
 After informing DAN8-Christabell about benjack-Vermont:
 	say "[quotation mark]Geography isn’t my forte,[quotation mark] you admit. [quotation mark]I think I was supposed to have gone to Vermont when I was a kid, but the ski trip got canceled.[quotation mark]  Looking around, you remark, [quotation mark]I’m not sure Vermont quite agrees with me. The weather seems kind of grey here.[quotation mark][paragraph break][quotation mark]More like that be a Reflexion of the Locale.[quotation mark][paragraph break]"
 
-benjack-Cragne is a subject.
+benjack-Cragne is a subject.  Understand "Cragne" as benjack-Cragne when the player is in the benjack-realm.
 After informing DAN8-Christabell about benjack-Cragne:
 	say "[quotation mark]I can’t say too much about my in-laws because almost every time I have brought the subject up, Peter goes silent.[quotation mark][paragraph break]Christabell nods for you to continue.[paragraph break][quotation mark]But there was this one time -- one evening, we were looking through an old leather-bound album of his. I don’t know where it came from, or what became of it, but he was researching something about a remote uncle of his, Verlan Refi-Cul Cragne -- sounds French, right? They were fur traders along the Saint Lawrence River in the late 17th Century; most settled near Quebec, but an offshoot worked their way into Vermont.[quotation mark]  You pause to rub some warmth back into your hands. [quotation mark]Peter is normally so withdrawn -- I was surprised that he knew so much about that obscure ancestor, but once he got going on family history, he was like a thing possessed.[quotation mark][paragraph break][quotation mark]No doubt. Many are so-fated.[quotation mark][paragraph break][quotation mark]Yes,[quotation mark] you agree. [quotation mark]Genealogy is fascinating.”
 
 [TODO this next topic is broken, don't know why "tell woman about Christabell' fails. ]
-benjack-Christabell is a subject.  Understand "Christabell" as benjack-Christabell.
+benjack-Christabell is a subject.  Understand "Christabell" as benjack-Christabell when the player is in the benjack-realm.
 After informing DAN8-Christabell about benjack-Christabell:
 	say "[quotation mark]I think you may be the only Christabell that I know,[quotation mark]you say.[paragraph break][quotation mark]In truth? This does surprize me greatly, for in mei Youth it was a most common Appellation. There were... let me render the account,[quotation mark] Christabell counts on her fingers, [quotation mark]four of us in the Whole of the Towne. Contrarywise, ‘til this Day I had met ne’er a Naomi, thow the Name be familiar, being fownde in the Booke of Ruth.[quotation mark][paragraph break]"
 
-benjack-youth is a subject.  Understand "youth" as benjack-youth.
+benjack-youth is a subject.  Understand "youth" as benjack-youth when the player is in the benjack-realm.
 After informing DAN8-Christabell about benjack-youth:
 say "[quotation mark]All of this is new to me[quotation mark]. You gesture to the surrounding countryside -- at least, to where there would be surrounding countryside if you could see beyond the overbearing dark cliffs and creeping dark woods. [quotation mark]I grew up in The Big Apple. That’s where I’m from.[quotation mark] [paragraph break] [quotation mark]Whence?[quotation mark] [paragraph break] [quotation mark]The Big Apple. The City. You know, New York. Don’t you say ‘Big Apple’ here?[quotation mark] [paragraph break] [quotation mark]I do not beleeve it be in common Parlance, but I am of late  at far remouvedf rom the Tymme of mei Youth and moor a poor Judge of such Thinges.[quotation mark] [paragraph break] [quotation mark]It’s probably a regional thing, like soda and pop.[quotation mark] [paragraph break]"
 
-benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as benjack-seight.
+benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as benjack-seight when the player is in the benjack-realm.
 After quizzing or informing DAN8-Christabell about benjack-seight:
 	now DAN8-Christabell is candid;  [triggers jumpTheShark scene]
 	say "The term is not familiar to you, so instead you ask, [quotation mark]I never heard of that: [apostrophe]spectral sight[apostrophe] -- what is it?[quotation mark] [paragraph break] Christabell appears surprised, but patiently replies, [quotation mark]It is a [bold type]Gifte[roman type], which I now presume to be hitherto unknown to You. Let us not make haste with what does follow, for Experience has shewn me that Understanding may train behind my Wordes.[quotation mark] She pauses for emphasis, [quotation mark]The spektral seight is the Ability of somme so-favoured by God’s [bold type]New Grace[roman type] to see [bold type]Spirits[roman type] as Substance. Thus, you are able to see and converse with me.[quotation mark] [paragraph break] [quotation mark][bold type]Spirits[roman type]?[quotation mark] You think to yourself that this conversation just jumped the shark. [paragraph break] You shake your head trying to put her words into some order that makes more sense. [quotation mark]Back the truck up, honey. [bold type]Spirits[roman type]? As in [bold type]ghosts[roman type]?[quotation mark] [paragraph break] [quotation mark]Not precisely, but good enowf for nowe -- and whilst you are styll of Mynd to listen, I should add that the Gifte is restricted a [bold type]lineage[roman type], which does fill me with Curiosity.[quotation mark] She looks appraisingly at your face, taking in the features. [paragraph break] [quotation mark]Wait. [bold type]Ghosts[roman type]?[quotation mark] you cannot get past the word. You brain doesn’t seem to be working very well just now. [paragraph break] [quotation mark]Indeed.[quotation mark ] She places a hand on your shoulder, but rather than the reassuring pressure and warmth of human touch, you feel a wave of coldness wash over you. [quotation mark]Tarry a moment,[quotation mark] Christabell instructs, [quotation mark]until your Mind ceases its fievre, lest it berne through the [bold type]knotte of reason[roman type] and unravell you.[quotation mark] [paragraph break] "
