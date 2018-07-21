@@ -16,12 +16,26 @@ blah blah
 
 * player may ask about scenery -- should they be topics for
   Christabell's commentary?  e.g. "tracks", "cliffs", "weeds"
+  jACk is doing
+
+* quips when conversation ends, or re-starts (exiting or re-entering room)
 
 
-* create better auto-replies to unknown subjects
+* mound sholud be a supporter, climbable?
+
+* (help from zarf) create better auto-replies to unknown subjects
 
 * probably don't need sub-scenes within R1.  Just use Christabell's
   mood alone to decide what topics and/or responses to show.  Perhaps
   save Inform 'scenes' feature only for our actual *big* scenes (R1,
   N1, etc.)
+
+
+* generalize stage-business rules, and block-stage buisness rule?
+
+* remove unfamiliar enforcement
+
+
+* make some 'test me' paths
+
 

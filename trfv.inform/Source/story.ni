@@ -25,23 +25,35 @@ The commentary of DAN8 is "DAN8 Commentary".
 
 Description of DAN8 is "[if unvisited]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile.[else]A silent, unnatural clearing surrounded by foreboding granite cliffs.  Decrepit vegetation fights for footholds at the edges, while an enormous pile of rusted railway tracks looms in the center of it all. Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
-The cliffs are scenery in DAN8. The description of cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  Understand "cliff" or "granite" or "wall" or "hill" or "hillside" or "mica" as the cliffs.
+The benjack-cliffs are scenery in DAN8.  The printed name of benjack-cliffs is "cliffs".  
+Understand "cliff" or "granite" or "wall" or "hill" or "hillside" or "mica" as the benjack-cliffs when the player is in DAN8.
+The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
+Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
 
-Instead of climbing the cliffs, say "Even champion rock-climbers couldn't scale these cliffs."
+The benjack-clearing is scenery in DAN8.  The printed name of benjack-clearing is "clearing".
+Understand "bowl" or "ampitheater" as the benjack-clearing when the player is in DAN8.
+The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
 
-The clearing is scenery in DAN8.  The description of the clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  Understand "bowl" or "ampitheater" as the clearing.
+The benjack-trail is scenery in DAN8.  The printed name of benjack-trail is "trailheads".
+Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
+The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
 
-The trail is scenery in DAN8.  The description of the trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".  Understand "trails" or "trailhead" or "trailheads" as the trail.	
+The benjack-weeds are scenery in DAN8.  The printed name of benjack-weeds is "vegetation".
+Understand "hedge" or "bramble" or "shrub" or "tree" or "grass" or "vegetation" or "stumps" as the benjack-weeds when the player is in DAN8.
+The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
 
-The weeds are scenery in DAN8.  The description of the weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".  Understand "hedge" or "bramble" or "shrub" or "tree" or "grass" or "vegetation" or "stumps" as the weeds.
+The benjack-dirt is scenery in DAN8.  The printed name of benjack-dirt is "dirt".
+Understand "soil" or "ground" as the benjack-dirt when the player is in DAN8.
+The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
+Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
 
-The dirt is scenery in DAN8.  The description of the dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  Understand "soil" or "ground" as the dirt.  
+The benjack-sky is scenery in DAN8.  The printed name of benjack-sky is "sky".
+Understand "clouds" as the benjack-sky when the player is in DAN8.
+The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
 
-Instead of smelling the dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
-
-The sky is scenery in DAN8. The description of the sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". Understand "clouds" as the sky.
-
-The mound is scenery in DAN8.  The description of the mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky.[or]A tall pile of rusted railway tracks.[stopping]".  Understand "pile" or "lump" or "track" or "tracks" or "iron" or "altar" or "sticks" as the mound.
+The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of tracks".
+Understand "pile" or "lump" or "track" or "tracks" or "iron" or "altar" or "sticks" as the benjack-mound when the player is in DAN8.
+The description of the benjack-mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky.[or]A tall pile of rusted railway tracks.[stopping]".  
 
 
 Chapter M2F3 Nursery
@@ -74,7 +86,7 @@ The description of DAN8-Christabell is "[one of]When you direct your attention t
 
 Understand "talk to [someone]" as a mistake ("[italic type]For conversation, try to ASK ABOUT a subject or TELL ABOUT a subject.[roman type]").
 
-[A state-machine that transitions the dialogue between a chain of sub-scenes in R1.  See "Chapter Scene R1".]
+[A state-machine that transitions the dialogue between a chain of sub-scenes in R0.  See "Chapter Scene R0".]
 DAN8-Christabell can be unaddressed or eager or chatty or candid or foreboding.  DAN8-Christabell is unaddressed.
 
 [TODO: repeat this technique for R2 sub-scene transitions?]
@@ -89,27 +101,27 @@ The description of M2F3-Carol is "description TBD".
 
 Book 2 - Scenes
 
-Chapter Scene R1
+Chapter Scene R0
 
-[sub-scenes of R1 that flow into each other]
-benjack-R1-initial is a scene. [Christabell is unaddressed]
-benjack-R1-initial begins when the player is in DAN8 for the first time. 
-benjack-R1-initial ends when benjack-R1-spiritWantsAttention begins.
+[sub-scenes of R0 that flow into each other]
+benjack-R0-initial is a scene. [Christabell is unaddressed]
+benjack-R0-initial begins when the player is in DAN8 for the first time. 
+benjack-R0-initial ends when benjack-R0-spiritWantsAttention begins.
 
-benjack-R1-spiritWantsAttention is a scene.
-benjack-R1-spiritWantsAttention begins when DAN8-Christabell is eager. [starts asking if she can be seen]
-benjack-R1-spiritWantsAttention ends when benjack-R1-iceBroken begins.
+benjack-R0-spiritWantsAttention is a scene.
+benjack-R0-spiritWantsAttention begins when DAN8-Christabell is eager. [starts asking if she can be seen]
+benjack-R0-spiritWantsAttention ends when benjack-R0-iceBroken begins.
 
-benjack-R1-iceBroken is a scene.
-benjack-R1-iceBroken begins when DAN8-Christabell is chatty. [Once the player replies "yes" to her.]
-benjack-R1-iceBroken ends when benjack-R1-jumpedShark begins.
+benjack-R0-iceBroken is a scene.
+benjack-R0-iceBroken begins when DAN8-Christabell is chatty. [Once the player replies "yes" to her.]
+benjack-R0-iceBroken ends when benjack-R0-jumpedShark begins.
 
-benjack-R1-jumpedShark is a scene. 
-benjack-R1-jumpedShark begins when DAN8-Christabell is candid. [Christabell admitting she's dead and/or a spirit]
-benjack-R1-jumpedShark ends when DAN8-Christabell is foreboding.
+benjack-R0-jumpedShark is a scene. 
+benjack-R0-jumpedShark begins when DAN8-Christabell is candid. [Christabell admitting she's dead and/or a spirit]
+benjack-R0-jumpedShark ends when DAN8-Christabell is foreboding.
 [Once Christabell is foreboding, we're done with sub-scenes, all topics are available, including discussion of wards and marks and Carol.]
 
-[starting topics of discussion in R1, all familiar by default]
+[starting topics of discussion in R0, all familiar by default]
 benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the player is in DAN8.
 benjack-Peter is a subject.  Understand "husband/Peter" as benjack-Peter when the player is in DAN8.
 benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the player is in DAN8.
@@ -142,7 +154,7 @@ benjack-mark is an unfamiliar subject.  Understand "mark/marks/marked" as benjac
 
 
 [Basic stage business for Christabell before player interacts with her.]
-Every turn during benjack-R1-initial:
+Every turn during benjack-R0-initial:
 	if player is in DAN8, say "[one of]The woman looks into the distance and sighs.[paragraph break][or]The woman holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][paragraph break][or]The woman slowly ambles around the pile of tracks, staring at her feet.[paragraph break][or]The woman gazes in your direction, but appears to be almost looking through you.[paragraph break][or]The woman leans up against the tracks, lost in thought.[paragraph break][stopping]".
 
 [trigger for spiritWantsAttention scene:  any interaction at all!]
@@ -150,16 +162,16 @@ Instead of doing something when the noun is DAN8-Christabell or the second noun 
 
 test eager with "x tracks / x sky / go east / i / x woman"
 
-When benjack-R1-spiritWantsAttention begins:
+When benjack-R0-spiritWantsAttention begins:
 	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]";
 
 [Stage business while awaiting Naomi's reply]
-Every turn during benjack-R1-spiritWantsAttention:
+Every turn during benjack-R0-spiritWantsAttention:
 	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][paragraph break][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][paragraph break][or]The woman seems more desperate now.  [quotation mark]Milady, do you see me?[quotation mark][paragraph break][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[paragraph break][stopping]".
 
 [TODO:  wasn't able to use "for the first/second time" in conjunction with "during spiritWantsAttention".  This is my hack.]
 The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
-Before going during benjack-R1-spiritWantsAttention:
+Before going during benjack-R0-spiritWantsAttention:
 	if benjack-guiltLevel of the player is 0:
 		now benjack-guiltLevel of the player is 1;
 		instead say "Although this unexpected encounter is unnerving, the stranger[apostrophe]s eager smile puts you at ease. [italic type]Perhaps she is lost,[roman type] you think. [italic type]Maybe she is one of Peter[apostrophe]s cousins. In any event, it would be the height of impoliteness to just wander off.[roman type][paragraph break][quotation mark]So, you can then? See me, that is?[quotation mark]";
@@ -167,13 +179,13 @@ Before going during benjack-R1-spiritWantsAttention:
 		say "[one of][italic type]Screw politeness,[roman type] you say to yourself. [italic type]This day has been weird enough. Whoever she is, if she’s just going to loom at you in the darkness, that’s her problem.[roman type][paragraph break]With renewed determination, you steam off towards the trail, glad to be quit of her.[paragraph break][quotation mark]Fine, then, waifsome Trompe[quotation mark] she mutters.[quotation mark]Stickly Clod. Upstuckt Wench! Be that like. I expect not Civility from a Crâne, their Rudeness does tell the Tale. Be off then, and the long Vigil I onely will endurre.[quotation mark][paragraph break][or]You wander off, ignoring the woman.[stopping]”;
 		continue the action.	
 
-Instead of saying no during benjack-R1-spiritWantsAttention:
+Instead of saying no during benjack-R0-spiritWantsAttention:
 	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the Gifte of specktral Seight, you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself. [quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark] She stares at the black face of the surrounding cliffs for inspiration.[or]She appears utterly puzzled at your reply.[stopping]".
 
-Instead of saying yes during benjack-R1-spiritWantsAttention:
+Instead of saying yes during benjack-R0-spiritWantsAttention:
 	now DAN8-Christabell is chatty. [iceBroken trigger]
 
-When benjack-R1-iceBroken begins:
+When benjack-R0-iceBroken begins:
 	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]";
 	now benjack-Christabell is familiar;  now benjack-seight is familiar.
 
@@ -268,7 +280,7 @@ After quizzing DAN8-Christabell about benjack-spirit:
 	now benjack-lineage is familiar.
 
 After quizzing DAN8-Christabell about benjack-lineage:
-	say "[quotation mark]Surely, you suspect -- your Eyes, your Fayce, your Carriage -- all about you I have seen in the Looking-glass. We are of a common Stock, you and I, whence stems your Spektral Seight.[quotation mark][paragraph break][quotation mark]Because we[apostrophe]re both Cragnes?[quotation mark] you ask.[paragraph break][quotation mark]Nay, neither, I reckon. No Crâne Blood runs -- fynne, I allow, did run, for sayke of Correctness -- did run through my Veinnes. My surname is ‘Burt[apostrophe], in case that catches notice. And if I do not mistake, you have not the Aspect of Fruite fallen from the gnarled Tree of the Crânes -- although I did once wot by Providence wot Happenstance, know a Crâne also, a certain Carol, of Our Lineage.[quotation mark][paragraph break][quotation mark]Am I a Cragne? No. I married I Cragne. Peter is a Cragne -- I just married in. We had blood tests and everything. Our kids won[apostrophe]t have two heads. I[apostrophe]m sure he and I aren[apostrophe]t related.[quotation mark][paragraph break][quotation mark]Tell me of your Ancestors,[quotation mark] Cristabell asks.[paragraph break][quotation mark]Going back a generation on my father[apostrophe]s side, he and his dad were carpenters in Lithuania and came to the US in 30s. He had a little shop in Hull...[quotation mark] Cristabell waves you on impatiently; clearly, that part of your ancestry does not excite her. [quotation mark]But on my mom[apostrophe]s side -- my birth mom, that is, her family traces back to the UK. My cousin a  school report on our family tree, and I think we go back to the Bassetts on that side. Does that ring any bells?[quotation mark][paragraph break][quotation mark]Like a Papist Belfry on the Newe Year.[quotation mark][paragraph break][quotation mark]...[quotation mark][paragraph break]Christabell clarifies, [quotation mark]My owne Mother was but one Generation remouved from Family Bassett. A wealthey Family, they did dwell not far a-way.[quotation mark]".
+	say "[quotation mark]Surely, you suspect -- your Eyes, your Fayce, your Carriage -- all about you I have seen in the Looking-glass. We are of a common Stock, you and I, whence stems your Spektral Seight.[quotation mark][paragraph break][quotation mark]Because we[apostrophe]re both Cragnes?[quotation mark] you ask.[paragraph break][quotation mark]Nay, neither, I reckon. No Crâne Blood runs -- fynne, I allow, did run, for sayke of Correctness -- did run through my Veinnes. My surname is ‘Burt[apostrophe], in case that catches notice. And if I do not mistake, you have not the Aspect of Fruite fallen from the gnarled Tree of the Crânes -- although I did once wot by Providence wot Happenstance, know a Crâne also, a certain [bold type]Carol[roman type], of Our Lineage.[quotation mark][paragraph break][quotation mark]Am I a Cragne? No. I married I Cragne. Peter is a Cragne -- I just married in. We had blood tests and everything. Our kids won[apostrophe]t have two heads. I[apostrophe]m sure he and I aren[apostrophe]t related.[quotation mark][paragraph break][quotation mark]Tell me of your Ancestors,[quotation mark] Cristabell asks.[paragraph break][quotation mark]Going back a generation on my father[apostrophe]s side, he and his dad were carpenters in Lithuania and came to the US in 30s. He had a little shop in Hull...[quotation mark] Cristabell waves you on impatiently; clearly, that part of your ancestry does not excite her. [quotation mark]But on my mom[apostrophe]s side -- my birth mom, that is, her family traces back to the UK. My cousin a  school report on our family tree, and I think we go back to the Bassetts on that side. Does that ring any bells?[quotation mark][paragraph break][quotation mark]Like a Papist Belfry on the Newe Year.[quotation mark][paragraph break][quotation mark]...[quotation mark][paragraph break]Christabell clarifies, [quotation mark]My owne Mother was but one Generation remouved from Family Bassett. A wealthey Family, they did dwell not far a-way.[quotation mark]".
 	
 After quizzing DAN8-Christabell about benjack-witch:
 	say "[quotation mark]And where do witches come into all of this?[quotation mark] you query. [quotation mark]I mean, look around: spooky New England setting, all the history that[apostrophe]s tied up in place, Peter[apostrophe]s freaky relatives, and the slap-dash poorly implemented crazy quilt madness of it all. It has to end with witch trials, right? Let[apostrophe]s check the cliché box and be done with it.[quotation mark][paragraph break][quotation mark]Witches?[quotation mark] Cristabell looks at you like a teacher preparing a special needs assessment. [quotation mark]Nay, I know not of Witches that do enter my account, though I am familiar with the legal precedent.[quotation mark] Seeing your skepticism, she continues, [quotation mark]Without question, I would know One to see One, a Woman of low Resolve who doth put her Hand to the devills Book, is afflickted or doth afflickt others by Power of possession. And I know that Summe upon whom the Devill has flashed find joy inflicting the [bold type]Malificium[roman type], but there is none such in my Story. No Witches, no Devill. I sees this disappoints you, but I cannot speake other than forthwrightly.[quotation mark] ";
