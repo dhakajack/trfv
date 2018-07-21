@@ -86,10 +86,9 @@ The description of DAN8-Christabell is "[one of]When you direct your attention t
 
 Understand "talk to [someone]" as a mistake ("[italic type]For conversation, try to ASK ABOUT a subject or TELL ABOUT a subject.[roman type]").
 
-[A state-machine that transitions the dialogue between a chain of sub-scenes in R0.  See "Chapter Scene R0".]
-DAN8-Christabell can be unaddressed or eager or chatty or candid or foreboding.  DAN8-Christabell is unaddressed.
+[A state-machine that transitions the dialogue between a chain of behaviors in R0.  See "Chapter Scene R0".]
+DAN8-Christabell can be unaddressed or eager or chatty or candid.  DAN8-Christabell is unaddressed.
 
-[TODO: repeat this technique for R2 sub-scene transitions?]
 
 Chapter Carol
 
@@ -103,23 +102,13 @@ Book 2 - Scenes
 
 Chapter Scene R0
 
-[sub-scenes of R0 that flow into each other]
-benjack-R0-initial is a scene. [Christabell is unaddressed]
-benjack-R0-initial begins when the player is in DAN8 for the first time. 
-benjack-R0-initial ends when benjack-R0-spiritWantsAttention begins.
+[R0 -> N1 -> R1 -> N2 -> R2 -> N3]
+[We advance to next scene when player enters a room for the first time right after being in the 'other' room]
 
-benjack-R0-spiritWantsAttention is a scene.
-benjack-R0-spiritWantsAttention begins when DAN8-Christabell is eager. [starts asking if she can be seen]
-benjack-R0-spiritWantsAttention ends when benjack-R0-iceBroken begins.
+benjack-R0 is a scene. [Christabell is unaddressed]
+benjack-R0 begins when the player is in DAN8 for the first time. 
+benjack-R0 ends when benjack-N1 begins. [presumably entering the Nursery for the first time]
 
-benjack-R0-iceBroken is a scene.
-benjack-R0-iceBroken begins when DAN8-Christabell is chatty. [Once the player replies "yes" to her.]
-benjack-R0-iceBroken ends when benjack-R0-jumpedShark begins.
-
-benjack-R0-jumpedShark is a scene. 
-benjack-R0-jumpedShark begins when DAN8-Christabell is candid. [Christabell admitting she's dead and/or a spirit]
-benjack-R0-jumpedShark ends when DAN8-Christabell is foreboding.
-[Once Christabell is foreboding, we're done with sub-scenes, all topics are available, including discussion of wards and marks and Carol.]
 
 [starting topics of discussion, all familiar by default]
 benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the player is in DAN8.
@@ -152,24 +141,23 @@ benjack-mark is a subject.  Understand "mark/marks/marked" as benjack-mark when 
 
 
 [Basic stage business for Christabell before player interacts with her.]
-Every turn during benjack-R0-initial:
+Every turn while DAN8-Christabell is unaddressed:
 	if player is in DAN8, say "[one of]The woman looks into the distance and sighs.[paragraph break][or]The woman holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][paragraph break][or]The woman slowly ambles around the pile of tracks, staring at her feet.[paragraph break][or]The woman gazes in your direction, but appears to be almost looking through you.[paragraph break][or]The woman leans up against the tracks, lost in thought.[paragraph break][stopping]".
 
-[trigger for spiritWantsAttention scene:  any interaction at all!]
-Instead of doing something when the noun is DAN8-Christabell or the second noun is DAN8-Christabell and DAN8-Christabell is unaddressed:  now DAN8-Christabell is eager.
+[trigger for eagerness state:  any interaction at all!]
+Instead of doing something when the noun is DAN8-Christabell or the second noun is DAN8-Christabell and DAN8-Christabell is unaddressed:  
+	now DAN8-Christabell is eager;
+	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]".
 
 test eager with "x tracks / x sky / go east / i / x woman"
 
-When benjack-R0-spiritWantsAttention begins:
-	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]";
-
 [Stage business while awaiting Naomi's reply]
-Every turn during benjack-R0-spiritWantsAttention:
+Every turn while DAN8-Christabell is eager:
 	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][paragraph break][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][paragraph break][or]The woman seems more desperate now.  [quotation mark]Milady, do you see me?[quotation mark][paragraph break][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[paragraph break][stopping]".
 
 [TODO:  wasn't able to use "for the first/second time" in conjunction with "during spiritWantsAttention".  This is my hack.]
 The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
-Before going during benjack-R0-spiritWantsAttention:
+Before going when DAN8-Christabell is eager:
 	if benjack-guiltLevel of the player is 0:
 		now benjack-guiltLevel of the player is 1;
 		instead say "Although this unexpected encounter is unnerving, the stranger[apostrophe]s eager smile puts you at ease. [italic type]Perhaps she is lost,[roman type] you think. [italic type]Maybe she is one of Peter[apostrophe]s cousins. In any event, it would be the height of impoliteness to just wander off.[roman type][paragraph break][quotation mark]So, you can then? See me, that is?[quotation mark]";
@@ -177,15 +165,14 @@ Before going during benjack-R0-spiritWantsAttention:
 		say "[one of][italic type]Screw politeness,[roman type] you say to yourself. [italic type]This day has been weird enough. Whoever she is, if she’s just going to loom at you in the darkness, that’s her problem.[roman type][paragraph break]With renewed determination, you steam off towards the trail, glad to be quit of her.[paragraph break][quotation mark]Fine, then, waifsome Trompe[quotation mark] she mutters.[quotation mark]Stickly Clod. Upstuckt Wench! Be that like. I expect not Civility from a Crâne, their Rudeness does tell the Tale. Be off then, and the long Vigil I onely will endurre.[quotation mark][paragraph break][or]You wander off, ignoring the woman.[stopping]”;
 		continue the action.	
 
-Instead of saying no during benjack-R0-spiritWantsAttention:
+Instead of saying no when DAN8-Christabell is eager:
 	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the Gifte of specktral Seight, you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself. [quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark] She stares at the black face of the surrounding cliffs for inspiration.[or]She appears utterly puzzled at your reply.[stopping]".
 
-Instead of saying yes during benjack-R0-spiritWantsAttention:
-	now DAN8-Christabell is chatty. [iceBroken trigger]
-test icebreak with "up/x woman/yes/tell woman about self"
-
-When benjack-R0-iceBroken begins:
+Instead of saying yes when DAN8-Christabell is eager:
+	now DAN8-Christabell is chatty; [trigger into main conversation]
 	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]".
+
+test icebreak with "up/x woman/yes/tell woman about self"
 
 Before quizzing or informing DAN8-Christabell about a subject for the first time:
 	say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Estate, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to Christabell, and she rewards you with a smile and rapt attention.";
@@ -206,7 +193,6 @@ After quizzing DAN8-Christabell about benjack-PC:
 	
 After informing DAN8-Christabell about benjack-Peter:
 	say "[quotation mark]As for Peter, my husband, what you see is what you get: he’s a lovable teddy bear.[quotation mark][paragraph break][quotation mark]Is he?[quotation mark][paragraph break][quotation mark]Yes, but a bit of a workaholic. He puts in a full day, but then he’s up all night with the books. I’ve never seen anyone pour their soul out so much over a job.[quotation mark][paragraph break][quotation mark]Into what Sorte of Bookes does he pour his Soul?[quotation mark][paragraph break][quotation mark]At this point, he’s management, so mostly going over audit summaries. In truth, he’d rather do the bean counting himself. Crunching numbers floats his boat.[quotation mark][paragraph break][quotation mark]I am amazed to hear such news as you have to tell; the Worlde is greatly changed since my [bold type]youth[roman type].[quotation mark][paragraph break]".
-	
 After quizzing DAN8-Christabell about benjack-Peter:
 	say "Christabell politely mentions that she has not made his acquaintance."
 

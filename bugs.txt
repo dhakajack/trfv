@@ -14,7 +14,7 @@ blah blah
 * ask/tell woman about Christabell --> generic failure messages for
   both
 
-* player may ask about scenery -- should they be topics for
+* WAITING (JACK): player may ask about scenery -- should they be topics for
   Christabell's commentary?  e.g. "tracks", "cliffs", "weeds"
   jACk is doing
 
@@ -23,17 +23,18 @@ blah blah
 
 * mound sholud be a supporter, climbable?
 
-* (help from zarf) create better auto-replies to unknown subjects
+* (need help from zarf) create better auto-replies to unknown subjects
 
-* probably don't need sub-scenes within R1.  Just use Christabell's
-  mood alone to decide what topics and/or responses to show.  Perhaps
-  save Inform 'scenes' feature only for our actual *big* scenes (R1,
-  N1, etc.)
+
+* all of the 'tell' commands are now failing !?!?
+
+  - 'ask about foo' works.
+  - 'ask woman about foo' works.
+  - 'tell woman about foo' works.
+  - 'tell about foo" always FAILS
 
 
 * generalize stage-business rules, and block-stage buisness rule?
-
-* remove unfamiliar enforcement
 
 
 * make some 'test me' paths
