@@ -3,40 +3,34 @@ Bugs ben has found, but not yet ready to file in github bug tracker
 
 R1 Bugs
 
-* Why does "ask subject" reply "you can't see any such thing", but
-  "ask about subject" work fine?
-
-* >tell christabell about self
-(benjack-PC)  <-- why is this disambiguation being printed??
-blah blah
-
-
-* ask/tell woman about Christabell --> generic failure messages for
-  both
 
 * WAITING (JACK): player may ask about scenery -- should they be topics for
   Christabell's commentary?  e.g. "tracks", "cliffs", "weeds"
   jACk is doing
 
-* quips when conversation ends, or re-starts (exiting or re-entering room)
+* WAITING (JACK):  quips when conversation ends, or re-starts (exiting or re-entering room)
 
-
-* mound sholud be a supporter, climbable?
 
 * (need help from zarf) create better auto-replies to unknown subjects
 
 
 * all of the 'tell' commands are now failing !?!?
 
+  - 'ask foo' FAILS
   - 'ask about foo' works.
   - 'ask woman about foo' works.
   - 'tell woman about foo' works.
   - 'tell about foo" always FAILS
 
 
-* generalize stage-business rules, and block-stage buisness rule?
-
+  - Related? tell christabell about self
+    (benjack-PC) <-- why is this disambiguation being printed??
 
 * make some 'test me' paths
 
 
+* REFINEMENT:  shorter quips when asked about same subject multiple
+  times
+
+* REFINEMENT:  during R0 scene, background stage business?  or fading
+  in/out of christabell ?

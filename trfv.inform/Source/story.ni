@@ -9,6 +9,8 @@ Include Cragne Suite by Ryan Veeder.
 
 Book 1 - Set Up
 
+The player holds a flower. "A small yellow daffodil.".
+
 Part 1 - Locations 
 
 Chapter DAN8 Hillside Path
@@ -54,7 +56,8 @@ The description of the benjack-sky is "Leaden clouds gather from all corners, ru
 The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of tracks".
 Understand "pile" or "lump" or "track" or "tracks" or "iron" or "altar" or "sticks" as the benjack-mound when the player is in DAN8.
 The description of the benjack-mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky.[or]A tall pile of rusted railway tracks.[stopping]".  
-
+The benjack-mound is a supporter.
+Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear.".
 
 Chapter M2F3 Nursery
 
@@ -109,6 +112,20 @@ benjack-R0 is a scene. [Christabell is unaddressed]
 benjack-R0 begins when the player is in DAN8 for the first time. 
 benjack-R0 ends when benjack-N1 begins. [presumably entering the Nursery for the first time]
 
+[General strategy here is that we can scope different answers to subjects based on time and location.
+For time, we use Inform 'scenes' to scope.
+For location, we just look at the interlocutor.
+
+Example:
+
+After quizzing DAN8-Christabell about benjack-carrots during benjack-R0:
+	say "I love carrots."
+After quizzing M2F3-Carol about benjack-carrots during benjack-N1:
+	say "They are so terrible."
+After quizzing DAN8-Christabell about benjack-carrots during benjack-R1:
+	say "I see that Carol has told you they're terrible, but she's wrong."
+]
+
 
 [starting topics of discussion, all familiar by default]
 benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the player is in DAN8.
@@ -121,7 +138,6 @@ benjack-pilgrim is a subject.  Understand "pilgrim/settler" as benjack-pilgrim w
 benjack-colony is a subject.  Understand "colony/Massachusetts" as benjack-colony when the player is in DAN8.
 benjack-indian is a subject.  Understand "indian/native/tribe/indigenous" as benjack-indian when the player is in DAN8.
 benjack-witch is a subject.  Understand "witch/witches" as benjack-witch when the player is in DAN8.
-benjack-Christabell is a subject.  Understand "Christabell" as benjack-Christabell when the player is in DAN8.
 benjack-Carol is a subject.  Understand "Carol" as benjack-Carol when the player is in DAN8.
 benjack-Lin is a subject.  Understand "Lin" as benjack-Lin when the player is in DAN8.
 benjack-youth is a subject.  Understand "youth" as benjack-youth when the player is in DAN8.
@@ -183,9 +199,11 @@ Before quizzing or informing DAN8-Christabell about a subject (called foo):
 	if foo is not known, say "Sorry, you don't know anything about that.";
 	otherwise continue the action.]
 
-[Works, but probably messes up the other 84 rooms in the game:
-The block asking rule response (A) is "Sorry, you don't know anything about that."]
-	
+[also doesn't work:
+Check quizzing DAN8-Christabell about something unknown:
+	say "noooooope.".]
+
+
 After informing DAN8-Christabell about benjack-PC:
 	say "[quotation mark]Well,[quotation mark] you begin, [quotation mark]I am Naomi, and you probably already know my husband, [bold type]Peter[roman type] -- Peter [bold type]Cragne[roman type]..[quotation mark][paragraph break]Christabell shakes her head, [quotation mark]A Crâne? No, I have not the Pleasure of his Acquitenance, or at least not yet. But I am sure there are many Hereabouts unknown to me of Late.[quotation mark][paragraph break][quotation mark]Yes, he[apostrophe]s a little introverted, so I’m not surprised,[quotation mark] you continue. [quotation mark]In fact, while he[apostrophe]s met my entire family, I have not even met his parents -- yet. No pressure there, right?[quotation mark][paragraph break][quotation mark]Assuredly, so.[quotation mark][paragraph break][quotation mark]We took this opportunity to shoot up to [bold type]Vermont[roman type] and I figure we[apostrophe]ll do the family thing and while we[apostrophe]re at it a little touring around: Ben & Jerry[apostrophe]s, some covered bridges, get a bucket of maple syrup -- or however they sell it -- and check out some of the mountains. Two birds with one stone![quotation mark][paragraph break][quotation mark]Just two? Indeed, what you have laid out sounds a fruitful Application of your Labours.[quotation mark][paragraph break]".
 After quizzing DAN8-Christabell about benjack-PC:
@@ -208,8 +226,8 @@ After quizzing DAN8-Christabell about benjack-Cragne:
 
 [TODO this next topic is broken, don't know why "ask/tell woman about Christabell' fails. ]
 
-After informing or quizzing DAN8-Christabell about benjack-Christabell:
-	say "[quotation mark]I think you may be the only Christabell that I know,[quotation mark]you say.[paragraph break][quotation mark]In truth? This does surprize me greatly, for in mei [bold type]Youth[roman type] it was a most common Appellation. There were... let me render the account,[quotation mark] Christabell counts on her fingers, [quotation mark]four of us in the Whole of the Towne. Contrarywise, ‘til this Day I had met ne’er a Naomi, thow the Name be familiar, being fownde in the Booke of Ruth.[quotation mark][paragraph break]".
+After informing or quizzing DAN8-Christabell about DAN8-Christabell:
+	say "[quotation mark]I think you may be the only Christabell that I know,[quotation mark] you say.[paragraph break][quotation mark]In truth? This does surprize me greatly, for in mei [bold type]Youth[roman type] it was a most common Appellation. There were... let me render the account,[quotation mark] Christabell counts on her fingers, [quotation mark]four of us in the Whole of the Towne. Contrarywise, ‘til this Day I had met ne’er a Naomi, thow the Name be familiar, being fownde in the Booke of Ruth.[quotation mark][paragraph break]".
 
 After informing DAN8-Christabell about benjack-youth:
 	say "[quotation mark]All of this is new to me[quotation mark]. You gesture to the surrounding countryside -- at least, to where there would be surrounding countryside if you could see beyond the overbearing dark cliffs and creeping dark woods. [quotation mark]I grew up in The Big Apple. That’s where I’m from.[quotation mark] [paragraph break] [quotation mark]Whence?[quotation mark] [paragraph break] [quotation mark]The Big Apple. The City. You know, New York. Don’t you say ‘Big Apple’ here?[quotation mark] [paragraph break] [quotation mark]I do not beleeve it be in common Parlance, but I am of late  at far remouved from the Tymme of mei Youth and moor a poor Judge of such Thinges.[quotation mark] [paragraph break] [quotation mark]It’s probably a regional thing, like soda and pop.[quotation mark] [paragraph break]".
