@@ -114,17 +114,31 @@ benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when th
 benjack-Peter is a subject.  Understand "husband/Peter" as benjack-Peter when the player is in DAN8.
 benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the player is in DAN8.
 benjack-Cragne is a subject.  Understand "Cragne" as benjack-Cragne when the player is in DAN8.
+benjack-salem is a subject.  Understand "salem" as benjack-salem when the player is in DAN8.
+benjack-puritan is a subject.  Understand "puritan" as benjack-puritan when the player is in DAN8.
+benjack-pilgrim is a subject.  Understand "pilgrim/settler" as benjack-pilgrim when the player is in DAN8.
+benjack-colony is a subject.  Understand "colony/Massachusetts" as benjack-colony when the player is in DAN8.
+benjack-indian is a subject.  Understand "indian/native/tribe/indigenous" as benjack-indian when the player is in DAN8.
 
 benjack-Christabell is an unfamiliar subject.  Understand "Christabell" as benjack-Christabell when the player is in DAN8.
 benjack-Lin is an unfamiliar subject.  Understand "Lin" as benjack-Lin when the player is in DAN8.
 benjack-youth is an unfamiliar subject.  Understand "youth" as benjack-youth when the player is in DAN8.
 benjack-seight is an unfamiliar subject.  Understand "seight/sight/spectral/spektral" as benjack-seight when the player is in DAN8.
-benjack-spirits is an unfamiliar subject.  Understand "spirit/spirits/ghost/ghosts" as benjack-spirits when the player is in DAN8.
-benjack-lineage is an unfamiliar subject.  Understand "lineage" as benjack-lineage when the player is in DAN8.
-benjack-knotte is an unfamiliar subject.  Understand "knotte/reason/knotte of reason" as benjack-knotte when the player is in DAN8.
+benjack-knotte is an unfamiliar subject.  Understand "knotte/reason/knotte of reason/sanity/madness/sane/insane/crazy" as benjack-knotte when the player is in DAN8.
 benjack-death is an unfamiliar subject.  Understand "death/deathe" as benjack-death when the player is in DAN8.
 benjack-marks is an unfamiliar subject.  Understand "mark/marks" as benjack-marks when the player is in DAN8.
 benjack-ironworks is an unfamiliar subject.  Understand "ironworks/ironwork/forge" as benjack-ironworks when the player is in DAN8.
+
+benjack-lineage is an unfamiliar subject.  Understand "lineage" as benjack-lineage when the player is in DAN8.
+benjack-gift is an unfamiliar subject.  Understand "gift/gifte" as benjack-gift when the player is in DAN8.
+benjack-mattanit is an unfamiliar subject.  Understand "Mattanit" as benjack-mattanit when the player is in DAN8.
+benjack-newgrace is an unfamiliar subject.  Understand "new grace/grace" as benjack-newgrace when the player is in DAN8.
+benjack-covenant is an unfamiliar subject.  Understand "covenant/third covenant" as benjack-covenant when the player is in DAN8.
+benjack-ghost is an unfamiliar subject.  Understand "ghost/ghosts" as benjack-ghost when the player is in DAN8.
+benjack-spirit is an unfamiliar subject.  Understand "spirit/spirits" as benjack-spirit when the player is in DAN8.
+benjack-witch is an unfamiliar subject.  Understand "witch/witches" as benjack-witch when the player is in DAN8.
+benjack-malificium is an unfamiliar subject.  Understand "malificium" as benjack-malificium when the player is in DAN8.
+benjack-mark is an unfamiliar subject.  Understand "mark/marks/marked" as benjack-mark when the player is in DAN8.
 
 
 [Basic stage business for Christabell before player interacts with her.]
@@ -166,7 +180,16 @@ When benjack-R1-iceBroken begins:
 Before quizzing or informing DAN8-Christabell about a subject for the first time:
 	say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Estate, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to Christabell, and she rewards you with a smile and rapt attention.";
 		continue the action.
+		
+[ Doesn't actually work:  
+Before quizzing or informing DAN8-Christabell about a subject (called foo):
+	if foo is not known, say "Sorry, you don't know anything about that.";
+	otherwise continue the action.]
 
+[Works, but probably messes up the other 84 rooms in the game:
+The block asking rule response (A) is "Sorry, you don't know anything about that."]
+
+	
 After informing DAN8-Christabell about benjack-PC:
 	say "[quotation mark]Well,[quotation mark] you begin, [quotation mark]I am Naomi, and you probably already know my husband, [bold type]Peter[roman type] -- Peter [bold type]Cragne[roman type]..[quotation mark][paragraph break]Christabell shakes her head, [quotation mark]A Crâne? No, I have not the Pleasure of his Acquitenance, or at least not yet. But I am sure there are many Hereabouts unknown to me of Late.[quotation mark][paragraph break][quotation mark]Yes, he[apostrophe]s a little introverted, so I’m not surprised,[quotation mark] you continue. [quotation mark]In fact, while he[apostrophe]s met my entire family, I have not even met his parents -- yet. No pressure there, right?[quotation mark][paragraph break][quotation mark]Assuredly, so.[quotation mark][paragraph break][quotation mark]We took this opportunity to shoot up to [bold type]Vermont[roman type] and I figure we[apostrophe]ll do the family thing and while we[apostrophe]re at it a little touring around: Ben & Jerry[apostrophe]s, some covered bridges, get a bucket of maple syrup -- or however they sell it -- and check out some of the mountains. Two birds with one stone![quotation mark][paragraph break][quotation mark]Just two? Indeed, what you have laid out sounds a fruitful Application of your Labours.[quotation mark][paragraph break]".
 After quizzing DAN8-Christabell about benjack-PC:
@@ -212,7 +235,7 @@ After quizzing or informing DAN8-Christabell about benjack-seight:
 To say benjack-ghosts: [jumping the shark!]
 	now DAN8-Christabell is candid;  [triggers jumpTheShark scene]	
 	say "[paragraph break] You shake your head trying to put her words into some order that makes more sense. [quotation mark]Back the truck up, honey. [bold type]Spirits[roman type]? As in [bold type]ghosts[roman type]?[quotation mark] [paragraph break] [quotation mark]Not precisely, but good enowf for nowe -- and whilst you are styll of Mynd to listen, I should add that the Gifte is restricted a [bold type]lineage[roman type], which does fill me with Curiosity.[quotation mark] She looks appraisingly at your face, taking in the features. [paragraph break] [quotation mark]Wait. [bold type]Ghosts[roman type]?[quotation mark] you cannot get past the word. You brain doesn’t seem to be working very well just now. [paragraph break] [quotation mark]Indeed.[quotation mark ] She places a hand on your shoulder, but rather than the reassuring pressure and warmth of human touch, you feel a wave of coldness wash over you. [quotation mark]Tarry a moment,[quotation mark] Christabell instructs, [quotation mark]until your Mind ceases its fievre, lest it berne through the [bold type]knotte of reason[roman type] and unravell you.[quotation mark] [paragraph break] ";
-	now benjack-spirits is familiar;  now benjack-lineage is familiar;  now benjack-knotte is familiar.
+	now benjack-spirit is familiar;  now benjack-lineage is familiar;  now benjack-knotte is familiar; now benjack-ghost is familiar.
 
 After quizzing DAN8-Christabell about benjack-Vermont:
 	say "Christabell replies, [quotation mark]There be not much to say on my Part, [bold type]Vermont[roman type], being far from where I spent my [bold type]youth[roman type]. [if DAN8-Christabell is candid or DAN8-Christabell is foreboding]. In truth, I never set my Foote here all the Tymme I did live, but onely did come tardily some many years after my own [bold type]Deathe[roman type], and that not of my Volition[make benjack-death familiar][end if]. Thus, there is little I can add of local flavour beyond the explorations that you may set upon your own Selffe.[quotation mark]";
@@ -224,6 +247,14 @@ After quizzing DAN8-Christabell about benjack-Lin:
 After quizzing DAN8-Christabell about benjack-ironworks:
 	say "[quotation mark]It was a Marvell of its Day. I have not in mei minds Eye a simple Forge nor even a Company of Smithies, but an entyre Factorie that did smelt the Earth[apostrophe]s Ores into Pigs and thence crafte them to wrought Werkes putting to shame anything carried on the Sea to us. Even the Masters that did instructe upon a tymme my Father, they did say howe fynne were his Pieces and I think they did harbour summe not little Jealousy thereby.[quotation mark][paragraph break][quotation mark]It sounds remarkable,[quotation mark] you add.[paragraph break][quotation mark]It did make us Prowde, yes, but did become to an Undoing.[quotation mark] Christabell casts her eyes to the ground, and for a moment, she seems less substantial -- you have the impression of looking straight through her towards the dark cliffs that frame this hollow. [quotation mark]No more need be sayed upon this dower Subjekt.[quotation mark]".
 
+After quizzing DAN8-Christabell about benjack-gift:
+	say "[quotation mark]You mentioned ‘a Gift[apostrophe] -- that[apostrophe]s an odd turn of phrase. A gift from whom?[quotation mark][paragraph break][quotation mark]Yes, One of the many gifts of [bold type]Mattanit[roman type], one of the ways his [bold type]new Grace[roman type] doth manifest.[quotation mark]".
+
+After quizzing DAN8-Christabell about benjack-mattanit:
+	say "[quotation mark]Who,[quotation mark] you begin, [quotation mark]or what is Mattanit[quotation mark]?[paragraph break]Christabell passes her hand five times in front of her heart and replies, [quotation mark]HE is the last Face of God,and blest are we for coming to know him.[quotation mark][paragraph break]This seems to take some of her strength and she rests her hand on a rail, [quotation mark]I long to say moor, but ‘tis so very draining… I haf not such moor straingthe within mee.[quotation mark][paragraph break]".
+
+[After quizzing DAN8-Christabell about benjack-ironworks:
+	say "".]
 
 [TODO:  create some intelligent quips when you try to ask/tell about an unfamiliar subject.  The stock answers ("There is no reply' and "This provokes no reaction") are too generic and jarring. ]
 
