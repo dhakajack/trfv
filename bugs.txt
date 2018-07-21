@@ -1,0 +1,27 @@
+Bugs ben has found, but not yet ready to file in github bug tracker
+
+
+R1 Bugs
+
+* Why does "ask subject" reply "you can't see any such thing", but
+  "ask about subject" work fine?
+
+* >tell christabell about self
+(benjack-PC)  <-- why is this disambiguation being printed??
+blah blah
+
+
+* ask/tell woman about Christabell --> generic failure messages for
+  both
+
+* player may ask about scenery -- should they be topics for
+  Christabell's commentary?  e.g. "tracks", "cliffs", "weeds"
+
+
+* create better auto-replies to unknown subjects
+
+* probably don't need sub-scenes within R1.  Just use Christabell's
+  mood alone to decide what topics and/or responses to show.  Perhaps
+  save Inform 'scenes' feature only for our actual *big* scenes (R1,
+  N1, etc.)
+
