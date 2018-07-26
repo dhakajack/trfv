@@ -11,18 +11,18 @@ Include Cragne Suite by Ryan Veeder.
 
 Everything we generate needs to be prefixed by "benjack".
 
-Some similar items occuring in both items will additionally need the room name appended to distinguish them, e.g., "benjack-dan8-sky" to distinguish the sky backdrop for the hillside from that seen out the window of Carol's room.
+Some similar items occuring in both locations will additionally need the room name appended to distinguish them, e.g., "benjack-dan8-sky" to distinguish the sky backdrop for the hillside from that seen out the window of Carol's room.
 
-Grammar definitions need to be scoped for fixed items, to the room in which they occur
+Grammar definitions need to be scoped for fixed items, to the room in which they occur. 
 
 Grammar definitions of possible conversation topics need to be scoped to location as well to prevent weird responses to ask/tell in the rooms of other players.  Some might need to be scoped to two rooms when the quip is shared.
+
+If you want grammer to apply to both rooms, you can say "when the location is in the benjack-realm".
 ]
 
 Book 1 - Set Up
 
 Part 1 - The Player
-
-The player holds a flower. "A small decaying daffodil."
 
 The player has a number called benjack-times_bestowed. The benjack-times_bestowed of the player is 0. [number of cups of tea consumed]
 
@@ -93,15 +93,11 @@ Description of M2F3 is "DESCRIPTION OF ROOM."
 
 The commentary of M2F3 is "M2F3 Commentary".
 
-
-
-
 Chapter The benjack realm
 
 [Region is normally the way to do this, but the rooms are already part of DAN and M2F regions, 
 and a room isn't allowed to be in more than one region!]
 Definition:  a room is in the benjack-realm if it is DAN8 or it is M2F3.
-
 
 Part 3 - NPC Definitions
 
@@ -127,7 +123,7 @@ The description of benjack-Carol is "description TBD".
 
 Book 2 - Scenes
 
-Chapter Start and Stop Criteria
+Part 1 - Start and Stop Criteria
 
 [R0 -> N1 -> R1 -> N2 -> R2 -> N3]
 
@@ -161,6 +157,8 @@ benjack-N3 ends when benjack-Carol is not in M2F3.
 
 [might need some auxiliary scenes -- we'll figure that out as we code.]
 
+Part 2 - Scene R0 Meet Christabell
+
 [General strategy here is that we can scope different answers to subjects based on time and location.
 For time, we use Inform 'scenes' to scope.
 For location, we just look at the interlocutor.
@@ -175,8 +173,12 @@ After quizzing benjack-Christabell about benjack-carrots during benjack-R1:
 	say "I see that Carol has told you they're terrible, but she's wrong."
 ]
 
-
 [starting topics of discussion, all familiar by default]
+
+Chapter R0 Conversation
+
+Section R0 Subjects
+
 benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the player is in DAN8.
 benjack-Peter is a subject.  Understand "husband/Peter" as benjack-Peter when the player is in DAN8.
 benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the player is in DAN8.
@@ -201,42 +203,9 @@ benjack-covenant is a subject.  Understand "covenant/third covenant" as benjack-
 benjack-ghost is a subject.  Understand "ghost/ghosts" as benjack-ghost when the player is in DAN8.
 benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the player is in DAN8.
 benjack-malificium is a subject.  Understand "malificium" as benjack-malificium when the player is in DAN8.
-benjack-mark is a subject.  Understand "mark/marks/marked" as benjack-mark when the player is in DAN8.
+benjack-mark is a subject.  Understand "mark/marks/marked" as benjack-mark when the location is in the benjack-realm.
 
-
-[Basic stage business for Christabell before player interacts with her.]
-Every turn while benjack-Christabell is unaddressed:
-	if player is in DAN8, say "[one of]The woman looks into the distance and sighs.[paragraph break][or]The woman holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][paragraph break][or]The woman slowly ambles around the pile of tracks, staring at her feet.[paragraph break][or]The woman gazes in your direction, but appears to be almost looking through you.[paragraph break][or]The woman leans up against the tracks, lost in thought.[paragraph break][stopping]".
-
-[trigger for eagerness state:  any interaction at all!]
-Instead of doing something when the noun is benjack-Christabell or the second noun is benjack-Christabell and benjack-Christabell is unaddressed:  
-	now benjack-Christabell is eager;
-	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]".
-
-test eager with "x tracks / x sky / go east / i / x woman"
-
-[Stage business while awaiting Naomi's reply]
-Every turn while benjack-Christabell is eager:
-	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][paragraph break][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][paragraph break][or]The woman seems more desperate now.  [quotation mark]Milady, do you see me?[quotation mark][paragraph break][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[paragraph break][stopping]".
-
-[TODO:  wasn't able to use "for the first/second time" in conjunction with "during spiritWantsAttention".  This is my hack.]
-The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
-Before going when benjack-Christabell is eager:
-	if benjack-guiltLevel of the player is 0:
-		now benjack-guiltLevel of the player is 1;
-		instead say "Although this unexpected encounter is unnerving, the stranger[apostrophe]s eager smile puts you at ease. [italic type]Perhaps she is lost,[roman type] you think. [italic type]Maybe she is one of Peter[apostrophe]s cousins. In any event, it would be the height of impoliteness to just wander off.[roman type][paragraph break][quotation mark]So, you can then? See me, that is?[quotation mark]";
-	else:
-		say "[one of][italic type]Screw politeness,[roman type] you say to yourself. [italic type]This day has been weird enough. Whoever she is, if she’s just going to loom at you in the darkness, that’s her problem.[roman type][paragraph break]With renewed determination, you steam off towards the trail, glad to be quit of her.[paragraph break][quotation mark]Fine, then, waifsome Trompe[quotation mark] she mutters.[quotation mark]Stickly Clod. Upstuckt Wench! Be that like. I expect not Civility from a Crâne, their Rudeness does tell the Tale. Be off then, and the long Vigil I onely will endurre.[quotation mark][paragraph break][or]You wander off, ignoring the woman.[stopping]”;
-		continue the action.	
-
-Instead of saying no when benjack-Christabell is eager:
-	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the Gifte of specktral Seight, you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself. [quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark] She stares at the black face of the surrounding cliffs for inspiration.[or]She appears utterly puzzled at your reply.[stopping]".
-
-Instead of saying yes when benjack-Christabell is eager:
-	now benjack-Christabell is chatty; [trigger into main conversation]
-	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]".
-
-test icebreak with "up/x woman/yes/tell woman about self"
+Section R0 Quips
 
 Before quizzing or informing benjack-Christabell about a subject for the first time:
 	say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Estate, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to Christabell, and she rewards you with a smile and rapt attention.";
@@ -347,10 +316,45 @@ After quizzing benjack-Christabell about benjack-Carol:
 	now benjack-Christabell is candid;  [jumping the shark]
 	say "[quotation mark]Carol. Yes, what to say of Carol...[quotation mark] Cristabell stares into the sky, collecting her thoughts. [quotation mark]I do not Knowe. In different tymmes, she was many things to mee, and I to her, being related not onely of [bold type]Lineage[roman type] but of Minde. She lived not far from here in Manse of Family [bold type]Crâne[roman type].[quotation mark][paragraph break][quotation mark]The you knew her in your [bold type]youth[roman type]?[quotation mark][paragraph break][quotation mark]No, not mine but hers -- I had long before met my owne [bold type]Deathe[roman type]. In her youth, she would oft come here and suffer my Companionship; less so, as she did flower to Womanhood, though. I do sincerely avow committing every Efforts and Care to her goode and proper Upbringing and polite Formation, but she was remarkable headstrong and sharp of wit like broken glass. Even with my [bold type]mark[roman type] set upon her, she did suffer the Corruption and Poyson of that House. I urged her to remain away, but every Summer it did call her back to itself.[quotation mark][paragraph break][quotation mark]Is she still there? In the mansion?[quotation mark][paragraph break][quotation mark]I need so beleeve, though I have not seen her since her [bold type]Deathe[roman type].[quotation mark]".
 
+Chapter R0 Events
 
-Book 3 - New Actions
+[Basic stage business for Christabell before player interacts with her.]
+Every turn while benjack-Christabell is unaddressed:
+	if player is in DAN8, say "[one of]The woman looks into the distance and sighs.[paragraph break][or]The woman holds your gaze and descends the iron pile; entranced by her stare, you don’t notice how she manages to clamber down, but however she does it, she manages it silently.[paragraph break]She places her hands on her hips and stands uncomfortably close to you, looking you over.[paragraph break][italic type]This is awkward, you think.[roman type][paragraph break][or]The woman slowly ambles around the pile of tracks, staring at her feet.[paragraph break][or]The woman gazes in your direction, but appears to be almost looking through you.[paragraph break][or]The woman leans up against the tracks, lost in thought.[paragraph break][stopping]".
 
-Book 4 - Replacement Default Actions
+[trigger for eagerness state:  any interaction at all!]
+Instead of doing something when the noun is benjack-Christabell or the second noun is benjack-Christabell and benjack-Christabell is unaddressed:  
+	now benjack-Christabell is eager;
+	say "[quotation mark]Oh, so you can see me, then, can you?[quotation mark] she asks, taking a step back.[paragraph break][italic type]{Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL about different [bold type]subjects[roman type]}[paragraph break]".
+
+test eager with "x tracks / x sky / go east / i / x woman"
+
+[Stage business while awaiting Naomi's reply]
+Every turn while benjack-Christabell is eager:
+	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][paragraph break][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][paragraph break][or]The woman seems more desperate now.  [quotation mark]Milady, do you see me?[quotation mark][paragraph break][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[paragraph break][stopping]".
+
+[TODO:  wasn't able to use "for the first/second time" in conjunction with "during spiritWantsAttention".  This is my hack.]
+The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
+Before going when benjack-Christabell is eager:
+	if benjack-guiltLevel of the player is 0:
+		now benjack-guiltLevel of the player is 1;
+		instead say "Although this unexpected encounter is unnerving, the stranger[apostrophe]s eager smile puts you at ease. [italic type]Perhaps she is lost,[roman type] you think. [italic type]Maybe she is one of Peter[apostrophe]s cousins. In any event, it would be the height of impoliteness to just wander off.[roman type][paragraph break][quotation mark]So, you can then? See me, that is?[quotation mark]";
+	else:
+		say "[one of][italic type]Screw politeness,[roman type] you say to yourself. [italic type]This day has been weird enough. Whoever she is, if she’s just going to loom at you in the darkness, that’s her problem.[roman type][paragraph break]With renewed determination, you steam off towards the trail, glad to be quit of her.[paragraph break][quotation mark]Fine, then, waifsome Trompe[quotation mark] she mutters.[quotation mark]Stickly Clod. Upstuckt Wench! Be that like. I expect not Civility from a Crâne, their Rudeness does tell the Tale. Be off then, and the long Vigil I onely will endurre.[quotation mark][paragraph break][or]You wander off, ignoring the woman.[stopping]”;
+		continue the action.	
+
+Instead of saying no when benjack-Christabell is eager:
+	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the Gifte of specktral Seight, you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself. [quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark] She stares at the black face of the surrounding cliffs for inspiration.[or]She appears utterly puzzled at your reply.[stopping]".
+
+Instead of saying yes when benjack-Christabell is eager:
+	now benjack-Christabell is chatty; [trigger into main conversation]
+	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the oppourtunity to speake with One graced with the [bold type]seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark] She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark] She looks at you with anticipation.[paragraph break]".
+
+test icebreak with "up/x woman/yes/tell woman about self"
+
+Book 4 - New Actions
+
+Book 5 - Replacement Default Actions
 
 [TODO]
 Instead of examining the player when the location is DAN8 (this is the DAN8-PC description rule):
@@ -359,11 +363,13 @@ Instead of examining the player when the location is DAN8 (this is the DAN8-PC d
 Instead of examining the player when the location is M2F3 (this is the M2F3-PC description rule):
 	say "How you look in the nursery, for example."
 	
-Book 5 - Customized Library Messages
-
 Book 6 - TMWNMTK - Not For Release
 
-Part 1 - Temporary Rooms And Paths
+Part 1 - Additional Set Up 
+
+The player holds a flower. "A small decaying daffodil."
+
+Part 2 - Temporary Rooms And Paths
 
 MGR1 is south of M2F2. The printed name of MGR1 is "Temporary MGR1". The description of MGR1 is "For testing purposes, this stand-in for MGR1 has been re-mapped to allow the player to walk between the hillside (south) and hall outside the nursery (north)."
 
@@ -371,13 +377,13 @@ The player is in MGR1.
 
 The printed name of M2F2 is "Hall Outside the Nursery". The description of M2F2 is "This is the hallway outside the nursery. No assumptions are made here except that there is an exit north to the nursery."
 
-Part 2 - Items that will come from other authors
+Part 3 - Items that will come from other authors
 
 There is a thing called jpk-photo. The description of the jpk-photo is "An old photo with writing on one side." The printed name of the jpk-photo is "faded photo". Understand "photo" or "faded" or "old" as jpk-photo. [just to instantiate it off-stage for testing purposes]
 
 The mtw-teapot is an open opaque container in MGR1. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
 
-Part 3 - Font Testing
+Part 4 - Font Testing
 
 Font testing is an action out of world. Understand "fonts" as font testing.
 
