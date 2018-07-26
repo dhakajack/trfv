@@ -115,9 +115,7 @@ After going north from M2F2:
 	if DAN8 is unvisited:
 		move benjack-baby-door to M2F3;
 		say "Just down a side corridor, you encounter a door that [benjack-baby-door-desc].";
-		now the description of the M2F3 is "A door stands between you and the nursery. There is some writing on it.";
-	otherwise:
-		say "TODO: Move furnishings into room".
+		now the description of the M2F3 is "A door stands between you and the nursery. There is some writing on it."
 		
 Before doing something other than examining to the benjack-baby-door:
 	say "There is nothing at all arbitrary about the justice meted out for waking a sleeping baby in Crange Mansion.[paragraph break]";
@@ -402,7 +400,6 @@ After quizzing benjack-Christabell about benjack-death:
 	say "[one of]Christabell shrugs, [quotation mark][bold type]Deathe[roman type] is much exaggerated Botheration. For most, an end; for [bold type]Spirits[roman type], a temporary annoyance. I would not dwell much upon it, for generally it is unavoidable.[quotation mark][or][quotation mark]Why so morose?[quotation mark] asks Christabell, promptly changes the subject.[no line break][or][quotation mark]Enough about me,[quotation mark] says Christabell, [quotation mark]do tell me of [bold type]yourself[roman type].[quotation mark][stopping][paragraph break]".
 
 
-
 Chapter R0 Events
 
 [Basic stage business for Christabell before player interacts with her.]
@@ -462,6 +459,67 @@ Chapter R0 Tests
 test icebreak with "up/x woman/yes/tell woman about self"
 
 test R0-full with "s / talk to woman / say hello / yes / tell christabell about me / g / t peter / g / t vermont / g / t cragne / g / a christabell / g / t youth / g / a sight / g / a youth / g / a lin / g / a vermont / g / a naomi / g / a peter / g / a cragne / g / a rayle / g / a mound / x mound / a christabell / look / a cliff / climb cliff / g / x clearing / g/ a clearing / g/ a trail / g / x weeds / a lin / a forge / g / a gift / g / a mattanit / g / a grace / g / a third / g / a knotte / g / a ghost / g / a spirit / a lineage / a witch / g / a malificium / g / a salem / g / a puritan / g / a pilgrim / g / a colony / g / a indian / g / a mark / g / a carol / x carol / a carol / n / s / n / s / n / n / s / s / s / sw / ne / se / nw".
+
+Part 3 - Scene N1 Tea Party
+
+Chapter 1 - N1 Conversation
+
+Section 1 - N1 Subject
+
+Section 2 - N1 Quips
+
+Chapter 2 - N1 Event
+
+Chapter 3 - N1 Tests
+
+Part 4 - Scene R1 Naomi is Marked and Learns Some Spells
+
+Chapter 1 - R1 Conversation
+
+Section 1 - R1 Subject
+
+Section 2 - R1 Quips
+
+Chapter 2 - R1 Event
+
+Chapter 3 - R1 Tests
+
+Part 5 - Scene N2 Teenage Carol Marks Naomi's Baby
+
+Chapter 1 - N2 Conversation
+
+Section 1 - N2 Subject
+
+Section 2 - N2 Quips
+
+Chapter 2 - N2 Event
+
+Chapter 3 - N2 Tests
+
+Part 6 - Scene R2 Plotting Carol's Disruption
+
+Chapter 1 - R2 Conversation
+
+Section 1 - R2 Subject
+
+Section 2 - R2 Quips
+
+Chapter 2 - R2 Event
+
+Chapter 3 - R2 Tests
+
+Part 7 - Scene N3 Boss Battle
+
+Chapter 1 - N3 Conversation
+
+Section 1 - N3 Subject
+
+Section 2 - N3 Quips
+
+Chapter 2 - N3 Event
+
+Chapter 3 - N3 Tests
+
 
 Book 4 - New Actions
 
