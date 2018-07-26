@@ -22,7 +22,11 @@ If you want grammer to apply to both rooms, you can say "when the location is in
 
 Book 1 - Set Up
 
-Part 1 - The Player
+Part 1 - New Kinds
+
+
+
+Part 2 - The Player
 
 The player has a number called benjack-times_bestowed. The benjack-times_bestowed of the player is 0. [number of cups of tea consumed]
 
@@ -34,7 +38,7 @@ Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has c
 
 Yourself can be benjack-disruption_informed. Yourself is not benjack-disruption_informed. [has christabell told naomi about opening the window?]
 
-Part 2 - Locations 
+Part 3 - Locations 
 
 Chapter DAN8 Hillside Path
 
@@ -76,7 +80,7 @@ Understand "clouds" as the benjack-dan8-sky when the player is in DAN8.
 The description of the benjack-dan8-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
 
 The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of tracks".
-Understand "pile" or "lump" or "track" or "tracks" or "iron" or "sticks" as the benjack-mound when the player is in DAN8.
+Understand "pile" or "lump" or "track" or "tracks" or "iron" or "sticks" or "rail" or "rayle" or "railroad" or "rail" or "rails" or "piles" or "lumps" or "irons" or "ironne" as the benjack-mound when the location is in the benjack-realm.
 The description of the benjack-mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky[or]A tall pile of rusted railway tracks[stopping].".  
 The benjack-mound is a supporter.
 Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear."
@@ -99,11 +103,11 @@ Chapter The benjack realm
 and a room isn't allowed to be in more than one region!]
 Definition:  a room is in the benjack-realm if it is DAN8 or it is M2F3.
 
-Part 3 - NPC Definitions
+Part 4 - NPC Definitions
 
 Chapter Christabell
 
-benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager]the bonnet-clad woman[else]Christabell". Understand "woman" or "Christabell" as benjack-Christabell. 
+benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager]the bonnet-clad woman[else]Christabell". Understand "woman" or "Christabell" as benjack-Christabell when the location is in the benjack-realm.
 
 The description of benjack-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
@@ -115,7 +119,7 @@ benjack-Christabell can be unaddressed or eager or chatty or candid.  benjack-Ch
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" as benjack-Carol.
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as benjack-Carol when the location is in the benjack-realm.
 
 The description of benjack-Carol is "description TBD".
 
@@ -179,31 +183,32 @@ Chapter R0 Conversation
 
 Section R0 Subjects
 
-benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the player is in DAN8.
-benjack-Peter is a subject.  Understand "husband/Peter" as benjack-Peter when the player is in DAN8.
-benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the player is in DAN8.
-benjack-Cragne is a subject.  Understand "Cragne" as benjack-Cragne when the player is in DAN8.
 benjack-salem is a subject.  Understand "salem" as benjack-salem when the player is in DAN8.
 benjack-puritan is a subject.  Understand "puritan" as benjack-puritan when the player is in DAN8.
 benjack-pilgrim is a subject.  Understand "pilgrim/settler" as benjack-pilgrim when the player is in DAN8.
 benjack-colony is a subject.  Understand "colony/Massachusetts" as benjack-colony when the player is in DAN8.
 benjack-indian is a subject.  Understand "indian/native/tribe/indigenous" as benjack-indian when the player is in DAN8.
-benjack-witch is a subject.  Understand "witch/witches" as benjack-witch when the player is in DAN8.
 benjack-Lin is a subject.  Understand "Lin" as benjack-Lin when the player is in DAN8.
 benjack-youth is a subject.  Understand "youth" as benjack-youth when the player is in DAN8.
-benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as benjack-seight when the player is in DAN8.
 benjack-knotte is a subject.  Understand "knotte/reason/knotte of reason/sanity/madness/sane/insane/crazy" as benjack-knotte when the player is in DAN8.
-benjack-death is a subject.  Understand "death/deathe" as benjack-death when the player is in DAN8.
 benjack-ironworks is a subject.  Understand "ironworks/ironwork/forge/forges" as benjack-ironworks when the player is in DAN8.
 benjack-lineage is a subject.  Understand "lineage" as benjack-lineage when the player is in DAN8.
 benjack-gift is a subject.  Understand "gift/gifte" as benjack-gift when the player is in DAN8.
-benjack-mattanit is a subject.  Understand "Mattanit" as benjack-mattanit when the player is in DAN8.
 benjack-newgrace is a subject.  Understand "new grace/grace" as benjack-newgrace when the player is in DAN8.
-benjack-covenant is a subject.  Understand "covenant/third covenant" as benjack-covenant when the player is in DAN8.
-benjack-ghost is a subject.  Understand "ghost/ghosts" as benjack-ghost when the player is in DAN8.
-benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the player is in DAN8.
 benjack-malificium is a subject.  Understand "malificium" as benjack-malificium when the player is in DAN8.
+
+benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the location is in the benjack-realm.
+benjack-Cragne is a subject.  Understand "Cragne" as benjack-Cragne when the location is in the benjack-realm.
+benjack-death is a subject.  Understand "death/deathe" as benjack-death when the location is in the benjack-realm.
+benjack-ghost is a subject.  Understand "ghost/ghosts" as benjack-ghost when the location is in the benjack-realm.
 benjack-mark is a subject.  Understand "mark/marks/marked" as benjack-mark when the location is in the benjack-realm.
+benjack-mattanit is a subject.  Understand "Mattanit" as benjack-mattanit when the location is in the benjack-realm.
+benjack-Peter is a subject.  Understand "husband/Peter" as benjack-Peter when the location is in the benjack-realm.
+benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as benjack-seight when the location is in the benjack-realm.
+benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the location is in the benjack-realm.
+benjack-covenant is a subject.  Understand "covenant/third covenant" as benjack-covenant when the location is in the benjack-realm.
+benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the location is in the benjack-realm.
+benjack-witch is a subject.  Understand "witch/witches" as benjack-witch when the location is in the benjack-realm.
 
 Section R0 Quips
 
