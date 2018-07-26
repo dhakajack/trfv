@@ -7,22 +7,34 @@ The story creation year is 2018.
 
 Include Cragne Suite by Ryan Veeder.
 
-[Naming Convention Proposal
+[Naming & Scoping Convention Proposal
 
 Everything we generate needs to be prefixed by "benjack".
 
-Some similar items occuring in both items will additionally need the room name appended to distinguish them, e.g., "benjack-dan8-sky" to distinguish the sky backdrop for the hillside.
+Some similar items occuring in both items will additionally need the room name appended to distinguish them, e.g., "benjack-dan8-sky" to distinguish the sky backdrop for the hillside from that seen out the window of Carol's room.
 
 Grammar definitions need to be scoped for fixed items, to the room in which they occur
 
-Grammar definitions of conversation topics don't need to be scoped in general since we will scope the action to a scene, e.g., after quizzing carol about the carrots when benjack-R0 is happening.
+Grammar definitions of possible conversation topics need to be scoped to location as well to prevent weird responses to ask/tell in the rooms of other players.  Some might need to be scoped to two rooms when the quip is shared.
 ]
 
 Book 1 - Set Up
 
+Part 1 - The Player
+
 The player holds a flower. "A small decaying daffodil."
 
-Part 1 - Locations 
+The player has a number called benjack-times_bestowed. The benjack-times_bestowed of the player is 0. [number of cups of tea consumed]
+
+Yourself can be benjack-spell_enabled. Yourself is not benjack-spell_enabled. [has player learned to cast xizzi, ploughver and kwisatz haderach]
+
+Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has carol marked Naomi's baby]
+
+Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has carol marked Naomi's baby]
+
+Yourself can be benjack-disruption_informed. Yourself is not benjack-disruption_informed. [has christabell told naomi about opening the window?]
+
+Part 2 - Locations 
 
 Chapter DAN8 Hillside Path
 
@@ -82,6 +94,8 @@ Description of M2F3 is "DESCRIPTION OF ROOM."
 The commentary of M2F3 is "M2F3 Commentary".
 
 
+
+
 Chapter The benjack realm
 
 [Region is normally the way to do this, but the rooms are already part of DAN and M2F regions, 
@@ -89,7 +103,7 @@ and a room isn't allowed to be in more than one region!]
 Definition:  a room is in the benjack-realm if it is DAN8 or it is M2F3.
 
 
-Part 2 - NPC Definitions
+Part 3 - NPC Definitions
 
 Chapter Christabell
 
@@ -113,14 +127,39 @@ The description of benjack-Carol is "description TBD".
 
 Book 2 - Scenes
 
-Chapter Scene R0
+Chapter Start and Stop Criteria
 
 [R0 -> N1 -> R1 -> N2 -> R2 -> N3]
-[We advance to next scene when player enters a room for the first time right after being in the 'other' room]
 
-benjack-R0 is a scene. [Christabell is unaddressed]
-benjack-R0 begins when the player is in DAN8 for the first time. 
-benjack-R0 ends when benjack-N1 begins. [presumably entering the Nursery for the first time]
+[Scenes are not recurring, so we do not need to specify "for the first time". Once a scene ends, it won't trigger again even if its begin conditions are true.
+
+We shouldn't chain scenes together, like "N2 begins when R1 ends" since other people's game scenes may come in between our scenes and we don't want to expose any scene-scoped items during that interval.]
+
+benjack-R0 is a scene. ["Meet Christabell"; Christabell is unaddressed]
+benjack-R0 begins when the player is in DAN8 [hillside]. 
+benjack-R0 ends when the player is in M2F3. [nursery]
+
+benjack-N1 is a scene. ["Tea Party"]
+benjack-N1 begins when the player is in M2F3.
+benjack-N1 ends when the benjack-times_bestowed of yourself is greater than 0 and the player is in M2F2.[hallway outside the nursery; safe because Naomi hasn't learned ploughver yet]
+
+benjack-R1 is a scene. ["Naomi is Marked and Learns Some Spells"]
+benjack-R1 begins when benjack-N1 has happened and the player is in DAN8.
+benjack-R1 ends when yourself is benjack-spell_enabled and the player is not in DAN8.
+
+benjack-N2 is a scene. ["Teenage Carol Marks Naomi’s Baby"]
+benjack-N2 begins when benjack-R1 has happened and the player is in M2F3.
+benjack-N2 ends when yourself is benjack-baby_marked and the player is not in M2F3.
+
+benjack-R2 is a scene. ["Plotting Carol’s Disruption"]
+benjack-R2 begins when benjack-N2 has happened and the player is in DAN8.
+benjack-R2 ends when yourself is benjack-disruption_informed and the player is in M2F3.
+
+benjack-N3 is a scene. ["Boss Battle"]
+benjack-N3 begins when benjack-R2 has happened and the player is in M2F3.
+benjack-N3 ends when benjack-Carol is not in M2F3.
+
+[might need some auxiliary scenes -- we'll figure that out as we code.]
 
 [General strategy here is that we can scope different answers to subjects based on time and location.
 For time, we use Inform 'scenes' to scope.
@@ -309,10 +348,6 @@ After quizzing benjack-Christabell about benjack-Carol:
 	say "[quotation mark]Carol. Yes, what to say of Carol...[quotation mark] Cristabell stares into the sky, collecting her thoughts. [quotation mark]I do not Knowe. In different tymmes, she was many things to mee, and I to her, being related not onely of [bold type]Lineage[roman type] but of Minde. She lived not far from here in Manse of Family [bold type]Crâne[roman type].[quotation mark][paragraph break][quotation mark]The you knew her in your [bold type]youth[roman type]?[quotation mark][paragraph break][quotation mark]No, not mine but hers -- I had long before met my owne [bold type]Deathe[roman type]. In her youth, she would oft come here and suffer my Companionship; less so, as she did flower to Womanhood, though. I do sincerely avow committing every Efforts and Care to her goode and proper Upbringing and polite Formation, but she was remarkable headstrong and sharp of wit like broken glass. Even with my [bold type]mark[roman type] set upon her, she did suffer the Corruption and Poyson of that House. I urged her to remain away, but every Summer it did call her back to itself.[quotation mark][paragraph break][quotation mark]Is she still there? In the mansion?[quotation mark][paragraph break][quotation mark]I need so beleeve, though I have not seen her since her [bold type]Deathe[roman type].[quotation mark]".
 
 
-Chapter Scene N1
-
-benjack-N1 is a scene.  benjack-N1 begins when the player is in M2F3 for the first time.
-
 Book 3 - New Actions
 
 Book 4 - Replacement Default Actions
@@ -328,9 +363,9 @@ Book 5 - Customized Library Messages
 
 Book 6 - TMWNMTK - Not For Release
 
-Part 1 - Test Chamber
+Part 1 - Temporary Rooms And Paths
 
-MGR1 is south of M2F2. The printed name of MGR1 is "Temporary MGR1". The description of MGR1 is "For testing purposes, this stand-in for MGR1 has been remapped to allow the player to walk between the hillside (south) and hall outside the nursery (north)."
+MGR1 is south of M2F2. The printed name of MGR1 is "Temporary MGR1". The description of MGR1 is "For testing purposes, this stand-in for MGR1 has been re-mapped to allow the player to walk between the hillside (south) and hall outside the nursery (north)."
 
 The player is in MGR1.
 
@@ -348,3 +383,6 @@ Font testing is an action out of world. Understand "fonts" as font testing.
 
 report font testing:
 	say "This be a teﬅ of ſuch fontſ as one might make the uſe. Be they the afore 'ſ' or more ﬅyliʃh, but leʃʃ common 'ʃ'. Similarly, the so-called Massachusetts ligature of two o, as in sꝏn and mꝏn."
+	
+
+
