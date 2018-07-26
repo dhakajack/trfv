@@ -17,7 +17,8 @@ Chapter DAN8 Hillside Path
 
 DAN is a region.
 
-DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1 and northwest of PLA1.
+DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1.
+PLA0 is southeast from DAN8.
 
 Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
@@ -336,6 +337,8 @@ Part 2 - Items that will come from other authors
 There is a thing called jpk-photo. The description of the jpk-photo is "An old photo with writing on one side." The printed name of the jpk-photo is "faded photo". Understand "photo" or "faded" or "old" as jpk-photo. [just to instantiate it off-stage for testing purposes]
 
 The mtw-teapot is an open opaque container in the Extradimensional Test Chamber. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
+
+
 
 Part 3 - Font Testing
 
