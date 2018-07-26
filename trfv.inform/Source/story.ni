@@ -305,8 +305,6 @@ Chapter Scene N1
 
 benjack-N1 is a scene.  benjack-N1 begins when the player is in M2F3 for the first time.
 
-
-
 Book 3 - New Actions
 
 Book 4 - Replacement Default Actions
@@ -324,21 +322,17 @@ Book 6 - TMWNMTK - Not For Release
 
 Part 1 - Test Chamber
 
-The Extradimensional Test Chamber is a room. 
-The Extradimensional Test Chamber is down from DAN8.
-The description of the Extradimensional Test Chamber is "The EDT facility was put in place temporarily by Dimension Dwarf contractors to allow testing of traveling in and out of the two rooms under development.[paragraph break]The nursery is just down through the hatch, while the hillside looms somewhere overhead (in a hyperdimensional sense)."
+MGR1 is south of M2F2. The printed name of MGR1 is "Temporary MGR1". The description of MGR1 is "For testing purposes, this stand-in for MGR1 has been remapped to allow the player to walk between the hillside (south) and hall outside the nursery (north)."
 
-The player is in the Extradimensional Test Chamber.
+The player is in MGR1.
 
-The molybdenum-reinforced escape hatch is a door. The molybdenum-reinforced escape hatch is below the Extradimensional Test Chamber and above M2F3.
+The printed name of M2F2 is "Hall Outside the Nursery". The description of M2F2 is "This is the hallway outside the nursery. No assumptions are made here except that there is an exit north to the nursery."
 
 Part 2 - Items that will come from other authors
 
 There is a thing called jpk-photo. The description of the jpk-photo is "An old photo with writing on one side." The printed name of the jpk-photo is "faded photo". Understand "photo" or "faded" or "old" as jpk-photo. [just to instantiate it off-stage for testing purposes]
 
-The mtw-teapot is an open opaque container in the Extradimensional Test Chamber. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
-
-
+The mtw-teapot is an open opaque container in MGR1. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
 
 Part 3 - Font Testing
 
