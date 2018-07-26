@@ -24,7 +24,7 @@ Book 1 - Set Up
 
 Part 1 - New Kinds
 
-
+A benjack-shadow is a kind of thing. 
 
 Part 2 - The Player
 
@@ -115,7 +115,9 @@ After going north from M2F2:
 	if DAN8 is unvisited:
 		move benjack-baby-door to M2F3;
 		say "Just down a side corridor, you encounter a door that [benjack-baby-door-desc].";
-		now the description of the M2F3 is "A door stands between you and the nursery. There is some writing on it."
+		now the description of the M2F3 is "A door stands between you and the nursery. There is some writing on it.";
+	otherwise:
+		continue the action.
 		
 Before doing something other than examining to the benjack-baby-door:
 	say "There is nothing at all arbitrary about the justice meted out for waking a sleeping baby in Crange Mansion.[paragraph break]";
@@ -123,6 +125,33 @@ Before doing something other than examining to the benjack-baby-door:
 	now the description of M2F3 is "You find yourself in a dungeon, strapped by to a toffee table by candy cane manacles and slathered with delicious honey. A stalactite drips dark chocolate over your belly, luscious rivulets pooling in the small of your back.[paragraph break]The ants pour in, their mandibles clacking.[no line break]";
 	try silently looking;
 	end the story saying "EATEN".
+	
+Section 1 - Initial Furnishings
+
+[benjack-shadows are ghost objects that you mostly can't interact with -- we'll tweak those rules later. Some of this stuff will be scenery, some not. We'll have to play with the room / object description paragraph rules]
+
+The benjack-comforter is a benjack-shadow in M2F3.  The printed name of  benjack-comforter is "comforter".
+Understand "comforter" or "blanket" or "duvet" or "cover" as the benjack-comforter when the player is in M2F3.
+The description of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
+
+The benjack-dolls are benjack-shadows in M2F3. The benjack-dolls are scenery. The The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
+Understand "doll" or "dolls" or "animal" or "animals" or "stuffed" as the benjack-dolls   when the player is in M2F3.
+The description of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
+
+The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjack-elephant is "toy elephant".
+Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
+The description of the benjack-elephant  is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had Mister Snortles as long as I can remember -- daddy got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
+
+[stuff template
+
+The benjack- is a benjack-shadow in M2F3. The printed name of the benjack- is "".
+Understand "" as the benjack-   when the player is in M2F3.
+The description of the benjack-  is "".
+
+Happy Coding!
+]
+
+
 		
 Chapter The benjack realm
 
@@ -148,8 +177,6 @@ Chapter Carol
 benjack-Carol is a female person.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol.
 
 The description of benjack-Carol is "description TBD".
-
-
 
 Book 2 - Scenes
 
