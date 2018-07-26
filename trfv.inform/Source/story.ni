@@ -104,6 +104,28 @@ Description of M2F3 is "DESCRIPTION OF ROOM."
 
 The commentary of M2F3 is "M2F3 Commentary".
 
+benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door.
+
+The description of the benjack-baby-door is "The door [benjack-baby-door-desc]."
+
+To say benjack-baby-door-desc:
+	say "says [quotation mark]Nursery[quotation mark] and below that, [quotation mark]Baby Sleeping -- DO NOT WAKE![quotation mark] and finally, at the bottom in smaller letters, [quotation mark]Come back later when baby awake. Signed, Victor Cragne[quotation mark]"
+
+After going north from M2F2:
+	if DAN8 is unvisited:
+		move benjack-baby-door to M2F3;
+		say "Just down a side corridor, you encounter a door that [benjack-baby-door-desc].";
+		now the description of the M2F3 is "A door stands between you and the nursery. There is some writing on it.";
+	otherwise:
+		say "TODO: Move furnishings into room".
+		
+Before doing something other than examining to the benjack-baby-door:
+	say "There is nothing at all arbitrary about the justice meted out for waking a sleeping baby in Crange Mansion.[paragraph break]";
+	now the printed name of M2F3 is "Dungeon";
+	now the description of M2F3 is "You find yourself in a dungeon, strapped by to a toffee table by candy cane manacles and slathered with delicious honey. A stalactite drips dark chocolate over your belly, luscious rivulets pooling in the small of your back.[paragraph break]The ants pour in, their mandibles clacking.[no line break]";
+	try silently looking;
+	end the story saying "EATEN".
+		
 Chapter The benjack realm
 
 [Region is normally the way to do this, but the rooms are already part of DAN and M2F regions, 
@@ -125,7 +147,7 @@ benjack-Christabell can be unaddressed or eager or chatty or candid.  benjack-Ch
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol.
+benjack-Carol is a female person.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol.
 
 The description of benjack-Carol is "description TBD".
 
