@@ -50,6 +50,8 @@ DAN is a region.
 DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1.
 PLA0 is southeast from DAN8.
 
+Definition: A room is juxtaDAN8 if it is DAN3 or it is MGR1 or it is PLA0.
+
 Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
 The commentary of DAN8 is "DAN8 Commentary".
@@ -135,13 +137,15 @@ Part 1 - Start and Stop Criteria
 
 [R0 -> N1 -> R1 -> N2 -> R2 -> N3]
 
-[Scenes are not recurring, so we do not need to specify "for the first time". Once a scene ends, it won't trigger again even if its begin conditions are true.
+[Only R0 is a recurring scene, so generally we do not need to specify "for the first time". Once a scene ends, it won't trigger again even if its begin conditions are true.
 
-We shouldn't chain scenes together, like "N2 begins when R1 ends" since other people's game scenes may come in between our scenes and we don't want to expose any scene-scoped items during that interval.]
+We shouldn't chain scenes together, like "N2 begins when R1 ends" since other people's game scenes may come in between our scenes and we don't want to expose any scene-scoped items during that interval.
 
-benjack-R0 is a scene. ["Meet Christabell"; Christabell is unaddressed]
-benjack-R0 begins when the player is in DAN8 [hillside]. 
-benjack-R0 ends when the player is in M2F3. [nursery]
+Our scenes should also not run when the player is outside our rooms to avoid loading down the game and to help prevent unforeseen interactions]
+
+benjack-R0 is a recurring scene. ["Meet Christabell"; Christabell is unaddressed]
+benjack-R0 begins when the player is in DAN8 and M2F3 is unvisited.
+benjack-R0 ends when the player is not in DAN8. [nursery]
 
 benjack-N1 is a scene. ["Tea Party"]
 benjack-N1 begins when the player is in M2F3.
@@ -415,10 +419,18 @@ Before going a direction (called the way) when benjack-R0 is happening and benja
 		continue the action;
 	otherwise:
 		say "[one of]Cristabell calls after you, [quotation mark]Naomi, I do thank you for diverting summe Houres with mee in Discourse sweet. I do entreat you return upon your Convenience that we may again share some Werdes.[quotation mark][or][quotation mark]Do endeavour to mind yourself amongst the Crânes, Naomi.[quotation mark][paragraph break][quotation mark]I will. I always do.[quotation mark] You shout back, as you walk away.[no line break][or][quotation mark]I shall not keep you further from your most industrious Perambulations,[quotation mark] Christabell jests.[paragraph break][quotation mark]See you later,[quotation mark] you call back to her.[paragraph break][quotation mark]I do most fervently so desire![quotation mark][or][quotation mark]Go with the my Blessing, Naomi![quotation mark] Christabell says cheerfully as you depart.[paragraph break][quotation mark]May the Force be with you![quotation mark][paragraph break][quotation mark]Of what Forces do you speake, Friend?[quotation mark][paragraph break][quotation mark]Nevermind, it[apostrophe]s just how we say goodbye these days.[quotation mark][paragraph break][quotation mark]Truly the Werlde of the Future be a Marvel.[quotation mark][or]Christabell bids you well, as you depart.[no line break][stopping][paragraph break]".
+		
+Before going a direction when the location is juxtaDAN8 and M2F3 is unvisited and benjack-Christabell has been chatty:
+	if the room the noun from the location is DAN8:
+		say "[one of][quotation mark]Ah, I do bid you again Greeting, Naomi. You do seem much busy to-Daye in your Wanderings.[quotation mark][or][quotation mark]I am glad your Pilgrimage does take you mie Waie yet once moor, dear Naomi![quotation mark] says Christabell as she prances up beside you along the path.[no line break][or][quotation mark]It seems you are drawn like a bee to my honey, dear Naomi.[quotation mark][paragraph break][quotation mark]Um. Maybe a little awkwardly phrased, but it[apostrophe]s nice to see you too, Christabell.[quotation mark][or]Christabell smiles warmly with your return to her hillside.[no line break][stopping][paragraph break]";
+	otherwise:
+		continue the action.
 
 Chapter R0 Tests
 
 test icebreak with "up/x woman/yes/tell woman about self"
+
+test R0-full with "s / talk to woman / say hello / yes / tell christabell about me / g / t peter / g / t vermont / g / t cragne / g / a christabell / g / t youth / g / a sight / g / a youth / g / a lin / g / a vermont / g / a naomi / g / a peter / g / a cragne / g / a rayle / g / a mound / x mound / a christabell / look / a cliff / climb cliff / g / x clearing / g/ a clearing / g/ a trail / g / x weeds / a lin / a forge / g / a gift / g / a mattanit / g / a grace / g / a third / g / a knotte / g / a ghost / g / a spirit / a lineage / a witch / g / a malificium / g / a salem / g / a puritan / g / a pilgrim / g / a colony / g / a indian / g / a mark / g / a carol / x carol / a carol / n / s / n / s / n / n / s / s / s / sw / ne / se / nw".
 
 Book 4 - New Actions
 
