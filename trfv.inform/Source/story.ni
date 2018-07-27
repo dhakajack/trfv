@@ -358,7 +358,7 @@ After quizzing benjack-Christabell about benjack-Cragne for the first time:
 After quizzing benjack-Christabell about benjack-Cragne:
 	say "Despite their proximity, Christabell doesn’t seem to know much about the Cragnes, aside from a general impression that they are creepy[one of]-- which you kind of share, Peter excepted[or][stopping]."
 	
-After quizzing benjack-Christabell about benjack-mound:
+After quizzing benjack-Christabell about benjack-mound when benjack-R0 is happening:
 	say "[quotation mark][one of]For as long as this great [bold type]Pyle[roman type] of [bold type]Ironne[roman type] Metall has been here, so have I.[quotation mark][or]It has been here a long, long time,[quotation mark] says Christabell.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-cliffs:
@@ -462,7 +462,7 @@ After quizzing benjack-Christabell about benjack-indian:
 After quizzing benjack-Christabell about benjack-mark:
 	say "[one of][quotation mark]A [bold type]Mark[roman type] is a special Touch whereby a [bold type]Spirit[roman type] does grant Favour to One still a-live by laying upon the One so-gift[apostrophe]d summe small Splintre of their own Essence. Those haffing the [bold type]seight[roman type] will reckognise it a brawnish Stain upon the marked, but Others will not it ken.[quotation mark][paragraph break][quotation mark]Sounds like an evil cow brand for the soul.[quotation mark][paragraph break][quotation mark]The Marking is neither maleficent nor beneficent, it being onely a Reflection of [bold type]Spirit[roman type] from whence it doth floe.[quotation mark][paragraph break][quotation mark]Why would anyone agree to be marked, though?[quotation mark] [paragraph break][quotation mark]In a sense, it be a Blessing for it doth warde the One a-gainst depredations of inimickal [bold type]Spirits[roman type] and by its Presence exclude unwillful Markings thereafter. More of a Pointe, such Magickal Capacities as possessed the Donor are bestown thereby for exercise upon the Will of the Begift[apostrophe]d.[quotation mark][or]According to Christabell, spirits can imprint their mark on people, and it somehow endows those people with magical powers. Apparently, a person can only be marked once, or so she says.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Christabell about benjack-Carolsubject:
+After quizzing benjack-Christabell about benjack-Carolsubject when benjack-R0 is happening:
 	benjack-jumpTheShark;  [jumping the shark]
 	say "[one of][quotation mark]Carol. Yes, what to say of Carol...[quotation mark] Cristabell stares into the sky, collecting her thoughts. [quotation mark]I do not Knowe. In different tymmes, she was many things to mee, and I to her, being related not onely of [bold type]Lineage[roman type] but of Minde. She lived not far from here in Manse of Family [bold type]Crâne[roman type].[quotation mark][paragraph break][quotation mark]Then you knew her in your [bold type]youth[roman type]?[quotation mark][paragraph break][quotation mark]No, not mine but hers -- I had long before met my owne [bold type]Deathe[roman type]. In her [bold type]Youth[roman type], she would oft come here and suffer my Companionship; less so, as she did flower to Womanhood, though. I do sincerely avow committing every Efforts and Care to her goode and proper Upbringing and polite Formation, but she was remarkable headstrong and sharp of wit like broken Glass. Even with my [bold type]mark[roman type] set upon her, she did suffer the Corruption and Poyson of that House. I urged her to remain away, but every Summer it did call her back to itself.[quotation mark][paragraph break][quotation mark]Is she still there? In the mansion?[quotation mark][paragraph break][quotation mark]I need so beleeve, though I have not seen her since her [bold type]Deathe[roman type].[quotation mark][or]Carol received Christabell’s mark and was at one time her protegée.[no line break][stopping][paragraph break]".
 	
@@ -595,6 +595,69 @@ benjack-Remedy is a subject.  Understand "remedie/remedy" as benjack-Remedy when
 
 benjack-Bestowance is a subject.  Understand "bestowance/xizzi" as benjack-Bestowance when the location is in the benjack-realm.
 
+benjack-Nirramonk is a subject.  Understand "nirramonk" as benjack-Nirramonk when the location is in the benjack-realm
+
+benjack-Nipmuk is a subject.  Understand "nipmuk" as benjack-Nipmuk when the location is in the benjack-realm.
+
+benjack-Kaballah is a subject.  Understand "kaballah/alchemy/numerology/secrets/fjord/illuminati/gnomes/rosacrucians" as benjack-Kaballah when the location is in the benjack-realm.
+
+benjack-InvisibleWorld is a subject.  Understand "invisible/world" as benjack-InvisibleWorld when the location is in the benjack-realm.
+
+benjack-Restful is a subject.  Understand "restful" as benjack-Restful when the location is in the benjack-realm.
+
+benjack-Avenged is a subject.  Understand "avenged" as benjack-Avenged when the location is in the benjack-realm.
+
+benjack-Creature is a subject.  Understand "creature/being/monster/abomination/werewolf/vampire/creatures/beings/monsters/abominations/werewolfs/werewolves/vampires" as benjack-Creature when the location is in the benjack-realm.
+
+benjack-Longhouse is a subject.  Understand "longhouse" as benjack-Longhouse when the location is in the benjack-realm.
+
+benjack-modernAge is a subject.  Understand "modern/age/future" as benjack-modernAge when the location is in the benjack-realm.
+
+benjack-Demise is a subject.  Understand "demise" as benjack-demise when the location is in the benjack-realm.
+
+Understand "death/deathe" as benjack-demise when benjack-R0 has happened.
+
+benjack-Obsession is a subject.  Understand "obsession/compulsion/obsessions/compulsions" as benjack-Obsession when the location is in the benjack-realm.
+
+benjack-Mill is a subject.  Understand "mill/spur" as benjack-Mill when the location is in the benjack-realm.
+
+benjack-Edgar is a subject.  Understand "Edgar" as benjack-Edgar when the location is in the benjack-realm.
+
+benjack-Victor is a subject.  Understand "Victor" as benjack-Victor when the location is in the benjack-realm.
+
+benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location is in the benjack-realm.
+
+benjack-CircularPrison is a subject.  Understand "circular/prison" as benjack-CircularPrison when the location is in the benjack-realm.
+
+benjack-ChristbellFather is a subject.  Understand "father/dad/daddy" as benjack-ChristbellFather when the location is in the benjack-realm.
+
+benjack-ChristabellMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChristabellMother when the location is in the benjack-realm.
+
+benjack-Breeves is a subject.  Understand "preacher/ewen/breeves/pastor/priest" as benjack-Breeves when the location is in the benjack-realm.
+
+benjack-Leif is a subject.  Understand "doctor/prichard/leif/professor" as benjack-Leif when the location is in the benjack-realm.
+
+benjack-Jealousy is a subject.  Understand "jealousy" as benjack-Jealousy when the location is in the benjack-realm.
+
+benjack-Skirmish is a subject.  Understand "skirmish/skourmuch" as benjack-skirmish when the location is in the benjack-realm.
+
+benjack-Sachim is a subject.  Understand "sachim/chief/chieftess" as benjack-Sachim when the location is in the benjack-realm.
+
+benjack-ChristabellTeaParty is a subject.  Understand "tea/party" as benjack-ChristabellTeaParty when the location is in the benjack-realm.
+
+benjack-ChristabellToys is a subject.  Understand "sweetpaws/malice/clown/snortles/winkelbottom/elephant/monkey/lamb/toy/toys/tuffed" as benjack-ChristabellToys when the location is in the benjack-realm.
+
+benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding when the location is in the benjack-realm.
+
+benjack-ChristabellScrapbook is a subject.  Understand "book/scrapbook/article/articles/newspaper/newspapers/clipping/clippings" as benjack-ChristabellScrapbook when the location is in the benjack-realm.
+
+benjack-ChristabellGrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-ChristabellGrandUncle when the location is in the benjack-realm.
+
+benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" as benjack-Mansion when the location is in the benjack-realm.
+
+benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is in the benjack-realm.
+
+benjack-Seeming is a subject.  Understand "Seeming" as benjack-Seeming when the location is in the benjack-realm.
 
 [
 
@@ -629,10 +692,126 @@ After quizzing benjack-Christabell about benjack-Fusion:
 After quizzing benjack-Christabell about benjack-Remedy:
 	say "[one of][quotation mark]I do see clearly a simple answer to remitte your Libertie of Mouvement: the Bestowance.[quotation mark][or]Christabell recommends that you perform a magical ritual called [quotation mark]the bestowance[quotation mark] in order to rid yourself of magical energy, which over time can be harmful to mortals.[no line break][stopping][paragraph break]".
 	
+After quizzing benjack-Christabell about benjack-Bestowance for the first time:
+	say "Christabelle replies, [quotation mark]The Bestowance is the Magick whereby Potence be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark], you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach Carol, when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be ‘xizzi[apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little.";
+	now yourself is benjack-spell_enabled.
+	
 After quizzing benjack-Christabell about benjack-Bestowance:
-	say "[one of]Christabelle replies, [quotation mark]The Bestowance is the Magick whereby Potence be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark], you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach Carol, when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be ‘xizzi[apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little[or]Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe]xizzi[apostrophe][stopping]."
+	say "Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe]xizzi[apostrophe].".
 
+After quizzing benjack-Christabell about benjack-Nirramonk:
+	say "[one of][benjack-Nirramonk1][benjack-Nirramonk2][or]Christabell and her mother took up with a local tribe, the Nirramonk, when they left Christabell[apostrophe]s father. They learned the Nirramonk language and their culture, including their religion, which she says is one step beyond Christianity[stopping]."
+	
+To say benjack-Nirramonk1:
+	say "[quotation mark]When first we did arrive to Lyn, my Parents did ardently applie their Labours to make Home, and I with them. Thow soon we did but little see of mei Father so powerfull was his Devotion to the Forge. He did desire above all to see its Heat increased beyond even yet again what those Forges in Engeland did achieve. This, in the speite of meagre Tools and shoddy Coal which to him availed.[quotation mark][paragraph break][quotation mark]The Nirramonk?[quotation mark] you remind her.[paragraph break][quotation mark]Verily, the Subject has not fled by Minde, thow I admit my Tongue doth journey to it by a Road not straite.[quotation mark] Christabell continues, [quotation mark]So, the Nirramonk, then: My Father did toil at the Forge Daye and Neight bothe, so, my pious Mother bereft of his Attentions did seek to perform goode Werkes for our Congregation, yet Preacher Breeves, being thick of Skull and disdainful of Womenkind did spurn her kinde Offer. She being considerable pridefull did quit that Congregation upon that very Daye and finde herselfe (and mee) another at the Inconvenience of summe Distance from Lyn. The Doctor Prichard Leif did establysh this Congregation, which greatly amazing did welcome not onely us, but also many Indians of those Parts; not onely those Praying Indians taught our Holy Bible, but Doctor Leif did wee learne each the Wisedom the other did have.[quotation mark][paragraph break][quotation mark]So, the Nirramonk?[quotation mark] you remind her once again, trying to keep her on track.[paragraph break][quotation mark]Hold tight to your Reines,[quotation mark] chides Christabell. [quotation mark]For five hundred Years have I thought on this -- I pray you abide your Patiyence yet another moment, that I may complete this Journie, upon which you have set us.[quotation mark][paragraph break]Having your full attention, Christabell continues, [quotation mark]So then, coming at last to the Nirramonk.[quotation mark][paragraph break]";
+	
+To say benjack-Nirramonk2:
+	say "[quotation mark]Phew.[quotation mark][paragraph break][quotation mark]I do your Pardon begge?[quotation mark][paragraph break][quotation mark]Nothing.[quotation mark][paragraph break]Christabell folds her hands and resumes her discourse, [quotation mark]One day did come to us a Council of the Nirramonk. Thow versed in the Tongue of the Nipmuk, scarce could we comprehend their Tongue. By the Grace of Providence, One among theyr Number summe Fackulitie with Engelish possessed, he and his Kin having many years before helped the Engelish Colonie of Roanoke to their Prosperity.[quotation mark][paragraph break][quotation mark]Knowing me quick witted, Doctor Leif did me task to apprend of their Tongue and they Ours by setting to Paper a Grammar. No simple Affaire this was, and threw a Winter and Summer compleat, we did labour, the legion Differences so diffickulte to reconcile. Not onely Grammar did I employe to this Tasking, but made use of Maths and Shapes, some of Artes Newlie devised, some drawn from Kaballah. In Grammar I did find Keys to the Invisible World -- take you for instance their Nowns, being infleckted not for Male and Female, but Animate and Inanimate; and amongst the animate they choose their Werde Endings differently for Spirits, the Restful, and the Avenged.[quotation mark][paragraph break][quotation mark]Five years I did spend amoung them and did Comprehend their Tongue flowingly. As much as I did deliver unto them the Good News of Christ Jesus, I did discover Mattanit and did learne to perform his Werkes through Means more immediate and vigorous than those beknownst to the Church of Engeland.[quotation mark][paragraph break]Her eyes heavy, Christabell concludes, [quotation mark]It were a true Calamity that all did end so dreadful in the Skourmuch.[quotation mark][paragraph break][quotation mark]My head is -- literally -- going to explode,[quotation mark] says Naomi compressing her temples".
+	
+After quizzing benjack-Christabell about benjack-Nipmuk:
+	say "[quotation mark]They were a Indian Tribe nearby Lyn, friendly and allied with their Neighbours. We did trade with them oftentimes.[quotation mark][paragraph break]".
 
+After quizzing benjack-Christabell about benjack-Kaballah:
+	say "[quotation mark]Doctor Leif did bring many arcane and wonderfull Bookes with him to the New Worlde, amongst them Tomes on Alchemy, Numerology, and Secrets of the Orient.[quotation mark][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-InvisibleWorld:
+	say "[quotation mark]By that I do mean the incorporeal world of Spirits and other such Beings perceived onely by the Seight.[quotation mark][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Restful:
+	say "[quotation mark]This be the final Respite of most, those not being aggrieved and who do achieve eternall Slumber.[quotation mark][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Avenged:
+	say "[quotation mark]Answering the injury that rendered them Spirits, one may at last join the Restful.[quotation mark][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Creature:
+	say "[quotation mark]I onely am experimented of Spirits, thow the Nirramonk know many Creatures far weirder that do dwelle in divers corners of the Invisible World.[quotation mark][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Longhouse:
+	say "[one of][quotation mark]The Nirramonk did dwell in the longhouse and I amongst them for a Tymme. In it we did sleep and take our Meals. Those of us learned did study and practice the Werkes of Mattanit. Alas, the longhouse and all its Treasures was razed in the Skourmuch[quotation mark][or]When Christabell and her mother lived with the Nirramonk tribe, they all lived together in a communal longhouse[stopping]."
+	
+After quizzing benjack-Christabell about benjack-modernAge:
+	say "[one of][quotation mark]I know not the Date to-day, for I have long quit the recording of Daye and Neight[apostrophe]s passing. Were I to guess, I would needs say, perhaps summe nearly two Millennia since the Appearance of Christ Jesus upon the Earth.[quotation mark][paragraph break][quotation mark]A bit less, but close enough for government work,[quotation mark] you agree[or]Christabell is aware that it[apostrophe]s the 1990s[stopping]."
+	
+After quizzing benjack-Christabell about benjack-modernAge:
+	say "[one of][quotation mark]You wouldn[apostrophe]t know it to look around here, but this is an age of technological marvels: PDAs, dial-up internet, and video cassettes for rent any time of day or night,[quotation mark] you brag.[paragraph break][quotation mark]I know only too well of Locomotives, and the Ironne Roads upon which they do travel, and Carol has told me of Automobiles and how one travels Highways many Rods across. But also do I know your Science has conceived of Contrivances so Powerful that one may lay waste Nations. This I do not think Wise.[quotation mark][paragraph break][quotation mark]Yes,[quotation mark] you admit. [quotation mark]It[apostrophe]s a bit of a trade-off.[quotation mark][or]Christabell is not very impressed by the technological miracles of the 1990s.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Demise:
+	say  "[one of][quotation mark]As you might well imagine, my Death was something of a shock to me.[quotation mark][paragraph break]You nod agreement with that likely understatement.[paragraph break]Cristabell continues, [quotation mark]Many lives were lost the Neight the Skourmuch did take place first at the Longhouse but finally at the Forge. There did I seek last Parlay with my Father, but so jealous was he and so under the Obsession of his Werke, that he did leaf me no recourse, but to plunge hee and me both into the fierie Layke of Metall at our Feete. And thereby did I end my life and birthe my Fusion.[quotation mark][or]Christabell told you a pitiful story about how her father, driven mostly by jealousy, took both his life and hers by plunging them into a vat of molten iron.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Obsession:
+	say  "[one of][quotation mark]Smythies, Father and Sonne for many Generations of mei Family, you could say Ironne was in our Blood,[quotation mark] explains Cristabell.[paragraph break][quotation mark]I guess in a sense that[apostrophe]s true,[quotation mark] you mutter, mostly to yourself. [quotation mark]Please, go on.[quotation mark][paragraph break]Christabell continues without interruption, [quotation mark]Driven was my Father to keep always the Forge afire, to churn out Metall the Measure of whych the Colonie could scarce make use, for Preacher Breeves did foresee a great Need of Muquets and other Implements to make War, so to claim the Landes around them in the Name of his God.[quotation mark][paragraph break][quotation mark]Breeves sounds like a real dick,[quotation mark] you add.[paragraph break][quotation mark]Indeed, a most vexacious Phallus he was,[quotation mark] Christabell acknowledges[or]According to Christabell, her father[apostrophe]s single-minded obsession to churn out more and more from the forge was in part stoked by the local preacher, Ewen Breeves, who wanted muskets to drive the Indians off the land[stopping]."
+
+After quizzing benjack-Christabell about benjack-mound when benjack-R1 is happening or benjack-R2 is happening:
+	say  "[one of][quotation mark]How my Spirit came to be fused to this Rayle Road Track, and it here, far from my Home in Lyn does a summut tortuous Storie mayke, but leave me Condense it for the telling: after the Skourmuch, mei owne Demise, and consequent Fusion, Father Breeves did add Insult by having made a Great Bell, of all the Metall in the Forge. This Bell he had placed in the newe Church, which did succeed the Prayerhouse and there it did stay until whenupon, one Christmas Night, a Bolt of Lightning did strike the Bell smartly and its Ring was heared to Boston. Also did the Church burn to the very Grownd. Being thowt Cursed, Merchants did take Possession of the Bell, it changing hands many Tymmes, until it did end up melted and mayde to Rayle some Yeares layter and solde to one Edgar Crâne to serve their Mill hereabouts.[quotation mark][or]Christabell relates that her spirit is bound to the huge pile of railroad tracks because after she and her father died in a vat of iron, that iron was subsequently made into a church bell that more recently was recycled into these railroad tracks.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Mill:
+	say  "[one of][quotation mark]The original Crânes, being Traders, did build their Home and Place of Busyness at the Banks of the River that now borders their Lande. In theyr Tymme of Fortune, they did displace themselves to the Manse, wherein their degenerate Descendants dwell to this very Daye.[quotation mark][paragraph break][quotation mark]The Building they left then became a Mill for Woode, and the Profit therefrom did fuel the Excesses of the Crânes. Although the River served to transport the Timbre and Produckts thereof, even a Century back, the Crânes did look with envious Eye towards the Rayle Road that ran not far away, serving the Towne of Backwater. By that means they might increase theyr Profit by delivering the Goodes to Boston and Ville-Marie.[quotation mark][paragraph break][quotation mark]Victor Crâne did conceive this Plan, and his son Edgar did purchase the Rayle, although his Tymming was poor and he did suffer for it. Carol did relate to me that her Father, Hugo Crâne, did once regard the Pyle of Rayles and try to sell it to the Navie, for greatly in need were they of such metall for a Great War, but there being too much of Charbon in the Olde Ironne, they did not deem it mete. Thus, it layeth here to this Daye.[quotation mark][or]Once, the nearby wood mill was a major source of profit for the Cragnes. Around the turn of the century, they wanted to switch from transport along the river to use of railroads, and Victor Cragne proposed building a spur on the main rail line to serve the mill. His son, Edgar, tried to carry out his plan and defaulted on a bank loan after the purchase. More recently, Carol[apostrophe]s father tried to sell the rails as scrap iron during World War II, but the metal was considered of inferior quality and the deal rejected by the Navy.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Edgar:
+	say  "[one of][quotation mark]Poor Edgar did often come here, to this Hollow, to escape the Mill, to smoke his Tobacco, and to sulk. As the Crânes do go, he was almost a decent Person, but stupid was he like a Stick blunted upon a Rock. He did purchase these very Rayles -- with Monies lent -- and to hear Carol tell the tale a Great Impression did fall upon the Bankes.[quotation mark][paragraph break][quotation mark]Depression?[quotation mark] you suggest.[paragraph break][quotation mark]Yes, a Great Depression did befall the Bankes, and Edgar did bathe thereby, said she. Having taken Deliverie of the Rayles, Edgar could not recompense the Bankes and he was so ruined, taking his owne Lyfe.[quotation mark][or]Edgar Cragne was Victor Cragnes son. He killed himself after defaulting on a bank loan that he used to purchase the pile of railroad track.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Victor:
+	say  "[one of][quotation mark]Victor Crâne? Yes, I have heared his Tale as well from Carol (the Ignomy of the Crânes being a favourite Topick of ouwr Gossip). [paragraph break][quotation mark]Amongst the Crânes, Victor was the most successful in Busyness, and as well the one most bereft of Character. Despite Vices uncowntable, he was unusually long-of-life and made much of his Fortune building Roads of Rayle. Indeed, it was he who did first conceive Construction of a Spur from Backwater to his Mill hereabouts. He did err in leaving that Project and the Mill itself, the onely among his Busynesses a failure, to his doltsh Sonne, Edgar, who did prove unsuited to the Task. Victor did little care though, being past the Ayge of one-hundred, and lodging ‘till his purported Death in an Opium Den in Singapore.[quotation mark][or]Victor Cragne was a successful businessman, but given to numerous vices including opium. It is said that he lived to extreme old age.[no line break][stopping][paragraph break]".
+	
+
+After quizzing benjack-Christabell about benjack-Hugo:
+	say  "[one of][quotation mark]Carol did not oftentimes speake of her Father, but I do know, much to the belike of the Deep Ones, I doubt me not, that a man of the Sea was he -- not in the sense of a Saylor, but drawn to the Deep by Intelleckt and Inclineation, being more a Shipswrighte or one who does put his Designe upon Paper that others might put Hammer to Nayle in its Construcion.[quotation mark][paragraph break]Christabelll laughs, [quotation mark]At one Poynt, Carol did inform me, he did sit bodily upon my very Pyle of Ironne, but perceived me not for lack of the Seight. In that Moment he did hatch an Idea to sell the Ironne for the making of Ships to bring War to his Enemies, for he was bloodthirsty and did detest those not spaking Engelish, putting me much in Mynd of Ewen Breeves, a Preacher I did once have the Misfortune to know.[quotation mark][or]Christabell says that Carol[apostrophe]s father Hugo once tried to sell the railroad tracks to the navy as scrap iron.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-Hugo:
+	say "[one of]You recount your impressions of Carol[apostrophe]s father based on what she told you and then ask Christabell if she knows anything more about him.[paragraph break][quotation mark]I have a similar impression of him,[quotation mark] replies Christabell. [quotation mark]He was hateful and did hunger for Power, and he did bend her to serve his Politiks. Yet, thow he did send her away to Relatives for much of her Childehood, still they had moor to say to each other than did I and mie Father.[quotation mark][or]Christabell has a poor opinion of Carol[apostrophe]s father, Hugo, who she says manipulated Carol to serve his political ends.[no line break][stopping][paragraph break]".
+
+	
+After quizzing benjack-Christabell about benjack-CircularPrison:
+	say "[one of][quotation mark]Carol[apostrophe]s Fusion taketh a Forme circular in Shape, like a Belte closed upon itself, wherein her Doom is to repeat the Steppes of her Damnation, appearing Nowe as a Babe, then later a Gyrll, and Finally One of Majority, up to that Tymme what she did take her Leyfe. Why summe Spirits do endure this rotary Existence, while others like me do remain fixed, I know not, thow mayhap I play a Role in her Revolving about.[quotation mark][or]It sounds like Carol is caught in some sort of a loop, doomed to grow up over and over again.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-ChristbellFather:
+	say "[one of][quotation mark]My father was no Scholar, there be no Mystake. From young Ayge he did in a Smythie werke and for many Yeares all aspects of the Trade he did learn be it smelting, casting or the wrothing of Ironne -- knew he it all, he did.[quotation mark][paragraph break][quotation mark]When we did hear of the Colonies, the Idea did much take Mother, who did desire to separate from the Church of Engeland. On that, Father held no Accounte, but when he did hear of the Oppourtunities abounding in the New Worlde, it was he faster on a Boat than us all. He did secure a Contracte most generous with the Ironwerkes company and a House built for us as well in Lyn.[quotation mark][paragraph break][quotation mark]But once come to Lyn, he became a Man changed, spending ne[apostrophe]er a minute at Home, but in the Forge with his Dear Metall. I do thinke some malific Vapour or inimicall Spirit did direct his Minde to so Oppose his owne Family. After Suffering  indecent long Mother did quit his House and took we up at last with the Nirramonk in their Longhouse did we dwell many years, ‘til father[apostrophe]s Jealousy and wrath did reach us at last the Neight of the Skourmuch[quotation mark][or]In the tale Christabell tells, her father became jealous after she and her mother went to live with the Nirramonk tribe; this led to the skirmish between that tribe and the town of Lin.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-ChristabellMother:
+	say "[one of][quotation mark]My Mother did stem from a Family by no means of Wealthe, but knowing some Success in Trade. She did tell me they did take it hard for her to marry to a Smythie, but for the Opinion she cared but little. Her fyne upbringing did benefit us in later Lyfe, for her Command of Maths and Grammar we did come to employe in ouwr Werke on the Language of the Nirramonk. In that Werke and our Faith, the brilliyant Doctor Leif did skillfully guide us.[quotation mark][or]Christabell says her mother married down and after leaving her father, took up with Doctor Leif and helped him translate the language of the Nirramonk Indians.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Breeves:
+	say "[one of][quotation mark]When we did arrive in Lyn, the Towne did welcome us joyfully, and they led by the Preacher, a certain Ewen Breeves. He were all a-smile and many did laugh that Daye, but not a Week hence we did come to know by the Laundry Talke, of his Anger and Fear. Anger for any that would speake in Opposition to himself, even on the most petty Issue. And Fear of the Indians, who did surround us entirely, but with whom we had to that Poynte enjoied warm Friendliness.[quotation mark][paragraph break][quotation mark]Preacher Breeves would tolerate no other Preacher nor even Helper in his Church and turned away many from the Pews as well. It was Breeves that sent our Sick to the Indians to spread our Illnesses, and we did suspect him of burning summe Foods set by for Winter with the Pretensions of it being done by the Indians to turn the Settlers against them.[quotation mark][paragraph break][quotation mark]But the worst of it,[quotation mark] Christabell sobs, [quotation mark]is what he did to Father -- the Jealousy he did stoke. I blame the Skourmuch on Breeves alone.[quotation mark][or]Christabell holds Preacher Ewen Breeves responsible for her father[apostrophe]s jealousy, which led to the skirmish between the Nirramonk tribe and the Town of Lin.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Leif:
+	say "[one of][quotation mark]Doctor Leif was a Scholar of many subjects, not the least amongst them, Philology. He did break with his comfortable Accomodation as a Professor at Oxford to come live among us in the New Worlde. Hee it was who did introduce Mother and mee to the Nirramonk, and also he who did encourage us to explore theyr Wisedom, although we had aught but begun when the whole Enterprize did Collapse upon us with the Skourmuch.[quotation mark][or]With the assistance of Christabell and her mother, Doctor Prichard Leif studied the language and culture of the Nirramonk Indians. He thought the European settlers could learn from their wisdom.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Jealousy:
+	say "[one of][quotation mark]First, know you that mei Father were in his Constitution of Jealous Blood. Once I did try help his Labour of Blackesmything by sharing with him summe small Part of the Artes, which the Narramonk do possess, and which they use for making any number of Tools and Contrievances of such Genius as you do not possess even in your Modernity, I would warrant. Their most patient Explanation of the Process to fabricate a lighter Metall they did make threw mee, but hee did throw their erudite Drawings back at them and sent us everyone fleeing.[quotation mark][paragraph break][quotation mark]So, it come not to surprise how little it did take for Preacher Breeves to convince him that Mother had left him to consort with Doctor Leif, sleeping wantonly in the Longhouse of the Narramonk as the Indians are want to do. The truth of that statement aside, the Rage engendered did drive my Father to Violence, to wit bringing about the Skourmuch that led to our mutual Demise, my Father and I..[quotation mark][or]Christabell[apostrophe]s mother and Doctor Leif lived together in the longhouse of the Nirramonk for several years while studying the language and culture of that tribe. Christabell[apostrophe]s father suspected that were studying not only the Indians in that longhouse, but each other as well -- a point that Christabell does not deny.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Skirmish:
+	say "[one of][quotation mark]The Reason doth mee escape wherefore we do call that evening[apostrophe]s fighting the Skourmuch, that being but a fancy French worde for the same. It did begin in the Dark, the Villagers of Lyn having been whipped to Fury by the demented Slander of Preacher Breeves. Came they did with Torches, Musquets, and Swords and burnt the Longhouse of the Narramonk and murdered all within, there being no Exception, save for us small Band who did escape.[quotation mark][paragraph break][quotation mark]The Death of the Sachim did provoke them even to casting aside theyr Peaceful Waies and coming into the Towne in Anger. I had hoped even then to Speake once moor to mei Father, but we did fall to fighting, each of us calling fierce Magicks to ouwr aide, and thereby did meet our Demise together.[quotation mark][or]Driven by jealousy, Christabell[apostrophe]s father led an attack on the Nirramonk longhouse, killing their chief. The enraged Indians counterattacked the Town of Lin and both Christabell and her father were killed, both sides employing magical attacks.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Sachim:
+	say "[one of][quotation mark]The Leeder of the Nirramonk were called the Sachim and she did dye in the Skourmuch.[quotation mark][or][quotation mark]The Honour of serving as Sachim did rotate amongst the Longhouse, so many of us were Sachim for a Tymme.[quotation mark][stopping][paragraph break]".
+
+After informing benjack-Christabell about benjack-ChristabellTeaParty:
+	say "[one of]When you finish recounting the tea party, Christabell asks, [quotation mark]How olde did Carol appear to your Eyes in this encounter, then?[quotation mark][paragraph break][quotation mark]Oh, about five, I[apostrophe]d say. Five years, plus or minus.[quotation mark][paragraph break][quotation mark]Yes, that maketh fyne Sense give her Circular Prison. That was her Ayge when I did teach her to performe the Bestowance in that manner. Being a Childe, her Minde was not fitt for moor abstrakt Casting, so we did exercise its rituall Forme.[quotation mark][or]Christabell says that the [quotation mark]tea party[quotation mark] is actually a way of casting the bestowance spell.[no line break][stopping][paragraph break]".
+	
+After quizzing or informing benjack-Christabell about benjack-Carolsubject when benjack-R1 is happening:
+	say "[one of][quotation mark]When she were a Childe, she did come visit me frequently, standing as you do now. I do flatter mieself to thinke she did seek my Company for Wisedom and Solace, but let us also admit that for a Childe, the Crâne Manse was naught but a Place of Boredom most profound.[quotation mark][or]	[quotation mark]I be not surprised that she did appear to you in an Aspekt childe-like, for that is a Manifestation of her strange Fusion, the Circular Prison, but well you would do to remember she died far from Innocent. Though I did teach her tenderly, she did bend the Craft darkly in Service to her Father, Hugo, a man of no moral fibre.[quotation mark][or]Christabell says that, as a child, Carol used to come visit her frequently.[no line break][stopping][paragraph break]".
+
+After informing benjack-Christabell about benjack-ChristabellToys:
+	say "[one of][quotation mark]The Names are not beknownst to me, but that is merely an accident of this Unfolding; I know the Essence of the Creatures of whych you do speak. They are at this Ayge of hers mostly Play Toys, but in Tymme do become her most loyal and dangerous Consorts.[quotation mark][or]You tell Christabell about your most recent visit with Carol and about her stuffed toys.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Unfolding:
+	say "[one of][quotation mark]What little I know from the Lore of the Narramonk, I will to you relate: that one bound in Circular Prison does move always in one Direction in Tymme, but not along a single Path. Most Paths start and end they did in Lyfe, but there are side Paths described by other Runes that can come to being; summe few may put end to the Fusion, freeing the Spirit.[quotation mark][or]According to Christabell, Carol[apostrophe]s future does not always follow the same course each time she cycles from birth to death as a spirit.[no line break][stopping][paragraph break]".
+	
+After quizzing or informing benjack-Christabell about benjack-ChristabellScrapbook:
+	say "[quotation mark]These then are Carol[apostrophe]s Runes that you did generate during the Bestowance, that is the [apostrophe]Tea Party[apostrophe]; they chart her way through this Unfolding.[quotation mark][paragraph break]".
+
+After quizzing or informing benjack-Christabell about benjack-ChristabellGrandUncle:
+	say "[one of][quotation mark]Verily, it is a curiosity -- I never did come to know Carols[apostrophe] grand-uncle[apostrophe]s name, although I do suspect it were Victor Crâne, thow greatly ayged hee would have been.[quotation mark][or]Christabell suspects Carol's grand-uncle is none other than Victor Cragne, who made his fortune with the family wood mill.[no line break][stopping][paragraph break]".
+	
+After quizzing or informing benjack-Christabell about benjack-Mansion:
+	say "[one of ][quotation mark]What about the mansion, Christabell,[quotation mark] You ask. After you recount some of your experiences at the mansion, Christabell adds, [quotation mark]Being stuck here, I have not mieself even layd Eyes upon this most strange Edifice.[quotation mark][paragraph break][quotation mark]That[apostrophe]s odd,[quotation mark] you say. [quotation mark]I can see this hillside from Carol[apostrophe]s window. How can it be that I can[apostrophe]t see the mansion from here?[quotation mark][paragraph break][quotation mark]Carol[apostrophe]s Fusion is to the Room itself, and what you do see be naught but her imperfect Memorie of it.[quotation mark][or]Christabell says that spent a lot of time in that creepy old estate while she was growing up and that in death, she is magically bound to her room there.[no line break][stopping][paragraph break]".
+	
+After quizzing or informing benjack-Christabell about benjack-Mirror:
+	say "[one of]After you tell Christabell about being trapped in Carol[apostrophe]s room by the door that turned into a mirror, Christabell offers some reassurance: [quotation mark]Fret you not, I know of the Seeming she did Werke, and it is but a weake one and cannot be used against your Minde again.[quotation mark][or]The trick that Carol used to trap you in her room won[apostrophe]t work on you a second time.[no line break][stopping][paragraph break]".
+	
+After quizzing or informing benjack-Christabell about benjack-Seeming:
+	say "[one of]After you tell Christabell about being trapped in Carol[apostrophe]s room by the door that turned into a mirror, Christabell offers some reassurance: [quotation mark]Fret you not, I know of the Seeming she did Werke, and it is but a weake one and cannot be used against your Minde again.[quotation mark][or]The trick that Carol used to trap you in her room won[apostrophe]t work on you a second time.[no line break][or][quotation mark]A Seeming is naught moor than a brief Illusion; it is easily washed from the Minde and with diligent Practice can be ignored without Effort.[quotation mark][stopping][paragraph break]".
+	
 Chapter 2 - R1 Event
 
 Instead of going a direction during benjack-R1:
@@ -725,7 +904,6 @@ The list of text called Benjack-clipping-convict-text is always {"It looks like 
 The content of Benjack-clipping-convict is Benjack-clipping-convict-text.
 Understand "water/fate/convict/for" as Benjack-clipping-convict.
 
-
 [doing the very side effect-within-say that I warn against:]
 To say benjack-but-wait-theres-more:
 	wait for any key; 
@@ -783,6 +961,17 @@ The content of Benjack-clipping-xxx is Benjack-clipping-xxx-text.
 ]
 
 Book 4 - New Actions
+
+Benjack-xizziing is an action applying to nothing. Understand "xizzi" as Benjack-xizziing.
+
+Check Benjack-xizziing:
+	if yourself is not benjack-spell_enabled:
+		say "[one of]The food particle caught in your front teeth goes flying. That's a relief[or]You are not sure how you made that sound. Maybe it was the beans from last night[or]Triple-word scored, that's a maximum of 74 points. Oh wait, that's not divisible by three, so how could that be true? This is the sort of thing you think about on a daily basis. That's the real horror here[or]Nothing much seems to happen[stopping].";
+		stop the action.
+
+Carry out Benjack-xizziing:
+	say "[one of][quotation mark]Let us do step summut afar the Rayle Tracks,[quotation mark] counsels Christabell.[paragraph break]That is probably a good idea, because as the two walk towards the edge of the woods, lighting begins to arc from every part of your body to Christabell in impossibly thin, blue-white tendrils, occasionally flashing over to the pile of railroad tracks, which begin to glow red on in the spots where they are touched.[paragraph break]You take a breath and your lungs burn, the air sharp with the smell of ozone; as you continue to walk the sparking dies down and it is easier to breathe.[paragraph break]As after images of the lightning fade, Christabell pats you on the shoulder, almost substantially, and you can see for yourself that the spell worked -- there is nothing translucent about her -- you literally did her a solid.[paragraph break][quotation mark]I do thank you sincerely for restoring the Integrity of my Spirit with this Gifte, whych does owe Provenance to Carol, who, however unwittingly, did preserve mee through your Kindness.[quotation mark][paragraph break][quotation mark]You[apostrophe]re welcome,[quotation mark] you add, glad to have been helpful to at least someone today.[paragraph break][quotation mark]Naomi... I would repay Carol; let us do help her escape her Fusion and persue a more wholesome Unfolding. If we can destroy her Runes, that part at least of her Soul will be washed aclean. I ask you: Go and find a Booke inwhich are written the Source of her Past and Unmake it.[quotation mark][paragraph break][quotation mark]Tear it up?[quotation mark] you ask.[paragraph break][quotation mark]Nay, Violence be not the answer. Let us devise a Magick to unwrought them.[quotation mark] Christabell paces back and force, [quotation mark]A moment whilst I do Conceive a mete Werde for the Spell… Fazzah! No, too short. Mannagummoset! Not the easiest to remember.[quotation mark][paragraph break][quotation mark]Kwisatz haderach?[quotation mark] You suggest, being a big fan of Dune (the book, not the film).[paragraph break][quotation mark]Oh, that does have a lovely ring about it, as long as you can remember it. Yes, let us do go with that.[quotation mark]  She waves her hands, and you suppose that[apostrophe]s that. Christabell continues, [quotation mark]You need only be in the same Place as the Runes, and say those Werdes and the Spell will act. Now, getting you there… For that I do propose a trifling bit of Magick to take you thither and back to here at your Weal, for that the Spell Werde be ‘ploughver[apostrophe]. Just know you, one casting cannot follow another without pause.[quotation mark][paragraph break][quotation mark]Got it. It takes some time to recharge.[quotation mark][or]Your fingertips tingle briefly, but having no stored up ghostly energy, the spell fizzles.[no line break][stopping][paragraph break]".
+
 
 Book 5 - Replacement Default Actions
 
