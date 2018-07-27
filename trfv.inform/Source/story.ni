@@ -26,13 +26,26 @@ Part 1 - New Kinds
 
 A benjack-shadow is a kind of thing. 
 
+A benjack-clipping is a kind of thing. 
+Benjack-clippings have some text called title.
+Benjack-clippings have a list of text called content.
+The printed name of a Benjack-clipping is "the clipping entitled [quotation mark][title][quotation mark]". Understand "clipping/clippings/article/articles/printout/paper/cutting/cuttings" as a benjack-clipping.
+
+A benjack-runebook is a kind of opaque openable container. 
+A benjack-runebook can be either open or closed. A benjack-runebook is usually closed.
+The examine containers rule does nothing when examining a benjack-runebook.
+
+[Paralleling the project's use of read, but scoped down for this special case]
+Understand "read [a benjack-runebook]" as reading when the location is M2F3.
+Instead of opening a benjack-runebook, try reading the noun.
+
 Part 2 - The Player
 
 The player has a number called benjack-times_bestowed. The benjack-times_bestowed of the player is 0. [number of cups of tea consumed]
 
 Yourself can be benjack-spell_enabled. Yourself is not benjack-spell_enabled. [has player learned to cast xizzi, ploughver and kwisatz haderach]
 
-Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has carol marked Naomi's baby]
+Yourself can be benjack-marked. Yourself is not benjack-marked. [has carol marked you]
 
 Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has carol marked Naomi's baby]
 
@@ -142,6 +155,36 @@ The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjac
 Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
 The description of the benjack-elephant  is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had Mister Snortles as long as I can remember -- daddy got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
+The benjack-scrapbook-5 is a benjack-runebook in M2F3. The printed name of the benjack-scrapbook-5 is "scrapbook".
+Understand "scrapbook" as the benjack-scrapbook-5 when the player is in M2F3.
+The description of the benjack-scrapbook-5 is "[benjack-scrapbook-5-desc]".
+
+To say benjack-scrapbook-5-desc:
+	say "The cover of the spiral-bound book is marked in thick black gothic lettering, [quotation mark]Carol’s Scrapbook[quotation mark]. Little bits of newsprint stick out from the edges of the [if open]open[otherwise]closed[end if] book.[no line break]";
+	if the benjack-times_bestowed of yourself is greater than 0:
+		say " ";
+		if the benjack-times_bestowed of yourself is:
+			-- 1: 
+				say "The scrapbook glows faintly";
+			-- 2:
+				say "A bluish halo surrounds the scrapbook";
+			-- 3:
+				say "The bright aura around the scrapbook distorts the air around it; pulses of energy rippling outward from it";
+		say ".[no line break]".
+		
+Instead of reading the benjack-scrapbook-5:
+	if benjack-scrapbook-5 is closed:
+		say "You flip open the scrapbook, with Carol reading";
+		now benjack-scrapbook-5 is open;
+	otherwise:
+		say "Carol reads";
+	say " along, over your shoulder. In keeping with the cover, the scrapbook contains a number of newspaper clippings, bearing the titles: ";
+	let L be a list of text;
+	repeat with clip running through benjack-clippings enclosed by benjack-scrapbook-5:
+		add title of clip to L;
+	say "[italic type][L][roman type].".
+
+
 [stuff template
 
 The benjack- is a benjack-shadow in M2F3. The printed name of the benjack- is "".
@@ -163,14 +206,14 @@ Part 4 - NPC Definitions
 
 Chapter Christabell
 
-benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager]the bonnet-clad woman[else]Christabell". Understand "woman" or "Christabell" as benjack-Christabell when the location is in the benjack-realm.
+benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager or benjack-Christabell is bypassed]the bonnet-clad woman[else]Christabell". Understand "woman" or "Christabell" as benjack-Christabell when the location is in the benjack-realm.
 
 The description of benjack-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
 Understand "talk to [someone]" as a mistake ("[benjack-talk-hint].").
 
 [A state-machine that transitions the dialogue between a chain of behaviors in R0.  See "Chapter Scene R0".]
-benjack-Christabell can be unaddressed or eager or chatty or candid.  benjack-Christabell is unaddressed.
+benjack-Christabell can be unaddressed or eager or chatty or candid or bypassed.  benjack-Christabell is unaddressed.
 
 Chapter Carol
 
@@ -191,7 +234,7 @@ We shouldn't chain scenes together, like "N2 begins when R1 ends" since other pe
 Our scenes should also not run when the player is outside our rooms to avoid loading down the game and to help prevent unforeseen interactions]
 
 benjack-R0 is a recurring scene. ["Meet Christabell"; Christabell is unaddressed]
-benjack-R0 begins when the player is in DAN8 and M2F3 is unvisited.
+benjack-R0 begins when the player is in DAN8 and M2F3 is not visited.
 benjack-R0 ends when the player is not in DAN8. [nursery]
 
 benjack-N1 is a scene. ["Tea Party"]
@@ -277,7 +320,7 @@ To benjack-jumpTheShark:
 		now benjack-Christabell is candid.
 		
 At the time when Ben and Jack jump the shark:
-	if benjack-R0 is happening:
+	if benjack-R0 is happening:[to make sure this doesn't go off in another location or scene]
 		say "Caught up in the conversation, the surrealism of your situation now lands with its full weight and you take a long breath.[paragraph break][quotation mark][bold type]Naomi[roman type], wherefore doth your Countenance so cloud?[quotation mark][paragraph break][quotation mark]I just realized how weird it is to be talking to a [bold type]ghost[roman type].[quotation mark][paragraph break][quotation mark]A [bold type]spirit[roman type].[quotation mark][paragraph break][quotation mark]Okay, a [bold type]spirit[roman type],[quotation mark] you concede. [quotation mark]Maybe all this hanging around with the [bold type]Cragnes[roman type] has rubbed off on me. Maybe I[apostrophe]m the one who has lost her marbles.[quotation mark][paragraph break][quotation mark]Nay, your Marbles be firmly within your Skull, and your [bold type]Knotte of Reason[roman type] still tightly woven.[quotation mark][paragraph break][quotation mark]Mark my words, [bold type]Peter[roman type] is going to have a field day when I tell him how my day has gone.[quotation mark][paragraph break][quotation mark]That I cannot [bold type]mark[roman type], it being beyond my powers.[quotation mark][paragraph break]".
 
 Before quizzing or informing benjack-Christabell about a subject for the first time:
@@ -489,6 +532,10 @@ test R0-full with "s / talk to woman / say hello / yes / tell christabell about 
 
 Part 3 - Scene N1 Tea Party
 
+Rule for printing the name of a benjack-runebook (called the evil tome):
+	say "[printed name of the evil tome]";
+	omit contents in listing.
+
 Chapter 1 - N1 Conversation
 
 Section 1 - N1 Subject
@@ -497,17 +544,53 @@ Section 2 - N1 Quips
 
 Chapter 2 - N1 Event
 
+[kill the (empty) in inventory listings durng this scene]
+Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
+	say "[printed name of mtw-teapot]";
+	omit contents in listing.
+
+Before going a direction when the location is juxtaDAN8 and benjack-N1 has happened and yourself is not benjack-marked:
+	if the room the noun from the location is DAN8:
+		say "You round the path and find yourself in a familiar knoll flanked on three sides by tall, dark cliffs. In the center of a clearing before you is a huge pile of rusting railroad track.[paragraph break]Leaning back against the pile of iron, [benjack-Christabell] gives you a fatigued wave and after some exertion of effort becomes more substantial.";
+	otherwise:
+		continue the action.
+
+
 Chapter 3 - N1 Tests
 
 Part 4 - Scene R1 Naomi is Marked and Learns Some Spells
 
+When benjack-R1 begins:
+	if benjack-Christabell is not candid, now benjack-Christabell is bypassed.
+
+
+
 Chapter 1 - R1 Conversation
 
-Section 1 - R1 Subject
+Instead of conversing or hailing for the first time during benjack-R1:
+	if benjack-Christabell is candid:
+		say "Christabell squints as she looks at you, shading her eyes with her hand.[paragraph break][quotation mark][bold type]Runes[roman type] of the [bold type]Deep Ones[roman type] preserve us, Naomi. By";
+	otherwise:
+		say "So, back are you? Let us do hope you be moor of a polayte and conversing Sorte this Tymee, [bold type]Naomi[roman type]. Oh, yes, your Name be written clear as Daye in your Eyes, and I do see that this Daye has shewn you moor of [bold type]sprit[roman type] Kinde, so I shall not be dansing about so with mie Werdes as to pull so tayt your [bold type]Knotte of Reason[roman type].[paragraph break]Now then, by";	
+		now benjack-Christabell is candid;
+	say " what Artefise are you so surfeited of Potence, that Louminance does burne mightily about you. Had I Haires upon my Bodie, they would upon their very Ends stand aright, you do so exude Glamour. By what Manner did that come to pass, I do wonder.”.
+
+Section 1 - R1 Subjects
+
+benjack-Runes is a subject.  Understand "rune/runes" as benjack-Runes when the location is in the benjack-realm.
 
 Section 2 - R1 Quips
 
 Chapter 2 - R1 Event
+
+Instead of going a direction during benjack-R1:
+	if yourself is not benjack-marked:
+		say "[one of]As you walk away from the hillside, an Irish blessing comes to mind: May the road rise up to meet you.[paragraph break]The rest of the blessing doesn[apostrophe]t so much apply, the part about sunshine and good luck and such, but the road, or in this case the packed soil of the trail past the hillside, does fold back on itself and twist around in a way that makes you mildly nauseous and points your feet right back to where you came from.[paragraph break][quotation mark]Are you doing that?[quotation mark] you ask Christabell.[paragraph break][quotation mark]Nay -- [apostrophe]tis you. And [apostrophe]tis this place. But it be not of my Conjuration, but even summe Resulte of your ownself. The [bold type]Potence[roman type] which you do comport maketh of you like unto a Lodestone, what are then drawn by Nature to this Place.[quotation mark][paragraph break][quotation mark]So I[apostrophe]m a magnet stuck to that giant [bold type]pile[roman type] of [bold type]iron[roman type]?[quotation mark][paragraph break][quotation mark]To the [bold type]Ironne[roman type], nay. That hath no part in it, save as the object of my unwilling [bold type]Fusion[roman type]. It might as well the Trunk of a Tree as a Thimble be.[no line break][quotation mark][or]This time it[apostrophe]s worse. The path doesn[apostrophe]t so much curve around as flip inside out. Everything stretches as you swing back towards a normal orientation, colors scaling up and down the rainbow, eventually returning to their normal hue.[paragraph break][quotation mark]Please, Friend Naomi, do not Straine your Substance to depart. I have myself been for these many long Years similarly afflickted by the [bold type]Fusion[roman type], but I wish not any Portion of mei Trials on others in no Way deserving of it.[quotation mark][or]Again, the world bends so acutely around you that you see your own back walking away from yourself before time and space catch up, depositing you right where you started.[paragraph break][quotation mark]I didn[apostrophe]t get as nauseous that time,[quotation mark] you remark.[paragraph break][quotation mark]The Minde doth accommodate to Experience, even so arcane, yet this be not a [bold type]Remedie[roman type], though happily for you not bound by the [bold type]Fusion[roman type], One doth exist, and easily to wit.[no line break][or]What was initially frightening is now merely annoying, and a mild headache has replaced frank nausea.[paragraph break][benjack-mobius].[no line break][stopping][paragraph break]";
+	otherwise:
+		continue the action.
+		
+To say benjack-mobius:		
+		say "You [one of]are right where you started[or]haven[apostrophe]t budged an inch[or]aren[apostrophe]t getting anywhere this way[or]wonder what you need to do to get out of here[or]suspect that Christabell knows how you could break this weird spell and leave[or]are really not enjoying this at all and consider pumping Christabell for information[or]have not moved[in random order]".
 
 Chapter 3 - R1 Tests
 
@@ -515,7 +598,7 @@ Part 5 - Scene N2 Teenage Carol Marks Naomi's Baby
 
 Chapter 1 - N2 Conversation
 
-Section 1 - N2 Subject
+Section 1 - N2 Subjects
 
 Section 2 - N2 Quips
 
@@ -527,7 +610,7 @@ Part 6 - Scene R2 Plotting Carol's Disruption
 
 Chapter 1 - R2 Conversation
 
-Section 1 - R2 Subject
+Section 1 - R2 Subjects
 
 Section 2 - R2 Quips
 
@@ -539,7 +622,7 @@ Part 7 - Scene N3 Boss Battle
 
 Chapter 1 - N3 Conversation
 
-Section 1 - N3 Subject
+Section 1 - N3 Subjects
 
 Section 2 - N3 Quips
 
@@ -547,6 +630,105 @@ Chapter 2 - N3 Event
 
 Chapter 3 - N3 Tests
 
+
+Book 3 - Runebook Clippings
+
+To tell ( blahblah - a list of text):
+	repeat with phrase running through blahblah:
+		say "[phrase]".
+
+Instead of examining a benjack-clipping (called the article):
+	try reading the article.
+
+Instead of reading a benjack-clipping (called the article):
+	tell content of the article;
+	say paragraph break.
+	
+Instead of taking a benjack-clipping:
+	say "The news clipping flows around your fingers like a liquid. As soon as you withdraw your hand, it smoothens out again, recovering its normal appearance."
+		
+Benjack-clipping-shark is a benjack-clipping. 
+The Benjack-clipping-shark is in benjack-scrapbook-5.
+The title of Benjack-clipping-shark is "Shark Attack".
+The list of text called Benjack-clipping-shark-text is always {"SHARK ATTACK![paragraph break]A team of oceanographers from the Woods Hole Institute of Oceanography in Woods Hole, MA was attacked yesterday by sharks in waters about ten miles southeast of Nantucket Island. Of the four man team, one was died and one was injured, requiring hospitalization.[paragraph break] The team was deploying a string of experimental sonar buoys along an underwater ridgeline. The captain of the expedition, Frampton Mays, was the first to notice a disturbance in the water surrounding the boat and the rubber raft in tow, where two divers were working. [quotation mark]The seas were rolling calmly, but something was moving around us, in circles. Something big. The water humped up around it, but there was no wake.[quotation mark][paragraph break]Davis Parks, an electronics engineer from the Sperry Corporation, was with the captain and noticed unusual readings from the devices being put in place, [quotation mark]The first buoy was anchored and we were calibrating it, so I didn[apostrophe]t pay much attention at that point. I thought we had a gain problem because the signal returns were just crazy and the doppler… well, nothing can move that fast, I had to assume one of the guys had snapped and that the assembly was spinning.[quotation mark][paragraph break]According to coast guard vessels responding to the their distress call, water sprayed up around the raft and then the entire raft disappeared below the foaming surface. Initially, the coast guard reported sighting tentacles reaching out of the water around the raft, but it is now believed that these were the heavy lines that had secured the equipment to the ocean floor recoiling upward with the release of tension.[paragraph break]One diver, who was on the raft at the time, was lost: twenty-six-year-old Travis McMaster of New Port, Rhode Island. Dr. McMaster had recently completed graduate studies at the Massachusetts Institute of Technology and was conducting post-doctoral research at Woods Hole.[paragraph break]The other diver, David Tillerson, was nearer to the research vessel when the sharks attacked, and was pulled from the water by the two crew. First aid was performed on the coast guard rescue boat; it is reported that he had a number of large, painful welts on his back. The treating physician commented that these welts were [quotation mark]similar in nature to the sort we see from jellyfish, but much, much larger and deeper.[quotation mark]"}.
+The content of Benjack-clipping-shark is Benjack-clipping-shark-text.
+Understand "shark/attack" as Benjack-clipping-shark.
+
+Benjack-clipping-actress is a benjack-clipping. 
+Benjack-clipping-actress is in benjack-scrapbook-5.
+The title of Benjack-clipping-actress is "Actress Disappears".
+The list of text called Benjack-clipping-actress-text is always {"A FLASHBULB EXCLUSIVE![paragraph break]Fashion model and star of the silver screen, Hungarian actress Lili Kovács disappeared this afternoon from a private hospital in North Carolina where she was recovering from recent surgery. As previously reported, she had been flown there three days ago after developing what was thought to be acute appendicitis while filming [quotation mark]Two Shots and A Chaser[quotation mark] in Bermuda.[paragraph break]At a cast party Thursday evening, she sudden collapsed, clutching her stomach in pain, and was rushed to a local hospital, where she was given medication and transferred by plane to the U.S. According to guests at the party, the normally svelte starlet appeared to have gained a lot of weight during her week on the vacation island, and some thought that she might have suffered an on set injury because she was walking oddly.[paragraph break]The handsome Wallace Travers, who stars opposite Miss Kovács in the Metro-Goldwyn-Mayer Pictures production, recounted the troubling week that began with the disappearance of the lovely celebrity while they were filming a scene on the beach area behind the posh Venture Casino last Monday. According to Mr. Travers, [quotation mark]She said she was taking a quick dip to cool off, and I thought she would be right back. When we were ready to shoot the next scene, nobody could find her. We checked the trailer, the hotel -- everywhere. Then our sound guy, Mike, says there[apostrophe]s something going on in the surf. He had a good view from up on the boom tower, but from the beach everything looked normal. He said some kind of lights were moving around under the water. ","Some of the locals later told us that[apostrophe]s not too unusual, that algae or whatnot have this faint glow at night, but Mike was really upset and said the lights were huge, the size of city busses, really bright, and moving around incredibly fast. Well, Heinrich called it for the evening, and we let Mike go sober up.[quotation mark][paragraph break]According to the film[apostrophe]s director, Heinrich Habberstamp, Miss Kovács showed up early the next morning for filming as if nothing had happened. Later that day, she admitted to having no recollection of the prior evening.[paragraph break]The private hospital refused to comment in the interest of privacy, but one of Lili[apostrophe]s visiting relatives gave FLASHBULB the inside scoop: When Lili arrived from the airport, she was burning up with fever and brought immediately to the operating room. As the surgeon made the first cut, the wound tore open of its own accord and a mass of gelatinous balls squirted out. [quotation mark]Maybe ten or fifteen pounds of them, each about the size of an orange. They were pink or red, and some had little cords attached. Nobody knew what they were, but they got as many of them out as they could. They had to leave some of the smaller ones that were more firmly attached. When they tried to cut those out, she started bleeding, so they closed her up.[quotation mark][paragraph break]No one knows the whereabouts of the starlet or how she could have gotten out of her bed after such major abdominal surgery. More than a few industry wags have suggested that the whole episode was a publicity stunt to build up anticipation for the film."}.
+The content of Benjack-clipping-actress is Benjack-clipping-actress-text.
+Understand "actress/disappears" as Benjack-clipping-actress.
+
+Benjack-clipping-body is a benjack-clipping. 
+The title of Benjack-clipping-body is "Body Found".
+The list of text called Benjack-clipping-body-text is always {"BODY FOUND[paragraph break]Police investigators report the discovery of a headless torso on the western shore of Block Island and are seeking public assistance in determination of the identify of the deceased.[paragraph break]The headless, limbless corpse was discovered yesterday afternoon by Christopher Smythe, a local resident, who was checking his lobster pots. [quotation mark]It came up slowly on the winch and when it got to the surface, I knew there was a problem. I got everyone under it, and we swung it onto the deck and weren[apostrophe]t sure what to do with it, so we put it on ice and headed back to harbor.[quotation mark][paragraph break]The body is described as male, caucasian, and likely forty to fifty years old. The Washington County Medical Examiner, Dr. Lewis Ivar, places the time of death somewhere between two and three days prior to discovery. Dr. Ivar commented, [quotation mark]there were two notable findings: first, a series of discolorations, about four inches in diameter and arranged in a line across the back and wrapping around upward under the axilla; secondly, the presence of a tattoo across the chest. The design of the tattoo is unusual, a skull and below it a phrase in French.[quotation mark] The coroner[apostrophe]s office is hopeful that the unique tattoo will aid them in identification of the victim."}.
+The content of Benjack-clipping-body is Benjack-clipping-body-text.
+Understand "body/found" as Benjack-clipping-body.
+
+Benjack-clipping-convict is a benjack-clipping. 
+The title of Benjack-clipping-convict is "Watery Fate for Convict".
+The list of text called Benjack-clipping-convict-text is always {"It looks like the icy hand of justice caught up to escaped murderer Gustave Dellorto earlier today, when his body was recovered at low tide from the Execution Rocks lighthouse in the Long Island Sound.[paragraph break]Leslie Stovebow, the lighthouse keeper who resides in a small residence at the base of the tower, discovered the body this morning as the tide went out. The body was still clad in the striped uniform of the Sing Sing Prison from which he escaped last night.[paragraph break]Mamaroneck, NY police raced against time to remove the body from where it had become lodged in the boulders before the time came back in, submerging the rocks. They successfully identified the body by confirming the number on the uniform matched that of the escaped killer. It is not clear why Dellorto chose to flee to the island, but police suspect he was hoping to murder the lighthouse keeper and go to ground there until his trail grew cold.[paragraph break]Dellorto was convicted of three cases of first degree murder in the winter of 1951, including one G-man, and was suspected of homicide in seven additional cases. It is believed that his crimes were connected to organized crime. He was sentenced to capital punishment, but pardoned after appeal two years ago by Governor Dewey.[paragraph break]Execution Rocks inherits its name from the colonial period, where legend goes that disobedient slaves were shackled at low tide, and served as examples for others, being left there to slowly drown in the pounding waves. This story is considered apocryphal by most, but today, the lighthouse earned its name.[paragraph break][one of][benjack-but-wait-theres-more][or][stopping][paragraph break]CORRIGENDUM[paragraph break]Gustave Dellorto, who escaped from Sing Sing prison earlier this month, was arrested in Detroit, Michigan, yesterday leaving in his wake a fresh series of murders committed during a two-week spree across several states. It was previously reported in error that he had died by drowning in the Long Island Sound, but the body recovered in that incident is now known to be that of Francis Dapper, age 19 of Larchmont, New York, who had been working at the Purdue Island Yacht Club the evening that Gustave escaped. One of the club launches, which had been brought ashore for the winter, was discovered missing later that week. Police believe that it was probably used by Dellorto to reach the Execution Rocks lighthouse, where he abandoned his victim[apostrophe]s body, after swapping clothes to fake his own death in an attempt to evade capture."}.
+The content of Benjack-clipping-convict is Benjack-clipping-convict-text.
+Understand "water/fate/convict/for" as Benjack-clipping-convict.
+
+
+[doing the very side effect-within-say that I warn against:]
+To say benjack-but-wait-theres-more:
+	wait for any key; 
+	say "There[apostrophe]s another bit pasted a bit lower on the page.";
+	wait for any key.
+
+Benjack-clipping-sable is a benjack-clipping. 
+The title of Benjack-clipping-sable is "Boat Wreck On Sable Island".
+The list of text called Benjack-clipping-sable-text is always {"A 12-man fishing boat, the Miss Step, out of Halifax, was found wrecked yesterday with loss of all hands on Sable Island, a small, isolated island in the Atlantic Ocean, 190 miles southeast of Halifax. The vessel grounded on an sandy bar near the eastern end of the island and by report was discovered yesterday morning by Ronald Lefevre, sub-intendent of the Sable Island Rescue Station. Subsequently, both Mr. Lefevre and Scott McCallister, who was in charge of the two-man Rescue Station, were also lost.[paragraph break]
+The only other inhabitant of the island, Dr. Martha Klein, reported yesterday[apostrophe]s events to the Canadian Coast Guard cutter Hermes by shortwave radio at 10:20 a.m. yesterday morning before herself going missing. The Hermes reached the island within the next two hours, but was unable to launch small landing craft because of gale force squalls. When they did make landfall late that afternoon, there was no evidence of the wreck. The search the island[apostrophe]s three inhabitants was aborted this morning due to further foul weather; additional Coast Guard vessels are en route as we go to press.[paragraph break]The Coast Guard has refused to comment on the matter, but a ham radio operator, Edmund Finister, from Prince Edward Island, gave the following account to the press:[paragraph break][quotation mark]I sometimes listen to the reports going back and forth between Dr. Klein at the Meteorological Station and the mainland, and I wasn[apostrophe]t expecting anything at that time of day, but I just happened to have the radio on, more or less to keep the shack warm. ","Then, out of the blue, I hear Dr. Klein, and she normally has kind of a lilting, friendly voice, but I could hear that she was shaken up. I was in the other room, so I only caught the last part of it, but she was speaking almost too calmly, trying to give all the details, but I could tell she was a hair[apostrophe]s breadth from having a breakdown.[quotation mark][paragraph break][quotation mark]She[apostrophe]s talking to the sparky on the cutter, and saying that first the one guy, Lefevre came speeding back along the beach in his jeep to get McCallister, because he had discovered the fishing boat on its side up on the sand. They asked Dr. Klein to call it in and they both took off again, even though Lefevre had said that when he had seen it the first time, he had a good look around and there were no survivors.[quotation mark][paragraph break][quotation mark]Now, what[apostrophe]s weird is what Lefevre told Klein -- while there were no bodies aboard, there were these… things. I only know what she said on the air, that Lefevre had said that there were these fleshy things all over the ship, in different parts of it, down below, up on the deck. They were whitish or translucent, sort of long tubes of the stuff. Heavy, deadweight if you tried to move them. Some were wrapped up in foul weather jackets, and one that Lefevre poked had some coins embedded in it, about halfway up, he said, just a couple inches deep. His best guess was that they were whale fat since they were so oily, but he was just guessing. Also, he said they had kind of a musky smell.[quotation mark][paragraph break][quotation mark]Whatever they were, they[apostrophe]re gone now. All of them.[quotation mark]"}.
+The content of Benjack-clipping-sable is Benjack-clipping-sable-text.
+Understand "boat/wreck/sable/island" as Benjack-clipping-sable.
+
+Benjack-clipping-orphan is a benjack-clipping. 
+The title of Benjack-clipping-orphan is "Orphan Survives".
+The list of text called Benjack-clipping-orphan-text is always {"Orphan Survives Boat Collision, New York[one of][benjack-orphan-fakeout][or][stopping][line break]City Police Frogman Dies Horribly.[paragraph break]Six-year-old Samantha Monteleone was thought lost earlier today after The Knickerbocker, a commercial touring boat with 230 persons aboard, came to an abrupt stop just south of Battery Park. The child was later found trapped below decks, but only after New York City Police Department Frogman Reginald Foster died in the search and rescue operation.[paragraph break]Forty of the passengers this morning were orphans in the first, second, and third grade at the Tuckeridge Home for Orphans in Yonkers, New York. They and their chaperones from the orphanage were enjoying the boat ride around Manhattan, many of them crowded along the starboard bow railing to view the Statue of Liberty, when the 2500 tonne vessel came to an immediate halt in open water.[paragraph break]Many passengers were thrown to the deck, and one orphan reported seeing Samantha go forward over the railing. Chaperones were able to locate all other children, and a shipwide search was organized while the ship returned to its berth on Pier 82. During the return to the dock, the crew swept the ship twice, but were unable to find they girl.[paragraph break]Meanwhile, NYPD frogmen were dispatched to position of the stalled ship using landmark bearings, putting them about a quarter mile south-west of Governors Island. The first vessels upon the scene reported no evidence of debris that would have supported the possibility of an earlier collision and no maritime accidents were witnessed this morning along this heavily trafficked route connecting Manhattan to the Atlantic. ","According to the coast guard, no ships have issued distress calls and none are known to be overdue in ports around New York City.[paragraph break]According to NYPD Frogman Unit Captain Peter Pisar, his ten man team began a standard search operating from two support barges, which arrived on the scene one within a half-hour, and the other near the one hour mark. Despite unusually poor visibility and brisk currents, the search proceeded normally until just before noon, when Sargent Foster’s air hose was hoisted to a barge, bringing with it only the upper half of the diving suit.[paragraph break][quotation mark]You know there’s a problem when the winch doesn’t make the usual sound.[quotation mark] said Jobber Thomson, one of Foster’s squad. [quotation mark]It was just the top part of the suit, from the armpits up. When we opened the helmet, you should have seen the look on his face. Nothing got to Reggie, but I think he died of fright before whatever was down there cut him to pieces.[quotation mark][paragraph break]The NYPD has not release a statement at this time, but officers on the scene speculated that officer Foster might have come into contact with a rotating propeller, although he was working on the bottom the Anchorage Channel, at an average depth of greater than fifty feet.[paragraph break]The orphan, Samantha, was found in the early evening cowering in a normally sealed bilge section of the ship. Perry Sylvester, the director of the Tuckeridge Home for Orphans described the girl as [quotation mark]white as a sheet and catatonic, shivering in the dark, her eyes more white than pupil.[quotation mark] Samantha was taken to the the Rosedale Psychiatric Center in White Plains, where she is recovering."}.
+The content of Benjack-clipping-orphan is Benjack-clipping-orphan-text.
+Understand "orphan/orphans/survive/survives" as Benjack-clipping-orphan.
+
+To say benjack-orphan-fakeout:
+	say "Finally, a feel-good story.[paragraph break]You unfold the article to give it a full perusal.";
+	wait for any key; 
+	say "Orphan Survives Boat Collision, New York";
+	wait for any key.
+
+Benjack-clipping-boardwalk is a benjack-clipping. 
+The title of Benjack-clipping-boardwalk is "Boardwalk Tragedy".
+The list of text called Benjack-clipping-boardwalk-text is always {"The hunt is underway for two recent highschool graduates last seen on the beach in Lavalette, New Jersey. The youths, Vinny Bernaducci, age 19 of the Bronx, New York, and Sandra Thomas, age 18, of Perth, Australia, disappeared last evening after attending a clambake with friends on the beach.[paragraph break]Ocean County police detective Roger Gutterman who interviewed other teenagers on the beach that evening said that the two missing teens were last seen walking off towards a section of the boardwalk favored by youth, just down the beach towards Seaside Heights.[paragraph break]Investigators have identified the likely location, which contained articles of clothing and other materials that the couple was likely to have used that evening. They were puzzled, however, about the possible significance of a wide furrow leading from the ocean’s edge to that spot under the boardwalk.[paragraph break]Detective Guttman described that furrow as [quotation mark]wide, maybe ten or fifteen feet across, pretty shallow, and flanked by tufts of moist sand.[quotation mark] He also said, [quotation mark]The only thing I’ve ever seen like that was on vacation -- one evening I saw sea turtles hauling themselves up the beach to lay their eggs. It was kind of like that, except much, much bigger.[quotation mark]"}.
+The content of Benjack-clipping-boardwalk is Benjack-clipping-boardwalk-text.
+Understand "boardwalk/tragedy" as Benjack-clipping-boardwalk.
+
+Benjack-clipping-hargreaves is a benjack-clipping. 
+The title of Benjack-clipping-hargreaves is "hargreaves".
+The list of text called Benjack-clipping-hargreaves-text is always {"WILSON HARGREAVES, REMEMBERED[paragraph break]Lieutenant Wilson Hargreaves, former Officer-in-Charge of the Winslet Point Lighthouse, was laid to rest today in the Restful Meadows Cemetery in Winksboro, Maine. Devoted husband of Delores, proud father of Katie and Linda, he was fifty-eight. A memorial service was held in Winksboro Town Hall, led by mayor Thomas Snideworth. The mayor praised Wilson’s service to the community, both his constant watchfulness at the Lighthouse and his many projects involving town youth. The major also consoled the grieving family regarding his extraordinarily gruesome death."}.
+The content of Benjack-clipping-hargreaves is Benjack-clipping-hargreaves-text.
+Understand "hargreaves/wilson/remembered/obituary" as Benjack-clipping-hargreaves.
+
+Benjack-clipping-9 is a benjack-clipping. 
+The title of Benjack-clipping-9 is "title9".
+The list of text called Benjack-clipping-9-text is always {"article9"}.
+The content of Benjack-clipping-9 is Benjack-clipping-9-text.
+
+Benjack-clipping-10 is a benjack-clipping. 
+The title of Benjack-clipping-10 is "title10".
+The list of text called Benjack-clipping-10-text is always {"article10"}.
+The content of Benjack-clipping-10 is Benjack-clipping-10-text.
+
+[Clipping template
+
+Benjack-clipping-xxx is a benjack-clipping. 
+The title of Benjack-clipping-xxx is "xxx".
+The list of text called Benjack-clipping-xxx-text is always {"xxx"}.
+The content of Benjack-clipping-xxx is Benjack-clipping-xxx-text.
+
+]
 
 Book 4 - New Actions
 
@@ -579,7 +761,28 @@ There is a thing called jpk-photo. The description of the jpk-photo is "An old p
 
 The mtw-teapot is an open opaque container in MGR1. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
 
-Part 4 - Font Testing
+Part 4 - Uberuser Actions
+
+[to simulate having another cup of tea in N1]
+Liptoning is an action applying to nothing. Understand "lipton" as liptoning.
+
+Carry out liptoning:
+	if benjack-times_bestowed of yourself is 3:
+		say "Any more caffeine and you will vibrate to death.";
+	otherwise:
+		increase the benjack-times_bestowed of yourself by one;
+		say "You drank [benjack-times_bestowed of yourself] cups of tea.";
+		let C be a benjack-clipping;
+		if the benjack-times_bestowed of yourself is:
+			-- 1:
+				let C be Benjack-clipping-body;
+			-- 2:
+				let C be Benjack-clipping-convict;
+			-- 3:
+				let C be Benjack-clipping-sable;
+		now C is in benjack-scrapbook-5.
+
+Part 5 - Font Testing
 
 Font testing is an action out of world. Understand "fonts" as font testing.
 
