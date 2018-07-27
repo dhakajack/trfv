@@ -51,7 +51,27 @@ The examine containers rule does nothing when examining a benjack-runebook.
 Understand "read [a benjack-runebook]" as reading when the location is M2F3.
 Instead of opening a benjack-runebook, try reading the noun.
 
-Part 2 - The Player
+Part 2 - Conversation Disambiguation
+
+[If we run into ambiguation prompts, this is a quick way to resolve them.
+
+A thing can be conversation-preferred. A thing is usually not conversation-preferred.
+
+Does the player mean quizzing about something conversation-preferred: it is likely.
+
+Does the player mean informing about something conversation-preferred: it is likely.
+
+Does the player mean implicit-quizzing something conversation-preferred: it is likely.
+
+Does the player mean implicit-informing something conversation-preferred: it is likely.
+
+Definition: a thing is conversation-preferred:
+	if it is xxxx, decide yes;
+	decide no.
+	
+]
+
+Part 3 - The Player
 
 The player has a number called benjack-times_bestowed. The benjack-times_bestowed of the player is 0. [number of cups of tea consumed]
 
@@ -64,7 +84,13 @@ Yourself can be benjack-disruption_informed. Yourself is not benjack-disruption_
 Yourself can be benjack-lin_aware. Yourself is not benjack-lin_aware.
 [ever heard of the town of Lin?]
 
-Part 3 - Locations 
+Yourself can be ploughver-armed. Yourself is ploughver-armed.[on timer]
+
+Yourself can be ploughver-inhibited. Yourself is not ploughver-inhibited. [e.g., if room is warded, set]
+
+Yourself has a number called benjack-times_ploughvered. The benjack-times_ploughvered of yourself is 0.
+
+Part 4 - Locations 
 
 Chapter DAN8 Hillside Path
 
@@ -223,7 +249,7 @@ Chapter The benjack realm
 and a room isn't allowed to be in more than one region!]
 Definition:  a room is in the benjack-realm if it is DAN8 or it is M2F3.
 
-Part 4 - NPC Definitions
+Part 5 - NPC Definitions
 
 Chapter Christabell
 
@@ -614,7 +640,7 @@ benjack-Fusion is a subject.  Understand "fusion" as benjack-fusion when the loc
 
 benjack-Remedy is a subject.  Understand "remedie/remedy" as benjack-Remedy when the location is in the benjack-realm.
 
-benjack-Bestowance is a subject.  Understand "bestowance/xizzi" as benjack-Bestowance when the location is in the benjack-realm.
+benjack-Bestowance is a subject.  Understand "bestowance" as benjack-Bestowance when the location is in the benjack-realm.
 
 benjack-Nirramonk is a subject.  Understand "nirramonk" as benjack-Nirramonk when the location is in the benjack-realm
 
@@ -679,6 +705,12 @@ benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/bu
 benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is in the benjack-realm.
 
 benjack-Seeming is a subject.  Understand "Seeming" as benjack-Seeming when the location is in the benjack-realm.
+
+benjack-XizziSpell is a subject.  Understand "xizzi" as benjack-XizziSpell when the location is in the benjack-realm. 
+
+benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-PloughverSpell  when the location is in the benjack-realm.
+
+benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm.
 
 [
 
@@ -833,6 +865,15 @@ After quizzing or informing benjack-Christabell about benjack-Mirror:
 After quizzing or informing benjack-Christabell about benjack-Seeming:
 	say "[one of]After you tell Christabell about being trapped in Carol[apostrophe]s room by the door that turned into a mirror, Christabell offers some reassurance: [quotation mark]Fret you not, I know of the Seeming she did Werke, and it is but a weake one and cannot be used against your Minde again.[quotation mark][or]The trick that Carol used to trap you in her room won[apostrophe]t work on you a second time.[no line break][or][quotation mark]A Seeming is naught moor than a brief Illusion; it is easily washed from the Minde and with diligent Practice can be ignored without Effort.[quotation mark][stopping][paragraph break]".
 	
+After quizzing benjack-Christabell about benjack-XizziSpell:
+	say "Christabell reminds you that this is the spell that transfers magical energy from one being to another."
+	
+After quizzing benjack-Christabell about benjack-PloughverSpell:
+	say "Christabell reminds you that this is the spell that will allow you to magically blink back and forth between Carol[apostrophe]s room and this hillside -- but won't work anywhere else."
+	
+After quizzing benjack-Christabell about benjack-KHSpell :
+	say "Christabell reminds you that this is the spell that you can use to destroy Carol[apostrophe]s book of runes."
+	
 Chapter 2 - R1 Event
 
 Instead of going a direction (called the way) during benjack-R1:
@@ -848,6 +889,15 @@ Instead of going a direction (called the way) during benjack-R1:
 	
 To say benjack-mobius:		
 		say "You [one of]are right where you started[or]haven[apostrophe]t budged an inch[or]aren[apostrophe]t getting anywhere this way[or]wonder what you need to do to get out of here[or]suspect that Christabell knows how you could break this weird spell and leave[or]are really not enjoying this at all and consider pumping Christabell for information[or]have not moved[in random order]".
+		
+[player starts you not inhibited and armed, so no need to test in this scene]
+Before benjack-ploughvering when the yourself is benjack-spell_enabled during benjack-R1:
+	if benjack-Christabell is run-down:
+		say "[quotation mark][one of ]Your surfeit of potence does retain you Bodily.[no line break][or]Might I suggest the Bestowance to yield me the Excess of that Potence that doth draw you hither?[no line break][or]If you would cast the Bestowance, I do warrant the Ploughvering would do just.[no line break][or]If you would but make use of the Bestowance, your Departure would no longer be infringed upon.[no line break][or]Could you cast upon me the [apostrophe]xizzi[apostrophe] spell to break the Enchantement that does you bind to this Place?[no line break][stopping][quotation mark][paragraph break]";
+		stop the action;
+	otherwise:
+		say "Christabell calls after you, [quotation mark]Do remember to help liberate Carol from her Runes![quotation mark] and then everything goes dark."
+		[could also use this to load up N2 if the scene begins rule doesn't cut it.]	
 
 Chapter 3 - R1 Tests
 
@@ -988,7 +1038,11 @@ The content of Benjack-clipping-xxx is Benjack-clipping-xxx-text.
 
 Book 4 - New Actions
 
-Benjack-xizziing is an action applying to nothing. Understand "xizzi" as Benjack-xizziing.
+Part 1 - Magicks
+
+Chapter 1 - XIZZIING
+
+Benjack-xizziing is an action applying to nothing. Understand "xizzi" as Benjack-xizziing when the location is in the benjack-realm.
 
 Check Benjack-xizziing:
 	if yourself is not benjack-spell_enabled:
@@ -1002,6 +1056,45 @@ Carry out Benjack-xizziing:
 Before answering someone that "xizzi":
 	say "[bracket] Hint: You can just say the magic word by itself[one of]. That's part of the magic[or] -- there's no extra charge[or][stopping]. [close bracket][paragraph break]";
 	try Benjack-xizziing instead.
+
+Chapter 2 - Ploughvering
+
+Benjack-ploughvering is an action applying to nothing. Understand "ploughver" as Benjack-ploughvering when the location is in the benjack-realm.
+
+Check Benjack-ploughvering:
+	if yourself is not benjack-spell_enabled:
+		say "[one of]Not sure what that was. Maybe not enough fiber in your diet[stopping].";
+		stop the action;
+	otherwise:
+		if yourself is not ploughver-armed:
+			say "You don't think enough time has passed to recharge your ploughver spell.";
+			stop the action;
+		otherwise:
+			if yourself is ploughver-inhibited:
+				say "You feel ready to cast the spell, but some magical force is preventing it[one of], or at least that is your best guess[or][stopping].";
+				stop the action.
+
+Carry out Benjack-ploughvering:
+	say "[benjack-ploughver-cutscenes]";
+	now yourself is not ploughver-armed;
+	the benjack-ploughver spell arms in 15 turns from now;
+	increase the benjack-times_ploughvered of yourself by one;
+	if the location is DAN8:
+		move the player to M2F3;
+	otherwise:
+		move the player to DAN8.
+		
+At the time when the benjack-ploughver spell arms:
+	say "You sense that the ploughver spell has recharged.";
+	now yourself is ploughver-armed.
+		
+To say benjack-ploughver-cutscenes:
+	say "[one of]Around you, in no particular direction, you hear screams, strangled almost instantly, drowned in splashes and bubbles and ending in silence. At the same time, your vision fades to darkness and you feel yourself plunging, able to see only vast, hovering shapes above you, moving silently past. You become aware of sounds so low, that you more feel them in your bones than hear them; one such sounds passes below you, receding in endless distance. Then it is over[or][or][stopping]."
+
+Chapter 3 - kwisatzhaderaching
+
+
+
 
 Book 5 - Replacement Default Actions
 
