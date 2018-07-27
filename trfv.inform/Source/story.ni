@@ -45,8 +45,6 @@ The player has a number called benjack-times_bestowed. The benjack-times_bestowe
 
 Yourself can be benjack-spell_enabled. Yourself is not benjack-spell_enabled. [has player learned to cast xizzi, ploughver and kwisatz haderach]
 
-Yourself can be benjack-marked. Yourself is not benjack-marked. [has carol marked you]
-
 Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has carol marked Naomi's baby]
 
 Yourself can be benjack-disruption_informed. Yourself is not benjack-disruption_informed. [has christabell told naomi about opening the window?]
@@ -214,6 +212,8 @@ Understand "talk to [someone]" as a mistake ("[benjack-talk-hint].").
 
 [A state-machine that transitions the dialogue between a chain of behaviors in R0.  See "Chapter Scene R0".]
 benjack-Christabell can be unaddressed or eager or chatty or candid or bypassed.  benjack-Christabell is unaddressed.
+
+benjack-Christabell can be either run-down or charged-up. benjack-Christabell is run-down.
 
 Chapter Carol
 
@@ -549,7 +549,7 @@ Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
 	say "[printed name of mtw-teapot]";
 	omit contents in listing.
 
-Before going a direction when the location is juxtaDAN8 and benjack-N1 has happened and yourself is not benjack-marked:
+Before going a direction when the location is juxtaDAN8 and benjack-N1 has happened and yourself is not benjack-spell_enabled:
 	if the room the noun from the location is DAN8:
 		say "You round the path and find yourself in a familiar knoll flanked on three sides by tall, dark cliffs. In the center of a clearing before you is a huge pile of rusting railroad track.[paragraph break]Leaning back against the pile of iron, [benjack-Christabell] gives you a fatigued wave and after some exertion of effort becomes more substantial.";
 	otherwise:
@@ -562,8 +562,6 @@ Part 4 - Scene R1 Naomi is Marked and Learns Some Spells
 
 When benjack-R1 begins:
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed.
-
-
 
 Chapter 1 - R1 Conversation
 
@@ -814,12 +812,17 @@ After quizzing or informing benjack-Christabell about benjack-Seeming:
 	
 Chapter 2 - R1 Event
 
-Instead of going a direction during benjack-R1:
-	if yourself is not benjack-marked:
+Instead of going a direction (called the way) during benjack-R1:
+	if benjack-Christabell is run-down:
 		say "[one of]As you walk away from the hillside, an Irish blessing comes to mind: May the road rise up to meet you.[paragraph break]The rest of the blessing doesn[apostrophe]t so much apply, the part about sunshine and good luck and such, but the road, or in this case the packed soil of the trail past the hillside, does fold back on itself and twist around in a way that makes you mildly nauseous and points your feet right back to where you came from.[paragraph break][quotation mark]Are you doing that?[quotation mark] you ask Christabell.[paragraph break][quotation mark]Nay -- [apostrophe]tis you. And [apostrophe]tis this place. But it be not of my Conjuration, but even summe Resulte of your ownself. The [bold type]Potence[roman type] which you do comport maketh of you like unto a Lodestone, what are then drawn by Nature to this Place.[quotation mark][paragraph break][quotation mark]So I[apostrophe]m a magnet stuck to that giant [bold type]pile[roman type] of [bold type]iron[roman type]?[quotation mark][paragraph break][quotation mark]To the [bold type]Ironne[roman type], nay. That hath no part in it, save as the object of my unwilling [bold type]Fusion[roman type]. It might as well the Trunk of a Tree as a Thimble be.[no line break][quotation mark][or]This time it[apostrophe]s worse. The path doesn[apostrophe]t so much curve around as flip inside out. Everything stretches as you swing back towards a normal orientation, colors scaling up and down the rainbow, eventually returning to their normal hue.[paragraph break][quotation mark]Please, Friend Naomi, do not Straine your Substance to depart. I have myself been for these many long Years similarly afflickted by the [bold type]Fusion[roman type], but I wish not any Portion of mei Trials on others in no Way deserving of it.[quotation mark][or]Again, the world bends so acutely around you that you see your own back walking away from yourself before time and space catch up, depositing you right where you started.[paragraph break][quotation mark]I didn[apostrophe]t get as nauseous that time,[quotation mark] you remark.[paragraph break][quotation mark]The Minde doth accommodate to Experience, even so arcane, yet this be not a [bold type]Remedie[roman type], though happily for you not bound by the [bold type]Fusion[roman type], One doth exist, and easily to wit.[no line break][or]What was initially frightening is now merely annoying, and a mild headache has replaced frank nausea.[paragraph break][benjack-mobius].[no line break][stopping][paragraph break]";
 	otherwise:
-		continue the action.
-		
+		if the room the way from the location is nothing:
+			continue the action;
+		otherwise:
+			say "I do pray you return after a Piece to let me know how you fare with Carol. Whilst you so occupy your Attentions, I shall myself see to a few Affayres long overdue. See you later, mie Ally great![quotation mark][paragraph break][quotation mark]In a while, crocodile![quotation mark][paragraph break]Christabell gives you a strange look and then disappears into the pile of railroad tracks.[paragraph break]You walk away from the pile of rusting metal, firmly committed to helping Carol by freeing her from her Runes.";
+			now benjack-Christabell is nowhere; [in case player comes back before N2]
+			continue the action.
+	
 To say benjack-mobius:		
 		say "You [one of]are right where you started[or]haven[apostrophe]t budged an inch[or]aren[apostrophe]t getting anywhere this way[or]wonder what you need to do to get out of here[or]suspect that Christabell knows how you could break this weird spell and leave[or]are really not enjoying this at all and consider pumping Christabell for information[or]have not moved[in random order]".
 
@@ -970,8 +973,12 @@ Check Benjack-xizziing:
 		stop the action.
 
 Carry out Benjack-xizziing:
-	say "[one of][quotation mark]Let us do step summut afar the Rayle Tracks,[quotation mark] counsels Christabell.[paragraph break]That is probably a good idea, because as the two walk towards the edge of the woods, lighting begins to arc from every part of your body to Christabell in impossibly thin, blue-white tendrils, occasionally flashing over to the pile of railroad tracks, which begin to glow red on in the spots where they are touched.[paragraph break]You take a breath and your lungs burn, the air sharp with the smell of ozone; as you continue to walk the sparking dies down and it is easier to breathe.[paragraph break]As after images of the lightning fade, Christabell pats you on the shoulder, almost substantially, and you can see for yourself that the spell worked -- there is nothing translucent about her -- you literally did her a solid.[paragraph break][quotation mark]I do thank you sincerely for restoring the Integrity of my Spirit with this Gifte, whych does owe Provenance to Carol, who, however unwittingly, did preserve mee through your Kindness.[quotation mark][paragraph break][quotation mark]You[apostrophe]re welcome,[quotation mark] you add, glad to have been helpful to at least someone today.[paragraph break][quotation mark]Naomi... I would repay Carol; let us do help her escape her Fusion and persue a more wholesome Unfolding. If we can destroy her Runes, that part at least of her Soul will be washed aclean. I ask you: Go and find a Booke inwhich are written the Source of her Past and Unmake it.[quotation mark][paragraph break][quotation mark]Tear it up?[quotation mark] you ask.[paragraph break][quotation mark]Nay, Violence be not the answer. Let us devise a Magick to unwrought them.[quotation mark] Christabell paces back and force, [quotation mark]A moment whilst I do Conceive a mete Werde for the Spell… Fazzah! No, too short. Mannagummoset! Not the easiest to remember.[quotation mark][paragraph break][quotation mark]Kwisatz haderach?[quotation mark] You suggest, being a big fan of Dune (the book, not the film).[paragraph break][quotation mark]Oh, that does have a lovely ring about it, as long as you can remember it. Yes, let us do go with that.[quotation mark]  She waves her hands, and you suppose that[apostrophe]s that. Christabell continues, [quotation mark]You need only be in the same Place as the Runes, and say those Werdes and the Spell will act. Now, getting you there… For that I do propose a trifling bit of Magick to take you thither and back to here at your Weal, for that the Spell Werde be ‘ploughver[apostrophe]. Just know you, one casting cannot follow another without pause.[quotation mark][paragraph break][quotation mark]Got it. It takes some time to recharge.[quotation mark][or]Your fingertips tingle briefly, but having no stored up ghostly energy, the spell fizzles.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark]Let us do step summut afar the Rayle Tracks,[quotation mark] counsels Christabell.[paragraph break]That is probably a good idea, because as the two walk towards the edge of the woods, lighting begins to arc from every part of your body to Christabell in impossibly thin, blue-white tendrils, occasionally flashing over to the pile of railroad tracks, which begin to glow red on in the spots where they are touched.[paragraph break]You take a breath and your lungs burn, the air sharp with the smell of ozone; as you continue to walk the sparking dies down and it is easier to breathe.[paragraph break]As after images of the lightning fade, Christabell pats you on the shoulder, almost substantially, and you can see for yourself that the spell worked -- there is nothing translucent about her -- you literally did her a solid.[paragraph break][quotation mark]I do thank you sincerely for restoring the Integrity of my Spirit with this Gifte, whych does owe Provenance to Carol, who, however unwittingly, did preserve mee through your Kindness.[quotation mark][paragraph break][quotation mark]You[apostrophe]re welcome,[quotation mark] you add, glad to have been helpful to at least someone today.[paragraph break][quotation mark]Naomi... I would repay Carol; let us do help her escape her Fusion and persue a more wholesome Unfolding. If we can destroy her Runes, that part at least of her Soul will be washed aclean. I ask you: Go and find a Booke inwhich are written the Source of her Past and Unmake it.[quotation mark][paragraph break][quotation mark]Tear it up?[quotation mark] you ask.[paragraph break][quotation mark]Nay, Violence be not the answer. Let us devise a Magick to unwrought them.[quotation mark] Christabell paces back and force, [quotation mark]A moment whilst I do Conceive a mete Werde for the Spell… Fazzah! No, too short. Mannagummoset! Not the easiest to remember.[quotation mark][paragraph break][quotation mark]Kwisatz haderach?[quotation mark] You suggest, being a big fan of Dune (the book, not the film).[paragraph break][quotation mark]Oh, that does have a lovely ring about it, as long as you can remember it. Yes, let us do go with that.[quotation mark]  She waves her hands, and you suppose that[apostrophe]s that. Christabell continues, [quotation mark]You need only be in the same Place as the Runes, and say those Werdes and the Spell will act. Now, getting you there… For that I do propose a trifling bit of Magick to take you thither and back to here at your Weal, for that the Spell Werde be ‘ploughver[apostrophe]. Just know you, one casting cannot follow another without pause.[quotation mark][paragraph break][quotation mark]Got it. It takes some time to recharge.[quotation mark][or]Your fingertips tingle briefly, but having no stored up ghostly energy, the spell fizzles.[no line break][stopping][paragraph break]";
+	now benjack-Christabell is charged-up.
 
+Before answering someone that "xizzi":
+	say "[bracket] Hint: You can just say the magic word by itself[one of]. That's part of the magic[or] -- there's no extra charge[or][stopping]. [close bracket][paragraph break]";
+	try Benjack-xizziing instead.
 
 Book 5 - Replacement Default Actions
 
