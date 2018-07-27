@@ -24,7 +24,19 @@ Book 1 - Set Up
 
 Part 1 - New Kinds
 
+[Used in the Nursery, where objects evolve over 3 different scenes]
 A benjack-shadow is a kind of thing. 
+A benjack-shadow has some text called N1-desc, the N2-desc, and the N3-desc.
+Instead of examining a benjack-shadow (called the shadow):
+	if benjack-N1 is happening:
+		say N1-desc of the shadow;
+	otherwise if benjack-N2 is happening:
+		say the N2-desc of the shadow;
+	otherwise if benjack-N3 is happening:
+		say the N2-desc of the shadow;
+	otherwise:
+		say "Error: no description available.";
+	say "[paragraph break]".
 
 A benjack-clipping is a kind of thing. 
 Benjack-clippings have some text called title.
@@ -111,8 +123,18 @@ The M2F3 is a room in M2F. M2F3 is north from M2F2.
 
 Printed name of M2F3 is "Nursery (Ben Collins-Sussman)".
 
-Description of M2F3 is "DESCRIPTION OF ROOM."
+Description of M2F3 is "[benjack-nursery-description]"
 
+To say benjack-nursery-description:
+	if benjack-N1 is happening: [TODO and also IFF the player is THROUGH THE DOOR]
+		say "You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.";
+	otherwise if benjack-N2 is happening:
+		say "[one of]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
+	otherwise if benjack-N3 is happening:
+		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table";
+	otherwise:
+		say "Mystical smoke blinds your vision." [we should never arrive here -- if we do, this is a bug in Scenes]
+		
 The commentary of M2F3 is "M2F3 Commentary".
 
 benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door.
@@ -141,12 +163,22 @@ Section 1 - Initial Furnishings
 
 [benjack-shadows are ghost objects that you mostly can't interact with -- we'll tweak those rules later. Some of this stuff will be scenery, some not. We'll have to play with the room / object description paragraph rules]
 
+[template:
+
+The benjack- is a benjack-shadow in M2F3. The printed name of the benjack- is "".
+Understand "" as the benjack-   when the player is in M2F3.
+The N1-desc of the benjack-  is "".
+The N2-desc of the benjack-  is "".
+The N3-desc of the benjack-  is "".
+]
+
+
 The benjack-comforter is a benjack-shadow in M2F3.  The printed name of  benjack-comforter is "comforter".
 Understand "comforter" or "blanket" or "duvet" or "cover" as the benjack-comforter when the player is in M2F3.
-The description of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
+The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
 
-The benjack-dolls are benjack-shadows in M2F3. The benjack-dolls are scenery. The The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
-Understand "doll" or "dolls" or "animal" or "animals" or "stuffed" as the benjack-dolls   when the player is in M2F3.
+The benjack-dolls are benjack-shadows in M2F3. The benjack-dolls are scenery.  The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
+Understand "doll" or "dolls" or "animal" or "animals" or "stuffed" as the benjack-dolls when the player is in M2F3.
 The description of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjack-elephant is "toy elephant".
@@ -182,15 +214,6 @@ Instead of reading the benjack-scrapbook-5:
 		add title of clip to L;
 	say "[italic type][L][roman type].".
 
-
-[stuff template
-
-The benjack- is a benjack-shadow in M2F3. The printed name of the benjack- is "".
-Understand "" as the benjack-   when the player is in M2F3.
-The description of the benjack-  is "".
-
-Happy Coding!
-]
 
 
 		
