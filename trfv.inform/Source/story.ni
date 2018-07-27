@@ -579,7 +579,59 @@ Section 1 - R1 Subjects
 
 benjack-Runes is a subject.  Understand "rune/runes" as benjack-Runes when the location is in the benjack-realm.
 
+benjack-DeepOnes is a subject.  Understand "deep/ones" as benjack-DeepOnes when the location is in the benjack-realm.
+
+benjack-Potence is a subject.  Understand "Potence/Power" as benjack-Potence when the location is in the benjack-realm.
+
+benjack-Luminance is a subject.  Understand "luminance/louminance" as benjack-Luminance when the location is in the benjack-realm.
+
+benjack-Glamor is a subject.  Understand "glamor/glamour" as benjack-Glamor when the location is in the benjack-realm.
+
+There is a subject called benjack-Marked.  Understand "marked" as benjack-Marked when the location is in the benjack-realm.[inverted the declaration because inform trips over "marked" as a likely adjective]
+
+benjack-Fusion is a subject.  Understand "fusion" as benjack-fusion when the location is in the benjack-realm.
+
+benjack-Remedy is a subject.  Understand "remedie/remedy" as benjack-Remedy when the location is in the benjack-realm.
+
+benjack-Bestowance is a subject.  Understand "bestowance/xizzi" as benjack-Bestowance when the location is in the benjack-realm.
+
+
+[
+
+benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is in the benjack-realm.
+
+
+]
+
 Section 2 - R1 Quips
+
+After quizzing benjack-Christabell about benjack-Runes:
+	say "[one of]Pleased that you are taking an interest, Christabell launches into an explanation.[paragraph break][quotation mark]Whomesoever do werke a Magick, hee leaveth in Posterity Signes that summe might read thereafter; these be their Runes.[quotation mark][paragraph break][quotation mark]Sort of a record, then?[quotation mark] you inquire.[paragraph break][quotation mark]Not onely, for in wroughting any Magick, a natural Direction must be followed as Ice doth melt and flow downward as a Mountain Stream and not upwards to the Peake, so Potence must channel fruitfully. As a Log burnt doth comforting Heat provide, so Runes be the Ashes. Get you mie Drifte?[quotation mark][paragraph break][quotation mark]So, it[apostrophe]s sort of a nebulous mystical wake left behind by magic?[quotation mark][paragraph break][quotation mark]Nay, come you rightly downe to the Firmness of Earth -- it be not but like a Booke, it be a true Folio, though not seen but for Seight -- Leaves and Werdes in Leather bound: the Story of good Werkes upon one Shyt, sorrowfull sinnes the next.[quotation mark][or]Christabell explains that they are sort of a permanent sign of the price paid in the world to perform magic.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-DeepOnes:
+	say "[one of][quotation mark]I[apostrophe]m not really sure how to approach this delicately,[quotation mark] you begin, [quotation mark]but what exactly are the Deep Ones?[quotation mark] You refrain from air quotes, as it would just confuse her.[paragraph break][quotation mark]Your Apprehension I do gently understande, for many Miscreantes do beare false Witness against them and thow powerful they are, know you this: they do serve as me and my longhouse, the mighty Weal of Mattanit.[quotation mark][paragraph break][quotation mark]Yes, but what are they -- I mean, could you draw me a mental picture of them?[quotation mark][paragraph break][quotation mark]No Representation of them can I render, for their Forme supporteth not the weake Minde of Man, but summe few jotts of Wisedom I did learne among the Nirramonk, and these they are: firstly, they are Olde, older than the Earthe itself (this, thow we did know from the naym itself, but see you now how they did come by it); secondly, it is in the Seven Oceans and multitudinous Seas that they do dwell; and finally, and paramounte, the marked of Mattanit can call upon them to scribe their Runes in his Service.[quotation mark][paragraph break]Christabell adds, [quotation mark]They be not the onely of their Kinde, but the onely I did come to know in mei too brief Tymme among the Nirramonk.[quotation mark][or]According to Christabell, the Deep Ones are some sort of ancient beings that serve Mattanit.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Potence:
+	say "[one of][quotation mark]Potence be a Strength that lends to Magick; you do burn with it.[quotation mark] Christabell adds somberly, [quotation mark]It be also what I do most direly desire that I might cast aside my Fusion.[quotation mark][paragraph break]Christabell pokes your aura tentatively with her index finger; the aura deforms around it, bending inward. [quotation mark]Naomi, by what Providence came you to wield such Potence? I can but thinke of one Sourse: my Carol.  Could she by summe mirickell dwell yet in this moderne Ayge of yours?[quotation mark][paragraph break][quotation mark]When I was at Cragne Manor, I met her. She[apostrophe]s a spirit -- as I suppose you already know.[quotation mark] Christabell nods and you continue, [quotation mark]She is a very strange kid and it seems stuck in the 1950s.[quotation mark][paragraph break][quotation mark]Yes, such be the Nature of her Fusion, a circular prison. A good Childe she was, thow gone wrong in later Life, twisted by the Crânes.[quotation mark][or]Seems pretty straightforward: according to Christabell potence is the some sort of magical energy. She mentioned that something called the [quotation mark]bestowance[quotation mark] would fix the situation.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Luminance:
+	say "[one of][quotation mark]Naomi, surely you must needs have yourself remarked your terrifick Shyne in the Eyes of the Seight? Thereby doth the Potence with make manifest. Yet, I must needs forewarn: a potence too closely held, or too long, does risk injurious Consequence.[quotation mark][paragraph break][quotation mark]Oh[quotation mark]?[paragraph break][quotation mark]Yes, it is thereby that I do pray you consider the Bestowance.[quotation mark][or]Christabell says creatures with a lot of potence have an visible aura for those with spectral sight. Further, that having as much potence as you do right now is not healty for a mortal.[no line break][stopping][paragraph break]"
+	
+After quizzing benjack-Christabell about benjack-Glamor:
+	say "[one of][quotation mark]A Glamour be not moor than the outwarde Signe to the Seighted of Werked Magick. In the Case of you, it be raw and avid, the very Stuff taken of Life.[quotation mark][or]Based on Christabell[apostrophe]s explanation, a glamour is a kind of aura around magical things. Only those with spectral sight can see it.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Marked:
+	say "[one of][quotation mark]By that I do mean a person who doth bear the Spirit Mark, whereby the Annointed may conduct the Affaires of the allied Spirit, whom from to obtain Protections and Wardes against malign Spirits. Further, onely one Mark may a Person endure, thow many a Spirit may touch.[quotation mark][or]According to Christabell, someone who is marked has been chosen by a spirit and can more or less channel magical energies supplied by that spirit to work magic.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-Fusion:
+	say "[one of][quotation mark]The Fusion bindeth a Spirit to a Place, just as my unhappy Demise did bind me in Perpetuity to this Ironne,[quotation mark] Christabell says, gesturing to the railroad track. [quotation mark]Onely threw a princely summe of Potence keenly wielded can the Fusion be broken and a Spirit set a-free.[quotation mark][or]Christabell uses the term [quotation mark]fusion[quotation mark] to mean that which binds a spirit to the physical world.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Remedy:
+	say "[one of][quotation mark]I do see clearly a simple answer to remitte your Libertie of Mouvement: the Bestowance.[quotation mark][or]Christabell recommends that you perform a magical ritual called [quotation mark]the bestowance[quotation mark] in order to rid yourself of magical energy, which over time can be harmful to mortals.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Bestowance:
+	say "[one of]Christabelle replies, [quotation mark]The Bestowance is the Magick whereby Potence be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark], you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach Carol, when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be ‘xizzi[apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little[or]Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe]xizzi[apostrophe][stopping]."
+
 
 Chapter 2 - R1 Event
 
