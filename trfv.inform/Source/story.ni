@@ -459,7 +459,9 @@ benjack-N3 ends when benjack-Carol is not in M2F3.
 
 [might need some auxiliary scenes -- we'll figure that out as we code.]
 
-Part 2 - Scene R0 Meet Christabell
+Part 2 - Scene-specific Hints
+
+Part 3 - Scene R0 Meet Christabell
 
 [General strategy here is that we can scope different answers to subjects based on time and location.
 For time, we use Inform 'scenes' to scope.
@@ -729,7 +731,7 @@ test icebreak with "up/x woman/yes/tell woman about self"
 
 test R0-full with "s / talk to woman / say hello / yes / tell christabell about me / g / t peter / g / t vermont / g / t cragne / g / a christabell / g / t youth / g / a sight / g / a youth / g / a lin / g / a vermont / g / a naomi / g / a peter / g / a cragne / g / a rayle / g / a mound / x mound / a christabell / look / a cliff / climb cliff / g / x clearing / g/ a clearing / g/ a trail / g / x weeds / a lin / a forge / g / a gift / g / a mattanit / g / a grace / g / a third / g / a knotte / g / a ghost / g / a spirit / a lineage / a witch / g / a malificium / g / a salem / g / a puritan / g / a pilgrim / g / a colony / g / a indian / g / a mark / g / a carol / x carol / a carol / n / s / n / s / n / n / s / s / s / sw / ne / se / nw".
 
-Part 3 - Scene N1 Tea Party
+Part 4 - Scene N1 Tea Party
 
 Rule for printing the name of a benjack-runebook (called the evil tome):
 	say "[printed name of the evil tome]";
@@ -971,12 +973,14 @@ Before going a direction when the location is juxtaDAN8 and benjack-N1 has happe
 
 Chapter 3 - N1 Tests
 
-Part 4 - Scene R1 Naomi is Marked and Learns Some Spells
+Part 5 - Scene R1 Naomi is Marked and Learns Some Spells
+
+Chapter 1 - R1 Begins
 
 When benjack-R1 begins:
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed.
 
-Chapter 1 - R1 Conversation
+Chapter 2 - R1 Conversation
 
 Instead of conversing or hailing for the first time during benjack-R1:
 	if benjack-Christabell is candid:
@@ -1231,7 +1235,7 @@ After quizzing benjack-Christabell about benjack-PloughverSpell:
 After quizzing benjack-Christabell about benjack-KHSpell :
 	say "Christabell reminds you that this is the spell that you can use to destroy Carol[apostrophe]s book of runes."
 	
-Chapter 2 - R1 Event
+Chapter 3 - R1 Event
 
 Instead of going a direction (called the way) during benjack-R1:
 	if benjack-Christabell is run-down:
@@ -1256,11 +1260,13 @@ Before benjack-ploughvering when the yourself is benjack-spell_enabled during be
 		say "Christabell calls after you, [quotation mark]Do remember to help liberate Carol from her Runes![quotation mark] and then everything goes dark."
 		[could also use this to load up N2 if the scene begins rule doesn't cut it.]	
 
-Chapter 3 - R1 Tests
+Chapter 4 - R1 Tests
 
-Part 5 - Scene N2 Teenage Carol Marks Naomi's Baby
+Part 6 - Scene N2 Teenage Carol Marks Naomi's Baby
 
-Chapter 1 - Furnishing Updates
+Chapter 1 - N2 begins
+
+Chapter 2 - Nursery Furnishing Updates
 
 The N2-desc of the benjack-comforter is "".
 The N2-desc of the benjack-dolls is "".
@@ -1269,8 +1275,6 @@ The N2-desc of the benjack-monkey is "".
 The N2-desc of benjack-cap is "".
 The N2-desc of benjack-sweater is "".
 The N2-desc of benjack-clown is "".
-The N2-desc of benjack-lamb is  "".
-The N2-desc of benjack-kitchen is "".
 The N2-desc of benjack-desk is "".
 The N2-desc of benjack-drawer is "".
 The N2-desc of benjack-desktop is "".
@@ -1336,9 +1340,9 @@ Does the player mean doing something with the benjack-deskChair: it is likely.
 
 [note that these items must be declared forward of this list]
 The list of things called N2-furnishings is always {benjack-comforter, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, 
-benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair}.
+benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-chair, benjack-scrapbook-5}.
 
-Chapter 2 - N2 Conversation
+Chapter 3 - N2 Conversation
 
 
 
@@ -1349,19 +1353,20 @@ Section 1 - N2 Subjects
 
 Section 2 - N2 Quips
 
-Chapter 3 - N2 Event
+Chapter 4 - N2 Event
 
-Chapter 4 - N2 Tests
+Chapter 5 - N2 Tests
 
-Part 6 - Scene R2 Plotting Carol's Disruption
+Part 7 - Scene R2 Plotting Carol's Disruption
+
+Chapter 1 - R2 begins
 
 When benjack-R2 begins:
 	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
 	now yourself is benjack-ploughver-inhibited;
 	move benjack-Christabell to DAN8.
-	
 
-Chapter 1 - R2 Conversation
+Chapter 2 - R2 Conversation
 
 Before hailing or conversing or speaking when benjack-R2 is happening for the first time:
 	say "[quotation mark]My Greetings again, Naomi. Were you able to lifte the Burden of Carol[apostrophe]s Runes and set a-free her Spirit?[quotation mark][paragraph break][quotation mark]No, not so much,[quotation mark] you admit. [quotation mark]She didn[apostrophe]t have the scrapbook with her. In fact, the whole thing didn[apostrophe]t go that well. She[apostrophe]s has some resentment towards you, and her dad[apostrophe]s plan sounds bonkers.[quotation mark][paragraph break][quotation mark]I have something very important to ask you, Christabell. Carol touched me…[quotation mark] You take a moment to compose yourself, [quotation mark]Carol touched me here, and said she had marked my baby, a daughter.[quotation mark][paragraph break]Christabell looks askew. [quotation mark]Oh?[quotation mark] She holds her hand palm out. [quotation mark]No. There be no Baby. Nor even so much as Thowt of one in your Entrayls. Not this Daye. She doth Laie most Cravenly to seeke Inflewance o[apostrophe]er you. I had hoped to save her, but History does itself repete -- for the Sayke of All, we must see to her Disruption.[quotation mark]";
@@ -1438,7 +1443,7 @@ Instead of informing or quizzing benjack-Christabell about benjack-babySubject w
 Instead of informing benjack-Christabell about benjack-mark when benjack-R2 is happening:
 	try informing benjack-Christabell about benjack-babySubject .
 
-Chapter 2 - R2 Event
+Chapter 3 - R2 Event
 
 Instead of benjack-ploughvering when benjack-R2 is happening and the player is benjack-ploughver-inhibited:
 	say "[benjack-mark-glued]";
@@ -1465,25 +1470,106 @@ After quizzing benjack-Christabell about benjack-Disruption when benjack-R2 is h
 To say benjack-mark-glued:
 	say "You are held in place by Christabell[apostrophe]s mark.[paragraph break][quotation mark]Sorry I am, Naomi,[quotation mark] she says, [quotation mark]but e[apostrophe]er you depart, I must tell you how to disrupt Carol, after that, our Fate does reside in your two Hands.[quotation mark][paragraph break]".
 	
-Chapter 3 - R2 Tests
+Chapter 4 - R2 Tests
 
-Part 7 - Scene N3 Boss Battle
+Part 8 - Scene N3 Boss Battle
+
+Chapter 1 - N3 begins
 
 When benjack-N3 begins:
 	say "Carol stares out the window, her back to you. She[apostrophe]s a bit taller and dressed in a sharply tailored turquoise shift. Without bothering to turn around, she addresses you, [quotation mark]I have been expecting you, Naomi. I knew you would come once more before I die.[quotation mark][paragraph break]";
 	now yourself is benjack-ploughver-inhibited.
 
+Chapter 2 - N3 Nursery Furnishing Updates
 
+The N3-desc of the benjack-comforter is "".
+The N3-desc of the benjack-dolls is "".
+The N3-desc of the benjack-monkey is "".
+The N3-desc of benjack-cap is "".
+The N3-desc of benjack-sweater is "".
+The N3-desc of benjack-clown is "".
+The N3-desc of benjack-desk is "".
+The N3-desc of benjack-drawer is "".
+The N3-desc of benjack-desktop is "".
+The N3-desc of benjack-lamp is "".
+The N3-desc of benjack-table is "".
+The N3-desc of benjack-beasts is "".
+The N3-desc of benjack-toychair is "[N1-desc of benjack-toychair].".
+The N3-desc of benjack-clothing is "".
+The N3-desc of benjack-stackedBooks is "".
+The N3-desc of benjack-deskChair is "".
 
-Chapter 1 - N3 Conversation
+The benjack-fluorescentLight is a benjack-shadow.  The printed name of the benjack-fluorescentLight is "fluorescent light".
+Understand "fluorescent light" as benjack-fluorescentLight when the player is in M2F3.
+The N3-desc of benjack-fluorescentLight is "".
+
+The benjack-terminal is a benjack-shadow.  The printed name of the benjack-terminal is "computer terminal".
+Understand "computer/terminal" as benjack-terminal when the player is in M2F3.
+The N3-desc of benjack-terminal is "".
+
+The benjack-keyboard is a benjack-shadow.  The printed name of the benjack-keyboard is "keyboard".
+Understand "keyboard/keys/number/pad" as benjack-keyboard when the player is in M2F3.
+The N3-desc of benjack-keyboard is "".
+
+The benjack-powerswitch is a benjack-shadow.  The printed name of the benjack-powerswitch is "power switch".
+Understand "power/switch" as benjack-powerswitch when the player is in M2F3.
+The N3-desc of benjack-powerswitch is "".
+
+The benjack-screen is a benjack-shadow.  The printed name of the benjack-screen is "display screen".
+Understand "display/screen/CRT/monitor" as benjack-screen when the player is in M2F3.
+The N3-desc of benjack-screen is "".
+
+The benjack-shelves are a benjack-shadow.  The printed name of the benjack-shelves is "shelves".
+Understand "shelf/shelves" as benjack-shelves when the player is in M2F3.
+The N3-desc of benjack-shelves is "".
+
+The benjack-art is a benjack-shadow.  The printed name of the benjack-art is "three pieces of art".
+Understand "art/sculptures/sculpture" or "pieces of art" as benjack-art when the player is in M2F3.
+The N3-desc of benjack-art is "".
+
+The benjack-Nixon is a benjack-shadow.  The printed name of the benjack-Nixon is "portrait of President Nixon".
+Understand "president/nixon/richard/millhouse" or "portrait of nixon" or "portrait of president nixon" as benjack-nixon when the player is in M2F3.
+The N3-desc of benjack-nixon is "".
+
+The benjack-egg is a benjack-shadow.  The printed name of the benjack-egg is "opalescent egg".
+Understand "opalescent/egg/sculpture/left/leftmost" as benjack-egg when the player is in M2F3.
+The N3-desc of benjack-egg is "".
+
+The benjack-tile is a benjack-shadow.  The printed name of the benjack-tile is "black thermal tile/sculpture/middle/center".
+Understand "black/thermal/tile/space/shuttle/ceramic/brick/heat/shield/insulator" as benjack-tile when the player is in M2F3.
+The N3-desc of benjack-tile is "".
+
+The benjack-ambiguity is a benjack-shadow.  The printed name of the benjack-ambiguity is "nothing".
+Understand "right/sculpture" as benjack-tile when the player is in M2F3.
+The N3-desc of benjack-ambiguity is "(which of the three sculptures do you mean, the one on the left or one in the middle?)".
+
+The benjack-claws are a benjack-shadow.  The printed name of the benjack-claws is "nothing".
+Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-tile when the player is in M2F3.
+The N3-desc of benjack-tile is "".
+
+The benjack-tapedeck is a benjack-shadow.  The printed name of the benjack-tapedeck is "reel to reel recorder".
+Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic" as benjack-tapedeck when the player is in M2F3.
+The N3-desc of benjack-tapedeck is "".
+
+The benjack-scrapbook-19 is a benjack-runebook. The printed name of the benjack-scrapbook-19 is "scrapbook".
+Understand "scrapbook/notebook" as the benjack-scrapbook-19 when the player is in M2F3.
+The description of the benjack-scrapbook-19 is "[benjack-scrapbook-19-desc]".
+
+To say benjack-scrapbook-19-desc:
+	say "TODO: TBD".
+	
+[note that these items must be declared forward of this list]
+The list of things called N3-furnishings is always {benjack-comforter, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-recordplayer, benjack-record, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrapbook-19}.
+
+Chapter 3 - N3 Conversation
 
 Section 1 - N3 Subjects
 
 Section 2 - N3 Quips
 
-Chapter 2 - N3 Event
+Chapter 4 - N3 Event
 
-Chapter 3 - N3 Tests
+Chapter 5 - N3 Tests
 
 
 Book 3 - Runebook Clippings
