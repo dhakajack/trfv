@@ -248,6 +248,7 @@ To benjack-stage-on ( setnumber - a number):
 			say "Error: attemped illegal stage-on";
 	repeat with item running through L:
 		say "moving in [item] to nursery.";[TODO DEBUGGING remove for production]
+		now item is seen;
 		move item to M2F3.
 			
 To benjack-stage-off ( setnumber - a number):
@@ -1364,7 +1365,7 @@ The N2-desc of benjack-makeup is "".
 
 The benjack-newsprint is a benjack-shadow.  The printed name of the benjack-newsprint is "piece of newsprint".
 Understand "newsprint/article/news/story/clip/clipping" as benjack-newsprint when the player is in M2F3.
-The N2-desc of benjack-newsprint is "".
+The N2-desc of benjack-newsprint is "TODO".
 
 The benjack-stackedBooks is a benjack-shadow.  The printed name of the benjack-stackedBooks is "stacked books".
 Understand "stacked/books/book" as benjack-stackedBooks when the player is in M2F3.
@@ -1455,7 +1456,7 @@ After quizzing benjack-Carol about benjack-Runes when benjack-N2 is happening:
 	say "[quotation mark]Runes are the price of magic.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-scrapbookSubject when benjack-N2 is happening:
-	say "[quotation mark]I[apostrophe]d show it to you, but I am really a blockhead sometimes. I have some great new stories in it, but I[apostrophe]m afraid I left it at school at the end of term when I came up here. It[apostrophe]s in my dorm room. So annoying![quotation mark][paragraph break]".
+	say "[one of][quotation mark]I[apostrophe]d show it to you, but I am really a blockhead sometimes. I have some great new stories in it, but I[apostrophe]m afraid I left it at school at the end of term when I came up here. It[apostrophe]s in my dorm room. So annoying![quotation mark][or]Apparently, Carol left her scrapbook at her boarding school.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-newsprint:
 	say "[quotation mark]Some parts of history have to change for father[apostrophe]s plan to take root. A submarine was a small price to pay.[quotation mark][paragraph break]".
