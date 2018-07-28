@@ -45,6 +45,10 @@ Instead of examining a benjack-shadow (called the shadow):
 	
 [TODO:  rules about trying to touch or take shadows, or do anything other than examine them]
 Instead of doing something to a benjack-shadow:
+	if the current action is examining or smelling:
+		continue the action;
+	if the current action is quizzing or implicit-quizzing or informing or implicit-informing:
+		continue the action;
 	say "Your hand goes right through it!". [TODO: expand this text to include Carol's first reaction]
 
 A benjack-clipping is a kind of thing. 
@@ -87,8 +91,6 @@ The player has a number called benjack-times_bestowed. The benjack-times_bestowe
 Yourself can be benjack-spell_enabled. Yourself is not benjack-spell_enabled. [has player learned to cast xizzi, ploughver and kwisatz haderach]
 
 Yourself can be benjack-baby_marked. Yourself is not benjack-baby_marked. [has carol marked Naomi's baby]
-
-Yourself can be benjack-disruption_informed. Yourself is not benjack-disruption_informed. [has christabell told naomi about opening the window?]
 
 Yourself can be benjack-lin_aware. Yourself is not benjack-lin_aware.
 [ever heard of the town of Lin?]
@@ -209,7 +211,7 @@ The N3-desc of the benjack-  is "".
 
 
 The benjack-comforter is a benjack-shadow in M2F3.  The printed name of benjack-comforter is "comforter".
-Understand "comforter" or "blanket" or "duvet" or "cover" as the benjack-comforter when the player is in M2F3.
+Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
 
 The benjack-bed is a benjack-shadow in M2F3.  The printed name of benjack-bed is "bed".
@@ -218,7 +220,7 @@ The N1-desc of the benjack-bed is "A child’s bed of just the right size."
 
 
 The benjack-dolls are benjack-shadows in M2F3. The benjack-dolls are scenery.  The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
-Understand "doll" or "dolls" or "animal" or "animals" or "stuffed" as the benjack-dolls when the player is in M2F3.
+Understand "doll/ dolls / animal/ animals/ stuffed" as the benjack-dolls when the player is in M2F3.
 The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjack-elephant is "toy elephant".
@@ -242,8 +244,8 @@ Understand "clown" or "malice" or "malice the clown" as the benjack-clown when t
 The N1-desc of benjack-clown is "[one of]Despite his painted smile, the clown[apostrophe]s plastic face conveys a sense of surrender as it stares into an empty tea cup. [paragraph break]It is the largest of the stuffed playmates, almost as tall as Carol. [paragraph break][quotation mark]That[apostrophe]s [bold type]Malice the Clown[roman type],[quotation mark] Carol chirps.[paragraph break][quotation mark][bold type]Malice?[roman type][quotation mark] you prompt. [quotation mark]The [bold type]Clown[roman type]?[quotation mark][paragraph break][quotation mark]Yes, originally I called him Alice, but [bold type]grand-uncle[roman type] said he[apostrophe]s a boy [bold type]clown[roman type] and thought [apostrophe][bold type]Malice[roman type][apostrophe] sounded nice.[quotation mark][or]Like all clown puppets, he exudes visceral evil.[stopping]"
 
 The benjack-lamb is a benjack-shadow in M2F3.  The printed name of the benjack-lamb is "toy lamb".
-Understand "lamb" or "Wiggelbottom" or "Misses Wiggelbottom" as the benjack-lamb when the player is in M2F3.
-The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Wiggelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Wiggelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
+Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as the benjack-lamb when the player is in M2F3.
+The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Winkelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Winkelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
 
 The benjack-kitchen is a benjack-shadow in M2F3.  The printed name of the benjack-kitchen is "play kitchen".
 Understand "kitchen" as benjack-kitchen when the player is in M2F3.
@@ -389,7 +391,7 @@ Part 5 - NPC Definitions
 
 Chapter Christabell
 
-benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager or benjack-Christabell is bypassed]the bonnet-clad woman[else]Christabell". Understand "woman" or "Christabell" as benjack-Christabell when the location is in the benjack-realm.
+benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager or benjack-Christabell is bypassed]the bonnet-clad woman[else]Christabell". Understand "woman/Christabell/herself" as benjack-Christabell when the location is DAN8.
 
 The description of benjack-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
@@ -402,7 +404,7 @@ benjack-Christabell can be either run-down or charged-up. benjack-Christabell is
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3.
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3.
 
 The description of benjack-Carol is "[benjack-Carol-description]".
 
@@ -447,7 +449,7 @@ benjack-N2 ends when yourself is benjack-baby_marked and the player is not in M2
 
 benjack-R2 is a scene. ["Plotting Carol’s Disruption"]
 benjack-R2 begins when benjack-N2 has happened and the player is in DAN8.
-benjack-R2 ends when yourself is benjack-disruption_informed and the player is in M2F3.
+benjack-R2 ends when the player is not in DAN8.
 
 benjack-N3 is a scene. ["Boss Battle"]
 benjack-N3 begins when benjack-R2 has happened and the player is in M2F3.
@@ -734,11 +736,125 @@ Rule for printing the name of a benjack-runebook (called the evil tome):
 
 Chapter 1 - N1 Conversation
 
-Section 1 - N1 Subject
+Section 1 - N1 Subjects
+
+benjack-Stonington is a subject.  Understand "Stonington" as benjack-Stonington when the location is in the benjack-realm.
+
+benjack-Connecticut is a subject.  Understand "connecticut" as benjack-connecticut when the location is in the benjack-realm.
+
+benjack-DeepOnes is a subject.  Understand "deep/ones/one" as benjack-DeepOnes when the location is in the benjack-realm.
+
+benjack-CarolFather is a subject.  Understand "father/dad/daddy/Hugo" as benjack-CarolFather when the location is M2F3.
+
+benjack-NewLondon is a subject.  Understand "new/london" as benjack-NewLondon when the location is in the benjack-realm.
+
+benjack-Groton is a subject.  Understand "groton" as benjack-Groton when the location is in the benjack-realm.
+
+benjack-GeneralDynamics is a subject.  Understand "general/dynamics/dynamic" as benjack-GeneralDynamics when the location is in the benjack-realm.
+
+benjack-submarine is a subject.  Understand "submarine/submarines/boat/boats/sub/subs/bathyscaphe/bathyscaphes/bathysphere/bathyspheres/submersible/submersibles" as benjack-submarine when the location is in the benjack-realm.
+
+benjack-job is a subject.  Understand "job/work/employment/occupation/business" as benjack-job when the location is in the benjack-realm.
+
+benjack-nautilus is a subject.  Understand "nautilus" as benjack-nautilus when the location is in the benjack-realm.
+
+benjack-date is a subject.  Understand "date/year/today" as benjack-date when the location is in the benjack-realm.
+
+benjack-CarolMother is a subject.  Understand "mother/mom/mommy/mum/Joan" as benjack-CarolMother when the location is M2F3.
+
+benjack-communists is a subject.  Understand "communist/communists/commie/commies/red/communism/soviet/russian/russians/spy/spies/enemy/enemies/russki/russkis/russky/ruskies/russkys" as benjack-communists when the location is in the benjack-realm.
+
+benjack-CarolteaParty is a subject.  Understand "tea/party/ceremony/ritual/rite/parties/rituals/rites" as benjack-CarolteaParty when the location is M2F3.
+
+benjack-bottomsUp is a subject.  Understand "bottoms/up/bottoms-up" as benjack-bottomsUp when the location is in the benjack-realm.
+
+benjack-ChristabellSubject is a subject.  Understand "Christabell/Bella/Christie/Christabelle/Christobell/Christobelle" as benjack-ChristabellSubject when the location is M2F3.
+
+
+
 
 [scrapbook is already defined as a subject]
 
+[
+
+benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is in the benjack-realm.
+
+]
+
 Section 2 - N1 Quips
+
+After quizzing benjack-Carol about benjack-Carol:
+	say "[one of][quotation mark]About me?[quotation mark] the girl grins and folds her hands, [quotation mark]I am five years old and I can tie my own shoes, except that these ones don[apostrophe]t have laces, and I can read some books, even if they don[apostrophe]t have pictures, although I prefer the ones with pictures.[quotation mark][paragraph break]She looks around the room. Gesturing to the animals seated at the table and perched on the bed, she continues, [quotation mark]I have a lot of friends to keep me company when I[apostrophe]m here, which is all the time now, since my father says that it is better for me to be raised by the Cragnes on account of he is so busy at work and mother has so many guests to entertain. Which is fine. I[apostrophe]m used to it because I have been here since I was a baby except sometimes when I visit Stonington.[quotation mark][or]Carol is only too happy to prattle on about her daily routine of kindergarten and playing in her room with her toys. You do a lot of nodding.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Stonington:
+	say "[one of][quotation mark]That[apostrophe]s where mom and dad live. It[apostrophe]s in Connecticut. They live there because it is near where Dad[apostrophe]s job.[quotation mark][or][quotation mark]I don[apostrophe]t know. It[apostrophe]s a place, I guess. It takes us a while to drive there and there are more buildings around. I like going there because I can see the water -- not like a lake, but real salt water where the Deep Ones live.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Connecticut:
+	say "[quotation mark]I don[apostrophe]t know. It[apostrophe]s a place, I guess. It takes us a while to drive there and there are more buildings around. I like going there because I can see the water -- not like a lake, but real salt water where the Deep Ones live.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-DeepOnes:
+	say "[quotation mark]I[apostrophe]ve never seen one, but I guess they are sort of like squid or something, but really huge. I think dad talks to them sometimes.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-CarolFather:
+	say "[one of][quotation mark]His name is Hugo, which is a weird name, but dad says it[apostrophe]s not too weird because lots of Cragnes have been named Hugo. He[apostrophe]s the kind of engineer that doesn[apostrophe]t work on trains. He works really hard all the time and helps build boats to keep America safe. Sometimes he works in an office across the river, that[apostrophe]s in New London and sometimes he goes to the dock on our side of the river, where they build the boats. I went there once, but didn[apostrophe]t see much because everything is indoors where you can[apostrophe]t go except the boat and I didn[apostrophe]t see much of the boat because only the top sticks out of the water. That[apostrophe]s the part where you go in and out, so it has to stick out.[quotation mark][or]Carol says that her father, Hugo, is an engineer at a firm that constructs submarines.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-NewLondon:
+	say "[quotation mark]It is sort of a city, but not a big one. Dad[apostrophe]s office is there, and it[apostrophe]s pretty close to our house in Stonington.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-Groton:
+	say "[quotation mark]Yeah, that[apostrophe]s the place where they build the boats at General Dynamite, or something like that.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-Groton:
+	say "[quotation mark]That[apostrophe]s the company my dad works at.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-submarine:
+	say "[one of][quotation mark]Dad says that he does the math that helps the other men build the boats and he helps them go really far and stay underwater for a long, long time. He is making a new one right now that doesn[apostrophe]t even need gas. Dad says that math is really important because if they make mistakes, the boats can sink. Sometimes the boats sink, but not because of mistakes, and dad says that is the Deep Ones taking their due, and there isn[apostrophe]t much you can do about that, so he just tried to get the math right.[quotation mark][or]In talking about the submarines that her father helps design, Carol also, alarmingly, frequently mentions the Deep Ones.[no line break][stopping][paragraph break]".
+	
+Instead of quizzing benjack-Carol about benjack-job:
+	try quizzing benjack-Carol about benjack-submarine.
+
+After quizzing benjack-Carol about benjack-nautilus:
+	say "[quotation mark]I think that[apostrophe]s what dad calls his new boat.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-date:
+	say "[quotation mark]I dunno,[quotation mark] says Carol with a shrug."
+	
+After quizzing benjack-Carol about benjack-CarolMother:
+	say "[one of][quotation mark]Her name is Joan, but everyone just says Misses Cragne. I don[apostrophe]t see mom hardly at all because she has so many parties to run all the time. I don[apostrophe]t understand why so many; some are called luncheons, and people have lunch and talk, and some are called cocktail parties, and I don[apostrophe]t see the point of that because there isn[apostrophe]t very much to eat and people yell a lot and sometimes a taxi has to come and they need to leave. Mom says all the wives have to have parties, and that is their job, just like the husbands need to go to the office, except for poor families, which don[apostrophe]t have jobs or parties.[quotation mark][or]Carol[apostrophe]s mom sounds like a stereotypical 1950[apostrophe]s housewife.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-communists:
+	say "[quotation mark]Communists are the bad guys,[quotation mark] explains Carol. [quotation mark]They always want to hurt us and take our stuff. But we[apostrophe]re lucky, because Ike will keep America safe.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about mtw-teapot:
+	say "[one of][quotation mark]It[apostrophe]s grand-uncle[apostrophe]s teapot. He got it on one of his ocean voyages and he really likes it, so I[apostrophe]m not suppose to touch it, but it[apostrophe]s just perfect for the tea party because it is so fancy. Cristabell tried to show me the party without the tea once but that didn[apostrophe]t make any sense, so I asked if her we could be like mom and have a party and she said that might be more easier, so that[apostrophe]s what we did, and when I want to have a tea party, I always find grand-uncle[apostrophe]s tea pot.[quotation mark][or]Apparently, it is Carol[apostrophe]s grand-uncle[apostrophe]s teapot, and she[apostrophe]s not really supposed to be playing with it.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-ChristabellGrandUncle:
+	say "[one of][quotation mark]He[apostrophe]s really cranky and is always telling me not to touch his stuff and to get off stuff and not too sing too loud.[quotation mark][paragraph break][quotation mark]Yes,[quotation mark] you say, trying to reign in the conversation, [quotation mark]but does he have a name?[quotation mark][paragraph break][quotation mark]I[apostrophe]m sure he does, but I just call him great-uncle. He says that only the Deep Ones should not be named.[quotation mark][or]Carol sure doesn[apostrophe]t know much about this grand-uncle of hers, except that he[apostrophe]s a grumpy old guy.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-CarolteaParty:
+	say "[one of][quotation mark]I do just love tea parties![quotation mark] Carol buzzes. [quotation mark]I invite all my friends, and it[apostrophe]s so grown up![quotation mark][paragraph break][quotation mark]Why a tea party?[quotation mark][paragraph break][quotation mark]Because we drink tea at it, of course.[quotation mark][paragraph break][quotation mark]No, I mean, why did you decide to have a tea party and not some other sort of party, like the kind with balloons.[quotation mark][paragraph break][quotation mark]I don[apostrophe]t have any balloons. Besides, when we were trying to do this, Christabell said that a tea party would help us focus and showed me how, and now when I get tired or start to fade, we have a tea party and that sets everything right again. Plus, I really like tea.[quotation mark][if benjack-times_bestowed of yourself is 0][paragraph break][quotation mark]Are you ready to begin?[quotation mark] she asks eagerly. [quotation mark]I[apostrophe]ll pour. Since you[apostrophe]re the guest, you have to be the one to say ‘bottoms-up[apostrophe].[quotation mark][end if][or][if benjack-times_bestowed of yourself is 0]Carol had some odd tastes for a five-year-old and seems hell bent on having a tea party. She reminds you that to start it you have to (for some reason known only to Carol) say, [quotation mark]bottoms-up[quotation mark][otherwise]It[apostrophe]s Carol[apostrophe]s idea of a fun afternoon[end if].[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-CarolteaParty:
+	say "In the make-believe logic that only five year-olds can understand, Carol believes that saying [quotation mark]bottoms-up[quotation mark] is the right way to start a tea party.[no line break][if benjack-times_bestowed of yourself is 0][paragraph break][quotation mark]Oh, I do wish you would say it -- as my father says when he comes home, ‘today was murder -- I really need a drink[apostrophe].[quotation mark][paragraph break][quotation mark]I don[apostrophe]t want to ruin your fun,[quotation mark] you say, [quotation mark]but there[apostrophe]s no tea in the teapot. What are you going to pour?[quotation mark][paragraph break][quotation mark]Geez Louise, Naomi. It[apostrophe]s pretend! All right? It[apostrophe]s just pretend tea. if you would just say ‘bottoms-up[apostrophe] we could get this party started.[quotation mark][end if][paragraph break]".
+
+After quizzing benjack-Carol about benjack-bottomsUp:
+	say "In the make-believe logic that only five year-olds can understand, Carol believes that saying [quotation mark]bottoms-up[quotation mark] is the right way to start a tea party."
+
+After quizzing benjack-Carol about benjack-ChristabellSubject:
+	say "[one of][quotation mark]She[apostrophe]s out by those rocks,[quotation mark] says Carol, pointing out the window towards some dark cliffs. [quotation mark]I go out there all the time and we talk and play and do stuff. She taught me to read, you know.  Mom and Dad aren[apostrophe]t around and the Cragnes don[apostrophe]t really care about me (mom once said they only took me for the money, because they[apostrophe]re not rich like they used to be), so that[apostrophe]s where I go when the weather isn[apostrophe]t too bad.[quotation mark][paragraph break][quotation mark]You know, she[apostrophe]s not alive, right?[quotation mark] You try to say it gently, but feel the girl needs to know.[paragraph break][quotation mark]Sure, she[apostrophe]s a spirit -- don[apostrophe]t call her a ghost because she says that not correct. I mean, gee whiz, at this point, I[apostrophe]m one too. It[apostrophe]s no big deal.[quotation mark][or]Carol says she knows all about Christabell and seems surprisingly comfortable knowing that she is a spirit.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-Cragne:
+	say "[one of][quotation mark]This place is full of them. I[apostrophe]m not supposed to wander around the mansion, but whenever I escape from my room and poke around I find new ones -- in the fountain, behind the bookcase, under the floorboards, above the attic -- it[apostrophe]s like playing hide and seek.[quotation mark][paragraph break][quotation mark]Which ones in particular?[quotation mark] you ask.[paragraph break][quotation mark]Oh, they[apostrophe]re all pretty much the same, so I don[apostrophe]t pay attention. The only I really talk to much is grand-uncle.[quotation mark][or]From Carol[apostrophe]s description, it doesn[apostrophe]t sound like the Cragnes have taken very good care of Carol at the mansion.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-elephant:
+	say "[quotation mark]Mister Snortles is a busy executive and he makes a lot of money and is very powerful, so people do things for him. He tends to be a bit short-tempered sometimes, but that is only because he doesn[apostrophe]t have a wife to take care of him.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-lamb:
+	say "[quotation mark]Misses Winkelbottom lives in a very fancy house and has a lot of luncheons at her house, although she spends some of her afternoons at the country clubs as well. Her closets are full of beautiful dresses and she knows how to dance.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-monkey:
+	say "[one of][quotation mark]Daddy showed me some of the monkeys where he works, and I thought they looked sad in their cages since they couldn[apostrophe]t run around because of all the wires. Father said that they are happier than they look and besides the experiments are important and that they[apostrophe]re helping us fight our enemies, so they should be happy. Then he sent me Young Master Sweetpaws, so I could have a monkey of my own.[quotation mark][paragraph break]She pats the sock monkey on his shoulder, [quotation mark]Yes, Sweetpaws, I know that the other monkeys are not happy, but father says they need to suck it up.[quotation mark][or]Carol says that her sock puppet monkey disappears at night to do who knows what.[no line break][stopping][paragraph break]".
+
 
 Chapter 2 - N1 Event
 
@@ -774,8 +890,6 @@ Instead of conversing or hailing for the first time during benjack-R1:
 Section 1 - R1 Subjects
 
 benjack-Runes is a subject.  Understand "rune/runes" as benjack-Runes when the location is in the benjack-realm.
-
-benjack-DeepOnes is a subject.  Understand "deep/ones" as benjack-DeepOnes when the location is in the benjack-realm.
 
 benjack-Potence is a subject.  Understand "Potence/Power" as benjack-Potence when the location is in the benjack-realm.
 
@@ -825,9 +939,9 @@ benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location 
 
 benjack-CircularPrison is a subject.  Understand "circular/prison" as benjack-CircularPrison when the location is in the benjack-realm.
 
-benjack-ChristbellFather is a subject.  Understand "father/dad/daddy" as benjack-ChristbellFather when the location is in the benjack-realm.
+benjack-ChristbellFather is a subject.  Understand "father/dad/daddy" as benjack-ChristbellFather when the location is in DAN8.
 
-benjack-ChristabellMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChristabellMother when the location is in the benjack-realm.
+benjack-ChristabellMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChristabellMother when the location is in DAN8.
 
 benjack-Breeves is a subject.  Understand "preacher/ewen/breeves/pastor/priest" as benjack-Breeves when the location is in the benjack-realm.
 
@@ -839,9 +953,9 @@ benjack-Skirmish is a subject.  Understand "skirmish/skourmuch" as benjack-skirm
 
 benjack-Sachim is a subject.  Understand "sachim/chief/chieftess" as benjack-Sachim when the location is in the benjack-realm.
 
-benjack-ChristabellTeaParty is a subject.  Understand "tea/party" as benjack-ChristabellTeaParty when the location is in the benjack-realm.
+benjack-ChristabellTeaParty is a subject.  Understand "tea/party" as benjack-ChristabellTeaParty when the location is in DAN8.
 
-benjack-ChristabellToys is a subject.  Understand "sweetpaws/malice/clown/snortles/winkelbottom/elephant/monkey/lamb/toy/toys/tuffed" as benjack-ChristabellToys when the location is in the benjack-realm.
+benjack-ChristabellToys is a subject.  Understand "toy/toys/stuffed/animals/monkey/lamb/clown/elephant/mister/snortles/misses/winkelbottom/malice/master/sweetpaws/chimpanzee/animal/doll/dolls/puppet/puppets/sock/sockpuppet" as benjack-ChristabellToys when the location is DAN8.
 
 benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding when the location is in the benjack-realm.
 
@@ -1091,14 +1205,6 @@ benjack-clippingSubject is a subject.  Understand "clip/clips/clipping/clippings
 
 benjack-planSubject is a subject.  Understand "plan/plans" as benjack-planSubject when the location is in the benjack-realm.
 
-
-
-[
-
-benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is in the benjack-realm.
-
-]
-
 Section 2 - R2 Quips
 
 [todo: map t mark -> pregnancy]
@@ -1181,12 +1287,15 @@ After quizzing benjack-Christabell about benjack-Disruption when benjack-R2 is h
 To say benjack-mark-glued:
 	say "You are held in place by Christabell[apostrophe]s mark.[paragraph break][quotation mark]Sorry I am, Naomi,[quotation mark] she says, [quotation mark]but e[apostrophe]er you depart, I must tell you how to disrupt Carol, after that, our Fate does reside in your two Hands.[quotation mark][paragraph break]".
 	
-
-
-
 Chapter 3 - R2 Tests
 
 Part 7 - Scene N3 Boss Battle
+
+When benjack-N3 begins:
+	say "Carol stares out the window, her back to you. She[apostrophe]s a bit taller and dressed in a sharply tailored turquoise shift. Without bothering to turn around, she addresses you, [quotation mark]I have been expecting you, Naomi. I knew you would come once more before I die.[quotation mark][paragraph break]";
+	now yourself is benjack-ploughver-inhibited.
+
+
 
 Chapter 1 - N3 Conversation
 
