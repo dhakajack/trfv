@@ -302,9 +302,9 @@ The benjack-beasts is a benjack-shadow in M2F3.  The printed name of the benjack
 Understand "kitchen" as benjack-beasts when the player is in M2F3.
 The N1-desc of benjack-beasts is "The artist that crafted the heavy golden frame, while expressive and skilled, obviously had little grounding in anatomy. Ten-legged beetles with long, scaly tails chase plump babies with bat wings through forests of spiny-tentacled trees. Ornate, but utter rubbish. ".
 
-The benjack-portrait is a benjack-shadow in M2F3.  The printed name of the benjack-portrait is "portrait".
-Understand "portrait" or "picture" or "man" as benjack-portrait when the player is in M2F3.
-The N1-desc of benjack-portrait is "This is clearly a formal portrait of a balding man probably in his sixties. He has an air of authority, but also an avuncular warmth. There is a nameplate at the bottom of the portrait.".
+The benjack-Eisenhower is a benjack-shadow in M2F3.  The printed name of the benjack-Eisenhower is "portrait".
+Understand "portrait/picture/man/eisenhower/president/ike" as benjack-Eisenhower when the player is in M2F3.
+The N1-desc of benjack-Eisenhower is "This is clearly a formal portrait of a balding man probably in his sixties. He has an air of authority, but also an avuncular warmth. There is a nameplate at the bottom of the portrait.".
 
 The benjack-nameplate is a benjack-shadow in M2F3.  The printed name of the benjack-nameplate is "nameplate".
 Understand "namplate" as benjack-nameplate when the player is in M2F3.
@@ -508,7 +508,7 @@ benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as ben
 benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the location is in the benjack-realm.
 benjack-covenant is a subject.  Understand "third/covenant" as benjack-covenant when the location is in the benjack-realm.
 benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the location is in the benjack-realm.
-benjack-witch is a subject.  Understand "witch/witches" as benjack-witch when the location is in the benjack-realm.
+benjack-witch is a subject.  Understand "witch/witches/witchcraft/hex/hexes/spell/spells/witchery/witching/witchhunt/warlock/warlocks/sorcerer/sorcerers/sorceress/sorceresses" as benjack-witch when the location is in the benjack-realm.
 
 Section R0 Quips
 
@@ -573,7 +573,6 @@ After informing or quizzing benjack-Christabell about benjack-Christabell:
 
 After informing or quizzing benjack-Christabell about benjack-weeds:
 	say "[quotation mark][one of]Naught doth grow near to the [bold type]Pyle[roman type] of [bold type]Ironne[roman type],[quotation mark] says Christabell, bending down to examine the hard soil.[paragraph break][quotation mark]Maybe some chemical is leeching from the [bold type]iron[roman type], like an anti-rust coating or something,[quotation mark] you offer.[paragraph break][quotation mark]I do thynke that unlikely, but do entertain your Saying as Science must needs be of such Advancement to-Daye as would make my Head spin. Rather, thow, have I thowt that the Soyl be too betrampled over the Ayges by the People who did visit this place on theyre Worshippe. As for the scraggly Weeds at its edge -- I know not theyre names by any modern Terme, but would call them names like Vicar’s Bayne, Creeping Lice Bush, and Widow Cancre -- those [bold type]Weeds[roman type] mostly poysonous to eat or corrosive to the Touch -- they do invade from the [bold type]Crâne[roman type] Landes, any once-productive Farm of theyrs long since fallen to ruin[or]Naught groweth in the Centre and those [bold type]Weeds[roman type] nearer the [bold type]Trayl[roman type], they be not mete to touch for their prickers, poysonous and vile[stopping].[quotation mark][paragraph break]".
-
 
 After informing benjack-Christabell about benjack-youth:
 	say "[one of][quotation mark]All of this is new to me[quotation mark]. You gesture to the surrounding countryside -- at least, to where there would be surrounding countryside if you could see beyond the overbearing dark cliffs and creeping dark woods. [quotation mark]I grew up in The Big Apple. That’s where I’m from.[quotation mark] [paragraph break] [quotation mark]Whence?[quotation mark] [paragraph break] [quotation mark]The Big Apple. The City. You know, New York. Don’t you say [apostrophe]Big Apple[apostrophe] here?[quotation mark] [paragraph break] [quotation mark]I do not beleeve it be in common Parlance, but I am of late  at far remouved from the Tymme of mei Youth and moor a poor Judge of such Thinges.[quotation mark] [paragraph break] [quotation mark]It’s probably a regional thing, like soda and pop.[quotation mark][or]Christabell seems interested in hearing more about where you grew up, so you go into some detail.[no line break][stopping][paragraph break]".
@@ -770,7 +769,13 @@ benjack-bottomsUp is a subject.  Understand "bottoms/up/bottoms-up" as benjack-b
 
 benjack-ChristabellSubject is a subject.  Understand "Christabell/Bella/Christie/Christabelle/Christobell/Christobelle" as benjack-ChristabellSubject when the location is M2F3.
 
+benjack-Undesirables is a subject. Understand "foreigner/foreigners/immigrant/immigrants/poor/criminal/criminals/democrat/democrats/union/unions/blacks/mexicans/chinese/vietnamese" as benjack-Undesirables when the location is M2F3.
 
+benjack-Servants is a subject.  Understand "servant/servants" as benjack-Servants when the location is in the benjack-realm.
+
+benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the location is in the benjack-realm.
+
+benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary/highschool/college/university" as benjack-school when the location is in the benjack-realm.
 
 
 [scrapbook is already defined as a subject]
@@ -782,6 +787,19 @@ benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is 
 ]
 
 Section 2 - N1 Quips
+
+[TODO response handler for ask, scene N1
+>ask about [undefined topic]
+[quotation mark]I don[apostrophe]t know,[quotation mark] replies the little girl, [quotation mark]Maybe you could ask Christabell that one?[quotation mark]
+]
+
+[TODO response handler for tell, N-scenes
+>tell about [undefined topic]
+if a random chance of 1 in X succeeds, say:
+[one of]Is that so[or]Really[or]You don[apostrophe]t say[in random order]?, remarks Carol.
+[one of the stuffed animals at random] says that[apostrophe]s [one of]fascinating[or]amazing[or]fabulous[or]neat[or]swell[in random order].
+Carol seems [one of]distracted[or]to be day dreaming[or]lost in her thoughts[or]a little out to lunch[or]to be thinking of something else[or]preoccupied[or]not to hear[or]not to catch what you said[in random order], and does not reply.
+]
 
 After quizzing benjack-Carol about benjack-Carol:
 	say "[one of][quotation mark]About me?[quotation mark] the girl grins and folds her hands, [quotation mark]I am five years old and I can tie my own shoes, except that these ones don[apostrophe]t have laces, and I can read some books, even if they don[apostrophe]t have pictures, although I prefer the ones with pictures.[quotation mark][paragraph break]She looks around the room. Gesturing to the animals seated at the table and perched on the bed, she continues, [quotation mark]I have a lot of friends to keep me company when I[apostrophe]m here, which is all the time now, since my father says that it is better for me to be raised by the Cragnes on account of he is so busy at work and mother has so many guests to entertain. Which is fine. I[apostrophe]m used to it because I have been here since I was a baby except sometimes when I visit Stonington.[quotation mark][or]Carol is only too happy to prattle on about her daily routine of kindergarten and playing in her room with her toys. You do a lot of nodding.[no line break][stopping][paragraph break]".
@@ -823,7 +841,7 @@ After quizzing benjack-Carol about benjack-CarolMother:
 	say "[one of][quotation mark]Her name is Joan, but everyone just says Misses Cragne. I don[apostrophe]t see mom hardly at all because she has so many parties to run all the time. I don[apostrophe]t understand why so many; some are called luncheons, and people have lunch and talk, and some are called cocktail parties, and I don[apostrophe]t see the point of that because there isn[apostrophe]t very much to eat and people yell a lot and sometimes a taxi has to come and they need to leave. Mom says all the wives have to have parties, and that is their job, just like the husbands need to go to the office, except for poor families, which don[apostrophe]t have jobs or parties.[quotation mark][or]Carol[apostrophe]s mom sounds like a stereotypical 1950[apostrophe]s housewife.[no line break][stopping][paragraph break]".
 
 After quizzing benjack-Carol about benjack-communists:
-	say "[quotation mark]Communists are the bad guys,[quotation mark] explains Carol. [quotation mark]They always want to hurt us and take our stuff. But we[apostrophe]re lucky, because Ike will keep America safe.[quotation mark][paragraph break]".
+	say "[one of][quotation mark]Communists are the bad guys,[quotation mark] explains Carol. [quotation mark]They always want to hurt us and take our stuff. But we[apostrophe]re lucky, because Ike will keep America safe.[quotation mark][or][quotation mark]Dad says they[apostrophe]re our enemy. That[apostrophe]s why he builds boats to go get them.[quotation mark][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about mtw-teapot:
 	say "[one of][quotation mark]It[apostrophe]s grand-uncle[apostrophe]s teapot. He got it on one of his ocean voyages and he really likes it, so I[apostrophe]m not suppose to touch it, but it[apostrophe]s just perfect for the tea party because it is so fancy. Cristabell tried to show me the party without the tea once but that didn[apostrophe]t make any sense, so I asked if her we could be like mom and have a party and she said that might be more easier, so that[apostrophe]s what we did, and when I want to have a tea party, I always find grand-uncle[apostrophe]s tea pot.[quotation mark][or]Apparently, it is Carol[apostrophe]s grand-uncle[apostrophe]s teapot, and she[apostrophe]s not really supposed to be playing with it.[no line break][stopping][paragraph break]".
@@ -841,9 +859,9 @@ After quizzing benjack-Carol about benjack-bottomsUp:
 	say "In the make-believe logic that only five year-olds can understand, Carol believes that saying [quotation mark]bottoms-up[quotation mark] is the right way to start a tea party."
 
 After quizzing benjack-Carol about benjack-ChristabellSubject:
-	say "[one of][quotation mark]She[apostrophe]s out by those rocks,[quotation mark] says Carol, pointing out the window towards some dark cliffs. [quotation mark]I go out there all the time and we talk and play and do stuff. She taught me to read, you know.  Mom and Dad aren[apostrophe]t around and the Cragnes don[apostrophe]t really care about me (mom once said they only took me for the money, because they[apostrophe]re not rich like they used to be), so that[apostrophe]s where I go when the weather isn[apostrophe]t too bad.[quotation mark][paragraph break][quotation mark]You know, she[apostrophe]s not alive, right?[quotation mark] You try to say it gently, but feel the girl needs to know.[paragraph break][quotation mark]Sure, she[apostrophe]s a spirit -- don[apostrophe]t call her a ghost because she says that not correct. I mean, gee whiz, at this point, I[apostrophe]m one too. It[apostrophe]s no big deal.[quotation mark][or]Carol says she knows all about Christabell and seems surprisingly comfortable knowing that she is a spirit.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark]She[apostrophe]s out by those rocks,[quotation mark] says Carol, pointing out the window towards some dark cliffs. [quotation mark]I go out there all the time and we talk and play and do stuff. She taught me to read, you know.  Mom and Dad aren[apostrophe]t around and the Cragnes don[apostrophe]t really care about me (mom once said they only took me for the money, because they[apostrophe]re not rich like they used to be), so that[apostrophe]s where I go when the weather isn[apostrophe]t too bad.[quotation mark][paragraph break][quotation mark]You know, she[apostrophe]s not alive, right?[quotation mark] You try to say it gently, but feel the girl needs to know.[paragraph break][quotation mark]Sure, she[apostrophe]s a spirit -- don[apostrophe]t call her a ghost because she says that not correct. I mean, gee whiz, at this point, I[apostrophe]m one too. It[apostrophe]s no big deal.[quotation mark][or][quotation mark]So,[quotation mark] you inquire, [quotation mark]it sounds like we have a mutual friend -- Christabell. How did you meet her?[quotation mark][paragraph break][quotation mark]Oh, Christabell? We met a long time ago -- maybe when I was four? And I was playing out in the woods, sharpening sticks or something, and I found a great big pile of railroad tracks. Right out there,[quotation mark] she points out the window towards a range of dark cliffs.[paragraph break][quotation mark]Yes, I[apostrophe]ve been there.[quotation mark][paragraph break][quotation mark]You have? Most people can[apostrophe]t see her, you know. They don[apostrophe]t have the sight, but I do because of my mom. Christabell[apostrophe]s and my moms are cousins or something, so I got the sight. Anyhow, Christabell[apostrophe]s great. She taught me a lot of stuff.[quotation mark][paragraph break][quotation mark]Like what?[quotation mark][paragraph break][quotation mark]Like reading and how to skin rabbits, but she also taught me special stuff that I had to have the mark for, like the tea party. She wants to teach me more stuff like that, but says I can concentrate enough, but I can too.[quotation mark][or]It sounds like Christabell has played a role in mentoring and looking after young Carol.[no line break][or]Carol says she knows all about Christabell and seems surprisingly comfortable knowing that she is a spirit.[no line break][stopping][paragraph break]".
 
-After quizzing benjack-Carol about benjack-Cragne:
+	After quizzing benjack-Carol about benjack-Cragne:
 	say "[one of][quotation mark]This place is full of them. I[apostrophe]m not supposed to wander around the mansion, but whenever I escape from my room and poke around I find new ones -- in the fountain, behind the bookcase, under the floorboards, above the attic -- it[apostrophe]s like playing hide and seek.[quotation mark][paragraph break][quotation mark]Which ones in particular?[quotation mark] you ask.[paragraph break][quotation mark]Oh, they[apostrophe]re all pretty much the same, so I don[apostrophe]t pay attention. The only I really talk to much is grand-uncle.[quotation mark][or]From Carol[apostrophe]s description, it doesn[apostrophe]t sound like the Cragnes have taken very good care of Carol at the mansion.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-elephant:
@@ -854,7 +872,86 @@ After quizzing benjack-Carol about benjack-lamb:
 
 After quizzing benjack-Carol about benjack-monkey:
 	say "[one of][quotation mark]Daddy showed me some of the monkeys where he works, and I thought they looked sad in their cages since they couldn[apostrophe]t run around because of all the wires. Father said that they are happier than they look and besides the experiments are important and that they[apostrophe]re helping us fight our enemies, so they should be happy. Then he sent me Young Master Sweetpaws, so I could have a monkey of my own.[quotation mark][paragraph break]She pats the sock monkey on his shoulder, [quotation mark]Yes, Sweetpaws, I know that the other monkeys are not happy, but father says they need to suck it up.[quotation mark][or]Carol says that her sock puppet monkey disappears at night to do who knows what.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Eisenhower:
+	say "[one of][quotation mark]I like Ike,[quotation mark] says Carol firmly.[paragraph break][quotation mark]You do?[quotation mark][paragraph break][quotation mark]Sure do. That[apostrophe]s what people say, they say, ‘I like Ike[apostrophe], he[apostrophe]s the President. They said it so much that he got elected from being a General, so now he[apostrophe]s in charge of everything.[quotation mark][paragraph break][quotation mark]Is that President Eisenhower?[quotation mark] You try to remember what years he was in office. Definitely after Lincoln, probably after World War II, and he[apostrophe]s not someone you[apostrophe]ve ever seen on the news, so let[apostrophe]s say Vietnam or before. So that would be what, the fifties? Early sixties? Somewhere in there.[paragraph break][quotation mark]I think so, that sounds right.[quotation mark][or]Carol is one of President Eisenhower[apostrophe]s biggest fans.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-clown:
+	say "[one of][quotation mark]Malice is middle class, so before when he was a she, she was a waitress, but now I think he has a real job and works in a store and sells stuff. Malice lives in a house, but not a big one, and doesn[apostrophe]t have a lot of stuff.[quotation mark][or]There is little that Carol can say that would convince you that Malice the Clown is not a serial killer.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-mark:
+	say "[one of][quotation mark]I[apostrophe]ve heard about the ‘mark[apostrophe] -- can you tell me what that is?[quotation mark] you ask.[paragraph break][quotation mark]I can show you.[quotation mark] Carol pirouettes around and pulls down the shoulder of her dress, revealing a small brown mark between the base of her neck and her left shoulder blade. It looks like a birthmark, except that its edges are indistinct and seem to keep shifting, like a living thing. Carol spins back around and takes a bow. [quotation mark]Did you see it?[quotation mark][paragraph break][quotation mark]Yes, I think so. But what[apostrophe]s it for?[quotation mark][paragraph break][quotation mark]Christabell gave it to me because she said that there[apostrophe]s something she doesn[apostrophe]t trust about these Cragnes, so it would protect me. She also said I needed to do be able to do stuff, but I[apostrophe]m not old enough yet for most of the stuff, so I stopped bugging her about it.[quotation mark][or]Carol says that Christabell put her magical mark on her so that she could cast magical spells.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-death:
+	say "[one of]Carol holds still a minute, thinking hard, [quotation mark]It[apostrophe]s funny, but I don[apostrophe]t know how I died. Not yet anyway. Christabell says that[apostrophe]s just a thing I go through sometimes and it[apostrophe]s pretty normal.[quotation mark][or]Death is the least of Carol[apostrophe]s worries.[no line break][stopping][paragraph break]".
 
+After quizzing benjack-Carol about benjack-witch:
+	say "[quotation mark]I[apostrophe]ve heard dad talk about them -- they[apostrophe]re Red Communists and want to [apostrophe]destroy our way of life[apostrophe], so what[apostrophe]s why we hunt them.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-Vermont:
+	say "[one of][quotation mark]This is all Vermont,[quotation mark] says Carol gesturing vaguely out the window. [quotation mark]It[apostrophe]s one of the forty-eight United States.[quotation mark][paragraph break][quotation mark]Isn[apostrophe]t it fifty?[quotation mark][paragraph break][quotation mark]Maybe. I don[apostrophe]t know how that works. My parents live in Connecticut, which is another state, but they don[apostrophe]t want me at home, so I came here for nursery school and Kindergarten, but dad says I have to go back to Stonington next year because he pays taxes, so it[apostrophe]s where I need to go.[quotation mark][or]Carol says that aside from visiting the hillside near the mansion, she doesn[apostrophe]t get out very much.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Vermont:
+	say "[quotation mark]Dad told me not to talk to any of them because they want to take away the stuff that we have and they are all dirty and criminals. I would never invite any of them to the tea party.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Servants:
+	say "[quotation mark]Father told me a story once about how one day some servants got too greedy for their own good and forgot their place and said that they wouldn[apostrophe]t serve their masters and more. They had a big fight and the servants won, but only for a while, because just when they weren[apostrophe]t looking, the masters came back even more powerful than ever and killed every single last one of them. I love that story and want to hear it all the time when I[apostrophe]m home.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-aMerica:
+	say "[quotation mark]That where we are, duh.[one of] Are you a retard or something?[quotation mark][paragraph break][quotation mark]That[apostrophe]s not a nice thing to say, Carol.[quotation mark][paragraph break][quotation mark]Sooooorry.[quotation mark][or][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-school when benjack-N1 is happening:
+	say "[quotation mark]Father and mother sent me here for pre-K and kindergarten because school in Stonington is only a half day and they have lives.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-PC when benjack-N1 is happening:
+	say "[quotation mark]Not everybody can see me, so I like you, because you can see me.[quotation mark]".
+	
+After quizzing benjack-Carol about benjack-Mattanit:
+	say "[quotation mark]Christabell talks about him sometimes. I think I sometimes see him out the window near where the woods starts. He has goat feet[one of], and I[apostrophe]m not even making that up[or][stopping].[quotation mark][paragraph break]".
+	
+After informing benjack-Carol about benjack-death:
+	say "[quotation mark]Oh, I know all about it,[quotation mark] says the little girl cheerfully. [quotation mark]Lots of things die around here all the time.[quotation mark][paragraph break]".
+	
+Instead of informing benjack-Carol about benjack-mark:
+	try quizzing benjack-Carol about benjack-mark.
+	
+Instead of informing benjack-Carol about benjack-ChristabellSubject:
+	try quizzing benjack-Carol about benjack-ChristabellSubject.
+	
+After informing benjack-Carol about benjack-PC:
+	say "[one of][quotation mark]Do you know where I[apostrophe]m from, Carol?[quotation mark][paragraph break][quotation mark]Connecticut?[quotation mark][paragraph break][quotation mark]Close, I[apostrophe]m from New York City. Have you ever been to New York City?[quotation mark][paragraph break][quotation mark]No, the Cragnes never take me anywhere. They say just stay in my room and don[apostrophe]t bother them.[quotation mark][or]You tell Carol a little more about yourself.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Carol about benjack-Cragne:
+	say "[one of][quotation mark]You know, we might be related, Carol.[quotation mark][paragraph break][quotation mark]Yeah, I knew that because you can see me.[quotation mark][paragraph break][quotation mark]No, I meant because we are both Cragnes.[quotation mark][paragraph break][quotation mark]Oh, you[apostrophe]re a Cragne too?[quotation mark] Carol squints. [quotation mark]You don[apostrophe]t seem like one.[quotation mark][paragraph break][quotation mark]Yes, well, by marriage. My husband Peter is a Cragne. This is my first time here, I[apostrophe]m visiting his relatives.[quotation mark][paragraph break][quotation mark]Well, good luck with that,[quotation mark] giggles Carol playfully[or]You don[apostrophe]t have much more to say about the Cragnes, but you try to keep the conversation going in case Carol says anything useful[stopping]."
+	
+After informing benjack-Carol about benjack-Peter:
+	say "[one of][quotation mark]I wonder if you[apostrophe]re related to my husband, Peter.[quotation mark][paragraph break][quotation mark]Maybe. I dunno. If you want you could bring him up here and I could have a tea party with him too,[quotation mark] offers Carol[or]You tell Carol more about Peter, trying to see if they have any relatives in common[stopping]."
+	
+Definition: a subject is Connecticocentric if it is benjack-stonington or it is benjack-newLondon or it is benjack-Groton or it is benjack-Connecticut.
+	
+After informing benjack-Carol about a Connecticocentric subject:
+	say "You admit to Carol that aside from driving through Connecticut on the way up here, you don[apostrophe]t know that state at all."
+	
+After informing benjack-Carol about benjack-Vermont:
+	say "You mention to Carol the few fun facts you know about Vermont."
+	
+Definition: a subject is Progressive if it is benjack-aMerica or it is benjack-Undesirables.
+
+After informing benjack-Carol about a Progressive subject:
+	say "[one of][quotation mark]Listen, Carol, it sounds like your dad has been filling your head with some pretty mean things that I don[apostrophe]t think are true.[quotation mark][paragraph break][quotation mark]Dad says that truth is what the good guys say.[quotation mark][paragraph break][quotation mark]Um, no. Did you know that America was founded by immigrants? Your friend Christabell -- she was one. She came from England, right? Everyone here was originally a foreigner and many were poor, and now they are all here and everyone should be treated equally, right?[quotation mark][paragraph break][quotation mark]I don[apostrophe]t like the way you tell it. No, I am sure dad is right. You[apostrophe]re spoiling the tea party![quotation mark][or]You try to talk some sense into Carol, but you find that trying to change the beliefs of someone with the intellect of a five-year-old is like beating your head against the wall. She can[apostrophe]t focus on anything other than the tea party.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-scrapbook-5:
+	say "[one of][quotation mark]I think everyone should have their own scrapbook,[quotation mark] Carol replies. [quotation mark]Don[apostrophe]t you?[quotation mark][paragraph break]Carol leaves through it.[paragraph break][quotation mark]How do you choose what to paste into it?[quotation mark] you ask.[paragraph break][quotation mark]I don[apostrophe]t know. Just things. News from here and there. Interesting stuff.[quotation mark] Carol stretches and adds with a yawn, [quotation mark]I[apostrophe]ve just started the scrapbook, so there isn[apostrophe]t much in it yet.[quotation mark][or][if benjack-scrapbook-5 contains more than 2 things][quotation mark]Carol, is it me, or are there more articles pasted into the scrapbook than earlier?[quotation mark][end if]Carol sounds out each title and looks back at you with [if benjack-scrapbook-5 contains more than 2 things]a shrug. [quotation mark]Looks the same to me.[quotation mark][otherwise]pride.[no line break][end if][stopping][paragraph break]".
+
+[TODO mirror/door subjects - need to see how tose objects are imleneted
+
+>ask door
+{if door has disappeared}Carol reassures you, [quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}Carol looks confused. [quotation mark]It[apostrophe]s just a regular door, Naomi.[quotation mark]{endif}
+
+>ask mirror
+{if door has disappeared}[quotation mark]That mirror wasn[apostrophe]t there when I came in -- what happened to the door?[quotation mark]
+
+[quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}[quotation mark]Mirror, what mirror? What are you talking about, Naomi?[quotation mark] asks Carol.{endif}]
 
 Chapter 2 - N1 Event
 
@@ -925,7 +1022,7 @@ benjack-modernAge is a subject.  Understand "modern/age/future" as benjack-moder
 
 benjack-Demise is a subject.  Understand "demise" as benjack-demise when the location is in the benjack-realm.
 
-Understand "death/deathe" as benjack-demise when benjack-R0 has happened.
+Understand "death/deathe" as benjack-demise when benjack-R0 has happened and the location is DAN8.
 
 benjack-Obsession is a subject.  Understand "obsession/compulsion/obsessions/compulsions" as benjack-Obsession when the location is in the benjack-realm.
 
