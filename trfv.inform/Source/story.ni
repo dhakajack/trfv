@@ -1383,18 +1383,39 @@ The N2-desc of benjack-deskChair is "".
 Does the player mean doing something with the benjack-deskChair: it is likely.
 
 [note that these items must be declared forward of this list]
-The list of things called N2-furnishings is always {benjack-comforter, benjack-bed,benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-chair, benjack-scrapbook-5}.
+The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-chair, benjack-scrapbook-5}.
 
 Chapter 3 - N2 Conversation
 
 
-
-
 Section 1 - N2 Subjects
 
-[scrapbook subject since it's missing]
+benjack-missingIke is a subject.  Understand "portrait/president/eisenhower/picture/photo/photograph/official/portrait/frame" as benjack-missingIke when the location is M2F3.
+
+benjack-LBJ is a subject.  Understand "lyndon/bloated/johnson" or "president johnson" as benjack-LBJ when the location is M2F3.
 
 Section 2 - N2 Quips
+
+After quizzing benjack-Carol about benjack-missingIke when benjack-N2 is happening:
+	say "[one of][quotation mark]What happened to Ike?[quotation mark] you ask.[paragraph break][quotation mark]Democrats![quotation mark] Carol huffs. [quotation mark]That[apostrophe]s what happened. First that lout Kennedy (father says the entire Kennedy is a pack of criminals), and now that useless geezer, Johnson. There is absolutely no way I[apostrophe]m putting Lyndon Bloated Johnson on my wall.[quotation mark][or][quotation mark]I[apostrophe]m waiting for us to get a real man as President. Someone like Nixon. Dad says Nixon is the only one who knows how to run America.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-LBJ when benjack-N2 is happening:
+	say "[quotation mark]Kennedy[apostrophe]s lacky. Not even worth discussing,[quotation mark] replies Carol."
+
+After quizzing benjack-Carol about benjack-ChristabellSubject when benjack-N2 is happening:
+	say "[one of][quotation mark]How do you and Christabell get along?[quotation mark] you ask.[paragraph break][quotation mark]When I was young, back when my parents didn[apostrophe]t want a toddler underfoot and they pushed me off on the Backwater Cragnes, she was sort of like a mother to me. More than any of the decrepit Cragnes, at least. That[apostrophe]s why she put her mark on me -- to protect me from them, I think. But also so she could work her magic through me.[quotation mark][paragraph break][quotation mark]So you were close?[quotation mark][paragraph break][quotation mark]Sort of, until it got creepy.[quotation mark][paragraph break][quotation mark]Because she[apostrophe]s a five-hundred-year-old spirit?[quotation mark][paragraph break][quotation mark]No, because like a year or two ago, she started staring at me strangely, and asked me to take my clothes off for a ritual. I[apostrophe]m pretty sure that wasn[apostrophe]t a real ritual. And she had me do things, which were difficult. To myself, since not having a body we couldn[apostrophe]t touch. I didn[apostrophe]t like it, but father said to let her have her way, because we needed her magic and cooperation of the Deep Ones for his plans.[quotation mark][paragraph break][quotation mark]I am so sorry.[quotation mark][or][quotation mark]I don[apostrophe]t want to talk anymore about her; she[apostrophe]s a perv -- you know that[apostrophe]s the reason she and her mother were kicked out of their settlement, right? Because she liked girls. The Indians didn[apostrophe]t care because they were themselves depraved and uncivilized.[quotation mark][paragraph break][quotation mark]Maybe,[quotation mark] you suggest, [quotation mark]they just had a different culture that was more accepting?[quotation mark][paragraph break][quotation mark]It[apostrophe]s disgusting.[quotation mark][or][quotation mark]I have nothing more to say about her.[quotation mark][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-planSubject when benjack-N2 is happening:
+	say "[one of][quotation mark]Father says that the Cragnes were meant for greatness, and that they should be running America, not rotting away in this miserable excuse for a mansion.[quotation mark][paragraph break][quotation mark]They have kind of let it go.[quotation mark][paragraph break][quotation mark]When I got old enough, I told him about the Deep Ones and the Third Covenant of Mattanit, but he already knew. He said that[apostrophe]s why he sent me here -- to learn more. He already knew about Christabell and the railroad tracks and everything. He said that the Deep Ones are all that[apostrophe]s left because people have spread everywhere -- mostly poor, dirty people, like Africa and other countries like that. They all had newer gods, and the Elder Gods left in disgust.[quotation mark][paragraph break][quotation mark]And his plan is to protect the world from them?[quotation mark][paragraph break]Carol answers with all sincerity, [quotation mark]No -- his plan is to bring The Elder Gods back in order to ‘Make America What It Once Was[apostrophe] as he says, but we need to build, what does he call it? A political base. So, that[apostrophe]s what we[apostrophe]re doing. Father creates the opportunities, and I call upon the Deep Ones to write the Runes that make things happen.[quotation mark][or][quotation mark]Father has an cunning plan, and it is fool-proof![quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-DeepOnes when benjack-N2 is happening:
+	say "[one of][quotation mark]I[apostrophe]ve only seen flashes of the Deep Ones  in my dreams, which is good since people can[apostrophe]t look at them and not go crazy. I can tell you they are big, have lots of tentacles, and mouths, and eyes, and other parts that I[apostrophe]m not sure what they do. They hang out in parts of the oceans so deep that nobody bothers them there, except maybe my father[apostrophe]s submarines when we need something. And when we need to work some magic, we wake them and they do their stuff, and that[apostrophe]s how we get things done -- a plane goes down, someone is hit by a bus, whatever. But mostly small things. The better I get at seeing the future, the more I can pick out the little events that will push history in the right direction[quotation mark][or]Carol says the Deep Ones help her father arrange history -- for a price[stopping]."
+	
+After quizzing benjack-Carol about benjack-modernAge when benjack-N2 is happening:
+	say "Carol asks what the future is like."
+	
+After informing benjack-Carol about benjack-ModernAge when benjack-N2 is happening:
+	say "[one of][quotation mark]I would like to tell you we[apostrophe]ll have flying cars, but sadly no.[quotation mark][paragraph break][quotation mark]I didn[apostrophe]t really think we would,[quotation mark] Carol admits.  [quotation mark]I can[apostrophe]t see too far, but I[apostrophe]m getting better at it. Right now, I can see another maybe five years before things get fuzzy. That[apostrophe]s why I[apostrophe]m holding out to put up the Nixon portrait. But there[apostrophe]s a lot coming in that time, and a lot that needs to be fixed if we[apostrophe]re going to save America.[quotation mark][paragraph break][quotation mark]America will do fine,[quotation mark] you assert.[paragraph break][quotation mark]Oh, I know you[apostrophe]re from the future, what, the mid-90s or so? Don[apostrophe]t look surprised, I know a lot of things. But first of all, you don[apostrophe]t know where[apostrophe]s father[apostrophe]s plan is going. What we[apostrophe]ve set in motion doesn[apostrophe]t even begin pick up steam until a good twenty years after your time. Like the Elder Gods, we can bide our time.[quotation mark][or]You reassure Carol that the world has not been destroyed, at least not by the 1990s.[no line break][stopping][paragraph break]".
 
 Chapter 4 - N2 Event
 
@@ -1578,7 +1599,7 @@ Understand "art/sculptures/sculpture" or "pieces of art" as benjack-art when the
 The N3-desc of benjack-art is "".
 
 The benjack-Nixon is a benjack-shadow.  The printed name of the benjack-Nixon is "portrait of President Nixon".
-Understand "president/nixon/richard/millhouse" or "portrait of nixon" or "portrait of president nixon" as benjack-nixon when the player is in M2F3.
+Understand "president/nixon/richard/millhouse/portrait/picture/photo/photograph" or "portrait of nixon" or "portrait of president nixon" as benjack-nixon when the player is in M2F3.
 The N3-desc of benjack-nixon is "".
 
 The benjack-egg is a benjack-shadow.  The printed name of the benjack-egg is "opalescent egg".
