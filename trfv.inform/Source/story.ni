@@ -209,7 +209,6 @@ The N2-desc of the benjack-  is "".
 The N3-desc of the benjack-  is "".
 ]
 
-
 The benjack-comforter is a benjack-shadow in M2F3.  The printed name of benjack-comforter is "comforter".
 Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
@@ -225,7 +224,7 @@ The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party,
 
 The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjack-elephant is "toy elephant".
 Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
-The N1-desc of the benjack-elephant  is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
+The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
 The benjack-monkey is a benjack-shadow in M2F3. The printed name of the benjack-monkey is "toy monkey".
 Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" as the benjack-monkey when the player is in M2F3.
@@ -299,7 +298,7 @@ Understand "frame" or "photo frame" as benjack-frame when the player is in M2F3.
 The N1-desc of benjack-frame is "The frame is not well matched to the photograph, it would go much better with an oil painting from an earlier century, and indeed it is not unlikely that some portrait of a remote ancestor was gutted when the need for a frame arose. The four-inch wide frame is intricately carved with fanciful beasts and has seen many applications of gold-leafing.".
 
 The benjack-beasts is a benjack-shadow in M2F3.  The printed name of the benjack-beasts is "beasts".
-Understand "kitchen" as benjack-beasts when the player is in M2F3.
+Understand "beasts" as benjack-beasts when the player is in M2F3.
 The N1-desc of benjack-beasts is "The artist that crafted the heavy golden frame, while expressive and skilled, obviously had little grounding in anatomy. Ten-legged beetles with long, scaly tails chase plump babies with bat wings through forests of spiny-tentacled trees. Ornate, but utter rubbish. ".
 
 The benjack-Eisenhower is a benjack-shadow in M2F3.  The printed name of the benjack-Eisenhower is "portrait".
@@ -340,7 +339,9 @@ Instead of touching the benjack-window, say "The glass is cool to the touch.".
 Instead of opening the benjack-window, say "The window has a child safety lock.[first time] How very uncharacteristically responsible for the Cragnes[only].".
 [TODO:  hitting action isn't defined, nor is 'looking through'
 Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
-Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."]
+Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
+
+TODO: trees and cliffs should be visible, change with season]
 
 The benjack-chair is a supporter in M2F3.  The printed name of the benjack-chair is "antique chair".
 Understand "chair" as benjack-chair when the player is in M2F3.
@@ -377,10 +378,11 @@ Instead of reading the benjack-scrapbook-5:
 	repeat with clip running through benjack-clippings enclosed by benjack-scrapbook-5:
 		add title of clip to L;
 	say "[italic type][L][roman type].".
+	
+[TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach.
 
+TODO: bed object or conflate with comforter? ]
 
-
-		
 Chapter The benjack realm
 
 [Region is normally the way to do this, but the rooms are already part of DAN and M2F regions, 
@@ -1072,6 +1074,8 @@ benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-Ploughve
 
 benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm.
 
+benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring" as benjack-babySubject when the location is in the benjack-realm.
+
 Section 2 - R1 Quips
 
 After quizzing benjack-Christabell about benjack-Runes:
@@ -1256,22 +1260,98 @@ Chapter 3 - R1 Tests
 
 Part 5 - Scene N2 Teenage Carol Marks Naomi's Baby
 
-Chapter 1 - N2 Conversation
+Chapter 1 - Furnishing Updates
 
-Before hailing or conversing or speaking when benjack-R2 is happening for the first time:
-	say "[quotation mark]My Greetings again, Naomi. Were you able to lifte the Burden of Carol[apostrophe]s Runes and set a-free her Spirit?[quotation mark][paragraph break][quotation mark]No, not so much,[quotation mark] you admit. [quotation mark]She didn[apostrophe]t have the scrapbook with her. In fact, the whole thing didn[apostrophe]t go that well. She[apostrophe]s has some resentment towards you, and her dad[apostrophe]s plan sounds bonkers.[quotation mark][paragraph break][quotation mark]I have something very important to ask you, Christabell. Carol touched me…[quotation mark] You take a moment to compose yourself, [quotation mark]Carol touched me here, and said she had marked my baby, a daughter.[quotation mark][paragraph break]Christabell looks askew. [quotation mark]Oh?[quotation mark] She holds her hand palm out. [quotation mark]No. There be no Baby. Nor even so much as Thowt of one in your Entrayls. Not this Daye. She doth Laie most Cravenly to seeke Inflewance o[apostrophe]er you. I had hoped to save her, but History does itself repete -- for the Sayke of All, we must see to her Disruption.[quotation mark]";
- 	continue the action.
+The N2-desc of the benjack-comforter is "".
+The N2-desc of the benjack-dolls is "".
+The N2-desc of the benjack-elephant is "".
+The N2-desc of the benjack-monkey is "".
+The N2-desc of benjack-cap is "".
+The N2-desc of benjack-sweater is "".
+The N2-desc of benjack-clown is "".
+The N2-desc of benjack-lamb is  "".
+The N2-desc of benjack-kitchen is "".
+The N2-desc of benjack-desk is "".
+The N2-desc of benjack-drawer is "".
+The N2-desc of benjack-desktop is "".
+The N2-desc of benjack-lamp is "".
+The N2-desc of benjack-recordplayer is "".
+The N2-desc of benjack-record is "".
+The N2-desc of benjack-table is "".
+The N2-desc of benjack-beasts is "".
+The N2-desc of benjack-toychair is "[N1-desc of benjack-toychair].".
+The N2-desc of benjack-clothing is "".
+
+
+[Other items available from N1
+benjack-window
+benjack-chair
+]
+
+The benjack-nail is a benjack-shadow.  The printed name of the benjack-nail is "bent nail".
+Understand "bent/nail" as benjack-nail when the player is in M2F3.
+The N2-desc of benjack-nail is "".
+
+The benjack-patch is a benjack-shadow.  The printed name of the benjack-patch is "discolored patch".
+Understand "empty/patch/blank/spot/discolored" as benjack-patch when the player is in M2F3.
+The N2-desc of benjack-patch is "".
+
+The benjack-crayon is a benjack-shadow.  The printed name of the benjack-crayon is "crayon drawing".
+Understand "crayon drawing" or "crayon" as benjack-crayon when the player is in M2F3.
+The N2-desc of benjack-crayon is "".
+
+The benjack-ink is a benjack-shadow.  The printed name of the benjack-ink is "India ink drawing".
+Understand "india/ink/pen/drawing" as benjack-ink when the player is in M2F3.
+The N2-desc of benjack-ink is "".
+
+The benjack-watercolor is a benjack-shadow.  The printed name of the benjack-watercolor is "watercolor painting".
+Understand "watercolor/painting" as benjack-watercolor when the player is in M2F3.
+The N2-desc of benjack-watercolor is "".
+
+The benjack-makeupMirror is a benjack-shadow.  The printed name of the benjack-makeupMirror is "mirror".
+Understand "mirror" as benjack-makeupMirror when the player is in M2F3.
+The N2-desc of benjack-makeupMirror is "".
+
+The benjack-makeup is a benjack-shadow.  The printed name of the benjack-makeup is "makeup".
+Understand "makeup" as benjack-makeup when the player is in M2F3.
+The N2-desc of benjack-makeup is "".
+
+The benjack-newsprint is a benjack-shadow.  The printed name of the benjack-newsprint is "piece of newsprint".
+Understand "newsprint/article/news/story/clip/clipping" as benjack-newsprint when the player is in M2F3.
+The N2-desc of benjack-newsprint is "".
+
+The benjack-stackedBooks is a benjack-shadow.  The printed name of the benjack-stackedBooks is "stacked books".
+Understand "stacked/books/book" as benjack-stackedBooks when the player is in M2F3.
+The N2-desc of benjack-stackedBooks is "".
+
+The benjack-looseleaf is a benjack-shadow.  The printed name of the benjack-looseleaf is "looseleaf".
+Understand "looseleaf/paper/report" as benjack-looseleaf when the player is in M2F3.
+The N2-desc of benjack-looseleaf is "".
+
+The benjack-deskChair is a benjack-shadow.  The printed name of the benjack-deskChair is "desk chair".
+Understand "desk chair" or "chair" as benjack-deskChair when the player is in M2F3.
+The N2-desc of benjack-deskChair is "".
+
+Does the player mean doing something with the benjack-deskChair: it is likely.
+
+[note that these items must be declared forward of this list]
+The list of things called N2-furnishings is always {benjack-comforter, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, 
+benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair}.
+
+Chapter 2 - N2 Conversation
+
+
 
 
 Section 1 - N2 Subjects
 
-benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring" as benjack-babySubject when the location is in the benjack-realm.
+[scrapbook subject since it's missing]
 
 Section 2 - N2 Quips
 
-Chapter 2 - N2 Event
+Chapter 3 - N2 Event
 
-Chapter 3 - N2 Tests
+Chapter 4 - N2 Tests
 
 Part 6 - Scene R2 Plotting Carol's Disruption
 
@@ -1283,8 +1363,9 @@ When benjack-R2 begins:
 
 Chapter 1 - R2 Conversation
 
-
-
+Before hailing or conversing or speaking when benjack-R2 is happening for the first time:
+	say "[quotation mark]My Greetings again, Naomi. Were you able to lifte the Burden of Carol[apostrophe]s Runes and set a-free her Spirit?[quotation mark][paragraph break][quotation mark]No, not so much,[quotation mark] you admit. [quotation mark]She didn[apostrophe]t have the scrapbook with her. In fact, the whole thing didn[apostrophe]t go that well. She[apostrophe]s has some resentment towards you, and her dad[apostrophe]s plan sounds bonkers.[quotation mark][paragraph break][quotation mark]I have something very important to ask you, Christabell. Carol touched me…[quotation mark] You take a moment to compose yourself, [quotation mark]Carol touched me here, and said she had marked my baby, a daughter.[quotation mark][paragraph break]Christabell looks askew. [quotation mark]Oh?[quotation mark] She holds her hand palm out. [quotation mark]No. There be no Baby. Nor even so much as Thowt of one in your Entrayls. Not this Daye. She doth Laie most Cravenly to seeke Inflewance o[apostrophe]er you. I had hoped to save her, but History does itself repete -- for the Sayke of All, we must see to her Disruption.[quotation mark]";
+ 	continue the action.
 
 Section 1 - R2 Subjects
 
