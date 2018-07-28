@@ -24,9 +24,14 @@ Book 1 - Set Up
 
 Part 1 - New Kinds
 
-[Used in the Nursery, where objects evolve over 3 different scenes]
-A benjack-shadow is a kind of thing. 
+[Used in the Nursery, where objects evolve over 3 different scenes.
+Note that this is basically a special type of scener that has multiple descriptions, can't be touched/taken (like all scenery), and isn't automatically described as being present in the room (like all scenery).  This is good -- we're counting on the general room description and multiple examinations to reveal these objects.
+]
+A benjack-shadow is a kind of thing and scenery.
 A benjack-shadow has some text called N1-desc, the N2-desc, and the N3-desc.
+The N1-desc of a benjack-shadow is usually "Error: N1 description not defined."
+The N2-desc of a benjack-shadow is usually "Error: N2 description not defined."
+The N3-desc of a benjack-shadow is usually "Error: N3 description not defined."
 Instead of examining a benjack-shadow (called the shadow):
 	if benjack-N1 is happening:
 		say N1-desc of the shadow;
@@ -37,6 +42,10 @@ Instead of examining a benjack-shadow (called the shadow):
 	otherwise:
 		say "Error: no description available.";
 	say "[paragraph break]".
+	
+[TODO:  rules about trying to touch or take shadows, or do anything other than examine them]
+Instead of doing something to a benjack-shadow:
+	say "Your hand goes right through it!". [TODO: expand this text to include Carol's first reaction]
 
 A benjack-clipping is a kind of thing. 
 Benjack-clippings have some text called title.
@@ -153,7 +162,7 @@ Description of M2F3 is "[benjack-nursery-description]"
 
 To say benjack-nursery-description:
 	if benjack-N1 is happening: [TODO and also IFF the player is THROUGH THE DOOR]
-		say "You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.";
+		say "[first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.[paragraph break]";
 	otherwise if benjack-N2 is happening:
 		say "[one of]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
 	otherwise if benjack-N3 is happening:
@@ -185,9 +194,9 @@ Before doing something other than examining to the benjack-baby-door:
 	try silently looking;
 	end the story saying "EATEN".
 	
-Section 1 - Initial Furnishings
+Section 1 - Nursery Furnishings
 
-[benjack-shadows are ghost objects that you mostly can't interact with -- we'll tweak those rules later. Some of this stuff will be scenery, some not. We'll have to play with the room / object description paragraph rules]
+[benjack-shadows are ghost objects (a kind of scenery) that you mostly can't interact with. Note that everything is a shadow except for the {book, window, chair, door}.]
 
 [template:
 
@@ -199,20 +208,147 @@ The N3-desc of the benjack-  is "".
 ]
 
 
-The benjack-comforter is a benjack-shadow in M2F3.  The printed name of  benjack-comforter is "comforter".
+The benjack-comforter is a benjack-shadow in M2F3.  The printed name of benjack-comforter is "comforter".
 Understand "comforter" or "blanket" or "duvet" or "cover" as the benjack-comforter when the player is in M2F3.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
 
+The benjack-bed is a benjack-shadow in M2F3.  The printed name of benjack-bed is "bed".
+Understand "bed" as the benjack-bed when the player is in M2F3.
+The N1-desc of the benjack-bed is "A child’s bed of just the right size."
+
+
 The benjack-dolls are benjack-shadows in M2F3. The benjack-dolls are scenery.  The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
 Understand "doll" or "dolls" or "animal" or "animals" or "stuffed" as the benjack-dolls when the player is in M2F3.
-The description of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
+The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjack-elephant is "toy elephant".
 Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
-The description of the benjack-elephant  is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had Mister Snortles as long as I can remember -- daddy got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
+The N1-desc of the benjack-elephant  is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
+
+The benjack-monkey is a benjack-shadow in M2F3. The printed name of the benjack-monkey is "toy monkey".
+Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" as the benjack-monkey when the player is in M2F3.
+The N1-desc of the benjack-monkey is "The limp and gangly sock puppet wears a baseball cap and an Army-Navy sweater.[paragraph break][first time][quotation mark][bold type]Young Master Sweetpaws[roman type] recently joined us, right Sweetpaws?[quotation mark][paragraph break]The monkey sits there, inert, but Carol continues, [quotation mark]Sometimes he gets up to naughtiness, but he[apostrophe]s always back in the morning, aren[apostrophe]t you, [bold type]Sweetpaws[roman type]?[quotation mark][paragraph break]The monkey stares blankly ahead.[only]".
+
+The benjack-cap is a benjack-shadow in M2F3.  The printed name of the benjack-cap is "cap".
+Understand "cap" or "hat" as the benjack-cap when the player is in M2F3.
+The N1-desc of benjack-cap is "A Brooklyn Dodgers cap, blue with a white [quotation mark]B[quotation mark]."
+
+The benjack-sweater is a benjack-shadow in M2F3.  The printed name of the benjack-sweater is "sweater".
+Understand "sweater" as the benjack-sweater when the player is in M2F3.
+The N1-desc of benjack-sweater is "A grey woolen sweater with an [quotation mark]Army/Navy[quotation mark] logo."
+
+The benjack-clown is a benjack-shadow in M2F3.  The printed name of the benjack-clown is "toy clown".
+Understand "clown" or "malice" or "malice the clown" as the benjack-clown when the player is in M2F3.
+The N1-desc of benjack-clown is "[one of]Despite his painted smile, the clown[apostrophe]s plastic face conveys a sense of surrender as it stares into an empty tea cup. [paragraph break]It is the largest of the stuffed playmates, almost as tall as Carol. [paragraph break][quotation mark]That[apostrophe]s [bold type]Malice the Clown[roman type],[quotation mark] Carol chirps.[paragraph break][quotation mark][bold type]Malice?[roman type][quotation mark] you prompt. [quotation mark]The [bold type]Clown[roman type]?[quotation mark][paragraph break][quotation mark]Yes, originally I called him Alice, but [bold type]grand-uncle[roman type] said he[apostrophe]s a boy [bold type]clown[roman type] and thought [apostrophe][bold type]Malice[roman type][apostrophe] sounded nice.[quotation mark][or]Like all clown puppets, he exudes visceral evil.[stopping]"
+
+The benjack-lamb is a benjack-shadow in M2F3.  The printed name of the benjack-lamb is "toy lamb".
+Understand "lamb" or "Wiggelbottom" or "Misses Wiggelbottom" as the benjack-lamb when the player is in M2F3.
+The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Wiggelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Wiggelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
+
+The benjack-kitchen is a benjack-shadow in M2F3.  The printed name of the benjack-kitchen is "play kitchen".
+Understand "kitchen" as benjack-kitchen when the player is in M2F3.
+The N1-desc of benjack-kitchen is "The play kitchen is all one piece and attached to a plywood backboard. The centerpiece is a metal stove with four pretend gas burners above an oven door. Some pots and pans poke out of the cabinets above the stove. To one side of the stove is a full size ice box, and an apron hangs on a hook to the other side of the stove.".
+
+The benjack-apron is a benjack-shadow in M2F3.  The printed name of the benjack-apron is "apron".
+Understand "apron" as benjack-apron when the player is in M2F3.
+The N1-desc of benjack-apron is "A red and white checkered apron just Carol’s size.".
+
+The benjack-pots is a benjack-shadow in M2F3.  The printed name of the benjack-pots is "pots".
+Understand "pots" or "pans" as benjack-pots when the player is in M2F3.
+The N1-desc of benjack-pots is "Sauce pans of different sizes, a large frying pan and, perhaps not too surprising this close to Maine, a toy lobster steamer.".
+
+The benjack-pantry is a benjack-shadow in M2F3.  The printed name of the benjack-pantry is "pantry".
+Understand "pantry" or "cabinet" as benjack-pantry when the player is in M2F3.
+The N1-desc of benjack-pantry is "Assorted cooking and baking accessories like colanders, measuring cups, a cheese grater, cookie cutters, and a rolling pin.".
+
+The benjack-desk is a benjack-shadow in M2F3.  The printed name of the benjack-desk is "desk".
+Understand "desk" as benjack-desk when the player is in M2F3.
+The N1-desc of benjack-desk is "A child-size replica colonial roll top desk with several drawers. The top portion of the desk is open and the writing surface folded down. A spiral-bound book lies on it next to a small lamp with a yellow shade.".
+
+The benjack-drawer is a benjack-shadow in M2F3.  The printed name of the benjack-drawer is "drawer".
+Understand "drawer" or "drawers" as benjack-drawer when the player is in M2F3.
+The N1-desc of benjack-drawer is "Below the desktop, the desk is flanked on each side by three closed drawers.".
+
+The benjack-desktop is a benjack-shadow in M2F3.  The printed name of the benjack-desktop is "desktop".
+Understand "desktop" or "top" or "surface" as benjack-desktop when the player is in M2F3.
+The N1-desc of benjack-desktop is "Polished walnut[first time] Probably. You’re not really sure. It is sort of dark, but not too. Let[apostrophe]s face it, most of your furniture is IKEA, so you are a little out of your depth here[only]".
+
+The benjack-lamp is a benjack-shadow in M2F3.  The printed name of the benjack-lamp is "lamp".
+Understand "lamp" or "cord" or "shade" or "light" as benjack-lamp when the player is in M2F3.
+The N1-desc of benjack-lamp is "An ordinary desk lamp stands upright on the desktop, its power cord wrapping around the back of the desk. It provides an unusually soft, pleasant yellow light.".
+Instead of taking the benjack-lamp, say "It is as insubstantial as everything else in the room; luckily, there are no grues in this corner of Cragne Mansion."
+
+The benjack-recordplayer is a benjack-shadow in M2F3.  The printed name of the benjack-recordplayer is "record player".
+Understand "record player" or "phonograph" or "turntable" as benjack-recordplayer when the player is in M2F3.
+The N1-desc of benjack-recordplayer is "A wooden turntable with speakers built into the cabinet rests on a folding wooden table. There is a record on the turntable, but the turntable is off.".
+
+The benjack-record is a benjack-shadow in M2F3.  The printed name of the benjack-record is "record".
+Understand "record" as benjack-record when the player is in M2F3.
+The N1-desc of benjack-record is "It is a full size record, black vinyl of course, with a cardboard center, labelled [quotation mark]Perry Como Sings Merry Christmas Music[quotation mark]. According to the label, it is a 78 rpm album produced by RCA Victor in 1946.".
+
+The benjack-table is a benjack-shadow in M2F3.  The printed name of the benjack-table is "table".
+Understand "table" as benjack-table when the player is in M2F3.
+The N1-desc of benjack-table is "A small folding table.".
+[TODO:   sitting on isn't defined?? only 'getting off'?
+Instead of sitting on the benjack-table, say "Carol informs you that Misses Winkelbottom says that tables are not for sitting on.[paragraph break]So you don[apostrophe]t. Because of the (alleged) opinion of a blind stuffed lamb.".]
+
+The benjack-frame is a benjack-shadow in M2F3.  The printed name of the benjack-frame is "photo frame".
+Understand "frame" or "photo frame" as benjack-frame when the player is in M2F3.
+The N1-desc of benjack-frame is "The frame is not well matched to the photograph, it would go much better with an oil painting from an earlier century, and indeed it is not unlikely that some portrait of a remote ancestor was gutted when the need for a frame arose. The four-inch wide frame is intricately carved with fanciful beasts and has seen many applications of gold-leafing.".
+
+The benjack-beasts is a benjack-shadow in M2F3.  The printed name of the benjack-beasts is "beasts".
+Understand "kitchen" as benjack-beasts when the player is in M2F3.
+The N1-desc of benjack-beasts is "The artist that crafted the heavy golden frame, while expressive and skilled, obviously had little grounding in anatomy. Ten-legged beetles with long, scaly tails chase plump babies with bat wings through forests of spiny-tentacled trees. Ornate, but utter rubbish. ".
+
+The benjack-portrait is a benjack-shadow in M2F3.  The printed name of the benjack-portrait is "portrait".
+Understand "portrait" or "picture" or "man" as benjack-portrait when the player is in M2F3.
+The N1-desc of benjack-portrait is "This is clearly a formal portrait of a balding man probably in his sixties. He has an air of authority, but also an avuncular warmth. There is a nameplate at the bottom of the portrait.".
+
+The benjack-nameplate is a benjack-shadow in M2F3.  The printed name of the benjack-nameplate is "nameplate".
+Understand "namplate" as benjack-nameplate when the player is in M2F3.
+The N1-desc of benjack-nameplate is "[quotation mark]Dwight D. Eisenhower, 34th President of the United States of America.[quotation mark]".
+
+The benjack-toychair is a benjack-shadow in M2F3.  The printed name of the benjack-toychair is "toy chairs".
+Understand "toy chair" or "toy chairs" as benjack-toychair when the player is in M2F3.
+The N1-desc of benjack-toychair is "The tiny toy chairs remind you of those found in grammar schools: a shaped plywood seat on a gray tubular steel frame.".
+
+The benjack-cup is a benjack-shadow in M2F3.  The printed name of the benjack-cup is "cup".
+Understand "cup" as benjack-cup when the player is in M2F3.
+The N1-desc of benjack-cup is "There is a tea cup for each of you, that is, Carol, the four toys sitting at the table, and you. Yours is larger, but the design is the same: alternating blue and gold striped porcelain with a band of little skulls around the rim. [if the player carries the benjack-cup]You find yourself holding it daintily, pinky out.[end if]".
+
+Instead of throwing the benjack-cup at something:
+	say "You throw the tea cup with all your might, but against all odds it ricochets around the room and lands right in front of you on the table[first time], right as rain.[paragraph break]Carol[apostrophe]s eyes bulge, seeing an adult behave that way and quietly she says, [quotation mark]My tea cups, my rules.[quotation mark][only]."
+
+The benjack-clothing is a benjack-shadow in M2F3.  The printed name of the benjack-clothing is "clothing".
+Understand "clothing" or "dress" or "shoes" or "buckle" or "skirt" or "sock" as benjack-clothing when the player is in M2F3.
+The N1-desc of benjack-clothing is "Every bit of her outfit is picture perfect: every skirt pleat ironed, her socks cloroxed to an actinic glow, and her patent leather shoes polished like black marble.".
+
+The benjack-bow is a benjack-shadow in M2F3.  The printed name of the benjack-box is "bow".
+Understand "bow" as benjack-bow when the player is in M2F3.
+The N1-desc of benjack-bow is "It must be heavily starched to remain that crisp.".
+
+
+[REAL OBJECTS, not shadows:]
+
+The benjack-window is a container in M2F3.  The benjack-window is fixed in place, openable and closed.
+The printed name of the benjack-window is "window".
+Understand "window" as benjack-window when the player is in M2F3.
+The description of benjack-window is "The large bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.".
+Instead of touching the benjack-window, say "The glass is cool to the touch.".
+Instead of opening the benjack-window, say "The window has a child safety lock.[first time] How very uncharacteristically responsible for the Cragnes[only].".
+[TODO:  hitting action isn't defined, nor is 'looking through'
+Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
+Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."]
+
+The benjack-chair is a supporter in M2F3.  The printed name of the benjack-chair is "antique chair".
+Understand "chair" as benjack-chair when the player is in M2F3.
+The description of benjack-chair is "The chair is the only adult-size piece of furniture in the room.[first time] It looks a little spindly, but antique chairs often do, and you reason that they knew what they were doing back in the day, so it will probably hold.[only]".
+[TODO: sitting isn't a defined action.
+After sitting on the benjack-chair, say "The antique chair creaks a little but supports you."]
+[TODO: implement touching messages for chair]
 
 The benjack-scrapbook-5 is a benjack-runebook in M2F3. The printed name of the benjack-scrapbook-5 is "scrapbook".
-Understand "scrapbook" as the benjack-scrapbook-5 when the player is in M2F3.
+Understand "scrapbook" or "book" as the benjack-scrapbook-5 when the player is in M2F3.
 The description of the benjack-scrapbook-5 is "[benjack-scrapbook-5-desc]".
 
 To say benjack-scrapbook-5-desc:
@@ -266,9 +402,20 @@ benjack-Christabell can be either run-down or charged-up. benjack-Christabell is
 
 Chapter Carol
 
-benjack-Carol is a female person.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol.
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is in the benjack-realm.
 
-The description of benjack-Carol is "description TBD".
+The description of benjack-Carol is "[benjack-Carol-description]".
+
+To say benjack-Carol-description:
+	if benjack-N1 is happening: [TODO and also IFF the player is THROUGH THE DOOR]
+		say "A pretty young girl, with wavy hair held in place with hair band, penetrating blue eyes, and cherubic cheeks. Her perfectly pressed powder blue dress is cinched at the waist with an oversize bow of matching color, and below it her skirt balloons outward like a parachute. Below that, she wears brilliant white knee socks and polished shoes with small silver buckles.";
+	otherwise if benjack-N2 is happening:
+		say "TBD";
+	otherwise if benjack-N3 is happening:
+		say "TBD".
+
+Instead of touching benjack-Carol, say "Your hand goes right through her, and it doesn’t seem to bother her in the least."
+
 
 Book 2 - Scenes
 
