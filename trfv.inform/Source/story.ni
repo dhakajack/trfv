@@ -264,6 +264,7 @@ To benjack-stage-off ( setnumber - a number):
 			say "Error: attemped illegal stage-off";
 	repeat with item running through L:
 		say "ejecting [item] to nowhere.";[TODO DEBUGGING remove for production]
+		now item is unseen;
 		now item is nowhere.
 
 Book 2 - Scenes
@@ -741,11 +742,11 @@ The description of benjack-chair is "The chair is the only adult-size piece of f
 After sitting on the benjack-chair, say "The antique chair creaks a little but supports you."]
 [TODO: implement touching messages for chair]
 
-The benjack-scrapbook-5 is a benjack-runebook. The printed name of the benjack-scrapbook-5 is "scrapbook".
-Understand "scrapbook" or "book" as the benjack-scrapbook-5 when the player is in M2F3.
-The description of the benjack-scrapbook-5 is "[benjack-scrapbook-5-desc]".
+The benjack-scrap-5 is a benjack-runebook. The printed name of the benjack-scrap-5 is "scrapbook".
+Understand "scrapbook" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
+The description of the benjack-scrap-5 is "[benjack-scrap-5-desc]".
 
-To say benjack-scrapbook-5-desc:
+To say benjack-scrap-5-desc:
 	say "The cover of the spiral-bound book is marked in thick black gothic lettering, [quotation mark]Carol’s Scrapbook[quotation mark]. Little bits of newsprint stick out from the edges of the [if open]open[otherwise]closed[end if] book.[no line break]";
 	if the benjack-times_bestowed of yourself is greater than 0:
 		say " ";
@@ -758,21 +759,21 @@ To say benjack-scrapbook-5-desc:
 				say "The bright aura around the scrapbook distorts the air around it; pulses of energy rippling outward from it";
 		say ".[no line break]".
 		
-Instead of reading the benjack-scrapbook-5:
-	if benjack-scrapbook-5 is closed:
+Instead of reading the benjack-scrap-5:
+	if benjack-scrap-5 is closed:
 		say "You flip open the scrapbook, with Carol reading";
-		now benjack-scrapbook-5 is open;
+		now benjack-scrap-5 is open;
 	otherwise:
 		say "Carol reads";
 	say " along, over your shoulder. In keeping with the cover, the scrapbook contains a number of newspaper clippings, bearing the titles: ";
 	let L be a list of text;
-	repeat with clip running through benjack-clippings enclosed by benjack-scrapbook-5:
+	repeat with clip running through benjack-clippings enclosed by benjack-scrap-5:
 		add title of clip to L;
 	say "[italic type][L][roman type].".
 	
 [TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach. ]
 
-The list of things called N1-furnishings is always {benjack-comforter, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-window, benjack-chair, benjack-scrapbook-5}.
+The list of things called N1-furnishings is always {benjack-comforter, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-window, benjack-chair, benjack-scrap-5}.
 
 Chapter 3 - N1 Conversation
 
@@ -816,7 +817,7 @@ benjack-Servants is a subject.  Understand "servant/servants" as benjack-Servant
 
 benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the location is in the benjack-realm.
 
-benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary/highschool/college/university" as benjack-school when the location is in the benjack-realm.
+benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm.
 
 
 [scrapbook is already defined as a subject]
@@ -869,7 +870,7 @@ After quizzing benjack-Carol about benjack-Groton:
 After quizzing benjack-Carol about benjack-submarine:
 	say "[one of][quotation mark]Dad says that he does the math that helps the other men build the boats and he helps them go really far and stay underwater for a long, long time. He is making a new one right now that doesn[apostrophe]t even need gas. Dad says that math is really important because if they make mistakes, the boats can sink. Sometimes the boats sink, but not because of mistakes, and dad says that is the Deep Ones taking their due, and there isn[apostrophe]t much you can do about that, so he just tried to get the math right.[quotation mark][or]In talking about the submarines that her father helps design, Carol also, alarmingly, frequently mentions the Deep Ones.[no line break][stopping][paragraph break]".
 	
-Instead of quizzing benjack-Carol about benjack-job:
+Instead of quizzing benjack-Carol about benjack-job when benjack-N1 is happening:
 	try quizzing benjack-Carol about benjack-submarine.
 
 After quizzing benjack-Carol about benjack-nautilus:
@@ -908,7 +909,7 @@ After quizzing benjack-Carol about benjack-ChristabellSubject:
 After quizzing benjack-Carol about benjack-elephant:
 	say "[quotation mark]Mister Snortles is a busy executive and he makes a lot of money and is very powerful, so people do things for him. He tends to be a bit short-tempered sometimes, but that is only because he doesn[apostrophe]t have a wife to take care of him.[quotation mark][paragraph break]".
 
-After quizzing benjack-Carol about benjack-lamb:
+After quizzing benjack-Carol about benjack-lamb when benjack-N1 is happening:
 	say "[quotation mark]Misses Winkelbottom lives in a very fancy house and has a lot of luncheons at her house, although she spends some of her afternoons at the country clubs as well. Her closets are full of beautiful dresses and she knows how to dance.[quotation mark][paragraph break]".
 
 After quizzing benjack-Carol about benjack-monkey:
@@ -953,10 +954,10 @@ After quizzing benjack-Carol about benjack-Mattanit:
 After informing benjack-Carol about benjack-death:
 	say "[quotation mark]Oh, I know all about it,[quotation mark] says the little girl cheerfully. [quotation mark]Lots of things die around here all the time.[quotation mark][paragraph break]".
 	
-Instead of informing benjack-Carol about benjack-mark:
+Instead of informing benjack-Carol about benjack-mark when benjack-N1 is happening:
 	try quizzing benjack-Carol about benjack-mark.
 	
-Instead of informing benjack-Carol about benjack-ChristabellSubject:
+Instead of informing benjack-Carol about benjack-ChristabellSubject when benjack-N1 is happening:
 	try quizzing benjack-Carol about benjack-ChristabellSubject.
 	
 After informing benjack-Carol about benjack-PC:
@@ -981,8 +982,8 @@ Definition: a subject is Progressive if it is benjack-aMerica or it is benjack-U
 After informing benjack-Carol about a Progressive subject:
 	say "[one of][quotation mark]Listen, Carol, it sounds like your dad has been filling your head with some pretty mean things that I don[apostrophe]t think are true.[quotation mark][paragraph break][quotation mark]Dad says that truth is what the good guys say.[quotation mark][paragraph break][quotation mark]Um, no. Did you know that America was founded by immigrants? Your friend Christabell -- she was one. She came from England, right? Everyone here was originally a foreigner and many were poor, and now they are all here and everyone should be treated equally, right?[quotation mark][paragraph break][quotation mark]I don[apostrophe]t like the way you tell it. No, I am sure dad is right. You[apostrophe]re spoiling the tea party![quotation mark][or]You try to talk some sense into Carol, but you find that trying to change the beliefs of someone with the intellect of a five-year-old is like beating your head against the wall. She can[apostrophe]t focus on anything other than the tea party.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Carol about benjack-scrapbook-5:
-	say "[one of][quotation mark]I think everyone should have their own scrapbook,[quotation mark] Carol replies. [quotation mark]Don[apostrophe]t you?[quotation mark][paragraph break]Carol leaves through it.[paragraph break][quotation mark]How do you choose what to paste into it?[quotation mark] you ask.[paragraph break][quotation mark]I don[apostrophe]t know. Just things. News from here and there. Interesting stuff.[quotation mark] Carol stretches and adds with a yawn, [quotation mark]I[apostrophe]ve just started the scrapbook, so there isn[apostrophe]t much in it yet.[quotation mark][or][if benjack-scrapbook-5 contains more than 2 things][quotation mark]Carol, is it me, or are there more articles pasted into the scrapbook than earlier?[quotation mark][end if]Carol sounds out each title and looks back at you with [if benjack-scrapbook-5 contains more than 2 things]a shrug. [quotation mark]Looks the same to me.[quotation mark][otherwise]pride.[no line break][end if][stopping][paragraph break]".
+After quizzing benjack-Carol about benjack-scrap-5:
+	say "[one of][quotation mark]I think everyone should have their own scrapbook,[quotation mark] Carol replies. [quotation mark]Don[apostrophe]t you?[quotation mark][paragraph break]Carol leaves through it.[paragraph break][quotation mark]How do you choose what to paste into it?[quotation mark] you ask.[paragraph break][quotation mark]I don[apostrophe]t know. Just things. News from here and there. Interesting stuff.[quotation mark] Carol stretches and adds with a yawn, [quotation mark]I[apostrophe]ve just started the scrapbook, so there isn[apostrophe]t much in it yet.[quotation mark][or][if benjack-scrap-5 contains more than 2 things][quotation mark]Carol, is it me, or are there more articles pasted into the scrapbook than earlier?[quotation mark][end if]Carol sounds out each title and looks back at you with [if benjack-scrap-5 contains more than 2 things]a shrug. [quotation mark]Looks the same to me.[quotation mark][otherwise]pride.[no line break][end if][stopping][paragraph break]".
 
 [TODO mirror/door subjects - need to see how tose objects are imleneted
 
@@ -1344,16 +1345,15 @@ Understand "empty/patch/blank/spot/discolored" as benjack-patch when the player 
 The N2-desc of benjack-patch is "".
 
 The benjack-crayon is a benjack-shadow.  The printed name of the benjack-crayon is "crayon drawing".
-Understand "crayon drawing" or "crayon" as benjack-crayon when the player is in M2F3.
-The N2-desc of benjack-crayon is "".
-
+Understand "top/drawing/crayon/upper" as benjack-crayon when the player is in M2F3.
+The N2-desc of benjack-crayon is "". 
 The benjack-ink is a benjack-shadow.  The printed name of the benjack-ink is "India ink drawing".
-Understand "india/ink/pen/drawing" as benjack-ink when the player is in M2F3.
-The N2-desc of benjack-ink is "".
+Understand "india/ink/pen/drawing/middle" as benjack-ink when the player is in M2F3.
+The N2-desc of benjack-ink is "". 
 
 The benjack-watercolor is a benjack-shadow.  The printed name of the benjack-watercolor is "watercolor painting".
-Understand "watercolor/painting" as benjack-watercolor when the player is in M2F3.
-The N2-desc of benjack-watercolor is "".
+Understand "watercolor/painting/bottom/drawing/lower" as benjack-watercolor when the player is in M2F3.
+The N2-desc of benjack-watercolor is "". 
 
 The benjack-makeupMirror is a benjack-shadow.  The printed name of the benjack-makeupMirror is "mirror".
 Understand "mirror" as benjack-makeupMirror when the player is in M2F3.
@@ -1364,7 +1364,7 @@ Understand "makeup" as benjack-makeup when the player is in M2F3.
 The N2-desc of benjack-makeup is "".
 
 The benjack-newsprint is a benjack-shadow.  The printed name of the benjack-newsprint is "piece of newsprint".
-Understand "newsprint/article/news/story/clip/clipping" as benjack-newsprint when the player is in M2F3.
+Understand "newspaper/newsprint/article/news/story/clip/clipping" as benjack-newsprint when the player is in M2F3.
 The N2-desc of benjack-newsprint is "TODO".
 
 The benjack-stackedBooks is a benjack-shadow.  The printed name of the benjack-stackedBooks is "stacked books".
@@ -1372,7 +1372,7 @@ Understand "stacked/books/book" as benjack-stackedBooks when the player is in M2
 The N2-desc of benjack-stackedBooks is "".
 
 The benjack-looseleaf is a benjack-shadow.  The printed name of the benjack-looseleaf is "looseleaf".
-Understand "looseleaf/paper/report" as benjack-looseleaf when the player is in M2F3.
+Understand "looseleaf/paper/report/essay/modest/more/proposal" or "a more modest proposal" as benjack-looseleaf when the player is in M2F3.
 The N2-desc of benjack-looseleaf is "".
 
 The benjack-deskChair is a benjack-shadow.  The printed name of the benjack-deskChair is "desk chair".
@@ -1382,7 +1382,7 @@ The N2-desc of benjack-deskChair is "".
 Does the player mean doing something with the benjack-deskChair: it is likely.
 
 [note that these items must be declared forward of this list]
-The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-chair}.
+The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window}.
 
 Chapter 3 - N2 Conversation
 
@@ -1397,7 +1397,16 @@ benjack-subjectNixon is a subject.  Understand "president/richard/millhouse/nixo
 
 benjack-subjectKennedy is a subject.  Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as benjack-subjectKennedy when the location is M2F3. The printed name of benjack-subjectKennedy is "President Kennedy".
 
-benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm. 
+benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm.
+
+benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm.
+
+benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when the location is in the benjack-realm.
+
+benjack-thresher is a subject.  Understand "thresher" as benjack-thresher when the location is in the benjack-realm.
+
+benjack-WinkelbottomSubject is a subject. Understand "winkelbottom/lamb/misses" as 
+benjack-WinkelbottomSubject when the location is M2F3 and benjack-N2 is happening.
 
 Section 2 - N2 Quips
 
@@ -1458,14 +1467,43 @@ After quizzing benjack-Carol about benjack-Runes when benjack-N2 is happening:
 After quizzing benjack-Carol about benjack-scrapbookSubject when benjack-N2 is happening:
 	say "[one of][quotation mark]I[apostrophe]d show it to you, but I am really a blockhead sometimes. I have some great new stories in it, but I[apostrophe]m afraid I left it at school at the end of term when I came up here. It[apostrophe]s in my dorm room. So annoying![quotation mark][or]Apparently, Carol left her scrapbook at her boarding school.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Carol about benjack-newsprint:
+After quizzing benjack-Carol about benjack-newsprint when benjack-N2 is happening:
 	say "[quotation mark]Some parts of history have to change for father[apostrophe]s plan to take root. A submarine was a small price to pay.[quotation mark][paragraph break]".
 	
-After quizzing benjack-Carol about benjack-stackedBooks:
+After quizzing benjack-Carol about benjack-stackedBooks when benjack-N2 is happening:
 	say "[quotation mark]They[apostrophe]re my school books. Boring stuff, mostly.[quotation mark][paragraph break]".
 	
-After quizzing benjack-Carol about benjack-looseleaf:
+After quizzing benjack-Carol about benjack-looseleaf when benjack-N2 is happening:
 	say "[one of][quotation mark]A few thoughts I had about ridding America of its unnecessary people.[quotation mark][paragraph break][quotation mark]What about the rest of the world?[quotation mark] you ask.[paragraph break][quotation mark]Oh yes, and all of them.[quotation mark][or][quotation mark]A few thoughts I had about ridding America of its unnecessary people.[quotation mark][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-highschool when benjack-N2 is happening:
+	say "[one of][quotation mark]Right now I[apostrophe]m going to a private boarding school in Farmington, Connecticut and just get up to Backwater on holidays. The worst thing is that it[apostrophe]s a all-girls school and the one date (kind of) that I[apostrophe]ve had, my father set up. He says it[apostrophe]s part of the plan. He set me up with freckle-faced lech at the New York Military Academy. It was his senior dance, and I was only a freshman, so it was pretty awful.[quotation mark][or][quotation mark]I didn[apostrophe]t see mother or father much until I started going to school because they stuck me up here, but I went to the local school in Stonington up to eighth grade, and then transferred to Mrs. Porter[apostrophe]s School in Farmington. Mom had gone there, so I was legacy. She thought it was important that I learn to be a lady, and frankly, I think they just wanted me out of their hair. So, during the school year I board there, and I[apostrophe]m back here on breaks and over the summer.[quotation mark][or]Carol says that she is currently attends a private all-girls school in Farmington, Connecticut.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-lech when benjack-N2 is happening:
+	say "[one of]A lumbering orange-haired oaf with withering halitosis and tiny hands that he tried to put all over me. I wouldn[apostrophe]t have gone out with him at all except that father said he was the key to his plan; what the Deep Ones took from Kennedy, they gave to him, except sort of inside-out and warped[or]To further her father[apostrophe]s plan, Carol recently went on a date with a guy that she didn[apostrophe]t really like from the New York Military Academy[stopping]."
+	
+After quizzing benjack-Carol about benjack-crayon when benjack-N2 is happening:
+	say "[quotation mark]That[apostrophe]s mother, father, and me, and in the middle, that[apostrophe]s grand-uncle, in fact, that[apostrophe]s a somewhat flattering version of him, and on the right is Christabell, back when I thought I could trust her.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-ink when benjack-N2 is happening:
+	say "[one of][quotation mark]Ah yes, I recall that day. I had come up here from Stonington for a three-day weekend, and as soon as I stepped into the room, Master Sweetpaws was having some sort of argument with Misses Winkelbottom. She was insisting on some abstruse point of parliamentary procedure -- I don[apostrophe]t even know where the conversation started or what they were doing -- but Sweetpaws was irate and swinging around the room, screaming. Mister Snortles tried to talk him down, but also didn[apostrophe]t want to stick his neck out too far.[quotation mark][paragraph break][quotation mark]I sat down to watch and got out my sketchbook.[quotation mark][paragraph break][quotation mark]The argument went downhill, and Malice the Clown said he had had enough of listening to the pointless bickering and just sliced her open from her mouth to her groin. Master Sweetpaws and Mister Snortles were on her immediately. Within about three minutes, she was nothing but lint and some bits of wire. It is very hard to convey all of the motion when you[apostrophe]re drawing quickly like that.[quotation mark][or]Carol says it depicts the other three stuffed toys slicing up and devouring Misses Winkelbottom, her toy lamb.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-watercolor when benjack-N2 is happening:
+	say "[quotation mark]That[apostrophe]s the Thresher last April. The Old Ones took it in exchange for Kennedy.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-babySubject when benjack-N2 is happening:
+	say "[one of][quotation mark]Oh don[apostrophe]t worry, Naomi. The baby will be fine. Oh, and I guess, congratulations in advance.[quotation mark][or]Carol says you have nothing to worry about -- your daughter is doing fine.[no line break][stopping][paragraph break]".
+	
+Definition: A thing is benjack-Graphic if it is benjack-crayon or it is benjack-ink or it is benjack-watercolor.
+
+After informing benjack-Carol about something benjack-Graphic when benjack-N2 is happening:
+	say "[one of]After perusing the drawings, you comment, [quotation mark]Carol. I[apostrophe]m a little concerned about these drawings. I think you might need professional help.[quotation mark][paragraph break][quotation mark]No, Naomi, I don[apostrophe]t think so,[quotation mark] she replies. [quotation mark]The Deeps Ones are all the help I need for now.[quotation mark][or]You make some minor technical criticisms about the drawings, but considering her age when she drew them, her technique wasn[apostrophe]t bad.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Carol about benjack-ChristabellSubject when benjack-N2 is happening:
+	say "[one of][quotation mark]Earlier today, I had a chance to chat for a while with Christabell. We talked a bit about you,[quotation mark] you mention.[paragraph break][quotation mark]I could care less,[quotation mark] sulks Carol.[paragraph break][quotation mark]She[apostrophe]s concerned about you -- she thinks you might have started down a dark road, but said that you can still fix things and maybe free your spirit from its cycle.[quotation mark][paragraph break][quotation mark]Bullshit, Naomi.[quotation mark] You are stunned to hear this from such a young and proper girl. [quotation mark]She[apostrophe]s a hypocritical centuries-old child molesting monster, who is welded to a pile of steel for good reason. Let her rot there.[quotation mark][or]You start, but Carol walks away, angry and not wanting to hear anything more.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N2 is happening:
+	say "Carol mentions that Misses Winkelbottom had an accident, but everyone else is in good spirits."
 
 Chapter 4 - N2 Event
 
@@ -1501,11 +1539,11 @@ benjack-resentment is a subject.  Understand "resentment" as benjack-resentment 
 
 benjack-ElderGods is a subject.  Understand "elder/gods/god" as benjack-ElderGods when the location is in the benjack-realm.
 
-benjack-drawingsSubject is a subject.  Understand "drawing/drawings/crayon/sketch/sketches" as benjack-drawingsSubject when the location is in the benjack-realm.
-
 benjack-clippingSubject is a subject.  Understand "clip/clips/clipping/clippings/article/articles/newspaper/newspapers/article/articles" as benjack-clippingSubject when the location is in the benjack-realm.
 
 benjack-planSubject is a subject.  Understand "plan/plans" as benjack-planSubject when the location is in the benjack-realm.
+
+benjack-drawingSubject is a subject.  Understand "drawing/drawings/crayon/ink/watercolor/art/arts/artwork/artworks" as benjack-drawingSubject when the location is DAN8.
 
 Section 2 - R2 Quips
 
@@ -1541,7 +1579,7 @@ After informing benjack-Christabell about benjack-Hugo when benjack-R2 is happen
 After informing benjack-Christabell about benjack-DeepOnes when benjack-R2 is happening:
 	say "[one of][quotation mark]Whatever Carol and her father are up to, the Deep Ones are doing the dirty work.[quotation mark][paragraph break][quotation mark]Nay, they do reshape the Worlde by more subtle Means that you can comprehend and so are Agency, but the Runes are written in Carol[apostrophe]s book; she is Author.[quotation mark][paragraph break][quotation mark]That sounds semantic. She couldn[apostrophe]t do it without the Deep Ones.[quotation mark][paragraph break][quotation mark]No Occasion do I have to make Argumente against you, as I wish that our Conversation remain amicable, but to my Poynte I do must needs sticke.[quotation mark][or]You go over how the Deep Ones seem to be directed by Carol and her father.[no line break][stopping][paragraph break]".
 	
-After informing benjack-Christabell about benjack-drawingsSubject when benjack-R2 is happening:
+After informing benjack-Christabell about benjack-drawingSubject when benjack-R2 is happening:
 	say "[one of][quotation mark]I saw a number of really creepy drawings in Carol[apostrophe]s room -- she[apostrophe]s profoundly weird.[quotation mark][paragraph break][quotation mark]To the Weirdness of Minde, aye. But being her Instructress in the fyne Artes from her earliest Ayge, I do take some Pride in the Faithfulness of her Renderings.[quotation mark][or]You describe to Christabell the strange drawings in Carol[apostrophe]s room.[no line break][stopping][paragraph break]".
 	
 After informing benjack-Christabell about benjack-scrapbookSubject when benjack-R2 is happening:
@@ -1672,15 +1710,15 @@ The benjack-tapedeck is a benjack-shadow.  The printed name of the benjack-taped
 Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic" as benjack-tapedeck when the player is in M2F3.
 The N3-desc of benjack-tapedeck is "".
 
-The benjack-scrapbook-19 is a benjack-runebook. The printed name of the benjack-scrapbook-19 is "scrapbook".
-Understand "scrapbook/notebook" as the benjack-scrapbook-19 when the player is in M2F3.
-The description of the benjack-scrapbook-19 is "[benjack-scrapbook-19-desc]".
+The benjack-scrap-19 is a benjack-runebook. The printed name of the benjack-scrap-19 is "scrapbook".
+Understand "scrapbook/notebook" as benjack-scrap-19 when the player is in M2F3.
+The description of the benjack-scrap-19 is "[benjack-scrap-19-desc]".
 
-To say benjack-scrapbook-19-desc:
+To say benjack-scrap-19-desc:
 	say "TODO: TBD".
 	
 [note that these items must be declared forward of this list]
-The list of things called N3-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-recordplayer, benjack-record, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrapbook-19}.
+The list of things called N3-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrap-19}.
 
 Chapter 3 - N3 Conversation
 
@@ -1714,14 +1752,14 @@ Instead of taking a benjack-clipping:
 	say "The news clipping flows around your fingers like a liquid. As soon as you withdraw your hand, it smoothens out again, recovering its normal appearance."
 		
 Benjack-clipping-shark is a benjack-clipping. 
-The Benjack-clipping-shark is in benjack-scrapbook-5.
+The Benjack-clipping-shark is in benjack-scrap-5.
 The title of Benjack-clipping-shark is "Shark Attack".
 The list of text called Benjack-clipping-shark-text is always {"SHARK ATTACK![paragraph break]A team of oceanographers from the Woods Hole Institute of Oceanography in Woods Hole, MA was attacked yesterday by sharks in waters about ten miles southeast of Nantucket Island. Of the four man team, one was died and one was injured, requiring hospitalization.[paragraph break] The team was deploying a string of experimental sonar buoys along an underwater ridgeline. The captain of the expedition, Frampton Mays, was the first to notice a disturbance in the water surrounding the boat and the rubber raft in tow, where two divers were working. [quotation mark]The seas were rolling calmly, but something was moving around us, in circles. Something big. The water humped up around it, but there was no wake.[quotation mark][paragraph break]Davis Parks, an electronics engineer from the Sperry Corporation, was with the captain and noticed unusual readings from the devices being put in place, [quotation mark]The first buoy was anchored and we were calibrating it, so I didn[apostrophe]t pay much attention at that point. I thought we had a gain problem because the signal returns were just crazy and the doppler… well, nothing can move that fast, I had to assume one of the guys had snapped and that the assembly was spinning.[quotation mark][paragraph break]According to coast guard vessels responding to the their distress call, water sprayed up around the raft and then the entire raft disappeared below the foaming surface. Initially, the coast guard reported sighting tentacles reaching out of the water around the raft, but it is now believed that these were the heavy lines that had secured the equipment to the ocean floor recoiling upward with the release of tension.[paragraph break]One diver, who was on the raft at the time, was lost: twenty-six-year-old Travis McMaster of New Port, Rhode Island. Dr. McMaster had recently completed graduate studies at the Massachusetts Institute of Technology and was conducting post-doctoral research at Woods Hole.[paragraph break]The other diver, David Tillerson, was nearer to the research vessel when the sharks attacked, and was pulled from the water by the two crew. First aid was performed on the coast guard rescue boat; it is reported that he had a number of large, painful welts on his back. The treating physician commented that these welts were [quotation mark]similar in nature to the sort we see from jellyfish, but much, much larger and deeper.[quotation mark]"}.
 The content of Benjack-clipping-shark is Benjack-clipping-shark-text.
 Understand "shark/attack" as Benjack-clipping-shark.
 
 Benjack-clipping-actress is a benjack-clipping. 
-Benjack-clipping-actress is in benjack-scrapbook-5.
+Benjack-clipping-actress is in benjack-scrap-5.
 The title of Benjack-clipping-actress is "Actress Disappears".
 The list of text called Benjack-clipping-actress-text is always {"A FLASHBULB EXCLUSIVE![paragraph break]Fashion model and star of the silver screen, Hungarian actress Lili Kovács disappeared this afternoon from a private hospital in North Carolina where she was recovering from recent surgery. As previously reported, she had been flown there three days ago after developing what was thought to be acute appendicitis while filming [quotation mark]Two Shots and A Chaser[quotation mark] in Bermuda.[paragraph break]At a cast party Thursday evening, she sudden collapsed, clutching her stomach in pain, and was rushed to a local hospital, where she was given medication and transferred by plane to the U.S. According to guests at the party, the normally svelte starlet appeared to have gained a lot of weight during her week on the vacation island, and some thought that she might have suffered an on set injury because she was walking oddly.[paragraph break]The handsome Wallace Travers, who stars opposite Miss Kovács in the Metro-Goldwyn-Mayer Pictures production, recounted the troubling week that began with the disappearance of the lovely celebrity while they were filming a scene on the beach area behind the posh Venture Casino last Monday. According to Mr. Travers, [quotation mark]She said she was taking a quick dip to cool off, and I thought she would be right back. When we were ready to shoot the next scene, nobody could find her. We checked the trailer, the hotel -- everywhere. Then our sound guy, Mike, says there[apostrophe]s something going on in the surf. He had a good view from up on the boom tower, but from the beach everything looked normal. He said some kind of lights were moving around under the water. ","Some of the locals later told us that[apostrophe]s not too unusual, that algae or whatnot have this faint glow at night, but Mike was really upset and said the lights were huge, the size of city busses, really bright, and moving around incredibly fast. Well, Heinrich called it for the evening, and we let Mike go sober up.[quotation mark][paragraph break]According to the film[apostrophe]s director, Heinrich Habberstamp, Miss Kovács showed up early the next morning for filming as if nothing had happened. Later that day, she admitted to having no recollection of the prior evening.[paragraph break]The private hospital refused to comment in the interest of privacy, but one of Lili[apostrophe]s visiting relatives gave FLASHBULB the inside scoop: When Lili arrived from the airport, she was burning up with fever and brought immediately to the operating room. As the surgeon made the first cut, the wound tore open of its own accord and a mass of gelatinous balls squirted out. [quotation mark]Maybe ten or fifteen pounds of them, each about the size of an orange. They were pink or red, and some had little cords attached. Nobody knew what they were, but they got as many of them out as they could. They had to leave some of the smaller ones that were more firmly attached. When they tried to cut those out, she started bleeding, so they closed her up.[quotation mark][paragraph break]No one knows the whereabouts of the starlet or how she could have gotten out of her bed after such major abdominal surgery. More than a few industry wags have suggested that the whole episode was a publicity stunt to build up anticipation for the film."}.
 The content of Benjack-clipping-actress is Benjack-clipping-actress-text.
@@ -1902,7 +1940,7 @@ Carry out liptoning:
 				let C be Benjack-clipping-convict;
 			-- 3:
 				let C be Benjack-clipping-sable;
-		now C is in benjack-scrapbook-5.
+		now C is in benjack-scrap-5.
 		
 
 [to simulate marking the baby]
