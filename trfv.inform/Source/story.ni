@@ -93,9 +93,9 @@ Yourself can be benjack-disruption_informed. Yourself is not benjack-disruption_
 Yourself can be benjack-lin_aware. Yourself is not benjack-lin_aware.
 [ever heard of the town of Lin?]
 
-Yourself can be ploughver-armed. Yourself is ploughver-armed.[on timer]
+Yourself can be benjack-ploughver-armed. Yourself is benjack-ploughver-armed.[on timer]
 
-Yourself can be ploughver-inhibited. Yourself is not ploughver-inhibited. [e.g., if room is warded, set]
+Yourself can be benjack-ploughver-inhibited. Yourself is not benjack-ploughver-inhibited. [e.g., if room is warded, set]
 
 Yourself has a number called benjack-times_ploughvered. The benjack-times_ploughvered of yourself is 0.
 
@@ -402,7 +402,7 @@ benjack-Christabell can be either run-down or charged-up. benjack-Christabell is
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is in the benjack-realm.
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol" or "girl" or "child" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3.
 
 The description of benjack-Carol is "[benjack-Carol-description]".
 
@@ -655,7 +655,7 @@ After quizzing benjack-Christabell about benjack-colony:
 After quizzing benjack-Christabell about benjack-indian:
 	say "[one of][quotation mark]Nowe that you do mention it, I am given to refleckt the Oddity that stands in Contrast to Experience of the Past, the [bold type]Native[roman type] People being both so numberous and skattered a-far and widely within these Shoures, Mountains, and Playns, each Home to sundry [bold type]Tribes[roman type] and Kinships, the Relations betwixt running like Streams o[apostrophe]er these Landes, that not One have I upon layd mei Eyes to sally along these Pathes or threw these Woods, despite my ever-constant Vigil. Strike you not that a Perplexity?[quotation mark][paragraph break]Still parsing that sentence, you reply, [quotation mark]I guess.[quotation mark][paragraph break]Christabell welcomes your remark as a confirmation with a nod and then gestures towards the dark [bold type]cliffs[roman type] surrounding you. [quotation mark]Ne[apostrophe]er the Lesse, do I sense they have long dwelt here, in this Place of Power. Though I have not the [bold type]Seight[roman type] of them, but not a doubt do I entertain in mind that they are all about us, teeming like bilge Ratts.[quotation mark][paragraph break][quotation mark]Yuck.[quotation mark][paragraph break][quotation mark]I meant in Numericity, not Demeanour.[quotation mark][if benjack-Christabell is candid][paragraph break][quotation mark]In my Youth, I did well knowe the [bold type]Tribes[roman type] near the [bold type]Towne[roman type] of [bold type]Lin[roman type] and after awhile, those further owt from not onely our mutual Trade, but in later Tymmes, mei Werke in the Understanding of theyr divers Tongues, Coustumes and Teachings. It was threw them that mei Father did profit summe of their Science, any mei Mother of theyr Wisedom, they haffing made introducion to us of [bold type]Mattanit[roman type] and the [bold type]Third Covenant[roman type].[quotation mark][end if][or]There used to be a lot of American Indians around this area, but Christabell says that few are seen these days.[no line break][stopping][paragraph break]".
 
-After quizzing benjack-Christabell about benjack-mark:
+After quizzing benjack-Christabell about benjack-mark when benjack-R1 is happening or benjack-R0 is happening:
 	say "[one of][quotation mark]A [bold type]Mark[roman type] is a special Touch whereby a [bold type]Spirit[roman type] does grant Favour to One still a-live by laying upon the One so-gift[apostrophe]d summe small Splintre of their own Essence. Those haffing the [bold type]seight[roman type] will reckognise it a brawnish Stain upon the marked, but Others will not it ken.[quotation mark][paragraph break][quotation mark]Sounds like an evil cow brand for the soul.[quotation mark][paragraph break][quotation mark]The Marking is neither maleficent nor beneficent, it being onely a Reflection of [bold type]Spirit[roman type] from whence it doth floe.[quotation mark][paragraph break][quotation mark]Why would anyone agree to be marked, though?[quotation mark] [paragraph break][quotation mark]In a sense, it be a Blessing for it doth warde the One a-gainst depredations of inimickal [bold type]Spirits[roman type] and by its Presence exclude unwillful Markings thereafter. More of a Pointe, such Magickal Capacities as possessed the Donor are bestown thereby for exercise upon the Will of the Begift[apostrophe]d.[quotation mark][or]According to Christabell, spirits can imprint their mark on people, and it somehow endows those people with magical powers. Apparently, a person can only be marked once, or so she says.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-Carolsubject when benjack-R0 is happening:
@@ -735,6 +735,8 @@ Rule for printing the name of a benjack-runebook (called the evil tome):
 Chapter 1 - N1 Conversation
 
 Section 1 - N1 Subject
+
+[scrapbook is already defined as a subject]
 
 Section 2 - N1 Quips
 
@@ -843,7 +845,7 @@ benjack-ChristabellToys is a subject.  Understand "sweetpaws/malice/clown/snortl
 
 benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding when the location is in the benjack-realm.
 
-benjack-ChristabellScrapbook is a subject.  Understand "book/scrapbook/article/articles/newspaper/newspapers/clipping/clippings" as benjack-ChristabellScrapbook when the location is in the benjack-realm.
+benjack-ChristabellScrapbook is a subject.  Understand "scrapbook" as benjack-ChristabellScrapbook when the location is in the benjack-realm.
 
 benjack-ChristabellGrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-ChristabellGrandUncle when the location is in the benjack-realm.
 
@@ -859,19 +861,12 @@ benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-Ploughve
 
 benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm.
 
-[
-
-benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is in the benjack-realm.
-
-
-]
-
 Section 2 - R1 Quips
 
 After quizzing benjack-Christabell about benjack-Runes:
 	say "[one of]Pleased that you are taking an interest, Christabell launches into an explanation.[paragraph break][quotation mark]Whomesoever do werke a Magick, hee leaveth in Posterity Signes that summe might read thereafter; these be their Runes.[quotation mark][paragraph break][quotation mark]Sort of a record, then?[quotation mark] you inquire.[paragraph break][quotation mark]Not onely, for in wroughting any Magick, a natural Direction must be followed as Ice doth melt and flow downward as a Mountain Stream and not upwards to the Peake, so Potence must channel fruitfully. As a Log burnt doth comforting Heat provide, so Runes be the Ashes. Get you mie Drifte?[quotation mark][paragraph break][quotation mark]So, it[apostrophe]s sort of a nebulous mystical wake left behind by magic?[quotation mark][paragraph break][quotation mark]Nay, come you rightly downe to the Firmness of Earth -- it be not but like a Booke, it be a true Folio, though not seen but for Seight -- Leaves and Werdes in Leather bound: the Story of good Werkes upon one Shyt, sorrowfull sinnes the next.[quotation mark][or]Christabell explains that they are sort of a permanent sign of the price paid in the world to perform magic.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Christabell about benjack-DeepOnes:
+After quizzing benjack-Christabell about benjack-DeepOnes when benjack-R1 is happening:
 	say "[one of][quotation mark]I[apostrophe]m not really sure how to approach this delicately,[quotation mark] you begin, [quotation mark]but what exactly are the Deep Ones?[quotation mark] You refrain from air quotes, as it would just confuse her.[paragraph break][quotation mark]Your Apprehension I do gently understande, for many Miscreantes do beare false Witness against them and thow powerful they are, know you this: they do serve as me and my longhouse, the mighty Weal of Mattanit.[quotation mark][paragraph break][quotation mark]Yes, but what are they -- I mean, could you draw me a mental picture of them?[quotation mark][paragraph break][quotation mark]No Representation of them can I render, for their Forme supporteth not the weake Minde of Man, but summe few jotts of Wisedom I did learne among the Nirramonk, and these they are: firstly, they are Olde, older than the Earthe itself (this, thow we did know from the naym itself, but see you now how they did come by it); secondly, it is in the Seven Oceans and multitudinous Seas that they do dwell; and finally, and paramounte, the marked of Mattanit can call upon them to scribe their Runes in his Service.[quotation mark][paragraph break]Christabell adds, [quotation mark]They be not the onely of their Kinde, but the onely I did come to know in mei too brief Tymme among the Nirramonk.[quotation mark][or]According to Christabell, the Deep Ones are some sort of ancient beings that serve Mattanit.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-Potence:
@@ -954,7 +949,7 @@ After quizzing benjack-Christabell about benjack-Victor:
 	say  "[one of][quotation mark]Victor Crâne? Yes, I have heared his Tale as well from Carol (the Ignomy of the Crânes being a favourite Topick of ouwr Gossip). [paragraph break][quotation mark]Amongst the Crânes, Victor was the most successful in Busyness, and as well the one most bereft of Character. Despite Vices uncowntable, he was unusually long-of-life and made much of his Fortune building Roads of Rayle. Indeed, it was he who did first conceive Construction of a Spur from Backwater to his Mill hereabouts. He did err in leaving that Project and the Mill itself, the onely among his Busynesses a failure, to his doltsh Sonne, Edgar, who did prove unsuited to the Task. Victor did little care though, being past the Ayge of one-hundred, and lodging ‘till his purported Death in an Opium Den in Singapore.[quotation mark][or]Victor Cragne was a successful businessman, but given to numerous vices including opium. It is said that he lived to extreme old age.[no line break][stopping][paragraph break]".
 	
 
-After quizzing benjack-Christabell about benjack-Hugo:
+After quizzing benjack-Christabell about benjack-Hugo when benjack-R1 is happening:
 	say  "[one of][quotation mark]Carol did not oftentimes speake of her Father, but I do know, much to the belike of the Deep Ones, I doubt me not, that a man of the Sea was he -- not in the sense of a Saylor, but drawn to the Deep by Intelleckt and Inclineation, being more a Shipswrighte or one who does put his Designe upon Paper that others might put Hammer to Nayle in its Construcion.[quotation mark][paragraph break]Christabelll laughs, [quotation mark]At one Poynt, Carol did inform me, he did sit bodily upon my very Pyle of Ironne, but perceived me not for lack of the Seight. In that Moment he did hatch an Idea to sell the Ironne for the making of Ships to bring War to his Enemies, for he was bloodthirsty and did detest those not spaking Engelish, putting me much in Mynd of Ewen Breeves, a Preacher I did once have the Misfortune to know.[quotation mark][or]Christabell says that Carol[apostrophe]s father Hugo once tried to sell the railroad tracks to the navy as scrap iron.[no line break][stopping][paragraph break]".
 	
 After informing benjack-Christabell about benjack-Hugo:
@@ -991,7 +986,7 @@ After informing benjack-Christabell about benjack-ChristabellTeaParty:
 After quizzing or informing benjack-Christabell about benjack-Carolsubject when benjack-R1 is happening:
 	say "[one of][quotation mark]When she were a Childe, she did come visit me frequently, standing as you do now. I do flatter mieself to thinke she did seek my Company for Wisedom and Solace, but let us also admit that for a Childe, the Crâne Manse was naught but a Place of Boredom most profound.[quotation mark][or]	[quotation mark]I be not surprised that she did appear to you in an Aspekt childe-like, for that is a Manifestation of her strange Fusion, the Circular Prison, but well you would do to remember she died far from Innocent. Though I did teach her tenderly, she did bend the Craft darkly in Service to her Father, Hugo, a man of no moral fibre.[quotation mark][or]Christabell says that, as a child, Carol used to come visit her frequently.[no line break][stopping][paragraph break]".
 
-After informing benjack-Christabell about benjack-ChristabellToys:
+After informing benjack-Christabell about benjack-ChristabellToys when benjack-R1 is happening:
 	say "[one of][quotation mark]The Names are not beknownst to me, but that is merely an accident of this Unfolding; I know the Essence of the Creatures of whych you do speak. They are at this Ayge of hers mostly Play Toys, but in Tymme do become her most loyal and dangerous Consorts.[quotation mark][or]You tell Christabell about your most recent visit with Carol and about her stuffed toys.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-Unfolding:
@@ -1052,7 +1047,14 @@ Part 5 - Scene N2 Teenage Carol Marks Naomi's Baby
 
 Chapter 1 - N2 Conversation
 
+Before hailing or conversing or speaking when benjack-R2 is happening for the first time:
+	say "[quotation mark]My Greetings again, Naomi. Were you able to lifte the Burden of Carol[apostrophe]s Runes and set a-free her Spirit?[quotation mark][paragraph break][quotation mark]No, not so much,[quotation mark] you admit. [quotation mark]She didn[apostrophe]t have the scrapbook with her. In fact, the whole thing didn[apostrophe]t go that well. She[apostrophe]s has some resentment towards you, and her dad[apostrophe]s plan sounds bonkers.[quotation mark][paragraph break][quotation mark]I have something very important to ask you, Christabell. Carol touched me…[quotation mark] You take a moment to compose yourself, [quotation mark]Carol touched me here, and said she had marked my baby, a daughter.[quotation mark][paragraph break]Christabell looks askew. [quotation mark]Oh?[quotation mark] She holds her hand palm out. [quotation mark]No. There be no Baby. Nor even so much as Thowt of one in your Entrayls. Not this Daye. She doth Laie most Cravenly to seeke Inflewance o[apostrophe]er you. I had hoped to save her, but History does itself repete -- for the Sayke of All, we must see to her Disruption.[quotation mark]";
+ 	continue the action.
+
+
 Section 1 - N2 Subjects
+
+benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring" as benjack-babySubject when the location is in the benjack-realm.
 
 Section 2 - N2 Quips
 
@@ -1064,15 +1066,123 @@ Part 6 - Scene R2 Plotting Carol's Disruption
 
 When benjack-R2 begins:
 	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
+	now yourself is benjack-ploughver-inhibited;
 	move benjack-Christabell to DAN8.
+	
 
 Chapter 1 - R2 Conversation
 
+
+
+
 Section 1 - R2 Subjects
+
+benjack-Disruption is a subject.  Understand "disruption/disrupt/destroy" as benjack-Disruption when the location is in the benjack-realm.
+
+benjack-WindowSubject is a subject.  Understand "window/windowe/blockayde/blockade" as benjack-windowSubject when the location is in the benjack-realm.
+
+benjack-resentment is a subject.  Understand "resentment" as benjack-resentment when the location is in the benjack-realm.
+
+benjack-ElderGods is a subject.  Understand "elder/gods/god" as benjack-ElderGods when the location is in the benjack-realm.
+
+benjack-drawingsSubject is a subject.  Understand "drawing/drawings/crayon/sketch/sketches" as benjack-drawingsSubject when the location is in the benjack-realm.
+
+benjack-clippingSubject is a subject.  Understand "clip/clips/clipping/clippings/article/articles/newspaper/newspapers/article/articles" as benjack-clippingSubject when the location is in the benjack-realm.
+
+benjack-planSubject is a subject.  Understand "plan/plans" as benjack-planSubject when the location is in the benjack-realm.
+
+
+
+[
+
+benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is in the benjack-realm.
+
+]
 
 Section 2 - R2 Quips
 
+[todo: map t mark -> pregnancy]
+
+After quizzing benjack-Christabell about benjack-mark when benjack-R2 is happening:
+	say "[quotation mark]Christabell, you said that a person can only be marked by a spirit once, right?[quotation mark][paragraph break][quotation mark]That is the Waie of it.[quotation mark][paragraph break][quotation mark]Is there any way to remove a Mark?[quotation mark][paragraph break][quotation mark]Nay, Friend Naomi, there be not, even with Deathe.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-windowSubject:
+	say "[one of][quotation mark]The Windowe in that room be a Thing of her Minde; nothing moore. Open it, and you do Open her Mentally a Crack, and into that I shall slippe my Magicks and thereby her Disruption.[quotation mark][paragraph break][quotation mark]You think this will work?[quotation mark][paragraph break][quotation mark]Mayhap. If we do not dally, for her Power groweth like unto a Balle of Snouwe rolling downward upon a Hill -- But, you will needs be clever, for onely distracted will her Eye[apostrophe]s Gaze not catch you and all be lost.[quotation mark][or]Christabell reiterates that opening Carol[apostrophe]s window will give Christabell a chance to cast a spell that will once and for all destroy Carol.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Christabell about benjack-resentment:
+	say "[one of][quotation mark]Aye, there be some Truth in what she does say. Blossoming in her young Womanhood as she was, my Weale sorry tried by Tymme, I did luste after her with Desires carnal.[quotation mark][paragraph break][quotation mark]How is that even a thing? You first of all being dead and second not having a body?[quotation mark][paragraph break][quotation mark]These are fine faire Questions, dear Naomi, and I would entreate you explore them further with me hence -- and in great Detaile -- if your Appetites so leaneth, but this is the Howr to talk not of Love but Action. No alternative do I see but to see to Carol[apostrophe]s Disruption.[quotation mark][or]Christabell admits to lusting after Carol when the girl was a teenager, but now urges you to disrupt her.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-resentment:
+	say "[one of][quotation mark]Carol seemed quite angry at you, Christabell.[quotation mark][paragraph break][quotation mark]I do suppose she does have summe Reason, but know you that she did lead me on and I do think appreciate my Attentions. I am given to wonder if it was not she who did lead mee about wrongly.[quotation mark][paragraph break][quotation mark]That[apostrophe]s no excuse.[quotation mark][or]Christabell brushes aside you mentions of how she might have wronged Carol.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-Carolsubject when benjack-R2 is happening:
+	say "[one of][quotation mark]Carol was led falsely by her Father who did twist the Werdes of Mattanit and harness her rapport with the Deep Ones. He did conspire to remove the Constraints that have for Tymme endless held at Baye the Elder Gods, what with the Misperception most grievous that gracious of their Libertie, they would Accorde him Dominion oe[apostrophe]r the Worlde.[quotation mark][paragraph break][quotation mark]And you don[apostrophe]t think that[apostrophe]s how that would go down?[quotation mark][paragraph break][quotation mark]Down would it go, most surely, but in no desirable Direction for him, for their Fury pent would burne All, before even a Werde he could say to ask his Rewarde (thow I opine it be served wel in that Manner).[quotation mark][or]According to Christabell, Carol[apostrophe]s father has been pursuing a plan to use Carol and her relationship to the Deep Ones to free the Elder Gods from their Eternal Sleep.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-Carolsubject when benjack-R2 is happening:
+	say "[one of][quotation mark]Christabell, I think that Carol is a danger -- maybe to the world itself. I don[apostrophe]t know how much of it is real or she[apostrophe]s just crazy. Or maybe I am. After all, I[apostrophe]m discussing with the Salem witch ghost whether the little girl ghost that thinks she[apostrophe]s responsible for the Kennedy assassination is insane. Maybe I need to be the one on the couch. That would explain a lot about the way today[apostrophe]s gone.[quotation mark][paragraph break][quotation mark]Perhaps short Slumber would be helpful, yes, but I do assure you, Carol be every bit so vitall a Danger as you do perceeve. It were e[apostrophe]er so when she did live, as she did grow in Power with Ayge, there came a Tymme where I, even loving her so, did bring her to End herself.[quotation mark][paragraph break][quotation mark]You are the reason she committed suicide?[quotation mark][paragraph break][quotation mark]And she does to this Daye count it sorely against mee.[quotation mark][or]You reiterate that Carol is a danger.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Christabell about benjack-ElderGods when benjack-R2 is happening:
+	say "[one of][quotation mark]There be few Things we did not speake of, even those of us bonded in the Longhouse -- first amongst them, the Elder Gods, who be so alien to ouwr Minde, that nary a Glimpse of the Shadoe would rupture the Knotte of Reason. Ancient they are; ancient and cataclysmic and mad.[quotation mark][paragraph break][quotation mark]So, they[apostrophe]re evil?[quotation mark][paragraph break][quotation mark]Nay, for I do not believe they do have the Concept itself, that being Artefice of Man[apostrophe]s Minde. No, Destruction they provoketh onely by theyr unwitting, horrid Indifference. Ouwr Existence is not even Perceiv[apostrophe]d by them, I doubt me not.[quotation mark][or]Carol describes them as beings so alien that they are not even aware we exist or that their mere presence threatens our existence.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-ChristabellToys when benjack-R2 is happening:
+	say "[quotation mark]Surprised am I not, for in each telling of her Unfolding, they do fall one upon the other, the Order not mattering to the Tayle.[quotation mark][paragraph break]".
+
+After informing benjack-Christabell about benjack-Hugo when benjack-R2 is happening:
+	say "[one of][quotation mark]Carol[apostrophe]s father, Hugo, seems to have his own agenda -- Carol said he had a plan, and it sounds like it revolved around manipulating politics. I[apostrophe]m not quite sure how everything plugs together, but he[apostrophe]s been intentionally shaping nodal points in history with Carol[apostrophe]s help.[quotation mark][paragraph break][quotation mark]That be not an impossible Task for One so endowed with both her magickal Aptitudes and sharpness of Witte. She could with the Aide of the Deep Ones bring to pass an Event, or though their Interventions divert the Unfolding so the said Event never did occur.[quotation mark][or]Carol's father seems to have a plan to use the Deep Ones to liberate the Elder Gods from their slumber by manipulating historic turning points.[no line break][stopping][paragraph break]".
+
+After informing benjack-Christabell about benjack-DeepOnes when benjack-R2 is happening:
+	say "[one of][quotation mark]Whatever Carol and her father are up to, the Deep Ones are doing the dirty work.[quotation mark][paragraph break][quotation mark]Nay, they do reshape the Worlde by more subtle Means that you can comprehend and so are Agency, but the Runes are written in Carol[apostrophe]s book; she is Author.[quotation mark][paragraph break][quotation mark]That sounds semantic. She couldn[apostrophe]t do it without the Deep Ones.[quotation mark][paragraph break][quotation mark]No Occasion do I have to make Argumente against you, as I wish that our Conversation remain amicable, but to my Poynte I do must needs sticke.[quotation mark][or]You go over how the Deep Ones seem to be directed by Carol and her father.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-drawingsSubject when benjack-R2 is happening:
+	say "[one of][quotation mark]I saw a number of really creepy drawings in Carol[apostrophe]s room -- she[apostrophe]s profoundly weird.[quotation mark][paragraph break][quotation mark]To the Weirdness of Minde, aye. But being her Instructress in the fyne Artes from her earliest Ayge, I do take some Pride in the Faithfulness of her Renderings.[quotation mark][or]You describe to Christabell the strange drawings in Carol[apostrophe]s room.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-ChristabellScrapbook when benjack-R2 is happening:
+	say "[one of][quotation mark]Carol said she had left her scrapbook at her school -- I wonder if that[apostrophe]s true or if she was hiding them from me.[quotation mark][paragraph break][quotation mark]So distracted was she as a Gyrll, it is not unthinkable that she did simply leave it. You must watch for another Oppourtunity to present itself.[quotation mark][or]You mention that Carol[apostrophe]s scrapbook wasn[apostrophe]t in her room when you paid your last visit, so you had no opportunity to destroy it using the [quotation mark]kwisatz haderach[quotation mark] spell.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-clippingSubject when benjack-R2 is happening:
+	say "[one of][quotation mark]On her desk, I saw a clipping of the assassination of President Kennedy -- we have Presidents now, like President Dukakis -- they are in charge of the whole government. Let me back up, the American government is divided into the principal branches: executive, legislative, and judicial. The president…[quotation mark][paragraph break][quotation mark]I do know what a President be; Carol had explained it to me upon a Tymme in much the excruciating Detaile as upon whych I did feare you do embark.[quotation mark][paragraph break][quotation mark]Fine. So, she had this newspaper…[quotation mark][paragraph break][quotation mark]Yes, I do know what be a News Paper.[quotation mark][paragraph break][quotation mark]Right. So, she had this newspaper article about the assassination of President Kennedy -- is that one of her Runes?[quotation mark][paragraph break][quotation mark]Nay, that be the result of her calling upon the Deep Ones; the Rune that doth have Relation to it would of its own Accord enter into her Book.[quotation mark][or]You tell Christabell about the newspaper clipping about the JFK assassination that Carol had on her desk and your suspicion that Carol was behind it, likely with the help of the Deep Ones.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Christabell about benjack-planSubject when benjack-R2 is happening:
+	say "[one of][quotation mark]From what I was able to piece together, Carol[apostrophe]s father has been using Carol and her connection to the Deep Ones to influence key points of history. It sounds like their end-game is to bring back the Elder Gods.[quotation mark][paragraph break][quotation mark]That surpriseth mee not and might do explain the circular Nature of her Unfolding, if in altering History she does send her Spirit back upon itself.[quotation mark][or]You posit that Carol is intentionally affecting nodal points in history to alter the future and restore the reign of the Elder Gods.[no line break][stopping][paragraph break]".
+	
+Instead of informing benjack-Christabell about benjack-ElderGods when benjack-R2 is happening:
+	try informing benjack-Christabell about benjack-planSubject.
+	
+Instead of informing or quizzing benjack-Christabell about benjack-babySubject when benjack-R2 is happening:
+	say "[one of][quotation mark]Are you absolutely sure I[apostrophe]m not pregnant?[quotation mark] you ask nervously. [quotation mark]I did have some nausea, and I was tired. And earlier in the week, I had an entire pint of Cherry Garcia.[quotation mark][paragraph break][quotation mark]Aye, and of all these Signes does not any living Person not have similar Experience from Tymme to Tymme?[quotation mark][paragraph break][quotation mark]Yes, but. It[apostrophe]s hard to believe she was just screwing with me.[quotation mark][paragraph break][quotation mark]That be her Manner, indeed. Rest your Conscience soundly, for in mei Daye even wee Gyrls of tender Ayge did know summe faire Skill of Midwivery. In this Matter there is no lack of Surety.[quotation mark][or]Once again you ask Christabell[apostrophe]s reassurance that you are not pregnant, and once again she tells you that there is no supposed mark, that you are not even a little bit pregnant, and that Carol was deceiving you.[no line break][stopping][paragraph break]".
+
+Instead of informing benjack-Christabell about benjack-mark when benjack-R2 is happening:
+	try informing benjack-Christabell about benjack-babySubject .
+
 Chapter 2 - R2 Event
+
+Instead of benjack-ploughvering when benjack-R2 is happening and the player is benjack-ploughver-inhibited:
+	say "[benjack-mark-glued]";
+	try quizzing benjack-Christabell about benjack-Disruption.
+	
+Instead of going a direction (called the way) during benjack-R2:
+	if yourself is benjack-ploughver-inhibited:
+		say "[benjack-mark-glued]";
+		try quizzing benjack-Christabell about benjack-Disruption;
+	otherwise:
+		if the room the way from the location is nothing:
+			continue the action;
+		otherwise:
+			try quizzing benjack-Christabell about benjack-Disruption;
+			say "Christabell nods and retreates to her pile of railroad tracks.";
+			now benjack-Christabell is nowhere;
+			now yourself is not benjack-ploughver-inhibited;
+			continue the action.
+	
+After quizzing benjack-Christabell about benjack-Disruption when benjack-R2 is happening:
+	say "[one of]Christabell asks, [quotation mark]How old of Yeares was Carol when you did see her?[quotation mark][paragraph break][quotation mark]About fourteen, maybe fifteen, I[apostrophe]d guess.[quotation mark][paragraph break][quotation mark]I see.[quotation mark] Christabell says self-consciously. [quotation mark]Yes, at that Ayge her Weale outstrove her Wisedom. Already had she devised a Blockayde against my Powers despite my Mark upon her.[quotation mark][paragraph break][quotation mark]Then there[apostrophe]s nothing we can do rein her in?[quotation mark][paragraph break][quotation mark]I did not that say, quite,[quotation mark] replies Christabell. [quotation mark]If you open the Windowe where she doth dwell, the Blockayde will be breached, and I can work a Disruption spell.[quotation mark][paragraph break][quotation mark]And what would become of Carol?[quotation mark][paragraph break][quotation mark]Nothing. Not a thing. And that be a better Fate than hers now.[quotation mark][or]Christabell reiterates the plan to make sure you have it down pat, [quotation mark]Get you to Carol[apostrophe]s Bedchamber, and there cause her to be distracted, by such Diversions as you may, and so avoiding her constant Attentions, slyly do heave open the Windowe that I may werke my Magicks past her Wardes.[quotation mark][paragraph break][quotation mark]Right, got it,[quotation mark] you acknowledge.[no line break][stopping][paragraph break]";
+	now yourself is not benjack-ploughver-inhibited.
+	
+To say benjack-mark-glued:
+	say "You are held in place by Christabell[apostrophe]s mark.[paragraph break][quotation mark]Sorry I am, Naomi,[quotation mark] she says, [quotation mark]but e[apostrophe]er you depart, I must tell you how to disrupt Carol, after that, our Fate does reside in your two Hands.[quotation mark][paragraph break]".
+	
+
+
 
 Chapter 3 - R2 Tests
 
@@ -1217,17 +1327,17 @@ Check Benjack-ploughvering:
 		say "[one of]Not sure what that was. Maybe not enough fiber in your diet[stopping].";
 		stop the action;
 	otherwise:
-		if yourself is not ploughver-armed:
+		if yourself is not benjack-ploughver-armed:
 			say "You don't think enough time has passed to recharge your ploughver spell.";
 			stop the action;
 		otherwise:
-			if yourself is ploughver-inhibited:
+			if yourself is benjack-ploughver-inhibited:
 				say "You feel ready to cast the spell, but some magical force is preventing it[one of], or at least that is your best guess[or][stopping].";
 				stop the action.
 
 Carry out Benjack-ploughvering:
 	say "[benjack-ploughver-cutscenes]";
-	now yourself is not ploughver-armed;
+	now yourself is not benjack-ploughver-armed;
 	the benjack-ploughver spell arms in 15 turns from now;
 	increase the benjack-times_ploughvered of yourself by one;
 	if the location is DAN8:
@@ -1237,10 +1347,10 @@ Carry out Benjack-ploughvering:
 		
 At the time when the benjack-ploughver spell arms:
 	say "You sense that the ploughver spell has recharged.";
-	now yourself is ploughver-armed.
+	now yourself is benjack-ploughver-armed.
 		
 To say benjack-ploughver-cutscenes:
-	say "[one of]Around you, in no particular direction, you hear screams, strangled almost instantly, drowned in splashes and bubbles and ending in silence. At the same time, your vision fades to darkness and you feel yourself plunging, able to see only vast, hovering shapes above you, moving silently past. You become aware of sounds so low, that you more feel them in your bones than hear them; one such sounds passes below you, receding in endless distance. Then it is over[or][or][stopping]."
+	say "[one of]Around you, in no particular direction, you hear screams, strangled almost instantly, drowned in splashes and bubbles and ending in silence. At the same time, your vision fades to darkness and you feel yourself plunging, able to see only vast, hovering shapes above you, moving silently past. You become aware of sounds so low, that you more feel them in your bones than hear them; one such sounds passes below you, receding in endless distance. Then it is over[or]Mens voices, people shuffling around frantically, things moving, falling.[paragraph break][quotation mark]The brazing is blown, pressure is down to ten percent![quotation mark] The voice is just slightly louder than the blaring klaxon.[paragraph break][quotation mark]Dive planes up 30[quotation mark].[paragraph break][quotation mark]Moderators are full in, it[apostrophe]s no good, I[apostrophe]m scramming.[quotation mark][paragraph break][quotation mark]All hands. Prepare for emergency blow. Larsen, in five and then hit it.[quotation mark][paragraph break][quotation mark]Aye. Five. Four. Reactor quenched. Three. Two. We[apostrophe]re pitching. One. Blow![quotation mark][paragraph break][quotation mark]Tanks are good, but no blow. Sir, I think we[apostrophe]re iced up.[quotation mark][paragraph break][quotation mark]Crushing depth minus 200, minus 300.[quotation mark][paragraph break]And then silence[or][stopping]."
 
 Chapter 3 - kwisatzhaderaching
 
