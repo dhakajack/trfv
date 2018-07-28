@@ -247,6 +247,7 @@ To benjack-stage-on ( setnumber - a number):
 		-- otherwise:
 			say "Error: attemped illegal stage-on";
 	repeat with item running through L:
+		say "moving in [item] to nursery.";[TODO DEBUGGING remove for production]
 		move item to M2F3.
 			
 To benjack-stage-off ( setnumber - a number):
@@ -261,7 +262,8 @@ To benjack-stage-off ( setnumber - a number):
 		-- otherwise:
 			say "Error: attemped illegal stage-off";
 	repeat with item running through L:
-		now the item is nowhere.
+		say "ejecting [item] to nowhere.";[TODO DEBUGGING remove for production]
+		now item is nowhere.
 
 Book 2 - Scenes
 
@@ -584,9 +586,7 @@ Chapter 1 - N1 Begins
 When benjack-N1 begins:
 	benjack-stage-on 1.
 	
-Chapter 2 - Nursery Furnishing Updates
-
-
+Chapter 2 - N1 Nursery Furnishing Updates
 
 [benjack-shadows are ghost objects (a kind of scenery) that you mostly can't interact with. Note that everything is a shadow except for the {book, window, chair, door}.]
 
@@ -599,7 +599,7 @@ The N2-desc of the benjack-  is "".
 The N3-desc of the benjack-  is "".
 ]
 
-The benjack-comforter is a benjack-shadow in M2F3.  The printed name of benjack-comforter is "comforter".
+The benjack-comforter is a benjack-shadow.  The printed name of benjack-comforter is "comforter".
 Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
 
@@ -608,120 +608,120 @@ Understand "bed" as the benjack-bed when the player is in M2F3.
 The N1-desc of the benjack-bed is "A child’s bed of just the right size."
 
 
-The benjack-dolls are benjack-shadows in M2F3. The benjack-dolls are scenery.  The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
+The benjack-dolls are benjack-shadows. The benjack-dolls are scenery.  The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
 Understand "doll/ dolls / animal/ animals/ stuffed" as the benjack-dolls when the player is in M2F3.
 The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
-The benjack-elephant is a benjack-shadow in M2F3. The printed name of the benjack-elephant is "toy elephant".
+The benjack-elephant is a benjack-shadow. The printed name of the benjack-elephant is "toy elephant".
 Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
-The benjack-monkey is a benjack-shadow in M2F3. The printed name of the benjack-monkey is "toy monkey".
+The benjack-monkey is a benjack-shadow. The printed name of the benjack-monkey is "toy monkey".
 Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" as the benjack-monkey when the player is in M2F3.
 The N1-desc of the benjack-monkey is "The limp and gangly sock puppet wears a baseball cap and an Army-Navy sweater.[paragraph break][first time][quotation mark][bold type]Young Master Sweetpaws[roman type] recently joined us, right Sweetpaws?[quotation mark][paragraph break]The monkey sits there, inert, but Carol continues, [quotation mark]Sometimes he gets up to naughtiness, but he[apostrophe]s always back in the morning, aren[apostrophe]t you, [bold type]Sweetpaws[roman type]?[quotation mark][paragraph break]The monkey stares blankly ahead.[only]".
 
-The benjack-cap is a benjack-shadow in M2F3.  The printed name of the benjack-cap is "cap".
+The benjack-cap is a benjack-shadow.  The printed name of the benjack-cap is "cap".
 Understand "cap" or "hat" as the benjack-cap when the player is in M2F3.
 The N1-desc of benjack-cap is "A Brooklyn Dodgers cap, blue with a white [quotation mark]B[quotation mark]."
 
-The benjack-sweater is a benjack-shadow in M2F3.  The printed name of the benjack-sweater is "sweater".
+The benjack-sweater is a benjack-shadow.  The printed name of the benjack-sweater is "sweater".
 Understand "sweater" as the benjack-sweater when the player is in M2F3.
 The N1-desc of benjack-sweater is "A grey woolen sweater with an [quotation mark]Army/Navy[quotation mark] logo."
 
-The benjack-clown is a benjack-shadow in M2F3.  The printed name of the benjack-clown is "toy clown".
+The benjack-clown is a benjack-shadow.  The printed name of the benjack-clown is "toy clown".
 Understand "clown" or "malice" or "malice the clown" as the benjack-clown when the player is in M2F3.
 The N1-desc of benjack-clown is "[one of]Despite his painted smile, the clown[apostrophe]s plastic face conveys a sense of surrender as it stares into an empty tea cup. [paragraph break]It is the largest of the stuffed playmates, almost as tall as Carol. [paragraph break][quotation mark]That[apostrophe]s [bold type]Malice the Clown[roman type],[quotation mark] Carol chirps.[paragraph break][quotation mark][bold type]Malice?[roman type][quotation mark] you prompt. [quotation mark]The [bold type]Clown[roman type]?[quotation mark][paragraph break][quotation mark]Yes, originally I called him Alice, but [bold type]grand-uncle[roman type] said he[apostrophe]s a boy [bold type]clown[roman type] and thought [apostrophe][bold type]Malice[roman type][apostrophe] sounded nice.[quotation mark][or]Like all clown puppets, he exudes visceral evil.[stopping]"
 
-The benjack-lamb is a benjack-shadow in M2F3.  The printed name of the benjack-lamb is "toy lamb".
+The benjack-lamb is a benjack-shadow.  The printed name of the benjack-lamb is "toy lamb".
 Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as the benjack-lamb when the player is in M2F3.
 The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Winkelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Winkelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
 
-The benjack-kitchen is a benjack-shadow in M2F3.  The printed name of the benjack-kitchen is "play kitchen".
+The benjack-kitchen is a benjack-shadow.  The printed name of the benjack-kitchen is "play kitchen".
 Understand "kitchen" as benjack-kitchen when the player is in M2F3.
 The N1-desc of benjack-kitchen is "The play kitchen is all one piece and attached to a plywood backboard. The centerpiece is a metal stove with four pretend gas burners above an oven door. Some pots and pans poke out of the cabinets above the stove. To one side of the stove is a full size ice box, and an apron hangs on a hook to the other side of the stove.".
 
-The benjack-apron is a benjack-shadow in M2F3.  The printed name of the benjack-apron is "apron".
+The benjack-apron is a benjack-shadow.  The printed name of the benjack-apron is "apron".
 Understand "apron" as benjack-apron when the player is in M2F3.
 The N1-desc of benjack-apron is "A red and white checkered apron just Carol’s size.".
 
-The benjack-pots is a benjack-shadow in M2F3.  The printed name of the benjack-pots is "pots".
+The benjack-pots is a benjack-shadow.  The printed name of the benjack-pots is "pots".
 Understand "pots" or "pans" as benjack-pots when the player is in M2F3.
 The N1-desc of benjack-pots is "Sauce pans of different sizes, a large frying pan and, perhaps not too surprising this close to Maine, a toy lobster steamer.".
 
-The benjack-pantry is a benjack-shadow in M2F3.  The printed name of the benjack-pantry is "pantry".
+The benjack-pantry is a benjack-shadow.  The printed name of the benjack-pantry is "pantry".
 Understand "pantry" or "cabinet" as benjack-pantry when the player is in M2F3.
 The N1-desc of benjack-pantry is "Assorted cooking and baking accessories like colanders, measuring cups, a cheese grater, cookie cutters, and a rolling pin.".
 
-The benjack-desk is a benjack-shadow in M2F3.  The printed name of the benjack-desk is "desk".
+The benjack-desk is a benjack-shadow.  The printed name of the benjack-desk is "desk".
 Understand "desk" as benjack-desk when the player is in M2F3.
 The N1-desc of benjack-desk is "A child-size replica colonial roll top desk with several drawers. The top portion of the desk is open and the writing surface folded down. A spiral-bound book lies on it next to a small lamp with a yellow shade.".
 
-The benjack-drawer is a benjack-shadow in M2F3.  The printed name of the benjack-drawer is "drawer".
+The benjack-drawer is a benjack-shadow.  The printed name of the benjack-drawer is "drawer".
 Understand "drawer" or "drawers" as benjack-drawer when the player is in M2F3.
 The N1-desc of benjack-drawer is "Below the desktop, the desk is flanked on each side by three closed drawers.".
 
-The benjack-desktop is a benjack-shadow in M2F3.  The printed name of the benjack-desktop is "desktop".
+The benjack-desktop is a benjack-shadow.  The printed name of the benjack-desktop is "desktop".
 Understand "desktop" or "top" or "surface" as benjack-desktop when the player is in M2F3.
 The N1-desc of benjack-desktop is "Polished walnut[first time] Probably. You’re not really sure. It is sort of dark, but not too. Let[apostrophe]s face it, most of your furniture is IKEA, so you are a little out of your depth here[only]".
 
-The benjack-lamp is a benjack-shadow in M2F3.  The printed name of the benjack-lamp is "lamp".
+The benjack-lamp is a benjack-shadow.  The printed name of the benjack-lamp is "lamp".
 Understand "lamp" or "cord" or "shade" or "light" as benjack-lamp when the player is in M2F3.
 The N1-desc of benjack-lamp is "An ordinary desk lamp stands upright on the desktop, its power cord wrapping around the back of the desk. It provides an unusually soft, pleasant yellow light.".
 Instead of taking the benjack-lamp, say "It is as insubstantial as everything else in the room; luckily, there are no grues in this corner of Cragne Mansion."
 
-The benjack-recordplayer is a benjack-shadow in M2F3.  The printed name of the benjack-recordplayer is "record player".
+The benjack-recordplayer is a benjack-shadow.  The printed name of the benjack-recordplayer is "record player".
 Understand "record player" or "phonograph" or "turntable" as benjack-recordplayer when the player is in M2F3.
 The N1-desc of benjack-recordplayer is "A wooden turntable with speakers built into the cabinet rests on a folding wooden table. There is a record on the turntable, but the turntable is off.".
 
-The benjack-record is a benjack-shadow in M2F3.  The printed name of the benjack-record is "record".
+The benjack-record is a benjack-shadow.  The printed name of the benjack-record is "record".
 Understand "record" as benjack-record when the player is in M2F3.
 The N1-desc of benjack-record is "It is a full size record, black vinyl of course, with a cardboard center, labelled [quotation mark]Perry Como Sings Merry Christmas Music[quotation mark]. According to the label, it is a 78 rpm album produced by RCA Victor in 1946.".
 
-The benjack-table is a benjack-shadow in M2F3.  The printed name of the benjack-table is "table".
+The benjack-table is a benjack-shadow.  The printed name of the benjack-table is "table".
 Understand "table" as benjack-table when the player is in M2F3.
 The N1-desc of benjack-table is "A small folding table.".
 [TODO:   sitting on isn't defined?? only 'getting off'?
 Instead of sitting on the benjack-table, say "Carol informs you that Misses Winkelbottom says that tables are not for sitting on.[paragraph break]So you don[apostrophe]t. Because of the (alleged) opinion of a blind stuffed lamb.".]
 
-The benjack-frame is a benjack-shadow in M2F3.  The printed name of the benjack-frame is "photo frame".
+The benjack-frame is a benjack-shadow.  The printed name of the benjack-frame is "photo frame".
 Understand "frame" or "photo frame" as benjack-frame when the player is in M2F3.
 The N1-desc of benjack-frame is "The frame is not well matched to the photograph, it would go much better with an oil painting from an earlier century, and indeed it is not unlikely that some portrait of a remote ancestor was gutted when the need for a frame arose. The four-inch wide frame is intricately carved with fanciful beasts and has seen many applications of gold-leafing.".
 
-The benjack-beasts is a benjack-shadow in M2F3.  The printed name of the benjack-beasts is "beasts".
+The benjack-beasts is a benjack-shadow.  The printed name of the benjack-beasts is "beasts".
 Understand "beasts" as benjack-beasts when the player is in M2F3.
 The N1-desc of benjack-beasts is "The artist that crafted the heavy golden frame, while expressive and skilled, obviously had little grounding in anatomy. Ten-legged beetles with long, scaly tails chase plump babies with bat wings through forests of spiny-tentacled trees. Ornate, but utter rubbish. ".
 
-The benjack-Eisenhower is a benjack-shadow in M2F3.  The printed name of the benjack-Eisenhower is "portrait".
+The benjack-Eisenhower is a benjack-shadow.  The printed name of the benjack-Eisenhower is "portrait".
 Understand "portrait/picture/man/eisenhower/president/ike" as benjack-Eisenhower when the player is in M2F3.
 The N1-desc of benjack-Eisenhower is "This is clearly a formal portrait of a balding man probably in his sixties. He has an air of authority, but also an avuncular warmth. There is a nameplate at the bottom of the portrait.".
 
-The benjack-nameplate is a benjack-shadow in M2F3.  The printed name of the benjack-nameplate is "nameplate".
+The benjack-nameplate is a benjack-shadow.  The printed name of the benjack-nameplate is "nameplate".
 Understand "namplate" as benjack-nameplate when the player is in M2F3.
 The N1-desc of benjack-nameplate is "[quotation mark]Dwight D. Eisenhower, 34th President of the United States of America.[quotation mark]".
 
-The benjack-toychair is a benjack-shadow in M2F3.  The printed name of the benjack-toychair is "toy chairs".
+The benjack-toychair is a benjack-shadow.  The printed name of the benjack-toychair is "toy chairs".
 Understand "toy chair" or "toy chairs" as benjack-toychair when the player is in M2F3.
 The N1-desc of benjack-toychair is "The tiny toy chairs remind you of those found in grammar schools: a shaped plywood seat on a gray tubular steel frame.".
 
-The benjack-cup is a benjack-shadow in M2F3.  The printed name of the benjack-cup is "cup".
+The benjack-cup is a benjack-shadow.  The printed name of the benjack-cup is "cup".
 Understand "cup" as benjack-cup when the player is in M2F3.
 The N1-desc of benjack-cup is "There is a tea cup for each of you, that is, Carol, the four toys sitting at the table, and you. Yours is larger, but the design is the same: alternating blue and gold striped porcelain with a band of little skulls around the rim. [if the player carries the benjack-cup]You find yourself holding it daintily, pinky out.[end if]".
 
 Instead of throwing the benjack-cup at something:
 	say "You throw the tea cup with all your might, but against all odds it ricochets around the room and lands right in front of you on the table[first time], right as rain.[paragraph break]Carol[apostrophe]s eyes bulge, seeing an adult behave that way and quietly she says, [quotation mark]My tea cups, my rules.[quotation mark][only]."
 
-The benjack-clothing is a benjack-shadow in M2F3.  The printed name of the benjack-clothing is "clothing".
+The benjack-clothing is a benjack-shadow.  The printed name of the benjack-clothing is "clothing".
 Understand "clothing" or "dress" or "shoes" or "buckle" or "skirt" or "sock" as benjack-clothing when the player is in M2F3.
 The N1-desc of benjack-clothing is "Every bit of her outfit is picture perfect: every skirt pleat ironed, her socks cloroxed to an actinic glow, and her patent leather shoes polished like black marble.".
 
-The benjack-bow is a benjack-shadow in M2F3.  The printed name of the benjack-box is "bow".
+The benjack-bow is a benjack-shadow.  The printed name of the benjack-box is "bow".
 Understand "bow" as benjack-bow when the player is in M2F3.
 The N1-desc of benjack-bow is "It must be heavily starched to remain that crisp.".
 
 
 [REAL OBJECTS, not shadows:]
 
-The benjack-window is a container in M2F3.  The benjack-window is fixed in place, openable and closed.
+The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
 Understand "window" as benjack-window when the player is in M2F3.
 The description of benjack-window is "The large bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.".
@@ -733,14 +733,14 @@ Instead of looking through the benjack-window, say "Through thick glass warped b
 
 TODO: trees and cliffs should be visible, change with season]
 
-The benjack-chair is a supporter in M2F3.  The printed name of the benjack-chair is "antique chair".
+The benjack-chair is a supporter.  The printed name of the benjack-chair is "antique chair".
 Understand "chair" as benjack-chair when the player is in M2F3.
 The description of benjack-chair is "The chair is the only adult-size piece of furniture in the room.[first time] It looks a little spindly, but antique chairs often do, and you reason that they knew what they were doing back in the day, so it will probably hold.[only]".
 [TODO: sitting isn't a defined action.
 After sitting on the benjack-chair, say "The antique chair creaks a little but supports you."]
 [TODO: implement touching messages for chair]
 
-The benjack-scrapbook-5 is a benjack-runebook in M2F3. The printed name of the benjack-scrapbook-5 is "scrapbook".
+The benjack-scrapbook-5 is a benjack-runebook. The printed name of the benjack-scrapbook-5 is "scrapbook".
 Understand "scrapbook" or "book" as the benjack-scrapbook-5 when the player is in M2F3.
 The description of the benjack-scrapbook-5 is "[benjack-scrapbook-5-desc]".
 
@@ -886,7 +886,7 @@ After quizzing benjack-Carol about benjack-communists:
 After quizzing benjack-Carol about mtw-teapot:
 	say "[one of][quotation mark]It[apostrophe]s grand-uncle[apostrophe]s teapot. He got it on one of his ocean voyages and he really likes it, so I[apostrophe]m not suppose to touch it, but it[apostrophe]s just perfect for the tea party because it is so fancy. Cristabell tried to show me the party without the tea once but that didn[apostrophe]t make any sense, so I asked if her we could be like mom and have a party and she said that might be more easier, so that[apostrophe]s what we did, and when I want to have a tea party, I always find grand-uncle[apostrophe]s tea pot.[quotation mark][or]Apparently, it is Carol[apostrophe]s grand-uncle[apostrophe]s teapot, and she[apostrophe]s not really supposed to be playing with it.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Carol about benjack-ChristabellGrandUncle:
+After quizzing benjack-Carol about benjack-GrandUncle:
 	say "[one of][quotation mark]He[apostrophe]s really cranky and is always telling me not to touch his stuff and to get off stuff and not too sing too loud.[quotation mark][paragraph break][quotation mark]Yes,[quotation mark] you say, trying to reign in the conversation, [quotation mark]but does he have a name?[quotation mark][paragraph break][quotation mark]I[apostrophe]m sure he does, but I just call him great-uncle. He says that only the Deep Ones should not be named.[quotation mark][or]Carol sure doesn[apostrophe]t know much about this grand-uncle of hers, except that he[apostrophe]s a grumpy old guy.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-CarolteaParty:
@@ -1102,9 +1102,7 @@ benjack-ChristabellToys is a subject.  Understand "toy/toys/stuffed/animals/monk
 
 benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding when the location is in the benjack-realm.
 
-benjack-ChristabellScrapbook is a subject.  Understand "scrapbook" as benjack-ChristabellScrapbook when the location is in the benjack-realm.
-
-benjack-ChristabellGrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-ChristabellGrandUncle when the location is in the benjack-realm.
+benjack-GrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-GrandUncle when the location is in the benjack-realm.
 
 benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" as benjack-Mansion when the location is in the benjack-realm.
 
@@ -1251,10 +1249,10 @@ After informing benjack-Christabell about benjack-ChristabellToys when benjack-R
 After quizzing benjack-Christabell about benjack-Unfolding:
 	say "[one of][quotation mark]What little I know from the Lore of the Narramonk, I will to you relate: that one bound in Circular Prison does move always in one Direction in Tymme, but not along a single Path. Most Paths start and end they did in Lyfe, but there are side Paths described by other Runes that can come to being; summe few may put end to the Fusion, freeing the Spirit.[quotation mark][or]According to Christabell, Carol[apostrophe]s future does not always follow the same course each time she cycles from birth to death as a spirit.[no line break][stopping][paragraph break]".
 	
-After quizzing or informing benjack-Christabell about benjack-ChristabellScrapbook:
+After quizzing or informing benjack-Christabell about benjack-scrapbookSubject:
 	say "[quotation mark]These then are Carol[apostrophe]s Runes that you did generate during the Bestowance, that is the [apostrophe]Tea Party[apostrophe]; they chart her way through this Unfolding.[quotation mark][paragraph break]".
 
-After quizzing or informing benjack-Christabell about benjack-ChristabellGrandUncle:
+After quizzing or informing benjack-Christabell about benjack-GrandUncle:
 	say "[one of][quotation mark]Verily, it is a curiosity -- I never did come to know Carols[apostrophe] grand-uncle[apostrophe]s name, although I do suspect it were Victor Crâne, thow greatly ayged hee would have been.[quotation mark][or]Christabell suspects Carol's grand-uncle is none other than Victor Cragne, who made his fortune with the family wood mill.[no line break][stopping][paragraph break]".
 	
 After quizzing or informing benjack-Christabell about benjack-Mansion:
@@ -1383,7 +1381,7 @@ The N2-desc of benjack-deskChair is "".
 Does the player mean doing something with the benjack-deskChair: it is likely.
 
 [note that these items must be declared forward of this list]
-The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-chair, benjack-scrapbook-5}.
+The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-chair}.
 
 Chapter 3 - N2 Conversation
 
@@ -1392,7 +1390,13 @@ Section 1 - N2 Subjects
 
 benjack-missingIke is a subject.  Understand "portrait/president/eisenhower/picture/photo/photograph/official/portrait/frame" as benjack-missingIke when the location is M2F3.
 
-benjack-LBJ is a subject.  Understand "lyndon/bloated/johnson" or "president johnson" as benjack-LBJ when the location is M2F3.
+benjack-LBJ is a subject.  Understand "lyndon/baynes/bloated/johnson/president" or "president johnson" as benjack-subjectNixon when the location is M2F3. The printed name of benjack-LBJ is "President Johnson".
+
+benjack-subjectNixon is a subject.  Understand "president/richard/millhouse/nixon/tricky/dick" or "president nixon" as benjack-subjectNixon when the location is M2F3. The  printed name of benjack-subjectNixon is "President Nixon".
+
+benjack-subjectKennedy is a subject.  Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as benjack-subjectKennedy when the location is M2F3. The printed name of benjack-subjectKennedy is "President Kennedy".
+
+benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm. 
 
 Section 2 - N2 Quips
 
@@ -1416,6 +1420,51 @@ After quizzing benjack-Carol about benjack-modernAge when benjack-N2 is happenin
 	
 After informing benjack-Carol about benjack-ModernAge when benjack-N2 is happening:
 	say "[one of][quotation mark]I would like to tell you we[apostrophe]ll have flying cars, but sadly no.[quotation mark][paragraph break][quotation mark]I didn[apostrophe]t really think we would,[quotation mark] Carol admits.  [quotation mark]I can[apostrophe]t see too far, but I[apostrophe]m getting better at it. Right now, I can see another maybe five years before things get fuzzy. That[apostrophe]s why I[apostrophe]m holding out to put up the Nixon portrait. But there[apostrophe]s a lot coming in that time, and a lot that needs to be fixed if we[apostrophe]re going to save America.[quotation mark][paragraph break][quotation mark]America will do fine,[quotation mark] you assert.[paragraph break][quotation mark]Oh, I know you[apostrophe]re from the future, what, the mid-90s or so? Don[apostrophe]t look surprised, I know a lot of things. But first of all, you don[apostrophe]t know where[apostrophe]s father[apostrophe]s plan is going. What we[apostrophe]ve set in motion doesn[apostrophe]t even begin pick up steam until a good twenty years after your time. Like the Elder Gods, we can bide our time.[quotation mark][or]You reassure Carol that the world has not been destroyed, at least not by the 1990s.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-covenant when benjack-N2 is happening:
+	say "[quotation mark]That was what Christabell called it -- it[apostrophe]s essentially a roadmap to bring about the return of the Elder Gods.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Mattanit when benjack-N2 is happening:
+	say "[one of][quotation mark]That[apostrophe]s one of his many names.[quotation mark][or][quotation mark]Let[apostrophe]s not keep saying that, okay?[quotation mark][or][quotation mark]It[apostrophe]s not like saying it three times will make him appear. There is nothing more I could say about him that would make any sense to you.[quotation mark][or][quotation mark]There is nothing more I could say about him that would make any sense to you.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-America when benjack-N2 is happening:
+	say "[one of][quotation mark]Father says that America[apostrophe]s place in the world is on top, and that[apostrophe]s part of Mattanit[apostrophe]s Third Covenant, that we assume our rightful place as the Seat of the Elder Gods and bring all other nations to worship them.[quotation mark][paragraph break][quotation mark]He does?[quotation mark] you ask, trying to humor her.[paragraph break][quotation mark]But there is a lot wrong with America right now because people don[apostrophe]t follow tradition: drugs, music, people who don[apostrophe]t understand how some people are meant to be above other people, and that some people are meant to be their servants. That sort of thing. Don[apostrophe]t worry, though, father[apostrophe]s plan will fix it all.[quotation mark][or][quotation mark]Father says that America[apostrophe]s place in the world is on top, and that[apostrophe]s part of Mattanit[apostrophe]s Third Covenant, that we assume our rightful place as the Seat of the Elder Gods and bring all other nations to worship them.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-ElderGods when benjack-N2 is happening:
+	say "[one of][quotation mark]Naomi, please don[apostrophe]t take this the wrong way, but your mind really isn[apostrophe]t strong enough for me to talk in any detail about them. Just accept that they exist and that soon enough the Deep Ones will help us restore them.[quotation mark][or][quotation mark]I can say no more without turning your brains to jelly.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-CarolFather when benjack-N2 is happening:
+	say "[one of][quotation mark]Father has a brilliant plan and everyday he works to make it happen.[quotation mark][paragraph break][quotation mark]Does that pay well?[quotation mark] you ask.[paragraph break][quotation mark]Well, it[apostrophe]s not his day job, of course.[quotation mark] Apparently, Carol does not recognize sarcasm. [quotation mark]He works in Connecticut in the Electric Boats Division of General Dynamics. That[apostrophe]s a company that makes submarines. He used to be an engineer, but now he[apostrophe]s a supervisor, so he tells other people what to do.[quotation mark][or][quotation mark]As I said, he has a plan to bring back the Elder Gods. When he[apostrophe]s not doing that, he works at a company that manufactures submarines.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-CarolMother when benjack-N2 is happening:
+	say "[one of][quotation mark]She is a proper wife, and serves father as he desires; she is entirely committed to father[apostrophe]s plan. For her, that means mostly hosting cocktail parties and luncheons, and sometimes being on wives[apostrophe] committees and the like. Father says that he has made a lot of important deals because she is such a good entertainer and knows what men like.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds, [quotation mark]she makes a mean cucumber sandwich.[quotation mark][or][quotation mark]She is a proper wife, and serves father as he desires; she is entirely committed to father[apostrophe]s plan.[quotation mark][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-subjectNixon when benjack-N2 is happening:
+	say "[quotation mark]Nixon is a linchpin in father[apostrophe]s plan. He should have won against Kennedy in 1960, but I wasn[apostrophe]t strong enough then to make it happen.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-subjectKennedy when benjack-N2 is happening:
+	say "[one of][quotation mark]Father says that Kennedy would have ruined America and destroyed his plan, and that even though I did my best[quotation mark] -- here she glances at the press clipping on the desk -- [quotation mark]it will take years to undo the damage that he did in his first three years in office: filling the heads of drug-addled youth with crazy ideas, letting the Blacks think they might be be worth something, and weakening the institutions and traditions that kept America in the hands of her rightful masters.[quotation mark][or][quotation mark]Father says that Kennedy would have ruined America and destroyed his plan, and that even though I did my best, it will take years to undo the damage that he did in his first three years in office.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-submarine when benjack-N2 is happening:
+	say "[one of][quotation mark]My father chose his profession specifically to advance our rapport with the Old Ones. For instance, Kennedy is a strong node in history; to put father[apostrophe]s plan back on track, we had to give them one of the subs, the Thresher, a few months back.[quotation mark][paragraph break][quotation mark]That[apostrophe]s horrible![quotation mark][paragraph break][quotation mark]No, just another Rune. I still have to stick it in the scrapbook, but I[apostrophe]m afraid I left it at school in Farmington.[quotation mark][or]My father chose his profession specifically to advance our rapport with the Elder Gods.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-granduncle when benjack-N2 is happening:
+	say "[one of][quotation mark]Grand-uncle is extremely old and just as irritable, and the less I see him the better. When I[apostrophe]m up here on breaks from school or over the summer, he thinks it[apostrophe]s funny to lock me in my room. That used to really steam me, until one day Christabell taught me a way to magically move back and forth between here and where she is. The Rune cost is not so great, and you should have seen how surprised grand-uncle was to see me walking around outside when he had just locked me in. Priceless.[quotation mark][or][quotation mark]Grand-uncle is extremely old and just as irritable.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-Runes when benjack-N2 is happening:
+	say "[quotation mark]Runes are the price of magic.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-scrapbookSubject when benjack-N2 is happening:
+	say "[quotation mark]I[apostrophe]d show it to you, but I am really a blockhead sometimes. I have some great new stories in it, but I[apostrophe]m afraid I left it at school at the end of term when I came up here. It[apostrophe]s in my dorm room. So annoying![quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-newsprint:
+	say "[quotation mark]Some parts of history have to change for father[apostrophe]s plan to take root. A submarine was a small price to pay.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-stackedBooks:
+	say "[quotation mark]They[apostrophe]re my school books. Boring stuff, mostly.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-looseleaf:
+	say "[one of][quotation mark]A few thoughts I had about ridding America of its unnecessary people.[quotation mark][paragraph break][quotation mark]What about the rest of the world?[quotation mark] you ask.[paragraph break][quotation mark]Oh yes, and all of them.[quotation mark][or][quotation mark]A few thoughts I had about ridding America of its unnecessary people.[quotation mark][stopping][paragraph break]".
 
 Chapter 4 - N2 Event
 
@@ -1494,7 +1543,7 @@ After informing benjack-Christabell about benjack-DeepOnes when benjack-R2 is ha
 After informing benjack-Christabell about benjack-drawingsSubject when benjack-R2 is happening:
 	say "[one of][quotation mark]I saw a number of really creepy drawings in Carol[apostrophe]s room -- she[apostrophe]s profoundly weird.[quotation mark][paragraph break][quotation mark]To the Weirdness of Minde, aye. But being her Instructress in the fyne Artes from her earliest Ayge, I do take some Pride in the Faithfulness of her Renderings.[quotation mark][or]You describe to Christabell the strange drawings in Carol[apostrophe]s room.[no line break][stopping][paragraph break]".
 	
-After informing benjack-Christabell about benjack-ChristabellScrapbook when benjack-R2 is happening:
+After informing benjack-Christabell about benjack-scrapbookSubject when benjack-R2 is happening:
 	say "[one of][quotation mark]Carol said she had left her scrapbook at her school -- I wonder if that[apostrophe]s true or if she was hiding them from me.[quotation mark][paragraph break][quotation mark]So distracted was she as a Gyrll, it is not unthinkable that she did simply leave it. You must watch for another Oppourtunity to present itself.[quotation mark][or]You mention that Carol[apostrophe]s scrapbook wasn[apostrophe]t in her room when you paid your last visit, so you had no opportunity to destroy it using the [quotation mark]kwisatz haderach[quotation mark] spell.[no line break][stopping][paragraph break]".
 	
 After informing benjack-Christabell about benjack-clippingSubject when benjack-R2 is happening:
