@@ -1062,6 +1062,10 @@ Chapter 3 - N2 Tests
 
 Part 6 - Scene R2 Plotting Carol's Disruption
 
+When benjack-R2 begins:
+	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
+	move benjack-Christabell to DAN8.
+
 Chapter 1 - R2 Conversation
 
 Section 1 - R2 Subjects
@@ -1292,6 +1296,15 @@ Carry out liptoning:
 			-- 3:
 				let C be Benjack-clipping-sable;
 		now C is in benjack-scrapbook-5.
+		
+
+[to simulate marking the baby]
+Branding is an action applying to nothing. Understand "brand" as branding.
+
+Carry out branding:
+	say "Now the baby is branded. Yee haw!";
+	now yourself is benjack-baby_marked.
+
 
 Part 5 - Font Testing
 
