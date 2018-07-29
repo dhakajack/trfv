@@ -38,7 +38,7 @@ Instead of examining a benjack-shadow (called the shadow):
 	otherwise if benjack-N2 is happening:
 		say the N2-desc of the shadow;
 	otherwise if benjack-N3 is happening:
-		say the N2-desc of the shadow;
+		say the N3-desc of the shadow;
 	otherwise:
 		say "Error: no description available.";
 	say "[paragraph break]".
@@ -59,6 +59,8 @@ The printed name of a Benjack-clipping is "the clipping entitled [quotation mark
 A benjack-runebook is a kind of opaque openable container. 
 A benjack-runebook can be either open or closed. A benjack-runebook is usually closed.
 The examine containers rule does nothing when examining a benjack-runebook.
+
+[TODO inhibit taking runebooks]
 
 [Paralleling the project's use of read, but scoped down for this special case]
 Understand "read [a benjack-runebook]" as reading when the location is M2F3.
@@ -269,6 +271,8 @@ To benjack-stage-off ( setnumber - a number):
 
 Book 2 - Scenes
 
+Part 1 - Scene Start and Stop Criteria
+
 [R0 -> N1 -> R1 -> N2 -> R2 -> N3]
 
 [Only R0 is a recurring scene, so generally we do not need to specify "for the first time". Once a scene ends, it won't trigger again even if its begin conditions are true.
@@ -300,6 +304,14 @@ benjack-R2 ends when the player is not in DAN8.
 benjack-N3 is a scene. ["Boss Battle"]
 benjack-N3 begins when benjack-R2 has happened and the player is in M2F3.
 benjack-N3 ends when benjack-Carol is not in M2F3.
+
+benjack-Denouement is a scene. [Jump out window or not]
+benjack-Denouement begins when benjack-window is open.
+benjack-Denouement ends when benjack-naomiRunes is in M2F3 or benjack-naomiRunes is in DAN8.
+
+
+
+
 
 [might need some auxiliary scenes -- we'll figure that out as we code.]
 
@@ -618,7 +630,8 @@ Understand "doll/ dolls / animal/ animals/ stuffed / toys" as the benjack-dolls 
 The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow. The printed name of the benjack-elephant is "toy elephant".
-Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
+Understand "elephant" or "mister" or "snortles" as "[benjack-snortlesToken]".
+Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is in M2F3.
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
 The benjack-monkey is a benjack-shadow. The printed name of the benjack-monkey is "toy monkey".
@@ -1015,7 +1028,7 @@ After quizzing benjack-Carol about benjack-scrap-5:
 
 [quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}[quotation mark]Mirror, what mirror? What are you talking about, Naomi?[quotation mark] asks Carol.{endif}]
 
-Chapter 4 - N1 Event
+Chapter 4 - N1 Events
 
 [kill the (empty) in inventory listings durng this scene]
 Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
@@ -1138,7 +1151,7 @@ benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-Ploughve
 
 benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm.
 
-benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring" as benjack-babySubject when the location is in the benjack-realm.
+benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring/pregnant/preggers" as benjack-babySubject when the location is in the benjack-realm.
 
 Section 2 - R1 Quips
 
@@ -1295,7 +1308,7 @@ After quizzing benjack-Christabell about benjack-PloughverSpell:
 After quizzing benjack-Christabell about benjack-KHSpell :
 	say "Christabell reminds you that this is the spell that you can use to destroy Carol[apostrophe]s book of runes."
 	
-Chapter 3 - R1 Event
+Chapter 3 - R1 Events
 
 Instead of going a direction (called the way) during benjack-R1:
 	if benjack-Christabell is run-down:
@@ -1424,9 +1437,13 @@ benjack-missingIke is a subject.  Understand "portrait/president/eisenhower/pict
 
 benjack-LBJ is a subject.  Understand "lyndon/baynes/bloated/johnson/president" or "president johnson" as benjack-subjectNixon when the location is M2F3. The printed name of benjack-LBJ is "President Johnson".
 
-benjack-subjectNixon is a subject.  Understand "president/richard/millhouse/nixon/tricky/dick" or "president nixon" as benjack-subjectNixon when the location is M2F3. The  printed name of benjack-subjectNixon is "President Nixon".
+benjack-subjectNixon is a subject.  Understand "[benjack-nixonToken]" as benjack-subjectNixon when the location is M2F3 and benjack-N2 is happening. 
 
-benjack-subjectKennedy is a subject.  Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as benjack-subjectKennedy when the location is M2F3. The printed name of benjack-subjectKennedy is "President Kennedy".
+Understand "president/richard/millhouse/nixon/tricky/dick" or "president nixon" as "[benjack-nixonToken]".
+
+benjack-subjectKennedy is a subject.  Understand "[benjack-kennedyToken]" as benjack-subjectKennedy when the location is M2F3 and benjack-N2 is happening.
+
+Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as "[benjack-kennedyToken]".
 
 benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm.
 
@@ -1437,7 +1454,7 @@ benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when
 benjack-thresher is a subject.  Understand "thresher" as benjack-thresher when the location is in the benjack-realm.
 
 benjack-WinkelbottomSubject is a subject. Understand "winkelbottom/lamb/misses" as 
-benjack-WinkelbottomSubject when the location is M2F3 and benjack-N2 is happening.
+benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happened.
 
 Section 2 - N2 Quips
 
@@ -1536,7 +1553,7 @@ After informing benjack-Carol about benjack-ChristabellSubject when benjack-N2 i
 After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N2 is happening:
 	say "Carol mentions that Misses Winkelbottom had an accident, but everyone else is in good spirits."
 
-Chapter 4 - N2 Event
+Chapter 4 - N2 Events
 
 Chapter 5 - N2 Tests
 
@@ -1631,7 +1648,7 @@ Instead of informing or quizzing benjack-Christabell about benjack-babySubject w
 Instead of informing benjack-Christabell about benjack-mark when benjack-R2 is happening:
 	try informing benjack-Christabell about benjack-babySubject .
 
-Chapter 3 - R2 Event
+Chapter 3 - R2 Events
 
 Instead of benjack-ploughvering when benjack-R2 is happening and the player is benjack-ploughver-inhibited:
 	say "[benjack-mark-glued]";
@@ -1707,14 +1724,26 @@ The N3-desc of benjack-powerswitch is "".
 
 The benjack-screen is a benjack-shadow.  The printed name of the benjack-screen is "display screen".
 Understand "display/screen/CRT/monitor" as benjack-screen when the player is in M2F3.
-The N3-desc of benjack-screen is "".
+The N3-desc of benjack-screen is "White characters on a black background[paragraph break][fixed letter spacing]
+OF THE ARTIFACTS IDENTIFIED BY ZOND-3 AND HAVE BROUGHT[line break]
+THEM BACK TO THE LUNAR EXCURSION MODULE. THEY ARE EN-[line break]
+CRUSTED IN REGOLITH, WHICH IS FIRMLY ADHERENT. BLETCHLEY[line break]
+ADVISES NOT TO MANIPULATE FURTHER WITHOUT PROPER TOOLS.[line break]
+UNTIL THEY ARE RETURNED TO EARTH. IT WAS POSSIBLE,[line break]
+HOWEVER TO IDENTIFY TWO OF THE GLYPHS THAT YOU HAD[line break]
+DRAWN FOR US: A-73 AND TO ITS RIGHT A-14. [line break]
+THE SURVIVING TEAM HAD TO LEAVE THE UPPER UNIT IN PLACE[line break]
+DUE TO LIMITED OXYGEN SUPPLY, BUT WERE ABLE TO SAMPLE[line break] 
+ONE OF THE FUNGATING MASSES NEAR THE THORAX. I WILL[line break] 
+ADVISE WHEN THESE SAMPLES HAVE CLEARED DECONTAMINATION[line break] 
+PROCEDURE AND ARE READY FOR YOUR EXAMINATION.[variable letter spacing]".
 
 The benjack-shelves are a benjack-shadow.  The printed name of the benjack-shelves is "shelves".
 Understand "shelf/shelves" as benjack-shelves when the player is in M2F3.
 The N3-desc of benjack-shelves is "".
 
 The benjack-art is a benjack-shadow.  The printed name of the benjack-art is "three pieces of art".
-Understand "art/sculptures/sculpture" or "pieces of art" as benjack-art when the player is in M2F3.
+Understand "art/sculptures" or "pieces of art" as benjack-art when the player is in M2F3.
 The N3-desc of benjack-art is "".
 
 The benjack-Nixon is a benjack-shadow.  The printed name of the benjack-Nixon is "portrait of President Nixon".
@@ -1722,42 +1751,271 @@ Understand "president/nixon/richard/millhouse/portrait/picture/photo/photograph"
 The N3-desc of benjack-nixon is "".
 
 The benjack-egg is a benjack-shadow.  The printed name of the benjack-egg is "opalescent egg".
-Understand "opalescent/egg/sculpture/left/leftmost" as benjack-egg when the player is in M2F3.
+Understand "opalescent/egg/sculpture/left/leftmost/megalokyniklosaurus/vernalis/bunny/rabbit/easter/dinosaur/raptor/velociraptor/killer" as benjack-egg when the player is in M2F3.
 The N3-desc of benjack-egg is "".
 
-The benjack-tile is a benjack-shadow.  The printed name of the benjack-tile is "black thermal tile/sculpture/middle/center".
-Understand "black/thermal/tile/space/shuttle/ceramic/brick/heat/shield/insulator" as benjack-tile when the player is in M2F3.
+The benjack-tile is a benjack-shadow.  The printed name of the benjack-tile is "black ceramic tile".
+Understand "jet/black/thermal/tile/space/shuttle/ceramic/brick/heat/shield/insulator/middle/center/centre" as benjack-tile when the player is in M2F3.
 The N3-desc of benjack-tile is "".
 
-The benjack-ambiguity is a benjack-shadow.  The printed name of the benjack-ambiguity is "nothing".
-Understand "right/sculpture" as benjack-tile when the player is in M2F3.
+The benjack-ambiguity is a benjack-shadow.  The printed name of the benjack-ambiguity is "conspicuous absence of space".
+Understand "right/sculpture" as benjack-ambiguity when the player is in M2F3.
 The N3-desc of benjack-ambiguity is "(which of the three sculptures do you mean, the one on the left or one in the middle?)".
 
-The benjack-claws are a benjack-shadow.  The printed name of the benjack-claws is "nothing".
-Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-tile when the player is in M2F3.
-The N3-desc of benjack-tile is "".
+The benjack-claws are a benjack-shadow.  The printed name of the benjack-claws is "claws".
+Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-claws when the player is in M2F3.
+The N3-desc of benjack-claws is "".
 
 The benjack-tapedeck is a benjack-shadow.  The printed name of the benjack-tapedeck is "reel to reel recorder".
 Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic" as benjack-tapedeck when the player is in M2F3.
 The N3-desc of benjack-tapedeck is "".
 
-The benjack-scrap-19 is a benjack-runebook. The printed name of the benjack-scrap-19 is "scrapbook".
-Understand "scrapbook/notebook" as benjack-scrap-19 when the player is in M2F3.
-The description of the benjack-scrap-19 is "[benjack-scrap-19-desc]".
+The benjack-scrap-19 is a benjack-runebook. The printed name of the benjack-scrap-19 is "binder".
+Understand "scrapbook/notebook/printout/binder" or "print out" as benjack-scrap-19 when the player is in M2F3.
+The description of the benjack-scrap-19 is "A black binder containing computer printouts."
 
-To say benjack-scrap-19-desc:
-	say "TODO: TBD".
+Instead of reading the benjack-scrap-19:
+	if benjack-scrap-19 is closed:
+		say "You flip open the binder into ";
+		now benjack-scrap-19 is open;
+	otherwise:
+		say "You peruse the binder in";
+	say "which some green and white fan-fold paper has been pasted on several pages. The first page seems to be an index, written in the same blocky letters as on the cover. The index reads:[paragraph break][italic type]* INS Dakar (Israel), 25 January[line break]* S647 (France), 27 January[line break]* K-129 (Soviet), 8 March[line break]* USS Scorpion, 22 May[roman type][paragraph break]".
 	
 [note that these items must be declared forward of this list]
-The list of things called N3-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrap-19}.
+The list of things called N3-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrap-19, benjack-art}.
 
 Chapter 3 - N3 Conversation
 
 Section 1 - N3 Subjects
 
+benjack-intel is a subject.  Understand "intel/corporation/microprocessor/microprocessors/cpu/cpus/central/processing/unit/units/chip/chips" as benjack-intel when the location is M2F3 and benjack-N3 is happening.
+
+benjack-vietnam is a subject.  Understand "vietnam/peace/talk/talks/accord/accords/conference/summit/negotiation/negotiations" as benjack-vietnam when the location is M2F3 and benjack-N3 is happening.
+
+
+benjack-assassination is a subject.  Understand "assassination/assassinations/martin/luther/king/reverend" or "[benjack-kennedyToken]" as benjack-assassination when the location is M2F3 and benjack-N3 is happening.
+
+benjack-college is a subject.  Understand "college/university/school/middlebury/linguistics" as benjack-college when the location is M2F3 and benjack-N3 is happening.
+
+benjack-suicide is a subject.  Understand "commit/suicide/suiciding" as benjack-suicide when the location is M2F3 and benjack-N3 is happening.
+
+benjack-boyfriend is a subject.  Understand "boyfriend/donald/trump/don" as benjack-boyfriend when the location is M2F3 and benjack-N3 is happening.
+
+benjack-elephantSubject is a subject.  Understand "[benjack-snortlesToken]" as benjack-elephantSubject when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-elephantSubject is "Mister Snortles".
+
+benjack-moon is a subject.  Understand "moon/luna/fungating/artifact/artefact/artifats/artefacts/fungating/mass/masses/thorax" as benjack-moon when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-regolith is a subject.  Understand "regolith" as benjack-regolith when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-zond3 is a subject.  Understand "zond/zond-3/probe/far-side/dark-side/darkside" or "far side" or "dark side" as benjack-zond3 when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-lem is a subject.  Understand "lem/lunar/command/module/escape/ascent/lam/apollo/rocket/saturn/mission/landing" as benjack-lem when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-nekton is a subject.  Understand "project/nekton" as benjack-nekton when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-glyphs is a subject.  Understand "glyph/glyphs/writing/writings/arcane/ancient/letter/letters/lettre/lettres" as benjack-glyphs when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-decontamination is a subject.  Understand "decon/decontamination/sterilization/disinfection/cleaning" as benjack-decontamination when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-lostSubs is a subject.  Understand "Dakar/s647/minerve/k-129/scorpion" as benjack-lostSubs when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-sigint is a subject.  Understand "sigint" as benjack-sigint when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-elint is a subject.  Understand "elint" as benjack-elint when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-cw is a subject.  Understand "cw/morse/code/distress/signal/beacon/message" as benjack-cw when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-idf is a subject.  Understand "idf" as benjack-idf when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-pentacle is a subject.  Understand "pentacle/deep1/catacon" as benjack-pentacle when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-br1150 is a subject.  Understand "br1150/plane/atlantic/surveillance/recon/reconnaissance" as benjack-br1150 when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-hydrophone is a subject.  Understand "hydrophone/hydrophonic" as benjack-hydrophone when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-milcoord is a subject.  Understand "milcoord" as benjack-milcoord when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-navcomgr1 is a subject.  Understand "navcomgr1" as benjack-navcomgr1 when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-medcar is a subject.  Understand "medcar" as benjack-medcar when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-sosus is a subject.  Understand "sosus" as benjack-sosus when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-bletchley is a subject.  Understand "bletchley/park/enigma/turing" as benjack-bletchley when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-lwah is a subject.  Understand "lwah" as benjack-lwah when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolphin/dolphins/porpoise/porpoises" as benjack-popeyeTSM when the location is M2F3 and benjack-N3 is happening. 
+
+[benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is M2F3 and benjack-N3 is happening. ]
+
+
+[popeyetsm]
+
+
 Section 2 - N3 Quips
 
-Chapter 4 - N3 Event
+After quizzing benjack-Carol about benjack-Nixon when benjack-N3 is happening:
+	say "[one of][quotation mark]He stands for everything I believe in: integrity, tradition, and the natural destiny of America to lead the world into the coming millennium. That[apostrophe]s why I decided to work on his campaign rather than take my acceptance to Middlebury.[quotation mark][or]Carol tells you she is his biggest fan. He can do no wrong by her.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-america when benjack-N3 is happening:
+	say "[one of][quotation mark]After seeing everything going on in America this past year: the long-haired free love freaks, drugs, the degenerate culture of rock-and-roll, people too self-entitled to defend their country from the Gooks in Vietnam, Blacks riding busses and voting -- all of it, I just couldn[apostrophe]t sit on the sidelines. I wanted to do more than just bring about the Ascendance of the Elder Gods. That[apostrophe]s going to take time, and I know that I only live another few months before my suicide, so I decided to join the Nixon campaign and make a difference.[quotation mark][or][quotation mark]It[apostrophe]s going to hell in a handbasket,[quotation mark] replies Carol, [quotation mark]and not in a good way.[quotation mark] [stopping][paragraph break]".
+	
+After informing benjack-Carol about benjack-america when benjack-N3 is happening:
+	say "[one of][quotation mark]Carol, I am from the future, I assure you that this plan of yours fails. The idea that the country could be ruled by a bigoted, narcissistic miscreant like you is unthinkable.[quotation mark]Carol smiles smugly.[no line break][or]You try to convince Carol that her plan does not succeed in the future, but her confidence is not shaken in the least.[no line break][stopping][paragraph break]".	
+	
+After informing benjack-Carol about benjack-intel when benjack-N3 is happening:
+	say "[quotation mark]I[apostrophe]m not sure how this all figure into it, but in my day, in the 90s, most of the computers that we use have Intel chips in them. I have long suspected a diabolical cause.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-vietnam when benjack-N3 is happening:
+	say "[one of][quotation mark]The timing was wrong for Nixon, so I sent Sweetpaws to make sure they didn[apostrophe]t happen.[quotation mark][paragraph break]Carol looks over at the shelfs above her desk. [quotation mark]What[apostrophe]s that Master Sweetpaws? Oh yes, the geopolitical ramifications would indeed have been thorny.[quotation mark][or]Carol explains how Master Sweetpaws craftily manipulated global interests to ensure that the 1968 peace talks to end the war in Vietnam collapsed, undermining President Lyndon B. Johnson[apostrophe]s re-election campaign.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Carol about benjack-vietnam when benjack-N3 is happening:
+	say "You tell Carol that the failure of the Vietnam peace talks in 1968 must have cost the lives of tens of thousands of people."
+	
+After quizzing benjack-Carol about benjack-elderGods when benjack-N3 is happening:
+	say "Carol claims that most of the important events of 1968 were part of her and her father[apostrophe]s plan to alter history to bring about the dominion of the Elder Gods."
+	
+After quizzing benjack-Carol about benjack-assassination when benjack-N3 is happening:
+	say "[one of][quotation mark]As soon as you swat one, another pops up. First JFK -- I thought that set things right. But as soon as he was fixed, up steps RFK and everything drifts back towards the same futures. And don[apostrophe]t even get me started on Martin Luther King.[quotation mark][or]Carol claims that the she orchestrated the assassinations of both Robert Kennedy and Martin Luther King with the assistance of the Deep Ones.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-college when benjack-N3 is happening:
+	say "[one of][quotation mark]I was accepted to Middlebury last term; turns out I have some aptitude for languages. I was going to major in linguistics with a minor maybe in history, but the more I looked at the school, the more I realized how unhappy I would be there. Do you know that they are actually trying to promote enrollment of everyone but Whites?  I decided to volunteer for the Nixon campaign instead.[quotation mark][or][quotation mark]I decided not to go there and decided to volunteer for the Nixon campaign instead,[quotation mark] replies Carol.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-suicide when benjack-N3 is happening:
+	say "[one of][quotation mark]As I[apostrophe]ve matured, I[apostrophe]ve gained some insight into what is happening, both in my life and in this unfolding. I remember all your visits now, for instance, clearly. And with the aid of the Elder Gods, I[apostrophe]m even beginning to be able to see around the corners and branches of things that haven[apostrophe]t happened yet -- some will, some won[apostrophe]t. That part is hard to sort out, of course.[quotation mark][paragraph break][quotation mark]My suicide, however is unavoidable. If it hadn[apostrophe]t happened a few months from now, we wouldn[apostrophe]t have been talking now and in the past.[quotation mark][paragraph break][quotation mark]I can see what Christabell did to me then, but can[apostrophe]t change it. She was jealous of my power and future place with the Elder Gods, but even more so, she felt spurned because I chose my boyfriend over her.[quotation mark][or]Carol says Christabell is responsible for driving her to suicide before the end of 1969. Carol suspects that Cristabell was jealous that she had a boyfriend.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-boyfriend when benjack-N3 is happening:
+	say "[one of][quotation mark]In retrospect, he[apostrophe]s a bastard. If I could tell the myself that when I was my age -- with the 20-20 hindsight of temporal paradox, of course -- I would have walked away from him regardless of the what the Elder Gods saw in him.[quotation mark][paragraph break][quotation mark]But at the time, I couldn[apostrophe]t see that. He had just graduated from Wharton and entered into the family real estate business in New York City. There was no question that he would go places, especially with the inchoate horrors of primordial chaos pulling for him as they were.[quotation mark][or]Carol recognizes that her boyfriend back in 1969 was a clod, but it[apostrophe]s likely that Christabell pushed her to suicide because of jealousy over Carol[apostrophe]s relationship with him.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-carolFather when benjack-N3 is happening:
+	say "[one of][quotation mark]I don[apostrophe]t like to brag,[quotation mark] Carol brags, [quotation mark]but father has done quite well for himself, not only is he Senior Executive Vice-President in charge of the Electric Boat Division of General Dynamics, but he is now an advisor on President Nixon[apostrophe]s National Security Council.[quotation mark][or]Carol says her father has worked his way onto President Nixon[apostrophe]s National Security Council, where he is privy to the even the most secret machinations of the American government.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-generalDynamics when benjack-N3 is happening:
+	say "Carol informs you that General Dynamics is the nation[apostrophe]s lead defense contractor for submarine construction."
+	
+After quizzing benjack-Carol about benjack-submarine when benjack-N3 is happening:
+	say "[one of][quotation mark]Oh, I don[apostrophe]t know all that much about them. Father knows all the technical stuff. I just help coordinate what we do with the Deep Ones.[quotation mark][or]Carol admits she isn[apostrophe]t up on the technical aspects of submarines, but they do play a role in her business with the Deep Ones.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-carolMother when benjack-N3 is happening:
+	say "[one of][quotation mark]Oh, mother expired some time ago, actually. Father says that her hostess skills were helpful earlier in his career, but she really had nothing to offer these last few years and was getting to be something of a drag.[quotation mark][or]Apparently, Carol[apostrophe]s mother died some time ago; the cause isn[apostrophe]t really clear and Carol doesn[apostrophe]t seem disposed to elaborate.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-terminal when benjack-N3 is happening:
+	say "[one of][quotation mark]I told father that sometimes I felt left out, so he had it set up for me. It helps me keep abreast of what[apostrophe]s going on here and there.[quotation mark][or]Carol seems to be plugged in to a high-level government information feed. The technology is astounding considering the era. There must be a mainframe somewhere within the mansion.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-scrap-19 when benjack-N3 is happening:
+	say "[one of][quotation mark]It was getting heavy, so a couple years ago I started dividing them up into volumes. Feel free to peruse the latest Runes -- we[apostrophe]ve been very busy lately![quotation mark][or][quotation mark]Feel free to peruse the latest Runes -- we[apostrophe]ve been very busy lately![quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-elephantSubject when benjack-N3 is happening:
+	say "[one of][quotation mark]Poor Mister Snortles was getting on in years, and had some health issues, and Master Sweetpaws thought it best if we put him down. For his own good, really.[quotation mark][or]Carol says that Master Sweetpaws suggested doing away with Mister Snortles the Elephant when he became too weak to defend himself.[no line break][stopping][paragraph break]";
+	
+After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N3 is happening:
+	say "[one of][quotation mark]Haven[apostrophe]t seen her for years,[quotation mark] Carol replies. [quotation mark]I don[apostrophe]t recall whatever became of her.[quotation mark][or]Carol seems to have repressed the memory of Misses Winkelbottom[apostrophe]s gory demise and subsequent consumption by her other stuffed dolls.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-clown when benjack-N3 is happening:
+	say "[quotation mark]Malice hasn[apostrophe]t been quite himself lately; he isn[apostrophe]t eating like he used to -- I think he may be a little down.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-monkey when benjack-N3 is happening:
+	say "[one of][quotation mark]Am I my monkey[apostrophe]s keeper?[quotation mark] Carol asks rhetorically. [quotation mark]He keeps himself busy and comes and goes as he pleases. I try not to micromanage him.[quotation mark][or][quotation mark]He[apostrophe]s a busy, little monkey, aren[apostrophe]t you, Sweetpaws?[quotation mark][or]Carol neither knows nor cares what her bloodthirsty little familiar has been up to. All that matters to her is that he does what needs doing.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-moon when benjack-N3 is happening:
+	say "[one of][quotation mark]That need not concern you. Soon the last traces of the usurping gods will be swept away and the Elder Gods restored to their glory.[quotation mark][or]Carol evades your question.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-regolith when benjack-N3 is happening:
+	say "[quotation mark]It[apostrophe]s moonrock,[quotation mark] replies Carol helpfully."
+	
+After quizzing benjack-Carol about benjack-zond3 when benjack-N3 is happening:
+	say "[one of][quotation mark]It was a Soviet probe that photographed the far-side of the moon at high resolution and saw some things… that needed to be dealt with.[quotation mark][or][quotation mark]It was a Soviet probe that photographed the far-side of the moon.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-lem when benjack-N3 is happening:
+	say "[one of][quotation mark]When Apollo astronauts land on the moon, the part of the rocket that lands on the moon is the LEM or lunar escape module. When it[apostrophe]s time for them to leave, the upper part of the LEM called the lunar ascent module separates and flies up to dock with the lunar command module in lunar orbit.[quotation mark][or][quotation mark]All part of the moonshot.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-nekton when benjack-N3 is happening:
+	say "[quotation mark]The Navy[apostrophe]s ill-considered attempt to deal with the Deep Ones without consulting me or my father.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-glyphs when benjack-N3 is happening:
+	say "[quotation mark]I have mastered only a few of the symbols of the language of the Elder Gods -- the ones that can be drawn without going insane.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-decontamination when benjack-N3 is happening:
+	say "[quotation mark]You can never be too careful; best to disinfect everything -- with fire.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-lostSubs when benjack-N3 is happening:
+	say "[quotation mark]When we ask the Deep Ones for help, there is always a price.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-sigint when benjack-N3 is happening:
+	say "[quotation mark]Short for [apostrophe]signals intelligence[apostrophe], basically eavesdropping on radio signals.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-elint when benjack-N3 is happening:
+	say "[quotation mark]Short for [quotation mark]electronics intelligence[apostrophe]; the plane overflies an area snoops around.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-cw when benjack-N3 is happening:
+	say "[quotation mark]It stands for [apostrophe]continuous wave[apostrophe], but means morse code.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-idf when benjack-N3 is happening:
+	say "[quotation mark]I think it means Israeli Defense Force.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-pentacle when benjack-N3 is happening:
+	say "[quotation mark]Actually, I don[apostrophe]t know. Very official and hush-hush. The military does love their abbreviations.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-br1150  when benjack-N3 is happening:
+	say "[quotation mark]It[apostrophe]s a kind of plane. British, I think.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-hydrophone  when benjack-N3 is happening:
+	say "[quotation mark]A hydrophone is like a microphone that you can put in water so you can hear what[apostrophe]s down there.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-milcoord when benjack-N3 is happening:
+	say "[quotation mark]The person who liaises between the US and French Militaries at NATO Headquarters in Brussels.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-navcomgr1 when benjack-N3 is happening:
+	say "[quotation mark]Our listening post on the coast of Greece.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-medcar when benjack-N3 is happening:
+	say "[quotation mark]A network of sonic transducers that line the Mediterranean basin and can generate sounds to fool enemy submarines.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-sosus when benjack-N3 is happening:
+	say "[quotation mark]Strings of underwater sensors that help the military track submarines.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-bletchley when benjack-N3 is happening:
+	say "[quotation mark]I don[apostrophe]t know where it is, but they coordinate the American and Soviet space programs,[quotation mark] replies Carol."
+	
+After quizzing benjack-Carol about benjack-lwah when benjack-N3 is happening:
+	say "[quotation mark]It is short for [apostrophe]lost with all hands[apostrophe] in military-speak.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-art when benjack-N3 is happening:
+	say "[quotation mark]Various trinkets I[apostrophe]ve picked up here and there. I think the one on the right is my favorite.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-popeyeTSM when benjack-N3 is happening:
+	say "[quotation mark]It[apostrophe]s the code name for our navy[apostrophe]s global intelligence network of telepathic dolphins.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-egg when benjack-N3 is happening:
+	say "[one of][quotation mark]Ah, yes, the egg of the Megalokyniklosaurus vernalis. Those who have stared into its swirling mysteries have reported visions from other realities.[quotation mark][or]Carol reminds you that the only known Megalokyniklosaurus vernalis egg in existence is rumored to reveal visions of other realities.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-tile when benjack-N3 is happening:
+	say "[one of][quotation mark]It[apostrophe]s not quite as real as the other pieces of art in my collection, because of course it does not exist yet.[quotation mark][or][quotation mark]It[apostrophe]s a thermal tile from the space plane Columbia some years from now.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-ambiguity when benjack-N3 is happening:
+	say "[quotation mark]What more can one say about such an exquisite piece?[quotation mark] observes Carol."
+	
+After quizzing benjack-Carol about benjack-PloughverSpell when benjack-N3 is happening:
+	say "[one of][quotation mark]You realize that every time you use that spell, you[apostrophe]re complicit in what you experience, right?[quotation mark][paragraph break][quotation mark]No, Christabell didn[apostrophe]t mention anything about that,[quotation mark] you plead, alarmed.[paragraph break][quotation mark]No, I wouldn[apostrophe]t suppose she would. It[apostrophe]s funny how she only tells parts of things, isn[apostrophe]t it?[quotation mark][or]Carol explains that the person casting the teleport spell shares in the responsibility for collateral damage that it causes.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-babySubject when benjack-N3 is happening:
+	say "[one of][quotation mark]Carol, we need to level. About that mark that you allegedly placed: Christabell says I[apostrophe]m not pregnant and that you are try to manipulate me.[quotation mark][paragraph break][quotation mark]Does she now?[quotation mark] Carol says with a sly smile. [quotation mark]Well, I suppose it[apostrophe]s just a matter of which of us you trust. How is it that I[apostrophe]m supposed to have manipulated you?[quotation mark][paragraph break][quotation mark]Well.[quotation mark] You think for a minute. [quotation mark]I thought it was some kind of a threat. Against me, or maybe against the baby.[quotation mark][paragraph break][quotation mark]That[apostrophe]s not how it works, Christabell. Marks are Wardes of Protection. The only benefit I derive is being able to work magic through someone who is bemarked. The person themself is merely the medium and comes to no harm at all.[quotation mark][paragraph break][quotation mark]So, am I pregnant or not?[quotation mark][paragraph break][quotation mark]There[apostrophe]s nothing I can say that will convince you one way or another, Naomi, so why ask?[quotation mark][or]Carol sticks to her argument that you are indeed pregnant and that you baby bears her mark, but that she means no harm by it.[no line break][stopping][paragraph break]".
+	
+Instead of informing benjack-Carol about benjack-babySubject when benjack-N3 is happening:
+	try quizzing benjack-Carol about benjack-babySubject.
+	
+Instead of informing or quizzing benjack-Carol about benjack-mark when benjack-N3 is happening:
+	try quizzing benjack-Carol about benjack-babySubject.
+	
+Instead of informing or quizzing benjack-Carol about benjack-ChristabellSubject when benjack-N3 is happening:
+	try quizzing benjack-Carol about benjack-babySubject.
+
+Chapter 4 - N3 Events
+
+
+
 
 Chapter 5 - N3 Tests
 
@@ -1765,6 +2023,38 @@ Chapter 6 - N3 Ends
 
 When benjack-N3 ends:
 	benjack-stage-off 3.
+	
+Part 9 - Scene Denouement
+
+The benjack-naomiRunes is a benjack-runebook. The The printed name of the benjack-naomiRunes is "Runes of Naomi". Understand "runebook/runes" or "runes of naomi" as benjack-naomiRunes. The description of benjack-naomiRunes is "A thin book with a rough, darkened leather cover and crispy yellowed pages."
+
+Instead of reading benjack-naomiRunes:
+	say "The book has a number of entries, each corresponding to a faded clipping:".
+	[TODO: populated the runebook, read titles.]
+	
+
+
+
+Chapter 1 - Denouement Begins
+
+Chapter 2 - Denouement Events
+
+Before conversing when the benjack-Denouement is happening:
+	say "This is the time for action, not mere words."
+
+Chapter 3 - Denouement Tests
+
+Chapter 4 - Denouement Ends
+
+Part 10 - Scene Apres
+
+Chapter 1 - Apres Begins
+
+Chapter 2 - Apres Events
+
+Chapter 3 - Apres Tests
+
+Chapter 4 - Apres Ends
 
 Book 3 - Runebook Clippings
 
@@ -1787,26 +2077,26 @@ The Benjack-clipping-shark is in benjack-scrap-5.
 The title of Benjack-clipping-shark is "Shark Attack".
 The list of text called Benjack-clipping-shark-text is always {"SHARK ATTACK![paragraph break]A team of oceanographers from the Woods Hole Institute of Oceanography in Woods Hole, MA was attacked yesterday by sharks in waters about ten miles southeast of Nantucket Island. Of the four man team, one was died and one was injured, requiring hospitalization.[paragraph break] The team was deploying a string of experimental sonar buoys along an underwater ridgeline. The captain of the expedition, Frampton Mays, was the first to notice a disturbance in the water surrounding the boat and the rubber raft in tow, where two divers were working. [quotation mark]The seas were rolling calmly, but something was moving around us, in circles. Something big. The water humped up around it, but there was no wake.[quotation mark][paragraph break]Davis Parks, an electronics engineer from the Sperry Corporation, was with the captain and noticed unusual readings from the devices being put in place, [quotation mark]The first buoy was anchored and we were calibrating it, so I didn[apostrophe]t pay much attention at that point. I thought we had a gain problem because the signal returns were just crazy and the doppler… well, nothing can move that fast, I had to assume one of the guys had snapped and that the assembly was spinning.[quotation mark][paragraph break]According to coast guard vessels responding to the their distress call, water sprayed up around the raft and then the entire raft disappeared below the foaming surface. Initially, the coast guard reported sighting tentacles reaching out of the water around the raft, but it is now believed that these were the heavy lines that had secured the equipment to the ocean floor recoiling upward with the release of tension.[paragraph break]One diver, who was on the raft at the time, was lost: twenty-six-year-old Travis McMaster of New Port, Rhode Island. Dr. McMaster had recently completed graduate studies at the Massachusetts Institute of Technology and was conducting post-doctoral research at Woods Hole.[paragraph break]The other diver, David Tillerson, was nearer to the research vessel when the sharks attacked, and was pulled from the water by the two crew. First aid was performed on the coast guard rescue boat; it is reported that he had a number of large, painful welts on his back. The treating physician commented that these welts were [quotation mark]similar in nature to the sort we see from jellyfish, but much, much larger and deeper.[quotation mark]"}.
 The content of Benjack-clipping-shark is Benjack-clipping-shark-text.
-Understand "shark/attack" as Benjack-clipping-shark.
+Understand "shark/attack" as Benjack-clipping-shark when the location is in the benjack-realm
 
 Benjack-clipping-actress is a benjack-clipping. 
 Benjack-clipping-actress is in benjack-scrap-5.
 The title of Benjack-clipping-actress is "Actress Disappears".
 The list of text called Benjack-clipping-actress-text is always {"A FLASHBULB EXCLUSIVE![paragraph break]Fashion model and star of the silver screen, Hungarian actress Lili Kovács disappeared this afternoon from a private hospital in North Carolina where she was recovering from recent surgery. As previously reported, she had been flown there three days ago after developing what was thought to be acute appendicitis while filming [quotation mark]Two Shots and A Chaser[quotation mark] in Bermuda.[paragraph break]At a cast party Thursday evening, she sudden collapsed, clutching her stomach in pain, and was rushed to a local hospital, where she was given medication and transferred by plane to the U.S. According to guests at the party, the normally svelte starlet appeared to have gained a lot of weight during her week on the vacation island, and some thought that she might have suffered an on set injury because she was walking oddly.[paragraph break]The handsome Wallace Travers, who stars opposite Miss Kovács in the Metro-Goldwyn-Mayer Pictures production, recounted the troubling week that began with the disappearance of the lovely celebrity while they were filming a scene on the beach area behind the posh Venture Casino last Monday. According to Mr. Travers, [quotation mark]She said she was taking a quick dip to cool off, and I thought she would be right back. When we were ready to shoot the next scene, nobody could find her. We checked the trailer, the hotel -- everywhere. Then our sound guy, Mike, says there[apostrophe]s something going on in the surf. He had a good view from up on the boom tower, but from the beach everything looked normal. He said some kind of lights were moving around under the water. ","Some of the locals later told us that[apostrophe]s not too unusual, that algae or whatnot have this faint glow at night, but Mike was really upset and said the lights were huge, the size of city busses, really bright, and moving around incredibly fast. Well, Heinrich called it for the evening, and we let Mike go sober up.[quotation mark][paragraph break]According to the film[apostrophe]s director, Heinrich Habberstamp, Miss Kovács showed up early the next morning for filming as if nothing had happened. Later that day, she admitted to having no recollection of the prior evening.[paragraph break]The private hospital refused to comment in the interest of privacy, but one of Lili[apostrophe]s visiting relatives gave FLASHBULB the inside scoop: When Lili arrived from the airport, she was burning up with fever and brought immediately to the operating room. As the surgeon made the first cut, the wound tore open of its own accord and a mass of gelatinous balls squirted out. [quotation mark]Maybe ten or fifteen pounds of them, each about the size of an orange. They were pink or red, and some had little cords attached. Nobody knew what they were, but they got as many of them out as they could. They had to leave some of the smaller ones that were more firmly attached. When they tried to cut those out, she started bleeding, so they closed her up.[quotation mark][paragraph break]No one knows the whereabouts of the starlet or how she could have gotten out of her bed after such major abdominal surgery. More than a few industry wags have suggested that the whole episode was a publicity stunt to build up anticipation for the film."}.
 The content of Benjack-clipping-actress is Benjack-clipping-actress-text.
-Understand "actress/disappears" as Benjack-clipping-actress.
+Understand "actress/disappears" as Benjack-clipping-actress when the location is in the benjack-realm.
 
 Benjack-clipping-body is a benjack-clipping. 
 The title of Benjack-clipping-body is "Body Found".
 The list of text called Benjack-clipping-body-text is always {"BODY FOUND[paragraph break]Police investigators report the discovery of a headless torso on the western shore of Block Island and are seeking public assistance in determination of the identify of the deceased.[paragraph break]The headless, limbless corpse was discovered yesterday afternoon by Christopher Smythe, a local resident, who was checking his lobster pots. [quotation mark]It came up slowly on the winch and when it got to the surface, I knew there was a problem. I got everyone under it, and we swung it onto the deck and weren[apostrophe]t sure what to do with it, so we put it on ice and headed back to harbor.[quotation mark][paragraph break]The body is described as male, caucasian, and likely forty to fifty years old. The Washington County Medical Examiner, Dr. Lewis Ivar, places the time of death somewhere between two and three days prior to discovery. Dr. Ivar commented, [quotation mark]there were two notable findings: first, a series of discolorations, about four inches in diameter and arranged in a line across the back and wrapping around upward under the axilla; secondly, the presence of a tattoo across the chest. The design of the tattoo is unusual, a skull and below it a phrase in French.[quotation mark] The coroner[apostrophe]s office is hopeful that the unique tattoo will aid them in identification of the victim."}.
 The content of Benjack-clipping-body is Benjack-clipping-body-text.
-Understand "body/found" as Benjack-clipping-body.
+Understand "body/found" as Benjack-clipping-body when the location is in the benjack-realm.
 
 Benjack-clipping-convict is a benjack-clipping. 
 The title of Benjack-clipping-convict is "Watery Fate for Convict".
 The list of text called Benjack-clipping-convict-text is always {"It looks like the icy hand of justice caught up to escaped murderer Gustave Dellorto earlier today, when his body was recovered at low tide from the Execution Rocks lighthouse in the Long Island Sound.[paragraph break]Leslie Stovebow, the lighthouse keeper who resides in a small residence at the base of the tower, discovered the body this morning as the tide went out. The body was still clad in the striped uniform of the Sing Sing Prison from which he escaped last night.[paragraph break]Mamaroneck, NY police raced against time to remove the body from where it had become lodged in the boulders before the time came back in, submerging the rocks. They successfully identified the body by confirming the number on the uniform matched that of the escaped killer. It is not clear why Dellorto chose to flee to the island, but police suspect he was hoping to murder the lighthouse keeper and go to ground there until his trail grew cold.[paragraph break]Dellorto was convicted of three cases of first degree murder in the winter of 1951, including one G-man, and was suspected of homicide in seven additional cases. It is believed that his crimes were connected to organized crime. He was sentenced to capital punishment, but pardoned after appeal two years ago by Governor Dewey.[paragraph break]Execution Rocks inherits its name from the colonial period, where legend goes that disobedient slaves were shackled at low tide, and served as examples for others, being left there to slowly drown in the pounding waves. This story is considered apocryphal by most, but today, the lighthouse earned its name.[paragraph break][one of][benjack-but-wait-theres-more][or][stopping][paragraph break]CORRIGENDUM[paragraph break]Gustave Dellorto, who escaped from Sing Sing prison earlier this month, was arrested in Detroit, Michigan, yesterday leaving in his wake a fresh series of murders committed during a two-week spree across several states. It was previously reported in error that he had died by drowning in the Long Island Sound, but the body recovered in that incident is now known to be that of Francis Dapper, age 19 of Larchmont, New York, who had been working at the Purdue Island Yacht Club the evening that Gustave escaped. One of the club launches, which had been brought ashore for the winter, was discovered missing later that week. Police believe that it was probably used by Dellorto to reach the Execution Rocks lighthouse, where he abandoned his victim[apostrophe]s body, after swapping clothes to fake his own death in an attempt to evade capture."}.
 The content of Benjack-clipping-convict is Benjack-clipping-convict-text.
-Understand "water/fate/convict/for" as Benjack-clipping-convict.
+Understand "water/fate/convict/for" as Benjack-clipping-convict when the location is in the benjack-realm.
 
 [doing the very side effect-within-say that I warn against:]
 To say benjack-but-wait-theres-more:
@@ -1819,13 +2109,13 @@ The title of Benjack-clipping-sable is "Boat Wreck On Sable Island".
 The list of text called Benjack-clipping-sable-text is always {"A 12-man fishing boat, the Miss Step, out of Halifax, was found wrecked yesterday with loss of all hands on Sable Island, a small, isolated island in the Atlantic Ocean, 190 miles southeast of Halifax. The vessel grounded on an sandy bar near the eastern end of the island and by report was discovered yesterday morning by Ronald Lefevre, sub-intendent of the Sable Island Rescue Station. Subsequently, both Mr. Lefevre and Scott McCallister, who was in charge of the two-man Rescue Station, were also lost.[paragraph break]
 The only other inhabitant of the island, Dr. Martha Klein, reported yesterday[apostrophe]s events to the Canadian Coast Guard cutter Hermes by shortwave radio at 10:20 a.m. yesterday morning before herself going missing. The Hermes reached the island within the next two hours, but was unable to launch small landing craft because of gale force squalls. When they did make landfall late that afternoon, there was no evidence of the wreck. The search the island[apostrophe]s three inhabitants was aborted this morning due to further foul weather; additional Coast Guard vessels are en route as we go to press.[paragraph break]The Coast Guard has refused to comment on the matter, but a ham radio operator, Edmund Finister, from Prince Edward Island, gave the following account to the press:[paragraph break][quotation mark]I sometimes listen to the reports going back and forth between Dr. Klein at the Meteorological Station and the mainland, and I wasn[apostrophe]t expecting anything at that time of day, but I just happened to have the radio on, more or less to keep the shack warm. ","Then, out of the blue, I hear Dr. Klein, and she normally has kind of a lilting, friendly voice, but I could hear that she was shaken up. I was in the other room, so I only caught the last part of it, but she was speaking almost too calmly, trying to give all the details, but I could tell she was a hair[apostrophe]s breadth from having a breakdown.[quotation mark][paragraph break][quotation mark]She[apostrophe]s talking to the sparky on the cutter, and saying that first the one guy, Lefevre came speeding back along the beach in his jeep to get McCallister, because he had discovered the fishing boat on its side up on the sand. They asked Dr. Klein to call it in and they both took off again, even though Lefevre had said that when he had seen it the first time, he had a good look around and there were no survivors.[quotation mark][paragraph break][quotation mark]Now, what[apostrophe]s weird is what Lefevre told Klein -- while there were no bodies aboard, there were these… things. I only know what she said on the air, that Lefevre had said that there were these fleshy things all over the ship, in different parts of it, down below, up on the deck. They were whitish or translucent, sort of long tubes of the stuff. Heavy, deadweight if you tried to move them. Some were wrapped up in foul weather jackets, and one that Lefevre poked had some coins embedded in it, about halfway up, he said, just a couple inches deep. His best guess was that they were whale fat since they were so oily, but he was just guessing. Also, he said they had kind of a musky smell.[quotation mark][paragraph break][quotation mark]Whatever they were, they[apostrophe]re gone now. All of them.[quotation mark]"}.
 The content of Benjack-clipping-sable is Benjack-clipping-sable-text.
-Understand "boat/wreck/sable/island" as Benjack-clipping-sable.
+Understand "boat/wreck/sable/island" as Benjack-clipping-sable when the location is in the benjack-realm.
 
 Benjack-clipping-orphan is a benjack-clipping. 
 The title of Benjack-clipping-orphan is "Orphan Survives".
 The list of text called Benjack-clipping-orphan-text is always {"Orphan Survives Boat Collision, New York[one of][benjack-orphan-fakeout][or][stopping][line break]City Police Frogman Dies Horribly.[paragraph break]Six-year-old Samantha Monteleone was thought lost earlier today after The Knickerbocker, a commercial touring boat with 230 persons aboard, came to an abrupt stop just south of Battery Park. The child was later found trapped below decks, but only after New York City Police Department Frogman Reginald Foster died in the search and rescue operation.[paragraph break]Forty of the passengers this morning were orphans in the first, second, and third grade at the Tuckeridge Home for Orphans in Yonkers, New York. They and their chaperones from the orphanage were enjoying the boat ride around Manhattan, many of them crowded along the starboard bow railing to view the Statue of Liberty, when the 2500 tonne vessel came to an immediate halt in open water.[paragraph break]Many passengers were thrown to the deck, and one orphan reported seeing Samantha go forward over the railing. Chaperones were able to locate all other children, and a shipwide search was organized while the ship returned to its berth on Pier 82. During the return to the dock, the crew swept the ship twice, but were unable to find they girl.[paragraph break]Meanwhile, NYPD frogmen were dispatched to position of the stalled ship using landmark bearings, putting them about a quarter mile south-west of Governors Island. The first vessels upon the scene reported no evidence of debris that would have supported the possibility of an earlier collision and no maritime accidents were witnessed this morning along this heavily trafficked route connecting Manhattan to the Atlantic. ","According to the coast guard, no ships have issued distress calls and none are known to be overdue in ports around New York City.[paragraph break]According to NYPD Frogman Unit Captain Peter Pisar, his ten man team began a standard search operating from two support barges, which arrived on the scene one within a half-hour, and the other near the one hour mark. Despite unusually poor visibility and brisk currents, the search proceeded normally until just before noon, when Sargent Foster’s air hose was hoisted to a barge, bringing with it only the upper half of the diving suit.[paragraph break][quotation mark]You know there’s a problem when the winch doesn’t make the usual sound.[quotation mark] said Jobber Thomson, one of Foster’s squad. [quotation mark]It was just the top part of the suit, from the armpits up. When we opened the helmet, you should have seen the look on his face. Nothing got to Reggie, but I think he died of fright before whatever was down there cut him to pieces.[quotation mark][paragraph break]The NYPD has not release a statement at this time, but officers on the scene speculated that officer Foster might have come into contact with a rotating propeller, although he was working on the bottom the Anchorage Channel, at an average depth of greater than fifty feet.[paragraph break]The orphan, Samantha, was found in the early evening cowering in a normally sealed bilge section of the ship. Perry Sylvester, the director of the Tuckeridge Home for Orphans described the girl as [quotation mark]white as a sheet and catatonic, shivering in the dark, her eyes more white than pupil.[quotation mark] Samantha was taken to the the Rosedale Psychiatric Center in White Plains, where she is recovering."}.
 The content of Benjack-clipping-orphan is Benjack-clipping-orphan-text.
-Understand "orphan/orphans/survive/survives" as Benjack-clipping-orphan.
+Understand "orphan/orphans/survive/survives" as Benjack-clipping-orphan when the location is in the benjack-realm.
 
 To say benjack-orphan-fakeout:
 	say "Finally, a feel-good story.[paragraph break]You unfold the article to give it a full perusal.";
@@ -1837,23 +2127,53 @@ Benjack-clipping-boardwalk is a benjack-clipping.
 The title of Benjack-clipping-boardwalk is "Boardwalk Tragedy".
 The list of text called Benjack-clipping-boardwalk-text is always {"The hunt is underway for two recent highschool graduates last seen on the beach in Lavalette, New Jersey. The youths, Vinny Bernaducci, age 19 of the Bronx, New York, and Sandra Thomas, age 18, of Perth, Australia, disappeared last evening after attending a clambake with friends on the beach.[paragraph break]Ocean County police detective Roger Gutterman who interviewed other teenagers on the beach that evening said that the two missing teens were last seen walking off towards a section of the boardwalk favored by youth, just down the beach towards Seaside Heights.[paragraph break]Investigators have identified the likely location, which contained articles of clothing and other materials that the couple was likely to have used that evening. They were puzzled, however, about the possible significance of a wide furrow leading from the ocean’s edge to that spot under the boardwalk.[paragraph break]Detective Guttman described that furrow as [quotation mark]wide, maybe ten or fifteen feet across, pretty shallow, and flanked by tufts of moist sand.[quotation mark] He also said, [quotation mark]The only thing I’ve ever seen like that was on vacation -- one evening I saw sea turtles hauling themselves up the beach to lay their eggs. It was kind of like that, except much, much bigger.[quotation mark]"}.
 The content of Benjack-clipping-boardwalk is Benjack-clipping-boardwalk-text.
-Understand "boardwalk/tragedy" as Benjack-clipping-boardwalk.
+Understand "boardwalk/tragedy" as Benjack-clipping-boardwalk when the location is in the benjack-realm.
 
 Benjack-clipping-hargreaves is a benjack-clipping. 
 The title of Benjack-clipping-hargreaves is "hargreaves".
 The list of text called Benjack-clipping-hargreaves-text is always {"WILSON HARGREAVES, REMEMBERED[paragraph break]Lieutenant Wilson Hargreaves, former Officer-in-Charge of the Winslet Point Lighthouse, was laid to rest today in the Restful Meadows Cemetery in Winksboro, Maine. Devoted husband of Delores, proud father of Katie and Linda, he was fifty-eight. A memorial service was held in Winksboro Town Hall, led by mayor Thomas Snideworth. The mayor praised Wilson’s service to the community, both his constant watchfulness at the Lighthouse and his many projects involving town youth. The major also consoled the grieving family regarding his extraordinarily gruesome death."}.
 The content of Benjack-clipping-hargreaves is Benjack-clipping-hargreaves-text.
-Understand "hargreaves/wilson/remembered/obituary" as Benjack-clipping-hargreaves.
+Understand "hargreaves/wilson/remembered/obituary" as Benjack-clipping-hargreaves when the location is in the benjack-realm.
 
 Benjack-clipping-9 is a benjack-clipping. 
 The title of Benjack-clipping-9 is "title9".
 The list of text called Benjack-clipping-9-text is always {"article9"}.
 The content of Benjack-clipping-9 is Benjack-clipping-9-text.
+Understand "TODO XXX" as Benjack-clipping-9 when the location is in the benjack-realm.
 
 Benjack-clipping-10 is a benjack-clipping. 
 The title of Benjack-clipping-10 is "title10".
 The list of text called Benjack-clipping-10-text is always {"article10"}.
 The content of Benjack-clipping-10 is Benjack-clipping-10-text.
+Understand "TODO XXX" as Benjack-clipping-10 when the location is in the benjack-realm.
+
+Benjack-clipping-dakar is a benjack-clipping.
+The Benjack-clipping-dakar is in benjack-scrap-19.
+The title of Benjack-clipping-dakar is "INS Dakar (Israel), 25 January".
+The list of text called Benjack-clipping-dakar-text is always {"[fixed letter spacing][line break]DOSSIER PENTACLE DOSSIER DEEP1 DOSSIER CATACON[line break]25 JAN 1968 1601Z AUTHENTICATED RMX-998-LPO[line break]SIGINT ATHENS REPORTS ENCRYPTED CW DISTRESS[line break]SIGNAL FROM ISRAEL NAVY DIESEL-ELECTRIC[line break]SUBMARINE DAKAR STARTING 1001Z ENDING 1003Z TODAY.[line break]NO FIX BY RADIOGONIOMETRY. VESSEL LAST OBSERVED[line break]BY TRAWLER AT 2301Z ON 24 JAN 1968 AT 35.005N[line break]BY 26.954E APPROXIMATE HEADING 135 AT 7 KNOTS[line break]BELOW PERISCOPE DEPTH WITH FLOOR AT 3000M. NO[line break]OTHER SUBMARINES WITHIN 100NM AT THAT TIME. NO[line break]HYDROPHONIC EVENTS REPORTED BY UK WESTERN[line break]SOVEREIGN BASE AREA CYPRUS. LOSS OF VESSEL[line break]CONFIRMED BY IDF AT 1430Z. WILL DELAY SEARCH[line break]UNTIL 2200Z 25 JAN 1968. EOM.[variable letter spacing]"}.
+The content of Benjack-clipping-dakar is Benjack-clipping-dakar-text.
+Understand "dakar/ins/israel" as Benjack-clipping-dakar when the location is in the benjack-realm.
+
+Benjack-clipping-minerve is a benjack-clipping.
+The Benjack-clipping-minerve is in benjack-scrap-19. 
+The title of Benjack-clipping-minerve is "S647 (France), 27 January ".
+The list of text called Benjack-clipping-minerve-text is always {"[fixed letter spacing][line break]DOSSIER PENTACLE DOSSIER DEEP1 DOSSIER CATACON[line break]27 JAN 1968 1800Z AUTHENTICATED TTU-851-YAZ[line break]NATO BRUSSELS MILCOORD FRANCE CONFIRMS LOSS [line break]OF FRENCH DAPHNE-CLASS DIESEL-ELECTRIC[line break]SUBMARINE DESIGNATED MINERVE NUMBER S647 AT[line break]0830Z TODAY. VESSEL WAS RETURNING TO PORT[line break]IN TOULON FRANCE UNDER SNORKEL MAKING 8 KNOTS[line break]ON A NORTHERLY HEADING. LAST CONTACT RELAYED[line break]VIA BR1150 ATLANTIC ON N AFRICAN ELINT REPORTED[line break]SITUATION NOMINAL. FLOOR DEPTH 1100-1700M. NO[line break]OTHER UNACCOUNTED SUBMARINES WITHIN 100NM. NO[line break]HYDROPHONIC EVENTS REPORTED. FRENCH NAVY HAS[line break]COMMENCED SEARCH 5 NM EAST OF ESTIMATED LOSS[line break]ZONE. EOM.[variable letter spacing]"}.
+The content of Benjack-clipping-minerve is Benjack-clipping-minerve-text.
+Understand "minerve/s647/s-647" as Benjack-clipping-minerve when the location is in the benjack-realm.
+
+Benjack-clipping-k129 is a benjack-clipping. 
+The Benjack-clipping-k129 is in benjack-scrap-19.
+The title of Benjack-clipping-k129 is "K-129 (Soviet), 8 March".
+The list of text called Benjack-clipping-k129-text is always {"[fixed letter spacing][line break]DOSSIER PENTACLE DOSSIER DEEP1 DOSSIER CATACON[line break]8 MAR 1968 1800Z AUTHENTICATED SDX-851-AAW[line break]POPEYETSM ADVISES LWAH OF SOVIET GOLF II CLASS[line break]DIESEL-ELECTRIC PROJECT 629 STRATEGIC BALLISTIC[line break]SUBMARINE DESIGNATION K-129 HULL NUMBER 722.[line break]USS FLASHER (SSN-613 PERMIT CLASS) INTERCEPTED[line break]AND DREW OFF ACCOMPANYING VICTOR II CLASS [line break]NUCLEAR ATTACK SUBMARINE ONE HOUR PRIOR TO[line break]CONTACT. SOSUS CONFIRMS HYDROPHONOLOGY[line break]CONSISTENT WITH IMPLOSION AT 40N BY 180 AND[line break]QUOTE SOUNDS LIKE OUTER SPACE MOVIE ALIENS[line break]UNQUOTE AT 1436Z TODAY. CARRIER GROUP HANCOCK EN[line break]ROUTE FOR INTERDICTION AND MARKER PLACEMENT TO[line break]FACILITATE SALVAGE WHEN CLEAR.[variable letter spacing]"}.
+The content of Benjack-clipping-k129 is Benjack-clipping-k129-text.
+Understand "k129/k-129" as Benjack-clipping-k129 when the location is in the benjack-realm.
+
+Benjack-clipping-scorpion is a benjack-clipping. 
+The Benjack-clipping-scorpion is in benjack-scrap-19.
+The title of Benjack-clipping-scorpion is "USS Scorpion, 22 May".
+The list of text called Benjack-clipping-scorpion-text is always {"[fixed letter spacing][line break]DOSSIER PENTACLE DOSSIER DEEP1 DOSSIER CATACON[line break]REVCO 217[line break]21 MAY 1968 1000Z AUTHENTICATED FOW-037-LOS[line break]SUBLANT REPORTS LOSS OF USS SCORPION (SSN-589)[line break]SKIPJACK CLASS U.S. NUCLEAR ATTACK SUBMARINE.[line break]LAST CONTACT VIA NAVCOMGR1 IN NEA MAKRI,[line break]GREECE AT 0020Z 20 MAY 1968 REPORTED PURSUIT OF[line break]NOVEMBER CLASS SOVIET SUBMARINE, THE INTENDED[line break]TARGET, EASTWARD AT 15 KNOTS DEPTH 350FT. MEDCAR[line break]COUNTERMEASURES WERE INSTITUTED IMMEDIATELY TO[line break]PROVIDE ACOUSTIC COVER FOR THE EVENT WHICH LASTED[line break]APPROXIMATELY 20 MINUTES.[variable letter spacing]"}.
+The content of Benjack-clipping-scorpion is Benjack-clipping-scorpion-text.
+Understand "uss/scorpion/ssn/SSN-589" as Benjack-clipping-scorpion when the location is in the benjack-realm.
 
 [Clipping template
 
@@ -1861,6 +2181,7 @@ Benjack-clipping-xxx is a benjack-clipping.
 The title of Benjack-clipping-xxx is "xxx".
 The list of text called Benjack-clipping-xxx-text is always {"xxx"}.
 The content of Benjack-clipping-xxx is Benjack-clipping-xxx-text.
+Understand "XXX" as Benjack-clipping-xxx when the location is in the benjack-realm.
 
 ]
 
