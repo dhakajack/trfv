@@ -176,8 +176,16 @@ To say benjack-nursery-description:
 		
 The commentary of M2F3 is "M2F3 Commentary".
 
-benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door.
+benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door when the location is in the benjack-realm. 
 
+benjack-bedroom-door is an open openable scenery container in M2F3. The printed name of benjack-bedroom-door is "bedroom door". Understand "bedroom/door" as benjack-bedroom-door when the location is in the benjack-realm. 
+
+Instead of entering the benjack-bedroom-door:
+	try going south.
+	
+Instead of inserting something (called the item) into the  benjack-bedroom-door:
+	try dropping the item.
+	
 The description of the benjack-baby-door is "The door [benjack-baby-door-desc]."
 
 To say benjack-baby-door-desc:
@@ -2014,8 +2022,19 @@ Instead of informing or quizzing benjack-Carol about benjack-ChristabellSubject 
 
 Chapter 4 - N3 Events
 
-
-
+After benjack-KHing when benjack-N3 is happening:
+	say "Carol tries to get between you and the scrapbook, but is too slow. As the book dissolves progressively to dust to small to see. Carol sags, as if suddenly exhausted.[paragraph break][quotation mark]You idiot,[quotation mark] she scolds. [quotation mark]What was that for? I[apostrophe]ve done nothing to you -- well, nothing to speak of.[quotation mark][paragraph break][quotation mark]You were growing too powerful; it makes me uncomfortable.[quotation mark][paragraph break][quotation mark]I thought you were a little more rational than that, Naomi. I am disappointed in you. That was, of course, just one of many volumes -- my power is little diminished.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds as a petty afterthought, [quotation mark]the word is Maud[apostrophe]dib. I at least read the book. When he used the weirding module, the thing he yelled was Maud[apostrophe]dib, not Kwisatz Haderach. You could at least get that one detail right.[quotation mark][paragraph break]".
+	
+Instead of going south when benjack-N3 is happening:
+	say "[if the benjack-bedroom-door is open]The door is wide open but you[otherwise]You[end if] aren't able to move towards it.[paragraph break][benjack-stuck-n3]".
+	
+	
+	
+Instead of benjack-ploughvering when benjack-N3 is happening:
+	say "[one of]Dark purple sparks fly from the four walls, ceiling and floor of the room as you cast[or]Sparks fly[stopping], but you go nowhere.[paragraph break][benjack-stuck-n3]".
+	
+To say benjack-stuck-n3:
+	say "[one of][quotation mark]What gives, Carol? Am I your prisoner now?[quotation mark][paragraph break][quotation mark]Naomi, it[apostrophe]s not me holding you back --  honest![quotation mark] pleads Carol. [quotation mark]It[apostrophe]s the universe. When you[apostrophe]re here, some part of you is in my time. The future is written from your perspective, but not mine; all is fluid and potential. Apparently, you have some decisions to make, and the universe can[apostrophe]t get on with its business until you make them. I urge you to think carefully on your choices, as this is apparently a nodal moment, the sort of historical linchpin that I have long labored to bring about at great cost.[quotation mark][paragraph break][quotation mark]You[apostrophe]ll understand if I choose not to believe you.[quotation mark][paragraph break][quotation mark]Believe what you want, but think carefully about your next actions. There is no reason we need be enemies.[quotation mark][or]An invisible force blocks your exit.  Carol again shrugs her shoulders and claims it is none of her doing, but somehow related to the universe and unwritten destiny.[no line break][or]An invisible force blocks your exit.[no line break][stopping][paragraph break]".
 
 Chapter 5 - N3 Tests
 
@@ -2242,7 +2261,23 @@ To say benjack-ploughver-cutscenes:
 
 Chapter 3 - kwisatzhaderaching
 
+Benjack-KHing is an action applying to nothing. Understand "kwisatz haderach" as Benjack-KHing when the location is in the benjack-realm.
 
+Check Benjack-KHing:
+	if yourself is not benjack-spell_enabled:
+		say "You did enjoy that book, didn't you?";
+		stop the action;
+	if the location does not enclose a benjack-runebook:
+		say "You see no Book of Runes to destroy.";
+		stop the action.
+		
+Carry out benjack-KHing:
+	let R be a random benjack-runebook in the location;
+	now R is unseen;
+	now R is nowhere;
+	say "You join your fists together and aim at the [R], speaking the invocation, [quotation mark]kwisatz haderach[quotation mark]."
+
+[The result of this then gets described in an after benjack-KHing, one for the binder, one for Naomi's book]
 
 Book 5 - Replacement Default Actions
 
