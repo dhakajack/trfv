@@ -283,7 +283,7 @@ benjack-R0 ends when the player is not in DAN8. [nursery]
 
 benjack-N1 is a scene. ["Tea Party"]
 benjack-N1 begins when the player is in M2F3.
-benjack-N1 ends when the benjack-times_bestowed of yourself is greater than 0 and the player is in M2F2.[hallway outside the nursery; safe because Naomi hasn't learned ploughver yet]
+benjack-N1 ends when the benjack-times_bestowed of yourself is greater than 0 and the player is not in M2F3.[safe because Naomi hasn't learned ploughver yet]
 
 benjack-R1 is a scene. ["Naomi is Marked and Learns Some Spells"]
 benjack-R1 begins when benjack-N1 has happened and the player is in DAN8.
@@ -1949,6 +1949,41 @@ Branding is an action applying to nothing. Understand "brand" as branding.
 Carry out branding:
 	say "Now the baby is branded. Yee haw!";
 	now yourself is benjack-baby_marked.
+
+[So we can instantly jump forward scenes to test things]
+Scenejumping is an action applying to nothing. Understand "scenejump" as scenejumping.
+Carry out scenejumping:
+	if benjack-R0 has not happened:
+		move the player to DAN8;
+		say "[bold type]/ JUMP from nothing to R0 /[roman type][paragraph break]";
+	if benjack-R0 is happening:
+		now benjack-Christabell is candid;
+		move the player to M2F3; [triggers N1]
+		say "[bold type]/ JUMP from R0 to N1 /[roman type][paragraph break]";
+	otherwise if benjack-N1 is happening:
+		move the player to M2F2;  [triggers to end N1]
+		increase the benjack-times_bestowed of yourself by one;
+		move the player to DAN8; [triggers to start R1]
+		say "[bold type]/ JUMP from N1 to R1 /[roman type][paragraph break]";
+	otherwise if benjack-R1 is happening:
+		now yourself is benjack-spell_enabled;
+		move the player to MGR1; [triggers to end R1]
+		move the player to M2F3; [trigger to start N2]
+		say "[bold type]/ JUMP from R1 to N2 /[roman type][paragraph break]";
+	otherwise if benjack-N2 is happening:
+		now yourself is benjack-baby_marked;
+		move the player to MGR1; [triggers to end N2]
+		move the player to DAN8; [trigger to start R2]
+		say "[bold type]/ JUMP from N2 to R2 /[roman type][paragraph break]";
+	otherwise if benjack-R2 is happening:
+		move the player to MGR1; [triggers end of R2]
+		move the player to M2F3; [triggers start of N3]
+		say "[bold type]/ JUMP from R2 to N3 /[roman type][paragraph break]";
+	otherwise if benjack-N3 is happening:
+		say "[bold type]/ JUMP: nope, you're in the final benjack scene. /[roman type][paragraph break]".
+
+test N2-jump with "scenejump / scenejump /scenejump / scenejump".
+test N3-jump with "scenejump / scenejump /scenejump / scenejump / scenejump / scenejump".
 
 
 Part 5 - Font Testing
