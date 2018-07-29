@@ -66,6 +66,9 @@ The examine containers rule does nothing when examining a benjack-runebook.
 Understand "read [a benjack-runebook]" as reading when the location is M2F3.
 Instead of opening a benjack-runebook, try reading the noun.
 
+Instead of inserting something (called the item) into a benjack-runebook:
+	try dropping the item.
+
 Part 2 - Conversation Disambiguation
 
 [If we run into ambiguation prompts, this is a quick way to resolve them.
@@ -768,19 +771,21 @@ Understand "window" as benjack-window when the player is in M2F3.
 The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
 Benjack-window can be cracked. Benjack-window is not cracked.
 
+Instead of entering the benjack-window:
+	try benjack-outjumping the benjack-window.
+	
+Instead of going outside when the location is M2F3 and the benjack-window is open:
+	try benjack-outjumping benjack-window.
+
 Instead of inserting something (called the item) into the benjack-window:
 	try dropping the item.
 
 Instead of touching the benjack-window, say "The glass is cool to the touch.".
 
 Instead of opening the benjack-window:
-	if benjack-N1 is happening:
-		say "The window has a child safety lock.[first time] How very uncharacteristically responsible for the Cragnes[only].";
-	otherwise if benjack-N2 is happening:
-		say ""; [TODO]
-	otherwise if benjack-N2 is happening:
-		say ""; [TODO complex mechanics of distracting Carol while opening window twice]
-
+	if benjack-N3 is not happening:
+		say "The window has a complicated child safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
+		
 [TODO:  hitting action isn't defined, nor is 'looking through'
 Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
 Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
@@ -2143,15 +2148,15 @@ To say benjack-doom2:
 To say benjack-doom3:
 	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark][paragraph break]";
 	now benjack-Carol is nowhere;
-	now benjack-Carol is unseen;
-	now benjack-mound is nowhere;
-	now benjack-mound is unseen.
+	now benjack-Carol is unseen.
 	
 Before doing anything when the doomCounter of the benjack-Denouement is 4 and benjack-Denouement is happening:
 	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
 	now benjack-naomiRunes is in M2F3;
-	now benjack-naomiRunes is seen.
-
+	now benjack-naomiRunes is seen.	
+	
+Instead of jumping when benjack-denouement is happening:
+	try benjack-outjumping the benjack-window. 
 
 Chapter 3 - Denouement Tests
 
@@ -2161,6 +2166,15 @@ When benjack-denouement ends:
 	benjack-stage-off 3;
 	now benjack-window is in M2F3;
 	now benjack-window is seen;
+	now benjack-window is closed;
+	now benjack-Carol is nowhere;
+	now benjack-Carol is unseen;
+	now benjack-Christabell is nowhere;
+	now benjack-Christabell is unseen;
+	now benjack-altar is in DAN8;
+	now benjack-altar is seen;
+	now benjack-mound is nowhere;
+	now benjack-mound is unseen;
 	now the description of M2F3 is "[one of]Shafts of sunlight filter through the filthy window, which is now closed.[paragraph break]The room is empty: the carpet has been taken up, all furniture removed, and nothing left on the walls. Dust hangs in the air of this room so long abandoned[or]A dusty room, unvisited for more than two decades[stopping].";
 	now  Benjack-clipping-sable is in benjack-naomiRunes;
 	if the benjack-times_bestowed of yourself is greater than 1:
@@ -2190,6 +2204,12 @@ Before doing anything with benjack-naomiRunes when benjack-Denouement has happen
 	
 Instead of rubbing the benjack-window when the benjack-denouement has happened:
 	say "The filth on the windows resists your best efforts.".
+	
+Before benjack-ploughvering or benjack-xizziing or benjack-KHing when benjack-denouement has happened:
+	say "[one of]As best you can figure it, having monkeyed with time, space, causality and a numerous primordial Forces that you are fortunate to not have encountered, you were never  magically marked in the first place, so not a thing happens[or]Nothing at all happens[stopping]."
+	
+Instead of opening benjack-window when benjack-denouement has happened:
+	say "It is frozen shut with age and neglect."
 	
 Book 3 - Runebook Clippings
 
@@ -2394,6 +2414,31 @@ Carry out benjack-KHing:
 	say "You join your fists together and aim at the [R], speaking the invocation, [quotation mark]kwisatz haderach[quotation mark]."
 
 [The result of this then gets described in an after benjack-KHing, one for the binder, one for Naomi's book]
+
+Part 2 - Actions of a most mundane nature
+
+Chapter 1 - Jumping Out
+
+Benjack-OutJumping is an action applying to one thing. Understand "jump out [something]" as Benjack-Outjumping when the location is in M2F3.
+
+Check Benjack-OutJumping:
+	if the noun is not benjack-window:
+		say "That's no something you can hop out of[one of] -- sorry for the terminal preposition, but this is horror[or][stopping].";
+		stop the action;
+	if the benjack-window is not open:
+		say "First of all, this window many stories above the ground; the drop would be certain death. Beyond that, though, the window is closed.";
+		stop the action.
+		
+Carry out Benjack-Outjumping:
+	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.";
+	wait for any key;
+	say "Somewhat.";
+	wait for any key;
+	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
+	now the benjack-altar is in DAN8;
+	now benjack-naomiRunes is on the benjack-altar;
+	now benjack-naomiRunes is seen;
+	move the player to DAN8.
 
 Book 5 - Replacement Default Actions
 
