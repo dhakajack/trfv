@@ -105,6 +105,10 @@ Yourself has a number called benjack-times_ploughvered. The benjack-times_plough
 
 Yourself can be benjack-ragchewing. Yourself is not benjack-ragchewing.
 
+Yourself can be benjack-KH_accomplished. Yourself is not benjack-KH_accomplished.
+
+Yourself can be benjack-guilty. Yourself is not benjack-guilty.
+
 Part 4 - Locations 
 
 Chapter DAN8 Hillside Path
@@ -2039,7 +2043,8 @@ Instead of informing benjack-Carol about benjack-WindowSubject when benjack-N3 i
 Chapter 4 - N3 Events
 
 After benjack-KHing when benjack-N3 is happening:
-	say "Carol tries to get between you and the scrapbook, but is too slow. As the book dissolves progressively to dust to small to see. Carol sags, as if suddenly exhausted.[paragraph break][quotation mark]You idiot,[quotation mark] she scolds. [quotation mark]What was that for? I[apostrophe]ve done nothing to you -- well, nothing to speak of.[quotation mark][paragraph break][quotation mark]You were growing too powerful; it makes me uncomfortable.[quotation mark][paragraph break][quotation mark]I thought you were a little more rational than that, Naomi. I am disappointed in you. That was, of course, just one of many volumes -- my power is little diminished.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds as a petty afterthought, [quotation mark]the word is Maud[apostrophe]dib. I at least read the book. When he used the weirding module, the thing he yelled was Maud[apostrophe]dib, not Kwisatz Haderach. You could at least get that one detail right.[quotation mark][paragraph break]".
+	say "Carol tries to get between you and the scrapbook, but is too slow. As the book dissolves progressively to dust to small to see. Carol sags, as if suddenly exhausted.[paragraph break][quotation mark]You idiot,[quotation mark] she scolds. [quotation mark]What was that for? I[apostrophe]ve done nothing to you -- well, nothing to speak of.[quotation mark][paragraph break][quotation mark]You were growing too powerful; it makes me uncomfortable.[quotation mark][paragraph break][quotation mark]I thought you were a little more rational than that, Naomi. I am disappointed in you. That was, of course, just one of many volumes -- my power is little diminished.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds as a petty afterthought, [quotation mark]the word is Maud[apostrophe]dib. I at least read the book. When he used the weirding module, the thing he yelled was Maud[apostrophe]dib, not Kwisatz Haderach. You could at least get that one detail right.[quotation mark][paragraph break]";
+	now yourself is benjack-KH_accomplished.
 	
 Instead of going south when benjack-N3 is happening:
 	say "[if the benjack-bedroom-door is open]The door is wide open but you[otherwise]You[end if] aren't able to move towards it.[paragraph break][benjack-stuck-n3]".
@@ -2095,7 +2100,15 @@ Chapter 6 - N3 Ends
 	
 Part 9 - Scene Denouement
 
-The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Runes of Naomi". Understand "runebook/runes" or "runes of naomi" as benjack-naomiRunes. The description of benjack-naomiRunes is "A thin book with a rough, darkened leather cover and crispy yellowed pages."
+The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi Runes". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" or "tome of naomi runes" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: Tome of Naomi Runes."
+
+Instead of reading the benjack-NaomiRunes:
+	if benjack-NaomiRunes is closed:
+		say "You carefully lay open the crusty leather-clad book revealing";
+		now benjack-NaomiRunes is open;
+	otherwise:
+		say "You see";
+	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-naomiRunes][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-naomiRunes][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-naomiRunes][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-naomiRunes][bold type][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-naomiRunes][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
 
 benjack-denouement has a number called doomCounter. The doomCounter is 0.
 
@@ -2103,7 +2116,6 @@ Instead of reading benjack-naomiRunes:
 	say "The book has a number of entries, each corresponding to a faded clipping:".
 	[TODO: populated the runebook, read titles.]
 	
-
 Chapter 1 - Denouement Begins
 
 Chapter 2 - Denouement Events
@@ -2126,16 +2138,16 @@ To say benjack-doom1:
 	say "Christabell pours in through the window. Not literally as a person, but her powers, which you have greatly underestimated to this point. In your spectral vision, you perceive a crimson stream flooding into the room -- and into you.[paragraph break][if benjack-Carol is not disruption_informed]Carol is caught unaware and backs to a corner, for once stripped of her air of superiority. [quotation mark]Naomi,[quotation mark] she screams, [quotation mark]by the Elders Gods themselves, I swear you have sealed your doom![quotation mark] The crimson energy flings Carol left and right, but she pulls herself up again leaning heavily on the wall.[paragraph break][end if][if benjack-scrap-19 is nowhere]Through force of habit, Carol reaches behind herself to draw energy from her book of Runes, only recalling too late that you destroyed it. Instead, temporizing, with a flick of her hand she signals her minions to attack. Master Sweetpaws backhands the raggedy clown as he bounds off the shelf, his talons outstretched and jaws wide, leaping straight towards you from his perch. You reflexively lift your hand to shield your face and are surprised as raw magic pours from, constricting to a narrow beam that slices through the ferocious sock puppet, and then continues through his charred fabric to impale Malice the Clown.[paragraph break][end if]You throw a spinning, glowing glob of magic at Carol and it engulfs her; she agonizes within it like a bug in molasses, her screams drowned in its crackling energy as she falls to her knees. As she struggles to her knees, she manages to push one hand clear of the swirling crimson miasma and with that hand she sends her own reverberating wave of cobalt blue magic towards you, more specifically, towards you belly. Something with in you shudders and kicks, an innocent caught in unaware in a cosmic conflict."
 	
 To say benjack-doom2:
-	say "Thundering energies wind through you in opposing directions, pitting you helplessly against your own unborn child.[paragraph break]The air vibrates, [quotation mark]Carol, I do forbid your Apostasy! You shall not unwrite the Third Covenant; the Servants that overthrew the Elder Gods will not abide their Return. I do command you: abandon forthwith your senseless Attack, for if you do destroy the Woman Naomi, so do you destroy the Vessel of your owne Mark.[quotation mark] The words are punctuated by a renewed tide of crimson force.[paragraph break]Carol only redoubles her efforts, [quotation mark]Not so, Christabell. My Vessel need only survive a heart beat beyond that of its mother for me to break from my circular prison. Then we shall see how the Elder Gods reshape the world.[quotation mark]".
+	say "Thundering energies wind through you in opposing directions, pitting you helplessly against your own unborn child.[paragraph break]The air vibrates, [quotation mark]Carol, I do forbid your Apostasy! You shall not unwrite the Third Covenant; the Servants that overthrew the Elder Gods will not abide their Return. I do command you: abandon forthwith your senseless Attack, for if you do destroy the Woman Naomi, so do you destroy the Vessel of your owne Mark.[quotation mark] The words are punctuated by a renewed tide of crimson force.[paragraph break]Carol only redoubles her efforts, [quotation mark]Not so, Christabell. My Vessel need only survive a heart beat beyond that of its mother for me to break from my circular prison. Then we shall see how the Elder Gods reshape the world.[quotation mark][paragraph break]".
 	
 To say benjack-doom3:
-	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark]";
+	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark][paragraph break]";
 	now benjack-Carol is nowhere;
 	now benjack-Carol is unseen;
 	now benjack-mound is nowhere;
 	now benjack-mound is unseen.
 	
-Before doing anything when the doomCounter of the benjack-Denouement is 4:
+Before doing anything when the doomCounter of the benjack-Denouement is 4 and benjack-Denouement is happening:
 	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
 	now benjack-naomiRunes is in M2F3;
 	now benjack-naomiRunes is seen.
@@ -2145,25 +2157,40 @@ Chapter 3 - Denouement Tests
 
 Chapter 4 - Denouement Ends
 
-When benjack-N3 ends:
+When benjack-denouement ends:
 	benjack-stage-off 3;
 	now benjack-window is in M2F3;
 	now benjack-window is seen;
-	now the description of M2F3 is "[one of]Shafts of sunlight filter through the filthy window, which is now closed.[paragraph break]The room is empty: the carpet has been taken up, all furniture removed, and nothing left on the walls. Dust hangs in the air of this room so long abandoned[or]A dusty room, unvisited for more than two decades[stopping]."
+	now the description of M2F3 is "[one of]Shafts of sunlight filter through the filthy window, which is now closed.[paragraph break]The room is empty: the carpet has been taken up, all furniture removed, and nothing left on the walls. Dust hangs in the air of this room so long abandoned[or]A dusty room, unvisited for more than two decades[stopping].";
+	now  Benjack-clipping-sable is in benjack-naomiRunes;
+	if the benjack-times_bestowed of yourself is greater than 1:
+		now Benjack-clipping-convict is in benjack-naomiRunes;
+	if the benjack-times_bestowed of yourself is greater than 2:
+		now Benjack-clipping-body is in benjack-naomiRunes;
+	if the  benjack-times_ploughvered of yourself is greater than 0:
+		now Benjack-clipping-orphan is in benjack-naomiRunes;
+	if the  benjack-times_ploughvered of yourself is greater than 1:
+		now Benjack-clipping-boardwalk is in benjack-naomiRunes;	
+	if the  benjack-times_ploughvered of yourself is greater than 1:
+		now Benjack-clipping-hargreaves is in benjack-naomiRunes;
+	if yourself is benjack-KH_accomplished:
+		now Benjack-clipping-9 is in benjack-naomiRunes;
+	if yourself is benjack-guilty:
+		now Benjack-clipping-10 is in benjack-naomiRunes.
+	
+	Part 10 - Apres
+
+[Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
+
+Before doing anything with benjack-naomiRunes when benjack-Denouement has happened for the first time:
+	say "A photograph flitters out of the Rune Book, spirals around you and floats to the ground.";
+	now jpk-photo is in the location;
+	now jpk-photo is seen;
+	continue the action.
 	
 Instead of rubbing the benjack-window when the benjack-denouement has happened:
 	say "The filth on the windows resists your best efforts.".
-
-Part 10 - Scene Apres
-
-Chapter 1 - Apres Begins
-
-Chapter 2 - Apres Events
-
-Chapter 3 - Apres Tests
-
-Chapter 4 - Apres Ends
-
+	
 Book 3 - Runebook Clippings
 
 To tell ( blahblah - a list of text):
@@ -2204,7 +2231,7 @@ Benjack-clipping-convict is a benjack-clipping.
 The title of Benjack-clipping-convict is "Watery Fate for Convict".
 The list of text called Benjack-clipping-convict-text is always {"It looks like the icy hand of justice caught up to escaped murderer Gustave Dellorto earlier today, when his body was recovered at low tide from the Execution Rocks lighthouse in the Long Island Sound.[paragraph break]Leslie Stovebow, the lighthouse keeper who resides in a small residence at the base of the tower, discovered the body this morning as the tide went out. The body was still clad in the striped uniform of the Sing Sing Prison from which he escaped last night.[paragraph break]Mamaroneck, NY police raced against time to remove the body from where it had become lodged in the boulders before the time came back in, submerging the rocks. They successfully identified the body by confirming the number on the uniform matched that of the escaped killer. It is not clear why Dellorto chose to flee to the island, but police suspect he was hoping to murder the lighthouse keeper and go to ground there until his trail grew cold.[paragraph break]Dellorto was convicted of three cases of first degree murder in the winter of 1951, including one G-man, and was suspected of homicide in seven additional cases. It is believed that his crimes were connected to organized crime. He was sentenced to capital punishment, but pardoned after appeal two years ago by Governor Dewey.[paragraph break]Execution Rocks inherits its name from the colonial period, where legend goes that disobedient slaves were shackled at low tide, and served as examples for others, being left there to slowly drown in the pounding waves. This story is considered apocryphal by most, but today, the lighthouse earned its name.[paragraph break][one of][benjack-but-wait-theres-more][or][stopping][paragraph break]CORRIGENDUM[paragraph break]Gustave Dellorto, who escaped from Sing Sing prison earlier this month, was arrested in Detroit, Michigan, yesterday leaving in his wake a fresh series of murders committed during a two-week spree across several states. It was previously reported in error that he had died by drowning in the Long Island Sound, but the body recovered in that incident is now known to be that of Francis Dapper, age 19 of Larchmont, New York, who had been working at the Purdue Island Yacht Club the evening that Gustave escaped. One of the club launches, which had been brought ashore for the winter, was discovered missing later that week. Police believe that it was probably used by Dellorto to reach the Execution Rocks lighthouse, where he abandoned his victim[apostrophe]s body, after swapping clothes to fake his own death in an attempt to evade capture."}.
 The content of Benjack-clipping-convict is Benjack-clipping-convict-text.
-Understand "water/fate/convict/for" as Benjack-clipping-convict when the location is in the benjack-realm.
+Understand "watery/fate/convict/for" as Benjack-clipping-convict when the location is in the benjack-realm.
 
 [doing the very side effect-within-say that I warn against:]
 To say benjack-but-wait-theres-more:
