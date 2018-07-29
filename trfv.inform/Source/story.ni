@@ -60,6 +60,8 @@ A benjack-runebook is a kind of opaque openable container.
 A benjack-runebook can be either open or closed. A benjack-runebook is usually closed.
 The examine containers rule does nothing when examining a benjack-runebook.
 
+[TODO inhibit taking runebooks]
+
 [Paralleling the project's use of read, but scoped down for this special case]
 Understand "read [a benjack-runebook]" as reading when the location is M2F3.
 Instead of opening a benjack-runebook, try reading the noun.
@@ -302,6 +304,14 @@ benjack-R2 ends when the player is not in DAN8.
 benjack-N3 is a scene. ["Boss Battle"]
 benjack-N3 begins when benjack-R2 has happened and the player is in M2F3.
 benjack-N3 ends when benjack-Carol is not in M2F3.
+
+benjack-Denouement is a scene. [Jump out window or not]
+benjack-Denouement begins when benjack-window is open.
+benjack-Denouement ends when benjack-naomiRunes is in M2F3 or benjack-naomiRunes is in DAN8.
+
+
+
+
 
 [might need some auxiliary scenes -- we'll figure that out as we code.]
 
@@ -1018,7 +1028,7 @@ After quizzing benjack-Carol about benjack-scrap-5:
 
 [quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}[quotation mark]Mirror, what mirror? What are you talking about, Naomi?[quotation mark] asks Carol.{endif}]
 
-Chapter 4 - N1 Event
+Chapter 4 - N1 Events
 
 [kill the (empty) in inventory listings durng this scene]
 Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
@@ -1298,7 +1308,7 @@ After quizzing benjack-Christabell about benjack-PloughverSpell:
 After quizzing benjack-Christabell about benjack-KHSpell :
 	say "Christabell reminds you that this is the spell that you can use to destroy Carol[apostrophe]s book of runes."
 	
-Chapter 3 - R1 Event
+Chapter 3 - R1 Events
 
 Instead of going a direction (called the way) during benjack-R1:
 	if benjack-Christabell is run-down:
@@ -1543,7 +1553,7 @@ After informing benjack-Carol about benjack-ChristabellSubject when benjack-N2 i
 After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N2 is happening:
 	say "Carol mentions that Misses Winkelbottom had an accident, but everyone else is in good spirits."
 
-Chapter 4 - N2 Event
+Chapter 4 - N2 Events
 
 Chapter 5 - N2 Tests
 
@@ -1638,7 +1648,7 @@ Instead of informing or quizzing benjack-Christabell about benjack-babySubject w
 Instead of informing benjack-Christabell about benjack-mark when benjack-R2 is happening:
 	try informing benjack-Christabell about benjack-babySubject .
 
-Chapter 3 - R2 Event
+Chapter 3 - R2 Events
 
 Instead of benjack-ploughvering when benjack-R2 is happening and the player is benjack-ploughver-inhibited:
 	say "[benjack-mark-glued]";
@@ -1997,7 +2007,10 @@ Instead of informing or quizzing benjack-Carol about benjack-mark when benjack-N
 Instead of informing or quizzing benjack-Carol about benjack-ChristabellSubject when benjack-N3 is happening:
 	try quizzing benjack-Carol about benjack-babySubject.
 
-Chapter 4 - N3 Event
+Chapter 4 - N3 Events
+
+
+
 
 Chapter 5 - N3 Tests
 
@@ -2005,6 +2018,32 @@ Chapter 6 - N3 Ends
 
 When benjack-N3 ends:
 	benjack-stage-off 3.
+	
+Part 9 - Scene Denouement
+
+The benjack-naomiRunes is a benjack-runebook. The The printed name of the benjack-naomiRunes is "Runes of Naomi". Understand "runebook/runes" or "runes of naomi" as benjack-naomiRunes. The description of benjack-naomiRunes is "A thin book with a rough, darkened leather cover and crispy yellowed pages."
+
+Instead of reading benjack-naomiRunes:
+	say "The book has a number of entries, each corresponding to a faded clipping:".
+	[TODO: populated the runebook, read titles.]
+
+Chapter 1 - Denouement Begins
+
+Chapter 2 - Denouement Events
+
+Chapter 3 - Denouement Tests
+
+Chapter 4 - Denouement Ends
+
+Part 10 - Scene Apres
+
+Chapter 1 - Apres Begins
+
+Chapter 2 - Apres Events
+
+Chapter 3 - Apres Tests
+
+Chapter 4 - Apres Ends
 
 Book 3 - Runebook Clippings
 
