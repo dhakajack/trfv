@@ -38,7 +38,7 @@ Instead of examining a benjack-shadow (called the shadow):
 	otherwise if benjack-N2 is happening:
 		say the N2-desc of the shadow;
 	otherwise if benjack-N3 is happening:
-		say the N2-desc of the shadow;
+		say the N3-desc of the shadow;
 	otherwise:
 		say "Error: no description available.";
 	say "[paragraph break]".
@@ -268,6 +268,8 @@ To benjack-stage-off ( setnumber - a number):
 		now item is nowhere.
 
 Book 2 - Scenes
+
+Part 1 - Scene Start and Stop Criteria
 
 [R0 -> N1 -> R1 -> N2 -> R2 -> N3]
 
@@ -618,7 +620,8 @@ Understand "doll/ dolls / animal/ animals/ stuffed / toys" as the benjack-dolls 
 The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow. The printed name of the benjack-elephant is "toy elephant".
-Understand "elephant" or "mister" or "snortles" as the benjack-elephant when the player is in M2F3.
+Understand "elephant" or "mister" or "snortles" as "[benjack-snortlesToken]".
+Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is in M2F3.
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
 The benjack-monkey is a benjack-shadow. The printed name of the benjack-monkey is "toy monkey".
@@ -1138,7 +1141,7 @@ benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-Ploughve
 
 benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm.
 
-benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring" as benjack-babySubject when the location is in the benjack-realm.
+benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring/pregnant/preggers" as benjack-babySubject when the location is in the benjack-realm.
 
 Section 2 - R1 Quips
 
@@ -1424,9 +1427,13 @@ benjack-missingIke is a subject.  Understand "portrait/president/eisenhower/pict
 
 benjack-LBJ is a subject.  Understand "lyndon/baynes/bloated/johnson/president" or "president johnson" as benjack-subjectNixon when the location is M2F3. The printed name of benjack-LBJ is "President Johnson".
 
-benjack-subjectNixon is a subject.  Understand "president/richard/millhouse/nixon/tricky/dick" or "president nixon" as benjack-subjectNixon when the location is M2F3. The  printed name of benjack-subjectNixon is "President Nixon".
+benjack-subjectNixon is a subject.  Understand "[benjack-nixonToken]" as benjack-subjectNixon when the location is M2F3 and benjack-N2 is happening. 
 
-benjack-subjectKennedy is a subject.  Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as benjack-subjectKennedy when the location is M2F3. The printed name of benjack-subjectKennedy is "President Kennedy".
+Understand "president/richard/millhouse/nixon/tricky/dick" or "president nixon" as "[benjack-nixonToken]".
+
+benjack-subjectKennedy is a subject.  Understand "[benjack-kennedyToken]" as benjack-subjectKennedy when the location is M2F3 and benjack-N2 is happening.
+
+Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as "[benjack-kennedyToken]".
 
 benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm.
 
@@ -1437,7 +1444,7 @@ benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when
 benjack-thresher is a subject.  Understand "thresher" as benjack-thresher when the location is in the benjack-realm.
 
 benjack-WinkelbottomSubject is a subject. Understand "winkelbottom/lamb/misses" as 
-benjack-WinkelbottomSubject when the location is M2F3 and benjack-N2 is happening.
+benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happened.
 
 Section 2 - N2 Quips
 
@@ -1707,14 +1714,26 @@ The N3-desc of benjack-powerswitch is "".
 
 The benjack-screen is a benjack-shadow.  The printed name of the benjack-screen is "display screen".
 Understand "display/screen/CRT/monitor" as benjack-screen when the player is in M2F3.
-The N3-desc of benjack-screen is "".
+The N3-desc of benjack-screen is "White characters on a black background[paragraph break][fixed letter spacing]
+OF THE ARTIFACTS IDENTIFIED BY ZOND-3 AND HAVE BROUGHT[line break]
+THEM BACK TO THE LUNAR EXCURSION MODULE. THEY ARE EN-[line break]
+CRUSTED IN REGOLITH, WHICH IS FIRMLY ADHERENT. BLETCHLEY[line break]
+ADVISES NOT TO MANIPULATE FURTHER WITHOUT PROPER TOOLS.[line break]
+UNTIL THEY ARE RETURNED TO EARTH. IT WAS POSSIBLE,[line break]
+HOWEVER TO IDENTIFY TWO OF THE GLYPHS THAT YOU HAD[line break]
+DRAWN FOR US: A-73 AND TO ITS RIGHT A-14. [line break]
+THE SURVIVING TEAM HAD TO LEAVE THE UPPER UNIT IN PLACE[line break]
+DUE TO LIMITED OXYGEN SUPPLY, BUT WERE ABLE TO SAMPLE[line break] 
+ONE OF THE FUNGATING MASSES NEAR THE THORAX. I WILL[line break] 
+ADVISE WHEN THESE SAMPLES HAVE CLEARED DECONTAMINATION[line break] 
+PROCEDURE AND ARE READY FOR YOUR EXAMINATION.[variable letter spacing]".
 
 The benjack-shelves are a benjack-shadow.  The printed name of the benjack-shelves is "shelves".
 Understand "shelf/shelves" as benjack-shelves when the player is in M2F3.
 The N3-desc of benjack-shelves is "".
 
 The benjack-art is a benjack-shadow.  The printed name of the benjack-art is "three pieces of art".
-Understand "art/sculptures/sculpture" or "pieces of art" as benjack-art when the player is in M2F3.
+Understand "art/sculptures" or "pieces of art" as benjack-art when the player is in M2F3.
 The N3-desc of benjack-art is "".
 
 The benjack-Nixon is a benjack-shadow.  The printed name of the benjack-Nixon is "portrait of President Nixon".
@@ -1722,20 +1741,20 @@ Understand "president/nixon/richard/millhouse/portrait/picture/photo/photograph"
 The N3-desc of benjack-nixon is "".
 
 The benjack-egg is a benjack-shadow.  The printed name of the benjack-egg is "opalescent egg".
-Understand "opalescent/egg/sculpture/left/leftmost" as benjack-egg when the player is in M2F3.
+Understand "opalescent/egg/sculpture/left/leftmost/megalokyniklosaurus/vernalis/bunny/rabbit/easter/dinosaur/raptor/velociraptor/killer" as benjack-egg when the player is in M2F3.
 The N3-desc of benjack-egg is "".
 
-The benjack-tile is a benjack-shadow.  The printed name of the benjack-tile is "black thermal tile/sculpture/middle/center".
-Understand "black/thermal/tile/space/shuttle/ceramic/brick/heat/shield/insulator" as benjack-tile when the player is in M2F3.
+The benjack-tile is a benjack-shadow.  The printed name of the benjack-tile is "black ceramic tile".
+Understand "jet/black/thermal/tile/space/shuttle/ceramic/brick/heat/shield/insulator/middle/center/centre" as benjack-tile when the player is in M2F3.
 The N3-desc of benjack-tile is "".
 
-The benjack-ambiguity is a benjack-shadow.  The printed name of the benjack-ambiguity is "nothing".
-Understand "right/sculpture" as benjack-tile when the player is in M2F3.
+The benjack-ambiguity is a benjack-shadow.  The printed name of the benjack-ambiguity is "conspicuous absence of space".
+Understand "right/sculpture" as benjack-ambiguity when the player is in M2F3.
 The N3-desc of benjack-ambiguity is "(which of the three sculptures do you mean, the one on the left or one in the middle?)".
 
-The benjack-claws are a benjack-shadow.  The printed name of the benjack-claws is "nothing".
-Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-tile when the player is in M2F3.
-The N3-desc of benjack-tile is "".
+The benjack-claws are a benjack-shadow.  The printed name of the benjack-claws is "claws".
+Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-claws when the player is in M2F3.
+The N3-desc of benjack-claws is "".
 
 The benjack-tapedeck is a benjack-shadow.  The printed name of the benjack-tapedeck is "reel to reel recorder".
 Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic" as benjack-tapedeck when the player is in M2F3.
@@ -1749,13 +1768,234 @@ To say benjack-scrap-19-desc:
 	say "TODO: TBD".
 	
 [note that these items must be declared forward of this list]
-The list of things called N3-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrap-19}.
+The list of things called N3-furnishings is always {benjack-comforter, benjack-bed, benjack-dolls, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-table, benjack-beasts, benjack-toychair, benjack-clothing, benjack-stackedBooks, benjack-deskChair, benjack-looseleaf , benjack-fluorescentLight, benjack-terminal, benjack-keyboard, benjack-powerswitch, benjack-screen, benjack-shelves, benjack-Nixon, benjack-egg, benjack-tile, benjack-ambiguity, benjack-claws, benjack-tapedeck, benjack-window, benjack-scrap-19, benjack-art}.
 
 Chapter 3 - N3 Conversation
 
 Section 1 - N3 Subjects
 
+benjack-intel is a subject.  Understand "intel/corporation/microprocessor/microprocessors/cpu/cpus/central/processing/unit/units/chip/chips" as benjack-intel when the location is M2F3 and benjack-N3 is happening.
+
+benjack-vietnam is a subject.  Understand "vietnam/peace/talk/talks/accord/accords/conference/summit/negotiation/negotiations" as benjack-vietnam when the location is M2F3 and benjack-N3 is happening.
+
+
+benjack-assassination is a subject.  Understand "assassination/assassinations/martin/luther/king/reverend" or "[benjack-kennedyToken]" as benjack-assassination when the location is M2F3 and benjack-N3 is happening.
+
+benjack-college is a subject.  Understand "college/university/school/middlebury/linguistics" as benjack-college when the location is M2F3 and benjack-N3 is happening.
+
+benjack-suicide is a subject.  Understand "commit/suicide/suiciding" as benjack-suicide when the location is M2F3 and benjack-N3 is happening.
+
+benjack-boyfriend is a subject.  Understand "boyfriend/donald/trump/don" as benjack-boyfriend when the location is M2F3 and benjack-N3 is happening.
+
+benjack-elephantSubject is a subject.  Understand "[benjack-snortlesToken]" as benjack-elephantSubject when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-elephantSubject is "Mister Snortles".
+
+benjack-moon is a subject.  Understand "moon/luna/fungating/artifact/artefact/artifats/artefacts/fungating/mass/masses/thorax" as benjack-moon when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-regolith is a subject.  Understand "regolith" as benjack-regolith when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-zond3 is a subject.  Understand "zond/zond-3/probe/far-side/dark-side/darkside" or "far side" or "dark side" as benjack-zond3 when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-lem is a subject.  Understand "lem/lunar/command/module/escape/ascent/lam/apollo/rocket/saturn/mission/landing" as benjack-lem when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-nekton is a subject.  Understand "project/nekton" as benjack-nekton when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-glyphs is a subject.  Understand "glyph/glyphs/writing/writings/arcane/ancient/letter/letters/lettre/lettres" as benjack-glyphs when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-decontamination is a subject.  Understand "decon/decontamination/sterilization/disinfection/cleaning" as benjack-decontamination when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-lostSubs is a subject.  Understand "Dakar/s647/minerve/k-129/scorpion" as benjack-lostSubs when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-sigint is a subject.  Understand "sigint" as benjack-sigint when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-elint is a subject.  Understand "elint" as benjack-elint when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-cw is a subject.  Understand "cw/morse/code/distress/signal/beacon/message" as benjack-cw when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-idf is a subject.  Understand "idf" as benjack-idf when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-pentacle is a subject.  Understand "pentacle/deep1/catacon" as benjack-pentacle when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-br1150 is a subject.  Understand "br1150/plane/atlantic/surveillance/recon/reconnaissance" as benjack-br1150 when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-hydrophone is a subject.  Understand "hydrophone/hydrophonic" as benjack-hydrophone when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-milcoord is a subject.  Understand "milcoord" as benjack-milcoord when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-navcomgr1 is a subject.  Understand "navcomgr1" as benjack-navcomgr1 when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-medcar is a subject.  Understand "medcar" as benjack-medcar when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-sosus is a subject.  Understand "sosus" as benjack-sosus when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-bletchley is a subject.  Understand "bletchley/park/enigma/turing" as benjack-bletchley when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-lwah is a subject.  Understand "lwah" as benjack-lwah when the location is M2F3 and benjack-N3 is happening. 
+
+benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolphin/dolphins/porpoise/porpoises" as benjack-popeyeTSM when the location is M2F3 and benjack-N3 is happening. 
+
+[benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is M2F3 and benjack-N3 is happening. ]
+
+
+[popeyetsm]
+
+
 Section 2 - N3 Quips
+
+After quizzing benjack-Carol about benjack-Nixon when benjack-N3 is happening:
+	say "[one of][quotation mark]He stands for everything I believe in: integrity, tradition, and the natural destiny of America to lead the world into the coming millennium. That[apostrophe]s why I decided to work on his campaign rather than take my acceptance to Middlebury.[quotation mark][or]Carol tells you she is his biggest fan. He can do no wrong by her.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-america when benjack-N3 is happening:
+	say "[one of][quotation mark]After seeing everything going on in America this past year: the long-haired free love freaks, drugs, the degenerate culture of rock-and-roll, people too self-entitled to defend their country from the Gooks in Vietnam, Blacks riding busses and voting -- all of it, I just couldn[apostrophe]t sit on the sidelines. I wanted to do more than just bring about the Ascendance of the Elder Gods. That[apostrophe]s going to take time, and I know that I only live another few months before my suicide, so I decided to join the Nixon campaign and make a difference.[quotation mark][or][quotation mark]It[apostrophe]s going to hell in a handbasket,[quotation mark] replies Carol, [quotation mark]and not in a good way.[quotation mark] [stopping][paragraph break]".
+	
+After informing benjack-Carol about benjack-america when benjack-N3 is happening:
+	say "[one of][quotation mark]Carol, I am from the future, I assure you that this plan of yours fails. The idea that the country could be ruled by a bigoted, narcissistic miscreant like you is unthinkable.[quotation mark]Carol smiles smugly.[no line break][or]You try to convince Carol that her plan does not succeed in the future, but her confidence is not shaken in the least.[no line break][stopping][paragraph break]".	
+	
+After informing benjack-Carol about benjack-intel when benjack-N3 is happening:
+	say "[quotation mark]I[apostrophe]m not sure how this all figure into it, but in my day, in the 90s, most of the computers that we use have Intel chips in them. I have long suspected a diabolical cause.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-vietnam when benjack-N3 is happening:
+	say "[one of][quotation mark]The timing was wrong for Nixon, so I sent Sweetpaws to make sure they didn[apostrophe]t happen.[quotation mark][paragraph break]Carol looks over at the shelfs above her desk. [quotation mark]What[apostrophe]s that Master Sweetpaws? Oh yes, the geopolitical ramifications would indeed have been thorny.[quotation mark][or]Carol explains how Master Sweetpaws craftily manipulated global interests to ensure that the 1968 peace talks to end the war in Vietnam collapsed, undermining President Lyndon B. Johnson[apostrophe]s re-election campaign.[no line break][stopping][paragraph break]".
+	
+After informing benjack-Carol about benjack-vietnam when benjack-N3 is happening:
+	say "You tell Carol that the failure of the Vietnam peace talks in 1968 must have cost the lives of tens of thousands of people."
+	
+After quizzing benjack-Carol about benjack-elderGods when benjack-N3 is happening:
+	say "Carol claims that most of the important events of 1968 were part of her and her father[apostrophe]s plan to alter history to bring about the dominion of the Elder Gods."
+	
+After quizzing benjack-Carol about benjack-assassination when benjack-N3 is happening:
+	say "[one of][quotation mark]As soon as you swat one, another pops up. First JFK -- I thought that set things right. But as soon as he was fixed, up steps RFK and everything drifts back towards the same futures. And don[apostrophe]t even get me started on Martin Luther King.[quotation mark][or]Carol claims that the she orchestrated the assassinations of both Robert Kennedy and Martin Luther King with the assistance of the Deep Ones.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-college when benjack-N3 is happening:
+	say "[one of][quotation mark]I was accepted to Middlebury last term; turns out I have some aptitude for languages. I was going to major in linguistics with a minor maybe in history, but the more I looked at the school, the more I realized how unhappy I would be there. Do you know that they are actually trying to promote enrollment of everyone but Whites?  I decided to volunteer for the Nixon campaign instead.[quotation mark][or][quotation mark]I decided not to go there and decided to volunteer for the Nixon campaign instead,[quotation mark] replies Carol.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-suicide when benjack-N3 is happening:
+	say "[one of][quotation mark]As I[apostrophe]ve matured, I[apostrophe]ve gained some insight into what is happening, both in my life and in this unfolding. I remember all your visits now, for instance, clearly. And with the aid of the Elder Gods, I[apostrophe]m even beginning to be able to see around the corners and branches of things that haven[apostrophe]t happened yet -- some will, some won[apostrophe]t. That part is hard to sort out, of course.[quotation mark][paragraph break][quotation mark]My suicide, however is unavoidable. If it hadn[apostrophe]t happened a few months from now, we wouldn[apostrophe]t have been talking now and in the past.[quotation mark][paragraph break][quotation mark]I can see what Christabell did to me then, but can[apostrophe]t change it. She was jealous of my power and future place with the Elder Gods, but even more so, she felt spurned because I chose my boyfriend over her.[quotation mark][or]Carol says Christabell is responsible for driving her to suicide before the end of 1969. Carol suspects that Cristabell was jealous that she had a boyfriend.[no line break][stopping][paragraph break]".
+
+After quizzing benjack-Carol about benjack-boyfriend when benjack-N3 is happening:
+	say "[one of][quotation mark]In retrospect, he[apostrophe]s a bastard. If I could tell the myself that when I was my age -- with the 20-20 hindsight of temporal paradox, of course -- I would have walked away from him regardless of the what the Elder Gods saw in him.[quotation mark][paragraph break][quotation mark]But at the time, I couldn[apostrophe]t see that. He had just graduated from Wharton and entered into the family real estate business in New York City. There was no question that he would go places, especially with the inchoate horrors of primordial chaos pulling for him as they were.[quotation mark][or]Carol recognizes that her boyfriend back in 1969 was a clod, but it[apostrophe]s likely that Christabell pushed her to suicide because of jealousy over Carol[apostrophe]s relationship with him.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-carolFather when benjack-N3 is happening:
+	say "[one of][quotation mark]I don[apostrophe]t like to brag,[quotation mark] Carol brags, [quotation mark]but father has done quite well for himself, not only is he Senior Executive Vice-President in charge of the Electric Boat Division of General Dynamics, but he is now an advisor on President Nixon[apostrophe]s National Security Council.[quotation mark][or]Carol says her father has worked his way onto President Nixon[apostrophe]s National Security Council, where he is privy to the even the most secret machinations of the American government.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-generalDynamics when benjack-N3 is happening:
+	say "Carol informs you that General Dynamics is the nation[apostrophe]s lead defense contractor for submarine construction."
+	
+After quizzing benjack-Carol about benjack-submarine when benjack-N3 is happening:
+	say "[one of][quotation mark]Oh, I don[apostrophe]t know all that much about them. Father knows all the technical stuff. I just help coordinate what we do with the Deep Ones.[quotation mark][or]Carol admits she isn[apostrophe]t up on the technical aspects of submarines, but they do play a role in her business with the Deep Ones.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-carolMother when benjack-N3 is happening:
+	say "[one of][quotation mark]Oh, mother expired some time ago, actually. Father says that her hostess skills were helpful earlier in his career, but she really had nothing to offer these last few years and was getting to be something of a drag.[quotation mark][or]Apparently, Carol[apostrophe]s mother died some time ago; the cause isn[apostrophe]t really clear and Carol doesn[apostrophe]t seem disposed to elaborate.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-terminal when benjack-N3 is happening:
+	say "[one of][quotation mark]I told father that sometimes I felt left out, so he had it set up for me. It helps me keep abreast of what[apostrophe]s going on here and there.[quotation mark][or]Carol seems to be plugged in to a high-level government information feed. The technology is astounding considering the era. There must be a mainframe somewhere within the mansion.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-scrap-19 when benjack-N3 is happening:
+	say "[one of][quotation mark]It was getting heavy, so a couple years ago I started dividing them up into volumes. Feel free to peruse the latest Runes -- we[apostrophe]ve been very busy lately![quotation mark][or][quotation mark]Feel free to peruse the latest Runes -- we[apostrophe]ve been very busy lately![quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-elephantSubject when benjack-N3 is happening:
+	say "[one of][quotation mark]Poor Mister Snortles was getting on in years, and had some health issues, and Master Sweetpaws thought it best if we put him down. For his own good, really.[quotation mark][or]Carol says that Master Sweetpaws suggested doing away with Mister Snortles the Elephant when he became too weak to defend himself.[no line break][stopping][paragraph break]";
+	
+After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N3 is happening:
+	say "[one of][quotation mark]Haven[apostrophe]t seen her for years,[quotation mark] Carol replies. [quotation mark]I don[apostrophe]t recall whatever became of her.[quotation mark][or]Carol seems to have repressed the memory of Misses Winkelbottom[apostrophe]s gory demise and subsequent consumption by her other stuffed dolls.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-clown when benjack-N3 is happening:
+	say "[quotation mark]Malice hasn[apostrophe]t been quite himself lately; he isn[apostrophe]t eating like he used to -- I think he may be a little down.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-monkey when benjack-N3 is happening:
+	say "[one of][quotation mark]Am I my monkey[apostrophe]s keeper?[quotation mark] Carol asks rhetorically. [quotation mark]He keeps himself busy and comes and goes as he pleases. I try not to micromanage him.[quotation mark][or][quotation mark]He[apostrophe]s a busy, little monkey, aren[apostrophe]t you, Sweetpaws?[quotation mark][or]Carol neither knows nor cares what her bloodthirsty little familiar has been up to. All that matters to her is that he does what needs doing.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-moon when benjack-N3 is happening:
+	say "[one of][quotation mark]That need not concern you. Soon the last traces of the usurping gods will be swept away and the Elder Gods restored to their glory.[quotation mark][or]Carol evades your question.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-regolith when benjack-N3 is happening:
+	say "[quotation mark]It[apostrophe]s moonrock,[quotation mark] replies Carol helpfully."
+	
+After quizzing benjack-Carol about benjack-zond3 when benjack-N3 is happening:
+	say "[one of][quotation mark]It was a Soviet probe that photographed the far-side of the moon at high resolution and saw some things… that needed to be dealt with.[quotation mark][or][quotation mark]It was a Soviet probe that photographed the far-side of the moon.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-lem when benjack-N3 is happening:
+	say "[one of][quotation mark]When Apollo astronauts land on the moon, the part of the rocket that lands on the moon is the LEM or lunar escape module. When it[apostrophe]s time for them to leave, the upper part of the LEM called the lunar ascent module separates and flies up to dock with the lunar command module in lunar orbit.[quotation mark][or][quotation mark]All part of the moonshot.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-nekton when benjack-N3 is happening:
+	say "[quotation mark]The Navy[apostrophe]s ill-considered attempt to deal with the Deep Ones without consulting me or my father.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-glyphs when benjack-N3 is happening:
+	say "[quotation mark]I have mastered only a few of the symbols of the language of the Elder Gods -- the ones that can be drawn without going insane.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-decontamination when benjack-N3 is happening:
+	say "[quotation mark]You can never be too careful; best to disinfect everything -- with fire.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-lostSubs when benjack-N3 is happening:
+	say "[quotation mark]When we ask the Deep Ones for help, there is always a price.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-sigint when benjack-N3 is happening:
+	say "[quotation mark]Short for [apostrophe]signals intelligence[apostrophe], basically eavesdropping on radio signals.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-elint when benjack-N3 is happening:
+	say "[quotation mark]Short for [quotation mark]electronics intelligence[apostrophe]; the plane overflies an area snoops around.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-cw when benjack-N3 is happening:
+	say "[quotation mark]It stands for [apostrophe]continuous wave[apostrophe], but means morse code.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-idf when benjack-N3 is happening:
+	say "[quotation mark]I think it means Israeli Defense Force.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-pentacle when benjack-N3 is happening:
+	say "[quotation mark]Actually, I don[apostrophe]t know. Very official and hush-hush. The military does love their abbreviations.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-br1150  when benjack-N3 is happening:
+	say "[quotation mark]It[apostrophe]s a kind of plane. British, I think.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-hydrophone  when benjack-N3 is happening:
+	say "[quotation mark]A hydrophone is like a microphone that you can put in water so you can hear what[apostrophe]s down there.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-milcoord when benjack-N3 is happening:
+	say "[quotation mark]The person who liaises between the US and French Militaries at NATO Headquarters in Brussels.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-navcomgr1 when benjack-N3 is happening:
+	say "[quotation mark]Our listening post on the coast of Greece.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-medcar when benjack-N3 is happening:
+	say "[quotation mark]A network of sonic transducers that line the Mediterranean basin and can generate sounds to fool enemy submarines.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-sosus when benjack-N3 is happening:
+	say "[quotation mark]Strings of underwater sensors that help the military track submarines.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-bletchley when benjack-N3 is happening:
+	say "[quotation mark]I don[apostrophe]t know where it is, but they coordinate the American and Soviet space programs,[quotation mark] replies Carol."
+	
+After quizzing benjack-Carol about benjack-lwah when benjack-N3 is happening:
+	say "[quotation mark]It is short for [apostrophe]lost with all hands[apostrophe] in military-speak.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-art when benjack-N3 is happening:
+	say "[quotation mark]Various trinkets I[apostrophe]ve picked up here and there. I think the one on the right is my favorite.[quotation mark][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-popeyeTSM when benjack-N3 is happening:
+	say "[quotation mark]It[apostrophe]s the code name for our navy[apostrophe]s global intelligence network of telepathic dolphins.[quotation mark][paragraph break]".
+
+After quizzing benjack-Carol about benjack-egg when benjack-N3 is happening:
+	say "[one of][quotation mark]Ah, yes, the egg of the Megalokyniklosaurus vernalis. Those who have stared into its swirling mysteries have reported visions from other realities.[quotation mark][or]Carol reminds you that the only known Megalokyniklosaurus vernalis egg in existence is rumored to reveal visions of other realities.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-tile when benjack-N3 is happening:
+	say "[one of][quotation mark]It[apostrophe]s not quite as real as the other pieces of art in my collection, because of course it does not exist yet.[quotation mark][or][quotation mark]It[apostrophe]s a thermal tile from the space plane Columbia some years from now.[quotation mark][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-ambiguity when benjack-N3 is happening:
+	say "[quotation mark]What more can one say about such an exquisite piece?[quotation mark] observes Carol."
+	
+After quizzing benjack-Carol about benjack-PloughverSpell when benjack-N3 is happening:
+	say "[one of][quotation mark]You realize that every time you use that spell, you[apostrophe]re complicit in what you experience, right?[quotation mark][paragraph break][quotation mark]No, Christabell didn[apostrophe]t mention anything about that,[quotation mark] you plead, alarmed.[paragraph break][quotation mark]No, I wouldn[apostrophe]t suppose she would. It[apostrophe]s funny how she only tells parts of things, isn[apostrophe]t it?[quotation mark][or]Carol explains that the person casting the teleport spell shares in the responsibility for collateral damage that it causes.[no line break][stopping][paragraph break]".
+	
+After quizzing benjack-Carol about benjack-babySubject when benjack-N3 is happening:
+	say "[one of][quotation mark]Carol, we need to level. About that mark that you allegedly placed: Christabell says I[apostrophe]m not pregnant and that you are try to manipulate me.[quotation mark][paragraph break][quotation mark]Does she now?[quotation mark] Carol says with a sly smile. [quotation mark]Well, I suppose it[apostrophe]s just a matter of which of us you trust. How is it that I[apostrophe]m supposed to have manipulated you?[quotation mark][paragraph break][quotation mark]Well.[quotation mark] You think for a minute. [quotation mark]I thought it was some kind of a threat. Against me, or maybe against the baby.[quotation mark][paragraph break][quotation mark]That[apostrophe]s not how it works, Christabell. Marks are Wardes of Protection. The only benefit I derive is being able to work magic through someone who is bemarked. The person themself is merely the medium and comes to no harm at all.[quotation mark][paragraph break][quotation mark]So, am I pregnant or not?[quotation mark][paragraph break][quotation mark]There[apostrophe]s nothing I can say that will convince you one way or another, Naomi, so why ask?[quotation mark][or]Carol sticks to her argument that you are indeed pregnant and that you baby bears her mark, but that she means no harm by it.[no line break][stopping][paragraph break]".
+	
+Instead of informing benjack-Carol about benjack-babySubject when benjack-N3 is happening:
+	try quizzing benjack-Carol about benjack-babySubject.
+	
+Instead of informing or quizzing benjack-Carol about benjack-mark when benjack-N3 is happening:
+	try quizzing benjack-Carol about benjack-babySubject.
+	
+Instead of informing or quizzing benjack-Carol about benjack-ChristabellSubject when benjack-N3 is happening:
+	try quizzing benjack-Carol about benjack-babySubject.
 
 Chapter 4 - N3 Event
 
