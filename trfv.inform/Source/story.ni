@@ -2332,7 +2332,11 @@ Carry out scenejumping:
 		move the player to M2F3; [triggers start of N3]
 		say "[bold type]/ JUMP from R2 to N3 /[roman type][paragraph break]";
 	otherwise if benjack-N3 is happening:
-		say "[bold type]/ JUMP: nope, you're in the final benjack scene. /[roman type][paragraph break]".
+		now benjack-window is open;
+		now benjack-Carol is nowhere;
+		now the player carries benjack-naomiRunes;
+		move the player to M2F3;
+		say "[bold type]/ JUMP from N3 to Denouement /[roman type][paragraph break]".
 
 test N2-jump with "scenejump / scenejump /scenejump / scenejump".
 test N3-jump with "scenejump / scenejump /scenejump / scenejump / scenejump / scenejump".
