@@ -1445,7 +1445,7 @@ The N2-desc of benjack-deskChair is "A high-backed wooden chair with no cushion[
 Does the player mean doing something with the benjack-deskChair: it is likely.
 
 [note that these items must be declared forward of this list]
-The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-wall, benjack-floor}.
+The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-pillow, benjack-dolls, benjack-drawings, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon , benjack-ink , benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-wall, benjack-floor}.
 
 Chapter 3 - N2 Conversation
 
