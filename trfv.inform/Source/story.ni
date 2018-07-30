@@ -1209,7 +1209,7 @@ When benjack-R1 begins:
 
 Chapter 2 - R1 Conversation
 
-Instead of conversing or hailing for the first time during benjack-R1:
+Instead of conversing or hailing when benjack-R1 is happening for the first time:
 	if benjack-Christabell is candid:
 		say "Christabell squints as she looks at you, shading her eyes with her hand.[paragraph break][quotation mark][bold type]Runes[roman type] of the [bold type]Deep Ones[roman type] preserve us, Naomi. By";
 	otherwise:
@@ -1483,6 +1483,8 @@ Before benjack-ploughvering when the yourself is benjack-spell_enabled during be
 		[could also use this to load up N2 if the scene begins rule doesn't cut it.]	
 
 Chapter 4 - R1 Tests
+
+Test benjack-r1 with "s / hello / x christabell / t carol"
 
 Chapter 5 - R1 Ends
 
