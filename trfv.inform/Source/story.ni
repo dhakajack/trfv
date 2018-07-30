@@ -394,7 +394,7 @@ benjack-newgrace is a subject.  Understand "new grace/grace" as benjack-newgrace
 benjack-malificium is a subject.  Understand "malificium" as benjack-malificium when the player is in DAN8.
 benjack-Carolsubject is a subject. Understand "[benjack-CarolToken]" as benjack-Carolsubject when the player is in DAN8.
 
-benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the location is in the benjack-realm.
+benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the location is in the benjack-realm. The printed name of benjack-PC is "me".
 
 Rule for clarifying the parser's choice of benjack-PC: do nothing.
 

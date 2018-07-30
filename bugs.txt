@@ -3,10 +3,12 @@ Bugs ben has found, but not yet ready to file in github bug tracker
 
 R1 Bugs
 
-* WAITING (JACK):  quips when conversation ends, or re-starts (exiting or re-entering room) - R0 is only re-entrant scene and should have these already enabled. I will check other scenes to make sure there is exit/entrance dialogue
+* Need a greeting in R1
 
-  - Related? tell christabell about self
-    (benjack-PC) <-- why is this disambiguation being printed??
+* Need stage business, fading in/out in R1
+* Need a fading topic in R1
+
+* WAITING (JACK):  quips when conversation ends, or re-starts (exiting or re-entering room) - R0 is only re-entrant scene and should have these already enabled. I will check other scenes to make sure there is exit/entrance dialogue
 
 * make some 'test me' paths
 
@@ -51,3 +53,11 @@ In the library, there is:
 Understand "talk about [any known thing]" as implicit-informing 
 But that should be:
 Understand "tell about [any known thing]" as implicit-informing 
+
+
+Related? tell christabell about self
+(benjack-PC) <-- why is this disambiguation being printed
+——
+No the problem is that there are two “seen” items with the same grammar, “self” - the player and the Naomi subject. I just added a print name for benjack-PC so it now says (me), which seems okay.
+
+
