@@ -89,7 +89,9 @@ Definition: a thing is conversation-preferred:
 	
 ]
 
-Part 3 - The Player
+Part 3 - I asked Ben and there is no part 3 - why would there be a part 3?
+
+Part 4 - The Player
 
 The player has a number called benjack-times_bestowed. The benjack-times_bestowed of the player is 0. [number of cups of tea consumed]
 
@@ -112,7 +114,7 @@ Yourself can be benjack-KH_accomplished. Yourself is not benjack-KH_accomplished
 
 Yourself can be benjack-guilty. Yourself is not benjack-guilty.
 
-Part 4 - Locations 
+Part 5 - Locations 
 
 Chapter DAN8 Hillside Path
 
@@ -221,7 +223,7 @@ Chapter The benjack realm
 and a room isn't allowed to be in more than one region!]
 Definition:  a room is in the benjack-realm if it is DAN8 or it is M2F3.
 
-Part 5 - NPC Definitions
+Part 6 - NPC Definitions
 
 Chapter Christabell
 
@@ -254,7 +256,7 @@ To say benjack-Carol-description:
 
 Instead of touching benjack-Carol, say "Your hand goes right through her, and it doesn’t seem to bother her in the least."
 
-Part 6 - Utilities
+Part 7 - Utilities
 
 To benjack-stage-on ( setnumber - a number):
 	let L be a list of things;
@@ -354,7 +356,13 @@ After quizzing benjack-Christabell about benjack-carrots during benjack-R1:
 
 [starting topics of discussion, all familiar by default]
 
-Chapter R0 Conversation
+Chapter 1 - R0 Begins
+
+When benjack-r0 begins:
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]". 
+
+Chapter 2 Conversation
 
 Section R0 Subjects
 
@@ -546,7 +554,7 @@ After quizzing benjack-Christabell about benjack-death:
 	say "[one of]Christabell shrugs, [quotation mark][bold type]Deathe[roman type] is much exaggerated Botheration. For most, an end; for [bold type]Spirits[roman type], a temporary annoyance. I would not dwell much upon it, for generally it is unavoidable.[quotation mark][or][quotation mark]Why so morose?[quotation mark] asks Christabell, promptly changes the subject.[no line break][or][quotation mark]Enough about me,[quotation mark] says Christabell, [quotation mark]do tell me of [bold type]yourself[roman type].[quotation mark][stopping][paragraph break]".
 
 
-Chapter R0 Events
+Chapter 3 Events
 
 [Basic stage business for Christabell before player interacts with her.]
 Every turn while benjack-Christabell is unaddressed:
@@ -600,11 +608,17 @@ Before going a direction when the location is juxtaDAN8 and M2F3 is unvisited an
 	otherwise:
 		continue the action.
 
-Chapter R0 Tests
+Chapter 4 Tests
 
 test icebreak with "up/x woman/yes/tell woman about self"
 
 test R0-full with "s / talk to woman / say hello / yes / tell christabell about me / g / t peter / g / t vermont / g / t cragne / g / a christabell / g / t youth / g / a sight / g / a youth / g / a lin / g / a vermont / g / a naomi / g / a peter / g / a cragne / g / a rayle / g / a mound / x mound / a christabell / look / a cliff / climb cliff / g / x clearing / g/ a clearing / g/ a trail / g / x weeds / a lin / a forge / g / a gift / g / a mattanit / g / a grace / g / a third / g / a knotte / g / a ghost / g / a spirit / a lineage / a witch / g / a malificium / g / a salem / g / a puritan / g / a pilgrim / g / a colony / g / a indian / g / a mark / g / a carol / x carol / a carol / n / s / n / s / n / n / s / s / s / sw / ne / se / nw".
+
+Chapter 5 - R0 Ends
+
+When benjack-R0 ends:
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply.". 
 
 Part 4 - Scene N1 Tea Party
 
@@ -614,11 +628,12 @@ Rule for printing the name of a benjack-runebook (called the evil tome):
 	
 Chapter 1 - N1 Begins
 
-[furniture movement won't actually live here, since it happens later, but for the moment...]
-
 When benjack-N1 begins:
 	benjack-stage-on 1;
-	say "[benjack-nursery-description]".
+	say "[benjack-nursery-description]";
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]". 
+	[block responses is listed redundantly here just in case player gets to N1 before R0 somehow]
 	
 Chapter 2 - N1 Nursery Furnishing Updates
 
@@ -1071,14 +1086,18 @@ Chapter 5 - N1 Tests
 Chapter 6 - N1 Ends
 
 When benjack-N1 ends:
-	benjack-stage-off 1.
+	benjack-stage-off 1;
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply.". 
 
 Part 5 - Scene R1 Naomi is Marked and Learns Some Spells
 
 Chapter 1 - R1 Begins
 
 When benjack-R1 begins:
-	if benjack-Christabell is not candid, now benjack-Christabell is bypassed.
+	if benjack-Christabell is not candid, now benjack-Christabell is bypassed;
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]". 
 
 Chapter 2 - R1 Conversation
 
@@ -1360,6 +1379,12 @@ Before benjack-ploughvering when the yourself is benjack-spell_enabled during be
 
 Chapter 4 - R1 Tests
 
+Chapter 5 - R1 Ends
+
+When benjack-R1 ends:
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply.". 
+
 Part 6 - Scene N2 Teenage Carol Marks Naomi's Baby
 
 Chapter 1 - N2 begins
@@ -1367,7 +1392,9 @@ Chapter 1 - N2 begins
 When benjack-N2 begins:
 	benjack-stage-on 2;
 	say "[benjack-N2-greeting]";
-	say "[benjack-nursery-description]".
+	say "[benjack-nursery-description]";
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]". 
 
 To say benjack-N2-greeting:
 	say "". [TODO:  based on whether N1 ended on friendly note or not]
@@ -1619,7 +1646,9 @@ test N2-full with "test n2-jump / look / south / no / south / south / south / no
 Chapter 6 - N2 Ends
 
 When benjack-N2 ends:
-	benjack-stage-off 2.
+	benjack-stage-off 2;
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply.". 
 
 Part 7 - Scene R2 Plotting Carol's Disruption
 
@@ -1628,7 +1657,9 @@ Chapter 1 - R2 begins
 When benjack-R2 begins:
 	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
 	now yourself is benjack-ploughver-inhibited;
-	move benjack-Christabell to DAN8.
+	move benjack-Christabell to DAN8;
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]". 
 
 Chapter 2 - R2 Conversation
 
@@ -1738,6 +1769,12 @@ To say benjack-mark-glued:
 	
 Chapter 4 - R2 Tests
 
+Chapter 5 - R2 Ends
+
+When benjack-R2 ends:
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply.". 
+
 Part 8 - Scene N3 Boss Battle
 
 Chapter 1 - N3 begins
@@ -1746,7 +1783,9 @@ When benjack-N3 begins:
 	say "Carol stares out the window, her back to you. She[apostrophe]s a bit taller and dressed in a sharply tailored turquoise shift. Without bothering to turn around, she addresses you, [quotation mark]I have been expecting you, Naomi. I knew you would come once more before I die.[quotation mark][paragraph break]";
 	now yourself is benjack-ploughver-inhibited;
 	benjack-stage-on 3;
-	say "[benjack-nursery-description]".
+	say "[benjack-nursery-description]";
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]". 
 
 Chapter 2 - N3 Nursery Furnishing Updates
 
@@ -2138,7 +2177,10 @@ Chapter 5 - N3 Tests
 
 Chapter 6 - N3 Ends
 
-	
+When benjack-N3 ends:
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply.". 
+
 Part 9 - Scene Denouement
 
 The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi Runes". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" or "tome of naomi runes" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: Tome of Naomi Runes."
@@ -2476,7 +2518,9 @@ Carry out Benjack-Outjumping:
 	now benjack-naomiRunes is seen;
 	move the player to DAN8.
 
-Book 5 - Replacement Default Actions
+Book 5 - Replace Defaults
+
+Part 1 - Actions
 
 [TODO]
 Instead of examining the player when the location is DAN8 (this is the DAN8-PC description rule):
@@ -2484,6 +2528,41 @@ Instead of examining the player when the location is DAN8 (this is the DAN8-PC d
 	
 Instead of examining the player when the location is M2F3 (this is the M2F3-PC description rule):
 	say "How you look in the nursery, for example."
+	
+Part 2 - Library Responses
+
+To say benjack-BTRR:
+	if the current interlocutor is benjack-Carol or the current  interlocutor is benjack-Christabell:
+		say "[quotation mark][one of]Sorry? Didn't follow that,[or]Humph,[or]Uh-huh,[or]Really?[no line break][or]How interesting,[or]Hmm. What do you know?[no line break][or]You don't say,[or]Well,[or]I haven’t even given it much thought,[or]Interesting,[or]Is that a fact?[no line break][or]Well, you learn something new every day,[in random order][quotation mark] says [current  interlocutor].[no line break]";
+	 otherwise:
+		if the location is DAN8:
+			if benjack-Christabell is in DAN8:
+				now the current interlocutor is benjack-Christabell;
+			otherwise:
+				say "[benjack-talk-to-whom].";
+		otherwise:
+			if benjack-Carol is in M2F3:
+				now the current interlocutor is benjack-Carol;
+			otherwise:
+				say "[benjack-talk-to-whom]."
+				
+To say benjack-BARR:
+	if the current interlocutor is benjack-Carol or the current interlocutor is benjack-Christabell:
+		say "[current interlocutor] says, [quotation mark][one of]Sorry, I don't know[or]I don't have a good answer for that one[or]Good question[no line break][or]That's an interesting question[or]I wish I knew[or]I have wondered that myself[in random order].[quotation mark]";
+	 otherwise:
+		if the location is DAN8:
+			if benjack-Christabell is in DAN8:
+				now the current interlocutor is benjack-Christabell;
+			otherwise:
+				say "[benjack-talk-to-whom].";
+		otherwise:
+			if benjack-Carol is in M2F3:
+				now the current interlocutor is benjack-Carol;
+			otherwise:
+				say "[benjack-talk-to-whom]."
+
+To say benjack-talk-to-whom:
+	say "Who are you talking to? No one is here".
 	
 Book 6 - TMWNMTK - Not For Release
 
