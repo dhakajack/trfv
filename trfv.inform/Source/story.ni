@@ -179,7 +179,7 @@ To say benjack-nursery-description:
 	if benjack-N1 is happening:
 		say "[first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.[paragraph break]";
 	otherwise if benjack-N2 is happening:
-		say "[one of]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
+		say "[one of]The door to Carol[apostrophe]s room swings open noiselessly and you walk into the room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair.[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
 	otherwise if benjack-N3 is happening:
 		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table.[paragraph break]";
 			
@@ -238,7 +238,9 @@ benjack-Christabell can be either run-down or charged-up. benjack-Christabell is
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3. Benjack-Carol can be disruption_informed. Benjack-Carol is not disruption_informed.
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3. 
+Benjack-Carol can be disruption_informed. Benjack-Carol is not disruption_informed.
+Benjack-Carol can be requesting_permission.  Benjack-Carol is not requesting_permission.
 
 The description of benjack-Carol is "[benjack-Carol-description]".
 
@@ -1368,14 +1370,14 @@ When benjack-N2 begins:
 	say "[benjack-nursery-description]".
 
 To say benjack-N2-greeting:
-	say "". [based on whether N1 ended on friendly note or not]
+	say "". [TODO:  based on whether N1 ended on friendly note or not]
 
 Chapter 2 - Nursery Furnishing Updates
 
 The N2-desc of the benjack-comforter is "Light blue wool[first time]. She will need a heavier one as Vermont slides into autumn[only].".
 The N2-desc of the benjack-bed is "The bed is perfectly made and a light blue woolen blanket stretched drum-taut over it. The pillows are perfectly aligned with the upper edge of the blanket.".
 The N2-desc of the benjack-pillow is "Fluffy white.".
-The N2-desc of the benjack-dolls is "Three of the stuffed animals you met earlier sit immobile in a corner of the room, their heads bent together conspiratorily.".
+The N2-desc of the benjack-dolls is "Three of the stuffed animals you met earlier -- elephant, monkey, clown -- sit immobile in a corner of the room, their heads bent together conspiratorily.".
 The N2-desc of the benjack-elephant is "[one of]The toy elephant appears much the same as previously, except whereas his leathery skin was dry and flaking before, now it is moister, and areas that were previously flaking or peeling are covered in ugly, suppurating wounds, raised and and red at the edges, but necrotic and white at the center, with a foul-smelling milky green discharge.[or]A rotting toy elephant covered in purulent wounds.[stopping]".
 The N2-desc of the benjack-monkey is "[one of]The monkey sock puppet looks considerably more realistic than last time, no doubt because some taxidermist has sewn the head of a real chimpanzee to its tubular shoulders. The specimen is well preserved, but lacks the glass eyes normally inserted in display trophies.[or]An eyeless sock monkey with a sewn-on chimpanzee head.[stopping]".
 The N2-desc of benjack-cap is "".
@@ -1412,15 +1414,15 @@ Understand "empty/patch/blank/spot/discolored" as benjack-patch when the player 
 The N2-desc of benjack-patch is "The portrait of President Eisenhower is gone and has not been replaced.".
 
 The benjack-drawings is a benjack-shadow.  The printed name of the benjack-drawings is "drawings".
-Understand "drawing" or "drawings" as benjack-drawings when the player is in M2F3.
+Understand "drawing" or "drawings" or "art" or "artwork" as benjack-drawings when the player is in M2F3.
 The N2-desc of benjack-drawings is "Three drawings are taped to the wall above Carol[apostrophe]s desk, the top one in crayon, the middle in ink, and the bottom one painted with watercolors."
 
 The benjack-crayon is a benjack-shadow.  The printed name of the benjack-crayon is "crayon drawing".
-Understand "top/crayon/upper" as benjack-crayon when the player is in M2F3.
+Understand "top/crayon/upper/crayon drawing" as benjack-crayon when the player is in M2F3.
 The N2-desc of benjack-crayon is "[one of]Primitive technique, limited palette, crayon on manila paper. [paragraph break]There are three stick figures on the left, generously, as man, woman, and child. The man drawn mostly in gray, the woman wearing a red dress with large skirt, and the child wearing a blue dress of the same style, her blonde hair done up in braids. The figure in the middle is more of a jumble: recognizably human with a hat and beard, stooped over with a cane. On the right, are a bunch of brown lines, behind them great masses colored in black vertical lines, and in from of all that the outline of a woman, not a stick figure, but just back and forth strokes of yellow crayon. [paragraph break]In the corner, it is labelled [quotation mark]Carol, Age 5.[quotation mark][or]A picture of Carol and her [quotation mark]family[quotation mark]: mother, father, grand-uncle, and Christabell done when she was five years old.[stopping]". 
 
 The benjack-ink is a benjack-shadow.  The printed name of the benjack-ink is "India ink drawing".
-Understand "india/ink/pen/middle" as benjack-ink when the player is in M2F3.
+Understand "india/ink/pen/middle/ink drawing" as benjack-ink when the player is in M2F3.
 The N2-desc of benjack-ink is "[one of]India ink on hot press bristol board.[paragraph break]It has the quality of being drawn hastily to capture the event. In places, the ink is smeared suggesting that the artist lacked practice with fountain pens. The drawing does not have much in terms of perspective, but some cross-hatched shading does give it depth.[paragraph break]Three creatures are outlined, their backs towards the viewer, each leaning towards the center of the drawing where another creature lays on the ground surrounded by a dark pool, suggestive of blood. The three creatures appear to be dismembering the poor creature on the ground, some sort of animal, which struggles desperately, flailing at them with its three remaining limbs. Its fourth has already been wrenched away by one of the attackers, who chomps into it with sharp simian teeth.[paragraph break]In the corner, it is labelled [quotation mark]Carol, Age 10.[quotation mark][or]A quick sketch capturing the dismemberment of [bold type]Misses Winkelbottom[roman type] by the other toys done by Carol when she was ten years old.[stopping]". 
 
 The benjack-watercolor is a benjack-shadow.  The printed name of the benjack-watercolor is "watercolor painting".
@@ -1583,7 +1585,36 @@ After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N2 i
 
 Chapter 4 - N2 Events
 
+benjack-N2-leaving is an action applying to nothing.
+
+Instead of going a direction during benjack-N2:
+	try benjack-N2-leaving;
+	if yourself is benjack-baby_marked, continue the action.
+Instead benjack-ploughvering during benjack-N2:
+	try benjack-N2-leaving;
+	if yourself is benjack-baby_marked, continue the action.
+	
+Carry out benjack-N2-leaving:
+	if yourself is not benjack-baby_marked:
+		if benjack-Carol is not requesting_permission:
+			now benjack-Carol is requesting_permission; [first time threatening Naomi]
+			say "[quotation mark]I[apostrophe]ve learned a few things since you were here last time; surely, you must know that [bold type]Christabell[roman type] taught me every chance she got. She[apostrophe]s such a generous soul, and so starved for company out there on the hill.[quotation mark] Carol glances out the window towards the cliffs.[paragraph break][quotation mark]Seems like you are the one who can[apostrophe]t get enough of company. No wonder you don[apostrophe]t get a lot of visitors, if you trap everyone in your room. Not many teenagers would want to lock adults in with them.[quotation mark][paragraph break][quotation mark]Well, you are the only one who can see me, so you[apostrophe]ve got that going for you. No, I[apostrophe]m happy to let you go, I just want to be able to find you again, you know, if I need you for something.[quotation mark][paragraph break][quotation mark]It[apostrophe]s nice to be needed.[quotation mark][paragraph break][quotation mark]So I understand. I will lower my barrier for you just as soon as you agree to bear my mark. The good news, it[apostrophe]s painless, the downside: it is a stain on your immortal soul. There[apostrophe]s no such thing as a free lunch, after all. So, what[apostrophe]ll it be, shall I mark you?[quotation mark] [paragraph break]She extends an index finger towards you.";
+		otherwise: [subesquent requests to Naomi]
+			say "[one of]Carol stands right in front of you, hands on her hips waiting for an answer, [quotation mark]Listen, due to the metaphysics of complicity or some such, before you go, I need an yea or nay from you -- shall I place my mark?[quotation mark][or][quotation mark]Not to be a bore,[quotation mark] say Carol, [quotation mark]but I need to ask your consent to mark you before you split; can I place it?[quotation mark][or]Carol goes about her business, ignoring you.[stopping][paragraph break]";
+
+Instead of saying no when benjack-Carol is requesting_permission during benjack-N2:
+	say "[one of][quotation mark]Well unless you know some way out of this room that hasn[apostrophe]t occurred to me, we[apostrophe]re going to be here together until you do agree, but no hurry on my account. We can come back to the marking issue later.[quotation mark][or]Carol shakes her head sadly.[stopping][paragraph break]"
+
+Instead of saying yes when benjack-Carol is requesting_permission during benjack-N2:
+	say "[quotation mark]Thank you for being so reasonable. This will only bring us closer,[quotation mark] says Carol as she pokes you gently with her finger. You do not feel pressure where she touched you, it was more like air blowing gently on your shirt.[quotation mark][paragraph break]Carol withdraws her finger and stares at it, puzzled. [quotation mark]That[apostrophe]s odd.[quotation mark][paragraph break][quotation mark]Problem?[quotation mark] You say.[paragraph break][quotation mark]No, not really a problem, more of an inconvenience. It seems like you[apostrophe]ve already been marked, presumably by Christabell for your own protection. That makes sense, I suppose. Can[apostrophe]t be too careful.[quotation mark] Carol looks out the window. [quotation mark]As you probably know, a person can only be marked by one spirit.[quotation mark][paragraph break][quotation mark]Oh?[quotation mark][paragraph break][quotation mark]Yes, so I had no choice, since you were already marked, I placed mine upon your daughter.[quotation mark][paragraph break][quotation mark]I don[apostrophe]t have a… wait a minute, what?[quotation mark] You glance at your belly where she touched you, [quotation mark]You mean, I[apostrophe]m…[quotation mark] Come to think of it, you have had a lot of nausea lately, in fact, Peter had to pull over on the drive up. And you[apostrophe]ve been feeling tired, which is unusual for you.[paragraph break][quotation mark]Yes, so congratulations on that, I suppose. Anyhow, you[apostrophe]re free to come and go as you please now.[quotation mark][paragraph break]";
+	now benjack-Carol is not requesting_permission;
+	now yourself is benjack-baby_marked.
+
+
+
 Chapter 5 - N2 Tests
+
+test N2-full with "test n2-jump / look / south / no / south / south / south / no / no / no / yes / south".
 
 Chapter 6 - N2 Ends
 

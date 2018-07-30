@@ -32,10 +32,12 @@
 - Leave either by foot, or by teleport to Carol.
 
 * N2 - Carol Marks Naomi's Baby -- BEN NOW WORKING ON
-- TODO Carol greets based on good/bad prior interaction
+- TODO Carol greets based on good/bad prior interaction (JACK link
+  from N1)
 - Examine scenery -- it's different now
 - Discussion: learn about Carol's destructive actions
-- Discover you can't destroy Carol's runes, because scrapbook isn't present.
+- Discover you can't destroy Carol's runes, because scrapbook isn't
+  present.
 - TODO Discover you can't leave, until you let Carol mark you
   - TODO Carol attempts to mark, but Christabell has already done so.
     Baby marked instead ("branding")
@@ -51,11 +53,13 @@
 
 * N3 - Boss Battle
 - Carol gives forboding greeting upon start of scene
-- TODO Examine scenery -- it's different again
-- (optional?? boss battle text assumes it happened) destroy one of the runebooks via spell
+- TODO Examine scenery -- it's different again  -- BEN WILL DO
+- (optional?? boss battle text assumes it happened) destroy one of the
+  runebooks via spell
 - Distract Carol by talking, open window twice in a row
-- Christabel enters, boss battle, baby is killed
-- Naomi jumps out window (?
+- Boss battle on rails over 4 turns: Christabel enters, battle, baby
+  killed
+- Exit by EITHER jumping out window, or walking out.
 
 * Denouement
 - Naomi now has the photograph
