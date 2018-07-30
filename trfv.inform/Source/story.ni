@@ -366,6 +366,13 @@ When benjack-r0 begins:
 
 Chapter 2 Conversation
 
+Instead of quizzing or informing someone about something when benjack-R0 is happening for the first time:
+	say "[benajack-hint-shorter-form]";
+	continue the action.
+	
+To say benajack-hint-shorter-form:
+	say "[bracket] HINT: For short, say [quotation mark]a [bold type]subject[roman type][quotation mark] or [quotation mark]t [bold type]subject[roman type][quotation mark] to ASK/TELL about a [bold type]subject[roman type] [close bracket][paragraph break]".
+
 Section R0 Subjects
 
 benjack-salem is a subject.  Understand "salem" as benjack-salem when the player is in DAN8.
