@@ -176,15 +176,13 @@ Printed name of M2F3 is "Nursery (Ben Collins-Sussman)".
 Description of M2F3 is "[benjack-nursery-description]"
 
 To say benjack-nursery-description:
-	if benjack-N1 is happening: [TODO and also IFF the player is THROUGH THE DOOR]
+	if benjack-N1 is happening:
 		say "[first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.[paragraph break]";
 	otherwise if benjack-N2 is happening:
 		say "[one of]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
 	otherwise if benjack-N3 is happening:
-		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table";
-	otherwise:
-		say "Mystical smoke blinds your vision." [we should never arrive here -- if we do, this is a bug in Scenes]
-		
+		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table.[paragraph break]";
+			
 The commentary of M2F3 is "M2F3 Commentary".
 
 benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door when the location is in the benjack-realm. 
@@ -268,7 +266,7 @@ To benjack-stage-on ( setnumber - a number):
 		-- otherwise:
 			say "Error: attemped illegal stage-on";
 	repeat with item running through L:
-		say "moving in [item] to nursery.";[TODO DEBUGGING remove for production]
+		[say "moving in [item] to nursery.";[TODO DEBUGGING remove for production]]
 		now item is seen;
 		move item to M2F3.
 			
@@ -284,7 +282,7 @@ To benjack-stage-off ( setnumber - a number):
 		-- otherwise:
 			say "Error: attemped illegal stage-off";
 	repeat with item running through L:
-		say "ejecting [item] to nowhere.";[TODO DEBUGGING remove for production]
+		[say "ejecting [item] to nowhere.";[TODO DEBUGGING remove for production]]
 		now item is unseen;
 		now item is nowhere.
 
@@ -617,7 +615,8 @@ Chapter 1 - N1 Begins
 [furniture movement won't actually live here, since it happens later, but for the moment...]
 
 When benjack-N1 begins:
-	benjack-stage-on 1.
+	benjack-stage-on 1;
+	say "[benjack-nursery-description]".
 	
 Chapter 2 - N1 Nursery Furnishing Updates
 
@@ -1364,7 +1363,12 @@ Part 6 - Scene N2 Teenage Carol Marks Naomi's Baby
 Chapter 1 - N2 begins
 
 When benjack-N2 begins:
-	benjack-stage-on 2.
+	benjack-stage-on 2;
+	say "[benjack-N2-greeting]";
+	say "[benjack-nursery-description]".
+
+To say benjack-N2-greeting:
+	say "". [based on whether N1 ended on friendly note or not]
 
 Chapter 2 - Nursery Furnishing Updates
 
@@ -1710,7 +1714,8 @@ Chapter 1 - N3 begins
 When benjack-N3 begins:
 	say "Carol stares out the window, her back to you. She[apostrophe]s a bit taller and dressed in a sharply tailored turquoise shift. Without bothering to turn around, she addresses you, [quotation mark]I have been expecting you, Naomi. I knew you would come once more before I die.[quotation mark][paragraph break]";
 	now yourself is benjack-ploughver-inhibited;
-	benjack-stage-on 3.
+	benjack-stage-on 3;
+	say "[benjack-nursery-description]".
 
 Chapter 2 - N3 Nursery Furnishing Updates
 
