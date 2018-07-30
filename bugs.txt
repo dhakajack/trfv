@@ -3,36 +3,51 @@ Bugs ben has found, but not yet ready to file in github bug tracker
 
 R1 Bugs
 
-
-* WAITING (JACK): player may ask about scenery -- should they be topics for
-  Christabell's commentary?  e.g. "tracks", "cliffs", "weeds"
-  jACk is doing
-
-* WAITING (JACK):  quips when conversation ends, or re-starts (exiting or re-entering room)
-
-
-* (need help from zarf) create better auto-replies to unknown subjects
-
-
-* all of the 'tell' commands are now failing !?!?
-
-  - 'ask foo' FAILS
-  - 'ask about foo' works.
-  - 'ask woman about foo' works.
-  - 'tell woman about foo' works.
-  - 'tell about foo" always FAILS
-
+* WAITING (JACK):  quips when conversation ends, or re-starts (exiting or re-entering room) - R0 is only re-entrant scene and should have these already enabled. I will check other scenes to make sure there is exit/entrance dialogue
 
   - Related? tell christabell about self
     (benjack-PC) <-- why is this disambiguation being printed??
 
 * make some 'test me' paths
 
-
-* REFINEMENT:  shorter quips when asked about same subject multiple
-  times
-
 * REFINEMENT:  during R0 scene, background stage business?  or fading
   in/out of christabell ?
 
+* Refinement - look at grammar for all items, is it broad enough, are plurals present? Are likely multiword phrases included as quoted alternatives?
 
+========
+Done: 
+
+(need help from zarf) create better auto-replies to unknown subjects
+————
+Need to replace these:
+block telling rule response (A): "This [provoke] no reaction."
+    block asking rule response (A): "[There] [are] no reply."
+Can update a library response with
+Now the block telling rule response (A) is “xxxxx”
+See chapter 14, responses
+
+OK WAITING (JACK): player may ask about scenery -- should they be topics for
+  Christabell's commentary?  e.g. "tracks", "cliffs", "weeds"
+  jACk is doing
+——-
+Done
+
+OK REFINEMENT:  shorter quips when asked about same subject multiple
+  times
+——
+All the ones that need shorter quips have them.
+
+
+* all of the 'tell' commands are now failing !?!?
+  - 'ask foo' FAILS
+  - 'ask about foo' works.
+  - 'ask woman about foo' works.
+  - 'tell woman about foo' works.
+  - 'tell about foo" always FAILS
+——
+Interesting — this is a library issue.
+In the library, there is:
+Understand "talk about [any known thing]" as implicit-informing 
+But that should be:
+Understand "tell about [any known thing]" as implicit-informing 
