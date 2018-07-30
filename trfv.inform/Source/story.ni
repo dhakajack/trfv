@@ -1748,7 +1748,7 @@ Instead of saying yes when benjack-Carol is requesting_permission during benjack
 
 Chapter 5 - N2 Tests
 
-test N2-full with "test n2-jump / look / south / no / south / south / south / no / no / no / yes / south".
+test n2-benjack with "n / n / n / look / look / look / x floor / x walls / x bed / x blanket / x pillow / x patch / x nail / x table / x mirror / x makeup / x window / x trees / x cliffs / search window / look out window / x desk / x newspaper / g / x drawers / x lamp / get lamp / x books / x colonial / x algebra / x spines / x looseleaf / x turntable /x record / x stand / x toys / x chair / x sweetpaws / x sweetpaws / x snortles / x mister snortles / x malice / g / x winkelbottom / look under rung / open desk / open drawers / hello / s / s / s / s / ploughver / exit / no / no / yes / ask about portrait / g / a johnson / g / a christabell / g / g / a plan / a deep ones / a future / t future / g / a third covenant / g / a mattanit / g / g / g / a america / g / a elder gods / g / a father / g / a mother / a joan / a nixon / a kennedy / g / a submarines / g / a grand-uncle / g / a scrapbook / a newspaper / a book / a essay / g / a school / a farmington / a lech / g / x drawing / x top / g / x middle / g / x bottom / g / a top / a middle / a bottom / a thresher / a baby / a pregnant / t drawing / t top / t bottom / t christabell / g / a winkelbottom / s".
 
 Chapter 6 - N2 Ends
 
@@ -1879,6 +1879,8 @@ To say benjack-mark-glued:
 	say "You are held in place by Christabell[apostrophe]s mark.[paragraph break][quotation mark]Sorry I am, Naomi,[quotation mark] she says, [quotation mark]but e[apostrophe]er you depart, I must tell you how to disrupt Carol, after that, our Fate does reside in your two Hands.[quotation mark][paragraph break]".
 	
 Chapter 4 - R2 Tests
+
+test r2-benjack with "s / s / look / hello / a mark / t mark / ploughver / a disruption / a destroy / a window / a blockade / a resentment / g / a carol / a carol / a elder / a elder gods / t carol / t toys / t resentment / g / t father / t deep ones / g / t drawings / g/ t scrapbook / g / t clipping / g/ t elder / t plan / t baby / a baby / g / n "
 
 Chapter 5 - R2 Ends
 
@@ -2282,6 +2284,8 @@ Every turn when benjack-n3 is happening:
 		now yourself is not benjack-ragchewing.
 
 Chapter 5 - N3 Tests
+
+Test n3-benjack with " n / n/  x carol / x shift / x light / x carpet / x bed / x lamp / x books / x blanket / x portrait / x frame / x window / look out window / x desk / x drawers / x computer / x keyboard / x keys / x switch / x scrapbook / read notebook/ read dakar / read s647 / read k129 / read scorpion / x shelves / x art / x left / g / g / g / g / g / g / g / x middle / g / x right / x toys / x sweetpaws / g / x claws / x malice / g / x tape / x table /ask about nixon / g / a america / a america / t america / a elder gods /  a intel / t intel / a vietnam / a peace / a elder / a assassinations / a martin luther king / a school / a middlebury / a suicide / g / a boyfriend / g / a father / g / a general dynamics / g / a submarine / g / a mother / g / a computer / g / a scrapbook / g / a snortles / a winkelbottom / g / a malice the clown / a sweetpaws / a monkey /  g / a moon / a fungating / a regolith / a zond-3 / a lem / a nekton / a glyphs / a decontamination / g / a dakar / a s647 / a minerve / a k-129 / a scorpion / a sigint / a elint / a cw / a idf / a pentacle / a catacon / a br1150 / a hydrophone / a milcoord / a navcomgr1 / a medcar / a sosus / a bletchley / a lwah / a popeyetsm / a art / a egg / a vernalis / a jet / a black / a ploughver / g / a mark / t christabell / a pregnant / kwisatz haderach / g / s / s / s / s / ploughver / g / open window / g / g / g / g / g / a baby / open window / open window / z / z/ a baby / open window / a baby / open window ".
 
 Chapter 6 - N3 Ends
 
