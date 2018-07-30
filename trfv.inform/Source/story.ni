@@ -2354,6 +2354,8 @@ Instead of jumping when benjack-denouement is happening:
 
 Chapter 3 - Denouement Tests
 
+test de-benjack with "z / z / z / look / x tome / open book / close tome / read tome / read sable / get photo / open window / s ".
+
 Chapter 4 - Denouement Ends
 
 When benjack-denouement ends:
@@ -2390,7 +2392,9 @@ When benjack-denouement ends:
 [hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your RuneBook and take the photo that comes out of it for a later part of the game[end if]
 ]
 
-	Part 11 - Apres
+Part 11 - Apres
+	
+Chapter 1 - Events
 
 [Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
 
@@ -2408,6 +2412,10 @@ Before benjack-ploughvering or benjack-xizziing or benjack-KHing when benjack-de
 	
 Instead of opening benjack-window when benjack-denouement has happened:
 	say "It is frozen shut with age and neglect."
+	
+Chapter 2 - Tests
+	
+test all-benjack with " test r0-benjack / test n1-benjack / test r1-benjack / test n2-benjack / test r2-benjack / test n3-benjack / test de-benjack".
 	
 Book 3 - Runebook Clippings
 
