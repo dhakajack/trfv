@@ -260,6 +260,8 @@ Instead of touching benjack-Carol, say "Your hand goes right through her, and it
 
 Part 7 - Utilities
 
+Chapter 1 - Stage Crew
+
 To benjack-stage-on ( setnumber - a number):
 	let L be a list of things;
 	if setnumber is:
@@ -291,6 +293,20 @@ To benjack-stage-off ( setnumber - a number):
 		[say "ejecting [item] to nowhere.";[TODO DEBUGGING remove for production]]
 		now item is unseen;
 		now item is nowhere.
+		
+Chapter 2 - Annoying Conversation Default Responses
+
+To benjack-conversation-customize:
+	Now the block telling rule response (A) is "[benjack-BTRR]";
+	Now the block informing rule response (A) is "[benjack-BTRR]";
+	Now the block asking rule response (A) is "[benjack-BARR]";
+	Now the block quizzing rule response (A) is "[benjack-BARR]".
+	
+To benjack-conversation-restore-defaults:
+	Now the block telling rule response (A) is "This [provoke] no reaction.";
+	Now the block informing rule response (A) is "This [provoke] no reaction.";
+	Now the block asking rule response (A) is "[There] [are] no reply."; 
+	Now the block quizzing rule response (A) is "[There] [are] no reply.".
 
 Book 2 - Scenes
 
@@ -368,8 +384,8 @@ Chapter 1 - R0 Begins
 
 When benjack-r0 begins:
 	now Benjack-scene-specific-hint is "Gnyx gb Puevfgnoryy nf zhpu nf lbh jbhyq yvxr sbe fbzr onpxtebhaq vasbezngvba gung znl or vzcbegnag yngre";
-	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]".
+	benjack-conversation-customize.
+	
 	
 [hint text:
 Talk to Christabell as much as you would like for some background information that may be important later]
@@ -643,8 +659,7 @@ test R0-full with "s / talk to woman / say hello / yes / tell christabell about 
 Chapter 5 - R0 Ends
 
 When benjack-R0 ends:
-	Now the block telling rule response (A) is "This [provoke] no reaction.";
-	Now the block asking rule response (A) is "[There] [are] no reply.". 
+	benjack-conversation-restore-defaults.
 
 Part 4 - Scene N1 Tea Party
 
@@ -659,8 +674,7 @@ When benjack-N1 begins:
 	benjack-stage-on 1;
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
-	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]". 
+	benjack-conversation-customize.
 	
 [hint text: You need to humor Carol by playing along with her tea party. She needs to you the magic words bottoms-up to serve a round of tea. You can have a few cups of tea if you want, but once you have had one, you can leave. You can also ask/tell about a number of conversation topics that will be useful later in the game]
 	
@@ -1117,8 +1131,7 @@ Chapter 6 - N1 Ends
 
 When benjack-N1 ends:
 	benjack-stage-off 1;
-	Now the block telling rule response (A) is "This [provoke] no reaction.";
-	Now the block asking rule response (A) is "[There] [are] no reply.". 
+	benjack-conversation-restore-defaults.
 
 Part 5 - Scene R1 Naomi is Marked and Learns Some Spells
 
@@ -1127,8 +1140,7 @@ Chapter 1 - R1 Begins
 When benjack-R1 begins:
 	now Benjack-scene-specific-hint is "Bapr ntnva, lbh pna gnyx jvgu Puevfgnoryy nobhg n ahzore bs gbcvpf, ohg gur xrl bar vf nfxvat ure nobhg gur [quotation mark]orfgbjnapr[quotation mark], n zrnaf bs genafsreevat zntvpny raretl sebz bar crefba gb nabgure. Guvf jvyy eryrnfr lbh sebz orvat nggenpgrq gb gur cvyr bs envyebnq genpxf naq jvyy nyybj Puevfgnoryy gb fgbc snqvat va naq bhg[one of][or]. Gb pnfg gur orfgbjnapr fcryy, glcr [quotation mark]kvmmv[quotation mark]. Nyfb abgr gung lbh pna ninvy lbhefrys bs gur [quotation mark]cybhtuire[quotation mark] naq [quotation mark]xjvfngm unqrenpu[quotation mark] fcryyf[stopping]";
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed;
-	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]". 
+	benjack-conversation-customize.
 	
 [hint text: Once again, you can talk with Christabell about a number of topics, but the key one is asking her about the [quotation mark]bestowance[quotation mark], a means of transferring magical energy from one person to another. This will release you from being attracted to the pile of railroad tracks and will allow Christabell to stop fading in and out[one of][or]. To cast the bestowance spell, type [quotation mark]xizzi[quotation mark]. Also note that you can avail yourself of the [quotation mark]ploughver[quotation mark] and [quotation mark]kwisatz haderach[quotation mark] spells[stopping]]
 
@@ -1412,8 +1424,7 @@ Chapter 4 - R1 Tests
 Chapter 5 - R1 Ends
 
 When benjack-R1 ends:
-	Now the block telling rule response (A) is "This [provoke] no reaction.";
-	Now the block asking rule response (A) is "[There] [are] no reply.". 
+	benjack-conversation-restore-defaults.
 
 Part 6 - Scene N2 Teenage Carol Marks Naomi's Baby
 
@@ -1425,8 +1436,7 @@ When benjack-N2 begins:
 	now the current interlocutor is benjack-Carol;
 	say "[benjack-N2-greeting]";
 	say "[benjack-nursery-description]";
-	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]". 
+	benjack-conversation-customize.
 
 To say benjack-N2-greeting:
 	say "". [TODO:  based on whether N1 ended on friendly note or not]
@@ -1681,8 +1691,7 @@ Chapter 6 - N2 Ends
 
 When benjack-N2 ends:
 	benjack-stage-off 2;
-	Now the block telling rule response (A) is "This [provoke] no reaction.";
-	Now the block asking rule response (A) is "[There] [are] no reply.". 
+	benjack-conversation-restore-defaults.
 
 Part 7 - Scene R2 Plotting Carol's Disruption
 
@@ -1694,8 +1703,7 @@ When benjack-R2 begins:
 	now yourself is benjack-ploughver-inhibited;
 	move benjack-Christabell to DAN8;
 	now the current interlocutor is benjack-Christabell;
-	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]". 
+	benjack-conversation-customize.
 	
 [hint text: You can chat with Christabell to get a better understanding of what is going on. When you leave, she will tell you what she wants you to do with Carol back in the mansion]
 
@@ -1810,9 +1818,8 @@ Chapter 4 - R2 Tests
 Chapter 5 - R2 Ends
 
 When benjack-R2 ends:
-	Now the block telling rule response (A) is "This [provoke] no reaction.";
-	Now the block asking rule response (A) is "[There] [are] no reply.". 
-
+	benjack-conversation-restore-defaults.
+	
 Part 8 - Scene N3 Boss Battle
 
 Chapter 1 - N3 begins
@@ -1824,8 +1831,7 @@ When benjack-N3 begins:
 	benjack-stage-on 3;
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
-	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]". 
+	benjack-conversation-customize.
 	
 [hint text: Remember what Christabel said? The only way to lower Carol's defenses is to open the window. You also have the "kwisatz haderach" spell at your disposal]
 
@@ -2214,8 +2220,7 @@ Chapter 5 - N3 Tests
 Chapter 6 - N3 Ends
 
 When benjack-N3 ends:
-	Now the block telling rule response (A) is "This [provoke] no reaction.";
-	Now the block asking rule response (A) is "[There] [are] no reply.". 
+	benjack-conversation-restore-defaults.
 
 Part 9 - Scene Denouement
 
