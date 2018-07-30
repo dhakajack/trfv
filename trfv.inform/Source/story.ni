@@ -684,6 +684,8 @@ To say benjack-no-teapot4:
 
 Part 5 - Scene N1 Tea Party
 
+benjack-N1 has a number called benjack-times_whined. Benjack-times_whined is 0.
+
 Rule for printing the name of a benjack-runebook (called the evil tome):
 	say "[printed name of the evil tome]";
 	omit contents in listing.
@@ -1113,6 +1115,8 @@ After quizzing benjack-Carol about benjack-scrap-5:
 
 Chapter 4 - N1 Events
 
+The benjack-slithering-vomit-bladder-of-Katallakh is an open container. Understand "slithering/vomit/bladder/katallakh" or "slithering vomit bladder bladder of Katallakh" or "vomit bladder of Katallakh" or "bladder of Katallakh" as the benjack-slithering-vomit-bladder-of-Katallakh.
+
 [kill the (empty) in inventory listings durng this scene]
 Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
 	say "[printed name of mtw-teapot]";
@@ -1123,6 +1127,62 @@ Before going a direction when the location is juxtaDAN8 and benjack-N1 has happe
 		say "You round the path and find yourself in a familiar knoll flanked on three sides by tall, dark cliffs. In the center of a clearing before you is a huge pile of rusting railroad track.[paragraph break]Leaning back against the pile of iron, [benjack-Christabell] gives you a fatigued wave and after some exertion of effort becomes more substantial.";
 	otherwise:
 		continue the action.
+		
+Instead of going south when the location is M2F3 and benjack-N1 is happening:
+	say "[one of]You turn around to walk out, but the door isn’t there. The wall behind you is bare, except for a mirror, which is about where the door was.[paragraph break]That doesn’t make any sense, you think to yourself. I didn’t hear anything change, and I’m sure there was a door there. Looking around the room, there is no other exit, which makes no sense at all since you obviously did enter the room somehow[or]Where there used to be an entrance, a full-length mirror now occupies the wall[stopping].[paragraph break]Carol [one of]gives you a puzzled look and [or][stopping]points to her tea cup."
+	
+Definition: A thing is benjack-Katallakh-devourable if it is not worn and it is not mtw-teapot.
+
+Definition: A thing is a benjack-henchling if it is benjack-monkey or it is benjack-lamb or it is benjack-elephant or it is benjack-clown.
+
+Every turn during benjack-N1:
+	if the benjack-times_bestowed of yourself is less than 1:
+		increase the benjack-times_whined of benjack-N1 by 1;
+		if benjack-times_whined of benjack-N1 is:
+			-- 1:
+				do nothing;
+			-- 2:
+				say "[benjack-whine1]";
+			-- 3:
+				do nothing;
+			-- 4:
+				say "[benjack-whine2]";
+			-- 5:
+				do nothing;
+			-- 6:
+				say "[benjack-whine3]";
+			-- otherwise:
+				if the player carries something benjack-Katallakh-devourable (called the item):
+					let L be a random benjack-henchling;
+					say "[quotation mark]If you are going to be such a stick in the mud, ";
+					if L is:
+					-- benjack-monkey:
+						say "Young Master Sweetpaws";
+					-- benjack-elephant:
+						say "Mister Snortles";
+					-- benjack-lamb:
+						say "Missel Winkelbottom";
+					-- benjack-clown:
+						say "Malice";
+					say " , will you please help yourself to one of Naomi[apostrophe]s trinkets and drop in the Maw of Unthinkable Nothingness? Maybe that will make her want to play with us and say the magical word [apostrophe]bottoms-up[apostrophe] so we can all play tea party.[quotation mark][paragraph break]The [L] comes to suddenly to life, walks stiffly towards you and plucks [an item] out the air and tosses it into a whirling vortex of fire and ash that has opened above the tea table. The vortex folds in on itself and disappears the moment [the item] enters it.[paragraph break]It all happens so fast that you are left speechless.";
+					now item is in benjack-slithering-vomit-bladder-of-Katallakh;
+					now item is unseen;
+				otherwise: [no stealable items]
+					say "[quotation mark]Well poop,[quotation mark] exclaims the sullen little girl. [quotation mark]Mister Snortles and Miss Winkelbottom both agree that it[apostrophe]s time to move things along, and I don[apostrophe]t like to do this, but....[quotation mark] Carol traces some shapes in the air, and for a moment they hang there, on fire. She then points at your mouth and commands [quotation mark]Say the words![quotation mark][paragraph break]Shit just got real. You feel an irrepressible compulsion growing like a [quotation mark]hold my hair now, I[apostrophe]m going to hurl[quotation mark] moment, and are surprised to hear yourself blurt out [quotation mark]bottoms-up![quotation mark][paragraph break]".
+					
+To say benjack-whine1:
+	say "Carol glances around the table at her stuffed animals. [quotation mark]I don[apostrophe]t know about any of you, but I sure am getting thirsty. Yes sir, some nice hot tea would really hit the spot, don[apostrophe]t you think so, Sweetpaws? You do? Me too. I wish Naomi would say the magic words and let us get going. What[apostrophe]s that Mister Snortles? Maybe she forgot what to say? I[apostrophe]m sure she remembers that she is supposed to say [apostrophe]bottoms-up[apostrophe] so we can start.[quotation mark][paragraph break]".
+	
+To say benjack-whine2:
+	say "Carol sighs, [quotation mark]I[apostrophe]m getting bored -- haven[apostrophe]t you done enough talking and poking around the room? Let[apostrophe]s start the tea party -- you just have to say [apostrophe]bottoms-up[apostrophe][quotation mark].[paragraph break][quotation mark]Carol, why are you so obsessed with tea. Are you sure you[apostrophe]re not British?[quotation mark][paragraph break][quotation mark]No, I don[apostrophe]t think so.[quotation mark][paragraph break]".
+	
+To say benjack-whine3:
+	say "[quotation mark]Yes, Misses Winkelbottom,[quotation mark] nods Carol, [quotation mark]I am sure Naomi knows that she just has to say ‘bottoms-up[apostrophe] to get the tea party started, but she[apostrophe]s playing her own game now I think, and it[apostrophe]s not fun![quotation mark][paragraph break][quotation mark]Uh oh, Naomi,[quotation mark] say Carol with what you can tell is feigned concern, [quotation mark]Malice the Clown says he[apostrophe]s getting upset that you are holding up the tea party, and he wants to know why you haven[apostrophe]t said the magic words [apostrophe]bottoms-up[apostrophe]. He says he wonders if you really want to spend all of eternity in here, and I told him that no, probably you don[apostrophe]t, but he said maybe she does, and I said, well I guess we[apostrophe]ll find out, right?[quotation mark][paragraph break]".
+	
+
+
+
+
 
 Chapter 5 - N1 Tests
 
@@ -2626,6 +2686,14 @@ MGR1 is south of M2F2. The printed name of MGR1 is "Temporary MGR1". The descrip
 The player is in MGR1.
 
 The printed name of M2F2 is "Hall Outside the Nursery". The description of M2F2 is "This is the hallway outside the nursery. No assumptions are made here except that there is an exit north to the nursery."
+
+The brick is a thing in MGR1.
+The orange is a thing in MGR1.
+The golf ball is a thing in MGR1.
+The bowling pin is a thing in MGR1.
+The jade frog is a thing in MGR1.
+
+
 
 Part 3 - Items that will come from other authors
 
