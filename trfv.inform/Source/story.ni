@@ -177,19 +177,17 @@ The M2F3 is a room in M2F. M2F3 is north from M2F2.
 
 Printed name of M2F3 is "Nursery (Ben Collins-Sussman)".
 
-Description of M2F3 is "[benjack-nursery-description]"
+Description of M2F3 is "[benjack-nursery-description]".
 
 To say benjack-nursery-description:
 	if benjack-N1 is happening:
-		say "[one of][Benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.[paragraph break]";
+		say "[one of][Benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[no line break][paragraph break][only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.";
 	otherwise if benjack-N2 is happening:
-		say "[one of]The door to Carol[apostrophe]s room swings open noiselessly and you walk into the room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair.[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
+		say "[one of]You walk into Carol's room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair.[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk[stopping].";
 	otherwise if benjack-N3 is happening:
-		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table.[paragraph break]";
+		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table.".
 			
 The commentary of M2F3 is "M2F3 Commentary".
-
-benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door when the location is in the benjack-realm. 
 
 benjack-bedroom-door is an open openable scenery container in M2F3. The printed name of benjack-bedroom-door is "bedroom door". Understand "bedroom/door" as benjack-bedroom-door when the location is in the benjack-realm. 
 
@@ -199,7 +197,9 @@ Instead of entering the benjack-bedroom-door:
 Instead of inserting something (called the item) into the  benjack-bedroom-door:
 	try dropping the item.
 	
-The description of the benjack-baby-door is "The door [benjack-baby-door-desc]."
+[The description of the benjack-baby-door is "The door [benjack-baby-door-desc]."
+
+benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door when the location is in the benjack-realm. 
 
 To say benjack-baby-door-desc:
 	say "says [quotation mark]Nursery[quotation mark] and below that, [quotation mark]Baby Sleeping -- DO NOT WAKE![quotation mark] and finally, at the bottom in smaller letters, [quotation mark]Come back later when baby awake. Signed, Victor Cragne[quotation mark]"
@@ -217,7 +217,7 @@ Before doing something other than examining to the benjack-baby-door:
 	now the printed name of M2F3 is "Dungeon";
 	now the description of M2F3 is "You find yourself in a dungeon, strapped by to a toffee table by candy cane manacles and slathered with delicious honey. A stalactite drips dark chocolate over your belly, luscious rivulets pooling in the small of your back.[paragraph break]The ants pour in, their mandibles clacking.[no line break]";
 	try silently looking;
-	end the story saying "EATEN".
+	end the story saying "EATEN".]
 	
 Chapter The benjack realm
 
@@ -325,7 +325,7 @@ benjack-R0 begins when the player is in DAN8 and M2F3 is not visited.
 benjack-R0 ends when the player is not in DAN8. [nursery]
 
 benjack-N1 is a scene. ["Tea Party"]
-benjack-N1 begins when the player is in M2F3.
+benjack-N1 begins when the player is in M2F3 and the player has mtw-teapot.
 benjack-N1 ends when the benjack-times_bestowed of yourself is greater than 0 and the player is not in M2F3.[safe because Naomi hasn't learned ploughver yet]
 
 benjack-R1 is a scene. ["Naomi is Marked and Learns Some Spells"]
@@ -661,7 +661,28 @@ Chapter 5 - R0 Ends
 When benjack-R0 ends:
 	benjack-conversation-restore-defaults.
 
-Part 4 - Scene N1 Tea Party
+Part 4 - Avant N1
+
+Before going north from M2F2 when benjack-N1 has not happened:
+	if the player does not carry the mtw-teapot:
+		say "A blonde kindergartner in a blue dress bars your way northward into a bedroom.[paragraph break][one of][benjack-no-teapot1][or][benjack-no-teapot2][or][benjack-no-teapot3][or][benjack-no-teapot4][or]Since you don’t have Carol’s grand-uncle’s teapot, she refuses to let you into her room to the north.[no line break][stopping][paragraph break]";
+		stop the action;
+	otherwise:
+		say "[quotation mark]Oh, we[apostrophe]re all so happy! And it is just about tea time too! Come right in.[quotation mark] The girl turns to face a sock puppet monkey and scolds him, [quotation mark]You just stay in your seat, [bold type]Young Master Sweetpaws[roman type] -- [bold type] mother[roman type] says we will have manners in this house![quotation mark][paragraph break]Much bustling ensues: sounds of porcelain being laid, clinking of utensils, and the heavy thunk of a chair being put in place.[paragraph break][quotation mark]Ready! Come in, [bold type]Naomi[roman type][quotation mark], sings Carol as she ushers you inward.[paragraph break]Perhaps against your better judgement, you follow her.[paragraph break][quotation mark]Here, let me take that for you,[quotation mark] offers Carol as she accepts the teapot and walks to a table at the center of the room.[quotation mark][paragraph break]".
+		
+To say benjack-no-teapot1:
+	say "[quotation mark]Hi [bold type]Naomi[roman type]. That[apostrophe]s a funny name -- are you an [bold type]immigrant[roman type] or something? [bold type]Daddy[roman type] says [bold type]immigrants[roman type] don[apostrophe]t understand plain English and that[apostrophe]s why we hate [bold type]communists[roman type]. My name is [bold type]Carol[roman type]. Before you come through my door, want to hear a joke?[quotation mark][paragraph break][quotation mark]But, there[apostrophe]s no door here[quotation mark], you complain.[paragraph break][quotation mark]Knock, knock[quotation mark], says the girl, ignoring your objection.[paragraph break][quotation mark]Who[apostrophe]s there?[quotation mark] you reluctantly respond.[paragraph break][quotation mark]Naomi![quotation mark][paragraph break][quotation mark]Naomi, who?[quotation mark] you ask, confused.[paragraph break][quotation mark]Naomi with a chicken on top![quotation mark] The little girl giggles uncontrollably. [quotation mark]It[apostrophe]s funny because it has a chicken on top, get it?[quotation mark][paragraph break]When the girl stops giggling, she somehow ejects you back into the hallway, adding, [quotation mark]We[apostrophe]re so glad you came for the [bold type]tea party[roman type], but aren[apostrophe]t you missing something important?[quotation mark]".
+
+To say benjack-no-teapot2:
+	say "Again, you hear some shuffling around behind the door. You can[apostrophe]t quite make it out, but you think you hear the girl debating something with a number of other whispered voices behind the door.[paragraph break][quotation mark]My [bold type]tea party[roman type] guests are getting bored. Could you just get [bold type]grand-uncle[roman type][apostrophe]s [bold type]teapot[roman type] so you can drink tea with us?[quotation mark][paragraph break]Once again, you find yourself ejected from the bedroom into the hallway.[no line break]".
+
+To say benjack-no-teapot3:
+	say "A low rumble builds from within the room before you, shaking the venerable foundations of the mansion, and giving flight to dust that had rested comfortably in various corners of the stately edifice for many long centuries. The sound soars upward in a multitude of tortured voices and ends just as quickly in an exodus of chitinous skittering.[paragraph break]You stand motionless in the aftermath.[paragraph break][quotation mark][bold type]Mister Snortles[roman type] says you don[apostrophe]t have the [bold type]teapot[roman type] and he[apostrophe]s getting rather cross about it. Why don[apostrophe]t you get the [bold type]teapot[roman type]?[quotation mark][paragraph break]Once again, you find yourself ejected from the bedroom into the hallway.[no line break]".
+	
+To say benjack-no-teapot4:
+	say "[quotation mark]That[apostrophe]s a shame, [bold type]Naomi[roman type], still no teapot?[quotation mark][paragraph break]There is a wailing of strange voices within the room just at the limit of your hearing.[paragraph break][quotation mark][bold type]Naomi[roman type],[quotation mark] she continues, [quotation mark]you must be one of the new [bold type]servants[roman type]. It[apostrophe]s okay if you want to play with me -- I used to play with some of the other [bold type]servants[roman type]. Some don[apostrophe]t think it[apostrophe]s okay to come in, but it is. I think some don[apostrophe]t want to play or maybe they don[apostrophe]t know how and that[apostrophe]s why they cry and scream so much, but playing is fun![quotation mark][paragraph break]This elicits a round of muted laughter from the room.[paragraph break][quotation mark]Anyhow, if you want to play tea later, could you pretty, pretty please bring [bold type]grand-uncle[roman type][apostrophe]s [bold type]teapot[roman type]? Thanks![quotation mark][paragraph break]You are once again back in the hallway and from the sound of it, Carol has gone back to play and probably forgotten about you.[no line break]".		
+
+Part 5 - Scene N1 Tea Party
 
 Rule for printing the name of a benjack-runebook (called the evil tome):
 	say "[printed name of the evil tome]";
@@ -936,29 +957,7 @@ benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the 
 
 benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm.
 
-
-[scrapbook is already defined as a subject]
-
-[
-
-benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is in the benjack-realm.
-
-]
-
 Section 2 - N1 Quips
-
-[TODO response handler for ask, scene N1
->ask about [undefined topic]
-[quotation mark]I don[apostrophe]t know,[quotation mark] replies the little girl, [quotation mark]Maybe you could ask Christabell that one?[quotation mark]
-]
-
-[TODO response handler for tell, N-scenes
->tell about [undefined topic]
-if a random chance of 1 in X succeeds, say:
-[one of]Is that so[or]Really[or]You don[apostrophe]t say[in random order]?, remarks Carol.
-[one of the stuffed animals at random] says that[apostrophe]s [one of]fascinating[or]amazing[or]fabulous[or]neat[or]swell[in random order].
-Carol seems [one of]distracted[or]to be day dreaming[or]lost in her thoughts[or]a little out to lunch[or]to be thinking of something else[or]preoccupied[or]not to hear[or]not to catch what you said[in random order], and does not reply.
-]
 
 After quizzing benjack-Carol about benjack-Carol:
 	say "[one of][quotation mark]About me?[quotation mark] the girl grins and folds her hands, [quotation mark]I am five years old and I can tie my own shoes, except that these ones don[apostrophe]t have laces, and I can read some books, even if they don[apostrophe]t have pictures, although I prefer the ones with pictures.[quotation mark][paragraph break]She looks around the room. Gesturing to the animals seated at the table and perched on the bed, she continues, [quotation mark]I have a lot of friends to keep me company when I[apostrophe]m here, which is all the time now, since my father says that it is better for me to be raised by the Cragnes on account of he is so busy at work and mother has so many guests to entertain. Which is fine. I[apostrophe]m used to it because I have been here since I was a baby except sometimes when I visit Stonington.[quotation mark][or]Carol is only too happy to prattle on about her daily routine of kindergarten and playing in her room with her toys. You do a lot of nodding.[no line break][stopping][paragraph break]".
@@ -1133,7 +1132,7 @@ When benjack-N1 ends:
 	benjack-stage-off 1;
 	benjack-conversation-restore-defaults.
 
-Part 5 - Scene R1 Naomi is Marked and Learns Some Spells
+Part 6 - Scene R1 Naomi is Marked and Learns Some Spells
 
 Chapter 1 - R1 Begins
 
@@ -1426,7 +1425,7 @@ Chapter 5 - R1 Ends
 When benjack-R1 ends:
 	benjack-conversation-restore-defaults.
 
-Part 6 - Scene N2 Teenage Carol Marks Naomi's Baby
+Part 7 - Scene N2 Teenage Carol Marks Naomi's Baby
 
 Chapter 1 - N2 begins
 
@@ -1693,7 +1692,7 @@ When benjack-N2 ends:
 	benjack-stage-off 2;
 	benjack-conversation-restore-defaults.
 
-Part 7 - Scene R2 Plotting Carol's Disruption
+Part 8 - Scene R2 Plotting Carol's Disruption
 
 Chapter 1 - R2 begins
 
@@ -1820,7 +1819,7 @@ Chapter 5 - R2 Ends
 When benjack-R2 ends:
 	benjack-conversation-restore-defaults.
 	
-Part 8 - Scene N3 Boss Battle
+Part 9 - Scene N3 Boss Battle
 
 Chapter 1 - N3 begins
 
@@ -2222,7 +2221,7 @@ Chapter 6 - N3 Ends
 When benjack-N3 ends:
 	benjack-conversation-restore-defaults.
 
-Part 9 - Scene Denouement
+Part 10 - Scene Denouement
 
 The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi Runes". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" or "tome of naomi runes" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: Tome of Naomi Runes."
 
@@ -2320,7 +2319,7 @@ When benjack-denouement ends:
 [hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your RuneBook and take the photo that comes out of it for a later part of the game[end if]
 ]
 
-	Part 10 - Apres
+	Part 11 - Apres
 
 [Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
 
