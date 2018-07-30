@@ -360,7 +360,7 @@ Chapter 1 - R0 Begins
 
 When benjack-r0 begins:
 	Now the block telling rule response (A) is "[benjack-BTRR]";
-	Now the block asking rule response (A) is "[benjack-BARR]". 
+	Now the block asking rule response (A) is "[benjack-BARR]".
 
 Chapter 2 Conversation
 
@@ -631,6 +631,7 @@ Chapter 1 - N1 Begins
 When benjack-N1 begins:
 	benjack-stage-on 1;
 	say "[benjack-nursery-description]";
+	now the current interlocutor is benjack-Carol;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
 	[block responses is listed redundantly here just in case player gets to N1 before R0 somehow]
@@ -1095,6 +1096,7 @@ Part 5 - Scene R1 Naomi is Marked and Learns Some Spells
 Chapter 1 - R1 Begins
 
 When benjack-R1 begins:
+	now the current interlocutor is benjack-Christabell;
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
@@ -1391,6 +1393,7 @@ Chapter 1 - N2 begins
 
 When benjack-N2 begins:
 	benjack-stage-on 2;
+	now the current interlocutor is benjack-Carol;
 	say "[benjack-N2-greeting]";
 	say "[benjack-nursery-description]";
 	Now the block telling rule response (A) is "[benjack-BTRR]";
@@ -1658,6 +1661,7 @@ When benjack-R2 begins:
 	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
 	now yourself is benjack-ploughver-inhibited;
 	move benjack-Christabell to DAN8;
+	now the current interlocutor is benjack-Christabell;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
 
@@ -1784,6 +1788,7 @@ When benjack-N3 begins:
 	now yourself is benjack-ploughver-inhibited;
 	benjack-stage-on 3;
 	say "[benjack-nursery-description]";
+	now the current interlocutor is benjack-Carol;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
 
