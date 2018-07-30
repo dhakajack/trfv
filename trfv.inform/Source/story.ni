@@ -715,6 +715,8 @@ The N2-desc of the benjack-  is "".
 The N3-desc of the benjack-  is "".
 ]
 
+[TODO teacup shadow on table; instead of takeing - why would you take it if it doesn't have tea in it.]
+
 The benjack-comforter is a benjack-shadow.  The printed name of benjack-comforter is "comforter".
 Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
@@ -1115,7 +1117,7 @@ After quizzing benjack-Carol about benjack-scrap-5:
 
 Chapter 4 - N1 Events
 
-The benjack-slithering-vomit-bladder-of-Katallakh is an open container. Understand "slithering/vomit/bladder/katallakh" or "slithering vomit bladder bladder of Katallakh" or "vomit bladder of Katallakh" or "bladder of Katallakh" as the benjack-slithering-vomit-bladder-of-Katallakh.
+The benjack-slithering-vomit-bladder-of-Katallakh is an open container. Understand "slithering/vomit/bladder/katallakh/slimy/dark-green" or "slithering vomit bladder bladder of Katallakh" or "vomit bladder of Katallakh" or "bladder of Katallakh" as the benjack-slithering-vomit-bladder-of-Katallakh.
 
 [kill the (empty) in inventory listings durng this scene]
 Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
@@ -1168,7 +1170,8 @@ Every turn during benjack-N1:
 					now item is in benjack-slithering-vomit-bladder-of-Katallakh;
 					now item is unseen;
 				otherwise: [no stealable items]
-					say "[quotation mark]Well poop,[quotation mark] exclaims the sullen little girl. [quotation mark]Mister Snortles and Miss Winkelbottom both agree that it[apostrophe]s time to move things along, and I don[apostrophe]t like to do this, but....[quotation mark] Carol traces some shapes in the air, and for a moment they hang there, on fire. She then points at your mouth and commands [quotation mark]Say the words![quotation mark][paragraph break]Shit just got real. You feel an irrepressible compulsion growing like a [quotation mark]hold my hair now, I[apostrophe]m going to hurl[quotation mark] moment, and are surprised to hear yourself blurt out [quotation mark]bottoms-up![quotation mark][paragraph break]".
+					say "[quotation mark]Well poop,[quotation mark] exclaims the sullen little girl. [quotation mark]Mister Snortles and Miss Winkelbottom both agree that it[apostrophe]s time to move things along, and I don[apostrophe]t like to do this, but....[quotation mark] Carol traces some shapes in the air, and for a moment they hang there, on fire. She then points at your mouth and commands [quotation mark]Say the words![quotation mark][paragraph break]Shit just got real. You feel an irrepressible compulsion growing like a [quotation mark]hold my hair now, I[apostrophe]m going to hurl[quotation mark] moment, and are surprised to hear yourself blurt out [quotation mark]bottoms-up![quotation mark][paragraph break]";
+					try benjack-bottomsupping.
 					
 To say benjack-whine1:
 	say "Carol glances around the table at her stuffed animals. [quotation mark]I don[apostrophe]t know about any of you, but I sure am getting thirsty. Yes sir, some nice hot tea would really hit the spot, don[apostrophe]t you think so, Sweetpaws? You do? Me too. I wish Naomi would say the magic words and let us get going. What[apostrophe]s that Mister Snortles? Maybe she forgot what to say? I[apostrophe]m sure she remembers that she is supposed to say [apostrophe]bottoms-up[apostrophe] so we can start.[quotation mark][paragraph break]".
@@ -2530,6 +2533,43 @@ Understand "XXX" as Benjack-clipping-xxx when the location is in the benjack-rea
 Book 4 - New Actions
 
 Part 1 - Magicks
+
+Benjack-bottomsupping is an action applying to nothing. Understand "bottoms-up" or "bottoms up" as Benjack-bottomsupping when the location is in the benjack-realm.
+
+Check benjack-bottomsupping:
+	if benjack-N1 is not happening:
+		say "Nothing happens. Then again, you're not in the middle of a tea party, so what did you expect?";
+		stop the action.
+		
+Carry out benjack-bottomsupping:
+	increase the benjack-times_bestowed of yourself by one;
+	if the benjack-times_bestowed of yourself is:
+		-- 1:
+			benjack-bottom1;
+		-- 2:
+			benjack-bottom2;
+		-- 3:
+			benjack-bottom3.			
+			
+To benjack-bottom1:
+	if the benjack-slithering-vomit-bladder-of-Katallakh contains something:
+		say "Carol smiles and a slimy dark-green sac appears in front of you. [quotation mark]Well, here’s your stuff. Fair and square.[quotation mark][paragraph break]";
+		move the benjack-slithering-vomit-bladder-of-Katallakh to M2F3;
+		now the benjack-slithering-vomit-bladder-of-Katallakh is seen;
+		say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
+		now Benjack-clipping-body is in benjack-scrap-5;
+		now the player carries mtw-teapot.
+
+To benjack-bottom2:
+	say "Again, the sweet taste of tea, this time with a dash of oil of bergamot and just a touch of sugar.[paragraph break]Odd you think, same teapot, but a different taste. But then you reason that is not any harder to accept than tea distributing itself magically around a table you are sharing with four stuffed animals and a ghost of some sort. Some things are just harder to accept than others.[paragraph break]As you set your cup back down on the table, you observe Carol sneaking a glance at her scrapbook. In that brief instant, both Carol and the book glow slightly, somewhat brighter than they did before. Your own skin pulses briefly with the same glow and you think that afterwards it maintains something of a numinous shine. This is really good tea. You feel great, and the worries of the day are fast disappearing.[paragraph break][quotation mark]I really liked that one![quotation mark] pipes Carol.[paragraph break][quotation mark]We aim to please,[quotation mark] you say, prompting her giggles.";
+	now Benjack-clipping-convict is in benjack-scrap-5;
+	now the player carries mtw-teapot.
+	
+To benjack-bottom3:
+	say "That was unexpected. Flowery. Bit of an aftertaste.[paragraph break][quotation mark]Is this Jasmine?[quotation mark][paragraph break][quotation mark]It[apostrophe]s Crisp Hand Sew Mom.[quotation mark] Carol struggles with the pronunciation.[paragraph break][quotation mark]Chrysanthemum?[quotation mark] You offer.[paragraph break][quotation mark]Yes, that. Grand-uncle[apostrophe]s teapot knows all my favorites.[quotation mark][paragraph break]Not only are the two of you now glowing enough to cast shadows around the room, but you notice that little sparks of static electricity scintillating at your fingertips. You hold them up, [quotation mark]Carol, is this normal?[quotation mark][paragraph break][quotation mark]Oh yes, it[apostrophe]s wonderful, isn[apostrophe]t it?[quotation mark][paragraph break]You do feel wonderful.[paragraph break]The scrapbook pulses with energy.";
+	now Benjack-clipping-sable is in benjack-scrap-5;
+	now the player carries mtw-teapot.
+	
 
 Chapter 1 - XIZZIING
 
