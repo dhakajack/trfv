@@ -131,7 +131,7 @@ Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
 The commentary of DAN8 is "DAN8 Commentary".
 
-Description of DAN8 is "[one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
+Description of DAN8 is "[one of][Benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
 The benjack-cliffs are scenery in DAN8.  The printed name of benjack-cliffs is "cliffs".  
 Understand "cliff/granite/wall/hill/hillside/mica/cliffs/walls/hills/hillsides" as the benjack-cliffs when the player is in DAN8.
@@ -181,7 +181,7 @@ Description of M2F3 is "[benjack-nursery-description]"
 
 To say benjack-nursery-description:
 	if benjack-N1 is happening:
-		say "[first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.[paragraph break]";
+		say "[one of][Benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the door, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.[paragraph break]";
 	otherwise if benjack-N2 is happening:
 		say "[one of]The door to Carol[apostrophe]s room swings open noiselessly and you walk into the room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair.[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time.[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk.[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk.[stopping]";
 	otherwise if benjack-N3 is happening:
@@ -330,15 +330,21 @@ benjack-N3 ends when benjack-window is open.
 
 benjack-Denouement is a scene. [Jump out window or not]
 benjack-Denouement begins when benjack-window is open.
-benjack-Denouement ends when benjack-naomiRunes is in M2F3 or benjack-naomiRunes is in DAN8.
-
-
-
+benjack-Denouement ends when M2F3 encloses benjack-naomiRunes or DAN8 encloses benjack-naomiRunes.
 
 
 [might need some auxiliary scenes -- we'll figure that out as we code.]
 
 Part 2 - Scene-specific Hints
+
+[hints are defined in the begin statement for each scene. Hints are rot13 text]
+
+Benjack-scene-specific-hint is a text that varies. Benjack-scene-specific-hint is "".
+
+benjack-hinting is an action applying to nothing. Understand "hints" or "hint" or "help" or "info" as benjack-hinting when the location is in the benjack-realm.
+
+Carry out benjack-hinting:
+	say "[bracket] HINT: An unearthly voice whispers guttural rot13 text from the void beyond the stars. To view it, shift each letter by 13 characters, or more simply, just paste it into the online translator at www.rot13.com[close bracket][paragraph break][bold type][benjack-scene-specific-hint][roman type].". 
 
 Part 3 - Scene R0 Meet Christabell
 
@@ -361,12 +367,23 @@ After quizzing benjack-Christabell about benjack-carrots during benjack-R1:
 Chapter 1 - R0 Begins
 
 When benjack-r0 begins:
+	now Benjack-scene-specific-hint is "Gnyx gb Puevfgnoryy nf zhpu nf lbh jbhyq yvxr sbe fbzr onpxtebhaq vasbezngvba gung znl or vzcbegnag yngre";
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]".
+	
+[hint text:
+Talk to Christabell as much as you would like for some background information that may be important later]
+	
+To say benjack-hint-prompt:
+	say "[bracket] HINT: you can type [quotation mark]hints[quotation mark] for a hint for this location [close bracket][paragraph break]".
 
 Chapter 2 Conversation
 
 Instead of quizzing or informing someone about something when benjack-R0 is happening for the first time:
+	say "[benajack-hint-shorter-form]";
+	continue the action.
+	
+Instead of quizzing or informing someone about something when benjack-N1 is happening for the first time:
 	say "[benajack-hint-shorter-form]";
 	continue the action.
 	
@@ -638,12 +655,15 @@ Rule for printing the name of a benjack-runebook (called the evil tome):
 Chapter 1 - N1 Begins
 
 When benjack-N1 begins:
+	now Benjack-scene-specific-hint is "Lbh arrq gb uhzbe Pneby ol cynlvat nybat jvgu ure grn cnegl. Fur arrqf gb lbh gur zntvp jbeqf [quotation mark]obggbzf-hc[quotation mark] gb freir n ebhaq bs grn. Lbh pna unir n srj phcf bs grn vs lbh jnag, ohg bapr lbh unir unq bar, lbh pna yrnir. Lbh pna nyfb nfx/gryy nobhg n ahzore bs pbairefngvba gbcvpf gung jvyy or hfrshy yngre va gur tnzr";
 	benjack-stage-on 1;
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
-	[block responses is listed redundantly here just in case player gets to N1 before R0 somehow]
+	
+[hint text: You need to humor Carol by playing along with her tea party. She needs to you the magic words bottoms-up to serve a round of tea. You can have a few cups of tea if you want, but once you have had one, you can leave. You can also ask/tell about a number of conversation topics that will be useful later in the game]
+	
 	
 Chapter 2 - N1 Nursery Furnishing Updates
 
@@ -1105,10 +1125,12 @@ Part 5 - Scene R1 Naomi is Marked and Learns Some Spells
 Chapter 1 - R1 Begins
 
 When benjack-R1 begins:
-	now the current interlocutor is benjack-Christabell;
+	now Benjack-scene-specific-hint is "Bapr ntnva, lbh pna gnyx jvgu Puevfgnoryy nobhg n ahzore bs gbcvpf, ohg gur xrl bar vf nfxvat ure nobhg gur [quotation mark]orfgbjnapr[quotation mark], n zrnaf bs genafsreevat zntvpny raretl sebz bar crefba gb nabgure. Guvf jvyy eryrnfr lbh sebz orvat nggenpgrq gb gur cvyr bs envyebnq genpxf naq jvyy nyybj Puevfgnoryy gb fgbc snqvat va naq bhg[one of][or]. Gb pnfg gur orfgbjnapr fcryy, glcr [quotation mark]kvmmv[quotation mark]. Nyfb abgr gung lbh pna ninvy lbhefrys bs gur [quotation mark]cybhtuire[quotation mark] naq [quotation mark]xjvfngm unqrenpu[quotation mark] fcryyf[stopping]";
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
+	
+[hint text: Once again, you can talk with Christabell about a number of topics, but the key one is asking her about the [quotation mark]bestowance[quotation mark], a means of transferring magical energy from one person to another. This will release you from being attracted to the pile of railroad tracks and will allow Christabell to stop fading in and out[one of][or]. To cast the bestowance spell, type [quotation mark]xizzi[quotation mark]. Also note that you can avail yourself of the [quotation mark]ploughver[quotation mark] and [quotation mark]kwisatz haderach[quotation mark] spells[stopping]]
 
 Chapter 2 - R1 Conversation
 
@@ -1234,12 +1256,9 @@ After quizzing benjack-Christabell about benjack-Fusion:
 After quizzing benjack-Christabell about benjack-Remedy:
 	say "[one of][quotation mark]I do see clearly a simple answer to remitte your Libertie of Mouvement: the Bestowance.[quotation mark][or]Christabell recommends that you perform a magical ritual called [quotation mark]the bestowance[quotation mark] in order to rid yourself of magical energy, which over time can be harmful to mortals.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Christabell about benjack-Bestowance for the first time:
-	say "Christabelle replies, [quotation mark]The Bestowance is the Magick whereby Potence be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark], you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach Carol, when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be ‘xizzi[apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little.";
-	now yourself is benjack-spell_enabled.
-	
 After quizzing benjack-Christabell about benjack-Bestowance:
-	say "Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe]xizzi[apostrophe].".
+	say "[one of]Christabelle replies, [quotation mark]The Bestowance is the Magick whereby Potence be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark], you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach Carol, when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be ‘xizzi[apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little[or]Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe]xizzi[apostrophe][stopping].";
+	now yourself is benjack-spell_enabled.
 
 After quizzing benjack-Christabell about benjack-Nirramonk:
 	say "[one of][benjack-Nirramonk1][benjack-Nirramonk2][or]Christabell and her mother took up with a local tribe, the Nirramonk, when they left Christabell[apostrophe]s father. They learned the Nirramonk language and their culture, including their religion, which she says is one step beyond Christianity[stopping]."
@@ -1401,6 +1420,7 @@ Part 6 - Scene N2 Teenage Carol Marks Naomi's Baby
 Chapter 1 - N2 begins
 
 When benjack-N2 begins:
+	now Benjack-scene-specific-hint is "Pneby vafvfgf bar cynpvat ure znex ba lbh, ohg arrqf lbhe pbafrag. Lbh unir gb nterr be fur jvyy abg yrg lbh bhg bs gur ebbz. Nf nyjnlf, gurer vf cyragl bs pbairefngvba gb or unq";
 	benjack-stage-on 2;
 	now the current interlocutor is benjack-Carol;
 	say "[benjack-N2-greeting]";
@@ -1410,6 +1430,8 @@ When benjack-N2 begins:
 
 To say benjack-N2-greeting:
 	say "". [TODO:  based on whether N1 ended on friendly note or not]
+	
+[hint text: Carol insists one placing her mark on you, but needs your consent. You have to agree or she will not let you out of the room. As always, there is plenty of conversation to be had]
 
 Chapter 2 - Nursery Furnishing Updates
 
@@ -1667,12 +1689,15 @@ Part 7 - Scene R2 Plotting Carol's Disruption
 Chapter 1 - R2 begins
 
 When benjack-R2 begins:
+	now Benjack-scene-specific-hint is "Lbh pna pung jvgu Puevfgnoryy gb trg n orggre haqrefgnaqvat bs jung vf tbvat ba. Jura lbh yrnir, fur jvyy gryy lbh jung fur jnagf lbh gb qb jvgu Pneby onpx va gur znafvba";
 	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
 	now yourself is benjack-ploughver-inhibited;
 	move benjack-Christabell to DAN8;
 	now the current interlocutor is benjack-Christabell;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
+	
+[hint text: You can chat with Christabell to get a better understanding of what is going on. When you leave, she will tell you what she wants you to do with Carol back in the mansion]
 
 Chapter 2 - R2 Conversation
 
@@ -1793,6 +1818,7 @@ Part 8 - Scene N3 Boss Battle
 Chapter 1 - N3 begins
 
 When benjack-N3 begins:
+	now Benjack-scene-specific-hint is "Erzrzore jung Puevfgnory fnvq? Gur bayl jnl gb ybjre Pneby'f qrsrafrf vf gb bcra gur jvaqbj. Lbh nyfb unir gur [quotation mark]xjvfngm unqrenpu[quotation mark] fcryy ng lbhe qvfcbfny";
 	say "Carol stares out the window, her back to you. She[apostrophe]s a bit taller and dressed in a sharply tailored turquoise shift. Without bothering to turn around, she addresses you, [quotation mark]I have been expecting you, Naomi. I knew you would come once more before I die.[quotation mark][paragraph break]";
 	now yourself is benjack-ploughver-inhibited;
 	benjack-stage-on 3;
@@ -1800,6 +1826,8 @@ When benjack-N3 begins:
 	now the current interlocutor is benjack-Carol;
 	Now the block telling rule response (A) is "[benjack-BTRR]";
 	Now the block asking rule response (A) is "[benjack-BARR]". 
+	
+[hint text: Remember what Christabel said? The only way to lower Carol's defenses is to open the window. You also have the "kwisatz haderach" spell at your disposal]
 
 Chapter 2 - N3 Nursery Furnishing Updates
 
@@ -1962,12 +1990,6 @@ benjack-bletchley is a subject.  Understand "bletchley/park/enigma/turing" as be
 benjack-lwah is a subject.  Understand "lwah" as benjack-lwah when the location is M2F3 and benjack-N3 is happening. 
 
 benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolphin/dolphins/porpoise/porpoises" as benjack-popeyeTSM when the location is M2F3 and benjack-N3 is happening. 
-
-[benjack-xxx is a subject.  Understand "xxx" as benjack-xxx when the location is M2F3 and benjack-N3 is happening. ]
-
-
-[popeyetsm]
-
 
 Section 2 - N3 Quips
 
@@ -2215,6 +2237,11 @@ Instead of reading benjack-naomiRunes:
 	
 Chapter 1 - Denouement Begins
 
+When benjack-denouement begins:
+	now Benjack-scene-specific-hint is "Lbh pna evqr bhg guvf fprar va gur ebbz be lbh pna gnxr gur bayl ninvynoyr rkvg, gur jvaqbj[one of][or]. Gur jvaqbj pna or bcrarq ol gnyxvat gb Pneby gb qvfgenpg ure naq gura bcravat gur jvaqbj n ovg, naq gura ercrngvat gung cebprff[stopping]. Or fher gb gnxr n ybbx ng lbhe EharObbx jura vg vf nyy bire naq gb gnxr gur vgrz gung snyyf bhg bs vg".
+	
+[hint text: You can ride out this scene in the room or you can take the only available exit, the window[one of][or]. The window can be opened by talking to Carol to distract her and then opening the window a bit, and then repeating that process[stopping]. Be sure to take a look at your RuneBook when it is all over and to take the item that falls out of it]
+
 Chapter 2 - Denouement Events
 
 Before conversing when the benjack-Denouement is happening:
@@ -2255,6 +2282,7 @@ Chapter 3 - Denouement Tests
 Chapter 4 - Denouement Ends
 
 When benjack-denouement ends:
+	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-photo is nowhere]! Lbh arrq gb rknzvar lbhe EharObbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
 	benjack-stage-off 3;
 	now benjack-window is in M2F3;
 	now benjack-window is seen;
@@ -2284,6 +2312,9 @@ When benjack-denouement ends:
 	if yourself is benjack-guilty:
 		now Benjack-clipping-10 is in benjack-naomiRunes.
 	
+[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your RuneBook and take the photo that comes out of it for a later part of the game[end if]
+]
+
 	Part 10 - Apres
 
 [Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
