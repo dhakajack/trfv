@@ -1,0 +1,66 @@
+#+STARTUP: indent
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) PUNTED(p)
+#+OPTIONS: toc:nil num:nil
+
+* R0 - Meet Christabell
+- Examine the scenery
+- Break ice with Christabell
+- Discuss many topics
+  - at some point: jump the shark, talk about spirits
+  - bonus: learn about Carol and marks.
+- Christabell is happy to re-engage whenever leaves and returns during
+  R0.
+
+* N1 - Tea Party -- JACK WILL WORK ON THIS NEXT
+- TODO Puzzle: proper etiquette to enter room
+- Examine scenery
+  - TODO better description of touching/taking shadows
+- TODO Discover door is gone and you're trapped
+- TODO Participate in 3 tea ceremonies; notice scrapbook changes
+- TODO Drinking tea makes door reappear
+  - leave on good terms (finish the tea ceremonies)
+  - ... or bad terms (disrupt ceremony, get thrown out)
+
+* R1 - Naomi marked & learns spells
+- TODO: Christabell greets upon entering scene
+- Christabell notices you're Glamoured
+- Discover you can't leave unless you help charge Christabell
+- Discussion: learn about runes, power, & bestowance (xizzi spell)
+- After charging Christabell (xizzi):
+  - teaches you a spell to destroy Carol's runes
+  - teaches you 'ploughver' spell to insta-teleport to Carol
+- Leave either by foot, or by teleport to Carol.
+
+* N2 - Carol Marks Naomi's Baby -- BEN NOW WORKING ON
+- TODO Carol greets based on good/bad prior interaction
+- Examine scenery -- it's different now
+- Discussion: learn about Carol's destructive actions
+- Discover you can't destroy Carol's runes, because scrapbook isn't present.
+- TODO Discover you can't leave, until you let Carol mark you
+  - TODO Carol attempts to mark, but Christabell has already done so.
+    Baby marked instead ("branding")
+- Leave either by foot, or by teleport to Christabell.
+
+* R2 - Plotting Carol's Disruption
+- TODO: Christabell greets upon entering scene
+- Discussion: learn that the 'baby' was just a fake story.
+- Discover you can't teleport back (or walk away) without hearing
+  Christabell's plan first.
+- Christabell's plan: open Carol's window (when distracted)
+- Leave either by foot, or by teleport to Carol
+
+* N3 - Boss Battle
+- Carol gives forboding greeting upon start of scene
+- TODO Examine scenery -- it's different again
+- (optional?? boss battle text assumes it happened) destroy one of the runebooks via spell
+- Distract Carol by talking, open window twice in a row
+- Christabel enters, boss battle, baby is killed
+- Naomi jumps out window (?
+
+* Denouement
+- Naomi now has the photograph
+  - TODO description was given to us by marco, use it.
+- TODO Read about all the evil you did in the runes you made
+
+
+
