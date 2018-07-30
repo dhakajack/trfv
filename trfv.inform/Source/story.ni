@@ -66,6 +66,9 @@ The examine containers rule does nothing when examining a benjack-runebook.
 Understand "read [a benjack-runebook]" as reading when the location is M2F3.
 Instead of opening a benjack-runebook, try reading the noun.
 
+Instead of inserting something (called the item) into a benjack-runebook:
+	try dropping the item.
+
 Part 2 - Conversation Disambiguation
 
 [If we run into ambiguation prompts, this is a quick way to resolve them.
@@ -102,6 +105,12 @@ Yourself can be benjack-ploughver-armed. Yourself is benjack-ploughver-armed.[on
 Yourself can be benjack-ploughver-inhibited. Yourself is not benjack-ploughver-inhibited. [e.g., if room is warded, set]
 
 Yourself has a number called benjack-times_ploughvered. The benjack-times_ploughvered of yourself is 0.
+
+Yourself can be benjack-ragchewing. Yourself is not benjack-ragchewing.
+
+Yourself can be benjack-KH_accomplished. Yourself is not benjack-KH_accomplished.
+
+Yourself can be benjack-guilty. Yourself is not benjack-guilty.
 
 Part 4 - Locations 
 
@@ -154,6 +163,8 @@ The description of the benjack-mound is "[one of]Long shafts of weathered, ruste
 
 Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear."
 
+The benjack-altar is a supporter. The description of benjack-altar is "TODO altar description". The printed name of benjack-altar is "stone altar". Understand "stone/altar" as benjack-altar when the location is in the benjack-realm.
+
 Chapter M2F3 Nursery
 
 M2F is a region.
@@ -176,8 +187,16 @@ To say benjack-nursery-description:
 		
 The commentary of M2F3 is "M2F3 Commentary".
 
-benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door.
+benjack-baby-door is a scenery thing. The printed name of benjack-baby-door is "nursery door". Understand "nursery" or "door" as benjack-baby-door when the location is in the benjack-realm. 
 
+benjack-bedroom-door is an open openable scenery container in M2F3. The printed name of benjack-bedroom-door is "bedroom door". Understand "bedroom/door" as benjack-bedroom-door when the location is in the benjack-realm. 
+
+Instead of entering the benjack-bedroom-door:
+	try going south.
+	
+Instead of inserting something (called the item) into the  benjack-bedroom-door:
+	try dropping the item.
+	
 The description of the benjack-baby-door is "The door [benjack-baby-door-desc]."
 
 To say benjack-baby-door-desc:
@@ -221,7 +240,7 @@ benjack-Christabell can be either run-down or charged-up. benjack-Christabell is
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3.
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3. Benjack-Carol can be disruption_informed. Benjack-Carol is not disruption_informed.
 
 The description of benjack-Carol is "[benjack-Carol-description]".
 
@@ -303,7 +322,7 @@ benjack-R2 ends when the player is not in DAN8.
 
 benjack-N3 is a scene. ["Boss Battle"]
 benjack-N3 begins when benjack-R2 has happened and the player is in M2F3.
-benjack-N3 ends when benjack-Carol is not in M2F3.
+benjack-N3 ends when benjack-window is open.
 
 benjack-Denouement is a scene. [Jump out window or not]
 benjack-Denouement begins when benjack-window is open.
@@ -744,24 +763,29 @@ The benjack-floor is a benjack-shadow.  The printed name of the benjack-floor is
 Understand "floor" or "carpet" as benjack-floor when the player is in M2F3.
 The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue carpet[stopping]".
 
-
 [REAL OBJECTS, not shadows:]
 
 The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
 Understand "window" as benjack-window when the player is in M2F3.
-The description of benjack-window is "The large bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
+The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
+Benjack-window can be cracked. Benjack-window is not cracked.
+
+Instead of entering the benjack-window:
+	try benjack-outjumping the benjack-window.
+	
+Instead of going outside when the location is M2F3 and the benjack-window is open:
+	try benjack-outjumping benjack-window.
+
+Instead of inserting something (called the item) into the benjack-window:
+	try dropping the item.
 
 Instead of touching the benjack-window, say "The glass is cool to the touch.".
 
 Instead of opening the benjack-window:
-	if benjack-N1 is happening:
-		say "The window has a child safety lock.[first time] How very uncharacteristically responsible for the Cragnes[only].";
-	otherwise if benjack-N2 is happening:
-		say ""; [TODO]
-	otherwise if benjack-N2 is happening:
-		say ""; [TODO complex mechanics of distracting Carol while opening window twice]
-
+	if benjack-N3 is not happening:
+		say "The window has a complicated child safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
+		
 [TODO:  hitting action isn't defined, nor is 'looking through'
 Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
 Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
@@ -1581,7 +1605,9 @@ Section 1 - R2 Subjects
 
 benjack-Disruption is a subject.  Understand "disruption/disrupt/destroy" as benjack-Disruption when the location is in the benjack-realm.
 
-benjack-WindowSubject is a subject.  Understand "window/windowe/blockayde/blockade" as benjack-windowSubject when the location is in the benjack-realm.
+benjack-WindowSubject is a subject.  Understand "window/windowe/blockayde/blockade/windows/windowes/blockades/blockaydes" as benjack-windowSubject when the location is in the benjack-realm. The printed name of benjack-windowSubject is "window".
+
+Does the player mean implicit-informing the benjack-window: it is unlikely.
 
 benjack-resentment is a subject.  Understand "resentment" as benjack-resentment when the location is in the benjack-realm.
 
@@ -2011,51 +2037,180 @@ Instead of informing or quizzing benjack-Carol about benjack-mark when benjack-N
 	
 Instead of informing or quizzing benjack-Carol about benjack-ChristabellSubject when benjack-N3 is happening:
 	try quizzing benjack-Carol about benjack-babySubject.
+	
+After informing benjack-Carol about benjack-disruption when benjack-N3 is happening:
+	say "[one of]You[apostrophe]re not entirely sure it[apostrophe]s a good idea, but you spill the beans about Christabell[apostrophe]s plan. Both spirits seem untrustworthy, but Carol does in some ways seem the more maligned of the two, and perhaps absent Christabell[apostrophe]s influence, she would have grown up to be a different person.[paragraph break][quotation mark]Listen Carol, there[apostrophe]s something I need to tell you: Christabell wants to ‘disrupt[apostrophe] you. Do you know what that is?[quotation mark][paragraph break][quotation mark]Of course -- she[apostrophe]s not content with just killing me once, she wants me gone always. See what I have had to deal with for so many decades? And you… I suppose she would have you serve a role in my disruption?[quotation mark][paragraph break][quotation mark]Yes, she wants me to open the window. She says it will be a hole in your magical barrier.[quotation mark][paragraph break][quotation mark]Thank you for trusting me, Naomi. You have given me a chance. Please proceed as she has asked, but when you open the window, at least I will be prepared and will have a fighting chance. I still have some potence left from our bestowance, whereas she must be waning after all this time.[quotation mark][or]You've more or less put yourself at Carol's mercy, having laid out Christabell's plan.[no line break][stopping][paragraph break]";
+	now benjack-Carol is disruption_informed.
+
+Instead of informing benjack-Carol about benjack-WindowSubject when benjack-N3 is happening:
+	try informing benjack-Carol about benjack-disruption.
 
 Chapter 4 - N3 Events
 
-
-
+After benjack-KHing when benjack-N3 is happening:
+	say "Carol tries to get between you and the scrapbook, but is too slow. As the book dissolves progressively to dust to small to see. Carol sags, as if suddenly exhausted.[paragraph break][quotation mark]You idiot,[quotation mark] she scolds. [quotation mark]What was that for? I[apostrophe]ve done nothing to you -- well, nothing to speak of.[quotation mark][paragraph break][quotation mark]You were growing too powerful; it makes me uncomfortable.[quotation mark][paragraph break][quotation mark]I thought you were a little more rational than that, Naomi. I am disappointed in you. That was, of course, just one of many volumes -- my power is little diminished.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds as a petty afterthought, [quotation mark]the word is Maud[apostrophe]dib. I at least read the book. When he used the weirding module, the thing he yelled was Maud[apostrophe]dib, not Kwisatz Haderach. You could at least get that one detail right.[quotation mark][paragraph break]";
+	now yourself is benjack-KH_accomplished.
+	
+Instead of going south when benjack-N3 is happening:
+	say "[if the benjack-bedroom-door is open]The door is wide open but you[otherwise]You[end if] aren't able to move towards it.[paragraph break][benjack-stuck-n3]".
+	
+Instead of benjack-ploughvering when benjack-N3 is happening:
+	say "[one of]Dark purple sparks fly from the four walls, ceiling and floor of the room as you cast[or]Sparks fly[stopping], but you go nowhere.[paragraph break][benjack-stuck-n3]".
+	
+To say benjack-stuck-n3:
+	say "[one of][quotation mark]What gives, Carol? Am I your prisoner now?[quotation mark][paragraph break][quotation mark]Naomi, it[apostrophe]s not me holding you back --  honest![quotation mark] pleads Carol. [quotation mark]It[apostrophe]s the universe. When you[apostrophe]re here, some part of you is in my time. The future is written from your perspective, but not mine; all is fluid and potential. Apparently, you have some decisions to make, and the universe can[apostrophe]t get on with its business until you make them. I urge you to think carefully on your choices, as this is apparently a nodal moment, the sort of historical linchpin that I have long labored to bring about at great cost.[quotation mark][paragraph break][quotation mark]You[apostrophe]ll understand if I choose not to believe you.[quotation mark][paragraph break][quotation mark]Believe what you want, but think carefully about your next actions. There is no reason we need be enemies.[quotation mark][or]An invisible force blocks your exit.  Carol again shrugs her shoulders and claims it is none of her doing, but somehow related to the universe and unwritten destiny.[no line break][or]An invisible force blocks your exit.[no line break][stopping][paragraph break]".
+	
+Before opening the benjack-window when benjack-N3 is happening:
+	if the benjack-window is open:
+		say "The window is already open.";
+		stop the action;
+	if yourself is not benjack-ragchewing:
+		say "[one of]Carol is watching you too closely[or]Carol seems to have her eye on you[or]Carol if focused on what you are doing[or]Except when Carol is blathering on about something, she watches you too closely to afford you the opportunity to approach the window[or]Sometimes when Carol gets talking, she seems to zone out, but right now, her attention is on you[or]When Carol gets going on a topic, she looses trrack of what you are doing[or]You need to distract Carol with some conversation in order to get to the window[stopping].";
+	otherwise:[ragchewing]
+		if the benjack-window is closed and the benjack-window is not cracked:
+			say "She is so distracted by what you were just talking about that you are able to get near the window without her noticing.[paragraph break]You pull up on the window and it slides only a fraction of an inch up in its gritty track.";
+			the benjack-sash falls in 2 turns from now;
+			now the benjack-window is cracked;
+			stop the action;
+		otherwise:
+			say "You give the window a good heave, and the sash flies upward, the frigid outside air pouring inward.";
+			now the benjack-window is open.
+			
+At the time when the benjack-sash falls:
+	if the benjack-window is closed and the benjack-window is cracked:
+		say "The window has slowly slipped back down and is now fully closed.";
+		now the benjack-window is not cracked.
+		
+Instead of closing the benjack-window when benjack-n3 is happening or benjack-denouement is happening:
+	if the benjack-window is open:
+		say "You lean on it will all your weight, but it is jammed fully open.";
+	otherwise:
+		if the benjack-window is not cracked:
+			say "The window is already closed.";
+		otherwise:
+			say "You surreptitiously elbow it shut.";
+			now benjack-window is not cracked.
+	
+[this fires at the end of each turn after the action and response, so the flag represents the previous turn when it is tested in the before opening the window rule]
+Every turn when benjack-n3 is happening:
+	if the current action is quizzing or informing or implicit-quizzing or implicit-informing:
+		now yourself is benjack-ragchewing;
+	otherwise:
+		now yourself is not benjack-ragchewing.
 
 Chapter 5 - N3 Tests
 
 Chapter 6 - N3 Ends
 
-When benjack-N3 ends:
-	benjack-stage-off 3.
 	
 Part 9 - Scene Denouement
 
-The benjack-naomiRunes is a benjack-runebook. The The printed name of the benjack-naomiRunes is "Runes of Naomi". Understand "runebook/runes" or "runes of naomi" as benjack-naomiRunes. The description of benjack-naomiRunes is "A thin book with a rough, darkened leather cover and crispy yellowed pages."
+The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi Runes". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" or "tome of naomi runes" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: Tome of Naomi Runes."
+
+Instead of reading the benjack-NaomiRunes:
+	if benjack-NaomiRunes is closed:
+		say "You carefully lay open the crusty leather-clad book revealing";
+		now benjack-NaomiRunes is open;
+	otherwise:
+		say "You see";
+	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-naomiRunes][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-naomiRunes][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-naomiRunes][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-naomiRunes][bold type][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-naomiRunes][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
+
+benjack-denouement has a number called doomCounter. The doomCounter is 0.
 
 Instead of reading benjack-naomiRunes:
 	say "The book has a number of entries, each corresponding to a faded clipping:".
 	[TODO: populated the runebook, read titles.]
 	
-
-
-
 Chapter 1 - Denouement Begins
 
 Chapter 2 - Denouement Events
 
 Before conversing when the benjack-Denouement is happening:
 	say "This is the time for action, not mere words."
+	
+Every turn when benjack-denouement is happening:
+	if the doomCounter of the benjack-denouement is less than 5:
+		increase the doomCounter of the benjack-denouement by 1;
+	if the doomCounter of the benjack-denouement is:
+		-- 1:
+			say "[benjack-doom1]";
+		-- 2:
+			say "[benjack-doom2]";
+		-- 3:
+			say "[benjack-doom3]".
+			
+To say benjack-doom1:
+	say "Christabell pours in through the window. Not literally as a person, but her powers, which you have greatly underestimated to this point. In your spectral vision, you perceive a crimson stream flooding into the room -- and into you.[paragraph break][if benjack-Carol is not disruption_informed]Carol is caught unaware and backs to a corner, for once stripped of her air of superiority. [quotation mark]Naomi,[quotation mark] she screams, [quotation mark]by the Elders Gods themselves, I swear you have sealed your doom![quotation mark] The crimson energy flings Carol left and right, but she pulls herself up again leaning heavily on the wall.[paragraph break][end if][if benjack-scrap-19 is nowhere]Through force of habit, Carol reaches behind herself to draw energy from her book of Runes, only recalling too late that you destroyed it. Instead, temporizing, with a flick of her hand she signals her minions to attack. Master Sweetpaws backhands the raggedy clown as he bounds off the shelf, his talons outstretched and jaws wide, leaping straight towards you from his perch. You reflexively lift your hand to shield your face and are surprised as raw magic pours from, constricting to a narrow beam that slices through the ferocious sock puppet, and then continues through his charred fabric to impale Malice the Clown.[paragraph break][end if]You throw a spinning, glowing glob of magic at Carol and it engulfs her; she agonizes within it like a bug in molasses, her screams drowned in its crackling energy as she falls to her knees. As she struggles to her knees, she manages to push one hand clear of the swirling crimson miasma and with that hand she sends her own reverberating wave of cobalt blue magic towards you, more specifically, towards you belly. Something with in you shudders and kicks, an innocent caught in unaware in a cosmic conflict."
+	
+To say benjack-doom2:
+	say "Thundering energies wind through you in opposing directions, pitting you helplessly against your own unborn child.[paragraph break]The air vibrates, [quotation mark]Carol, I do forbid your Apostasy! You shall not unwrite the Third Covenant; the Servants that overthrew the Elder Gods will not abide their Return. I do command you: abandon forthwith your senseless Attack, for if you do destroy the Woman Naomi, so do you destroy the Vessel of your owne Mark.[quotation mark] The words are punctuated by a renewed tide of crimson force.[paragraph break]Carol only redoubles her efforts, [quotation mark]Not so, Christabell. My Vessel need only survive a heart beat beyond that of its mother for me to break from my circular prison. Then we shall see how the Elder Gods reshape the world.[quotation mark][paragraph break]".
+	
+To say benjack-doom3:
+	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark][paragraph break]";
+	now benjack-Carol is nowhere;
+	now benjack-Carol is unseen.
+	
+Before doing anything when the doomCounter of the benjack-Denouement is 4 and benjack-Denouement is happening:
+	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
+	now benjack-naomiRunes is in M2F3;
+	now benjack-naomiRunes is seen.	
+	
+Instead of jumping when benjack-denouement is happening:
+	try benjack-outjumping the benjack-window. 
 
 Chapter 3 - Denouement Tests
 
 Chapter 4 - Denouement Ends
 
-Part 10 - Scene Apres
+When benjack-denouement ends:
+	benjack-stage-off 3;
+	now benjack-window is in M2F3;
+	now benjack-window is seen;
+	now benjack-window is closed;
+	now benjack-Carol is nowhere;
+	now benjack-Carol is unseen;
+	now benjack-Christabell is nowhere;
+	now benjack-Christabell is unseen;
+	now benjack-altar is in DAN8;
+	now benjack-altar is seen;
+	now benjack-mound is nowhere;
+	now benjack-mound is unseen;
+	now the description of M2F3 is "[one of]Shafts of sunlight filter through the filthy window, which is now closed.[paragraph break]The room is empty: the carpet has been taken up, all furniture removed, and nothing left on the walls. Dust hangs in the air of this room so long abandoned[or]A dusty room, unvisited for more than two decades[stopping].";
+	now  Benjack-clipping-sable is in benjack-naomiRunes;
+	if the benjack-times_bestowed of yourself is greater than 1:
+		now Benjack-clipping-convict is in benjack-naomiRunes;
+	if the benjack-times_bestowed of yourself is greater than 2:
+		now Benjack-clipping-body is in benjack-naomiRunes;
+	if the  benjack-times_ploughvered of yourself is greater than 0:
+		now Benjack-clipping-orphan is in benjack-naomiRunes;
+	if the  benjack-times_ploughvered of yourself is greater than 1:
+		now Benjack-clipping-boardwalk is in benjack-naomiRunes;	
+	if the  benjack-times_ploughvered of yourself is greater than 1:
+		now Benjack-clipping-hargreaves is in benjack-naomiRunes;
+	if yourself is benjack-KH_accomplished:
+		now Benjack-clipping-9 is in benjack-naomiRunes;
+	if yourself is benjack-guilty:
+		now Benjack-clipping-10 is in benjack-naomiRunes.
+	
+	Part 10 - Apres
 
-Chapter 1 - Apres Begins
+[Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
 
-Chapter 2 - Apres Events
-
-Chapter 3 - Apres Tests
-
-Chapter 4 - Apres Ends
-
+Before doing anything with benjack-naomiRunes when benjack-Denouement has happened for the first time:
+	say "A photograph flitters out of the Rune Book, spirals around you and floats to the ground.";
+	now jpk-photo is in the location;
+	now jpk-photo is seen;
+	continue the action.
+	
+Instead of rubbing the benjack-window when the benjack-denouement has happened:
+	say "The filth on the windows resists your best efforts.".
+	
+Before benjack-ploughvering or benjack-xizziing or benjack-KHing when benjack-denouement has happened:
+	say "[one of]As best you can figure it, having monkeyed with time, space, causality and a numerous primordial Forces that you are fortunate to not have encountered, you were never  magically marked in the first place, so not a thing happens[or]Nothing at all happens[stopping]."
+	
+Instead of opening benjack-window when benjack-denouement has happened:
+	say "It is frozen shut with age and neglect."
+	
 Book 3 - Runebook Clippings
 
 To tell ( blahblah - a list of text):
@@ -2096,7 +2251,7 @@ Benjack-clipping-convict is a benjack-clipping.
 The title of Benjack-clipping-convict is "Watery Fate for Convict".
 The list of text called Benjack-clipping-convict-text is always {"It looks like the icy hand of justice caught up to escaped murderer Gustave Dellorto earlier today, when his body was recovered at low tide from the Execution Rocks lighthouse in the Long Island Sound.[paragraph break]Leslie Stovebow, the lighthouse keeper who resides in a small residence at the base of the tower, discovered the body this morning as the tide went out. The body was still clad in the striped uniform of the Sing Sing Prison from which he escaped last night.[paragraph break]Mamaroneck, NY police raced against time to remove the body from where it had become lodged in the boulders before the time came back in, submerging the rocks. They successfully identified the body by confirming the number on the uniform matched that of the escaped killer. It is not clear why Dellorto chose to flee to the island, but police suspect he was hoping to murder the lighthouse keeper and go to ground there until his trail grew cold.[paragraph break]Dellorto was convicted of three cases of first degree murder in the winter of 1951, including one G-man, and was suspected of homicide in seven additional cases. It is believed that his crimes were connected to organized crime. He was sentenced to capital punishment, but pardoned after appeal two years ago by Governor Dewey.[paragraph break]Execution Rocks inherits its name from the colonial period, where legend goes that disobedient slaves were shackled at low tide, and served as examples for others, being left there to slowly drown in the pounding waves. This story is considered apocryphal by most, but today, the lighthouse earned its name.[paragraph break][one of][benjack-but-wait-theres-more][or][stopping][paragraph break]CORRIGENDUM[paragraph break]Gustave Dellorto, who escaped from Sing Sing prison earlier this month, was arrested in Detroit, Michigan, yesterday leaving in his wake a fresh series of murders committed during a two-week spree across several states. It was previously reported in error that he had died by drowning in the Long Island Sound, but the body recovered in that incident is now known to be that of Francis Dapper, age 19 of Larchmont, New York, who had been working at the Purdue Island Yacht Club the evening that Gustave escaped. One of the club launches, which had been brought ashore for the winter, was discovered missing later that week. Police believe that it was probably used by Dellorto to reach the Execution Rocks lighthouse, where he abandoned his victim[apostrophe]s body, after swapping clothes to fake his own death in an attempt to evade capture."}.
 The content of Benjack-clipping-convict is Benjack-clipping-convict-text.
-Understand "water/fate/convict/for" as Benjack-clipping-convict when the location is in the benjack-realm.
+Understand "watery/fate/convict/for" as Benjack-clipping-convict when the location is in the benjack-realm.
 
 [doing the very side effect-within-say that I warn against:]
 To say benjack-but-wait-theres-more:
@@ -2242,7 +2397,48 @@ To say benjack-ploughver-cutscenes:
 
 Chapter 3 - kwisatzhaderaching
 
+Benjack-KHing is an action applying to nothing. Understand "kwisatz haderach" as Benjack-KHing when the location is in the benjack-realm.
 
+Check Benjack-KHing:
+	if yourself is not benjack-spell_enabled:
+		say "You did enjoy that book, didn't you?";
+		stop the action;
+	if the location does not enclose a benjack-runebook:
+		say "You see no Book of Runes to destroy.";
+		stop the action.
+		
+Carry out benjack-KHing:
+	let R be a random benjack-runebook in the location;
+	now R is unseen;
+	now R is nowhere;
+	say "You join your fists together and aim at the [R], speaking the invocation, [quotation mark]kwisatz haderach[quotation mark]."
+
+[The result of this then gets described in an after benjack-KHing, one for the binder, one for Naomi's book]
+
+Part 2 - Actions of a most mundane nature
+
+Chapter 1 - Jumping Out
+
+Benjack-OutJumping is an action applying to one thing. Understand "jump out [something]" as Benjack-Outjumping when the location is in M2F3.
+
+Check Benjack-OutJumping:
+	if the noun is not benjack-window:
+		say "That's no something you can hop out of[one of] -- sorry for the terminal preposition, but this is horror[or][stopping].";
+		stop the action;
+	if the benjack-window is not open:
+		say "First of all, this window many stories above the ground; the drop would be certain death. Beyond that, though, the window is closed.";
+		stop the action.
+		
+Carry out Benjack-Outjumping:
+	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.";
+	wait for any key;
+	say "Somewhat.";
+	wait for any key;
+	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
+	now the benjack-altar is in DAN8;
+	now benjack-naomiRunes is on the benjack-altar;
+	now benjack-naomiRunes is seen;
+	move the player to DAN8.
 
 Book 5 - Replacement Default Actions
 
