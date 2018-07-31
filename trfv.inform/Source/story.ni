@@ -11,11 +11,9 @@ Include Cragne Suite by Ryan Veeder.
 
 Everything we generate needs to be prefixed by "benjack".
 
-Some similar items occuring in both locations will additionally need the room name appended to distinguish them, e.g., "benjack-dan8-sky" to distinguish the sky backdrop for the hillside from that seen out the window of Carol's room.
+Grammar definitions need to be scoped for fixed items, to the room/realm in which they occur. 
 
-Grammar definitions need to be scoped for fixed items, to the room in which they occur. 
-
-Grammar definitions of possible conversation topics need to be scoped to location as well to prevent weird responses to ask/tell in the rooms of other players.  Some might need to be scoped to two rooms when the quip is shared.
+Grammar definitions of possible conversation topics need to be scoped to location as well to prevent weird responses to ask/tell in the rooms of other players.  Some might need to be scoped to two rooms when the quip is shared. Some are scoped by scene as well.
 
 If you want grammer to apply to both rooms, you can say "when the location is in the benjack-realm".
 ]
@@ -27,6 +25,7 @@ Part 1 - New Kinds
 [Used in the Nursery, where objects evolve over 3 different scenes.
 Note that this is basically a special type of scener that has multiple descriptions, can't be touched/taken (like all scenery), and isn't automatically described as being present in the room (like all scenery).  This is good -- we're counting on the general room description and multiple examinations to reveal these objects.
 ]
+
 A benjack-shadow is a kind of thing and scenery.
 A benjack-shadow has some text called N1-desc, the N2-desc, and the N3-desc.
 The N1-desc of a benjack-shadow is usually "Error: N1 description not defined."
@@ -43,13 +42,12 @@ Instead of examining a benjack-shadow (called the shadow):
 		say "Error: no description available.";
 	say "[paragraph break]".
 	
-[TODO:  rules about trying to touch or take shadows, or do anything other than examine them]
 Instead of doing something to a benjack-shadow:
 	if the current action is examining or smelling:
 		continue the action;
 	if the current action is quizzing or implicit-quizzing or informing or implicit-informing:
 		continue the action;
-	say "Your hand goes right through it!". [TODO: expand this text to include Carol's first reaction]
+	say "Your hand goes right through it[one of]. Carol rolls her eyes[or][stopping].". 
 
 A benjack-clipping is a kind of thing. 
 Benjack-clippings have some text called title.
@@ -140,10 +138,15 @@ The description of the benjack-mound is "[one of]Long shafts of weathered, ruste
 
 Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear."
 
-The benjack-altar is a supporter. The description of benjack-altar is "TODO altar description". The printed name of benjack-altar is "stone altar". Understand "stone/altar" as benjack-altar when the location is in the benjack-realm.
+The benjack-altar is a supporter. The description of benjack-altar is "A large, roughly rectangular slab of the same black granite as the surrounding cliffs.". The printed name of benjack-altar is "stone altar". Understand "stone/altar" as benjack-altar when the location is in the benjack-realm.
 
-Instead of climbing the benjack-altar, say "That would be sacreligious."
-
+Before entering or climbing the benjack-altar:
+	say "That would [one of]probably be[or]likely be[or]definitely be[or]be incautiously[or]be dangerously[or]be insanely[or]be suicidally[stopping] sacreligious.";
+	stop the action.
+	
+Before entering or climbing the benjack-altar for the eighth time:
+	end the story saying "SACRIFICED".
+	
 The benjack-trail is scenery. benjack-trail is in DAN8. The printed name of benjack-trail is "trailheads".
 Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
 The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
@@ -2370,6 +2373,9 @@ When benjack-denouement begins:
 [hint text: You can ride out this scene in the room or you can take the only available exit, the window[one of][or]. The window can be opened by talking to Carol to distract her and then opening the window a bit, and then repeating that process[stopping]. Be sure to take a look at your RuneBook when it is all over and to take the item that falls out of it]
 
 Chapter 2 - Denouement Events
+
+Instead of going south when benjack-denouement is happening:
+	Say "You're not walking out of there just yet -- the universe isn't through with you."
 
 Before conversing when the benjack-Denouement is happening:
 	say "This is the time for action, not mere words."
