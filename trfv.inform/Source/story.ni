@@ -156,7 +156,7 @@ Understand "clouds" or "sky" as the benjack-sky when the location is in the benj
 The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
 
 The benjack-cliffs are a backdrop.  benjack-cliffs is in DAN8. benjack-cliffs is in M2F3. The printed name of benjack-cliffs is "cliffs". 
-Understand "cliff/granite/wall/hill/hillside/mica/cliffs/walls/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
+Understand "cliff/granite/hill/hillside/mica/cliffs/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
 The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
 
 Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
@@ -654,7 +654,7 @@ Before going north from M2F2 when benjack-N1 has not happened:
 		say "A blonde kindergartner in a blue dress bars your way northward into a bedroom.[paragraph break][one of][benjack-no-teapot1][or][benjack-no-teapot2][or][benjack-no-teapot3][or][benjack-no-teapot4][or]Since you don’t have Carol’s grand-uncle’s teapot, she refuses to let you into her room to the north.[no line break][stopping][paragraph break]";
 		stop the action;
 	otherwise:
-		say "[quotation mark]Oh, we[apostrophe]re all so happy! And it is just about tea time too! Come right in.[quotation mark] The girl turns to face a sock puppet monkey and scolds him, [quotation mark]You just stay in your seat, [bold type]Young Master Sweetpaws[roman type] -- [bold type] mother[roman type] says we will have manners in this house![quotation mark][paragraph break]Much bustling ensues: sounds of porcelain being laid, clinking of utensils, and the heavy thunk of a chair being put in place.[paragraph break][quotation mark]Ready! Come in, [bold type]Naomi[roman type][quotation mark], sings Carol as she ushers you inward.[paragraph break]Perhaps against your better judgement, you follow her.[paragraph break][quotation mark]Here, let me take that for you,[quotation mark] offers Carol as she accepts the teapot and walks to a table at the center of the room.[quotation mark][paragraph break]".
+		say "[quotation mark]Oh, we[apostrophe]re all so happy! And it is just about tea time too! Come right in.[quotation mark] The girl turns to face a sock puppet monkey and scolds him, [quotation mark]You just stay in your seat, [bold type]Young Master Sweetpaws[roman type] -- [bold type]mother[roman type] says we will have manners in this house![quotation mark][paragraph break]Much bustling ensues: sounds of porcelain being laid, clinking of utensils, and the heavy thunk of a chair being put in place.[paragraph break][quotation mark]Ready! Come in, [bold type]Naomi[roman type][quotation mark], sings Carol as she ushers you inward.[paragraph break]Perhaps against your better judgement, you follow her.[paragraph break][quotation mark]Here, let me take that for you,[quotation mark] offers Carol as she accepts the teapot and walks to a table at the center of the room.[quotation mark][paragraph break]".
 		
 				
 To say benjack-no-teapot1:
@@ -827,7 +827,7 @@ Understand "portrait/picture/man/eisenhower/president/ike" as benjack-Eisenhower
 The N1-desc of benjack-Eisenhower is "This is clearly a formal portrait of a balding man probably in his sixties. He has an air of authority, but also an avuncular warmth. There is a nameplate at the bottom of the portrait.".
 
 The benjack-nameplate is a benjack-shadow.  The printed name of the benjack-nameplate is "nameplate".
-Understand "namplate" as benjack-nameplate when the player is in M2F3.
+Understand "nameplate" or "name plate" as benjack-nameplate when the player is in M2F3.
 The N1-desc of benjack-nameplate is "[quotation mark]Dwight D. Eisenhower, 34th President of the United States of America.[quotation mark]".
 
 The benjack-toychair is a benjack-shadow.  The printed name of the benjack-toychair is "toy chairs".
@@ -855,7 +855,9 @@ Understand "wall" as benjack-wall when the player is in M2F3.
 The N1-desc of benjack-wall is "The walls are painted eggshell white.".
 
 The benjack-floor is a benjack-shadow.  The printed name of the benjack-floor is "floor".
-Understand "floor" or "carpet" as benjack-floor when the player is in M2F3.
+Understand "floor" as benjack-floor when the player is in M2F3.
+Understand "rug" or "carpet" as  benjack-floor when the player is in M2F3 and benjack-denouement has not ended.
+
 The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue carpet[stopping]".
 
 [REAL OBJECTS, not shadows:]
@@ -970,7 +972,7 @@ benjack-Servants is a subject.  Understand "servant/servants" as benjack-Servant
 
 benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the location is in the benjack-realm.
 
-benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm.
+benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm and benjack-N2 has not happened.
 
 Section 2 - N1 Quips
 
@@ -1067,20 +1069,20 @@ After quizzing benjack-Carol about benjack-witch:
 After quizzing benjack-Carol about benjack-Vermont:
 	say "[one of][quotation mark]This is all Vermont,[quotation mark] says Carol gesturing vaguely out the window. [quotation mark]It[apostrophe]s one of the forty-eight United States.[quotation mark][paragraph break][quotation mark]Isn[apostrophe]t it fifty?[quotation mark][paragraph break][quotation mark]Maybe. I don[apostrophe]t know how that works. My parents live in Connecticut, which is another state, but they don[apostrophe]t want me at home, so I came here for nursery school and Kindergarten, but dad says I have to go back to Stonington next year because he pays taxes, so it[apostrophe]s where I need to go.[quotation mark][or]Carol says that aside from visiting the hillside near the mansion, she doesn[apostrophe]t get out very much.[no line break][stopping][paragraph break]".
 	
-After quizzing benjack-Carol about benjack-Vermont:
+After quizzing benjack-Carol about benjack-Undesirables:
 	say "[quotation mark]Dad told me not to talk to any of them because they want to take away the stuff that we have and they are all dirty and criminals. I would never invite any of them to the tea party.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-Servants:
 	say "[quotation mark]Father told me a story once about how one day some servants got too greedy for their own good and forgot their place and said that they wouldn[apostrophe]t serve their masters and more. They had a big fight and the servants won, but only for a while, because just when they weren[apostrophe]t looking, the masters came back even more powerful than ever and killed every single last one of them. I love that story and want to hear it all the time when I[apostrophe]m home.[quotation mark][paragraph break]".
 
 After quizzing benjack-Carol about benjack-aMerica:
-	say "[quotation mark]That where we are, duh.[one of] Are you a retard or something?[quotation mark][paragraph break][quotation mark]That[apostrophe]s not a nice thing to say, Carol.[quotation mark][paragraph break][quotation mark]Sooooorry.[quotation mark][or][stopping][paragraph break]".
+	say "[quotation mark]That where we are, duh.[no line break][one of] Are you a retard or something?[quotation mark][paragraph break][quotation mark]That[apostrophe]s not a nice thing to say, Carol.[quotation mark][paragraph break][quotation mark]Sooooorry.[quotation mark][or][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-school when benjack-N1 is happening:
 	say "[quotation mark]Father and mother sent me here for pre-K and kindergarten because school in Stonington is only a half day and they have lives.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-PC when benjack-N1 is happening:
-	say "[quotation mark]Not everybody can see me, so I like you, because you can see me.[quotation mark]".
+	say "[quotation mark]Not everybody can see me, so I like you, because you can see me.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-Mattanit:
 	say "[quotation mark]Christabell talks about him sometimes. I think I sometimes see him out the window near where the woods starts. He has goat feet[one of], and I[apostrophe]m not even making that up[or][stopping].[quotation mark][paragraph break]".
@@ -1102,6 +1104,9 @@ After informing benjack-Carol about benjack-Cragne:
 	
 After informing benjack-Carol about benjack-Peter:
 	say "[one of][quotation mark]I wonder if you[apostrophe]re related to my husband, Peter.[quotation mark][paragraph break][quotation mark]Maybe. I dunno. If you want you could bring him up here and I could have a tea party with him too,[quotation mark] offers Carol[or]You tell Carol more about Peter, trying to see if they have any relatives in common[stopping]."
+	
+After quizzing benjack-Carol about benjack-GeneralDynamics:
+	say “[quotation mark]That’s the company my dad works at.[quotation mark][paragraph break]”.
 	
 Definition: a subject is Connecticocentric if it is benjack-stonington or it is benjack-newLondon or it is benjack-Groton or it is benjack-Connecticut.
 	
@@ -1167,10 +1172,10 @@ Every turn during benjack-N1:
 					-- benjack-elephant:
 						say "Mister Snortles";
 					-- benjack-lamb:
-						say "Missel Winkelbottom";
+						say "Misses Winkelbottom";
 					-- benjack-clown:
 						say "Malice";
-					say " , will you please help yourself to one of Naomi[apostrophe]s trinkets and drop in the Maw of Unthinkable Nothingness? Maybe that will make her want to play with us and say the magical word [apostrophe]bottoms-up[apostrophe] so we can all play tea party.[quotation mark][paragraph break]The [L] comes to suddenly to life, walks stiffly towards you and plucks [an item] out the air and tosses it into a whirling vortex of fire and ash that has opened above the tea table. The vortex folds in on itself and disappears the moment [the item] enters it.[paragraph break]It all happens so fast that you are left speechless.";
+					say ", will you please help yourself to one of Naomi[apostrophe]s trinkets and drop in the Maw of Unthinkable Nothingness? Maybe that will make her want to play with us and say the magical word [apostrophe]bottoms-up[apostrophe] so we can all play tea party.[quotation mark][paragraph break]The [L] comes to suddenly to life, walks stiffly towards you and plucks [an item] out the air and tosses it into a whirling vortex of fire and ash that has opened above the tea table. The vortex folds in on itself and disappears the moment [the item] enters it.[paragraph break]It all happens so fast that you are left speechless.";
 					now item is in benjack-slithering-vomit-bladder-of-Katallakh;
 					now item is unseen;
 				otherwise: [no stealable items]
@@ -1218,10 +1223,10 @@ Instead of examining the mtw-teapot when benjack-N1 is happening:
 Instead of inserting anything into the mtw-teapot when the location is M2F3:
 	say "Gross. The teapot is only for tea."
 	
-Chapter 5 - N1 Tests
+Chapter 5 - N1 
 [test starts in DAN8 after R0]
 
-test n1-benjack with "n / get all / n / drop teapot / n / n / n / n / n / n / get teapot / n / s / s / s / s / s / s / s / s / s / s / s / s / x scrapbook / read scrapbook / read shark / read actress / read body / read shark / look / get all / bottoms-up / read scrapbook / read watery / x comforter / x bed / x stuffed / x elephant / x monkey / x lamb / x clown / x cap / x sweater / x clown / x lamb / x kitch / x apron / pots / pantry /  x window / open window / look out window / x desk / x drawer / open drawer / touch desk / touch carol. / x desktop / x desktop / turn off lamp / get lamp / x turntable / x record / x table / x frame / x beasts / x portrait / x nameplate / x antique / touch chair / sit on chair / stand / x toy chair / x cup / hit tea cup / throw tea cup / x dress / x bow / ask Winkelbottom about etiquette / ask about Carol / ask about Carol / ask about Stonington / ask about Connecticut / ask about Deep Ones / ask about father / ask about father / a New London / a groton / a General Dynamics / a submarine / submarine / a job / a nautilus / a date / a mother /  a mother / a  communists / a teapot / a teapot / a grand-uncle / a grand-uncle / a tea party / a tea  / a  bottoms-up / a  bottoms-up / a christabell / a christabell / a christabell / a christabell / a cragne / a cragne / a snortles / a winkelbottom / a sweetpaws / a clown / a eisenhower / a ike / a malice / a malice /a mark / a mark / a death / a death / a witchhunt / a vermont / a vermont / a communists / a immigrants / a poor / a servants / a america / a school / a me / a mattanit / tell about death / t mark / t christabell / t me / t me / t cragne / t cragne / t peter / t peter / t stonington / t groton / t vermont / t america / t america  / x mirror / x wall / x floor / x carpet / get cup / put cup on carpet / get cup / drop cup / look in mirror / ask about mirror / break mirror / throw frog at mirror / get frog / throw frog at carol / attack carol / look under rug/ search rug / enter mirror / open mirror / a scrapbook / a scrapbook / bottoms up /read scrapbook / read sable / n / s ".
+test n1-benjack with "n / get all / n / drop teapot / n / n / n / n / n / n / get teapot / n / s / s / s / s / s / s / s / s / s / s / s / s / x scrapbook / read scrapbook / read shark / read actress / read body / read shark / look / get all / bottoms-up / read scrapbook / read watery / x comforter / x bed / x stuffed / x elephant / x monkey / x lamb / x clown / x cap / x sweater / x clown / x lamb / x kitch / x apron / x pots / x pantry /  x window / open window / look out window / x desk / x drawer / open drawer / touch desk / touch carol. / x desktop / x desktop / turn off lamp / get lamp / x turntable / x record / x table / x frame / x beasts / x portrait / x nameplate / touch chair / x toy chair / x cup / hit tea cup / throw tea cup / x dress / x bow / ask Winkelbottom about etiquette / ask about Carol / ask about Carol / ask about Stonington / ask about Connecticut / ask about Deep Ones / ask about father / ask about father / a New London / a groton / a General Dynamics / a submarine / a submarine / a job / a nautilus / a date / a mother /  a mother / a  communists / a teapot / a teapot / a grand-uncle / a grand-uncle / a tea party / a tea  / a  bottoms-up / a  bottoms-up / a christabell / a christabell / a christabell / a christabell / a cragne / a cragne / a snortles / a winkelbottom / a sweetpaws / a clown / a eisenhower / a ike / a malice / a malice /a mark / a mark / a death / a death / a witchhunt / a vermont / a vermont / a communists / a immigrants / a poor / a servants / a america / a school / a me / a mattanit / tell about death / t mark / t christabell / t me / t me / t cragne / t cragne / t peter / t peter / t stonington / t groton / t vermont / t america / t america  / x mirror / x wall / x floor / x carpet / get cup / put cup on carpet / get cup / drop cup / look in mirror / ask about mirror / break mirror / throw frog at mirror / get frog / throw frog at carol / attack carol / look under rug/ search rug / enter mirror / open mirror / a scrapbook / a scrapbook / bottoms up /read scrapbook / read sable / n / s ".
 
 Chapter 6 - N1 Ends
 
@@ -1670,7 +1675,7 @@ Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/cl
 
 benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm.
 
-benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm.
+benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm and benjack-N1 has ended.
 
 benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when the location is in the benjack-realm.
 
