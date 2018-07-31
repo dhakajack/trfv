@@ -851,25 +851,22 @@ The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue 
 
 The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
-Understand "window" as benjack-window when the player is in M2F3.
+Understand "window/safety/lock/child-proof" as benjack-window when the player is in M2F3.
 The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
 Benjack-window can be cracked. Benjack-window is not cracked.
-
-Instead of entering the benjack-window:
-	try benjack-outjumping the benjack-window.
 	
-Instead of going outside when the location is M2F3 and the benjack-window is open:
-	try benjack-outjumping benjack-window.
-
 Instead of inserting something (called the item) into the benjack-window:
 	try dropping the item.
 
 Instead of touching the benjack-window, say "The glass is cool to the touch.".
 
 Instead of opening the benjack-window:
-	if benjack-N3 is not happening:
-		say "The window has a complicated child safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
-		
+	if the benjack-window is open:
+		say "The window is already open.";
+	otherwise if benjack-N3 is not happening:
+		say "The window has a [if benjack-N1 is happening]complicated[otherwise]badly rusted[end if] child-proof safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
+
+	
 [TODO:  hitting action isn't defined, nor is 'looking through'
 Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
 Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
@@ -2348,10 +2345,6 @@ Instead of reading the benjack-NaomiRunes:
 	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-naomiRunes][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-naomiRunes][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-naomiRunes][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-naomiRunes][bold type][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-naomiRunes][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
 
 benjack-denouement has a number called doomCounter. The doomCounter is 0.
-
-Instead of reading benjack-naomiRunes:
-	say "The book has a number of entries, each corresponding to a faded clipping:".
-	[TODO: populated the runebook, read titles.]
 	
 Chapter 1 - Denouement Begins
 
@@ -2384,17 +2377,37 @@ To say benjack-doom2:
 	
 To say benjack-doom3:
 	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark][paragraph break]";
+	now Yourself is benjack-guilty;
 	now benjack-Carol is nowhere;
 	now benjack-Carol is unseen.
 	
-Before doing anything when the doomCounter of the benjack-Denouement is 4 and benjack-Denouement is happening:
+Before doing anything when the doomCounter of the benjack-Denouement is 3 and benjack-Denouement is happening:
 	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
 	now benjack-naomiRunes is in M2F3;
-	now benjack-naomiRunes is seen.	
+	now benjack-naomiRunes is seen;
+	stop the action.
 	
-Instead of jumping when benjack-denouement is happening:
-	try benjack-outjumping the benjack-window. 
+Instead of jumping when the benjack-window is open and benjack-denouement is happening:
+	try entering the benjack-window. 
+	
+Instead of going outside when the benjack-window is open and benjack-denouement is happening:
+	try entering the benjack-window.
+	
+Before entering the benjack-window when the benjack-window is not open:
+	say "First of all, this window is many stories above the ground; the drop would be certain death. Beyond that, though, the window isn't open[if the benjack-window is cracked] enough[end if].";
+	stop the action.
 
+Instead of entering the benjack-window:
+	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.[paragraph break]";
+	wait for any key;
+	say "Somewhat.[paragraph break]";
+	wait for any key;
+	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
+	now the benjack-altar is in DAN8;
+	now benjack-naomiRunes is on the benjack-altar;
+	now benjack-naomiRunes is seen;
+	move the player to DAN8.	
+	
 Chapter 3 - Denouement Tests
 
 test de-benjack with "z / z / z / look / x tome / open book / close tome / read tome / read sable / get photo / open window / s ".
@@ -2402,7 +2415,7 @@ test de-benjack with "z / z / z / look / x tome / open book / close tome / read 
 Chapter 4 - Denouement Ends
 
 When benjack-denouement ends:
-	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-photo is nowhere]! Lbh arrq gb rknzvar lbhe EharObbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
+	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-photo is nowhere]! Lbh arrq gb rknzvar lbhe Ehar Obbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
 	benjack-stage-off 3;
 	now benjack-window is in M2F3;
 	now benjack-window is seen;
@@ -2432,7 +2445,7 @@ When benjack-denouement ends:
 	if yourself is benjack-guilty:
 		now Benjack-clipping-10 is in benjack-naomiRunes.
 	
-[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your RuneBook and take the photo that comes out of it for a later part of the game[end if]
+[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your Rune Book and take the photo that comes out of it for a later part of the game[end if]
 ]
 
 Part 11 - Apres
@@ -2450,10 +2463,16 @@ Before doing anything with benjack-naomiRunes when benjack-Denouement has happen
 Instead of rubbing the benjack-window when the benjack-denouement has happened:
 	say "The filth on the windows resists your best efforts.".
 	
-Before benjack-ploughvering or benjack-xizziing or benjack-KHing when benjack-denouement has happened:
-	say "[one of]As best you can figure it, having monkeyed with time, space, causality and a numerous primordial Forces that you are fortunate to not have encountered, you were never  magically marked in the first place, so not a thing happens[or]Nothing at all happens[stopping]."
+Before benjack-ploughvering or benjack-xizziing or benjack-KHing:
+	if benjack-denouement is happening:
+		say "All available magical energy is currrently tied up in the conflict between Carol and Christabell.";
+		stop the action;
+	if benjack-denouement has ended:
+		say "[one of]As best you can figure it, having monkeyed with time, space, causality and a numerous primordial Forces that you are fortunate to not have encountered, you were never magically marked in the first place, so not a thing happens[or]Nothing at all happens[stopping].";
+		stop the action;
+	continue the action.
 	
-Instead of opening benjack-window when benjack-denouement has happened:
+Instead of opening benjack-window when benjack-denouement has ended:
 	say "It is frozen shut with age and neglect."
 	
 Chapter 2 - Tests
@@ -2731,26 +2750,9 @@ Part 2 - Actions of a most mundane nature
 
 Chapter 1 - Jumping Out
 
-Benjack-OutJumping is an action applying to one thing. Understand "jump out [something]" as Benjack-Outjumping when the location is in M2F3.
+Benjack-OutJumping is an action applying to one thing. Understand "jump out [a container]" or "jump out of [a container]" or "jump through [a container]" or "dive out [a container]" or "or dive through [a container]" as entering when benjack-denouement is happening and the location is M2F3.
 
-Check Benjack-OutJumping:
-	if the noun is not benjack-window:
-		say "That's no something you can hop out of[one of] -- sorry for the terminal preposition, but this is horror[or][stopping].";
-		stop the action;
-	if the benjack-window is not open:
-		say "First of all, this window many stories above the ground; the drop would be certain death. Beyond that, though, the window is closed.";
-		stop the action.
-		
-Carry out Benjack-Outjumping:
-	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.[paragraph break]";
-	wait for any key;
-	say "Somewhat.[paragraph break]";
-	wait for any key;
-	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
-	now the benjack-altar is in DAN8;
-	now benjack-naomiRunes is on the benjack-altar;
-	now benjack-naomiRunes is seen;
-	move the player to DAN8.
+Understand "flee" or "run away" or "suicide" or "commit suicide" or "jump to my death" as jumping when benjack-denouement is happening and the location is M2F3.
 
 Book 5 - Replace Defaults
 
@@ -2858,7 +2860,7 @@ Carry out scenejumping:
 		move the player to DAN8;
 		say "[bold type]/ JUMP from nothing to R0 /[roman type][paragraph break]";
 	if benjack-R0 is happening:
-		now benjack-Christabell is candid;
+		now the player carries mtw-teapot;
 		move the player to M2F3; [triggers N1]
 		say "[bold type]/ JUMP from R0 to N1 /[roman type][paragraph break]";
 	otherwise if benjack-N1 is happening:
@@ -2882,13 +2884,16 @@ Carry out scenejumping:
 		say "[bold type]/ JUMP from R2 to N3 /[roman type][paragraph break]";
 	otherwise if benjack-N3 is happening:
 		now benjack-window is open;
-		now benjack-Carol is nowhere;
-		now the player carries benjack-naomiRunes;
-		move the player to M2F3;
 		say "[bold type]/ JUMP from N3 to Denouement /[roman type][paragraph break]".
-
-test N2-jump with "scenejump / scenejump /scenejump / scenejump".
-test N3-jump with "scenejump / scenejump /scenejump / scenejump / scenejump / scenejump".
+	
+[assuming these are entered at beginning, prior to R0]		
+test jump-r0 with "scenes on /scenejump/scenes off".
+test jump-n1 with "scenes on /scenejump/scenejump/scenes off".
+test jump-r1 with "scenes on /scenejump/scenejump/scenejump/scenes off".
+test jump-n2 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenes off".
+test jump-r2 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
+test jump-n3 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
+test jump-denouement with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
 
 
 Part 5 - Font Testing
