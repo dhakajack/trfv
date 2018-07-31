@@ -2711,12 +2711,8 @@ Book 5 - Replace Defaults
 
 Part 1 - Actions
 
-[TODO]
-Instead of examining the player when the location is DAN8 (this is the DAN8-PC description rule):
-	say "How you look on the hillside, for example."
-	
-Instead of examining the player when the location is M2F3 (this is the M2F3-PC description rule):
-	say "How you look in the nursery, for example."
+Instead of examining yourself when the location is in the benjack-realm:
+	say "This little weekend getaway with Peter has done you some good. So relaxing.".
 	
 Part 2 - Library Responses
 
