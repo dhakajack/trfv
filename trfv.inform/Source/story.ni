@@ -2277,7 +2277,7 @@ After benjack-KHing when benjack-N3 is happening:
 	now yourself is benjack-KH_accomplished.
 	
 Instead of going south when benjack-N3 is happening:
-	say "It's like there is an invisible barrier there".
+	say "You [one of]try, but don't get very far[or]steam off towards the hallway, but don't make it[or]try, but according to Carol, destiny holds you back[stopping].[paragraph break][benjack-stuck-n3]".
 	
 Instead of benjack-ploughvering when benjack-N3 is happening:
 	say "[one of]Dark purple sparks fly from the four walls, ceiling and floor of the room as you cast[or]Sparks fly[stopping], but you go nowhere.[paragraph break][benjack-stuck-n3]".
@@ -2334,7 +2334,7 @@ When benjack-N3 ends:
 
 Part 10 - Scene Denouement
 
-The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi Runes". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" or "tome of naomi runes" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: Tome of Naomi Runes."
+The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: [quotation mark]Tome of Naomi[quotation mark]."
 
 Instead of reading the benjack-NaomiRunes:
 	if benjack-NaomiRunes is closed:
