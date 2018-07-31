@@ -36,7 +36,7 @@ Instead of examining a benjack-shadow (called the shadow):
 		say N1-desc of the shadow;
 	otherwise if benjack-N2 is happening:
 		say the N2-desc of the shadow;
-	otherwise if benjack-N3 is happening:
+	otherwise if benjack-N2 has ended:
 		say the N3-desc of the shadow;
 	otherwise:
 		say "Error: no description available.";
@@ -2921,13 +2921,19 @@ test jump-r2 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/
 test jump-n3 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
 test jump-denouement with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
 
+roomDumping is an action out of world.
+Understand "dumproom" as roomDumping.
 
-Part 5 - Font Testing
+Carry out roomdumping:
+	repeat with item running through visible things in the location:
+		say "[bold type][item]:[roman type][line break]";
+		try examining item.
+ 
+Part 5 - Tests
 
-Font testing is an action out of world. Understand "fonts" as font testing.
+Chapter 1 - Nursery Descriptions
 
-report font testing:
-	say "This be a teﬅ of ſuch fontſ as one might make the uſe. Be they the afore 'ſ' or more ﬅyliʃh, but leʃʃ common 'ʃ'. Similarly, the so-called Massachusetts ligature of two o, as in sꝏn and mꝏn."
+test nursery-desc with "scenejump / scenejump / dumproom / scenejump / scenejump / dumproom/ scenejump / scenejump / dumproom / scenejump / dumproom".
 	
 
 
