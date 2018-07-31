@@ -854,7 +854,7 @@ After sitting on the benjack-chair, say "The antique chair creaks a little but s
 [TODO: implement touching messages for chair]
 
 The benjack-scrap-5 is a benjack-runebook. The printed name of the benjack-scrap-5 is "scrapbook".
-Understand "scrapbook" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
+Understand "scrapbook" or "book" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
 The description of the benjack-scrap-5 is "[benjack-scrap-5-desc]".
 
 To say benjack-scrap-5-desc:
@@ -2818,6 +2818,7 @@ Carry out scenejumping:
 		say "[bold type]/ JUMP from nothing to R0 /[roman type][paragraph break]";
 	if benjack-R0 is happening:
 		now benjack-Christabell is candid;
+		now the player carries mtw-teapot;
 		move the player to M2F3; [triggers N1]
 		say "[bold type]/ JUMP from R0 to N1 /[roman type][paragraph break]";
 	otherwise if benjack-N1 is happening:
