@@ -134,41 +134,55 @@ The commentary of DAN8 is "DAN8 Commentary".
 
 Description of DAN8 is "[one of][Benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
-The benjack-cliffs are scenery in DAN8.  The printed name of benjack-cliffs is "cliffs".  
-Understand "cliff/granite/wall/hill/hillside/mica/cliffs/walls/hills/hillsides" as the benjack-cliffs when the player is in DAN8.
-The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
-Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
-
-The benjack-clearing is scenery in DAN8.  The printed name of benjack-clearing is "clearing".
-Understand "bowl" or "amphitheater" or "amphitheatre" or "clearing" as the benjack-clearing when the player is in DAN8.
-The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
-
-The benjack-trail is scenery in DAN8.  The printed name of benjack-trail is "trailheads".
-Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
-The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
-
-The benjack-weeds are scenery in DAN8.  The printed name of benjack-weeds is "vegetation".
-Understand "hedge" or "bramble" or "shrub" or "tree" or "grass" or "vegetation" or "stumps" or "weed" or "weeds" as the benjack-weeds when the player is in DAN8.
-The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
-
-Instead of touching the benjack-weeds:
-	say "The gnarled, twisted weeds are nothing but thorns and vicious spines. You pull back."
-
-The benjack-dirt is scenery in DAN8.  The printed name of benjack-dirt is "dirt".
-Understand "soil" or "ground" or "dirt" as the benjack-dirt when the player is in DAN8.
-The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
-Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
-
-The benjack-dan8-sky is scenery in DAN8.  The printed name of benjack-dan8-sky is "sky". The benjack-mound is a supporter.
-Understand "clouds" or "sky" as the benjack-dan8-sky when the player is in DAN8.
-The description of the benjack-dan8-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
-The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of tracks".
-Understand "mound" or "pile" or "lump" or "track" or "tracks" or "iron" or "sticks" or "rail" or "rayle" or "railroad" or "rail" or "rails" or "piles" or "lumps" or "irons" or "ironne" or "altar" as the benjack-mound when the location is in the benjack-realm.
+The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of railroad tracks". The benjack-mound is a supporter.
+Understand "mound/pile/lump/track/tracks/iron/sticks/rail/rayle/railroad/rail/rails/piles/lumps/irons/ironne/altar" as the benjack-mound when the location is in the benjack-realm.
 The description of the benjack-mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky[or]A tall pile of rusted railway tracks[stopping].".  
 
 Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear."
 
 The benjack-altar is a supporter. The description of benjack-altar is "TODO altar description". The printed name of benjack-altar is "stone altar". Understand "stone/altar" as benjack-altar when the location is in the benjack-realm.
+
+Instead of climbing the benjack-altar, say "That would be sacreligious."
+
+The benjack-trail is scenery. benjack-trail is in DAN8. The printed name of benjack-trail is "trailheads".
+Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
+The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
+
+The benjack-sky is a backdrop. benjack-sky is in DAN8.  benjack-sky is in m2f3. The printed name of benjack-sky is "sky". 
+Understand "clouds" or "sky" as the benjack-sky when the location is in the benjack-realm.
+The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
+
+The benjack-cliffs are a backdrop.  benjack-cliffs is in DAN8. benjack-cliffs is in M2F3. The printed name of benjack-cliffs is "cliffs". 
+Understand "cliff/granite/wall/hill/hillside/mica/cliffs/walls/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
+The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
+
+Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
+
+The benjack-weeds are a backdrop. benjack-weeds is in DAN8.  benjack-weeds is in m2f3. The printed name of benjack-weeds is "vegetation".
+Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches" as the benjack-weeds when the location is in the benjack-realm.
+The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
+
+Instead of touching the benjack-weeds:
+	say "The gnarled, twisted weeds are nothing but thorns and vicious spines. You pull back."
+	
+The benjack-clearing is a backdrop. benjack-clearing is in DAN8.  benjack-clearing is in m2f3.  The printed name of benjack-clearing is "clearing".
+Understand "bowl" or "amphitheater" or "amphitheatre" or "clearing" as the benjack-clearing when the location is in the benjack-realm.
+The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
+
+The benjack-dirt is a backdrop. benjack-dirt is in DAN8.  benjack-dirt is in m2f3.  The printed name of benjack-dirt is "[if benjack-N3 is happening or benjack-denouement is happening]snow-covered [end if]dirt".
+Understand "soil" or "ground" or "dirt" as the benjack-dirt when the location is in the benjack-realm.
+The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
+
+Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
+
+Instead of doing something other than examining with a backdrop (called the locale) when the location is M2F3:
+	say "You can only see that in the distance."
+	
+Instead of examining a backdrop (called the vista) when the location is M2F3:
+	if benjack-denouement has ended:
+		try searching benjack-window;
+	otherwise:
+		say "Through the window's aged glass, you can see the [vista].[paragraph break][description of the vista][paragraph break]".
 
 Chapter M2F3 Nursery
 
@@ -639,6 +653,7 @@ Before going north from M2F2 when benjack-N1 has not happened:
 	otherwise:
 		say "[quotation mark]Oh, we[apostrophe]re all so happy! And it is just about tea time too! Come right in.[quotation mark] The girl turns to face a sock puppet monkey and scolds him, [quotation mark]You just stay in your seat, [bold type]Young Master Sweetpaws[roman type] -- [bold type] mother[roman type] says we will have manners in this house![quotation mark][paragraph break]Much bustling ensues: sounds of porcelain being laid, clinking of utensils, and the heavy thunk of a chair being put in place.[paragraph break][quotation mark]Ready! Come in, [bold type]Naomi[roman type][quotation mark], sings Carol as she ushers you inward.[paragraph break]Perhaps against your better judgement, you follow her.[paragraph break][quotation mark]Here, let me take that for you,[quotation mark] offers Carol as she accepts the teapot and walks to a table at the center of the room.[quotation mark][paragraph break]".
 		
+				
 To say benjack-no-teapot1:
 	say "[quotation mark]Hi [bold type]Naomi[roman type]. That[apostrophe]s a funny name -- are you an [bold type]immigrant[roman type] or something? [bold type]Daddy[roman type] says [bold type]immigrants[roman type] don[apostrophe]t understand plain English and that[apostrophe]s why we hate [bold type]communists[roman type]. My name is [bold type]Carol[roman type]. Before you come through my door, want to hear a joke?[quotation mark][paragraph break][quotation mark]But, there[apostrophe]s no door here[quotation mark], you complain.[paragraph break][quotation mark]Knock, knock[quotation mark], says the girl, ignoring your objection.[paragraph break][quotation mark]Who[apostrophe]s there?[quotation mark] you reluctantly respond.[paragraph break][quotation mark]Naomi![quotation mark][paragraph break][quotation mark]Naomi, who?[quotation mark] you ask, confused.[paragraph break][quotation mark]Naomi with a chicken on top![quotation mark] The little girl giggles uncontrollably. [quotation mark]It[apostrophe]s funny because it has a chicken on top, get it?[quotation mark][paragraph break]When the girl stops giggling, she somehow ejects you back into the hallway, adding, [quotation mark]We[apostrophe]re so glad you came for the [bold type]tea party[roman type], but aren[apostrophe]t you missing something important?[quotation mark]".
 
@@ -666,6 +681,9 @@ When benjack-N1 begins:
 	benjack-stage-on 1;
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
+	now the benjack-bigmirror is in M2F3;
+	now mtw-teapot is nowhere;
+	now benjack-teapot is in M2F3;
 	benjack-conversation-customize.
 	
 [hint text: You need to humor Carol by playing along with her tea party. She needs to you the magic words bottoms-up to serve a round of tea. You can have a few cups of tea if you want, but once you have had one, you can leave. You can also ask/tell about a number of conversation topics that will be useful later in the game]
@@ -683,8 +701,34 @@ The N1-desc of the benjack-  is "".
 The N2-desc of the benjack-  is "".
 The N3-desc of the benjack-  is "".
 ]
+ 
+The benjack-bigmirror is a scenery closed openable opaque container. The printed name of benjack-bigmirror is "full-length mirror". Understand "full-length/mirror" as the benjack-bigmirror when the player is in M2F3. The description of benjack-bigmirror is "The mirror is about four feet high and half that wide and is affixed to the wall. The bottom of the mirror a good half foot above the floor."
 
-[TODO teacup shadow on table; instead of takeing - why would you take it if it doesn't have tea in it.]
+Instead of searching benjack-bigmirror:
+	say "This mirror works like every mirror you have ever encountered, reflecting everything in the room."
+	
+Instead of attacking the benjack-bigmirror:
+	say "The mirror becomes insubstantial and your entire force is directed against the wall, which, being old but of excellent quality, is not damaged in the least[one of][paragraph break][quotation mark]Good thing you didn’t break it. Breaking mirrors is bad luck![quotation mark]. Carol claps, pleased with herself[or][stopping]."
+	
+Instead of entering the benjack-bigmirror:
+	say "[one of]Having read too much Lewis Carroll, y[or]Y[stopping]ou walk confidently into the mirror and slam into the wall[one of]. [paragraph break][quotation mark]Nope. It’s not that kind of mirror,[quotation mark] adds Carol, helpfully[or][stopping]."
+	
+Instead of throwing something held (called the projectile) at benjack-bigmirror:
+	say "The [projectile] bounces harmlessly off the not very mirror-like mirror[one of]. On reflection, perhaps it is somewhat mirror-like, after all[or][stopping]."
+	
+Instead of opening the benjack-bigmirror:
+	say "You search the edges of the mirror for hinges, but none are evident." 
+	
+Before closing the benjack-bigmirror:
+	say "There isn't anything to close on this mirror.";
+	stop the action.
+
+The benjack-teacup is a benjack-shadow.  The printed name of benjack-teacup is "tea cup".
+Understand "tea/cup" as the benjack-teacup when the player is in M2F3.
+The N1-desc of the benjack-teacup is "A porcelain tea cup with alternating blue and gold stripes and a band of little skulls around the rim."
+
+Instead of taking the benjack-teacup:
+	say "Except when it has tea in it, it has only a shadowy existence. Your hand passes through it[one of]. How annoying[or][stopping]."
 
 The benjack-comforter is a benjack-shadow.  The printed name of benjack-comforter is "comforter".
 Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
@@ -821,25 +865,32 @@ The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue 
 
 The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
-Understand "window" as benjack-window when the player is in M2F3.
+Understand "window/safety/lock/child-proof/glass/pane/panes" as benjack-window when the player is in M2F3.
 The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
 Benjack-window can be cracked. Benjack-window is not cracked.
-
-Instead of entering the benjack-window:
-	try benjack-outjumping the benjack-window.
 	
-Instead of going outside when the location is M2F3 and the benjack-window is open:
-	try benjack-outjumping benjack-window.
-
 Instead of inserting something (called the item) into the benjack-window:
 	try dropping the item.
 
 Instead of touching the benjack-window, say "The glass is cool to the touch.".
 
 Instead of opening the benjack-window:
-	if benjack-N3 is not happening:
-		say "The window has a complicated child safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
-		
+	if the benjack-window is open:
+		say "The window is already open.";
+	otherwise if benjack-N3 is not happening:
+		say "The window has a [if benjack-N1 is happening]complicated[otherwise]badly rusted[end if] child-proof safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
+
+Understand "look through [something]" or "look out [something]" as searching when the location is M2F3.
+
+Instead of searching benjack-window:
+	if benjack-denouement has ended:
+		say "The glass is too dirty to see through.";
+	otherwise:
+		say "Through thick glass warped by time, you can see the estate grounds far below you. The [if benjack-n2 has ended]snow-capped [end if]dark hills[if benjack-n2 is happening], now surrounded by colorful autumn trees,[otherwise] where you encountered Christabell[end if] are in the distance."
+	
+Instead of attacking benjack-window:
+	say "The house has survived Vermont winters, it will survive you.".
+	
 [TODO:  hitting action isn't defined, nor is 'looking through'
 Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
 Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
@@ -884,7 +935,7 @@ Instead of reading the benjack-scrap-5:
 	
 [TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach. ]
 
-The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-chair, benjack-scrap-5, benjack-carol}.
+The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-chair, benjack-scrap-5, benjack-carol, benjack-teacup}.
 
 Chapter 3 - N1 Conversation
 
@@ -931,6 +982,9 @@ benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the 
 benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm.
 
 Section 2 - N1 Quips
+
+After quizzing benjack-Carol about benjack-bigMirror:
+	say "[one of][quotation mark]That mirror wasn’t there when I came in, where did it come from?[quotation mark][paragraph break][quotation mark]Oh, I'm sure it will wander off when we've had enough tea.[quotation mark][or]Carol suggests that the mirror will disappear when you have had your fill of tea at her tea party.[no line break][stopping][paragraph break]".
 
 After quizzing benjack-Carol about benjack-Carol:
 	say "[one of][quotation mark]About me?[quotation mark] the girl grins and folds her hands, [quotation mark]I am five years old and I can tie my own shoes, except that these ones don[apostrophe]t have laces, and I can read some books, even if they don[apostrophe]t have pictures, although I prefer the ones with pictures.[quotation mark][paragraph break]She looks around the room. Gesturing to the animals seated at the table and perched on the bed, she continues, [quotation mark]I have a lot of friends to keep me company when I[apostrophe]m here, which is all the time now, since my father says that it is better for me to be raised by the Cragnes on account of he is so busy at work and mother has so many guests to entertain. Which is fine. I[apostrophe]m used to it because I have been here since I was a baby except sometimes when I visit Stonington.[quotation mark][or]Carol is only too happy to prattle on about her daily routine of kindergarten and playing in her room with her toys. You do a lot of nodding.[no line break][stopping][paragraph break]".
@@ -1074,16 +1128,6 @@ After informing benjack-Carol about a Progressive subject:
 After quizzing benjack-Carol about benjack-scrap-5:
 	say "[one of][quotation mark]I think everyone should have their own scrapbook,[quotation mark] Carol replies. [quotation mark]Don[apostrophe]t you?[quotation mark][paragraph break]Carol leaves through it.[paragraph break][quotation mark]How do you choose what to paste into it?[quotation mark] you ask.[paragraph break][quotation mark]I don[apostrophe]t know. Just things. News from here and there. Interesting stuff.[quotation mark] Carol stretches and adds with a yawn, [quotation mark]I[apostrophe]ve just started the scrapbook, so there isn[apostrophe]t much in it yet.[quotation mark][or][if benjack-scrap-5 contains more than 2 things][quotation mark]Carol, is it me, or are there more articles pasted into the scrapbook than earlier?[quotation mark][end if]Carol sounds out each title and looks back at you with [if benjack-scrap-5 contains more than 2 things]a shrug. [quotation mark]Looks the same to me.[quotation mark][otherwise]pride.[no line break][end if][stopping][paragraph break]".
 
-[TODO mirror/door subjects - need to see how tose objects are imleneted
-
->ask door
-{if door has disappeared}Carol reassures you, [quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}Carol looks confused. [quotation mark]It[apostrophe]s just a regular door, Naomi.[quotation mark]{endif}
-
->ask mirror
-{if door has disappeared}[quotation mark]That mirror wasn[apostrophe]t there when I came in -- what happened to the door?[quotation mark]
-
-[quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}[quotation mark]Mirror, what mirror? What are you talking about, Naomi?[quotation mark] asks Carol.{endif}]
-
 Chapter 4 - N1 Events
 
 The benjack-slithering-vomit-bladder-of-Katallakh is an open container. Understand "slithering/vomit/bladder/katallakh/slimy/dark-green" or "slithering vomit bladder bladder of Katallakh" or "vomit bladder of Katallakh" or "bladder of Katallakh" as the benjack-slithering-vomit-bladder-of-Katallakh. The printed name of the benjack-slithering-vomit-bladder-of-Katallakh is "slithering vomit bladder of Katallakh". The description of the slithering vomit bladder of Katallakh is "A  thick, rugated envelope of flesh. Occasionally, it slithers a bit.".
@@ -1099,7 +1143,7 @@ Before going a direction when the location is juxtaDAN8 and benjack-N1 has happe
 	otherwise:
 		continue the action.
 		
-Instead of going south when the location is M2F3 and benjack-N1 is happening and the benjack-times_bestowed of yourself is less than 1:
+Instead of going south when the location is M2F3 and benjack-N1 is happening and benjack-bigmirror is in M2F3:
 	say "[one of]You turn around to walk out, but the door isn’t there. The wall behind you is bare, except for a mirror, which is about where the door was.[paragraph break]That doesn’t make any sense, you think to yourself. I didn’t hear anything change, and I’m sure there was a door there. Looking around the room, there is no other exit, which makes no sense at all since you obviously did enter the room somehow[or]Where there used to be an entrance, a full-length mirror now occupies the wall[stopping].[paragraph break]Carol [one of]gives you a puzzled look and [or][stopping]points to her tea cup."
 	
 Definition: A thing is benjack-Katallakh-devourable if it is not worn and it is not mtw-teapot.
@@ -1153,6 +1197,24 @@ To say benjack-whine3:
 	
 To say benjack-whine4:
 	say "[quotation mark]Uh oh, Naomi,[quotation mark] say Carol with what you can tell is feigned concern, [quotation mark]Malice the Clown says he[apostrophe]s getting upset that you are holding up the tea party, and he wants to know why you haven[apostrophe]t said the magic words [apostrophe]bottoms-up[apostrophe]. He says he wonders if you really want to spend all of eternity in here, and I told him that no, probably you don[apostrophe]t, but he said maybe she does, and I said, well I guess we[apostrophe]ll find out, right?[quotation mark][paragraph break]".
+	
+Instead of throwing mtw-teapot at something when benjack-N1 is happening:
+	try dropping the mtw-teapot.
+	
+Understand "throw [something]" as dropping when the location is M2F3.
+	
+Instead of attacking mtw-teapot when benjack-N1 is happening:
+	try dropping the mtw-teapot.
+	
+Instead of dropping mtw-teapot:
+	say "Fortunately, the valuable antique lands without incident."
+	
+Instead of dropping mtw-teapot when benjack-N1 is happening:
+	now mtw-teapot is nowhere;
+	now benjack-bigmirror is nowhere;
+	say "The delicate antique smashes into a million pieces that melt like snowflakes and disappear.[paragraph break]Carol stares, immobile, in horror.[paragraph break][quotation mark][quotation mark]What did you do?[quotation mark] She whispers, more to herself than you. [quotation mark]Grand-uncle will be… he’ll be angry.[quotation mark][paragraph break]Tears well in Carol’s eyes. [quotation mark]He will be so, so angry. Even when he’s not angry, he’s so… cruel.[quotation mark] She wipes her running nose with the back of her sleeve and through choked sobs asks, [quotation mark]Why? Why did you do that?[quotation mark][paragraph break]Carol throws her arms outward, palms towards you and you experience the memorable phenomenon of being propelled through a phantasmal wall.";
+	try going south.
+
 	
 Chapter 5 - N1 Tests
 [test starts in DAN8 after R0]
@@ -1291,7 +1353,7 @@ benjack-GrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjac
 
 benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" as benjack-Mansion when the location is in the benjack-realm.
 
-benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is in the benjack-realm.
+benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is DAN8.
 
 benjack-Seeming is a subject.  Understand "Seeming" as benjack-Seeming when the location is in the benjack-realm.
 
@@ -1538,6 +1600,8 @@ benjack-window
 benjack-chair
 benjack-door -- doesn't exist anywhere yet
 ]
+
+The benjack-teapot is a benjack-shadow. The printed name of benjack-teapot is "[mtw-teapot]". The N1-desc of benjack-teapot is "[description of mtw-teapot]". Understand "teapot" as benjack-teapot when the player is in M2F3.
 
 The benjack-nail is a benjack-shadow.  The printed name of the benjack-nail is "bent nail".
 Understand "bent/nail" as benjack-nail when the player is in M2F3.
@@ -2237,7 +2301,7 @@ After benjack-KHing when benjack-N3 is happening:
 	now yourself is benjack-KH_accomplished.
 	
 Instead of going south when benjack-N3 is happening:
-	say "It's like there is an invisible barrier there".
+	say "You [one of]try, but don't get very far[or]steam off towards the hallway, but don't make it[or]try, but according to Carol, destiny holds you back[stopping].[paragraph break][benjack-stuck-n3]".
 	
 Instead of benjack-ploughvering when benjack-N3 is happening:
 	say "[one of]Dark purple sparks fly from the four walls, ceiling and floor of the room as you cast[or]Sparks fly[stopping], but you go nowhere.[paragraph break][benjack-stuck-n3]".
@@ -2294,7 +2358,7 @@ When benjack-N3 ends:
 
 Part 10 - Scene Denouement
 
-The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi Runes". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" or "tome of naomi runes" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: Tome of Naomi Runes."
+The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: [quotation mark]Tome of Naomi[quotation mark]."
 
 Instead of reading the benjack-NaomiRunes:
 	if benjack-NaomiRunes is closed:
@@ -2305,10 +2369,6 @@ Instead of reading the benjack-NaomiRunes:
 	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-naomiRunes][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-naomiRunes][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-naomiRunes][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-naomiRunes][bold type][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-naomiRunes][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
 
 benjack-denouement has a number called doomCounter. The doomCounter is 0.
-
-Instead of reading benjack-naomiRunes:
-	say "The book has a number of entries, each corresponding to a faded clipping:".
-	[TODO: populated the runebook, read titles.]
 	
 Chapter 1 - Denouement Begins
 
@@ -2341,17 +2401,37 @@ To say benjack-doom2:
 	
 To say benjack-doom3:
 	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark][paragraph break]";
+	now Yourself is benjack-guilty;
 	now benjack-Carol is nowhere;
 	now benjack-Carol is unseen.
 	
-Before doing anything when the doomCounter of the benjack-Denouement is 4 and benjack-Denouement is happening:
+Before doing anything when the doomCounter of the benjack-Denouement is 3 and benjack-Denouement is happening:
 	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
 	now benjack-naomiRunes is in M2F3;
-	now benjack-naomiRunes is seen.	
+	now benjack-naomiRunes is seen;
+	stop the action.
 	
-Instead of jumping when benjack-denouement is happening:
-	try benjack-outjumping the benjack-window. 
+Instead of jumping when the benjack-window is open and benjack-denouement is happening:
+	try entering the benjack-window. 
+	
+Instead of going outside when the benjack-window is open and benjack-denouement is happening:
+	try entering the benjack-window.
+	
+Before entering the benjack-window when the benjack-window is not open:
+	say "First of all, this window is many stories above the ground; the drop would be certain death. Beyond that, though, the window isn't open[if the benjack-window is cracked] enough[end if].";
+	stop the action.
 
+Instead of entering the benjack-window:
+	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.[paragraph break]";
+	wait for any key;
+	say "Somewhat.[paragraph break]";
+	wait for any key;
+	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
+	now the benjack-altar is in DAN8;
+	now benjack-naomiRunes is on the benjack-altar;
+	now benjack-naomiRunes is seen;
+	move the player to DAN8.	
+	
 Chapter 3 - Denouement Tests
 
 test de-benjack with "z / z / z / look / x tome / open book / close tome / read tome / read sable / get photo / open window / s ".
@@ -2359,7 +2439,7 @@ test de-benjack with "z / z / z / look / x tome / open book / close tome / read 
 Chapter 4 - Denouement Ends
 
 When benjack-denouement ends:
-	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-photo is nowhere]! Lbh arrq gb rknzvar lbhe EharObbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
+	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-photo is nowhere]! Lbh arrq gb rknzvar lbhe Ehar Obbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
 	benjack-stage-off 3;
 	now benjack-window is in M2F3;
 	now benjack-window is seen;
@@ -2389,7 +2469,7 @@ When benjack-denouement ends:
 	if yourself is benjack-guilty:
 		now Benjack-clipping-10 is in benjack-naomiRunes.
 	
-[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your RuneBook and take the photo that comes out of it for a later part of the game[end if]
+[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your Rune Book and take the photo that comes out of it for a later part of the game[end if]
 ]
 
 Part 11 - Apres
@@ -2407,10 +2487,16 @@ Before doing anything with benjack-naomiRunes when benjack-Denouement has happen
 Instead of rubbing the benjack-window when the benjack-denouement has happened:
 	say "The filth on the windows resists your best efforts.".
 	
-Before benjack-ploughvering or benjack-xizziing or benjack-KHing when benjack-denouement has happened:
-	say "[one of]As best you can figure it, having monkeyed with time, space, causality and a numerous primordial Forces that you are fortunate to not have encountered, you were never  magically marked in the first place, so not a thing happens[or]Nothing at all happens[stopping]."
+Before benjack-ploughvering or benjack-xizziing or benjack-KHing:
+	if benjack-denouement is happening:
+		say "All available magical energy is currrently tied up in the conflict between Carol and Christabell.";
+		stop the action;
+	if benjack-denouement has ended:
+		say "[one of]As best you can figure it, having monkeyed with time, space, causality and a numerous primordial Forces that you are fortunate to not have encountered, you were never magically marked in the first place, so not a thing happens[or]Nothing at all happens[stopping].";
+		stop the action;
+	continue the action.
 	
-Instead of opening benjack-window when benjack-denouement has happened:
+Instead of opening benjack-window when benjack-denouement has ended:
 	say "It is frozen shut with age and neglect."
 	
 Chapter 2 - Tests
@@ -2575,9 +2661,10 @@ To benjack-bottom1:
 		say "Carol smiles and a slimy dark-green sac appears in front of you. [quotation mark]Well, here’s your stuff. Fair and square.[quotation mark][paragraph break]";
 		move the benjack-slithering-vomit-bladder-of-Katallakh to M2F3;
 		now the benjack-slithering-vomit-bladder-of-Katallakh is seen;
-		say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
-		now Benjack-clipping-body is in benjack-scrap-5;
-		now the player carries mtw-teapot.
+	say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
+	now Benjack-clipping-body is in benjack-scrap-5;
+	now benjack-teapot is nowhere;
+	now the player carries mtw-teapot.
 
 To benjack-bottom2:
 	say "Again, the sweet taste of tea, this time with a dash of oil of bergamot and just a touch of sugar.[paragraph break]Odd you think, same teapot, but a different taste. But then you reason that is not any harder to accept than tea distributing itself magically around a table you are sharing with four stuffed animals and a ghost of some sort. Some things are just harder to accept than others.[paragraph break]As you set your cup back down on the table, you observe Carol sneaking a glance at her scrapbook. In that brief instant, both Carol and the book glow slightly, somewhat brighter than they did before. Your own skin pulses briefly with the same glow and you think that afterwards it maintains something of a numinous shine. This is really good tea. You feel great, and the worries of the day are fast disappearing.[paragraph break][quotation mark]I really liked that one![quotation mark] pipes Carol.[paragraph break][quotation mark]We aim to please,[quotation mark] you say, prompting her giggles.";
@@ -2586,6 +2673,7 @@ To benjack-bottom2:
 	
 To benjack-bottom3:
 	say "That was unexpected. Flowery. Bit of an aftertaste.[paragraph break][quotation mark]Is this Jasmine?[quotation mark][paragraph break][quotation mark]It[apostrophe]s Crisp Hand Sew Mom.[quotation mark] Carol struggles with the pronunciation.[paragraph break][quotation mark]Chrysanthemum?[quotation mark] You offer.[paragraph break][quotation mark]Yes, that. Grand-uncle[apostrophe]s teapot knows all my favorites.[quotation mark][paragraph break]Not only are the two of you now glowing enough to cast shadows around the room, but you notice that little sparks of static electricity scintillating at your fingertips. You hold them up, [quotation mark]Carol, is this normal?[quotation mark][paragraph break][quotation mark]Oh yes, it[apostrophe]s wonderful, isn[apostrophe]t it?[quotation mark][paragraph break]You do feel wonderful.[paragraph break]The scrapbook pulses with energy.";
+	now benjack-bigmirror is nowhere;
 	now Benjack-clipping-sable is in benjack-scrap-5;
 	now the player carries mtw-teapot;
 	benjack-Carol slurps in 1 turn from now;
@@ -2686,37 +2774,16 @@ Part 2 - Actions of a most mundane nature
 
 Chapter 1 - Jumping Out
 
-Benjack-OutJumping is an action applying to one thing. Understand "jump out [something]" as Benjack-Outjumping when the location is in M2F3.
+Benjack-OutJumping is an action applying to one thing. Understand "jump out [a container]" or "jump out of [a container]" or "jump through [a container]" or "dive out [a container]" or "or dive through [a container]" as entering when benjack-denouement is happening and the location is M2F3.
 
-Check Benjack-OutJumping:
-	if the noun is not benjack-window:
-		say "That's no something you can hop out of[one of] -- sorry for the terminal preposition, but this is horror[or][stopping].";
-		stop the action;
-	if the benjack-window is not open:
-		say "First of all, this window many stories above the ground; the drop would be certain death. Beyond that, though, the window is closed.";
-		stop the action.
-		
-Carry out Benjack-Outjumping:
-	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.[paragraph break]";
-	wait for any key;
-	say "Somewhat.[paragraph break]";
-	wait for any key;
-	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
-	now the benjack-altar is in DAN8;
-	now benjack-naomiRunes is on the benjack-altar;
-	now benjack-naomiRunes is seen;
-	move the player to DAN8.
+Understand "flee" or "run away" or "suicide" or "commit suicide" or "jump to my death" as jumping when benjack-denouement is happening and the location is M2F3.
 
 Book 5 - Replace Defaults
 
 Part 1 - Actions
 
-[TODO]
-Instead of examining the player when the location is DAN8 (this is the DAN8-PC description rule):
-	say "How you look on the hillside, for example."
-	
-Instead of examining the player when the location is M2F3 (this is the M2F3-PC description rule):
-	say "How you look in the nursery, for example."
+Instead of examining yourself when the location is in the benjack-realm:
+	say "This little weekend getaway with Peter has done you some good. So relaxing.".
 	
 Part 2 - Library Responses
 
@@ -2842,13 +2909,16 @@ Carry out scenejumping:
 		say "[bold type]/ JUMP from R2 to N3 /[roman type][paragraph break]";
 	otherwise if benjack-N3 is happening:
 		now benjack-window is open;
-		now benjack-Carol is nowhere;
-		now the player carries benjack-naomiRunes;
-		move the player to M2F3;
 		say "[bold type]/ JUMP from N3 to Denouement /[roman type][paragraph break]".
-
-test N2-jump with "scenejump / scenejump /scenejump / scenejump".
-test N3-jump with "scenejump / scenejump /scenejump / scenejump / scenejump / scenejump".
+	
+[assuming these are entered at beginning, prior to R0]		
+test jump-r0 with "scenes on /scenejump/scenes off".
+test jump-n1 with "scenes on /scenejump/scenejump/scenes off".
+test jump-r1 with "scenes on /scenejump/scenejump/scenejump/scenes off".
+test jump-n2 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenes off".
+test jump-r2 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
+test jump-n3 with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
+test jump-denouement with "scenes on /scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenejump/scenes off".
 
 
 Part 5 - Font Testing
