@@ -196,7 +196,7 @@ Description of M2F3 is "[benjack-nursery-description][no line break]".
 
 To say benjack-nursery-description:
 	if benjack-N1 is happening:
-		say "[one of][Benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the entrance, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand, and right in front of you, an empty adult-sized chair waits invitingly.[no line break][paragraph break][only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed. The exit is to the south.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.";
+		say "[one of][Benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the entrance, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand.[no line break][paragraph break][only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed. The exit is to the south.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.";
 	otherwise if benjack-N2 is happening:
 		say "[one of]You walk into Carol's room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the door, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk[stopping]. The exit is to the south.";
 	otherwise if benjack-N3 is happening:
@@ -691,7 +691,7 @@ When benjack-N1 begins:
 	
 Chapter 2 - N1 Nursery Furnishing Updates
 
-[benjack-shadows are ghost objects (a kind of scenery) that you mostly can't interact with. Note that everything is a shadow except for the {book, window, chair, door}.]
+[benjack-shadows are ghost objects (a kind of scenery) that you mostly can't interact with. Note that everything is a shadow except for the {rune book and window}.]
 
 [template:
 
@@ -866,7 +866,8 @@ The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue 
 The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
 Understand "window/safety/lock/child-proof/glass/pane/panes" as benjack-window when the player is in M2F3.
-The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
+The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same[if benjack-N2 is happening] age-worn[end if][if benjack-N2 has ended] termite-infested[end if] rosewood trim that decorates the rest of this once great mansion[if benjack-N2 has ended]. It looks like the child-proof lock that once secured the window shut has long since fallen off[end if].". 
+
 Benjack-window can be cracked. Benjack-window is not cracked.
 	
 Instead of inserting something (called the item) into the benjack-window:
@@ -896,13 +897,6 @@ Instead of hitting the benjack-window, say "The house has survived Vermont winte
 Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
 
 TODO: trees and cliffs should be visible, change with season]
-
-The benjack-chair is a supporter.  The printed name of the benjack-chair is "antique chair".
-Understand "chair" as benjack-chair when the player is in M2F3.
-The description of benjack-chair is "The chair is the only adult-size piece of furniture in the room.[first time] It looks a little spindly, but antique chairs often do, and you reason that they knew what they were doing back in the day, so it will probably hold.[only]".
-[TODO: sitting isn't a defined action.
-After sitting on the benjack-chair, say "The antique chair creaks a little but supports you."]
-[TODO: implement touching messages for chair]
 
 The benjack-scrap-5 is a benjack-runebook. The printed name of the benjack-scrap-5 is "scrapbook".
 Understand "scrapbook" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
@@ -935,7 +929,7 @@ Instead of reading the benjack-scrap-5:
 	
 [TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach. ]
 
-The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-chair, benjack-scrap-5, benjack-carol, benjack-teacup}.
+The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-scrap-5, benjack-carol, benjack-teacup}.
 
 Chapter 3 - N1 Conversation
 
@@ -1605,13 +1599,6 @@ The N2-desc of benjack-floor is "The blue carpeting has not changed[first time];
 The N2-desc of benjack-eisenhower is "The portrait of President Eisenhower is gone and has not been replaced.".
 The N2-desc of benjack-lamb is "The well-worn lamb doll is nowhere to be found."
 
-
-[Other items available from N1
-benjack-window
-benjack-chair
-benjack-door -- doesn't exist anywhere yet
-]
-
 The benjack-teapot is a benjack-shadow. The printed name of benjack-teapot is "[mtw-teapot]". The N1-desc of benjack-teapot is "[description of mtw-teapot]". Understand "teapot" as benjack-teapot when the player is in M2F3.
 
 The benjack-nail is a benjack-shadow.  The printed name of the benjack-nail is "bent nail".
@@ -1823,7 +1810,7 @@ Instead of saying yes when benjack-Carol is requesting_permission during benjack
 
 Chapter 5 - N2 Tests
 
-test n2-benjack with "n / n / n / look / look / look / x floor / x walls / x bed / x blanket / x pillow / x patch / x nail / x table / x mirror / x makeup / x window / x trees / x cliffs / search window / look out window / x desk / x newspaper / g / x drawers / x lamp / get lamp / x books / x colonial / x algebra / x spines / x looseleaf / x turntable /x record / x stand / x toys / x chair / x sweetpaws / x sweetpaws / x snortles / x mister snortles / x malice / g / x winkelbottom / look under rung / open desk / open drawers / hello / s / s / s / s / ploughver / exit / no / no / yes / ask about portrait / g / a johnson / g / a christabell / g / g / a plan / a deep ones / a future / t future / g / a third covenant / g / a mattanit / g / g / g / a america / g / a elder gods / g / a father / g / a mother / a joan / a nixon / a kennedy / g / a submarines / g / a grand-uncle / g / a scrapbook / a newspaper / a book / a essay / g / a school / a farmington / a lech / g / x drawing / x top / g / x middle / g / x bottom / g / a top / a middle / a bottom / a thresher / a baby / a pregnant / t drawing / t top / t bottom / t christabell / g / a winkelbottom / s".
+test n2-benjack with "n / n / n / look / look / look / x floor / x walls / x bed / x blanket / x pillow / x patch / x nail / x table / x mirror / x makeup / x window / x trees / x cliffs / search window / look out window / x desk / x newspaper / g / x drawers / x lamp / get lamp / x books / x colonial / x algebra / x spines / x looseleaf / x turntable /x record / x stand / x toys / x sweetpaws / x sweetpaws / x snortles / x mister snortles / x malice / g / x winkelbottom / look under rung / open desk / open drawers / hello / s / s / s / s / ploughver / exit / no / no / yes / ask about portrait / g / a johnson / g / a christabell / g / g / a plan / a deep ones / a future / t future / g / a third covenant / g / a mattanit / g / g / g / a america / g / a elder gods / g / a father / g / a mother / a joan / a nixon / a kennedy / g / a submarines / g / a grand-uncle / g / a scrapbook / a newspaper / a book / a essay / g / a school / a farmington / a lech / g / x drawing / x top / g / x middle / g / x bottom / g / a top / a middle / a bottom / a thresher / a baby / a pregnant / t drawing / t top / t bottom / t christabell / g / a winkelbottom / s".
 
 Chapter 6 - N2 Ends
 
