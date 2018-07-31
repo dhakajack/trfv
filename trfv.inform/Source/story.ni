@@ -134,41 +134,55 @@ The commentary of DAN8 is "DAN8 Commentary".
 
 Description of DAN8 is "[one of][Benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
-The benjack-cliffs are scenery in DAN8.  The printed name of benjack-cliffs is "cliffs".  
-Understand "cliff/granite/wall/hill/hillside/mica/cliffs/walls/hills/hillsides" as the benjack-cliffs when the player is in DAN8.
-The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
-Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
-
-The benjack-clearing is scenery in DAN8.  The printed name of benjack-clearing is "clearing".
-Understand "bowl" or "amphitheater" or "amphitheatre" or "clearing" as the benjack-clearing when the player is in DAN8.
-The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
-
-The benjack-trail is scenery in DAN8.  The printed name of benjack-trail is "trailheads".
-Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
-The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
-
-The benjack-weeds are scenery in DAN8.  The printed name of benjack-weeds is "vegetation".
-Understand "hedge" or "bramble" or "shrub" or "tree" or "grass" or "vegetation" or "stumps" or "weed" or "weeds" as the benjack-weeds when the player is in DAN8.
-The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
-
-Instead of touching the benjack-weeds:
-	say "The gnarled, twisted weeds are nothing but thorns and vicious spines. You pull back."
-
-The benjack-dirt is scenery in DAN8.  The printed name of benjack-dirt is "dirt".
-Understand "soil" or "ground" or "dirt" as the benjack-dirt when the player is in DAN8.
-The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
-Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
-
-The benjack-dan8-sky is scenery in DAN8.  The printed name of benjack-dan8-sky is "sky". The benjack-mound is a supporter.
-Understand "clouds" or "sky" as the benjack-dan8-sky when the player is in DAN8.
-The description of the benjack-dan8-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
-The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of tracks".
-Understand "mound" or "pile" or "lump" or "track" or "tracks" or "iron" or "sticks" or "rail" or "rayle" or "railroad" or "rail" or "rails" or "piles" or "lumps" or "irons" or "ironne" or "altar" as the benjack-mound when the location is in the benjack-realm.
+The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of railroad tracks". The benjack-mound is a supporter.
+Understand "mound/pile/lump/track/tracks/iron/sticks/rail/rayle/railroad/rail/rails/piles/lumps/irons/ironne/altar" as the benjack-mound when the location is in the benjack-realm.
 The description of the benjack-mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky[or]A tall pile of rusted railway tracks[stopping].".  
 
 Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear."
 
 The benjack-altar is a supporter. The description of benjack-altar is "TODO altar description". The printed name of benjack-altar is "stone altar". Understand "stone/altar" as benjack-altar when the location is in the benjack-realm.
+
+Instead of climbing the benjack-altar, say "That would be sacreligious."
+
+The benjack-trail is scenery. benjack-trail is in DAN8. The printed name of benjack-trail is "trailheads".
+Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
+The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
+
+The benjack-sky is a backdrop. benjack-sky is in DAN8.  benjack-sky is in m2f3. The printed name of benjack-sky is "sky". 
+Understand "clouds" or "sky" as the benjack-sky when the location is in the benjack-realm.
+The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
+
+The benjack-cliffs are a backdrop.  benjack-cliffs is in DAN8. benjack-cliffs is in M2F3. The printed name of benjack-cliffs is "cliffs". 
+Understand "cliff/granite/wall/hill/hillside/mica/cliffs/walls/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
+The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
+
+Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
+
+The benjack-weeds are a backdrop. benjack-weeds is in DAN8.  benjack-weeds is in m2f3. The printed name of benjack-weeds is "vegetation".
+Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches" as the benjack-weeds when the location is in the benjack-realm.
+The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
+
+Instead of touching the benjack-weeds:
+	say "The gnarled, twisted weeds are nothing but thorns and vicious spines. You pull back."
+	
+The benjack-clearing is a backdrop. benjack-clearing is in DAN8.  benjack-clearing is in m2f3.  The printed name of benjack-clearing is "clearing".
+Understand "bowl" or "amphitheater" or "amphitheatre" or "clearing" as the benjack-clearing when the location is in the benjack-realm.
+The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
+
+The benjack-dirt is a backdrop. benjack-dirt is in DAN8.  benjack-dirt is in m2f3.  The printed name of benjack-dirt is "[if benjack-N3 is happening or benjack-denouement is happening]snow-covered [end if]dirt".
+Understand "soil" or "ground" or "dirt" as the benjack-dirt when the location is in the benjack-realm.
+The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
+
+Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
+
+Instead of doing something other than examining with a backdrop (called the locale) when the location is M2F3:
+	say "You can only see that in the distance."
+	
+Instead of examining a backdrop (called the vista) when the location is M2F3:
+	if benjack-denouement has ended:
+		try searching benjack-window;
+	otherwise:
+		say "Through the window's aged glass, you can see the [vista].[paragraph break][description of the vista][paragraph break]".
 
 Chapter M2F3 Nursery
 
@@ -851,7 +865,7 @@ The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue 
 
 The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
-Understand "window/safety/lock/child-proof" as benjack-window when the player is in M2F3.
+Understand "window/safety/lock/child-proof/glass/pane/panes" as benjack-window when the player is in M2F3.
 The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same rosewood trim that decorates the rest of this once great mansion.". [this is the same in all scenes]
 Benjack-window can be cracked. Benjack-window is not cracked.
 	
@@ -866,6 +880,16 @@ Instead of opening the benjack-window:
 	otherwise if benjack-N3 is not happening:
 		say "The window has a [if benjack-N1 is happening]complicated[otherwise]badly rusted[end if] child-proof safety lock -- on the outside[one of]. How very uncharacteristically responsible for the Cragnes[or][stopping]."
 
+Understand "look through [something]" or "look out [something]" as searching when the location is M2F3.
+
+Instead of searching benjack-window:
+	if benjack-denouement has ended:
+		say "The glass is too dirty to see through.";
+	otherwise:
+		say "Through thick glass warped by time, you can see the estate grounds far below you. The [if benjack-n2 has ended]snow-capped [end if]dark hills[if benjack-n2 is happening], now surrounded by colorful autumn trees,[otherwise] where you encountered Christabell[end if] are in the distance."
+	
+Instead of attacking benjack-window:
+	say "The house has survived Vermont winters, it will survive you.".
 	
 [TODO:  hitting action isn't defined, nor is 'looking through'
 Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
