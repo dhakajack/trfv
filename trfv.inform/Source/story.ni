@@ -1215,6 +1215,17 @@ Instead of dropping mtw-teapot when benjack-N1 is happening:
 	say "The delicate antique smashes into a million pieces that melt like snowflakes and disappear.[paragraph break]Carol stares, immobile, in horror.[paragraph break][quotation mark][quotation mark]What did you do?[quotation mark] She whispers, more to herself than you. [quotation mark]Grand-uncle will be… he’ll be angry.[quotation mark][paragraph break]Tears well in Carol’s eyes. [quotation mark]He will be so, so angry. Even when he’s not angry, he’s so… cruel.[quotation mark] She wipes her running nose with the back of her sleeve and through choked sobs asks, [quotation mark]Why? Why did you do that?[quotation mark][paragraph break]Carol throws her arms outward, palms towards you and you experience the memorable phenomenon of being propelled through a phantasmal wall.";
 	try going south.
 
+Instead of examining the mtw-teapot when benjack-N1 is happening:
+	if benjack-times_bestowed of yourself is:
+		-- 1:
+			say "It looks like there are about two more rounds of tea in the fine china pot.";
+		-- 2:
+			say "One more serving remains in the teapot.";
+		-- 3:
+			say "The teapot is empty."
+			
+Instead of inserting anything into the mtw-teapot when the location is M2F3:
+	say "Gross. The teapot is only for tea."
 	
 Chapter 5 - N1 Tests
 [test starts in DAN8 after R0]
@@ -2661,6 +2672,10 @@ To benjack-bottom1:
 		say "Carol smiles and a slimy dark-green sac appears in front of you. [quotation mark]Well, here’s your stuff. Fair and square.[quotation mark][paragraph break]";
 		move the benjack-slithering-vomit-bladder-of-Katallakh to M2F3;
 		now the benjack-slithering-vomit-bladder-of-Katallakh is seen;
+	if the mtw-teapot contains something:
+		say "[quotation mark]What's this? Yech. Who puts stuff in a teapot anyhow?[quotation mark] asks Carol, pouring out [list of things enclosed by mtw-teapot with indefinite articles] on the floor before whipping up a batch of piping hot magical tea.[paragraph break]";
+		repeat with item running through things enclosed by mtw-teapot:
+			now item is in the location;
 	say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
 	now Benjack-clipping-body is in benjack-scrap-5;
 	now benjack-teapot is nowhere;
