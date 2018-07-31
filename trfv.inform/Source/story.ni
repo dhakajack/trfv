@@ -666,6 +666,7 @@ When benjack-N1 begins:
 	benjack-stage-on 1;
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
+	now the benjack-bigmirror is in M2F3;
 	benjack-conversation-customize.
 	
 [hint text: You need to humor Carol by playing along with her tea party. She needs to you the magic words bottoms-up to serve a round of tea. You can have a few cups of tea if you want, but once you have had one, you can leave. You can also ask/tell about a number of conversation topics that will be useful later in the game]
@@ -683,8 +684,34 @@ The N1-desc of the benjack-  is "".
 The N2-desc of the benjack-  is "".
 The N3-desc of the benjack-  is "".
 ]
+ 
+The benjack-bigmirror is a scenery closed openable opaque container. The printed name of benjack-bigmirror is "full-length mirror". Understand "full-length/mirror" as the benjack-bigmirror when the player is in M2F3. The description of benjack-bigmirror is "The mirror is about four feet high and half that wide and is affixed to the wall. The bottom of the mirror a good half foot above the floor."
 
-[TODO teacup shadow on table; instead of takeing - why would you take it if it doesn't have tea in it.]
+Instead of searching benjack-bigmirror:
+	say "This mirror works like every mirror you have ever encountered, reflecting everything in the room."
+	
+Instead of attacking the benjack-bigmirror:
+	say "The mirror becomes insubstantial and your entire force is directed against the wall, which, being old but of excellent quality, is not damaged in the least[one of][paragraph break][quotation mark]Good thing you didn’t break it. Breaking mirrors is bad luck![quotation mark]. Carol claps, pleased with herself[or][stopping]."
+	
+Instead of entering the benjack-bigmirror:
+	say "[one of]Having read too much Lewis Carroll, y[or]Y[stopping]ou walk confidently into the mirror and slam into the wall[one of]. [paragraph break][quotation mark]Nope. It’s not that kind of mirror,[quotation mark] adds Carol, helpfully[or][stopping]."
+	
+Instead of throwing something held (called the projectile) at benjack-bigmirror:
+	say "The [projectile] bounces harmlessly off the not very mirror-like mirror[one of]. On reflection, perhaps it is somewhat mirror-like, after all[or][stopping]."
+	
+Instead of opening the benjack-bigmirror:
+	say "You search the edges of the mirror for hinges, but none are evident." 
+	
+Before closing the benjack-bigmirror:
+	say "There isn't anything to close on this mirror.";
+	stop the action.
+
+The benjack-teacup is a benjack-shadow.  The printed name of benjack-teacup is "tea cup".
+Understand "tea/cup" as the benjack-teacup when the player is in M2F3.
+The N1-desc of the benjack-teacup is "A porcelain tea cup with alternating blue and gold stripes and a band of little skulls around the rim."
+
+Instead of taking the benjack-teacup:
+	say "Except when it has tea in it, it has only a shadowy existence. Your hand passes through it[one of]. How annoying[or][stopping]."
 
 The benjack-comforter is a benjack-shadow.  The printed name of benjack-comforter is "comforter".
 Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
@@ -884,7 +911,7 @@ Instead of reading the benjack-scrap-5:
 	
 [TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach. ]
 
-The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-chair, benjack-scrap-5, benjack-carol}.
+The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-chair, benjack-scrap-5, benjack-carol, benjack-teacup}.
 
 Chapter 3 - N1 Conversation
 
@@ -931,6 +958,9 @@ benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the 
 benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm.
 
 Section 2 - N1 Quips
+
+After quizzing benjack-Carol about benjack-bigMirror:
+	say "[one of][quotation mark]That mirror wasn’t there when I came in, where did it come from?[quotation mark][paragraph break][quotation mark]Oh, I'm sure it will wander off when we've had enough tea.[quotation mark][or]Carol suggests that the mirror will disappear when you have had your fill of tea at her tea party.[no line break][stopping][paragraph break]".
 
 After quizzing benjack-Carol about benjack-Carol:
 	say "[one of][quotation mark]About me?[quotation mark] the girl grins and folds her hands, [quotation mark]I am five years old and I can tie my own shoes, except that these ones don[apostrophe]t have laces, and I can read some books, even if they don[apostrophe]t have pictures, although I prefer the ones with pictures.[quotation mark][paragraph break]She looks around the room. Gesturing to the animals seated at the table and perched on the bed, she continues, [quotation mark]I have a lot of friends to keep me company when I[apostrophe]m here, which is all the time now, since my father says that it is better for me to be raised by the Cragnes on account of he is so busy at work and mother has so many guests to entertain. Which is fine. I[apostrophe]m used to it because I have been here since I was a baby except sometimes when I visit Stonington.[quotation mark][or]Carol is only too happy to prattle on about her daily routine of kindergarten and playing in her room with her toys. You do a lot of nodding.[no line break][stopping][paragraph break]".
@@ -1073,16 +1103,6 @@ After informing benjack-Carol about a Progressive subject:
 	
 After quizzing benjack-Carol about benjack-scrap-5:
 	say "[one of][quotation mark]I think everyone should have their own scrapbook,[quotation mark] Carol replies. [quotation mark]Don[apostrophe]t you?[quotation mark][paragraph break]Carol leaves through it.[paragraph break][quotation mark]How do you choose what to paste into it?[quotation mark] you ask.[paragraph break][quotation mark]I don[apostrophe]t know. Just things. News from here and there. Interesting stuff.[quotation mark] Carol stretches and adds with a yawn, [quotation mark]I[apostrophe]ve just started the scrapbook, so there isn[apostrophe]t much in it yet.[quotation mark][or][if benjack-scrap-5 contains more than 2 things][quotation mark]Carol, is it me, or are there more articles pasted into the scrapbook than earlier?[quotation mark][end if]Carol sounds out each title and looks back at you with [if benjack-scrap-5 contains more than 2 things]a shrug. [quotation mark]Looks the same to me.[quotation mark][otherwise]pride.[no line break][end if][stopping][paragraph break]".
-
-[TODO mirror/door subjects - need to see how tose objects are imleneted
-
->ask door
-{if door has disappeared}Carol reassures you, [quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}Carol looks confused. [quotation mark]It[apostrophe]s just a regular door, Naomi.[quotation mark]{endif}
-
->ask mirror
-{if door has disappeared}[quotation mark]That mirror wasn[apostrophe]t there when I came in -- what happened to the door?[quotation mark]
-
-[quotation mark]Don[apostrophe]t worry, Naomi, it can[apostrophe]t have wandered off too far, I[apostrophe]m sure it will be back after our tea party.[quotation mark]{otherwise}[quotation mark]Mirror, what mirror? What are you talking about, Naomi?[quotation mark] asks Carol.{endif}]
 
 Chapter 4 - N1 Events
 
@@ -1291,7 +1311,7 @@ benjack-GrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjac
 
 benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" as benjack-Mansion when the location is in the benjack-realm.
 
-benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is in the benjack-realm.
+benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is DAN8.
 
 benjack-Seeming is a subject.  Understand "Seeming" as benjack-Seeming when the location is in the benjack-realm.
 
@@ -2575,9 +2595,9 @@ To benjack-bottom1:
 		say "Carol smiles and a slimy dark-green sac appears in front of you. [quotation mark]Well, here’s your stuff. Fair and square.[quotation mark][paragraph break]";
 		move the benjack-slithering-vomit-bladder-of-Katallakh to M2F3;
 		now the benjack-slithering-vomit-bladder-of-Katallakh is seen;
-		say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
-		now Benjack-clipping-body is in benjack-scrap-5;
-		now the player carries mtw-teapot.
+	say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
+	now Benjack-clipping-body is in benjack-scrap-5;
+	now the player carries mtw-teapot.
 
 To benjack-bottom2:
 	say "Again, the sweet taste of tea, this time with a dash of oil of bergamot and just a touch of sugar.[paragraph break]Odd you think, same teapot, but a different taste. But then you reason that is not any harder to accept than tea distributing itself magically around a table you are sharing with four stuffed animals and a ghost of some sort. Some things are just harder to accept than others.[paragraph break]As you set your cup back down on the table, you observe Carol sneaking a glance at her scrapbook. In that brief instant, both Carol and the book glow slightly, somewhat brighter than they did before. Your own skin pulses briefly with the same glow and you think that afterwards it maintains something of a numinous shine. This is really good tea. You feel great, and the worries of the day are fast disappearing.[paragraph break][quotation mark]I really liked that one![quotation mark] pipes Carol.[paragraph break][quotation mark]We aim to please,[quotation mark] you say, prompting her giggles.";
