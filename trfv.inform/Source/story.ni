@@ -639,6 +639,7 @@ Before going north from M2F2 when benjack-N1 has not happened:
 	otherwise:
 		say "[quotation mark]Oh, we[apostrophe]re all so happy! And it is just about tea time too! Come right in.[quotation mark] The girl turns to face a sock puppet monkey and scolds him, [quotation mark]You just stay in your seat, [bold type]Young Master Sweetpaws[roman type] -- [bold type] mother[roman type] says we will have manners in this house![quotation mark][paragraph break]Much bustling ensues: sounds of porcelain being laid, clinking of utensils, and the heavy thunk of a chair being put in place.[paragraph break][quotation mark]Ready! Come in, [bold type]Naomi[roman type][quotation mark], sings Carol as she ushers you inward.[paragraph break]Perhaps against your better judgement, you follow her.[paragraph break][quotation mark]Here, let me take that for you,[quotation mark] offers Carol as she accepts the teapot and walks to a table at the center of the room.[quotation mark][paragraph break]".
 		
+				
 To say benjack-no-teapot1:
 	say "[quotation mark]Hi [bold type]Naomi[roman type]. That[apostrophe]s a funny name -- are you an [bold type]immigrant[roman type] or something? [bold type]Daddy[roman type] says [bold type]immigrants[roman type] don[apostrophe]t understand plain English and that[apostrophe]s why we hate [bold type]communists[roman type]. My name is [bold type]Carol[roman type]. Before you come through my door, want to hear a joke?[quotation mark][paragraph break][quotation mark]But, there[apostrophe]s no door here[quotation mark], you complain.[paragraph break][quotation mark]Knock, knock[quotation mark], says the girl, ignoring your objection.[paragraph break][quotation mark]Who[apostrophe]s there?[quotation mark] you reluctantly respond.[paragraph break][quotation mark]Naomi![quotation mark][paragraph break][quotation mark]Naomi, who?[quotation mark] you ask, confused.[paragraph break][quotation mark]Naomi with a chicken on top![quotation mark] The little girl giggles uncontrollably. [quotation mark]It[apostrophe]s funny because it has a chicken on top, get it?[quotation mark][paragraph break]When the girl stops giggling, she somehow ejects you back into the hallway, adding, [quotation mark]We[apostrophe]re so glad you came for the [bold type]tea party[roman type], but aren[apostrophe]t you missing something important?[quotation mark]".
 
@@ -667,6 +668,8 @@ When benjack-N1 begins:
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
 	now the benjack-bigmirror is in M2F3;
+	now mtw-teapot is nowhere;
+	now benjack-teapot is in M2F3;
 	benjack-conversation-customize.
 	
 [hint text: You need to humor Carol by playing along with her tea party. She needs to you the magic words bottoms-up to serve a round of tea. You can have a few cups of tea if you want, but once you have had one, you can leave. You can also ask/tell about a number of conversation topics that will be useful later in the game]
@@ -1119,7 +1122,7 @@ Before going a direction when the location is juxtaDAN8 and benjack-N1 has happe
 	otherwise:
 		continue the action.
 		
-Instead of going south when the location is M2F3 and benjack-N1 is happening and the benjack-times_bestowed of yourself is less than 1:
+Instead of going south when the location is M2F3 and benjack-N1 is happening and benjack-bigmirror is in M2F3:
 	say "[one of]You turn around to walk out, but the door isn’t there. The wall behind you is bare, except for a mirror, which is about where the door was.[paragraph break]That doesn’t make any sense, you think to yourself. I didn’t hear anything change, and I’m sure there was a door there. Looking around the room, there is no other exit, which makes no sense at all since you obviously did enter the room somehow[or]Where there used to be an entrance, a full-length mirror now occupies the wall[stopping].[paragraph break]Carol [one of]gives you a puzzled look and [or][stopping]points to her tea cup."
 	
 Definition: A thing is benjack-Katallakh-devourable if it is not worn and it is not mtw-teapot.
@@ -1173,6 +1176,24 @@ To say benjack-whine3:
 	
 To say benjack-whine4:
 	say "[quotation mark]Uh oh, Naomi,[quotation mark] say Carol with what you can tell is feigned concern, [quotation mark]Malice the Clown says he[apostrophe]s getting upset that you are holding up the tea party, and he wants to know why you haven[apostrophe]t said the magic words [apostrophe]bottoms-up[apostrophe]. He says he wonders if you really want to spend all of eternity in here, and I told him that no, probably you don[apostrophe]t, but he said maybe she does, and I said, well I guess we[apostrophe]ll find out, right?[quotation mark][paragraph break]".
+	
+Instead of throwing mtw-teapot at something when benjack-N1 is happening:
+	try dropping the mtw-teapot.
+	
+Understand "throw [something]" as dropping when the location is M2F3.
+	
+Instead of attacking mtw-teapot when benjack-N1 is happening:
+	try dropping the mtw-teapot.
+	
+Instead of dropping mtw-teapot:
+	say "Fortunately, the valuable antique lands without incident."
+	
+Instead of dropping mtw-teapot when benjack-N1 is happening:
+	now mtw-teapot is nowhere;
+	now benjack-bigmirror is nowhere;
+	say "The delicate antique smashes into a million pieces that melt like snowflakes and disappear.[paragraph break]Carol stares, immobile, in horror.[paragraph break][quotation mark][quotation mark]What did you do?[quotation mark] She whispers, more to herself than you. [quotation mark]Grand-uncle will be… he’ll be angry.[quotation mark][paragraph break]Tears well in Carol’s eyes. [quotation mark]He will be so, so angry. Even when he’s not angry, he’s so… cruel.[quotation mark] She wipes her running nose with the back of her sleeve and through choked sobs asks, [quotation mark]Why? Why did you do that?[quotation mark][paragraph break]Carol throws her arms outward, palms towards you and you experience the memorable phenomenon of being propelled through a phantasmal wall.";
+	try going south.
+
 	
 Chapter 5 - N1 Tests
 [test starts in DAN8 after R0]
@@ -1558,6 +1579,8 @@ benjack-window
 benjack-chair
 benjack-door -- doesn't exist anywhere yet
 ]
+
+The benjack-teapot is a benjack-shadow. The printed name of benjack-teapot is "[mtw-teapot]". The N1-desc of benjack-teapot is "[description of mtw-teapot]". Understand "teapot" as benjack-teapot when the player is in M2F3.
 
 The benjack-nail is a benjack-shadow.  The printed name of the benjack-nail is "bent nail".
 Understand "bent/nail" as benjack-nail when the player is in M2F3.
@@ -2597,6 +2620,7 @@ To benjack-bottom1:
 		now the benjack-slithering-vomit-bladder-of-Katallakh is seen;
 	say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
 	now Benjack-clipping-body is in benjack-scrap-5;
+	now benjack-teapot is nowhere;
 	now the player carries mtw-teapot.
 
 To benjack-bottom2:
@@ -2606,6 +2630,7 @@ To benjack-bottom2:
 	
 To benjack-bottom3:
 	say "That was unexpected. Flowery. Bit of an aftertaste.[paragraph break][quotation mark]Is this Jasmine?[quotation mark][paragraph break][quotation mark]It[apostrophe]s Crisp Hand Sew Mom.[quotation mark] Carol struggles with the pronunciation.[paragraph break][quotation mark]Chrysanthemum?[quotation mark] You offer.[paragraph break][quotation mark]Yes, that. Grand-uncle[apostrophe]s teapot knows all my favorites.[quotation mark][paragraph break]Not only are the two of you now glowing enough to cast shadows around the room, but you notice that little sparks of static electricity scintillating at your fingertips. You hold them up, [quotation mark]Carol, is this normal?[quotation mark][paragraph break][quotation mark]Oh yes, it[apostrophe]s wonderful, isn[apostrophe]t it?[quotation mark][paragraph break]You do feel wonderful.[paragraph break]The scrapbook pulses with energy.";
+	now benjack-bigmirror is nowhere;
 	now Benjack-clipping-sable is in benjack-scrap-5;
 	now the player carries mtw-teapot;
 	benjack-Carol slurps in 1 turn from now;
