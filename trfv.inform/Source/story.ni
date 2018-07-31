@@ -723,13 +723,6 @@ Before closing the benjack-bigmirror:
 	say "There isn't anything to close on this mirror.";
 	stop the action.
 
-The benjack-teacup is a benjack-shadow.  The printed name of benjack-teacup is "tea cup".
-Understand "tea/cup" as the benjack-teacup when the player is in M2F3.
-The N1-desc of the benjack-teacup is "A porcelain tea cup with alternating blue and gold stripes and a band of little skulls around the rim."
-
-Instead of taking the benjack-teacup:
-	say "Except when it has tea in it, it has only a shadowy existence. Your hand passes through it[one of]. How annoying[or][stopping]."
-
 The benjack-comforter is a benjack-shadow.  The printed name of benjack-comforter is "comforter".
 Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
@@ -838,12 +831,13 @@ The benjack-toychair is a benjack-shadow.  The printed name of the benjack-toych
 Understand "toy chair" or "toy chairs" as benjack-toychair when the player is in M2F3.
 The N1-desc of benjack-toychair is "The tiny toy chairs remind you of those found in grammar schools: a shaped plywood seat on a gray tubular steel frame.".
 
-The benjack-cup is a benjack-shadow.  The printed name of the benjack-cup is "cup".
-Understand "cup" as benjack-cup when the player is in M2F3.
-The N1-desc of benjack-cup is "There is a tea cup for each of you, that is, Carol, the four toys sitting at the table, and you. Yours is larger, but the design is the same: alternating blue and gold striped porcelain with a band of little skulls around the rim. [if the player carries the benjack-cup]You find yourself holding it daintily, pinky out.[end if]".
+The benjack-teacup is a benjack-shadow.  The printed name of the benjack-teacup is "cup".
+Understand "tea/cup" as benjack-teacup when the player is in M2F3.
+The N1-desc of benjack-teacup is "There is a tea cup for each of you, that is, Carol, the four toys sitting at the table, and you. Yours is larger, but the design is the same: alternating blue and gold striped porcelain with a band of little skulls around the rim."
 
-Instead of throwing the benjack-cup at something:
-	say "You throw the tea cup with all your might, but against all odds it ricochets around the room and lands right in front of you on the table[first time], right as rain.[paragraph break]Carol[apostrophe]s eyes bulge, seeing an adult behave that way and quietly she says, [quotation mark]My tea cups, my rules.[quotation mark][only]."
+Before taking the benjack-teacup:
+	say "Except when it has tea in it, it has only a shadowy existence. Your hand passes through it[one of]. How annoying[or][stopping].";
+	stop the action.
 
 The benjack-clothing is a benjack-shadow.  The printed name of the benjack-clothing is "clothing".
 Understand "clothing" or "dress" or "shoes" or "buckle" or "skirt" or "sock" as benjack-clothing when the player is in M2F3.
@@ -929,7 +923,7 @@ Instead of reading the benjack-scrap-5:
 	
 [TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach. ]
 
-The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-cup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-scrap-5, benjack-carol, benjack-teacup}.
+The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-teacup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-scrap-5, benjack-carol, benjack-teacup}.
 
 Chapter 3 - N1 Conversation
 
