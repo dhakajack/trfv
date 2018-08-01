@@ -203,7 +203,7 @@ To say benjack-nursery-description:
 	otherwise if benjack-N2 is happening:
 		say "[one of]You walk into Carol's room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the entrance, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk[stopping]. The exit is to the south.";
 	otherwise if benjack-N3 is happening:
-		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same table. The exit is to the south.".
+		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same little stand. The exit is to the south.".
 			
 The commentary of M2F3 is "M2F3 Commentary".
 	
@@ -808,11 +808,9 @@ The benjack-record is a benjack-shadow.  The printed name of the benjack-record 
 Understand "record" as benjack-record when the player is in M2F3.
 The N1-desc of benjack-record is "It is a full size record, black vinyl of course, with a cardboard center, labelled [quotation mark]Perry Como Sings Merry Christmas Music[quotation mark]. According to the label, it is a 78 rpm album produced by RCA Victor in 1946.".
 
-The benjack-table is a benjack-shadow.  The printed name of the benjack-table is "table".
-Understand "table" as benjack-table when the player is in M2F3.
-The N1-desc of benjack-table is "A small folding table.".
-[TODO:   sitting on isn't defined?? only 'getting off'?
-Instead of sitting on the benjack-table, say "Carol informs you that Misses Winkelbottom says that tables are not for sitting on.[paragraph break]So you don[apostrophe]t. Because of the (alleged) opinion of a blind stuffed lamb.".]
+The benjack-table is a benjack-shadow.  The printed name of the benjack-table is "folding stand".
+Understand "fold/stand" as benjack-table when the player is in M2F3.
+The N1-desc of benjack-table is "A small folding stand.".
 
 The benjack-frame is a benjack-shadow.  The printed name of the benjack-frame is "photo frame".
 Understand "frame" or "photo frame" as benjack-frame when the player is in M2F3.
@@ -1591,15 +1589,17 @@ The N2-desc of benjack-drawer is "You can no more yank open these ephemeral draw
 The N2-desc of benjack-desktop is "A wooden desktop. Nothing too fancy. It is topped by some stacked books, a piece of newsprint, and a lamp.".
 The N2-desc of benjack-lamp is "[N1-desc of benjack-lamp]".
 The N2-desc of benjack-recordplayer is "[N1-desc of benjack-recordplayer]".
-The N2-desc of benjack-record is "The center is black, with silver writing. You can[apostrophe]t make out much beyond [quotation mark]Wagner[quotation mark] and [quotation mark]Die Walküre[quotation mark].[no line break][one of][paragraph break][quotation mark]Wagner -- that sounds kind of heavy, isn[apostrophe]t it? Should you be going crazy for the Beatles?[quotation mark][paragraph break]Carol rolls her eyes, [quotation mark]The Beatles? Why would I listen to that rubbish? In ten years no one will ever have heard of them, but Wagner is for the ages.[quotation mark][paragraph break][quotation mark]I wouldn[apostrophe]t bet the farm on that,[quotation mark] you reply.[no line break][or][stopping]".
+The N2-desc of benjack-record is "The center is black, with silver writing. You can[apostrophe]t make out much beyond [quotation mark]Wagner[quotation mark] and [quotation mark]Die Walküre[quotation mark].[no line break][one of][paragraph break][quotation mark]Wagner -- that sounds kind of heavy, isn[apostrophe]t it? Should you be going crazy for the Beatles?[quotation mark][paragraph break]Carol rolls her eyes, [quotation mark]The Beatles? Why would I listen to that rubbish? In ten years no one will ever have heard of them, but Wagner is for the ages.[quotation mark][paragraph break][quotation mark]I wouldn[apostrophe]t bet the farm on that,[quotation mark] you reply.[no line break][or][stopping]"
 
-The N2-desc of benjack-table is "A small ivory-colored painted wooden table, just to the side of the window. A few items of makeup are arranged neatly on one corner, and a small, round mirror stands on the other".
+The N2-desc of benjack-table is "[N1-desc of benjack-table]".
 The N2-desc of benjack-toychair is "[N1-desc of benjack-toychair].".
 The N2-desc of benjack-clothing is "A conservative school uniform.".
 The N2-desc of benjack-wall is "Plain white walls, monotonous except for the few pieces of artwork on the wall above the desk and the discolored spot in the corner near the foot of the bed.".
 The N2-desc of benjack-floor is "The blue carpeting has not changed[first time]; it has recently been vacuumed[only].".
 The N2-desc of benjack-eisenhower is "The portrait of President Eisenhower is gone and has not been replaced.".
 The N2-desc of benjack-lamb is "The well-worn lamb doll is nowhere to be found."
+
+The benjack-makeupTable is a benjack-shadow. The printed name of benjack-makeupTable is "makeup table". The N2-desc of benjack-makeupTable is "A small ivory-colored painted wooden table, just to the side of the window. A few items of makeup are arranged neatly on one corner, and a small, round mirror stands on the other". Understand "painted/wooded/table" as benjack-makeupTable when the player is in M2F3.
 
 The benjack-teapot is a benjack-shadow. The printed name of benjack-teapot is "[mtw-teapot]". The N1-desc of benjack-teapot is "[description of mtw-teapot]". Understand "teapot" as benjack-teapot when the player is in M2F3.
 
@@ -1655,7 +1655,7 @@ The N2-desc of benjack-deskChair is "A high-backed wooden chair with no cushion[
 Does the player mean doing something with the benjack-deskChair: it is likely.
 
 [note that these items must be declared forward of this list]
-The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-pillow, benjack-dolls, benjack-drawings, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon, benjack-ink, benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-wall, benjack-floor, benjack-carol}.
+The list of things called N2-furnishings is always {benjack-comforter, benjack-bed, benjack-pillow, benjack-dolls, benjack-drawings, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-toychair, benjack-clothing, benjack-nail, benjack-patch, benjack-crayon, benjack-ink, benjack-watercolor, benjack-makeupMirror, benjack-makeup, benjack-newsprint, benjack-stackedBooks, benjack-looseleaf , benjack-deskChair, benjack-window, benjack-wall, benjack-floor, benjack-carol, benjack-makeupTable}.
 
 Chapter 3 - N2 Conversation
 
