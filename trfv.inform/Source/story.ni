@@ -2,7 +2,7 @@
 
 The story headline is "Two rooms for Veeder".
 The story genre is "horror".
-The release number is 1.
+The release number is 2. [first beta-test]
 The story creation year is 2018.
 
 Include Cragne Suite by Ryan Veeder.
