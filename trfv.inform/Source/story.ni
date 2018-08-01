@@ -1689,28 +1689,28 @@ Chapter 3 - N2 Conversation
 
 Section 1 - N2 Subjects
 
-benjack-missingIke is a subject.  Understand "portrait/president/eisenhower/picture/photo/photograph/official/portrait/frame" as benjack-missingIke when the location is M2F3 and benjack-N2 is happening.
+benjack-missingIke is a subject.  Understand "portrait/president/eisenhower/picture/photo/photograph/official/portrait/frame" as benjack-missingIke when the location is M2F3 and benjack-N2 is happening. The printed name of benjack-missingIke is "President Eisenhower".
 
-benjack-LBJ is a subject.  Understand "lyndon/baynes/bloated/johnson/president" or "president johnson" as benjack-subjectNixon when the location is M2F3. The printed name of benjack-LBJ is "President Johnson".
+benjack-LBJ is a subject.  Understand "lyndon/baynes/bloated/johnson/president" or "president johnson" as benjack-subjectNixon when the location is M2F3. The printed name of benjack-LBJ  is "President Lyndon Johnson".
 
-benjack-subjectNixon is a subject.  Understand "[benjack-nixonToken]" as benjack-subjectNixon when the location is M2F3 and benjack-N2 is happening. 
+benjack-subjectNixon is a subject.  Understand "[benjack-nixonToken]" as benjack-subjectNixon when the location is M2F3 and benjack-N2 is happening.  The printed name of benjack-subjectNixon is "Richard Nixon".
 
 Understand "president/richard/millhouse/nixon/tricky/dick" or "president nixon" as "[benjack-nixonToken]".
 
-benjack-subjectKennedy is a subject.  Understand "[benjack-kennedyToken]" as benjack-subjectKennedy when the location is M2F3 and benjack-N2 is happening.
+benjack-subjectKennedy is a subject.  Understand "[benjack-kennedyToken]" as benjack-subjectKennedy when the location is M2F3 and benjack-N2 is happening. The printed name of benjack-subjectKennedy is "Kennedy".
 
 Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/clan/jfk/rfk" or "president kennedy" as "[benjack-kennedyToken]".
 
-benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm.
+benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm. The printed name of benjack-scrapbookSubjec is "scrapbook".
 
-benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm and benjack-n2 is happening.
+benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm and benjack-n2 is happening. The printed name of benjack-highschool is "highschool".
 
-benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when the location is in the benjack-realm.
+benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when the location is in the benjack-realm. The printed name of benjack-lech is "lech".
 
-benjack-thresher is a subject.  Understand "thresher" as benjack-thresher when the location is in the benjack-realm.
+benjack-thresher is a subject.  Understand "thresher" as benjack-thresher when the location is in the benjack-realm. The printed name of benjack-thresher is "thresher".
 
 benjack-WinkelbottomSubject is a subject. Understand "winkelbottom/lamb/misses" as 
-benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happened.
+benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happened. The printed name of benjack-WinkelbottomSubject is "Misses Winkelbottom".
 
 Section 2 - N2 Quips
 
@@ -1878,21 +1878,21 @@ Before hailing or conversing or speaking when benjack-R2 is happening for the fi
 
 Section 1 - R2 Subjects
 
-benjack-Disruption is a subject.  Understand "disruption/disrupt/destroy" as benjack-Disruption when the location is in the benjack-realm.
+benjack-Disruption is a subject.  Understand "disruption/disrupt/destroy" as benjack-Disruption when the location is in the benjack-realm. The printed name of benjack-Disruption is "disruption".
 
 benjack-WindowSubject is a subject.  Understand "window/windowe/blockayde/blockade/windows/windowes/blockades/blockaydes" as benjack-windowSubject when the location is in the benjack-realm. The printed name of benjack-windowSubject is "window".
 
 Does the player mean implicit-informing the benjack-window: it is unlikely.
 
-benjack-resentment is a subject.  Understand "resentment" as benjack-resentment when the location is in the benjack-realm.
+benjack-resentment is a subject.  Understand "resentment/resentments" as benjack-resentment when the location is in the benjack-realm. The printed name of benjack-resentment is "resentment".
 
-benjack-ElderGods is a subject.  Understand "elder/gods/god" as benjack-ElderGods when the location is in the benjack-realm.
+benjack-ElderGods is a subject.  Understand "elder/gods/god" as benjack-ElderGods when the location is in the benjack-realm. The printed name of benjack-ElderGods is "Elder Gods".
 
-benjack-clippingSubject is a subject.  Understand "assassination" as benjack-clippingSubject when the location is in the benjack-realm and benjack-n2 is happening.
+benjack-clippingSubject is a subject.  Understand "assassination/assassinations" as benjack-clippingSubject when the location is in the benjack-realm and benjack-n2 is happening. The printed name of benjack-clippingSubject is "assassination".
 
-benjack-planSubject is a subject.  Understand "plan/plans" as benjack-planSubject when the location is in the benjack-realm.
+benjack-planSubject is a subject.  Understand "plan/plans" as benjack-planSubject when the location is in the benjack-realm. The printed name of benjack-planSubject is "plans".
 
-benjack-drawingSubject is a subject.  Understand "drawing/drawings/crayon/ink/watercolor/art/arts/artwork/artworks" as benjack-drawingSubject when the location is DAN8.
+benjack-drawingSubject is a subject.  Understand "drawing/drawings/crayon/ink/watercolor/art/arts/artwork/artworks" as benjack-drawingSubject when the location is DAN8. The printed name of benjack-drawingSubject is "drawings".
 
 Section 2 - R2 Quips
 
@@ -2128,67 +2128,67 @@ Chapter 3 - N3 Conversation
 
 Section 1 - N3 Subjects
 
-benjack-nsc is a subject. Understand "national/security/council/nsc" as benjack-nsc when the location is M2F3 and benjack-N2 has happened.
+benjack-nsc is a subject. Understand "national/security/council/nsc" as benjack-nsc when the location is M2F3 and benjack-N2 has happened. The printed name of benjack-nsc is "national security council".
 
-benjack-intel is a subject.  Understand "intel/corporation/microprocessor/microprocessors/cpu/cpus/central/processing/unit/units/chip/chips" as benjack-intel when the location is M2F3 and benjack-N3 is happening.
+benjack-intel is a subject.  Understand "intel/corporation/microprocessor/microprocessors/cpu/cpus/central/processing/unit/units/chip/chips" as benjack-intel when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-intel is "intel corporation".
 
-benjack-vietnam is a subject.  Understand "vietnam/peace/talk/talks/accord/accords/conference/summit/negotiation/negotiations" as benjack-vietnam when the location is M2F3 and benjack-N3 is happening.
+benjack-vietnam is a subject.  Understand "vietnam/peace/talk/talks/accord/accords/conference/summit/negotiation/negotiations/process" as benjack-vietnam when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-vietnam is "Vietnam peace talks".
 
-benjack-assassination is a subject.  Understand "assassination/assassinations/martin/luther/king/reverend" or "[benjack-kennedyToken]" as benjack-assassination when the location is M2F3 and benjack-N3 is happening.
+benjack-assassination is a subject.  Understand "assassination/assassinations/martin/luther/king/reverend" or "[benjack-kennedyToken]" as benjack-assassination when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-assassination is "assassinations".
 
-benjack-college is a subject.  Understand "college/university/school/middlebury/linguistics" as benjack-college when the location is M2F3 and benjack-N3 is happening.
+benjack-college is a subject.  Understand "college/university/school/middlebury/linguistics" as benjack-college when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-college is "university".
 
-benjack-suicide is a subject.  Understand "commit/suicide/suiciding" as benjack-suicide when the location is M2F3 and benjack-N3 is happening.
+benjack-suicide is a subject.  Understand "commit/suicide/suiciding" as benjack-suicide when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-suicide is "suicide".
 
-benjack-boyfriend is a subject.  Understand "boyfriend/donald/trump/don" as benjack-boyfriend when the location is M2F3 and benjack-N3 is happening.
+benjack-boyfriend is a subject.  Understand "boyfriend/donald/trump/don/scummy/scum" as benjack-boyfriend when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-boyfriend is "scummy boyfriend".
 
 benjack-elephantSubject is a subject.  Understand "[benjack-snortlesToken]" as benjack-elephantSubject when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-elephantSubject is "Mister Snortles".
 
-benjack-moon is a subject.  Understand "moon/luna/fungating/artifact/artefact/artifats/artefacts/fungating/mass/masses/thorax" as benjack-moon when the location is M2F3 and benjack-N3 is happening. 
+benjack-moon is a subject.  Understand "moon/luna/fungating/artifact/artefact/artifats/artefacts/fungating/mass/masses/thorax" as benjack-moon when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-moon is "moon".
 
-benjack-regolith is a subject.  Understand "regolith" as benjack-regolith when the location is M2F3 and benjack-N3 is happening. 
+benjack-regolith is a subject.  Understand "regolith" as benjack-regolith when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-regolith is "regolith".
 
-benjack-zond3 is a subject.  Understand "zond/zond-3/probe/far-side/dark-side/darkside" or "far side" or "dark side" as benjack-zond3 when the location is M2F3 and benjack-N3 is happening. 
+benjack-zond3 is a subject.  Understand "zond/zond-3/probe/far-side/dark-side/darkside" or "far side" or "dark side" as benjack-zond3 when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-zond3 is "zond".
 
-benjack-lem is a subject.  Understand "lem/lunar/command/module/escape/ascent/lam/apollo/rocket/saturn/mission/landing" as benjack-lem when the location is M2F3 and benjack-N3 is happening. 
+benjack-lem is a subject.  Understand "lem/lunar/command/module/escape/ascent/lam/apollo/rocket/saturn/mission/landing" as benjack-lem when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-lem is "Apollo".
 
-benjack-nekton is a subject.  Understand "project/nekton" as benjack-nekton when the location is M2F3 and benjack-N3 is happening. 
+benjack-nekton is a subject.  Understand "project/nekton" as benjack-nekton when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-nekton is "Nekton".
 
-benjack-glyphs is a subject.  Understand "glyph/glyphs/writing/writings/arcane/ancient/letter/letters/lettre/lettres" as benjack-glyphs when the location is M2F3 and benjack-N3 is happening. 
+benjack-glyphs is a subject.  Understand "glyph/glyphs/writing/writings/arcane/ancient/letter/letters/lettre/lettres" as benjack-glyphs when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-glyphs is "glyphs".
 
-benjack-decontamination is a subject.  Understand "decon/decontamination/sterilization/disinfection/cleaning" as benjack-decontamination when the location is M2F3 and benjack-N3 is happening. 
+benjack-decontamination is a subject.  Understand "decon/decontamination/sterilization/disinfection/cleaning" as benjack-decontamination when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-decontamination is "decontamination".
 
-benjack-lostSubs is a subject.  Understand "Dakar/s647/minerve/k-129/scorpion" as benjack-lostSubs when the location is M2F3 and benjack-N3 is happening. 
+benjack-lostSubs is a subject.  Understand "Dakar/s647/minerve/k-129/scorpion" or "submarines that went missing in 1968" as benjack-lostSubs when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-lostSubs is "submarines that went missing in 1968".
 
-benjack-sigint is a subject.  Understand "sigint" as benjack-sigint when the location is M2F3 and benjack-N3 is happening. 
+benjack-sigint is a subject.  Understand "sigint" or "signals intelligence" as benjack-sigint when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-sigint is "signals intelligence".
 
-benjack-elint is a subject.  Understand "elint" as benjack-elint when the location is M2F3 and benjack-N3 is happening. 
+benjack-elint is a subject.  Understand "elint" or "electronics intelligence" as benjack-elint when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-elint is "electronics intelligence".
 
-benjack-cw is a subject.  Understand "cw/morse/code/distress/signal/beacon/message" as benjack-cw when the location is M2F3 and benjack-N3 is happening. 
+benjack-cw is a subject.  Understand "cw/morse/code/distress/signal/beacon/message" as benjack-cw when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-cw is "cw".
 
-benjack-idf is a subject.  Understand "idf" as benjack-idf when the location is M2F3 and benjack-N3 is happening. 
+benjack-idf is a subject.  Understand "idf" or "Isreali Defence Force" as benjack-idf when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-idf  is "idf".
 
-benjack-pentacle is a subject.  Understand "pentacle/deep1/catacon/revco" as benjack-pentacle when the location is M2F3 and benjack-N3 is happening. 
+benjack-pentacle is a subject.  Understand "pentacle/deep1/catacon/revco/classified" as benjack-pentacle when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-pentacle is "classified".
 
-benjack-br1150 is a subject.  Understand "br1150/plane/atlantic/surveillance/recon/reconnaissance" as benjack-br1150 when the location is M2F3 and benjack-N3 is happening. 
+benjack-br1150 is a subject.  Understand "br1150/plane/atlantic/surveillance/recon/reconnaissance" as benjack-br1150 when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-br1150 is "BR1150 Atlantic reconnaissance plane".
 
-benjack-hydrophone is a subject.  Understand "hydrophone/hydrophonic/hydrophonology" as benjack-hydrophone when the location is M2F3 and benjack-N3 is happening. 
+benjack-hydrophone is a subject.  Understand "hydrophone/hydrophonic/hydrophonology" as benjack-hydrophone when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-hydrophone is "hydrophonology".
 
-benjack-milcoord is a subject.  Understand "milcoord" as benjack-milcoord when the location is M2F3 and benjack-N3 is happening. 
+benjack-milcoord is a subject.  Understand "milcoord" as benjack-milcoord when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-milcoord  is "milcoord".
 
-benjack-navcomgr1 is a subject.  Understand "navcomgr1" as benjack-navcomgr1 when the location is M2F3 and benjack-N3 is happening. 
+benjack-navcomgr1 is a subject.  Understand "navcomgr1" as benjack-navcomgr1 when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-navcomgr1 is "NAVCOMGR1".
 
-benjack-medcar is a subject.  Understand "medcar" as benjack-medcar when the location is M2F3 and benjack-N3 is happening. 
+benjack-medcar is a subject.  Understand "medcar" as benjack-medcar when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-medcar is "MEDCAR".
 
-benjack-sosus is a subject.  Understand "sosus" as benjack-sosus when the location is M2F3 and benjack-N3 is happening. 
+benjack-sosus is a subject.  Understand "sosus/network" as benjack-sosus when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-sosus is "sosus network".
 
-benjack-bletchley is a subject.  Understand "bletchley/park/enigma/turing" as benjack-bletchley when the location is M2F3 and benjack-N3 is happening. 
+benjack-bletchley is a subject.  Understand "bletchley/park/enigma/turing" as benjack-bletchley when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-bletchley is "Bletchley".
 
-benjack-lwah is a subject.  Understand "lwah" as benjack-lwah when the location is M2F3 and benjack-N3 is happening. 
+benjack-lwah is a subject.  Understand "lwah" or "lost with all hands" as benjack-lwah when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-lwah is "lwah".
 
-benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolphin/dolphins/porpoise/porpoises" as benjack-popeyeTSM when the location is M2F3 and benjack-N3 is happening. 
+benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolphin/dolphins/porpoise/porpoises" as benjack-popeyeTSM when the location is M2F3 and benjack-N3 is happening. The printed name of benjack-popeyeTSM is "popeyeTSM".
 
-benjack-ardf is  a subject. Understand "radiogoniometry" as benjack-ardf when the location is M2F3.
+benjack-ardf is  a subject. Understand "radiogoniometry" as benjack-ardf when the location is M2F3. The printed name of benjack-ardf is "radiogoniometry".
 
 Section 2 - N3 Quips
 
