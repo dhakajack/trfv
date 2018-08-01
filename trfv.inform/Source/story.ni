@@ -396,36 +396,59 @@ To say benajack-hint-shorter-form:
 
 Section R0 Subjects
 
-benjack-salem is a subject.  Understand "salem" as benjack-salem when the player is in DAN8.
-benjack-puritan is a subject.  Understand "puritan" as benjack-puritan when the player is in DAN8.
-benjack-pilgrim is a subject.  Understand "pilgrim/settler" as benjack-pilgrim when the player is in DAN8.
-benjack-colony is a subject.  Understand "colony/Massachusetts" as benjack-colony when the player is in DAN8.
-benjack-indian is a subject.  Understand "indian/native/tribe/indigenous" as benjack-indian when the player is in DAN8.
-benjack-Lin is a subject.  Understand "Lin/town/towne" as benjack-Lin when the player is in DAN8.
-benjack-youth is a subject.  Understand "youth/youthe" as benjack-youth when the player is in DAN8.
-benjack-knotte is a subject.  Understand "knotte/reason/sanity/madness/sane/insane/crazy" as benjack-knotte when the player is in DAN8.
-benjack-ironworks is a subject.  Understand "ironworks/ironwork/ironworkes/forge/forges" as benjack-ironworks when the player is in DAN8.
-benjack-lineage is a subject.  Understand "lineage" as benjack-lineage when the player is in DAN8.
-benjack-gift is a subject.  Understand "gift/gifte" as benjack-gift when the player is in DAN8.
-benjack-newgrace is a subject.  Understand "new grace/grace" as benjack-newgrace when the player is in DAN8.
-benjack-malificium is a subject.  Understand "malificium" as benjack-malificium when the player is in DAN8.
-benjack-Carolsubject is a subject. Understand "[benjack-CarolToken]" as benjack-Carolsubject when the player is in DAN8.
+benjack-salem is a subject.  Understand "salem" as benjack-salem when the player is in DAN8. The printed name of benjack-salem is "Salem".
+
+benjack-puritan is a subject.  Understand "puritan/puritans" as benjack-puritan when the player is in DAN8. The printed name of benjack-puritan is "puritans".
+
+benjack-pilgrim is a subject.  Understand "pilgrim/settler/pilgrims/settlers" as benjack-pilgrim when the player is in DAN8. The printed name of benjack-pilgrim is "pilgrims".
+
+benjack-colony is a subject.  Understand "colony/Massachusetts/colonies" as benjack-colony when the player is in DAN8. The printed name of benjack-colony is "The Massachusetts Colony".
+
+benjack-indian is a subject.  Understand "indian/native/tribe/indigenous/indians/natives/tribes/people" or "native american" or "native americans" or "indigenous american" or "indigenous americans" as benjack-indian when the player is in DAN8. The printed name of benjack-indian is "Indians (Native Americans)".
+
+benjack-Lin is a subject.  Understand "Lin/town/towne/saugus/lyn/lynne/lynne" as benjack-Lin when the player is in DAN8. The printed name of benjack-Lin is "Lin, Massachusetts".
+
+benjack-youth is a subject.  Understand "youth/youthe" as benjack-youth when the player is in DAN8. The printed name of benjack-youth is "youth".
+
+benjack-knotte is a subject.  Understand "knotte/reason/sanity/madness/sane/insane/crazy/insanity" as benjack-knotte when the player is in DAN8. The printed name of benjack-knotte is "knotte of reason".
+
+benjack-ironworks is a subject.  Understand "ironworks/ironwork/ironworke/ironworkes/ironwerke/ironwerkes/ironnewerke/ironnewerkes/forge/forges/smithy/smithies" as benjack-ironworks when the player is in DAN8. The printed name of benjack-ironworks is "ironworks".
+
+benjack-lineage is a subject.  Understand "lineage/lineages" as benjack-lineage when the player is in DAN8. The printed name of benjack-lineage is "lineage".
+
+benjack-gift is a subject.  Understand "gift/gifte/gifts/giftes" as benjack-gift when the player is in DAN8. The printed name of benjack-gift is "gift".
+
+benjack-newgrace is a subject.  Understand "grace" or "new grace" as benjack-newgrace when the player is in DAN8. The printed name of benjack-newgrace is "new grace".
+
+benjack-malificium is a subject.  Understand "malificium" as benjack-malificium when the player is in DAN8. The printed name of benjack-malificium is "malificium".
+
+benjack-Carolsubject is a subject. Understand "[benjack-CarolToken]" as benjack-Carolsubject when the player is in DAN8. The printed name of benjack-CarolSubject is "Carol".
 
 benjack-PC is a subject. Understand "self/myself/me/Naomi" as benjack-PC when the location is in the benjack-realm. The printed name of benjack-PC is "me".
 
 Rule for clarifying the parser's choice of benjack-PC: do nothing.
 
-benjack-Cragne is a subject.  Understand "Cragne" as benjack-Cragne when the location is in the benjack-realm.
-benjack-death is a subject.  Understand "death/deathe" as benjack-death when the location is in the benjack-realm.
-benjack-ghost is a subject.  Understand "ghost/ghosts" as benjack-ghost when the location is in the benjack-realm.
-benjack-mark is a subject.  Understand "mark/marks" as benjack-mark when the location is in the benjack-realm.
-benjack-mattanit is a subject.  Understand "Mattanit" as benjack-mattanit when the location is in the benjack-realm.
-benjack-Peter is a subject.  Understand "husband/Peter" as benjack-Peter when the location is in the benjack-realm.
-benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as benjack-seight when the location is in the benjack-realm.
-benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the location is in the benjack-realm.
-benjack-covenant is a subject.  Understand "third/covenant" as benjack-covenant when the location is in the benjack-realm.
-benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the location is in the benjack-realm.
-benjack-witch is a subject.  Understand "witch/witches/witchcraft/hex/hexes/spell/spells/witchery/witching/witchhunt/warlock/warlocks/sorcerer/sorcerers/sorceress/sorceresses" as benjack-witch when the location is in the benjack-realm.
+benjack-Cragne is a subject.  Understand "Cragne/Cragnes" as benjack-Cragne when the location is in the benjack-realm. The printed name of benjack-Cragne is "the Cragnes".
+
+benjack-death is a subject.  Understand "death/deathe/deaths/deathes" as benjack-death when the location is in the benjack-realm. The printed name of benjack-death is "death".
+
+benjack-ghost is a subject.  Understand "ghost/ghosts" as benjack-ghost when the location is in the benjack-realm. The printed name of benjack-ghost is "ghost".
+
+benjack-mark is a subject.  Understand "mark/marks/marke/markes" as benjack-mark when the location is in the benjack-realm. The printed name of benjack-mark is "mark".
+
+benjack-mattanit is a subject.  Understand "Mattanit" as benjack-mattanit when the location is in the benjack-realm. The printed name of benjack-mattinit is "Mattanit".
+
+benjack-Peter is a subject.  Understand "spouse/hubby/husband/Peter/mate" as benjack-Peter when the location is in the benjack-realm. The printed name of benjack-peter is "Peter".
+
+benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as benjack-seight when the location is in the benjack-realm. The printed name of benjack-seight is "sight".
+
+benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the location is in the benjack-realm. The printed name of benjack-spirit is "spirit".
+
+benjack-covenant is a subject.  Understand "third/covenant" as benjack-covenant when the location is in the benjack-realm. The printed name of benjack-covenant is "covenant".
+
+benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the location is in the benjack-realm. The printed name of benjack-Vermont is "Vermont".
+
+benjack-witch is a subject.  Understand "witch/witches/witchcraft/hex/hexes/spell/spells/witchery/witching/witchhunt/warlock/warlocks/sorcerer/sorcerers/sorceress/sorceresses" as benjack-witch when the location is in the benjack-realm. The printed name of benjack-witch is "witches".
 
 Section R0 Quips
 
@@ -744,11 +767,12 @@ The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party,
 
 The benjack-elephant is a benjack-shadow. The printed name of the benjack-elephant is "toy elephant".
 Understand "elephant" or "mister" or "snortles" as "[benjack-snortlesToken]".
-Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is in M2F3.
+Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is in the benjack-realm.
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
 The benjack-monkey is a benjack-shadow. The printed name of the benjack-monkey is "toy monkey".
-Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" or "henry/kissinger" as the benjack-monkey when the player is in M2F3.
+Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" or "henry/kissinger" as "[benjack-sweetpawsToken]" when the location is in the benjack-realm.
+Understand "[benjack-sweetpawsToken]" as benjack-monkey when the player is in M2F3.
 The N1-desc of the benjack-monkey is "The limp and gangly sock puppet wears a baseball cap and an Army-Navy sweater.[paragraph break][first time][quotation mark][bold type]Young Master Sweetpaws[roman type] recently joined us, right Sweetpaws?[quotation mark][paragraph break]The monkey sits there, inert, but Carol continues, [quotation mark]Sometimes he gets up to naughtiness, but he[apostrophe]s always back in the morning, aren[apostrophe]t you, [bold type]Sweetpaws[roman type]?[quotation mark][paragraph break]The monkey stares blankly ahead.[only]".
 
 The benjack-cap is a benjack-shadow.  The printed name of the benjack-cap is "cap".
@@ -760,11 +784,14 @@ Understand "sweater" as the benjack-sweater when the player is in M2F3.
 The N1-desc of benjack-sweater is "A grey woolen sweater with an [quotation mark]Army/Navy[quotation mark] logo."
 
 The benjack-clown is a benjack-shadow.  The printed name of the benjack-clown is "toy clown".
-Understand "clown" or "malice" or "malice the clown" as the benjack-clown when the player is in M2F3.
+Understand "clown/malice" or "malice the clown" as "[benjack-MaliceToken]" when the location is in the benjack-realm. 
+Understand "[benjack-maliceToken]" as the benjack-clown when the player is in M2F3.
 The N1-desc of benjack-clown is "[one of]Despite his painted smile, the clown[apostrophe]s plastic face conveys a sense of surrender as it stares into an empty tea cup. [paragraph break]It is the largest of the stuffed playmates, almost as tall as Carol. [paragraph break][quotation mark]That[apostrophe]s [bold type]Malice the Clown[roman type],[quotation mark] Carol chirps.[paragraph break][quotation mark][bold type]Malice?[roman type][quotation mark] you prompt. [quotation mark]The [bold type]Clown[roman type]?[quotation mark][paragraph break][quotation mark]Yes, originally I called him Alice, but [bold type]grand-uncle[roman type] said he[apostrophe]s a boy [bold type]clown[roman type] and thought [apostrophe][bold type]Malice[roman type][apostrophe] sounded nice.[quotation mark][or]Like all clown puppets, he exudes visceral evil.[stopping]"
 
 The benjack-lamb is a benjack-shadow.  The printed name of the benjack-lamb is "toy lamb".
-Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as the benjack-lamb when the player is in M2F3 and benjack-N1 is happening.
+Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as "[benjack-WinkelbottomToken]".
+
+Understand "[benjack-WinkelbottomToken]" as the benjack-lamb when the player is in M2F3 and benjack-N1 is happening.
 The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Winkelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Winkelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
 
 The benjack-kitchen is a benjack-shadow.  The printed name of the benjack-kitchen is "play kitchen".
@@ -932,45 +959,45 @@ Chapter 3 - N1 Conversation
 
 Section 1 - N1 Subjects
 
-benjack-Stonington is a subject.  Understand "Stonington" as benjack-Stonington when the location is in the benjack-realm.
+benjack-Stonington is a subject.  Understand "Stonington" as benjack-Stonington when the location is in the benjack-realm. The printed name of benjack-Stonington is "Stonington".
 
-benjack-Connecticut is a subject.  Understand "connecticut" as benjack-connecticut when the location is in the benjack-realm.
+benjack-Connecticut is a subject.  Understand "connecticut" as benjack-connecticut when the location is in the benjack-realm. The printed name of benjack-Connecticut is "Connecticut".
 
-benjack-DeepOnes is a subject.  Understand "deep/ones/one" as benjack-DeepOnes when the location is in the benjack-realm.
+benjack-DeepOnes is a subject.  Understand "deep/ones/one" as benjack-DeepOnes when the location is in the benjack-realm. The printed name of benjack-DeepOnes is "The Deep Ones".
 
-benjack-CarolFather is a subject.  Understand "father/dad/daddy/Hugo" as benjack-CarolFather when the location is M2F3.
+benjack-CarolFather is a subject.  Understand "father/dad/daddy/Hugo" as benjack-CarolFather when the location is M2F3. The printed name of benjack-CarolFather is "Carol's father, Hugo".
 
-benjack-NewLondon is a subject.  Understand "new/london" as benjack-NewLondon when the location is in the benjack-realm.
+benjack-NewLondon is a subject.  Understand "new/london" as benjack-NewLondon when the location is in the benjack-realm. The printed name of benjack-NewLondon is "New London".
 
-benjack-Groton is a subject.  Understand "groton" as benjack-Groton when the location is in the benjack-realm.
+benjack-Groton is a subject.  Understand "groton" as benjack-Groton when the location is in the benjack-realm. The printed name of benjack-Groton is "Groton".
 
-benjack-GeneralDynamics is a subject.  Understand "general/dynamics/dynamic" as benjack-GeneralDynamics when the location is in the benjack-realm.
+benjack-GeneralDynamics is a subject.  Understand "general/dynamics/dynamic" as benjack-GeneralDynamics when the location is in the benjack-realm. The printed name of benjack-GeneralDynamics is "General Dynamics".
 
-benjack-submarine is a subject.  Understand "submarine/submarines/boat/boats/sub/subs/bathyscaphe/bathyscaphes/bathysphere/bathyspheres/submersible/submersibles" as benjack-submarine when the location is in the benjack-realm.
+benjack-submarine is a subject.  Understand "submarine/submarines/boat/boats/sub/subs/bathyscaphe/bathyscaphes/bathysphere/bathyspheres/submersible/submersibles" as benjack-submarine when the location is in the benjack-realm. The printed name of benjack-submarine is "submarine".
 
-benjack-job is a subject.  Understand "job/work/employment/occupation/business" as benjack-job when the location is in the benjack-realm.
+benjack-job is a subject.  Understand "job/work/employment/occupation/business" as benjack-job when the location is in the benjack-realm. The printed name of benjack-job is "employment".
 
-benjack-nautilus is a subject.  Understand "nautilus" as benjack-nautilus when the location is in the benjack-realm.
+benjack-nautilus is a subject.  Understand "nautilus" as benjack-nautilus when the location is in the benjack-realm. The printed name of benjack-nautilus is "Nautilus".
 
-benjack-date is a subject.  Understand "date/year/today" as benjack-date when the location is in the benjack-realm.
+benjack-date is a subject.  Understand "date/year/today" as benjack-date when the location is in the benjack-realm. The printed name of benjack-date is "today's date".
 
-benjack-CarolMother is a subject.  Understand "mother/mom/mommy/mum/Joan" as benjack-CarolMother when the location is M2F3.
+benjack-CarolMother is a subject.  Understand "mother/mom/mommy/mum/Joan" as benjack-CarolMother when the location is M2F3. The printed name of benjack-CarolMother is "Carol's mother".
 
-benjack-communists is a subject.  Understand "communist/communists/commie/commies/red/communism/soviet/russian/russians/spy/spies/enemy/enemies/russki/russkis/russky/ruskies/russkys" as benjack-communists when the location is in the benjack-realm.
+benjack-communists is a subject.  Understand "communist/communists/commie/commies/red/communism/soviet/russian/russians/spy/spies/enemy/enemies/russki/russkis/russky/ruskies/russkys/menace" as benjack-communists when the location is in the benjack-realm. The printed name of benjack-communists is "communist menace".
 
-benjack-CarolteaParty is a subject.  Understand "tea/party/ceremony/ritual/rite/parties/rituals/rites" as benjack-CarolteaParty when the location is M2F3.
+benjack-CarolteaParty is a subject.  Understand "tea/party/ceremony/ritual/rite/parties/rituals/rites" as benjack-CarolteaParty when the location is M2F3. The printed name of benjack-CarolteaParty is "tea party".
 
-benjack-bottomsUp is a subject.  Understand "bottoms/up/bottoms-up" as benjack-bottomsUp when the location is in the benjack-realm.
+benjack-bottomsUp is a subject.  Understand "bottoms/up/bottoms-up" or "bottoms up" as benjack-bottomsUp when the location is in the benjack-realm. The printed name of benjack-bottomsUp is "[quotation mark]bottoms-up[quotation mark]".
 
-benjack-ChristabellSubject is a subject.  Understand "Christabell/Bella/Christie/Christabelle/Christobell/Christobelle" as benjack-ChristabellSubject when the location is M2F3.
+benjack-ChristabellSubject is a subject.  Understand "Christabell/Bella/Christie/Christabelle/Christobell/Christobelle" as benjack-ChristabellSubject when the location is M2F3. The printed name of benjack-ChristabellSubject is "Christabell".
 
-benjack-Undesirables is a subject. Understand "foreigner/foreigners/immigrant/immigrants/poor/criminal/criminals/democrat/democrats/union/unions/blacks/mexicans/chinese/vietnamese" as benjack-Undesirables when the location is M2F3.
+benjack-Undesirables is a subject. Understand "foreigner/foreigners/immigrant/immigrants/poor/criminal/criminals/democrat/democrats/union/unions/blacks/mexicans/chinese/vietnamese/undesirable/undesirables" as benjack-Undesirables when the location is M2F3. The printed name of benjack-Undesirables is "undesirables".
 
-benjack-Servants is a subject.  Understand "servant/servants" as benjack-Servants when the location is in the benjack-realm.
+benjack-Servants is a subject.  Understand "servant/servants/slave/slaves/indentured/maid/maids/butler/butlers" as benjack-Servants when the location is in the benjack-realm. The printed name of benjack-Servants is "servants".
 
-benjack-aMerica is a subject.  Understand "america" as benjack-aMerica when the location is in the benjack-realm.
+benjack-aMerica is a subject.  Understand "america/united/states" or "united states of america"  as benjack-aMerica when the location is in the benjack-realm. The printed name of benjack-aMerica is "America".
 
-benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm and benjack-N2 has not happened.
+benjack-school is a subject.  Understand "school/kindergarten/pre-k/preschool/grammar/elementary" as benjack-school when the location is in the benjack-realm and benjack-N2 has not happened. The printed name of benjack-school is "school".
 
 Section 2 - N1 Quips
 
@@ -1284,93 +1311,93 @@ Instead of conversing or hailing when benjack-R1 is happening for the first time
 
 Section 1 - R1 Subjects
 
-benjack-Runes is a subject.  Understand "rune/runes" as benjack-Runes when the location is in the benjack-realm.
+benjack-Runes is a subject.  Understand "rune/runes" as benjack-Runes when the location is in the benjack-realm. The printed name of benjack-Runes is "runes".
 
-benjack-Potence is a subject.  Understand "Potence/Power" as benjack-Potence when the location is in the benjack-realm.
+benjack-Potence is a subject.  Understand "Potence/Power/powers" as benjack-Potence when the location is in the benjack-realm. The printed name of benjack-Potence is "potence".
 
-benjack-Luminance is a subject.  Understand "luminance/louminance" as benjack-Luminance when the location is in the benjack-realm.
+benjack-Luminance is a subject.  Understand "luminance/louminance" as benjack-Luminance when the location is in the benjack-realm. The printed name of benjack-Luminance is "luminance".
 
-benjack-Glamor is a subject.  Understand "glamor/glamour" as benjack-Glamor when the location is in the benjack-realm.
+benjack-Glamor is a subject.  Understand "glamor/glamour/glamors/glamours" as benjack-Glamor when the location is in the benjack-realm. The printed name of benjack-Glamor  is "glamor".
 
-There is a subject called benjack-Marked.  Understand "marked" as benjack-Marked when the location is in the benjack-realm and benjack-R1 is happening.
+There is a subject called benjack-Marked.  Understand "marked" as benjack-Marked when the location is in the benjack-realm and benjack-R1 is happening. The printed name of benjack-Marked is "marked".
 
-benjack-Fusion is a subject.  Understand "fusion" as benjack-fusion when the location is in the benjack-realm.
+benjack-Fusion is a subject.  Understand "fusion/fusions" as benjack-fusion when the location is in the benjack-realm. The printed name of benjack-Fusion  is "fusion".
 
-benjack-Remedy is a subject.  Understand "remedie/remedy" as benjack-Remedy when the location is in the benjack-realm.
+benjack-Remedy is a subject.  Understand "remedie/remedy/remedies" as benjack-Remedy when the location is in the benjack-realm. The printed name of benjack-Remedy is "remedy".
 
-benjack-Bestowance is a subject.  Understand "bestowance" as benjack-Bestowance when the location is in the benjack-realm.
+benjack-Bestowance is a subject.  Understand "bestowance" as benjack-Bestowance when the location is in the benjack-realm. The printed name of benjack-Bestowance is "bestowance".
 
-benjack-Nirramonk is a subject.  Understand "nirramonk" as benjack-Nirramonk when the location is in the benjack-realm
+benjack-Nirramonk is a subject.  Understand "nirramonk" as benjack-Nirramonk when the location is in the benjack-realm. The printed name of benjack-Nirramonk is "Nirramonk".
 
-benjack-Nipmuk is a subject.  Understand "nipmuk" as benjack-Nipmuk when the location is in the benjack-realm.
+benjack-Nipmuk is a subject.  Understand "nipmuk" as benjack-Nipmuk when the location is in the benjack-realm. The printed name of benjack-Nipmuk is "Nipmuk".
 
-benjack-Kaballah is a subject.  Understand "kaballah/alchemy/numerology/secrets/fjord/illuminati/gnomes/rosacrucians" as benjack-Kaballah when the location is in the benjack-realm.
+benjack-Kaballah is a subject.  Understand "kaballah/alchemy/numerology/secrets/fjord/illuminati/gnomes/rosacrucians" as benjack-Kaballah when the location is in the benjack-realm. The printed name of benjack-Kaballah is "Kaballah".
 
-benjack-InvisibleWorld is a subject.  Understand "invisible/world" as benjack-InvisibleWorld when the location is in the benjack-realm.
+benjack-InvisibleWorld is a subject.  Understand "invisible/world" as benjack-InvisibleWorld when the location is in the benjack-realm. The printed name of benjack-InvisibleWorld is "Invisible World".
 
-benjack-Restful is a subject.  Understand "restful" as benjack-Restful when the location is in the benjack-realm.
+benjack-Restful is a subject.  Understand "restful" as benjack-Restful when the location is in the benjack-realm. The printed name of benjack-Restful is "Restful Spirits".
 
-benjack-Avenged is a subject.  Understand "avenged" as benjack-Avenged when the location is in the benjack-realm.
+benjack-Avenged is a subject.  Understand "avenged" as benjack-Avenged when the location is in the benjack-realm. The printed name of benjack-Avenged is "Avenged Spirits".
 
-benjack-Creature is a subject.  Understand "creature/being/monster/abomination/werewolf/vampire/creatures/beings/monsters/abominations/werewolfs/werewolves/vampires" as benjack-Creature when the location is in the benjack-realm.
+benjack-Creature is a subject.  Understand "creature/being/monster/abomination/werewolf/vampire/creatures/beings/monsters/abominations/werewolfs/werewolves/vampires/shapeshifter/shapeshifters/wraith/wraiths/dragon/dragons/djinn/djinns/rugaru/rugarus/ghoul/ghouls/skeleton/skeletons/chupacabra/chupacabras/zombie/zombies/changling/changlins/banshee/banshees/wendigo/wendigos" as benjack-Creature when the location is in the benjack-realm. The printed name of benjack-Creature is "creature".
 
-benjack-Longhouse is a subject.  Understand "longhouse" as benjack-Longhouse when the location is in the benjack-realm.
+benjack-Longhouse is a subject.  Understand "longhouse/lodge" or "long house" as benjack-Longhouse when the location is in the benjack-realm. The printed name of benjack-Longhouse is "longhouse".
 
-benjack-modernAge is a subject.  Understand "modern/age/future" as benjack-modernAge when the location is in the benjack-realm.
+benjack-modernAge is a subject.  Understand "modern/age/future" as benjack-modernAge when the location is in the benjack-realm. The printed name of benjack-modernAge is "modern age".
 
-benjack-Demise is a subject.  Understand "demise" as benjack-demise when the location is in the benjack-realm.
+benjack-Demise is a subject.  Understand "demise" as benjack-demise when the location is in the benjack-realm. The printed name of benjack-Demise is "demise".
 
-Understand "death/deathe" as benjack-demise when benjack-R0 has happened and the location is DAN8.
+Understand "death/deathe" as benjack-demise when benjack-R0 has happened and the location is DAN8. 
 
-benjack-Obsession is a subject.  Understand "obsession/compulsion/obsessions/compulsions" as benjack-Obsession when the location is in the benjack-realm.
+benjack-Obsession is a subject.  Understand "obsession/compulsion/obsessions/compulsions" as benjack-Obsession when the location is in the benjack-realm. The printed name of benjack-Obsession is "Carol's father's obsession".
 
-benjack-Mill is a subject.  Understand "mill/spur" as benjack-Mill when the location is in the benjack-realm.
+benjack-Mill is a subject.  Understand "timber/lumber/wood/mill/spur" as benjack-Mill when the location is in the benjack-realm. The printed name of benjack-Mill is "mill".
 
-benjack-Edgar is a subject.  Understand "Edgar" as benjack-Edgar when the location is in the benjack-realm.
+benjack-Edgar is a subject.  Understand "Edgar" as benjack-Edgar when the location is in the benjack-realm. The printed name of benjack-Edgar is "Edgar".
 
-benjack-Victor is a subject.  Understand "Victor" as benjack-Victor when the location is in the benjack-realm.
+benjack-Victor is a subject.  Understand "Victor" as benjack-Victor when the location is in the benjack-realm. The printed name of benjack-Victor is "Victor".
 
-benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location is in the benjack-realm. 
+benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location is in the benjack-realm. The printed name of benjack-Hugo is "Hugo".
 
 Understand "father/dad" as benjack-Hugo when benjack-R2 is happening.
 
-benjack-CircularPrison is a subject.  Understand "circular/prison/circular prison" as benjack-CircularPrison when the location is in the benjack-realm.
+benjack-CircularPrison is a subject.  Understand "circular/prison/circular prison" as benjack-CircularPrison when the location is in the benjack-realm. The printed name of benjack-CircularPrison is "circular prison".
 
-benjack-ChFather is a subject.  Understand "father/dad/daddy" as benjack-ChFather when the location is DAN8 and benjack-R2 has not happened.
+benjack-ChFather is a subject.  Understand "father/dad/daddy" as benjack-ChFather when the location is DAN8 and benjack-R2 has not happened. The printed name of benjack-ChFather is "Christabell's father".
 
-benjack-ChMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChMother when the location is DAN8.
+benjack-ChMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChMother when the location is DAN8. The printed name of ChMother is "Christabelle's mother".
 
-benjack-Breeves is a subject.  Understand "preacher/ewen/breeves/pastor/priest" as benjack-Breeves when the location is in the benjack-realm.
+benjack-Breeves is a subject.  Understand "preacher/ewen/breeves/pastor/priest" as benjack-Breeves when the location is in the benjack-realm. The printed name of benjack-Breeves is "Ewen Breeves".
 
-benjack-Leif is a subject.  Understand "doctor/prichard/leif/professor" as benjack-Leif when the location is in the benjack-realm.
+benjack-Leif is a subject.  Understand "doctor/prichard/leif/professor" as benjack-Leif when the location is in the benjack-realm. The printed name of benjack-Leif  is "Prichard Leif".
 
-benjack-Jealousy is a subject.  Understand "jealousy" as benjack-Jealousy when the location is in the benjack-realm.
+benjack-Jealousy is a subject.  Understand "jealousy/adultery/adulter" as benjack-Jealousy when the location is in the benjack-realm. The printed name of benjack-Jealousy is "jealousy".
 
-benjack-Skirmish is a subject.  Understand "skirmish/skourmuch" as benjack-skirmish when the location is in the benjack-realm.
+benjack-Skirmish is a subject.  Understand "skirmish/skourmuch/skirmishes" as benjack-skirmish when the location is in the benjack-realm. The printed name of benjack-Skirmish is "skirmish".
 
-benjack-Sachim is a subject.  Understand "sachim/chief/chieftess" as benjack-Sachim when the location is in the benjack-realm.
+benjack-Sachim is a subject.  Understand "sachim/chief/chieftess/chiefs/sachims/chieftesses" as benjack-Sachim when the location is in the benjack-realm. The printed name of benjack-Sachim  is "sachim".
 
-benjack-ChristabellTeaParty is a subject.  Understand "tea/party" as benjack-ChristabellTeaParty when the location is DAN8.
+benjack-ChristabellTeaParty is a subject.  Understand "tea/party" as benjack-ChristabellTeaParty when the location is DAN8. The printed name of benjack-ChristabellTeaParty is "tea party".
 
-benjack-ChristabellToys is a subject.  Understand "toy/toys/stuffed/animals/monkey/lamb/clown/elephant/mister/snortles/misses/winkelbottom/malice/master/sweetpaws/chimpanzee/animal/doll/dolls/puppet/puppets/sock/sockpuppet" as benjack-ChristabellToys when the location is DAN8.
+benjack-ChristabellToys is a subject.  Understand "toy/toys/stuffed/animals/monkey/lamb/clown/elephant/mister/snortles/misses/winkelbottom/malice/master/sweetpaws/chimpanzee/animal/doll/dolls/puppet/puppets/sock/sockpuppet" or "[benjack-snortlesToken]" or "[benjack-MaliceToken]" or "[benjack-SweetpawsToken]" or "[benjack-WinkelbottomToken]" as benjack-ChristabellToys when the location is DAN8. The printed name of benjack-ChristabellToys is "Carol's toys".
 
-benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding when the location is in the benjack-realm.
+benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding when the location is in the benjack-realm. The printed name of benjack-Unfolding is "unfolding".
 
-benjack-GrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-GrandUncle when the location is in the benjack-realm.
+benjack-GrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-GrandUncle when the location is in the benjack-realm. The printed name of benjack-GrandUncle is "grand-uncle".
 
-benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" as benjack-Mansion when the location is in the benjack-realm.
+benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" or "cragne mansion" or "cragne manse" or "cragne estate"  as benjack-Mansion when the location is in the benjack-realm. The printed name of benjack-Mansion is "Cragne mansion".
 
-benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is DAN8.
+benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is DAN8. The printed name of benjack-Mirror is "mirror".
 
-benjack-Seeming is a subject.  Understand "Seeming" as benjack-Seeming when the location is in the benjack-realm.
+benjack-Seeming is a subject.  Understand "Seeming" as benjack-Seeming when the location is in the benjack-realm. The printed name of benjack-Seeming is "seeming".
 
-benjack-XizziSpell is a subject.  Understand "xizzi" as benjack-XizziSpell when the location is in the benjack-realm. 
+benjack-XizziSpell is a subject.  Understand "xizzi" as benjack-XizziSpell when the location is in the benjack-realm. The printed name of benjack-XizziSpell is "xixxi spell". 
 
-benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-PloughverSpell  when the location is in the benjack-realm.
+benjack-PloughverSpell is a subject.  Understand "ploughver" as benjack-PloughverSpell  when the location is in the benjack-realm. The printed name of benjack-PloughverSpell is "ploughver spell".
 
-benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm.
+benjack-KHSpell is a subject.  Understand "kwisatz/haderach" as benjack-KHSpell when the location is in the benjack-realm. The printed name of benjack-KHSpell is "kwisatz haderach spell".
 
-benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring/pregnant/preggers" as benjack-babySubject when the location is in the benjack-realm.
+benjack-babySubject is a subject.  Understand "baby/babies/pregnancy/pregnancies/spawn/daughter/offspring/pregnant/preggers" as benjack-babySubject when the location is in the benjack-realm. The printed name of benjack-babySubject is "pregnancy".
 
 Section 2 - R1 Quips
 
