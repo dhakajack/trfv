@@ -748,7 +748,7 @@ Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is 
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
 The benjack-monkey is a benjack-shadow. The printed name of the benjack-monkey is "toy monkey".
-Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" as the benjack-monkey when the player is in M2F3.
+Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" or "henry/kissinger" as the benjack-monkey when the player is in M2F3.
 The N1-desc of the benjack-monkey is "The limp and gangly sock puppet wears a baseball cap and an Army-Navy sweater.[paragraph break][first time][quotation mark][bold type]Young Master Sweetpaws[roman type] recently joined us, right Sweetpaws?[quotation mark][paragraph break]The monkey sits there, inert, but Carol continues, [quotation mark]Sometimes he gets up to naughtiness, but he[apostrophe]s always back in the morning, aren[apostrophe]t you, [bold type]Sweetpaws[roman type]?[quotation mark][paragraph break]The monkey stares blankly ahead.[only]".
 
 The benjack-cap is a benjack-shadow.  The printed name of the benjack-cap is "cap".
@@ -2101,10 +2101,11 @@ Chapter 3 - N3 Conversation
 
 Section 1 - N3 Subjects
 
+benjack-nsc is a subject. Understand "national/security/council/nsc" as benjack-nsc when the location is M2F3 and benjack-N2 has happened.
+
 benjack-intel is a subject.  Understand "intel/corporation/microprocessor/microprocessors/cpu/cpus/central/processing/unit/units/chip/chips" as benjack-intel when the location is M2F3 and benjack-N3 is happening.
 
 benjack-vietnam is a subject.  Understand "vietnam/peace/talk/talks/accord/accords/conference/summit/negotiation/negotiations" as benjack-vietnam when the location is M2F3 and benjack-N3 is happening.
-
 
 benjack-assassination is a subject.  Understand "assassination/assassinations/martin/luther/king/reverend" or "[benjack-kennedyToken]" as benjack-assassination when the location is M2F3 and benjack-N3 is happening.
 
@@ -2163,6 +2164,9 @@ benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolph
 benjack-ardf is  a subject. Understand "radiogoniometry" as benjack-ardf when the location is M2F3.
 
 Section 2 - N3 Quips
+
+After quizzing benjack-Carol about benjack-ardf:
+	say "The national security council is part of the U.S. government: it is an advisory body to the Whitehouse on matters of national security. Currently, it is headed by Henry KIssinger, a confidante of President Nixon."
 
 After quizzing benjack-Carol about benjack-ardf:
 	say "Yeah, I had to look that one up too. It means radio direction finding -- figuring out where a signal is coming from[one of]. They have no end of fancy tricks up their sleeeves[or][stopping]."
