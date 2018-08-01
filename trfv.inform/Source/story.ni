@@ -52,7 +52,7 @@ Instead of doing something to a benjack-shadow:
 A benjack-clipping is a kind of thing. 
 Benjack-clippings have some text called title.
 Benjack-clippings have a list of text called content.
-The printed name of a Benjack-clipping is "the clipping entitled [quotation mark][title][quotation mark]". Understand "clipping/clippings/article/articles/printout/paper/cutting/cuttings" as a benjack-clipping.
+The printed name of a Benjack-clipping is "the clipping entitled [quotation mark][title][quotation mark]". Understand "clipping/clippings/article/articles/printout/paper/cutting/cuttings" as a benjack-clipping when the location is in the benjack-realm.
 
 A benjack-runebook is a kind of opaque openable container. 
 A benjack-runebook can be either open or closed. A benjack-runebook is usually closed.
@@ -221,7 +221,7 @@ benjack-Christabell is a female person in DAN8.  The printed name of benjack-Chr
 
 The description of benjack-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
-Understand "talk to [someone]" as a mistake ("[benjack-talk-hint].").
+Understand "talk to [someone]" as a mistake ("[benjack-talk-hint].") when the location is in the benjack-realm.
 
 [A state-machine that transitions the dialogue between a chain of behaviors in R0.  See "Chapter Scene R0".]
 benjack-Christabell can be unaddressed or eager or chatty or candid or bypassed.  benjack-Christabell is unaddressed.
@@ -230,7 +230,7 @@ benjack-Christabell can be either run-down or charged-up. benjack-Christabell is
 
 Chapter Carol
 
-benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]". Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3. 
+benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]" when the location is in the benjack-realm. Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3. 
 Benjack-Carol can be disruption_informed. Benjack-Carol is not disruption_informed.
 Benjack-Carol can be requesting_permission.  Benjack-Carol is not requesting_permission.
 
@@ -766,7 +766,7 @@ Understand "doll/ dolls / animal/ animals/ stuffed / toys" as the benjack-dolls 
 The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow. The printed name of the benjack-elephant is "toy elephant".
-Understand "elephant" or "mister" or "snortles" as "[benjack-snortlesToken]".
+Understand "elephant" or "mister" or "snortles" as "[benjack-snortlesToken]" when the location is in the benjack-realm.
 Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is in the benjack-realm.
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
@@ -789,7 +789,7 @@ Understand "[benjack-maliceToken]" as the benjack-clown when the player is in M2
 The N1-desc of benjack-clown is "[one of]Despite his painted smile, the clown[apostrophe]s plastic face conveys a sense of surrender as it stares into an empty tea cup. [paragraph break]It is the largest of the stuffed playmates, almost as tall as Carol. [paragraph break][quotation mark]That[apostrophe]s [bold type]Malice the Clown[roman type],[quotation mark] Carol chirps.[paragraph break][quotation mark][bold type]Malice?[roman type][quotation mark] you prompt. [quotation mark]The [bold type]Clown[roman type]?[quotation mark][paragraph break][quotation mark]Yes, originally I called him Alice, but [bold type]grand-uncle[roman type] said he[apostrophe]s a boy [bold type]clown[roman type] and thought [apostrophe][bold type]Malice[roman type][apostrophe] sounded nice.[quotation mark][or]Like all clown puppets, he exudes visceral evil.[stopping]"
 
 The benjack-lamb is a benjack-shadow.  The printed name of the benjack-lamb is "toy lamb".
-Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as "[benjack-WinkelbottomToken]".
+Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as "[benjack-WinkelbottomToken]" when the location is in the benjack-realm.
 
 Understand "[benjack-WinkelbottomToken]" as the benjack-lamb when the player is in M2F3 and benjack-N1 is happening.
 The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Winkelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Winkelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
@@ -1331,7 +1331,7 @@ benjack-Nirramonk is a subject.  Understand "nirramonk" as benjack-Nirramonk whe
 
 benjack-Nipmuk is a subject.  Understand "nipmuk" as benjack-Nipmuk when the location is in the benjack-realm. The printed name of benjack-Nipmuk is "Nipmuk".
 
-benjack-Kaballah is a subject.  Understand "kaballah/alchemy/numerology/secrets/fjord/illuminati/gnomes/rosacrucians" as benjack-Kaballah when the location is in the benjack-realm. The printed name of benjack-Kaballah is "Kaballah".
+benjack-Kaballah is a subject.  Understand "kaballah/alchemy/numerology/secrets/fjord/illuminati/gnomes/rosacrucians/templars/knights/templar/assassins/hashhashin/bavarian/masons/masonic/temple/ufo/ufos/smof/shambala" or "servants of chthulu" or "gnomes of zurich" or "area 51" or "warehouse 23"  as benjack-Kaballah when the location is in the benjack-realm. The printed name of benjack-Kaballah is "Kaballah".
 
 benjack-InvisibleWorld is a subject.  Understand "invisible/world" as benjack-InvisibleWorld when the location is in the benjack-realm. The printed name of benjack-InvisibleWorld is "Invisible World".
 
@@ -1359,7 +1359,7 @@ benjack-Victor is a subject.  Understand "Victor" as benjack-Victor when the loc
 
 benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location is in the benjack-realm. The printed name of benjack-Hugo is "Hugo".
 
-Understand "father/dad" as benjack-Hugo when benjack-R2 is happening.
+Understand "father/dad" as benjack-Hugo when benjack-R2 is happening and the location is in the benjack-realm.
 
 benjack-CircularPrison is a subject.  Understand "circular/prison/circular prison" as benjack-CircularPrison when the location is in the benjack-realm. The printed name of benjack-CircularPrison is "circular prison".
 
@@ -2512,7 +2512,7 @@ test de-benjack with "z / z / z / look / x tome / open book / close tome / read 
 Chapter 4 - Denouement Ends
 
 When benjack-denouement ends:
-	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-photo is nowhere]! Lbh arrq gb rknzvar lbhe Ehar Obbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
+	now Benjack-scene-specific-hint is "Gurer vf abguvat yrsg gb qb urer, lbh unir fhpprffshyyl pbzcyrgrq guvf cneg bs gur tnzr[if jpk-picture is nowhere]! Lbh arrq gb rknzvar lbhe Ehar Obbx naq gnxr gur cubgb gung pbzrf bhg bs vg sbe n yngre cneg bs gur tnzr[end if]";
 	benjack-stage-off 3;
 	now benjack-window is in M2F3;
 	now benjack-window is seen;
@@ -2542,7 +2542,7 @@ When benjack-denouement ends:
 	if yourself is benjack-guilty:
 		now Benjack-clipping-10 is in benjack-naomiRunes.
 	
-[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-photo is nowhere]! You need to examine your Rune Book and take the photo that comes out of it for a later part of the game[end if]
+[hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-picture is nowhere]! You need to examine your Rune Book and take the photo that comes out of it for a later part of the game[end if]
 ]
 
 Part 11 - Apres
@@ -2928,8 +2928,6 @@ The jade frog is a thing in MGR1.
 
 
 Part 3 - Items that will come from other authors
-
-There is a thing called jpk-photo. The description of the jpk-photo is "An old photo with writing on one side." The printed name of the jpk-photo is "faded photo". Understand "photo" or "faded" or "old" as jpk-photo. [just to instantiate it off-stage for testing purposes]
 
 The mtw-teapot is an open opaque container in MGR1. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
 
