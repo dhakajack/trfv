@@ -816,7 +816,7 @@ Instead of sitting on the benjack-table, say "Carol informs you that Misses Wink
 
 The benjack-frame is a benjack-shadow.  The printed name of the benjack-frame is "photo frame".
 Understand "frame" or "photo frame" as benjack-frame when the player is in M2F3.
-The N1-desc of benjack-frame is "The fra me is not well matched to the photograph, it would go much better with an oil painting from an earlier century, and indeed it is not unlikely that some portrait of a remote ancestor was gutted when the need for a frame arose. The four-inch wide frame is intricately carved with fanciful beasts and has seen many applications of gold-leafing.".
+The N1-desc of benjack-frame is "The frame is not well matched to the photograph, it would go much better with an oil painting from an earlier century, and indeed it is not unlikely that some portrait of a remote ancestor was gutted when the need for a frame arose. The four-inch wide frame is intricately carved with fanciful beasts and has seen many applications of gold-leafing.".
 
 The benjack-beasts is a benjack-shadow.  The printed name of the benjack-beasts is "beasts".
 Understand "beasts" as benjack-beasts when the player is in M2F3.
@@ -1332,11 +1332,13 @@ benjack-Edgar is a subject.  Understand "Edgar" as benjack-Edgar when the locati
 
 benjack-Victor is a subject.  Understand "Victor" as benjack-Victor when the location is in the benjack-realm.
 
-benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location is in the benjack-realm.
+benjack-Hugo is a subject.  Understand "Hugo" as benjack-Hugo when the location is in the benjack-realm. 
+
+Understand "father/dad" as benjack-Hugo when benjack-R2 is happening.
 
 benjack-CircularPrison is a subject.  Understand "circular/prison" as benjack-CircularPrison when the location is in the benjack-realm.
 
-benjack-ChFather is a subject.  Understand "father/dad/daddy" as benjack-ChFather when the location is DAN8.
+benjack-ChFather is a subject.  Understand "father/dad/daddy" as benjack-ChFather when the location is DAN8 and benjack-R2 has not happened.
 
 benjack-ChMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChMother when the location is DAN8.
 
@@ -1634,7 +1636,7 @@ Understand "makeup" as benjack-makeup when the player is in M2F3.
 The N2-desc of benjack-makeup is "A modest selection of products, nothing unusual. The brands are familiar -- ones you would typically find at high-end department stores.".
 
 The benjack-newsprint is a benjack-shadow.  The printed name of the benjack-newsprint is "piece of newsprint".
-Understand "newsprint/article/news/story/clip/clipping/boston/herald" as benjack-newsprint when the player is in M2F3.
+Understand "newsprint/article/news/story/boston/herald" as benjack-newsprint when the player is in M2F3.
 The N2-desc of benjack-newsprint is "[one of]Your eye is first drawn to the date, November 22, 1963, and the curious fact that the paper is not yellowed at all. Below the newspaper masthead is a black and white photograph, stippled with tiny dots as they were in those days, of a number of people crowded around a convertible. Below that, a title, [quotation mark]Tragedy in Dallas[quotation mark].[paragraph break]You don’t have to read further. You know what this is.[or]A newspaper clipping from the Boston Herald recounting the assassination of JFK.[or]You don’t need to. You know what happened there and have an uneasy feeling of who might have had her hand in it.[or]You don’t need to. You know what happened there.[stopping]".
 
 The benjack-stackedBooks is a benjack-shadow.  The printed name of the benjack-stackedBooks is "stacked books".
@@ -1674,7 +1676,7 @@ Understand "president/jack/john/fitzgerald/kennedy/robert/ted/teddy/kennedies/cl
 
 benjack-scrapbookSubject is a subject.  Understand "scrapbook" or "scrap book" as benjack-scrapbookSubject when the location is in the benjack-realm.
 
-benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm and benjack-N1 has ended.
+benjack-highschool is a subject.  Understand "school/highschool/farmington/porter/porters" as benjack-highschool when the location is in the benjack-realm and benjack-n2 is happening.
 
 benjack-lech is a subject.  Understand "freckle-faced/lech" as benjack-lech when the location is in the benjack-realm.
 
@@ -1684,6 +1686,9 @@ benjack-WinkelbottomSubject is a subject. Understand "winkelbottom/lamb/misses" 
 benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happened.
 
 Section 2 - N2 Quips
+
+After quizzing benjack-Christabell about a benjack-clipping when benjack-r1 is happening:
+	say "Aye, that [one of]do have the true Ring of a Rune to it[or]haveth the Waye of the Deep Ones about it[stopping]."
 
 After quizzing benjack-Carol about benjack-thresher:
 	say "It’s the sub that the [bold type]Deep Ones[roman type] asked for in return for [bold type]Kennedy[roman type].”
@@ -1841,7 +1846,7 @@ When benjack-R2 begins:
 Chapter 2 - R2 Conversation
 
 Before hailing or conversing or speaking when benjack-R2 is happening for the first time:
-	say "[quotation mark]My Greetings again, Naomi. Were you able to lifte the Burden of Carol[apostrophe]s Runes and set a-free her Spirit?[quotation mark][paragraph break][quotation mark]No, not so much,[quotation mark] you admit. [quotation mark]She didn[apostrophe]t have the scrapbook with her. In fact, the whole thing didn[apostrophe]t go that well. She[apostrophe]s has some resentment towards you, and her dad[apostrophe]s plan sounds bonkers.[quotation mark][paragraph break][quotation mark]I have something very important to ask you, Christabell. Carol touched me…[quotation mark] You take a moment to compose yourself, [quotation mark]Carol touched me here, and said she had marked my baby, a daughter.[quotation mark][paragraph break]Christabell looks askew. [quotation mark]Oh?[quotation mark] She holds her hand palm out. [quotation mark]No. There be no Baby. Nor even so much as Thowt of one in your Entrayls. Not this Daye. She doth Laie most Cravenly to seeke Inflewance o[apostrophe]er you. I had hoped to save her, but History does itself repete -- for the Sayke of All, we must see to her Disruption.[quotation mark]";
+	say "[quotation mark]My Greetings again, Naomi. Were you able to lifte the Burden of Carol[apostrophe]s Runes and set a-free her Spirit?[quotation mark][paragraph break][quotation mark]No, not so much,[quotation mark] you admit. [quotation mark]She didn[apostrophe]t have the scrapbook with her. In fact, the whole thing didn[apostrophe]t go that well. She[apostrophe]s has some resentment towards you, and her dad[apostrophe]s plan sounds bonkers.[quotation mark][paragraph break][quotation mark]I have something very important to ask you, Christabell. Carol touched me…[quotation mark] You take a moment to compose yourself, [quotation mark]Carol touched me here, and said she had marked my baby, a daughter.[quotation mark][paragraph break]Christabell looks askew. [quotation mark]Oh?[quotation mark] She holds her hand palm out. [quotation mark]No. There be no Baby. Nor even so much as Thowt of one in your Entrayls. Not this Daye. She doth Laie most Cravenly to seeke Inflewance o[apostrophe]er you. I had hoped to save her, but History does itself repete -- for the Sayke of All, we must see to her Disruption.[quotation mark][paragraph break]";
  	continue the action.
 
 Section 1 - R2 Subjects
@@ -1856,7 +1861,7 @@ benjack-resentment is a subject.  Understand "resentment" as benjack-resentment 
 
 benjack-ElderGods is a subject.  Understand "elder/gods/god" as benjack-ElderGods when the location is in the benjack-realm.
 
-benjack-clippingSubject is a subject.  Understand "clip/clips/clipping/clippings/article/articles/newspaper/newspapers/article/articles" as benjack-clippingSubject when the location is in the benjack-realm.
+benjack-clippingSubject is a subject.  Understand "assassination" as benjack-clippingSubject when the location is in the benjack-realm and benjack-n2 is happening.
 
 benjack-planSubject is a subject.  Understand "plan/plans" as benjack-planSubject when the location is in the benjack-realm.
 
@@ -2071,7 +2076,7 @@ The N3-desc of benjack-ambiguity is "(which of the three sculptures do you mean,
 
 The benjack-claws are a benjack-shadow.  The printed name of the benjack-claws is "claws".
 Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-claws when the player is in M2F3.
-The N3-desc of benjack-claws is "Think and powerful, ending in sharp talons. ".
+The N3-desc of benjack-claws is "Predatory: thick and powerful, ending in sharp talons. ".
 
 The benjack-tapedeck is a benjack-shadow.  The printed name of the benjack-tapedeck is "reel to reel recorder".
 Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic" as benjack-tapedeck when the player is in M2F3.
@@ -2135,11 +2140,11 @@ benjack-cw is a subject.  Understand "cw/morse/code/distress/signal/beacon/messa
 
 benjack-idf is a subject.  Understand "idf" as benjack-idf when the location is M2F3 and benjack-N3 is happening. 
 
-benjack-pentacle is a subject.  Understand "pentacle/deep1/catacon" as benjack-pentacle when the location is M2F3 and benjack-N3 is happening. 
+benjack-pentacle is a subject.  Understand "pentacle/deep1/catacon/revco" as benjack-pentacle when the location is M2F3 and benjack-N3 is happening. 
 
 benjack-br1150 is a subject.  Understand "br1150/plane/atlantic/surveillance/recon/reconnaissance" as benjack-br1150 when the location is M2F3 and benjack-N3 is happening. 
 
-benjack-hydrophone is a subject.  Understand "hydrophone/hydrophonic" as benjack-hydrophone when the location is M2F3 and benjack-N3 is happening. 
+benjack-hydrophone is a subject.  Understand "hydrophone/hydrophonic/hydrophonology" as benjack-hydrophone when the location is M2F3 and benjack-N3 is happening. 
 
 benjack-milcoord is a subject.  Understand "milcoord" as benjack-milcoord when the location is M2F3 and benjack-N3 is happening. 
 
@@ -2155,19 +2160,27 @@ benjack-lwah is a subject.  Understand "lwah" as benjack-lwah when the location 
 
 benjack-popeyeTSM is a subject.  Understand "popeyetsm/telepathic/telepath/dolphin/dolphins/porpoise/porpoises" as benjack-popeyeTSM when the location is M2F3 and benjack-N3 is happening. 
 
+benjack-ardf is  a subject. Understand "radiogoniometry" as benjack-ardf when the location is M2F3.
+
 Section 2 - N3 Quips
+
+After quizzing benjack-Carol about benjack-ardf:
+	say "Yeah, I had to look that one up too. It means radio direction finding -- figuring out where a signal is coming from[one of]. They have no end of fancy tricks up their sleeeves[or][stopping]."
 
 After quizzing benjack-Carol about benjack-Nixon when benjack-N3 is happening:
 	say "[one of][quotation mark]He stands for everything I believe in: integrity, tradition, and the natural destiny of America to lead the world into the coming millennium. That[apostrophe]s why I decided to work on his campaign rather than take my acceptance to Middlebury.[quotation mark][or]Carol tells you she is his biggest fan. He can do no wrong by her.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-america when benjack-N3 is happening:
-	say "[one of][quotation mark]After seeing everything going on in America this past year: the long-haired free love freaks, drugs, the degenerate culture of rock-and-roll, people too self-entitled to defend their country from the Gooks in Vietnam, Blacks riding busses and voting -- all of it, I just couldn[apostrophe]t sit on the sidelines. I wanted to do more than just bring about the Ascendance of the Elder Gods. That[apostrophe]s going to take time, and I know that I only live another few months before my suicide, so I decided to join the Nixon campaign and make a difference.[quotation mark][or][quotation mark]It[apostrophe]s going to hell in a handbasket,[quotation mark] replies Carol, [quotation mark]and not in a good way.[quotation mark] [stopping][paragraph break]".
+	say "[one of][quotation mark]After seeing everything going on in America this past year: the long-haired free love freaks, drugs, the degenerate culture of rock-and-roll, people too self-entitled to defend their country from the Gooks in Vietnam, Blacks riding busses and voting -- all of it, I just couldn[apostrophe]t sit on the sidelines. I wanted to do [italic type]more[roman type] than just bring about the Ascendance of the Elder Gods. That[apostrophe]s going to take time, and I know that I only live another few months before my suicide, so I decided to join the Nixon campaign and make a difference.[quotation mark][or][quotation mark]It[apostrophe]s going to hell in a handbasket,[quotation mark] replies Carol, [quotation mark]and not in a good way.[quotation mark] [stopping][paragraph break]".
 	
 After informing benjack-Carol about benjack-america when benjack-N3 is happening:
-	say "[one of][quotation mark]Carol, I am from the future, I assure you that this plan of yours fails. The idea that the country could be ruled by a bigoted, narcissistic miscreant like you is unthinkable.[quotation mark]Carol smiles smugly.[no line break][or]You try to convince Carol that her plan does not succeed in the future, but her confidence is not shaken in the least.[no line break][stopping][paragraph break]".	
+	say "[one of][quotation mark]Carol, I am from the future, I assure you that this plan of yours fails. The idea that the country could be ruled by a bigoted, narcissistic miscreant like you is unthinkable.[quotation mark] Carol smiles smugly.[no line break][or]You try to convince Carol that her plan does not succeed in the future, but her confidence is not shaken in the least.[no line break][stopping][paragraph break]".	
 	
 After informing benjack-Carol about benjack-intel when benjack-N3 is happening:
 	say "[quotation mark]I[apostrophe]m not sure how this all figure into it, but in my day, in the 90s, most of the computers that we use have Intel chips in them. I have long suspected a diabolical cause.[quotation mark][paragraph break]".
+	
+After informing benjack-Carol about benjack-intel when benjack-N3 is happening:
+	say "[quotation mark]I’m not sure how, but the company’s founding seems to have just as much influence on the future as all the assassinations.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-vietnam when benjack-N3 is happening:
 	say "[one of][quotation mark]The timing was wrong for Nixon, so I sent Sweetpaws to make sure they didn[apostrophe]t happen.[quotation mark][paragraph break]Carol looks over at the shelfs above her desk. [quotation mark]What[apostrophe]s that Master Sweetpaws? Oh yes, the geopolitical ramifications would indeed have been thorny.[quotation mark][or]Carol explains how Master Sweetpaws craftily manipulated global interests to ensure that the 1968 peace talks to end the war in Vietnam collapsed, undermining President Lyndon B. Johnson[apostrophe]s re-election campaign.[no line break][stopping][paragraph break]".
@@ -2248,7 +2261,7 @@ After quizzing benjack-Carol about benjack-sigint when benjack-N3 is happening:
 	say "[quotation mark]Short for [apostrophe]signals intelligence[apostrophe], basically eavesdropping on radio signals.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-elint when benjack-N3 is happening:
-	say "[quotation mark]Short for [quotation mark]electronics intelligence[apostrophe]; the plane overflies an area snoops around.[quotation mark][paragraph break]".
+	say "[quotation mark]Short for [apostrophe]electronics intelligence[apostrophe]; the plane overflies an area snoops around.[quotation mark][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-cw when benjack-N3 is happening:
 	say "[quotation mark]It stands for [apostrophe]continuous wave[apostrophe], but means morse code.[quotation mark][paragraph break]".
@@ -2290,7 +2303,7 @@ After quizzing benjack-Carol about benjack-popeyeTSM when benjack-N3 is happenin
 	say "[quotation mark]It[apostrophe]s the code name for our navy[apostrophe]s global intelligence network of telepathic dolphins.[quotation mark][paragraph break]".
 
 After quizzing benjack-Carol about benjack-egg when benjack-N3 is happening:
-	say "[one of][quotation mark]Ah, yes, the egg of the Megalokyniklosaurus vernalis. Those who have stared into its swirling mysteries have reported visions from other realities.[quotation mark][or]Carol reminds you that the only known Megalokyniklosaurus vernalis egg in existence is rumored to reveal visions of other realities.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark]Ah, yes, the egg of the [italic type]Megalokyniklosaurus vernalis[roman type]. Those who have stared into its swirling mysteries have reported visions from other realities.[quotation mark][or]Carol reminds you that the only known [italic type]Megalokyniklosaurus vernalis[roman type] egg in existence is rumored to reveal visions of other realities.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-tile when benjack-N3 is happening:
 	say "[one of][quotation mark]It[apostrophe]s not quite as real as the other pieces of art in my collection, because of course it does not exist yet.[quotation mark][or][quotation mark]It[apostrophe]s a thermal tile from the space plane Columbia some years from now.[quotation mark][stopping][paragraph break]".
@@ -2323,7 +2336,7 @@ Instead of informing benjack-Carol about benjack-WindowSubject when benjack-N3 i
 Chapter 4 - N3 Events
 
 After benjack-KHing when benjack-N3 is happening:
-	say "Carol tries to get between you and the scrapbook, but is too slow. As the book dissolves progressively to dust to small to see. Carol sags, as if suddenly exhausted.[paragraph break][quotation mark]You idiot,[quotation mark] she scolds. [quotation mark]What was that for? I[apostrophe]ve done nothing to you -- well, nothing to speak of.[quotation mark][paragraph break][quotation mark]You were growing too powerful; it makes me uncomfortable.[quotation mark][paragraph break][quotation mark]I thought you were a little more rational than that, Naomi. I am disappointed in you. That was, of course, just one of many volumes -- my power is little diminished.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds as a petty afterthought, [quotation mark]the word is Maud[apostrophe]dib. I at least read the book. When he used the weirding module, the thing he yelled was Maud[apostrophe]dib, not Kwisatz Haderach. You could at least get that one detail right.[quotation mark][paragraph break]";
+	say "Carol tries to get between you and the scrapbook, but she is not fast enough. As the book dissolves progressively to dust to small to see. Carol sags, as if suddenly exhausted.[paragraph break][quotation mark]You idiot,[quotation mark] she scolds. [quotation mark]What was that for? I[apostrophe]ve done nothing to you -- well, nothing to speak of.[quotation mark][paragraph break][quotation mark]You were growing too powerful; it makes me uncomfortable.[quotation mark][paragraph break][quotation mark]I thought you were a little more rational than that, Naomi. I am disappointed in you. That was, of course, just one of many volumes -- my power is little diminished.[quotation mark][paragraph break][quotation mark]Also,[quotation mark] Carol adds as a petty afterthought, [quotation mark]the word is Maud[apostrophe]dib. I at least read the book. When he used the weirding module, the thing he yelled was Maud[apostrophe]dib, not Kwisatz Haderach. You could at least get that one detail right.[quotation mark][paragraph break]";
 	now yourself is benjack-KH_accomplished.
 	
 Instead of going south when benjack-N3 is happening:
@@ -2423,13 +2436,13 @@ Every turn when benjack-denouement is happening:
 			say "[benjack-doom3]".
 			
 To say benjack-doom1:
-	say "Christabell pours in through the window. Not literally as a person, but her powers, which you have greatly underestimated to this point. In your spectral vision, you perceive a crimson stream flooding into the room -- and into you.[paragraph break][if benjack-Carol is not disruption_informed]Carol is caught unaware and backs to a corner, for once stripped of her air of superiority. [quotation mark]Naomi,[quotation mark] she screams, [quotation mark]by the Elders Gods themselves, I swear you have sealed your doom![quotation mark] The crimson energy flings Carol left and right, but she pulls herself up again leaning heavily on the wall.[paragraph break][end if][if benjack-scrap-19 is nowhere]Through force of habit, Carol reaches behind herself to draw energy from her book of Runes, only recalling too late that you destroyed it. Instead, temporizing, with a flick of her hand she signals her minions to attack. Master Sweetpaws backhands the raggedy clown as he bounds off the shelf, his talons outstretched and jaws wide, leaping straight towards you from his perch. You reflexively lift your hand to shield your face and are surprised as raw magic pours from, constricting to a narrow beam that slices through the ferocious sock puppet, and then continues through his charred fabric to impale Malice the Clown.[paragraph break][end if]You throw a spinning, glowing glob of magic at Carol and it engulfs her; she agonizes within it like a bug in molasses, her screams drowned in its crackling energy as she falls to her knees. As she struggles to her knees, she manages to push one hand clear of the swirling crimson miasma and with that hand she sends her own reverberating wave of cobalt blue magic towards you, more specifically, towards you belly. Something with in you shudders and kicks, an innocent caught in unaware in a cosmic conflict."
+	say "Christabell pours in through the window. Not literally as a person, but her powers, which you have greatly underestimated to this point. In your spectral vision, you perceive a crimson stream flooding into the room -- and into you.[paragraph break][if benjack-Carol is not disruption_informed]Carol is caught unaware and backs to a corner, for once stripped of her air of superiority. [quotation mark]Naomi,[quotation mark] she screams, [quotation mark]by the Elders Gods themselves, I swear you have sealed your doom![quotation mark] The crimson energy flings Carol left and right, but she pulls herself up again and leans heavily against the wall.[paragraph break][end if][if benjack-scrap-19 is nowhere]Through force of habit, Carol reaches behind herself to draw energy from her book of Runes, only recalling too late that you destroyed it. Instead, temporizing, with a flick of her hand she signals her minions to attack. Master Sweetpaws backhands the raggedy clown as he bounds off the shelf, his talons outstretched and jaws wide, leaping straight towards you from his perch. You reflexively lift your hand to shield your face and are surprised as raw magic pours forth, constricting to a narrow beam that slices through the ferocious sock puppet, and then continues through his charred fabric to impale Malice the Clown.[paragraph break][end if]You throw a spinning, glowing glob of magic at Carol and it engulfs her; she agonizes within it like a bug in molasses, her screams drowned in its crackling energy as she falls to her knees. As she struggles to her knees, she manages to push one hand clear of the swirling crimson miasma and with that hand she sends her own reverberating wave of cobalt blue magic towards you, more specifically, towards you belly. Something with in you shudders and kicks, an innocent caught in unaware in a cosmic conflict."
 	
 To say benjack-doom2:
 	say "Thundering energies wind through you in opposing directions, pitting you helplessly against your own unborn child.[paragraph break]The air vibrates, [quotation mark]Carol, I do forbid your Apostasy! You shall not unwrite the Third Covenant; the Servants that overthrew the Elder Gods will not abide their Return. I do command you: abandon forthwith your senseless Attack, for if you do destroy the Woman Naomi, so do you destroy the Vessel of your owne Mark.[quotation mark] The words are punctuated by a renewed tide of crimson force.[paragraph break]Carol only redoubles her efforts, [quotation mark]Not so, Christabell. My Vessel need only survive a heart beat beyond that of its mother for me to break from my circular prison. Then we shall see how the Elder Gods reshape the world.[quotation mark][paragraph break]".
 	
 To say benjack-doom3:
-	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, my Fusion finally untangled.[quotation mark][paragraph break]";
+	say "Unbidden words pour from your mouth, [quotation mark]Such an End the New Gods will not permit; now with their Powers adjoined to mine, I do slay your Instrument and disrupt your Fusion.[quotation mark] Suddenly, all of Christabell[apostrophe]s power and infinitely more turn inward.[paragraph break][quotation mark]No![quotation mark] screams Carol, as she tries to push a wedge of her own powers through the crimson fist tightening on your belly.[paragraph break]But it is not enough. Within you, there is a final fluttering, and then nothing.[paragraph break]As Carol fades, you read her final silent words on her lips, [quotation mark]I[apostrophe]m sorry.[quotation mark] And she too is gone.[paragraph break][quotation mark]Your small Parte in this be nowe Compleat, dear Naomi,[quotation mark] whispers Christabell. [quotation mark]Carol[apostrophe]s Cycle is broken, but long will the Frewt of her Deeds despoil the Earth. In this Struggle I have been emptied of my Potence and do take my Leave, mine owne Fusion finally untangled.[quotation mark][paragraph break]";
 	now Yourself is benjack-guilty;
 	now benjack-Carol is nowhere;
 	now benjack-Carol is unseen.
@@ -2799,7 +2812,7 @@ Carry out benjack-KHing:
 	let R be a random benjack-runebook in the location;
 	now R is unseen;
 	now R is nowhere;
-	say "You join your fists together and aim at the [R], speaking the invocation, [quotation mark]kwisatz haderach[quotation mark]."
+	say "You join your fists together and aim at the [R], and speak the invocation:  [quotation mark]kwisatz haderach[quotation mark]."
 
 [The result of this then gets described in an after benjack-KHing, one for the binder, one for Naomi's book]
 
