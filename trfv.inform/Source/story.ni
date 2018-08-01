@@ -2903,7 +2903,8 @@ To say benjack-BARR:
 To say benjack-talk-to-whom:
 	say "Who are you talking to? No one is here".
 	
-Book 6 - TMWNMTK - Not For Release
+Book 6 - TMWNMTK
+[This section should be NOT FOR RELEASE in the final game -- but necessary for beta-testers to play/test]
 
 Part 1 - Additional Set Up 
 
