@@ -225,6 +225,7 @@ benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is 
 Benjack-Carol can be disruption_informed. Benjack-Carol is not disruption_informed.
 Benjack-Carol can be requesting_permission.  Benjack-Carol is not requesting_permission.
 Benjack-Carol can be teapot-angry. Benjack-Carol is not teapot-angry.
+Benjack-Carol can be n2-conversed. Benjack-Carol is not n2-conversed.
 
 The description of benjack-Carol is "[benjack-Carol-description].".
 
@@ -1718,6 +1719,7 @@ Before conversing or hailing when benjack-N2 is happening for the first time:
 		say "[quotation mark]Don[apostrophe]t you people even knock![quotation mark] screams Carol as she realizes someone is in the room. [quotation mark]You?[quotation mark] she screeches, and then, settling down, [quotation mark]Not as tall as I remember.[quotation mark][paragraph break][quotation mark]No? Maybe I got a little shorter when you threw me through your door last time.[quotation mark][paragraph break][quotation mark]I suppose I did have a bit of a temper as a child,[quotation mark] says the teenager as she sits down at her desk. She flips through a school book and tosses it back on the pile with more drama than you thought possible. [quotation mark]I suppose it isn[apostrophe]t entirely horrible to have someone to talk to, who can hear me. You might as well stay. I haven[apostrophe]t throw anyone through the door lately.[quotation mark][paragraph break]";
 	otherwise:
 		say "[quotation mark]Oh, my heavens and stars,[quotation mark] says Carol, wide-eyed, [quotation mark]if it isn[apostrophe]t Auntie Naomi! What a pleasant surprise.[quotation mark][paragraph break][quotation mark]Did people really talk like that?[quotation mark] you ask, incredulous.[quotation mark]No, but I thought it would add flavor.[quotation mark] Carol pulls out the chair behind her desk and sits down. [quotation mark]I[apostrophe]d offer you a chair, but you would just go right through it.[quotation mark][paragraph break][quotation mark]Thanks, it[apostrophe]s okay, I[apostrophe]ll stand.[quotation mark][paragraph break][quotation mark]So it[apostrophe]s been, what? About a decade? Well, nice of you to look in on me again. What have you been doing with yourself?[quotation mark][paragraph break]Since smalltalk seems to be the object of the day, you reply in kind, [quotation mark]Oh, same old, same old, fritting about here and there.[quotation mark][paragraph break]Carol grins and crosses her legs.";
+	now benjack-Carol is n2-conversed;
 	stop the action.
 	
 
@@ -1838,6 +1840,7 @@ Carry out benjack-N2-leaving:
 		if benjack-Carol is not requesting_permission:
 			now benjack-Carol is requesting_permission; [first time threatening Naomi]
 			say "[quotation mark]I[apostrophe]ve learned a few things since you were here last time; surely, you must know that [bold type]Christabell[roman type] taught me every chance she got. She[apostrophe]s such a generous soul, and so starved for company out there on the hill.[quotation mark] Carol glances out the window towards the cliffs.[paragraph break][quotation mark]Seems like you are the one who can[apostrophe]t get enough of company. No wonder you don[apostrophe]t get a lot of visitors, if you trap everyone in your room. Not many teenagers would want to lock adults in with them.[quotation mark][paragraph break][quotation mark]Well, you are the only one who can see me, so you[apostrophe]ve got that going for you. No, I[apostrophe]m happy to let you go, I just want to be able to find you again, you know, if I need you for something.[quotation mark][paragraph break][quotation mark]It[apostrophe]s nice to be needed.[quotation mark][paragraph break][quotation mark]So I understand. I will lower my barrier for you just as soon as you agree to bear my mark. The good news, it[apostrophe]s painless, the downside: it is a stain on your immortal soul. There[apostrophe]s no such thing as a free lunch, after all. So, what[apostrophe]ll it be, shall I mark you?[quotation mark] [paragraph break]She extends an index finger towards you.";
+			now benjack-Carol is n2-conversed;
 		otherwise: [subesquent requests to Naomi]
 			say "[one of]Carol stands right in front of you, hands on her hips waiting for an answer, [quotation mark]Listen, due to the metaphysics of complicity or some such, before you go, I need an yea or nay from you -- shall I place my mark?[quotation mark][or][quotation mark]Not to be a bore,[quotation mark] say Carol, [quotation mark]but I need to ask your consent to mark you before you split; can I place it?[quotation mark][or]Carol goes about her business, ignoring you.[stopping][paragraph break]";
 
@@ -1849,7 +1852,9 @@ Instead of saying yes when benjack-Carol is requesting_permission during benjack
 	now benjack-Carol is not requesting_permission;
 	now yourself is benjack-baby_marked.
 
-
+Every turn when benjack-n2 is happening and benjack-carol is not n2-conversed:
+	if a random chance of 1 in 3 succeeds:
+		say "Carol [one of]continues to comb her long hair[or]carefully applies some makeup[or]mutters to herself in some forgotten language[or]does her nails[or]applies some rough[or]doesn't seem aware of your skulking about her room[or]appears oblivious to your prescence[in random order]."
 
 Chapter 5 - N2 Tests
 
@@ -2387,6 +2392,7 @@ Instead of benjack-ploughvering when benjack-N3 is happening:
 	
 To say benjack-stuck-n3:
 	say "[one of][quotation mark]What gives, Carol? Am I your prisoner now?[quotation mark][paragraph break][quotation mark]Naomi, it[apostrophe]s not me holding you back --  honest![quotation mark] pleads Carol. [quotation mark]It[apostrophe]s the universe. When you[apostrophe]re here, some part of you is in my time. The future is written from your perspective, but not mine; all is fluid and potential. Apparently, you have some decisions to make, and the universe can[apostrophe]t get on with its business until you make them. I urge you to think carefully on your choices, as this is apparently a nodal moment, the sort of historical linchpin that I have long labored to bring about at great cost.[quotation mark][paragraph break][quotation mark]You[apostrophe]ll understand if I choose not to believe you.[quotation mark][paragraph break][quotation mark]Believe what you want, but think carefully about your next actions. There is no reason we need be enemies.[quotation mark][or]An invisible force blocks your exit.  Carol again shrugs her shoulders and claims it is none of her doing, but somehow related to the universe and unwritten destiny.[no line break][or]An invisible force blocks your exit.[no line break][stopping][paragraph break]".
+
 	
 Before opening the benjack-window when benjack-N3 is happening:
 	if the benjack-window is open:
