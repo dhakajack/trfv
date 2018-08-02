@@ -1137,7 +1137,7 @@ Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
 
 Before going a direction when the location is juxtaDAN8 and benjack-N1 has happened and yourself is not benjack-spell_enabled:
 	if the room the noun from the location is DAN8:
-		say "You round the path and find yourself in a familiar knoll flanked on three sides by tall, dark cliffs. In the center of a clearing before you is a huge pile of rusting railroad track.[paragraph break]Leaning back against the pile of iron, [benjack-Christabell] gives you a fatigued wave and after some exertion of effort becomes more substantial.";
+		say "You round the path and find yourself in a familiar knoll flanked on three sides by tall, dark cliffs. In the center of a clearing before you is a huge pile of rusting railroad track.[paragraph break]Leaning back against the pile of iron, [benjack-Christabell] gives you a fatigued wave and after some exertion of effort becomes more substantial.[paragraph break][quotation mark]Hello, again, Friend Naomi,[quotation mark] she says weakly.";
 	otherwise:
 		continue the action.
 		
