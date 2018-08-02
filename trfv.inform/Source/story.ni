@@ -70,24 +70,6 @@ Instead of inserting something (called the item) into a benjack-runebook:
 
 Part 2 - Conversation Disambiguation
 
-[If we run into ambiguation prompts, this is a quick way to resolve them.
-
-A thing can be conversation-preferred. A thing is usually not conversation-preferred.
-
-Does the player mean quizzing about something conversation-preferred: it is likely.
-
-Does the player mean informing about something conversation-preferred: it is likely.
-
-Does the player mean implicit-quizzing something conversation-preferred: it is likely.
-
-Does the player mean implicit-informing something conversation-preferred: it is likely.
-
-Definition: a thing is conversation-preferred:
-	if it is xxxx, decide yes;
-	decide no.
-	
-]
-
 Understand "tell about [any known thing]" as implicit-informing when the location is in the benjack-realm.
 
 Part 3 - I asked Ben and there is no part 3 - why would there be a part 3?
@@ -130,7 +112,7 @@ Printed name of DAN8 is "Hillside Path (Jack Welch)".
 
 The commentary of DAN8 is "DAN8 Commentary".
 
-Description of DAN8 is "[one of][Benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
+Description of DAN8 is "[one of][benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
 The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of railroad tracks". The benjack-mound is a supporter.
 Understand "mound/pile/pyle/lump/track/tracks/iron/sticks/rail/rayle/railroad/rail/rails/piles/lumps/irons/ironne/altar" as the benjack-mound when the location is in the benjack-realm.
@@ -199,11 +181,11 @@ Description of M2F3 is "[benjack-nursery-description][no line break]".
 
 To say benjack-nursery-description:
 	if benjack-N1 is happening:
-		say "[one of][Benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the entrance, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand.[no line break][paragraph break][only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed. The exit is to the south.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.";
+		say "[one of][benjack-hint-prompt][or][stopping][first time]You would have killed to have this charming room when you were yourself five years old: a fluffy pink and white dotted comforter covers a bed overflowing with stuffed animals. Beside it, a play kitchen replete with pots, pans, and a very realistic looking oven. On the far wall, a large bay window trimmed in lacy curtains matching the bedspread. To the left of the window, a small writing desk and tiny lamp, and nearer to the entrance, a an old-fashioned record player rests on wooden stand. [paragraph break]Your eye is quickly drawn, however, to one discordant item: framed black and white photo of a bald man smiles down towards the center of the room. The exquisitely carved heavy gilded frame obviously predates photography by centuries, and you are hard pressed to guess how this odd portrait fits into the decor.[paragraph break]In the center of the room, the tea-party itself is already underway. Seated on each side of the table in toy chairs are several stuff animals. Carol stands just opposite you with teapot in hand.[no line break][paragraph break][only]An ideal room for a well-heeled little girl of five. Room furnishings include a bed, a play kitchen, a desk, and a record player. A large bay window occupies most of the external wall, and a large portrait hangs at the foot of the bed. The exit is to the south.[paragraph break]A tea party with Carol and a bunch of stuffed animals is in full swing in the middle of the room.";
 	otherwise if benjack-N2 is happening:
-		say "[one of]You walk into Carol's room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the entrance, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk[stopping]. The exit is to the south.";
+		say "[one of][benjack-hint-prompt][or][stopping][one of]You walk into Carol's room.[paragraph break]It is the same room as before, but no longer outfitted for a five-year-old.[paragraph break]A somewhat older Carol stands behind her table, her back to you, combing her long blonde hair[or]The room has changed since you last saw it: there are fewer toys and it is less cluttered; in a word, more mature. [paragraph break]The bed now sports a light blanket, pastel blue in color, pulled taut over the twin mattress, with two pillows stacked at the head of the bed. To one side of the window stands a small table with a number of items on it, including a small mirror and some makeup. The large bay window looks out on the same scene as before, but leaves on the trees far below are just now beginning to sport autumn colors. To its side, the small writing desk has been replaced with a larger one and some books are stacked beside the same desk lamp you saw last time. A few pieces of artwork are stuck to the wall next to the desk. Nearer to the entrance, an old-fashioned turntable rests on a wooden stand.[paragraph break]Notably missing is the large framed portrait of President Eisenhower and its weighty golden frame. A single bent nail remains in the wall surrounded by a slightly discolored patch of wall where the picture once hung. [paragraph break]Below that space, three stuffed toys sit in a tight circle on the same tiny chairs that you saw last time[or]The room is surprisingly neat and tidy, particularly for a teenager, and the furnishings are sparse: a bed, table, desk, and a turntable.[paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall, where a large framed portrait once hung. A few pieces of artwork are affixed to the wall above the desk[or]The room is surprisingly neat and tidy, and the furnishings are sparse: a bed, table, desk, and a turntable. [paragraph break]A few toys are gathered neatly in one corner beneath a blank patch of wall. Some artwork is affixed to the wall above the desk[stopping]. The exit is to the south.";
 	otherwise if benjack-N3 is happening:
-		say "The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same little stand. The exit is to the south.".
+		say "[one of][benjack-hint-prompt][or][stopping]The room is brighter, but colder. A fluorescent fixture fills the room with blue-white light, which reflects harshly off the newly painted white walls. The stubby light gray carpet dulls the sound in the room, but contributes no warmth. At least one item in the room has not changed: the bed, same frame, although the blanket is now a darker blue, and there are no pillows. A small reading light is clamped to the headboard and there are a couple books on the nightstand. At the foot of the bed, the heavy gold frame is back, this time occupied by Richard Nixon. On the ground far below the bedroom window, a heavy padding of snow has covered the ground. To the left of the window, the desk is a now a steel and chrome affair, very modern. A computer terminal occupies about half the desk and a notebook lies next to it. Above the desk, two rows of metal shelves have been installed. The record player is gone, replaced now by a reel-to-reel tape machine on the same little stand. The exit is to the south.".
 			
 The commentary of M2F3 is "M2F3 Commentary".
 	
@@ -233,6 +215,7 @@ Chapter Carol
 benjack-Carol is a female person in M2F3.  The printed name of benjack-Carol is "Carol".  Understand "Carol/girl/child/herself" as "[benjack-CarolToken]" when the location is in the benjack-realm. Understand "[benjack-CarolToken]" as benjack-Carol when the location is M2F3. 
 Benjack-Carol can be disruption_informed. Benjack-Carol is not disruption_informed.
 Benjack-Carol can be requesting_permission.  Benjack-Carol is not requesting_permission.
+Benjack-Carol can be teapot-angry. Benjack-Carol is not teapot-angry.
 
 The description of benjack-Carol is "[benjack-Carol-description].".
 
@@ -262,7 +245,6 @@ To benjack-stage-on ( setnumber - a number):
 		-- otherwise:
 			say "Error: attemped illegal stage-on";
 	repeat with item running through L:
-		[say "moving in [item] to nursery.";[TODO DEBUGGING remove for production]]
 		now item is seen;
 		move item to M2F3.
 			
@@ -278,7 +260,6 @@ To benjack-stage-off ( setnumber - a number):
 		-- otherwise:
 			say "Error: attemped illegal stage-off";
 	repeat with item running through L:
-		[say "ejecting [item] to nowhere.";[TODO DEBUGGING remove for production]]
 		now item is unseen;
 		now item is nowhere.
 		
@@ -373,7 +354,6 @@ Chapter 1 - R0 Begins
 When benjack-r0 begins:
 	now Benjack-scene-specific-hint is "Gnyx gb Puevfgnoryy nf zhpu nf lbh jbhyq yvxr sbe fbzr onpxtebhaq vasbezngvba gung znl or vzcbegnag yngre";
 	benjack-conversation-customize.
-	
 	
 [hint text:
 Talk to Christabell as much as you would like for some background information that may be important later]
@@ -629,7 +609,6 @@ test eager with "x tracks / x sky / go east / i / x woman"
 Every turn while benjack-Christabell is eager:
 	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][or]The woman seems more desperate now. [quotation mark]Milady, do you see me?[quotation mark][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[stopping][paragraph break]".
 
-[TODO:  wasn't able to use "for the first/second time" in conjunction with "during spiritWantsAttention".  This is my hack.]
 The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
 Before going when benjack-Christabell is eager:
 	if benjack-guiltLevel of the player is 0:
@@ -700,7 +679,7 @@ Rule for printing the name of a benjack-runebook (called the evil tome):
 	say "[printed name of the evil tome]";
 	omit contents in listing.
 	
-Chapter 1 - N1 Begins
+Chapter 1 -  
 
 When benjack-N1 begins:
 	now Benjack-scene-specific-hint is "Lbh arrq gb uhzbe Pneby ol cynlvat nybat jvgu ure grn cnegl. Fur arrqf gb lbh gur zntvp jbeqf [quotation mark]obggbzf-hc[quotation mark] gb freir n ebhaq bs grn. Lbh pna unir n srj phcf bs grn vs lbh jnag, ohg bapr lbh unir unq bar, lbh pna yrnir. Lbh pna nyfb nfx/gryy nobhg n ahzore bs pbairefngvba gbcvpf gung jvyy or hfrshy yngre va gur tnzr";
@@ -915,12 +894,6 @@ Instead of searching benjack-window:
 	
 Instead of attacking benjack-window:
 	say "The house has survived Vermont winters, it will survive you.".
-	
-[TODO:  hitting action isn't defined, nor is 'looking through'
-Instead of hitting the benjack-window, say "The house has survived Vermont winters, it will survive you."
-Instead of looking through the benjack-window, say "Through thick glass warped by time, you can see the estate grounds far below you. The dark hills where you encountered Christabell are in the distance."
-
-TODO: trees and cliffs should be visible, change with season]
 
 The benjack-scrap-5 is a benjack-runebook. The printed name of the benjack-scrap-5 is "scrapbook".
 Understand "scrapbook" or "book" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
@@ -951,8 +924,6 @@ Instead of reading the benjack-scrap-5:
 		add title of clip to L;
 	say "[italic type][L][roman type].".
 	
-[TODO : floor/carpet, walls, and might as well ceiling. Floor and walls are mentioned in later nursey parts. The floor and walls should be substantial and ceiling too high to reach. ]
-
 The list of things called N1-furnishings is always {benjack-comforter, benjack-pillow, benjack-dolls, benjack-elephant, benjack-monkey, benjack-cap, benjack-sweater, benjack-clown, benjack-lamb, benjack-kitchen, benjack-apron, benjack-pots, benjack-pantry, benjack-desk, benjack-drawer, benjack-desktop, benjack-lamp, benjack-recordplayer, benjack-record, benjack-table, benjack-frame, benjack-beasts, benjack-eisenhower, benjack-nameplate, benjack-toychair, benjack-teacup, benjack-clothing, benjack-bow, benjack-wall, benjack-floor, benjack-window, benjack-scrap-5, benjack-carol, benjack-teacup}.
 
 Chapter 3 - N1 Conversation
@@ -1234,6 +1205,7 @@ Instead of dropping mtw-teapot when benjack-N1 is happening:
 	now mtw-teapot is nowhere;
 	now benjack-bigmirror is nowhere;
 	say "The delicate antique smashes into a million pieces that melt like snowflakes and disappear.[paragraph break]Carol stares, immobile, in horror.[paragraph break][quotation mark][quotation mark]What did you do?[quotation mark] She whispers, more to herself than you. [quotation mark]Grand-uncle will be… he’ll be angry.[quotation mark][paragraph break]Tears well in Carol’s eyes. [quotation mark]He will be so, so angry. Even when he’s not angry, he’s so… cruel.[quotation mark] She wipes her running nose with the back of her sleeve and through choked sobs asks, [quotation mark]Why? Why did you do that?[quotation mark][paragraph break]Carol throws her arms outward, palms towards you and you experience the memorable phenomenon of being propelled through a phantasmal wall.";
+	now benjack-Carol is teapot-angry;
 	try going south.
 
 Instead of examining the mtw-teapot when benjack-N1 is happening:
@@ -1292,6 +1264,7 @@ Part 6 - Scene R1 Naomi is Marked and Learns Some Spells
 Chapter 1 - R1 Begins
 
 When benjack-R1 begins:
+	say benjack-hint-prompt;
 	now Benjack-scene-specific-hint is "Bapr ntnva, lbh pna gnyx jvgu Puevfgnoryy nobhg n ahzore bs gbcvpf, ohg gur xrl bar vf nfxvat ure nobhg gur [quotation mark]orfgbjnapr[quotation mark], n zrnaf bs genafsreevat zntvpny raretl sebz bar crefba gb nabgure. Guvf jvyy eryrnfr lbh sebz orvat nggenpgrq gb gur cvyr bs envyebnq genpxf naq jvyy nyybj Puevfgnoryy gb fgbc snqvat va naq bhg[one of][or]. Gb pnfg gur orfgbjnapr fcryy, glcr [quotation mark]kvmmv[quotation mark]. Nyfb abgr gung lbh pna ninvy lbhefrys bs gur [quotation mark]cybhtuire[quotation mark] naq [quotation mark]xjvfngm unqrenpu[quotation mark] fcryyf[stopping]";
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed;
 	benjack-conversation-customize;
@@ -1598,13 +1571,10 @@ Chapter 1 - N2 begins
 When benjack-N2 begins:
 	now Benjack-scene-specific-hint is "Pneby vafvfgf bar cynpvat ure znex ba lbh, ohg arrqf lbhe pbafrag. Lbh unir gb nterr be fur jvyy abg yrg lbh bhg bs gur ebbz. Nf nyjnlf, gurer vf cyragl bs pbairefngvba gb or unq";
 	benjack-stage-on 2;
-	now the current interlocutor is benjack-Carol;
-	say "[benjack-N2-greeting]";
+	[now the current interlocutor is benjack-Carol;]
 	say "[benjack-nursery-description]";
 	benjack-conversation-customize.
 
-To say benjack-N2-greeting:
-	say "". [TODO:  based on whether N1 ended on friendly note or not]
 	
 [hint text: Carol insists one placing her mark on you, but needs your consent. You have to agree or she will not let you out of the room. As always, there is plenty of conversation to be had]
 
@@ -1721,6 +1691,14 @@ benjack-WinkelbottomSubject is a subject. Understand "winkelbottom/lamb/misses" 
 benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happened. The printed name of benjack-WinkelbottomSubject is "Misses Winkelbottom".
 
 Section 2 - N2 Quips
+
+Before conversing or hailing when benjack-N2 is happening for the first time:
+	if benjack-Carol is teapot-angry:
+		say "[quotation mark]Don[apostrophe]t you people even knock![quotation mark] screams Carol as she realizes someone is in the room. [quotation mark]You?[quotation mark] she screeches, and then, settling down, [quotation mark]Not as tall as I remember.[quotation mark][paragraph break][quotation mark]No? Maybe I got a little shorter when you threw me through your door last time.[quotation mark][paragraph break][quotation mark]I suppose I did have a bit of a temper as a child,[quotation mark] says the teenager as she sits down at her desk. She flips through a school book and tosses it back on the pile with more drama than you thought possible. [quotation mark]I suppose it isn[apostrophe]t entirely horrible to have someone to talk to, who can hear me. You might as well stay. I haven[apostrophe]t throw anyone through the door lately.[quotation mark][paragraph break]";
+	otherwise:
+		say "[quotation mark]Oh, my heavens and stars,[quotation mark] says Carol, wide-eyed, [quotation mark]if it isn[apostrophe]t Auntie Naomi! What a pleasant surprise.[quotation mark][paragraph break][quotation mark]Did people really talk like that?[quotation mark] you ask, incredulous.[quotation mark]No, but I thought it would add flavor.[quotation mark] Carol pulls out the chair behind her desk and sits down. [quotation mark]I[apostrophe]d offer you a chair, but you would just go right through it.[quotation mark][paragraph break][quotation mark]Thanks, it[apostrophe]s okay, I[apostrophe]ll stand.[quotation mark][paragraph break][quotation mark]So it[apostrophe]s been, what? About a decade? Well, nice of you to look in on me again. What have you been doing with yourself?[quotation mark][paragraph break]Since smalltalk seems to be the object of the day, you reply in kind, [quotation mark]Oh, same old, same old, fritting about here and there.[quotation mark][paragraph break]Carol grins and crosses her legs.";
+	stop the action.
+	
 
 After quizzing benjack-Christabell about a benjack-clipping when benjack-r1 is happening:
 	say "Aye, that [one of]do have the true Ring of a Rune to it[or]haveth the Waye of the Deep Ones about it[stopping]."
@@ -1868,6 +1846,7 @@ Part 8 - Scene R2 Plotting Carol's Disruption
 Chapter 1 - R2 begins
 
 When benjack-R2 begins:
+	say benjack-hint-prompt;
 	now Benjack-scene-specific-hint is "Lbh pna pung jvgu Puevfgnoryy gb trg n orggre haqrefgnaqvat bs jung vf tbvat ba. Jura lbh yrnir, fur jvyy gryy lbh jung fur jnagf lbh gb qb jvgu Pneby onpx va gur znafvba";
 	say "As the day has progressed, the shadows over the hillside deepen, but you easily perceive Christabell, every bit as substantial as you last saw her, walking briskly over to to greet you.";
 	now yourself is benjack-ploughver-inhibited;
@@ -2672,7 +2651,7 @@ Understand "hargreaves/wilson/remembered/obituary" as Benjack-clipping-hargreave
 
 Benjack-clipping-9 is a benjack-clipping. 
 The title of Benjack-clipping-9 is "Seinfeld Actor Dies".
-The list of text called Benjack-clipping-9-text is always {"XXXXX, who plays George Costanza on the hit television comedy Seinfeld is presumed dead along with eighteen others, fourteen passengers and five crew, who were lost at sea last Friday aboard a commercial fishing boat, Hogar's Wrath, operating out of Montauk, New York. Communication was lost with the [quotation mark]head[quotation mark] boat two hours after its departure and it was declared missing when it failed to return to the dock later that day. A search effort was delayed by sudden squalls. The ship was discovered listing heavily off the southern coast of Greenland a day later by military aircraft operating out of Thule Air Force Base.[paragraph break]The boat had been chartered that day by a group known as [quotation mark]The Fishing Elvises[quotation mark], a troupe of Elvis impersonators who are also accomplished fishermen. Two years ago, on a similar voyage, the leader of the troupe, Dan Gropmeier, landed a record 400-pound black ruffled flounder. This year, due to illness, Dan was unable to join his troupe, and the position was filled at the last minute by Mr. XX.[paragraph break]No survivors were found aboard the vessel when it was boarded and no records were found that explain how the ship got so far of course in such a short period of time. Searchers did report one unusual finding though: the boat's coolers, which store the day's catch, were full, but not of the kinds of fish typically caught in waters around Long Island.[paragraph break]Many of the fish in the hold were benthic, or deep water species. According to Phyllis Falcone of the SUNY Stonybrook, [quotation mark]those fish live in dark and frigid waters more than a mile deep. I can't even explain how they managed to haul them up to the surface without them exploding from decompression. More over, I don't think any of them are native to the Atlantic. I can't even begin to classify the more primative-looking specimens. Some have gigantic eyes, jaws bristling with row upon row of needle-like teeth, and ghostly, glowing skin; a few have rudimentary legs and other claw-like appendages or perhaps spinnerets like a spider, others are segmented like insects and are crowned with rows of undulating tentacles. We'll be working on this for a while.[quotation mark][paragraph break][quotation mark]It's a real tragedy for all of us,[quotation mark] said castmate Jerry Seinfeld, who spoke to the press along with co-star Julia Luis Dreyfus. [quotation mark]XXX didn't even like fishing -- it wasn't like him at all. But he gave me a call that morning and said he just felt like going fishing that day, so that's what he did. Go figure. I guess it was a fluke.[quotation mark]"}.
+The list of text called Benjack-clipping-9-text is always {"Jason Alexander, who plays George Costanza on the hit television comedy [italic type]Seinfeld[roman type] is presumed dead along with eighteen others, fourteen passengers and five crew, who were lost at sea last Friday aboard a commercial fishing boat, Hogar's Wrath, operating out of Montauk, New York. Communication was lost with the [quotation mark]head[quotation mark] boat two hours after its departure and it was declared missing when it failed to return to the dock later that day. A search effort was delayed by sudden squalls. The ship was discovered listing heavily off the southern coast of Greenland a day later by military aircraft operating out of Thule Air Force Base.[paragraph break]The boat had been chartered that day by a group known as [quotation mark]The Fishing Elvises[quotation mark], a troupe of Elvis impersonators who are also accomplished fishermen. Two years ago, on a similar voyage, the leader of the troupe, Dan Gropmeier, landed a record 400-pound black ruffled flounder. This year, due to illness, Dan was unable to join his troupe, and the position was filled at the last minute by Mr. Alexander.[paragraph break]No survivors were found aboard the vessel when it was boarded and no records were found that explain how the ship got so far of course in such a short period of time. Searchers did report one unusual finding though: the boat's coolers, which store the day's catch, were full, but not of the kinds of fish typically caught in waters around Long Island.[paragraph break]Many of the fish in the hold were benthic, or deep water species. According to Phyllis Falcone of the SUNY Stonybrook, [quotation mark]those fish live in dark and frigid waters more than a mile deep. I can't even explain how they managed to haul them up to the surface without them exploding from decompression. More over, I don't think any of them are native to the Atlantic. I can't even begin to classify the more primative-looking specimens. Some have gigantic eyes, jaws bristling with row upon row of needle-like teeth, and ghostly, glowing skin; a few have rudimentary legs and other claw-like appendages or perhaps spinnerets like a spider, others are segmented like insects and are crowned with rows of undulating tentacles. We'll be working on this for a while.[quotation mark][paragraph break][quotation mark]It's a real tragedy for all of us,[quotation mark] said castmate Jerry Seinfeld, who spoke to the press along with co-star Julia Luis Dreyfus. [quotation mark]Jason didn't even like fishing -- it wasn't like him at all. But he gave me a call that morning and said he just felt like going fishing that day, so that's what he did. Go figure. I guess it was a fluke.[quotation mark]"}.
 The content of Benjack-clipping-9 is Benjack-clipping-9-text.
 Understand "seinfeld/actor/dies/george/costanza" as Benjack-clipping-9 when the location is in the benjack-realm
 
@@ -2711,16 +2690,6 @@ The title of Benjack-clipping-scorpion is "USS Scorpion, 22 May".
 The list of text called Benjack-clipping-scorpion-text is always {"[fixed letter spacing][line break]DOSSIER PENTACLE DOSSIER DEEP1 DOSSIER CATACON[line break]REVCO 217[line break]21 MAY 1968 1000Z AUTHENTICATED FOW-037-LOS[line break]SUBLANT REPORTS LOSS OF USS SCORPION (SSN-589)[line break]SKIPJACK CLASS U.S. NUCLEAR ATTACK SUBMARINE.[line break]LAST CONTACT VIA NAVCOMGR1 IN NEA MAKRI,[line break]GREECE AT 0020Z 20 MAY 1968 REPORTED PURSUIT OF[line break]NOVEMBER CLASS SOVIET SUBMARINE, THE INTENDED[line break]TARGET, EASTWARD AT 15 KNOTS DEPTH 350FT. MEDCAR[line break]COUNTERMEASURES WERE INSTITUTED IMMEDIATELY TO[line break]PROVIDE ACOUSTIC COVER FOR THE EVENT WHICH LASTED[line break]APPROXIMATELY 20 MINUTES.[variable letter spacing]"}.
 The content of Benjack-clipping-scorpion is Benjack-clipping-scorpion-text.
 Understand "uss/scorpion/ssn/SSN-589" as Benjack-clipping-scorpion when the location is in the benjack-realm.
-
-[Clipping template
-
-Benjack-clipping-xxx is a benjack-clipping. 
-The title of Benjack-clipping-xxx is "xxx".
-The list of text called Benjack-clipping-xxx-text is always {"xxx"}.
-The content of Benjack-clipping-xxx is Benjack-clipping-xxx-text.
-Understand "XXX" as Benjack-clipping-xxx when the location is in the benjack-realm.
-
-]
 
 Book 4 - New Actions
 
