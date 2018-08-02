@@ -5,6 +5,8 @@ The story genre is "horror".
 The release number is 2. [first beta-test]
 The story creation year is 2018.
 
+Use MAX_NUM_STATIC_STRINGS of 30000.
+
 Include Cragne Suite by Ryan Veeder.
 
 [Naming & Scoping Convention Proposal
@@ -214,6 +216,8 @@ Understand "talk to [someone]" as a mistake ("[benjack-talk-hint].") when the lo
 benjack-Christabell can be unaddressed or eager or chatty or candid or bypassed.  benjack-Christabell is unaddressed.
 
 benjack-Christabell can be either run-down or charged-up. benjack-Christabell is run-down.
+
+benjack-Christabell has a number called chargeQuips. The chargeQuips of benjack-Christabell are 0.
 
 Chapter Carol
 
@@ -1289,7 +1293,7 @@ Instead of conversing or hailing when benjack-R1 is happening for the first time
 
 Section 1 - R1 Subjects
 
-benjack-fading is a subject. Understand "fading/fade/disappear/disappearance/weakness/weakening/dissipation/dissapating" as benjack-fading when the location is DAN8. 
+benjack-fading is a subject. Understand "fading/fade/disappear/disappearance/weakness/weakening/dissipation/dissapating/flicker/flickers/flickering/visibility" as benjack-fading when the location is DAN8. 
 
 benjack-Runes is a subject.  Understand "rune/runes" as benjack-Runes when the location is in the benjack-realm. The printed name of benjack-Runes is "runes".
 
@@ -1559,6 +1563,21 @@ Before benjack-ploughvering when the yourself is benjack-spell_enabled during be
 	otherwise:
 		say "Christabell calls after you, [quotation mark]Do remember to help liberate Carol from her Runes![quotation mark] and then everything goes dark."
 		[could also use this to load up N2 if the scene begins rule doesn't cut it.]	
+		
+Every turn during benjack-r1:
+	if benjack-Christabell is not charged-up:
+		if the chargeQuips of benjack-Christabell are less than 5:
+			if a random chance of 1 in 2 succeeds:
+				say "[one of]Chirstabell seems to flicker for a moment[or]Christabell seems for a moment less substantial[or]For just a second, you can see through Christabell[or]Christabell winks out of existance for just a second[or]The light plays strangely over Christabell and for a brief instant she appears ghostly and luminous rather than solid[in random order].";
+				increase the chargeQuips of benjack-Christabell by 1;
+		otherwise if the chargeQuips of benjack-Christabell are less than 11:
+			if a random chance of 1 in 2 succeeds:
+				say "[one of]Christabell flickers like a bad light bulb for several seconds, coming and going out of existence.[no line break][or]For few moments, Christabell fades out of existence, [quotation mark]Sorry,[quotation mark] she says, [quotation mark]I do have but little control over this accursed [bold type]Fading[roman type] and it is a Botheration.[quotation mark][or]Christabell is there one instant and gone the next. When she reappears, she seems to be exerting significant effort to remain visible.[no line break][or]Christabell fades strongly, [quotation mark]I pray you one Instant,[quotation mark] and Christabell forces herself back to corporal solidity.[no line break][or]Christabell fades for a few moments leaving your alone on the hilltop and then reappears some distance away. She apologizes, [quotation mark]I do beg your Indulgence in this matter, the [bold type]Fading[roman type] has gotten quite beyond reasonable Controll[quotation mark]. She fights to remain visible.[no line break][or]Christabell's voice fades in and out as does her image.[no line break][in random order][paragraph break]";
+				increase the chargeQuips of benjack-Christabell by 1;
+		otherwise:
+			if a random chance of 1 in 3 succeeds:
+				say "[one of]Christabell disappears for more than a minute, and when she reappears, she seems fatigued from the effort.[no line break][or]Suddenly, Christabell becomes so transparent that you can barely see her, [quotation mark]Sorry, let me do try to be here a bit moor,[quotation mark] she says and with great force of will becomes more substantial, but barely.[no line break][or]Christabell kneels from the exhaustion of trying to remain substantial.[no line break][or][quotation mark]Naomi, I do fear that in but a short time my [bold type]Fading[roman type] will have become so dire as to put an end to my [bold type]Visibility[roman type][quotation mark][or][quotation mark]The situation is dire, Naomi. Without the benefit of the [bold type]Bestowance[roman type] I do fear that I shall [bold type]fade[roman type] Eternally[quotation mark][or][quotation mark]Would that you help me in combatting this afflicktive [bold type]fading[roman type] that does vex me,[quotation mark] pleads Christabell nervously as she fades yet again.[no line break][in random order][paragraph break]";
+				increase the chargeQuips of benjack-Christabell by 1.
 
 Chapter 4 - R1 Tests
 
