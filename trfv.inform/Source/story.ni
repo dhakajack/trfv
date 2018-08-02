@@ -6,6 +6,7 @@ The release number is 2. [first beta-test]
 The story creation year is 2018.
 
 Use MAX_NUM_STATIC_STRINGS of 30000.
+Use MAX_DICT_ENTRIES of 2000.
 
 Include Cragne Suite by Ryan Veeder.
 
@@ -739,11 +740,12 @@ Before closing the benjack-bigmirror:
 	stop the action.
 
 The benjack-comforter is a benjack-shadow.  The printed name of benjack-comforter is "comforter".
-Understand "comforter/ blanket / duvet /cover" as the benjack-comforter when the player is in M2F3.
+Understand "comforter/blanket/duvet/cover" as the benjack-comforter when the player is in M2F3.
+Understand "light/pastel/blue/wool" as benjack-comforter when benjack-N2 is happening.
 The N1-desc of the benjack-comforter is "A fluffy white comforter with tiny point dots; snug and comfy even through a Vermont winter."
 
 The benjack-bed is a benjack-shadow in M2F3.  The printed name of benjack-bed is "bed".
-Understand "bed" as the benjack-bed when the player is in M2F3.
+Understand "bed/mattress" as the benjack-bed when the player is in M2F3.
 The N1-desc of the benjack-bed is "A child’s bed of just the right size."
 
 The benjack-pillow is a benjack-shadow in M2F3.  The printed name of benjack-pillow is "pillow".
@@ -817,12 +819,14 @@ The N1-desc of benjack-lamp is "An ordinary desk lamp stands upright on the desk
 Instead of taking the benjack-lamp, say "It is as insubstantial as everything else in the room; luckily, there are no grues in this corner of Cragne Mansion."
 
 The benjack-recordplayer is a benjack-shadow.  The printed name of the benjack-recordplayer is "record player".
-Understand "record player" or "phonograph" or "turntable" as benjack-recordplayer when the player is in M2F3.
+Understand "record player" or "phonograph/turntable/speaker/speakers" as benjack-recordplayer when the player is in M2F3.
 The N1-desc of benjack-recordplayer is "A wooden turntable with speakers built into the cabinet rests on a folding wooden table. There is a record on the turntable, but the turntable is off.".
 
 The benjack-record is a benjack-shadow.  The printed name of the benjack-record is "record".
 Understand "record" as benjack-record when the player is in M2F3.
 The N1-desc of benjack-record is "It is a full size record, black vinyl of course, with a cardboard center, labelled [quotation mark]Perry Como Sings Merry Christmas Music[quotation mark]. According to the label, it is a 78 rpm album produced by RCA Victor in 1946.".
+
+Understand "wagner/Walküre/Walkure/Valkyrie/Valkyries" or "Die Walküre" or "Die Walkure" as benjack-record when benjack-n2 is happening.
 
 The benjack-table is a benjack-shadow.  The printed name of the benjack-table is "folding stand".
 Understand "fold/stand" as benjack-table when the player is in M2F3.
@@ -845,7 +849,7 @@ Understand "nameplate" or "name plate" as benjack-nameplate when the player is i
 The N1-desc of benjack-nameplate is "[quotation mark]Dwight D. Eisenhower, 34th President of the United States of America.[quotation mark]".
 
 The benjack-toychair is a benjack-shadow.  The printed name of the benjack-toychair is "toy chairs".
-Understand "toy chair" or "toy chairs" as benjack-toychair when the player is in M2F3.
+Understand "toy chair" or "toy chairs" or "tiny/chair/chairs" as benjack-toychair when the player is in M2F3.
 The N1-desc of benjack-toychair is "The tiny toy chairs remind you of those found in grammar schools: a shaped plywood seat on a gray tubular steel frame.".
 
 The benjack-teacup is a benjack-shadow.  The printed name of the benjack-teacup is "cup".
@@ -865,7 +869,7 @@ Understand "bow" as benjack-bow when the player is in M2F3.
 The N1-desc of benjack-bow is "It must be heavily starched to remain that crisp.".
 
 The benjack-wall is a benjack-shadow.  The printed name of the benjack-wall is "wall".
-Understand "wall" as benjack-wall when the player is in M2F3.
+Understand "wall/walls" as benjack-wall when the player is in M2F3.
 The N1-desc of benjack-wall is "The walls are painted eggshell white.".
 
 The benjack-floor is a benjack-shadow.  The printed name of the benjack-floor is "floor".
@@ -1611,7 +1615,7 @@ The N2-desc of the benjack-monkey is "[one of]The monkey sock puppet looks consi
 The N2-desc of benjack-cap is "[N1-desc of benjack-cap]".
 The N2-desc of benjack-sweater is "[N1-desc of benjack-sweater]".
 The N2-desc of benjack-clown is "[one of]The clown is dressed in the same primary color outfit as before, but there is something about his head -- it is too small, and his bright polyester orange hair sticks out at all angles.[paragraph break]Getting a better look, the clown[apostrophe]s head is now tiny, maybe a third the size that it was and instead of plastic, the skin is dark like charcoal and full of wrinkles. It also looks like it has been somewhat flattened on the sides, giving it a taller, thinner appearance. Its lips are sewn together by a strip of leather and it looks like the eyes were sewn shut too, but being the only parts of his face to retain their former size, they have torn through the lacing that held the eyelids shut. When you can bring yourself to look at those eyes, their pupils are jet black dots, surrounded by brilliant white orbs. The unblinking eyes stare straight ahead.[or]A clown doll with a shrunken, human head.[stopping]".
-The N2-desc of benjack-desk is "A large dark wood desk and matching chair, very grown-up in appearance. Several s are stacked on the desk, along with a piece of newsprint and a desk lamp. A few drawers run down the side of the desk. Above the desk some drawings have been Scotch-taped to the wall.".
+The N2-desc of benjack-desk is "A large dark wood desk and matching chair, very grown-up in appearance. Several books are stacked on the desk, along with a piece of newsprint and a desk lamp. A few drawers run down the side of the desk. Above the desk some drawings have been Scotch-taped to the wall.".
 The N2-desc of benjack-drawer is "You can no more yank open these ephemeral drawers than touch any other ghostly item in this room. They are closed, and absent some divine intervention, they will stay closed.".
 The N2-desc of benjack-desktop is "A wooden desktop. Nothing too fancy. It is topped by some stacked books, a piece of newsprint, and a lamp.".
 The N2-desc of benjack-lamp is "[N1-desc of benjack-lamp]".
@@ -1635,11 +1639,11 @@ Understand "bent/nail" as benjack-nail when the player is in M2F3.
 The N2-desc of benjack-nail is "A rusted nail driven into the wall and bent up to support a picture with a heavy frame.".
 
 The benjack-patch is a benjack-shadow.  The printed name of the benjack-patch is "discolored patch".
-Understand "empty/patch/blank/spot/discolored" as benjack-patch when the player is in M2F3.
+Understand "empty/patch/blank/spot/discolored/space" as benjack-patch when the player is in M2F3.
 The N2-desc of benjack-patch is "The portrait of President Eisenhower is gone and has not been replaced.".
 
 The benjack-drawings is a benjack-shadow.  The printed name of the benjack-drawings is "drawings".
-Understand "drawing" or "drawings" or "art" or "artwork" as benjack-drawings when the player is in M2F3.
+Understand "drawing/drawings/art/artwork" as benjack-drawings when the player is in M2F3.
 The N2-desc of benjack-drawings is "Three drawings are taped to the wall above Carol[apostrophe]s desk, the top one in crayon, the middle in ink, and the bottom one painted with watercolors."
 
 The benjack-crayon is a benjack-shadow.  The printed name of the benjack-crayon is "crayon drawing".
@@ -1651,24 +1655,24 @@ Understand "india/ink/pen/middle/ink" or "india ink drawing" as benjack-ink when
 The N2-desc of benjack-ink is "[one of]India ink on hot press bristol board.[paragraph break]It has the quality of being drawn hastily to capture the event. In places, the ink is smeared suggesting that the artist lacked practice with fountain pens. The drawing does not have much in terms of perspective, but some cross-hatched shading does give it depth.[paragraph break]Three creatures are outlined, their backs towards the viewer, each leaning towards the center of the drawing where another creature lays on the ground surrounded by a dark pool, suggestive of blood. The three creatures appear to be dismembering the poor creature on the ground, some sort of animal, which struggles desperately, flailing at them with its three remaining limbs. Its fourth has already been wrenched away by one of the attackers, who chomps into it with sharp simian teeth.[paragraph break]In the corner, it is labelled [quotation mark]Carol, Age 10.[quotation mark][or]A quick sketch capturing the dismemberment of [bold type]Misses Winkelbottom[roman type] by the other toys done by Carol when she was ten years old.[stopping]". 
 
 The benjack-watercolor is a benjack-shadow.  The printed name of the benjack-watercolor is "watercolor painting".
-Understand "watercolor/painting/bottom/lower" as benjack-watercolor when the player is in M2F3.
+Understand "watercolor/watercolors/watercolours/watercolour/painting/bottom/lower" as benjack-watercolor when the player is in M2F3.
 The N2-desc of benjack-watercolor is "[one of]Windsor & Newton series 1 watercolors on 140# cold press Arches paper using wet-on-wet technique. Limited palette: ultramarine blue deep, burnt umber, burnt sienna, mars black with touches of alizarin crimson.[paragraph break]At first, the paint-saturated paper looks like nothing more than muddy splotches, but as you stare at it, forms begin to emerge. There is something in the lower right hand corner that you can[apostrophe]t quite bring yourself to look at, but in the center, a long, black tubular thing fights a losing battle to escape, its back cracked and red-tinged bubbles escaping.[or]A somewhat abstract painting of a [bold type]submarine[roman type] being cracked open like a dropped watermelon, its hull crushed by… something. Carol was fourteen years old when she painted it.[stopping]". 
 
-The benjack-makeupMirror is a benjack-shadow.  The printed name of the benjack-makeupMirror is "mirror".
-Understand "mirror" as benjack-makeupMirror when the player is in M2F3.
+The benjack-makeupMirror is a benjack-shadow.  The printed name of the benjack-makeupMirror is "makeup mirror".
+Understand "mirror" or "makeup mirror" as benjack-makeupMirror when the player is in M2F3.
 The N2-desc of benjack-makeupMirror is "Your face is distorted in the makeup mirror and items behind you are a blur.".
 
 The benjack-makeup is a benjack-shadow.  The printed name of the benjack-makeup is "makeup".
 Understand "makeup" as benjack-makeup when the player is in M2F3.
-The N2-desc of benjack-makeup is "A modest selection of products, nothing unusual. The brands are familiar -- ones you would typically find at high-end department stores.".
+The N2-desc of benjack-makeup is "A modest selection of products, nothing unusual. The brands are familiar -- ones you would typically find at high-end department stores."
 
 The benjack-newsprint is a benjack-shadow.  The printed name of the benjack-newsprint is "piece of newsprint".
 Understand "newsprint/article/news/story/boston/herald/newspaper" as benjack-newsprint when the player is in M2F3.
 The N2-desc of benjack-newsprint is "[one of]Your eye is first drawn to the date, November 22, 1963, and the curious fact that the paper is not yellowed at all. Below the newspaper masthead is a black and white photograph, stippled with tiny dots as they were in those days, of a number of people crowded around a convertible. Below that, a title, [quotation mark]Tragedy in Dallas[quotation mark].[paragraph break]You don’t have to read further. You know what this is.[or]A newspaper clipping from the Boston Herald recounting the assassination of JFK.[or]You don’t need to. You know what happened there and have an uneasy feeling of who might have had her hand in it.[or]You don’t need to. You know what happened there.[stopping]".
 
 The benjack-stackedBooks is a benjack-shadow.  The printed name of the benjack-stackedBooks is "stacked books".
-Understand "stacked/books/book/spine/spines" as benjack-stackedBooks when the player is in M2F3.
-Understand "our colonial heritage" or "fundamentals of algebra" or "modern etiquette" or "our/colonial/heritage/fundamentals/algebra/math/textbook/modern/etiquette/primer" as benjack-stackedBooks when the player is in M2F3 and benjack-N2 is happening.
+Understand "stacked/books/book/spine/spines/hadcover/textbook/textbooks" as benjack-stackedBooks when the player is in M2F3.
+Understand "our colonial heritage" or "fundamentals of algebra" or "modern etiquette" or "our/colonial/heritage/fundamentals/algebra/math/textbook/modern/etiquette/primer/hardcover" as benjack-stackedBooks when the player is in M2F3 and benjack-N2 is happening.
 The N2-desc of benjack-stackedBooks is "Several hardcover books are stacked on one side of the desk and topped by a stapled bit of looseleaf paper. Reading along the spines from top to bottom, the books are: [quotation mark]Our Colonial Heritage[quotation mark], [quotation mark]Fundamentals of Algebra[quotation mark], and [quotation mark]Modern Etiquette: A Primer[quotation mark].".
 
 The benjack-looseleaf is a benjack-shadow.  The printed name of the benjack-looseleaf is "looseleaf".
@@ -1676,7 +1680,7 @@ Understand "looseleaf/paper/report/essay/modest/more/proposal/social/studies" or
 The N2-desc of benjack-looseleaf is "[one of]The cover page of a school report. Centered in the upper third of the page: [quotation mark]A More Modest Proposal, by Carol Cragne, Grade 9, Miss Porter[apostrophe]s School.[quotation mark] In the lower right corner, she has written [quotation mark]Introduction to Social Studies, March 2, 1963.[quotation mark][or]Carol’s high school social studies paper, [quotation mark]A More Modest Proposal[quotation mark]. [stopping]".
 
 The benjack-deskChair is a benjack-shadow.  The printed name of the benjack-deskChair is "desk chair".
-Understand "desk chair" or "chair" as benjack-deskChair when the player is in M2F3.
+Understand "desk chair" or "chair/wooden/high-backed" as benjack-deskChair when the player is in M2F3.
 The N2-desc of benjack-deskChair is "A high-backed wooden chair with no cushion[first time]. It looks sturdy, but not comfortable[only].".
 
 Does the player mean doing something with the benjack-deskChair: it is likely.
@@ -1854,7 +1858,11 @@ Instead of saying yes when benjack-Carol is requesting_permission during benjack
 
 Every turn when benjack-n2 is happening and benjack-carol is not n2-conversed:
 	if a random chance of 1 in 3 succeeds:
-		say "Carol [one of]continues to comb her long hair[or]carefully applies some makeup[or]mutters to herself in some forgotten language[or]does her nails[or]applies some rough[or]doesn't seem aware of your skulking about her room[or]appears oblivious to your prescence[in random order]."
+		say "Carol [one of]continues to comb her long hair[or]carefully applies some makeup[or]mutters to herself in some forgotten language[or]does her nails[or]applies some rouge[or]doesn't seem aware of your skulking about her room[or]appears oblivious to your prescence[in random order]."
+		
+Every turn when benjack-Carol  is requesting_permission:
+	if a random chance of 1 in 3 succeeds:
+		say "[one of]Carol reminds you that she'd really appreciate it if you would say [quotation mark]yes[quotation mark] so she could get on with the rest of her day.[no line break][or][quotation mark]Malice, is it me, or is Naomi being just a little bit selfish by now allowing me to place my mark?[quotation mark][paragraph break]Carol nods at Malice as he (apparently, though you don't hear a thing) lends her his wisdom.[paragraph break][quotation mark]No doubt about that at all,[quotation mark] giggles Carol with a conspiratorial wink at the demonic clown. [quotation mark]If she would just say [quotation mark]yes[quotation mark], the world [italic type]would[roman type] be a better place. From a certain point of view.[quotation mark][or]Carol rolls her eyes waiting for you to say [quotation mark]yes[quotation mark] so she can place her mark.[no line break][or][quotation mark]Carol, what are you afraid of? There really is nothing to it. A simple [quotation mark]yes[quotation mark] from you and we can go back to enjoying the wonderful autumn scenery.[quotation mark][or]Carols head jerks suddenly towards the dolls. [quotation mark]No, Mister Sweetpaws, we cannot try out your suggestion, however expedient it would be, but thank you for caring.[quotation mark][paragraph break]She turns to you. [quotation mark]Young Master Sweetpaws says that he would like to help you say [quotation mark]yes[quotation mark], but I don't think that is quite the way this should work.[quotation mark][paragraph break][quotation mark]You do realize that we'll be here all day if you don't give your consent, don't you Naomi?[quotation mark] asks Carol.[no line break][or]Carol wipes some of the pus from around Mister Snortles eyes.[paragraph break][quotation mark]I know, Mister Snortles, I do wish she would say [quotation mark]yes[quotation mark] so we could get this marking business over with. There are so many things that need doing today.[quotation mark][or][quotation mark]This marking business is getting tedious, isn't it, dear Naomi?[quotation mark] asks Carol.[no line break][or][quotation mark]I don't suppose there is anywhere you would rather be just now, is there?[quotation mark] Carol asks, with a glance out the window.[no line break][or]Carol again encourages you to allow her to place her mark by saying [quotation mark]yes[quotation mark] to give your consent.[no line break][or][quotation mark]Fine,[quotation mark] says Carol, looking at you with disappointment. I'm not going to nag you to death about this mark issue, but also realize that you will not make it out of this room alive until you say [apostrophe]yes[apostrophe] -- of your own free will of course. I wouldn't want to appear coercive.[quotation mark][or][stopping][paragraph break]".
 
 Chapter 5 - N2 Tests
 
