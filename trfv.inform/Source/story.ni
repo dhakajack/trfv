@@ -120,10 +120,10 @@ To say benjack-commentary:
 	say "in case the internet evaporates, here are, at least, some initial thoughts about where our two rooms came from.[paragraph break]Having worked together on a number of IF projects, like [italic type]Rover's Day Out[roman type] and [italic type]Hoosegow[roman type], and some collaborative community projects like Speed-IFs ([italic type]Lobsters on a Plane[roman type]) and [italic type]Narrow Your Eyes[roman type] for the TMBG Apollo 18 20th Anniversary game, we asked R&J if we could have two rooms, but collaborate on plot. And they said yes.[paragraph break]So we did. The nature of the overall project meant that authors had to more or less isolate their games from each other to assure the whole thing would compile reasonably, so we figured that the best way to collaborate between to separate rooms without having items floatings around in circulation would be to focus just on conversation. We've ";
 	say "always enjoyed writing conversation and have tried to make NPCs interesting, but we've never really buckled down and used any of the conversation extensions. So, at the start of the project, we asked to include a conversation extension, and with some assistance from Zarf, R&J agreed to include a modified version of Eric Eve's Conversation framework.[paragraph break]Our task then was to come up with a plot that would involve an NPC in each room and a story that would bridge them together. We thought the player should have to interact with them a few times each so they could gradually reveal the story, but didn't want to force the player to spend too much time schlepping back and forth, so we limited it to three interactions with each character and added a spell to magically hop back and forth between the locations.[paragraph break]As for inspiration, most of it came from the original Anchorhead, but other bits were drawn from actual history. Most of the names and events in the game are real. As Christabell mentions, she's originally from Lyn, Massachusetts, which became known as Saugus. If that name is familiar, it's a homage to the long-running Halloween literary competition run by that town, which has always included interactive fiction. Here's one more ghost story to add to that collection.[paragraph break]Hope you enjoy it -- and remember, hints are enabled in our rooms for every scene, just type [quotation mark]hints[quotation mark].[paragraph break]"
 
-Description of DAN8 is "[one of][benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges of the Cragne Estate. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
+Description of DAN8 is "[one of][benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges around the Cragne property. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
 The benjack-mound is scenery in DAN8.  The printed name of the benjack-mound is "pile of railroad tracks". The benjack-mound is a supporter.
-Understand "mound/pile/pyle/lump/track/tracks/iron/sticks/rail/rayle/railroad/rail/rails/piles/lumps/irons/ironne/altar" as the benjack-mound when the location is in the benjack-realm.
+Understand "mound/pile/pyle/lump/track/tracks/iron/sticks/rail/rayle/railroad/rail/rails/piles/lumps/irons/ironne/altar/mass/central/rusty/rusting/brown/rusted" as the benjack-mound when the location is in the benjack-realm and benjack-denouement has not happened.
 The description of the benjack-mound is "[one of]Long shafts of weathered, rusted iron, jutting in all directions for a great mound as if dropped like puny sticks from the sky[or]A tall pile of rusted railway tracks[stopping].".  
 
 Instead of climbing the benjack-mound, say "It doesn't look particularly safe to scramble up those tracks; they're covered with rusty, sharp edges and not as nicely balanced as they appear."
@@ -138,32 +138,33 @@ Before entering or climbing the benjack-altar for the eighth time:
 	end the story saying "SACRIFICED".
 	
 The benjack-trail is scenery. benjack-trail is in DAN8. The printed name of benjack-trail is "trailheads".
-Understand "trail" or "trails" or "trailhead" or "trailheads" as the benjack-trail when the player is in DAN8.
+Understand "trail/trails/trailhead/trailheads" as the benjack-trail when the player is in DAN8.
 The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
 
 The benjack-sky is a backdrop. benjack-sky is in DAN8.  benjack-sky is in m2f3. The printed name of benjack-sky is "sky". 
-Understand "clouds" or "sky" as the benjack-sky when the location is in the benjack-realm.
+Understand "cloud/clouds/sky" as the benjack-sky when the location is in the benjack-realm.
 The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
 
 The benjack-cliffs are a backdrop.  benjack-cliffs is in DAN8. benjack-cliffs is in M2F3. The printed name of benjack-cliffs is "cliffs". 
 Understand "cliff/granite/hill/hillside/mica/cliffs/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
+Understand "wall/walls/black" as the benjack-cliffs when the location is DAN8.
 The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
 
 Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
 
 The benjack-weeds are a backdrop. benjack-weeds is in DAN8.  benjack-weeds is in m2f3. The printed name of benjack-weeds is "vegetation".
-Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches" as the benjack-weeds when the location is in the benjack-realm.
+Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches/lichen/moss" as the benjack-weeds when the location is in the benjack-realm.
 The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood just where you do, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
 
 Instead of touching the benjack-weeds:
 	say "The gnarled, twisted weeds are nothing but thorns and vicious spines. You pull back."
 	
 The benjack-clearing is a backdrop. benjack-clearing is in DAN8.  benjack-clearing is in m2f3.  The printed name of benjack-clearing is "clearing".
-Understand "bowl" or "amphitheater" or "amphitheatre" or "clearing" as the benjack-clearing when the location is in the benjack-realm.
+Understand "bowl/amphitheater/amphitheatre/clearing/hillside/hollow" as the benjack-clearing when the location is in the benjack-realm.
 The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
 
 The benjack-dirt is a backdrop. benjack-dirt is in DAN8.  benjack-dirt is in m2f3.  The printed name of benjack-dirt is "[if benjack-N3 is happening or benjack-denouement is happening]snow-covered [end if]dirt".
-Understand "soil" or "ground" or "dirt" as the benjack-dirt when the location is in the benjack-realm.
+Understand "soil/ground/dirt" as the benjack-dirt when the location is in the benjack-realm.
 The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
 
 Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
@@ -207,7 +208,7 @@ Part 6 - NPC Definitions
 
 Chapter Christabell
 
-benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager or benjack-Christabell is bypassed]the bonnet-clad woman[else]Christabell". Understand "woman/Christabell/herself" as benjack-Christabell when the location is DAN8.
+benjack-Christabell is a female person in DAN8.  The printed name of benjack-Christabell is "[if benjack-Christabell is unaddressed or benjack-Christabell is eager or benjack-Christabell is bypassed]the bonnet-clad woman[else]Christabell". Understand "woman/Christabell/herself/bonnet/bonnet-clad" as benjack-Christabell when the location is DAN8.
 
 The description of benjack-Christabell is "[one of]When you direct your attention to her, she becomes more substantial, or perhaps that is just a trick of the light filtering through the passing cover of clouds.[paragraph break]Her face is not old, but she is no child. It is rimmed by a bonnet, which you guess is some pastel color, but rendered grey in these shadows. Her eyes burn with intelligence below an inclined brow.[paragraph break][or]A bonnet-clad woman with an intense gaze.[stopping]".
 
@@ -401,17 +402,17 @@ benjack-Lin is a subject.  Understand "Lin/town/towne/saugus/lyn/lynne/lynne" as
 
 benjack-youth is a subject.  Understand "youth/youthe" as benjack-youth when the player is in DAN8. The printed name of benjack-youth is "youth".
 
-benjack-knotte is a subject.  Understand "knotte/reason/sanity/madness/sane/insane/crazy/insanity" as benjack-knotte when the player is in DAN8. The printed name of benjack-knotte is "knotte of reason".
+benjack-knotte is a subject.  Understand "knotte/reason/sanity/madness/sane/insane/crazy/insanity" or "knottoe of reason" as benjack-knotte when the player is in DAN8. The printed name of benjack-knotte is "knotte of reason".
 
-benjack-ironworks is a subject.  Understand "ironworks/ironwork/ironworke/ironworkes/ironwerke/ironwerkes/ironnewerke/ironnewerkes/forge/forges/smithy/smithies" as benjack-ironworks when the player is in DAN8. The printed name of benjack-ironworks is "ironworks".
+benjack-ironworks is a subject.  Understand "ironworks/ironwork/ironworke/ironworkes/ironwerke/ironwerkes/ironnewerke/ironnewerkes/forge/forges/smithy/smithies" or "saugus ironworks" as benjack-ironworks when the player is in DAN8. The printed name of benjack-ironworks is "ironworks".
 
-benjack-lineage is a subject.  Understand "lineage/lineages" as benjack-lineage when the player is in DAN8. The printed name of benjack-lineage is "lineage".
+benjack-lineage is a subject.  Understand "lineage/lineages/heredity" as benjack-lineage when the player is in DAN8. The printed name of benjack-lineage is "lineage".
 
 benjack-gift is a subject.  Understand "gift/gifte/gifts/giftes" as benjack-gift when the player is in DAN8. The printed name of benjack-gift is "gift".
 
 benjack-newgrace is a subject.  Understand "grace" or "new grace" as benjack-newgrace when the player is in DAN8. The printed name of benjack-newgrace is "new grace".
 
-benjack-malificium is a subject.  Understand "malificium" as benjack-malificium when the player is in DAN8. The printed name of benjack-malificium is "malificium".
+benjack-malificium is a subject.  Understand "malificium/malificia" as benjack-malificium when the player is in DAN8. The printed name of benjack-malificium is "malificium".
 
 benjack-Carolsubject is a subject. Understand "[benjack-CarolToken]" as benjack-Carolsubject when the player is in DAN8. The printed name of benjack-CarolSubject is "Carol".
 
@@ -435,7 +436,7 @@ benjack-seight is a subject.  Understand "seight/sight/spectral/spektral" as ben
 
 benjack-spirit is a subject.  Understand "spirit/spirits" as benjack-spirit when the location is in the benjack-realm. The printed name of benjack-spirit is "spirit".
 
-benjack-covenant is a subject.  Understand "third/covenant" as benjack-covenant when the location is in the benjack-realm. The printed name of benjack-covenant is "covenant".
+benjack-covenant is a subject.  Understand "third/covenant" or "third covenant of mattanit"  as benjack-covenant when the location is in the benjack-realm. The printed name of benjack-covenant is "covenant".
 
 benjack-Vermont is a subject.  Understand "Vermont" as benjack-Vermont when the location is in the benjack-realm. The printed name of benjack-Vermont is "Vermont".
 
@@ -630,11 +631,15 @@ Before going when benjack-Christabell is eager:
 		continue the action.	
 
 Instead of saying no when benjack-Christabell is eager:
-	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the [bold type]Gifte[roman type] of specktral [bold type]Seight[roman type], you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself.[paragraph break][quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark][paragraph break]She stares at the black face of the surrounding [bold type]cliffs[roman type] for inspiration.[no line break][or]She appears utterly puzzled at your reply.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the [bold type]Gifte[roman type] of specktral [bold type]Seight[roman type], you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][benjack-variousSubjects][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself.[paragraph break][quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark][paragraph break]She stares at the black face of the surrounding [bold type]cliffs[roman type] for inspiration.[no line break][or]She appears utterly puzzled at your reply.[no line break][stopping][paragraph break]".
 
 Instead of saying yes when benjack-Christabell is eager:
 	now benjack-Christabell is chatty; [trigger into main conversation]
-	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the Oppourtunity to speake with One graced with the [bold type]Seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark][paragraph break]She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark][paragraph break]She looks at you with anticipation.[paragraph break][bracket] HINT: you can ask or sometimes tell people about various [bold type]subjects[roman type] [close bracket][paragraph break]".
+	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the Oppourtunity to speake with One graced with the [bold type]Seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark][paragraph break]She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark][paragraph break]She looks at you with anticipation.[no line break][benjack-variousSubjects][paragraph break]".
+	
+To say benjack-variousSubjects:
+	say "[one of][paragraph break][bracket] HINT: you can ask or sometimes tell people about various [bold type]subjects[roman type] [close bracket][or][stopping]"
+	
 	
 Instead of touching benjack-dirt:
 	say "[one of]Raspy and sharp, perhaps volcanic[or]Abrasive[stopping]."
@@ -749,20 +754,20 @@ Understand "bed/mattress" as the benjack-bed when the player is in M2F3.
 The N1-desc of the benjack-bed is "A child’s bed of just the right size."
 
 The benjack-pillow is a benjack-shadow in M2F3.  The printed name of benjack-pillow is "pillow".
-Understand "pillow"  or "pillows" as the benjack-pillow when the player is in M2F3.
+Understand "pillow/pillows" as the benjack-pillow when the player is in M2F3.
 The N1-desc of the benjack-pillow is "A white, fluffy pillow."
 
 The benjack-dolls are benjack-shadows. The benjack-dolls are scenery.  The printed name of the benjack-dolls is "dolls". The indefinite article of the benjack-dolls is "some".
-Understand "doll/dolls/animal/animals/stuffed/toys" as the benjack-dolls when the player is in M2F3.
+Understand "doll/dolls/animal/animals/stuffed/toy/toys" as the benjack-dolls when the player is in M2F3.
 The N1-desc of the benjack-dolls  is "Four dolls dutifully attend the tea party, sitting two to a side on tiny chairs. To one side, a stuffed elephant and a monkey, and to the other some sort of clown and a lamb.[paragraph break]A ravenous horde of other stuffed animals crowd the edges of the bed silently observing the ceremony."
 
 The benjack-elephant is a benjack-shadow. The printed name of the benjack-elephant is "toy elephant".
-Understand "elephant" or "mister" or "snortles" as "[benjack-snortlesToken]" when the location is in the benjack-realm.
+Understand "elephant/mister/snortles" as "[benjack-snortlesToken]" when the location is in the benjack-realm.
 Understand "[benjack-snortlesToken]" as the benjack-elephant when the player is in the benjack-realm.
 The N1-desc of the benjack-elephant is "The leathery elephant’s head is disproportionately large and slumps forward slightly, weighed down by pendulous tusks and a meaty trunk.[paragraph break][one of][quotation mark]I[apostrophe]ve had [bold type]Mister Snortles[roman type] as long as I can remember -- [bold type]daddy[roman type] got him for me when I was just a baby and he had one of his trips to Africa. He has real tusks from a real elephant![quotation mark][or][stopping][paragraph break]From his dry, cracking gray hide, you suspect that the rest of Mister Snortles is equally authentic."
 
 The benjack-monkey is a benjack-shadow. The printed name of the benjack-monkey is "toy monkey".
-Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" or "henry/kissinger" as "[benjack-sweetpawsToken]" when the location is in the benjack-realm.
+Understand "monkey" or "master" or "sweetpaws" or "master sweetpaws" or "young master sweetpaws" or "henry/kissinger" or "toy monkey" as "[benjack-sweetpawsToken]" when the location is in the benjack-realm.
 Understand "[benjack-sweetpawsToken]" as benjack-monkey when the player is in M2F3.
 The N1-desc of the benjack-monkey is "The limp and gangly sock puppet wears a baseball cap and an Army-Navy sweater.[paragraph break][first time][quotation mark][bold type]Young Master Sweetpaws[roman type] recently joined us, right Sweetpaws?[quotation mark][paragraph break]The monkey sits there, inert, but Carol continues, [quotation mark]Sometimes he gets up to naughtiness, but he[apostrophe]s always back in the morning, aren[apostrophe]t you, [bold type]Sweetpaws[roman type]?[quotation mark][paragraph break]The monkey stares blankly ahead.[only]".
 
@@ -771,7 +776,7 @@ Understand "cap" or "hat" as the benjack-cap when the player is in M2F3.
 The N1-desc of benjack-cap is "A Brooklyn Dodgers cap, blue with a white [quotation mark]B[quotation mark]."
 
 The benjack-sweater is a benjack-shadow.  The printed name of the benjack-sweater is "sweater".
-Understand "sweater" as the benjack-sweater when the player is in M2F3.
+Understand "sweater/army/navy/woolen/logo" as the benjack-sweater when the player is in M2F3.
 The N1-desc of benjack-sweater is "A grey woolen sweater with an [quotation mark]Army/Navy[quotation mark] logo."
 
 The benjack-clown is a benjack-shadow.  The printed name of the benjack-clown is "toy clown".
@@ -780,7 +785,8 @@ Understand "[benjack-maliceToken]" as the benjack-clown when the player is in M2
 The N1-desc of benjack-clown is "[one of]Despite his painted smile, the clown[apostrophe]s plastic face conveys a sense of surrender as it stares into an empty tea cup. [paragraph break]It is the largest of the stuffed playmates, almost as tall as Carol. [paragraph break][quotation mark]That[apostrophe]s [bold type]Malice the Clown[roman type],[quotation mark] Carol chirps.[paragraph break][quotation mark][bold type]Malice?[roman type][quotation mark] you prompt. [quotation mark]The [bold type]Clown[roman type]?[quotation mark][paragraph break][quotation mark]Yes, originally I called him Alice, but [bold type]grand-uncle[roman type] said he[apostrophe]s a boy [bold type]clown[roman type] and thought [apostrophe][bold type]Malice[roman type][apostrophe] sounded nice.[quotation mark][or]Like all clown puppets, he exudes visceral evil.[stopping]"
 
 The benjack-lamb is a benjack-shadow.  The printed name of the benjack-lamb is "toy lamb".
-Understand "lamb" or "Winkelbottom" or "Misses Winkelbottom" as "[benjack-WinkelbottomToken]" when the location is in the benjack-realm.
+Understand "lamb/Winkelbottom" or "Misses Winkelbottom" or "toy lamb"
+ as "[benjack-WinkelbottomToken]" when the location is in the benjack-realm.
 
 Understand "[benjack-WinkelbottomToken]" as the benjack-lamb when the player is in M2F3 and benjack-N1 is happening.
 The N1-desc of benjack-lamb is "[one of]The toy is the threadbare, dirty yellowed remnant of what was once a lamb. It stands rigidly on its chair, bits of its underlying metal wire frame poking through where the fur has been rubbed shiny. It has no mouth, no nose, and only some bits of glue suggest where the eyes must have been.[paragraph break][quotation mark][bold type]Misses Winkelbottom[roman type], let me introduce our new friend, [bold type]Naomi[roman type].  Naomi, Misses Winkelbottom.[quotation mark][or]A well-worn toy lamb.[stopping]".
@@ -794,23 +800,24 @@ Understand "apron" as benjack-apron when the player is in M2F3.
 The N1-desc of benjack-apron is "A red and white checkered apron just Carol’s size.".
 
 The benjack-pots is a benjack-shadow.  The printed name of the benjack-pots is "pots".
-Understand "pots" or "pans" as benjack-pots when the player is in M2F3.
+Understand "pot/pan/pots/pans/lobster/steamer/sauce" as benjack-pots when the player is in M2F3.
 The N1-desc of benjack-pots is "Sauce pans of different sizes, a large frying pan and, perhaps not too surprising this close to Maine, a toy lobster steamer.".
 
 The benjack-pantry is a benjack-shadow.  The printed name of the benjack-pantry is "pantry".
-Understand "pantry" or "cabinet" as benjack-pantry when the player is in M2F3.
+Understand "pantry/cabinet/pantries/cabinets" as benjack-pantry when the player is in M2F3.
 The N1-desc of benjack-pantry is "Assorted cooking and baking accessories like colanders, measuring cups, a cheese grater, cookie cutters, and a rolling pin.".
 
 The benjack-desk is a benjack-shadow.  The printed name of the benjack-desk is "desk".
 Understand "desk" as benjack-desk when the player is in M2F3.
-The N1-desc of benjack-desk is "A child-size replica colonial roll top desk with several drawers. The top portion of the desk is open and the writing surface folded down. A spiral-bound book lies on it next to a small lamp with a yellow shade.".
+Understand "child-size/roll-top" as benjack-desk when benjack-n1 is happening.
+The N1-desc of benjack-desk is "A child-size replica colonial roll-top desk with several drawers. The top portion of the desk is open and the writing surface folded down. A spiral-bound book lies on it next to a small lamp with a yellow shade.".
 
 The benjack-drawer is a benjack-shadow.  The printed name of the benjack-drawer is "drawers".
 Understand "drawer/drawers" as benjack-drawer when the player is in M2F3.
 The N1-desc of benjack-drawer is "Below the desktop, the desk is flanked on each side by three closed drawers.".
 
 The benjack-desktop is a benjack-shadow.  The printed name of the benjack-desktop is "desktop".
-Understand "desktop" or "surface" as benjack-desktop when the player is in M2F3.
+Understand "desktop/surface" as benjack-desktop when the player is in M2F3.
 The N1-desc of benjack-desktop is "Polished walnut[first time]. Probably. You’re not really sure. It is sort of dark, but not too. Let[apostrophe]s face it, most of your furniture is IKEA, so you are a little out of your depth here[only].".
 
 The benjack-lamp is a benjack-shadow.  The printed name of the benjack-lamp is "lamp".
@@ -833,7 +840,7 @@ Understand "fold/stand" as benjack-table when the player is in M2F3.
 The N1-desc of benjack-table is "A small folding stand.".
 
 The benjack-frame is a benjack-shadow.  The printed name of the benjack-frame is "photo frame".
-Understand "frame" or "photo frame" as benjack-frame when the player is in M2F3.
+Understand "frame" or "photo frame" or "picture frame" as benjack-frame when the player is in M2F3.
 The N1-desc of benjack-frame is "The frame is not well matched to the photograph, it would go much better with an oil painting from an earlier century, and indeed it is not unlikely that some portrait of a remote ancestor was gutted when the need for a frame arose. The four-inch wide frame is intricately carved with fanciful beasts and has seen many applications of gold-leafing.".
 
 The benjack-beasts is a benjack-shadow.  The printed name of the benjack-beasts is "beasts".
@@ -841,7 +848,7 @@ Understand "beasts" as benjack-beasts when the player is in M2F3.
 The N1-desc of benjack-beasts is "The artist that crafted the heavy golden frame, while expressive and skilled, obviously had little grounding in anatomy. Ten-legged beetles with long, scaly tails chase plump babies with bat wings through forests of spiny-tentacled trees. Ornate, but utter rubbish. ".
 
 The benjack-Eisenhower is a benjack-shadow.  The printed name of the benjack-Eisenhower is "portrait".
-Understand "portrait/picture/man/eisenhower/president/ike" as benjack-Eisenhower when the player is in M2F3 and benjack-N1 is happening.
+Understand "portrait/picture/man/eisenhower/president/ike/official" as benjack-Eisenhower when the player is in M2F3 and benjack-N1 is happening.
 The N1-desc of benjack-Eisenhower is "This is clearly a formal portrait of a balding man probably in his sixties. He has an air of authority, but also an avuncular warmth. There is a nameplate at the bottom of the portrait.".
 
 The benjack-nameplate is a benjack-shadow.  The printed name of the benjack-nameplate is "nameplate".
@@ -910,7 +917,7 @@ Instead of attacking benjack-window:
 	say "The house has survived Vermont winters, it will survive you.".
 
 The benjack-scrap-5 is a benjack-runebook. The printed name of the benjack-scrap-5 is "scrapbook".
-Understand "scrapbook" or "book" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
+Understand "scrapbook/book" as the benjack-scrap-5 when the player is in M2F3 and benjack-N1 is happening.
 The description of the benjack-scrap-5 is "[benjack-scrap-5-desc]".
 
 To say benjack-scrap-5-desc:
@@ -1133,7 +1140,7 @@ After quizzing benjack-Carol about benjack-scrap-5:
 
 Chapter 4 - N1 Events
 
-The benjack-slithering-vomit-bladder-of-Katallakh is an open container. Understand "slithering/vomit/bladder/katallakh/slimy/dark-green" or "slithering vomit bladder bladder of Katallakh" or "vomit bladder of Katallakh" or "bladder of Katallakh" as the benjack-slithering-vomit-bladder-of-Katallakh. The printed name of the benjack-slithering-vomit-bladder-of-Katallakh is "slithering vomit bladder of Katallakh". The description of the slithering vomit bladder of Katallakh is "A  thick, rugated envelope of flesh. Occasionally, it slithers a bit.".
+The benjack-slithering-vomit-bladder-of-Katallakh is an open container. Understand "slithering/vomit/bladder/katallakh/slimy/dark-green/flesh/envelope/fleshy" or "slithering vomit bladder of Katallakh" or "vomit bladder of Katallakh" or "bladder of Katallakh" or "envelope of flesh" as the benjack-slithering-vomit-bladder-of-Katallakh. The printed name of the benjack-slithering-vomit-bladder-of-Katallakh is "slithering vomit bladder of Katallakh". The description of the slithering vomit bladder of Katallakh is "A  thick, rugated envelope of flesh. Occasionally, it slithers a bit.".
 
 [kill the (empty) in inventory listings durng this scene]
 Rule for printing the name of a mtw-teapot when benjack-N1 is happening:
@@ -1371,7 +1378,7 @@ benjack-Unfolding is a subject.  Understand "unfolding" as benjack-Unfolding whe
 
 benjack-GrandUncle is a subject.  Understand "grand-uncle/grand/uncle" as benjack-GrandUncle when the location is in the benjack-realm. The printed name of benjack-GrandUncle is "grand-uncle".
 
-benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" or "cragne mansion" or "cragne manse" or "cragne estate"  as benjack-Mansion when the location is DAN8. The printed name of benjack-Mansion is "Cragne mansion".
+benjack-Mansion is a subject.  Understand "mansion/manse/estate/edifice/house/building" or "cragne mansion" or "cragne manse" or "cragne estate"  as benjack-Mansion when the location is DAN8 and benjack-n1 has happened. The printed name of benjack-Mansion is "Cragne mansion".
 
 benjack-Mirror is a subject.  Understand "mirror" as benjack-Mirror when the location is DAN8. The printed name of benjack-Mirror is "mirror".
 
@@ -1651,7 +1658,7 @@ Understand "top/crayon/upper/crayon" or "crayon drawing" as benjack-crayon when 
 The N2-desc of benjack-crayon is "[one of]Primitive technique, limited palette, crayon on manila paper. [paragraph break]There are three stick figures on the left, generously, as man, woman, and child. The man drawn mostly in gray, the woman wearing a red dress with large skirt, and the child wearing a blue dress of the same style, her blonde hair done up in braids. The figure in the middle is more of a jumble: recognizably human with a hat and beard, stooped over with a cane. On the right, are a bunch of brown lines, behind them great masses colored in black vertical lines, and in from of all that the outline of a woman, not a stick figure, but just back and forth strokes of yellow crayon. [paragraph break]In the corner, it is labelled [quotation mark]Carol, Age 5.[quotation mark][or]A picture of Carol and her [quotation mark]family[quotation mark]: [bold type]mother[roman type], [bold type]father[roman type], grand-uncle, and Christabell done when she was five years old.[stopping]". 
 
 The benjack-ink is a benjack-shadow.  The printed name of the benjack-ink is "India ink drawing".
-Understand "india/ink/pen/middle/ink" or "india ink drawing" as benjack-ink when the player is in M2F3.
+Understand "india/ink/pen/middle/ink" or "india ink drawing" or "ink drawing" as benjack-ink when the player is in M2F3.
 The N2-desc of benjack-ink is "[one of]India ink on hot press bristol board.[paragraph break]It has the quality of being drawn hastily to capture the event. In places, the ink is smeared suggesting that the artist lacked practice with fountain pens. The drawing does not have much in terms of perspective, but some cross-hatched shading does give it depth.[paragraph break]Three creatures are outlined, their backs towards the viewer, each leaning towards the center of the drawing where another creature lays on the ground surrounded by a dark pool, suggestive of blood. The three creatures appear to be dismembering the poor creature on the ground, some sort of animal, which struggles desperately, flailing at them with its three remaining limbs. Its fourth has already been wrenched away by one of the attackers, who chomps into it with sharp simian teeth.[paragraph break]In the corner, it is labelled [quotation mark]Carol, Age 10.[quotation mark][or]A quick sketch capturing the dismemberment of [bold type]Misses Winkelbottom[roman type] by the other toys done by Carol when she was ten years old.[stopping]". 
 
 The benjack-watercolor is a benjack-shadow.  The printed name of the benjack-watercolor is "watercolor painting".
@@ -2128,7 +2135,7 @@ Understand "sharp/vicious/talon/talons/claw/claws/paw/paws/emu" as benjack-claws
 The N3-desc of benjack-claws is "Predatory: thick and powerful, ending in sharp talons. ".
 
 The benjack-tapedeck is a benjack-shadow.  The printed name of the benjack-tapedeck is "reel to reel recorder".
-Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic" as benjack-tapedeck when the player is in M2F3.
+Understand "reel to reel recorder" or "reel to reel" or "tape/tapes/tapedeck/recorder/magnetic/reel-to-reel" as benjack-tapedeck when the player is in M2F3.
 The N3-desc of benjack-tapedeck is "The reel-to-reel tape recorder is switched off. Magnetic tape is threaded through the mechanism and about half the tape remains on the supply reel, which is labeled only [quotation mark]Project Nekton[quotation mark], and below that [quotation mark]Singing 00:30 to 00:60[quotation mark].".
 
 The benjack-scrap-19 is a benjack-runebook. The printed name of the benjack-scrap-19 is "binder".
@@ -2688,7 +2695,7 @@ Benjack-clipping-9 is a benjack-clipping.
 The title of Benjack-clipping-9 is "Seinfeld Actor Dies".
 The list of text called Benjack-clipping-9-text is always {"Jason Alexander, who plays George Costanza on the hit television comedy [italic type]Seinfeld[roman type] is presumed dead along with eighteen others, fourteen passengers and five crew, who were lost at sea last Friday aboard a commercial fishing boat, Hogar's Wrath, operating out of Montauk, New York. Communication was lost with the [quotation mark]head[quotation mark] boat two hours after its departure and it was declared missing when it failed to return to the dock later that day. A search effort was delayed by sudden squalls. The ship was discovered listing heavily off the southern coast of Greenland a day later by military aircraft operating out of Thule Air Force Base.[paragraph break]The boat had been chartered that day by a group known as [quotation mark]The Fishing Elvises[quotation mark], a troupe of Elvis impersonators who are also accomplished fishermen. Two years ago, on a similar voyage, the leader of the troupe, Dan Gropmeier, landed a record 400-pound black ruffled flounder. This year, due to illness, Dan was unable to join his troupe, and the position was filled at the last minute by Mr. Alexander.[paragraph break]No survivors were found aboard the vessel when it was boarded and no records were found that explain how the ship got so far of course in such a short period of time. Searchers did report one unusual finding though: the boat's coolers, which store the day's catch, were full, but not of the kinds of fish typically caught in waters around Long Island.[paragraph break]Many of the fish in the hold were benthic, or deep water species. According to Phyllis Falcone of the SUNY Stonybrook, [quotation mark]those fish live in dark and frigid waters more than a mile deep. I can't even explain how they managed to haul them up to the surface without them exploding from decompression. More over, I don't think any of them are native to the Atlantic. I can't even begin to classify the more primative-looking specimens. Some have gigantic eyes, jaws bristling with row upon row of needle-like teeth, and ghostly, glowing skin; a few have rudimentary legs and other claw-like appendages or perhaps spinnerets like a spider, others are segmented like insects and are crowned with rows of undulating tentacles. We'll be working on this for a while.[quotation mark][paragraph break][quotation mark]It's a real tragedy for all of us,[quotation mark] said castmate Jerry Seinfeld, who spoke to the press along with co-star Julia Luis Dreyfus. [quotation mark]Jason didn't even like fishing -- it wasn't like him at all. But he gave me a call that morning and said he just felt like going fishing that day, so that's what he did. Go figure. I guess it was a fluke.[quotation mark]"}.
 The content of Benjack-clipping-9 is Benjack-clipping-9-text.
-Understand "seinfeld/actor/dies/george/costanza" as Benjack-clipping-9 when the location is in the benjack-realm
+Understand "seinfeld/actor/dies/george/costanza/jason/alexander" as Benjack-clipping-9 when the location is in the benjack-realm
 
 Benjack-clipping-10 is a benjack-clipping. 
 The title of Benjack-clipping-10 is "Red Tide".
@@ -2734,7 +2741,7 @@ Instead of answering benjack-Carol that "bottoms up":	try Benjack-bottomsupping.
 
 Instead of answering benjack-Carol that "bottoms-up":	try Benjack-bottomsupping.
 
-Benjack-bottomsupping is an action applying to nothing. Understand "bottoms-up" or "bottoms up" as Benjack-bottomsupping when the location is in the benjack-realm.
+Benjack-bottomsupping is an action applying to nothing. Understand "bottoms-up" or "bottoms up" or "bottomsup" as Benjack-bottomsupping when the location is in the benjack-realm.
 
 Check benjack-bottomsupping:
 	if benjack-N1 is not happening:
