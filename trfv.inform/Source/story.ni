@@ -2584,7 +2584,7 @@ Understand "picture/photograph/photo/decaying/worn/old/shiny/metal/woman/kid/kid
 
 The printed name of the jpk-picture is "a worn out, decaying picture". 
 
-The description of the jpk-picture is "Stains cover large part of the front side, hiding the faces of what looks like a mother and a couple of small siblings. The woman, whose age is impossible to determine, is wearing a white, wedding dress. The kids both have on a kind of work overalls, over a white blouse. The boy on the right is not stained, still... he seems to have no face, as if time has worn out his features.[paragraph break]On the reverse side of the picture is something written, in a trembling hand-writing:[paragraph break][italic type]One blackbird's too few[line break]A [']pecker's too much[line break]Beginning in [roman type]daan[italic type][line break]T'will release the clutch[roman type]."
+The description of the jpk-picture is "Stains cover large part of the front side, hiding the faces of what looks like a mother and a couple of small siblings. The woman, whose age is impossible to determine, is wearing a white, wedding dress. The kids both have on a kind of work overalls, over a white blouse. The boy on the right is not stained, still... he seems to have no face, as if time has worn out his features.[paragraph break]On the reverse side of the picture is something written, in a trembling hand-writing:[paragraph break][italic type]One blackbird's too few[line break]A [']pecker's too much[line break]Beginning in [roman type]daan[italic type][line break]Will release the clutch[roman type]."
 
 Instead of rubbing the benjack-window when the benjack-denouement has happened:
 	say "The filth on the windows resists your best efforts.".
