@@ -65,7 +65,7 @@ Instead of taking a benjack-runebook:
 	say "That's the thing about Rune Books: they like to be where they are an no where else. They are very finicky in that way.".
 
 [Paralleling the project's use of read, but scoped down for this special case]
-Understand "read [a benjack-runebook]" as reading when the location is M2F3.
+Understand "read [a benjack-runebook]" as reading when the location is in the benjack-realm.
 Instead of opening a benjack-runebook, try reading the noun.
 
 Instead of inserting something (called the item) into a benjack-runebook:
@@ -117,8 +117,8 @@ The commentary of DAN8 is "[benjack-commentary]".
 
 To say benjack-commentary:
 	say "[bold type]Commentary[roman type][paragraph break]Jack Welch and Ben Collins-Sussman[paragraph break]Thanks first of all to Ryan Veeder and Jenni Polodna for giving so many IF authors a chance to work together on this project. The best part of IF is the community and we all had a blast chatting with each other about everything from coding compliance to fungating masses while we were writing. We want to acknowledge just how huge a task R&J took on in not only trying to compile code coming from 85 different directions, but in herding us cats.[paragraph break]Of course, none of us would have been doing this at all had Michael S. Gentry not written Anchorhead in 1998 -- a foundational game, which we both enjoyed and were only too happy to have a chance to emulate.[paragraph break]As the time of writing this, as you can imagine, the deadline is a few hours away and the bug list still needs some swatting, so commentary here will be brief, but I'm sure we will add some additional commentary online. Interactive Fiction Professors of the 24th Century will probably have to pull this from the planetary cybermind, but for now, the URL is http://blog.templaro.com/some-thoughts-about-cragne-manor/. But ";
-	say "in case the internet evaporates, here are, at least, some initial thoughts about where our two rooms came from.[paragraph break]Having worked together on a number of IF projects, like [italic type]Rover's Day Out[roman type] and [italic type]Hoosegow[roman type], and some collaborative community projects like Speed-IFs ([italic type]Lobsters on a Plane[roman type]) and [italic type]Narrow Your Eyes[roman type] for the TMBG Apollo 18 20th Anniversary game, we asked R&J if we could have two rooms, but collaborate on plot. And they said yes.[paragraph break]So we did. The nature of the overall project meant that authors had to more or less isolate their games from each other to assure the whole thing would compile reasonably, so we figured that the best way to collaborate between to separate rooms without having items floatings around in circulation would be to focus just on conversation. We've ";
-	say "always enjoyed writing conversation and have tried to make NPCs interesting, but we've never really buckled down and used any of the conversation extensions. So, at the start of the project, we asked to include a conversation extension, and with some assistance from Zarf, R&J agreed to include a modified version of Eric Eve's Conversation framework.[paragraph break]Our task then was to come up with a plot that would involve an NPC in each room and a story that would bridge them together. We thought the player should have to interact with them a few times each so they could gradually reveal the story, but didn't want to force the player to spend too much time schlepping back and forth, so we limited it to three interactions with each character and added a spell to magically hop back and forth between the locations.[paragraph break]As for inspiration, most of it came from the original Anchorhead, but other bits were drawn from actual history. Most of the names and events in the game are real. As Christabell mentions, she's originally from Lyn, Massachusetts, which became known as Saugus. If that name is familiar, it's a homage to the long-running Halloween literary competition run by that town, which has always included interactive fiction. Here's one more ghost story to add to that collection.[paragraph break]Hope you enjoy it -- and remember, hints are enabled in our rooms for every scene, just type [quotation mark]hints[quotation mark].[paragraph break]"
+	say "in case the internet evaporates, here are, at least, some initial thoughts about where our two rooms came from.[paragraph break]Having worked together on a number of IF projects, like [italic type]Rover's Day Out[roman type] and [italic type]Hoosegow[roman type], and some collaborative community projects like Speed-IFs ([italic type]Lobsters on a Plane[roman type]) and [italic type]Narrow Your Eyes[roman type] for the TMBG Apollo 18 20th Anniversary game, we asked R&J if we could have two rooms, but collaborate on plot. And they said yes.[paragraph break]So we did. The nature of the overall project meant that authors had to more or less isolate their rooms from each other to assure the whole thing would compile reasonably, so we figured that the best way to collaborate between to separate rooms without having items floatings around in circulation would be to focus just on conversation. We've ";
+	say "always enjoyed writing conversation and have tried to make NPCs interesting, but we've never really buckled down and used any of the Inform conversation extensions. So, at the start of the project, we asked to include a conversation extension, and with some assistance from Zarf, R&J agreed to include a modified version of Eric Eve's Conversation framework.[paragraph break]Our task then was to come up with a plot that would involve an NPC in each room and a story that would bridge them together. We thought the player should have to interact with them a few times each so they could gradually reveal the story, but didn't want to force the player to spend too much time schlepping back and forth, so we limited it to three interactions with each character and added a spell to magically hop back and forth between the locations.[paragraph break]As for inspiration, most of it came from the original Anchorhead, but other bits were drawn from actual history. Most of the names and events in the game are real. As Christabell mentions, she's originally from Lyn, Massachusetts, which became known as Saugus. If that name is familiar, it's a homage to the long-running Halloween literary competition run by that town, which has always included interactive fiction. Here's one more ghost story to add to that collection.[paragraph break]Hope you enjoy it -- and remember, hints are enabled in our rooms for every scene, just type [quotation mark]hints[quotation mark].[paragraph break]"
 
 Description of DAN8 is "[one of][benjack-hint-prompt][or][stopping][one of]You follow a mud-trampled trail, which leads you blindly through a narrow trench bordered by overgrown brambles and shrubs, once smartly trimmed hedges around the Cragne property. The intimidating thorn-studded walls arch over you, all but obscuring the grey marbled clouds overhead.[paragraph break]Turning the corner, you feel the ground beneath your feet suddenly harden. Although the shrubs recede behind you, the shadows deepen as you walk towards a clearing set into the hillside, surrounded on three sides by black cliffs.[paragraph break]As you advance, sound is conspicuous by its absence -- gone is the squealchy sound of the muddy trail, the cracking of branches underfoot, and the rustling sounds of trailside wilderness. You are left contemplating the rocky bowl cut into the cliffside, a natural amphitheater.[paragraph break][italic type]Or is it? Could this hollow have been worked by the hand of man in some earlier time? How much labor and what dedication would have been required in an earlier era to work the ageless Vermont granite into such a perfect shape?[roman type][paragraph break]Your eye is drawn to a raised, brown mass centered before the cliffs; you muse that if the rockface formed a parabola, that mass would be at its focus, like an altar in a cathedral. The earthen lump grows in your vision and you realize that you must have walked towards it, lost in your thoughts. It has already been a long day, and it has barely started.[paragraph break]Up close, you realize that it is not an earthen mound, but a pile of long, rusted iron railway tracks. Tons of them. Stacked taller than you in this remote corner of the estate and forgotten.[paragraph break]You move your head in just the right way and light glances sharply off a glistening corner of track, momentarily blinding you. You rub your eyes reflexively, and when your vision clears, you realize with some embarrassment that a woman sits not even an arm[apostrophe]s length from your face atop the pile[or]You are in a hillside hollow flanked on three sides by sheer granite cliffs and on the other by gnarled vegetation[stopping].[paragraph break]Three trailheads hold out some chance of respite: north, southwest, and southeast."
 
@@ -327,7 +327,7 @@ benjack-N3 ends when benjack-window is open.
 
 benjack-Denouement is a scene. [Jump out window or not]
 benjack-Denouement begins when benjack-window is open.
-benjack-Denouement ends when M2F3 encloses benjack-naomiRunes or DAN8 encloses benjack-naomiRunes.
+benjack-Denouement ends when M2F3 encloses benjack-TomeONaomi or DAN8 encloses benjack-TomeONaomi.
 
 
 [might need some auxiliary scenes -- we'll figure that out as we code.]
@@ -2474,15 +2474,15 @@ When benjack-N3 ends:
 
 Part 10 - Scene Denouement
 
-The benjack-naomiRunes is a benjack-runebook. The printed name of the benjack-naomiRunes is "Tome of Naomi". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" as benjack-naomiRunes when the location is in the benjack-realm. The description of benjack-naomiRunes is "A thin, leatherbound tome. A title is embossed on the cover: [quotation mark]Tome of Naomi[quotation mark]."
+The benjack-TomeONaomi is a benjack-runebook. The printed name of the benjack-TomeONaomi is "Tome of Naomi". Understand "runebook/runes/tome/book/scrapbook" or "tome of naomi" as benjack-TomeONaomi when the location is in the benjack-realm. The description of benjack-TomeONaomi is "A thin, leatherbound tome. A title is embossed on the cover: [quotation mark]Tome of Naomi[quotation mark]."
 
-Instead of reading the benjack-NaomiRunes:
-	if benjack-NaomiRunes is closed:
+Instead of reading the benjack-TomeONaomi:
+	if benjack-TomeONaomi is closed:
 		say "You carefully lay open the crusty leather-clad book revealing";
-		now benjack-NaomiRunes is open;
+		now benjack-TomeONaomi is open;
 	otherwise:
 		say "You see";
-	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-naomiRunes][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-naomiRunes][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-naomiRunes][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-naomiRunes][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-naomiRunes][bold type][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-naomiRunes][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
+	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-TomeONaomi][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-TomeONaomi][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-TomeONaomi][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-TomeONaomi][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-TomeONaomi][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-TomeONaomi][bold type][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-TomeONaomi][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
 
 benjack-denouement has a number called doomCounter. The doomCounter is 0.
 	
@@ -2526,8 +2526,8 @@ To say benjack-doom3:
 	
 Before doing anything when the doomCounter of the benjack-Denouement is 3 and benjack-Denouement is happening:
 	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
-	now benjack-naomiRunes is in M2F3;
-	now benjack-naomiRunes is seen;
+	now benjack-TomeONaomi is in M2F3;
+	now benjack-TomeONaomi is seen;
 	stop the action.
 	
 Instead of jumping when the benjack-window is open and benjack-denouement is happening:
@@ -2547,8 +2547,8 @@ Instead of entering the benjack-window:
 	wait for any key;
 	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
 	now the benjack-altar is in DAN8;
-	now benjack-naomiRunes is on the benjack-altar;
-	now benjack-naomiRunes is seen;
+	now benjack-TomeONaomi is on the benjack-altar;
+	now benjack-TomeONaomi is seen;
 	move the player to DAN8.	
 	
 Chapter 3 - Denouement Tests
@@ -2572,21 +2572,21 @@ When benjack-denouement ends:
 	now benjack-mound is nowhere;
 	now benjack-mound is unseen;
 	now the description of M2F3 is "[one of]Shafts of sunlight filter through the filthy window, which is now closed.[paragraph break]The room is empty: the carpet has been taken up, all furniture removed, and nothing left on the walls. Dust hangs in the air of this room so long abandoned[or]A dusty room, unvisited for more than two decades[stopping].";
-	now  Benjack-clipping-sable is in benjack-naomiRunes;
+	now  Benjack-clipping-sable is in benjack-TomeONaomi;
 	if the benjack-times_bestowed of yourself is greater than 1:
-		now Benjack-clipping-convict is in benjack-naomiRunes;
+		now Benjack-clipping-convict is in benjack-TomeONaomi;
 	if the benjack-times_bestowed of yourself is greater than 2:
-		now Benjack-clipping-body is in benjack-naomiRunes;
+		now Benjack-clipping-body is in benjack-TomeONaomi;
 	if the  benjack-times_ploughvered of yourself is greater than 0:
-		now Benjack-clipping-orphan is in benjack-naomiRunes;
+		now Benjack-clipping-orphan is in benjack-TomeONaomi;
 	if the  benjack-times_ploughvered of yourself is greater than 1:
-		now Benjack-clipping-boardwalk is in benjack-naomiRunes;	
+		now Benjack-clipping-boardwalk is in benjack-TomeONaomi;	
 	if the  benjack-times_ploughvered of yourself is greater than 1:
-		now Benjack-clipping-hargreaves is in benjack-naomiRunes;
+		now Benjack-clipping-hargreaves is in benjack-TomeONaomi;
 	if yourself is benjack-KH_accomplished:
-		now Benjack-clipping-9 is in benjack-naomiRunes;
+		now Benjack-clipping-9 is in benjack-TomeONaomi;
 	if yourself is benjack-guilty:
-		now Benjack-clipping-10 is in benjack-naomiRunes.
+		now Benjack-clipping-10 is in benjack-TomeONaomi.
 	
 [hint text: There is nothing left to do here, you have successfully completed this part of the game[if jpk-picture is nowhere]! You need to examine your Rune Book and take the photo that comes out of it for a later part of the game[end if]
 ]
@@ -2597,7 +2597,7 @@ Chapter 1 - Events
 
 [Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
 
-Before doing anything with benjack-naomiRunes when benjack-Denouement has happened for the first time:
+Before doing anything with benjack-TomeONaomi when benjack-Denouement has happened for the first time:
 	say "A photograph flitters out of the Rune Book, spirals around you and floats to the ground.";
 	now jpk-picture is in the location;
 	now jpk-picture is seen;
