@@ -42,7 +42,7 @@ Instead of examining a benjack-shadow (called the shadow):
 	otherwise if benjack-N2 has ended:
 		say the N3-desc of the shadow;
 	otherwise:
-		say "Error: no description available.";
+		say "Error: no description available."; [comment out for production]
 	say "[paragraph break]".
 	
 Instead of doing something to a benjack-shadow (called the item):
@@ -402,7 +402,7 @@ benjack-Lin is a subject.  Understand "Lin/town/towne/saugus/lyn/lynne/lynne" as
 
 benjack-youth is a subject.  Understand "youth/youthe" as benjack-youth when the player is in DAN8. The printed name of benjack-youth is "youth".
 
-benjack-knotte is a subject.  Understand "knotte/reason/sanity/madness/sane/insane/crazy/insanity" or "knottoe of reason" as benjack-knotte when the player is in DAN8. The printed name of benjack-knotte is "knotte of reason".
+benjack-knotte is a subject.  Understand "knotte/reason/sanity/madness/sane/insane/crazy/insanity" or "knotte of reason" as benjack-knotte when the player is in DAN8. The printed name of benjack-knotte is "knotte of reason".
 
 benjack-ironworks is a subject.  Understand "ironworks/ironwork/ironworke/ironworkes/ironwerke/ironwerkes/ironnewerke/ironnewerkes/forge/forges/smithy/smithies" or "saugus ironworks" as benjack-ironworks when the player is in DAN8. The printed name of benjack-ironworks is "ironworks".
 
@@ -456,15 +456,6 @@ At the time when Ben and Jack jump the shark:
 Before quizzing or informing benjack-Christabell about a subject for the first time:
 	say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Property, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to Christabell, and she rewards you with a smile and rapt attention.";
 		continue the action.
-		
-[ Doesn't actually work:  
-Before quizzing or informing benjack-Christabell about a subject (called foo):
-	if foo is not known, say "Sorry, you don't know anything about that.";
-	otherwise continue the action.]
-
-[also doesn't work:
-Check quizzing benjack-Christabell about something unknown:
-	say "noooooope.".]
 
 After informing benjack-Christabell about benjack-PC:
 	say "[one of][quotation mark]Well,[quotation mark] you begin, [quotation mark]I am Naomi, and you probably already know my husband, [bold type]Peter[roman type] -- Peter [bold type]Cragne[roman type].[quotation mark][paragraph break]Christabell shakes her head, [quotation mark]A Crâne? No, I have not the Pleasure of his Acquitenance, or at least not yet. But I am sure there are many Hereabouts unknown to me of Late.[quotation mark][paragraph break][quotation mark]Yes, he[apostrophe]s a little introverted, so I’m not surprised,[quotation mark] you continue. [quotation mark]In fact, while he[apostrophe]s met my entire family, I have not even met his parents -- yet. No pressure there, right?[quotation mark][paragraph break][quotation mark]Assuredly, so.[quotation mark][paragraph break][quotation mark]We took this opportunity to shoot up to [bold type]Vermont[roman type] and I figure we[apostrophe]ll do the family thing and while we[apostrophe]re at it a little touring around: Ben & Jerry[apostrophe]s, some covered bridges, get a bucket of maple syrup -- or however they sell it -- and check out some of the mountains. Two birds with one stone![quotation mark][paragraph break][quotation mark]Two with but a single Stoning? Indeed, what you have laid out sounds a fruitful Application of your Labours.[quotation mark][or]You say a few more words about yourself.[no line break][stopping][paragraph break]".
@@ -612,10 +603,6 @@ Instead of doing something when the noun is benjack-Christabell or the second no
 	
 To say benjack-talk-hint:
 	say "[bracket] Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL [italic type]someone[roman type] about different [bold type]subjects[roman type] [close bracket]".
-	
-[TOCONSIDER: another hint after successful ask/tell letting the player know that it's possible to abbreviate it to just "t subject" or "a subject"]
-
-test eager with "x tracks / x sky / go east / i / x woman"
 
 [Stage business while awaiting Naomi's reply]
 Every turn while benjack-Christabell is eager:
@@ -712,15 +699,6 @@ When benjack-N1 begins:
 Chapter 2 - N1 Nursery Furnishing Updates
 
 [benjack-shadows are ghost objects (a kind of scenery) that you mostly can't interact with. Note that everything is a shadow except for the {rune book and window}.]
-
-[template:
-
-The benjack- is a benjack-shadow in M2F3. The printed name of the benjack- is "".
-Understand "" as the benjack-   when the player is in M2F3.
-The N1-desc of the benjack-  is "".
-The N2-desc of the benjack-  is "".
-The N3-desc of the benjack-  is "".
-]
  
 The benjack-bigmirror is a scenery closed openable opaque container. The printed name of benjack-bigmirror is "full-length mirror". Understand "full-length/mirror" as the benjack-bigmirror when the player is in M2F3. The description of benjack-bigmirror is "The mirror is about four feet high and half that wide and is affixed to the wall. The bottom of the mirror a good half foot above the floor."
 
@@ -802,7 +780,7 @@ Understand "kitchen/plywood/oven/stove/icebox" or "play kitchen" or "ice box" as
 The N1-desc of benjack-kitchen is "The play kitchen is all one piece and attached to a plywood backboard. The centerpiece is a metal stove with four pretend gas burners above an oven door. Some pots and pans poke out of the cabinets above the stove. To one side of the stove is a full size ice box, and an apron hangs on a hook to the other side of the stove.".
 
 The benjack-apron is a benjack-shadow.  The printed name of the benjack-apron is "apron".
-Understand "apron/hook/aprons/hooks" as benjack-apron when the player is in M2F3.
+Understand "apron/hook/aprons/hooks/checkered" or "red and white" as benjack-apron when the player is in M2F3.
 The N1-desc of benjack-apron is "A red and white checkered apron just Carol’s size.".
 
 The benjack-pots is a benjack-shadow.  The printed name of the benjack-pots is "pots".
@@ -1373,7 +1351,7 @@ benjack-ChMother is a subject.  Understand "mother/mom/mommy/mum" as benjack-ChM
 
 benjack-Breeves is a subject.  Understand "preacher/ewen/breeves/pastor/priest" as benjack-Breeves when the location is DAN8 and benjack-R0 has ended. The printed name of benjack-Breeves is "Ewen Breeves".
 
-benjack-Leif is a subject.  Understand "doctor/prichard/leif/professor" as benjack-Leif when the location is DAN8. The printed name of benjack-Leif  is "Prichard Leif".
+benjack-Leif is a subject.  Understand "doctor/prichard/leif/professor" as benjack-Leif when the location is DAN8. The printed name of benjack-Leif is "Prichard Leif".
 
 benjack-Jealousy is a subject.  Understand "jealousy/adultery/adulter" as benjack-Jealousy when the location is DAN8. The printed name of benjack-Jealousy is "jealousy".
 
@@ -1619,7 +1597,6 @@ When benjack-N2 begins:
 	say "[benjack-nursery-description]";
 	benjack-conversation-customize.
 
-	
 [hint text: Carol insists one placing her mark on you, but needs your consent. You have to agree or she will not let you out of the room. As always, there is plenty of conversation to be had]
 
 Chapter 2 - Nursery Furnishing Updates
@@ -2953,7 +2930,7 @@ To say benjack-BARR:
 To say benjack-talk-to-whom:
 	say "Who are you talking to? No one is here".
 	
-Book 6 - TMWNMTK
+Book 6 - TMWNMTK - Not for Release
 [This section should be NOT FOR RELEASE in the final game -- but necessary for beta-testers to play/test]
 
 Part 1 - Additional Set Up 
@@ -2974,19 +2951,18 @@ The golf ball is a thing in MGR1.
 The bowling pin is a thing in MGR1.
 The jade frog is a thing in MGR1.
 
-
-
 Part 3 - Items that will come from other authors
 
 The mtw-teapot is an open opaque container in MGR1. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
+
+Part 4 - Commentary
 
 Commentarying is an action out of world. Understand "commentary" as commentarying.
 
 Report Commentarying:
 	say commentary of the location.
 	
-
-Part 4 - Uberuser Actions
+Part 5 - Uberuser Actions
 
 [to simulate having another cup of tea in N1]
 Liptoning is an action applying to nothing. Understand "lipton" as liptoning.
@@ -3066,7 +3042,7 @@ Carry out roomdumping:
 		say "[bold type][item]:[roman type][line break]";
 		try examining item.
  
-Part 5 - Tests
+Part 6 - Tests
 
 Chapter 1 - Nursery Descriptions
 
