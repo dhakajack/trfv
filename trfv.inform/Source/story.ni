@@ -365,7 +365,7 @@ Chapter 1 - R0 Begins
 
 When benjack-r0 begins:
 	now Benjack-scene-specific-hint is "Gnyx gb Puevfgnoryy nf zhpu nf lbh jbhyq yvxr sbe fbzr onpxtebhaq vasbezngvba gung znl or vzcbegnag yngre";
-	now the current interlocutor is the jade frog;
+	[FOR DEBUGGING ONLY : now the current interlocutor is the jade frog;]
 	benjack-conversation-customize.
 	
 [hint text:
