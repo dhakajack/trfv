@@ -365,7 +365,7 @@ Chapter 1 - R0 Begins
 
 When benjack-r0 begins:
 	now Benjack-scene-specific-hint is "Gnyx gb Puevfgnoryy nf zhpu nf lbh jbhyq yvxr sbe fbzr onpxtebhaq vasbezngvba gung znl or vzcbegnag yngre";
-	now the current interlocutor is benjack-Christabell;
+	now the current interlocutor is the jade frog;
 	benjack-conversation-customize.
 	
 [hint text:
@@ -619,8 +619,20 @@ Before going when benjack-Christabell is eager:
 
 Instead of saying no when benjack-Christabell is eager:
 	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the [bold type]Gifte[roman type] of specktral [bold type]Seight[roman type], you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][benjack-variousSubjects][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself.[paragraph break][quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark][paragraph break]She stares at the black face of the surrounding [bold type]cliffs[roman type] for inspiration.[no line break][or]She appears utterly puzzled at your reply.[no line break][stopping][paragraph break]".
+	
+[20181127 fixes to Christabell greeting state machine]
+	
+Instead of hailing when the location is DAN8 and benjack-Christabell is unaddressed: 
+	now the current interlocutor is benjack-Christabell;
+	now benjack-Christabell is eager;
+	try saying yes.
+	
+Before implicit-conversing when the current interlocutor is not visible and the current interlocutor is not nothing and the location is DAN8 (this is the can't talk with nobody but Christabell rule):
+	now the current interlocutor is benjack-Christabell.
+	
+[end 20181127 fixes to Christabell greeting state machine]
 
-Instead of saying yes when benjack-Christabell is eager:
+Instead of saying yes or hailing when benjack-Christabell is eager and the location is DAN8:
 	now benjack-Christabell is chatty; [trigger into main conversation]
 	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the Oppourtunity to speake with One graced with the [bold type]Seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark][paragraph break]She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark][paragraph break]She looks at you with anticipation.[no line break][benjack-variousSubjects][paragraph break]".
 	
