@@ -365,6 +365,7 @@ Chapter 1 - R0 Begins
 
 When benjack-r0 begins:
 	now Benjack-scene-specific-hint is "Gnyx gb Puevfgnoryy nf zhpu nf lbh jbhyq yvxr sbe fbzr onpxtebhaq vasbezngvba gung znl or vzcbegnag yngre";
+	now the current interlocutor is benjack-Christabell;
 	benjack-conversation-customize.
 	
 [hint text:
@@ -1319,9 +1320,9 @@ benjack-Longhouse is a subject.  Understand "longhouse/lodge" or "long house" as
 
 benjack-modernAge is a subject.  Understand "modern/age/future" as benjack-modernAge when the location is in the benjack-realm. The printed name of benjack-modernAge is "modern age".
 
-benjack-Demise is a subject.  Understand "demise" as benjack-demise when the location is DAN8. The printed name of benjack-Demise is "demise".
+benjack-Demise is a subject.  Understand "demise" as benjack-demise when the location is DAN8 and benjack-R0 is not happening. The printed name of benjack-Demise is "demise".
 
-Understand "death/deathe" as benjack-demise when benjack-R0 has ended and the location is DAN8. 
+Understand "death/deathe" as benjack-demise when benjack-R0 is not happening and the location is DAN8. 
 
 benjack-Obsession is a subject.  Understand "obsession/compulsion/obsessions/compulsions" as benjack-Obsession when the location is DAN8. The printed name of benjack-Obsession is "Carol's father's obsession".
 
@@ -2920,7 +2921,7 @@ The brick is a thing in MGR1.
 The orange is a thing in MGR1.
 The golf ball is a thing in MGR1.
 The bowling pin is a thing in MGR1.
-The jade frog is a thing in MGR1.
+The jade frog is a person in MGR1.
 
 Part 3 - Items that will come from other authors
 
