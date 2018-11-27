@@ -682,7 +682,7 @@ Rule for printing the name of a benjack-runebook (called the evil tome):
 Chapter 1 -  
 
 When benjack-N1 begins:
-	now Benjack-scene-specific-hint is "Lbh arrq gb uhzbe Pneby ol cynlvat nybat jvgu ure grn cnegl. Fur arrqf gb lbh gur zntvp jbeqf [quotation mark]obggbzf-hc[quotation mark] gb freir n ebhaq bs grn. Lbh pna unir n srj phcf bs grn vs lbh jnag, ohg bapr lbh unir unq bar, lbh pna yrnir. Lbh pna nyfb nfx/gryy nobhg n ahzore bs pbairefngvba gbcvpf gung jvyy or hfrshy yngre va gur tnzr";
+	now Benjack-scene-specific-hint is "Lbh arrq gb uhzbe Pneby ol cynlvat nybat jvgu ure grn cnegl. Fur arrqf gb lbh fnl gur zntvp jbeqf [quotation mark]obggbzf-hc[quotation mark] gb freir n ebhaq bs grn. Lbh pna nyfb nfx/gryy nobhg n ahzore bs pbairefngvba gbcvpf gung jvyy or hfrshy yngre va gur tnzr";
 	benjack-stage-on 1;
 	say "[benjack-nursery-description]";
 	now the current interlocutor is benjack-Carol;
