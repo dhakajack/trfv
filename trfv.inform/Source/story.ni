@@ -1299,7 +1299,7 @@ benjack-Fusion is a subject.  Understand "fusion/fusions" as benjack-fusion when
 
 benjack-Remedy is a subject.  Understand "remedie/remedy/remedies" as benjack-Remedy when the location is DAN8 and benjack-R0 is not happening. The printed name of benjack-Remedy is "remedy".
 
-benjack-Bestowance is a subject.  Understand "bestowance" as benjack-Bestowance when the location is DAN8. [The printed name of benjack-Bestowance is "bestowance". Understand "tea" or "tea party" as  benjack-Bestowance when the location is DAN8 and benjack-r0 has ended.]
+benjack-Bestowance is a subject.  Understand "bestowance" as benjack-Bestowance when the location is DAN8 and benjack-R0 is not happening. [The printed name of benjack-Bestowance is "bestowance". Understand "tea" or "tea party" as  benjack-Bestowance when the location is DAN8 and benjack-r0 has ended.]
 
 benjack-Nirramonk is a subject.  Understand "nirramonk" as benjack-Nirramonk when the location is DAN8 and benjack-R0 is not happening. The printed name of benjack-Nirramonk is "Nirramonk".
 
