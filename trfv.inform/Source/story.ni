@@ -607,9 +607,11 @@ To say benjack-talk-hint:
 [Stage business while awaiting Naomi's reply]
 Every turn while benjack-Christabell is eager:
 	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][or]The woman seems more desperate now. [quotation mark]Milady, do you see me?[quotation mark][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[stopping][paragraph break]".
+	
+[20181127 fixes to Christabell greeting state machine]
 
 The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
-Before going when benjack-Christabell is eager:
+Before going when benjack-Christabell is eager and the location is DAN8:
 	if benjack-guiltLevel of the player is 0:
 		now benjack-guiltLevel of the player is 1;
 		instead say "Although this unexpected encounter is unnerving, the stranger[apostrophe]s eager smile puts you at ease.[paragraph break][italic type]Perhaps she is lost,[roman type] you think. [italic type]Maybe she is one of Peter[apostrophe]s cousins. In any event, it would be the height of impoliteness to just wander off.[roman type][paragraph break][quotation mark]So, you can then? See me, that is?[quotation mark][paragraph break]";
@@ -617,10 +619,8 @@ Before going when benjack-Christabell is eager:
 		say "[one of][italic type]Screw politeness,[roman type] you say to yourself. [italic type]This day has been weird enough. Whoever she is, if she’s just going to loom at you in the darkness, that’s her problem.[roman type][paragraph break]With renewed determination, you steam off towards the trail, glad to be quit of her.[paragraph break][quotation mark]Fine, then, waifsome Trompe,[quotation mark] she mutters.[quotation mark] Stickly Clod. Upstuckt Wench! Be that like. I expect not Civility from a Crâne, their Rudeness does tell the Tale. Be off then, and the long Vigil I onely will endurre.[quotation mark][paragraph break][or]You wander off, ignoring the woman.[stopping]”;
 		continue the action.	
 
-Instead of saying no when benjack-Christabell is eager:
+Instead of saying no when benjack-Christabell is eager and the location is DAN8:
 	say "[one of][quotation mark]No?[quotation mark] Her head cocks to one side. [quotation mark]No, you can’t see me?[quotation mark][paragraph break]She walks around you, looking you over, [quotation mark]Yet, Evidence lets no Doubte but that you can perceeve in some Manner mee, that the Sound of mie Speeche is made apparent to you. Mayhap your Visione be afflickted and dim, nonetheless if you lacked the [bold type]Gifte[roman type] of specktral [bold type]Seight[roman type], you would not know me apart from a will-o[apostrophe]-the-wisp.[quotation mark][paragraph break][quotation mark]In Truth now, I pray you unless the English Tongue has so changed that my Wordes meaning is opposed to Itself, grant me that you have Comprehension of mie Speeche, will you?[quotation mark][benjack-variousSubjects][or]She starts to reply, but then appears confused. [quotation mark]No.[quotation mark] she says to herself.[paragraph break][quotation mark]But then in what Fashion… if you cannot make understoode…[quotation mark][paragraph break]She stares at the black face of the surrounding [bold type]cliffs[roman type] for inspiration.[no line break][or]She appears utterly puzzled at your reply.[no line break][stopping][paragraph break]".
-	
-[20181127 fixes to Christabell greeting state machine]
 	
 Instead of hailing when the location is DAN8 and benjack-Christabell is unaddressed: 
 	now the current interlocutor is benjack-Christabell;
