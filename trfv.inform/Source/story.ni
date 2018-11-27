@@ -629,12 +629,12 @@ Instead of hailing when the location is DAN8 and benjack-Christabell is unaddres
 	
 Before implicit-conversing when the current interlocutor is not visible and the current interlocutor is not nothing and the location is DAN8 (this is the can't talk with nobody but Christabell rule):
 	now the current interlocutor is benjack-Christabell.
-	
-[end 20181127 fixes to Christabell greeting state machine]
 
 Instead of saying yes or hailing when benjack-Christabell is eager and the location is DAN8:
 	now benjack-Christabell is chatty; [trigger into main conversation]
 	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the Oppourtunity to speake with One graced with the [bold type]Seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark][paragraph break]She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark][paragraph break]She looks at you with anticipation.[no line break][benjack-variousSubjects][paragraph break]".
+	
+[end 20181127 fixes to Christabell greeting state machine]
 	
 To say benjack-variousSubjects:
 	say "[one of][paragraph break][bracket] HINT: you can ask or sometimes tell people about various [bold type]subjects[roman type] [close bracket][or][stopping]"
