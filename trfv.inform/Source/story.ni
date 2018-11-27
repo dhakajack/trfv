@@ -1843,7 +1843,7 @@ Carry out benjack-N2-leaving:
 			say "[quotation mark]I[apostrophe]ve learned a few things since you were here last time; surely, you must know that [bold type]Christabell[roman type] taught me every chance she got. She[apostrophe]s such a generous soul, and so starved for company out there on the hill.[quotation mark] Carol glances out the window towards the cliffs.[paragraph break][quotation mark]Seems like you are the one who can[apostrophe]t get enough of company. No wonder you don[apostrophe]t get a lot of visitors, if you trap everyone in your room. Not many teenagers would want to lock adults in with them.[quotation mark][paragraph break][quotation mark]Well, you are the only one who can see me, so you[apostrophe]ve got that going for you. No, I[apostrophe]m happy to let you go, I just want to be able to find you again, you know, if I need you for something.[quotation mark][paragraph break][quotation mark]It[apostrophe]s nice to be needed.[quotation mark][paragraph break][quotation mark]So I understand. I will lower my barrier for you just as soon as you agree to bear my mark. The good news, it[apostrophe]s painless, the downside: it is a stain on your immortal soul. There[apostrophe]s no such thing as a free lunch, after all. So, what[apostrophe]ll it be, shall I mark you?[quotation mark] [paragraph break]She extends an index finger towards you.";
 			now benjack-Carol is n2-conversed;
 		otherwise: [subesquent requests to Naomi]
-			say "[one of]Carol stands right in front of you, hands on her hips waiting for an answer, [quotation mark]Listen, due to the metaphysics of complicity or some such, before you go, I need an yea or nay from you -- shall I place my mark?[quotation mark][or][quotation mark]Not to be a bore,[quotation mark] say Carol, [quotation mark]but I need to ask your consent to mark you before you split; can I place it?[quotation mark][or]Carol goes about her business, ignoring you until you change your mind and say  [quotation mark]yes[quotation mark] to her placing her mark on you.[no line break][stopping][paragraph break]";
+			say "[one of]Carol stands right in front of you, hands on her hips waiting for an answer, [quotation mark]Listen, due to the metaphysics of complicity or some such, before you go, I need an yea or nay from you -- shall I place my mark?[quotation mark][or][quotation mark]Not to be a bore,[quotation mark] say Carol, [quotation mark]but I need to ask your consent to mark you before you split; can I place it?[quotation mark][or]Carol goes about her business, ignoring			 you until you change your mind and say  [quotation mark]yes[quotation mark] to her placing her mark on you.[no line break][stopping][paragraph break]";
 
 Instead of saying no when benjack-Carol is requesting_permission during benjack-N2:
 	say "[one of][quotation mark]Well unless you know some way out of this room that hasn[apostrophe]t occurred to me, we[apostrophe]re going to be here together until you do agree, but no hurry on my account. We can come back to the marking issue later.[quotation mark][or]Carol shakes her head sadly.[no line break][stopping][paragraph break]"
@@ -2410,7 +2410,8 @@ Before opening the benjack-window when benjack-N3 is happening:
 			stop the action;
 		otherwise:
 			say "You give the window a good heave, and the sash flies upward, the frigid outside air pouring inward.";
-			now the benjack-window is open.
+			now the benjack-window is open;
+			stop the action.
 			
 At the time when the benjack-sash falls:
 	if the benjack-window is closed and the benjack-window is cracked:
