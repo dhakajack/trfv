@@ -104,6 +104,10 @@ Part 5 - Locations
 
 Chapter DAN8 Hillside Path
 
+[*** DEBUG ***]
+The tome of soggy is a book. The tome of soggy is in DAN8. The description of the tome of soggy is "A soggy tome."
+
+
 DAN is a region.
 
 DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1.
@@ -2472,6 +2476,7 @@ Before conversing when the benjack-Denouement is happening:
 Every turn when benjack-denouement is happening:
 	if the doomCounter of the benjack-denouement is less than 5:
 		increase the doomCounter of the benjack-denouement by 1;
+	say "doom counter is [doomCounter of the benjack-denouement].";
 	if the doomCounter of the benjack-denouement is:
 		-- 1:
 			say "[benjack-doom1]";
@@ -2492,7 +2497,7 @@ To say benjack-doom3:
 	now benjack-Carol is nowhere;
 	now benjack-Carol is unseen.
 	
-Before doing anything when the doomCounter of the benjack-Denouement is 3 and benjack-Denouement is happening:
+Before doing anything when the doomCounter of the benjack-Denouement is greater than 2 and benjack-Denouement is happening:
 	say "Before you can do that, a book appears in mid-air and drops to the wooden floor. Clouds of dust waft up around it.";
 	now benjack-TomeONaomi is in M2F3;
 	now benjack-TomeONaomi is seen;
@@ -2561,7 +2566,7 @@ Chapter 1 - Events
 
 [Apres isn't really a scene -- it is how things are left in DAN8 and M2F3 after denouement of our part of Cragne Manor]
 
-Before doing anything with benjack-TomeONaomi when benjack-Denouement has happened for the first time:
+Before doing anything with benjack-TomeONaomi when benjack-Denouement has happened and jpk-picture is unseen:
 	say "A photograph flitters out of the Rune Book, spirals around you and floats to the ground.";
 	now jpk-picture is in the location;
 	now jpk-picture is seen;
