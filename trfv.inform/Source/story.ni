@@ -104,10 +104,6 @@ Part 5 - Locations
 
 Chapter DAN8 Hillside Path
 
-[*** DEBUG ***]
-The tome of soggy is a book. The tome of soggy is in DAN8. The description of the tome of soggy is "A soggy tome."
-
-
 DAN is a region.
 
 DAN8 is a room in DAN. DAN8 is northeast of DAN3 and south of MGR1.
@@ -2476,7 +2472,7 @@ Before conversing when the benjack-Denouement is happening:
 Every turn when benjack-denouement is happening:
 	if the doomCounter of the benjack-denouement is less than 5:
 		increase the doomCounter of the benjack-denouement by 1;
-	say "doom counter is [doomCounter of the benjack-denouement].";
+	[say "doom counter is [doomCounter of the benjack-denouement].";]
 	if the doomCounter of the benjack-denouement is:
 		-- 1:
 			say "[benjack-doom1]";
