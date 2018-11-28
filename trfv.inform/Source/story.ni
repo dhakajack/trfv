@@ -2395,10 +2395,15 @@ Instead of benjack-ploughvering when benjack-N3 is happening:
 To say benjack-stuck-n3:
 	say "[one of][quotation mark]What gives, Carol? Am I your prisoner now?[quotation mark][paragraph break][quotation mark]Naomi, it[apostrophe]s not me holding you back --  honest![quotation mark] pleads Carol. [quotation mark]It[apostrophe]s the universe. When you[apostrophe]re here, some part of you is in my time. The future is written from your perspective, but not mine; all is fluid and potential. Apparently, you have some decisions to make, and the universe can[apostrophe]t get on with its business until you make them. I urge you to think carefully on your choices, as this is apparently a nodal moment, the sort of historical linchpin that I have long labored to bring about at great cost.[quotation mark][paragraph break][quotation mark]You[apostrophe]ll understand if I choose not to believe you.[quotation mark][paragraph break][quotation mark]Believe what you want, but think carefully about your next actions. There is no reason we need be enemies.[quotation mark][or]An invisible force blocks your exit.  Carol again shrugs her shoulders and claims it is none of her doing, but somehow related to the universe and unwritten destiny.[no line break][or]An invisible force blocks your exit.[no line break][stopping][paragraph break]".
 
+Does the player mean informing someone about benjack-window: it is unlikely.
 	
 Before opening the benjack-window when benjack-N3 is happening:
 	if the benjack-window is open:
 		say "The window is already open.";
+		stop the action;
+	if benjack-Carol is disruption_informed:
+		say "As Carol looks on, you open the window. The room temperature plummets.";
+		now the benjack-window is open;
 		stop the action;
 	if yourself is not benjack-ragchewing:
 		say "[one of]Carol is watching you too closely[or]Carol seems to have her eye on you[or]Carol if focused on what you are doing[or]Except when Carol is blathering on about something, she watches you too closely to afford you the opportunity to approach the window[or]Sometimes when Carol gets talking, she seems to zone out, but right now, her attention is on you[or]When Carol gets going on a topic, she looses track of what you are doing[or]You need to distract Carol with some conversation in order to get to the window[stopping].";
