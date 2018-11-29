@@ -26,7 +26,7 @@ Book 1 - Set Up
 Part 1 - New Kinds
 
 [Used in the Nursery, where objects evolve over 3 different scenes.
-Note that this is basically a special type of scener that has multiple descriptions, can't be touched/taken (like all scenery), and isn't automatically described as being present in the room (like all scenery).  This is good -- we're counting on the general room description and multiple examinations to reveal these objects.
+Note that this is basically a special type of scenery that has multiple descriptions, can't be touched/taken (like all scenery), and isn't automatically described as being present in the room (like all scenery).  This is good -- we're counting on the general room description and multiple examinations to reveal these objects.
 ]
 
 A benjack-shadow is a kind of thing and scenery.
@@ -1184,7 +1184,7 @@ Every turn during benjack-N1:
 						say "Misses Winkelbottom";
 					-- benjack-clown:
 						say "Malice";
-					say "[roman type], will you please help yourself to one of Naomi[apostrophe]s trinkets and drop in the Maw of Unthinkable Nothingness? Maybe that will make her want to play with us and say the magical word [apostrophe][bold type]bottoms-up[roman type][apostrophe] so we can all play [bold type]tea party[roman type].[quotation mark][paragraph break]The [bold type][L][roman type] comes to suddenly to life, walks stiffly towards you and plucks [an item] out the air and tosses it into a whirling vortex of fire and ash that has opened above the tea table. The vortex folds in on itself and disappears the moment [the item] enters it.[paragraph break]It all happens so fast that you are left speechless.";
+					say "[roman type], will you please help yourself to one of Naomi[apostrophe]s trinkets and drop it into the Maw of Unthinkable Nothingness? Maybe that will make her want to play with us and say the magical word [apostrophe][bold type]bottoms-up[roman type][apostrophe] so we can all play [bold type]tea party[roman type].[quotation mark][paragraph break]The [bold type][L][roman type] comes to suddenly to life, walks stiffly towards you and plucks [an item] out the air and tosses it into a whirling vortex of fire and ash that has opened above the tea table. The vortex folds in on itself and disappears the moment [the item] enters it.[paragraph break]It all happens so fast that you are left speechless.";
 					now item is in benjack-slithering-vomit-bladder-of-Katallakh;
 					now item is unseen;
 				otherwise: [no stealable items]
