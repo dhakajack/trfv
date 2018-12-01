@@ -1040,10 +1040,19 @@ After quizzing benjack-Carol about benjack-GrandUncle:
 	say "[one of][quotation mark]He[apostrophe]s really cranky and is always telling me not to touch his stuff and to get off stuff and not too sing too loud.[quotation mark][paragraph break][quotation mark]Yes,[quotation mark] you say, trying to reign in the conversation, [quotation mark]but does he have a name?[quotation mark][paragraph break][quotation mark]I[apostrophe]m sure he does, but I just call him [bold type]great-uncle[roman type]. He says that only the [bold type]Deep Ones[roman type] should not be named.[quotation mark][or]Carol sure doesn[apostrophe]t know much about this grand-uncle of hers, except that he[apostrophe]s a grumpy old guy.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-CarolteaParty:
-	say "[one of][quotation mark]I do just love [bold type]tea parties![roman type][quotation mark] Carol buzzes. [quotation mark]I invite all my friends, and it[apostrophe]s so grown up![quotation mark][paragraph break][quotation mark]Why a [bold type]tea party[roman type]?[quotation mark][paragraph break][quotation mark]Because we drink tea at it, of course.[quotation mark][paragraph break][quotation mark]No, I mean, why did you decide to have a [bold type]tea party[roman type] and not some other sort of party, like the kind with balloons.[quotation mark][paragraph break][quotation mark]I don[apostrophe]t have any balloons. Besides, when we were trying to do this, [bold type]Christabell[roman type] said that a [bold type]tea party[roman type] would help us focus and showed me how, and now when I get tired or start to fade, we have a tea party and that sets everything right again. Plus, I really like tea.[quotation mark][if benjack-times_bestowed of yourself is 0][paragraph break][quotation mark]Are you ready to begin?[quotation mark] she asks eagerly. [quotation mark]I[apostrophe]ll pour. Since you[apostrophe]re the guest, you have to be the one to say [apostrophe][bold type]bottoms-up[roman type][apostrophe].[quotation mark][end if][or][if benjack-times_bestowed of yourself is 0]Carol had some odd tastes for a five-year-old and seems hell bent on having a tea party. She reminds you that to start it you have to (for some reason known only to Carol) say, [quotation mark]bottoms-up[quotation mark][otherwise]It[apostrophe]s Carol[apostrophe]s idea of a fun afternoon[end if].[no line break][stopping][paragraph break]".
+	if benjack-N1 is happening:
+		say "[one of][quotation mark]I do just love [bold type]tea parties![roman type][quotation mark] Carol buzzes. [quotation mark]I invite all my friends, and it[apostrophe]s so grown up![quotation mark][paragraph break][quotation mark]Why a [bold type]tea party[roman type]?[quotation mark][paragraph break][quotation mark]Because we drink tea at it, of course.[quotation mark][paragraph break][quotation mark]No, I mean, why did you decide to have a [bold type]tea party[roman type] and not some other sort of party, like the kind with balloons.[quotation mark][paragraph break][quotation mark]I don[apostrophe]t have any balloons. Besides, when we were trying to do this, [bold type]Christabell[roman type] said that a [bold type]tea party[roman type] would help us focus and showed me how, and now when I get tired or start to fade, we have a tea party and that sets everything right again. Plus, I really like tea.[quotation mark][if benjack-times_bestowed of yourself is 0][paragraph break][quotation mark]Are you ready to begin?[quotation mark] she asks eagerly. [quotation mark]I[apostrophe]ll pour. Since you[apostrophe]re the guest, you have to be the one to say [apostrophe][bold type]bottoms-up[roman type][apostrophe].[quotation mark][end if][or][if benjack-times_bestowed of yourself is 0]Carol had some odd tastes for a five-year-old and seems hell bent on having a tea party. She reminds you that to start it you have to (for some reason known only to Carol) say, [quotation mark]bottoms-up[quotation mark][otherwise]It[apostrophe]s Carol[apostrophe]s idea of a fun afternoon[end if].[no line break][stopping][paragraph break]";
+	otherwise:
+		say "[benjack-tpExplanation]."
+	
+To say benjack-tpExplanation:
+	say "Carol explains that magic word and the tea party itself were simply her way as a child to perform a more abstract magical ceremony known as the [apostrophe]bestowance[apostrophe]".
 
 After quizzing benjack-Carol about benjack-bottomsUp:
-	say "In the make-believe logic that only five year-olds can understand, Carol believes that saying [quotation mark][bold type]bottoms-up[roman type][quotation mark] is the right way to start a [bold type]tea party[roman type].[no line break][if benjack-times_bestowed of yourself is 0][paragraph break][quotation mark]Oh, I do wish you would say it -- as my [bold type]father[roman type] says when he comes home, [apostrophe]today was murder -- I really need a drink[apostrophe].[quotation mark][paragraph break][quotation mark]I don[apostrophe]t want to ruin your fun,[quotation mark] you say, [quotation mark]but there[apostrophe]s no tea in the [bold type]teapot[roman type]. What are you going to pour?[quotation mark][paragraph break][quotation mark]Geez Louise, [bold type]Naomi[roman type]. It[apostrophe]s pretend! All right? It[apostrophe]s just pretend tea. if you would just say ‘[bold type]bottoms-up[roman type][apostrophe] we could get this party started.[quotation mark][end if][paragraph break]".
+	if benjack-N1 is happening:
+		say "In the make-believe logic that only five year-olds can understand, Carol believes that saying [quotation mark][bold type]bottoms-up[roman type][quotation mark] is the right way to start a [bold type]tea party[roman type].[no line break][if benjack-times_bestowed of yourself is 0][paragraph break][quotation mark]Oh, I do wish you would say it -- as my [bold type]father[roman type] says when he comes home, [apostrophe]today was murder -- I really need a drink[apostrophe].[quotation mark][paragraph break][quotation mark]I don[apostrophe]t want to ruin your fun,[quotation mark] you say, [quotation mark]but there[apostrophe]s no tea in the [bold type]teapot[roman type]. What are you going to pour?[quotation mark][paragraph break][quotation mark]Geez Louise, [bold type]Naomi[roman type]. It[apostrophe]s pretend! All right? It[apostrophe]s just pretend tea. if you would just say ‘[bold type]bottoms-up[roman type][apostrophe] we could get this party started.[quotation mark][end if][paragraph break]";
+	otherwise:
+		say "[benjack-tpExplanation]."
 
 After quizzing benjack-Carol about benjack-ChristabellSubject:
 	say "[one of][quotation mark]She[apostrophe]s out by those rocks,[quotation mark] says Carol, pointing out the window towards some dark cliffs. [quotation mark]I go out there all the time and we talk and play and do stuff. She taught me to read, you know.  [bold type]Mom[roman type] and [bold type]Dad[roman type] aren[apostrophe]t around and the [bold type]Cragnes[roman type] don[apostrophe]t really care about me ([bold type]mom[roman type] once said they only took me for the money, because they[apostrophe]re not rich like they used to be), so that[apostrophe]s where I go when the weather isn[apostrophe]t too bad.[quotation mark][paragraph break][quotation mark]You know, she[apostrophe]s not alive, right?[quotation mark] You try to say it gently, but feel the girl needs to know.[paragraph break][quotation mark]Sure, she[apostrophe]s a spirit -- don[apostrophe]t call her a ghost because she says that not correct. I mean, gee whiz, at this point, I[apostrophe]m one too. It[apostrophe]s no big deal.[quotation mark][or][quotation mark]So,[quotation mark] you inquire, [quotation mark]it sounds like we have a mutual friend -- [bold type]Christabell[roman type]. How did you meet her?[quotation mark][paragraph break][quotation mark]Oh, [bold type]Christabell[roman type]? We met a long time ago -- maybe when I was four? And I was playing out in the woods, sharpening sticks or something, and I found a great big pile of railroad tracks. Right out there,[quotation mark] she points out the window towards a range of dark cliffs.[paragraph break][quotation mark]Yes, I[apostrophe]ve been there.[quotation mark][paragraph break][quotation mark]You have? Most people can[apostrophe]t see her, you know. They don[apostrophe]t have the sight, but I do because of my [bold type]mom[roman type]. [bold type]Christabell[roman type][apostrophe]s and my [bold type]mom[roman type] are cousins or something, so I got the sight. Anyhow, [bold type]Christabell[roman type][apostrophe]s great. She taught me a lot of stuff.[quotation mark][paragraph break][quotation mark]Like what?[quotation mark][paragraph break][quotation mark]Like reading and how to skin rabbits, but she also taught me special stuff that I had to have the [bold type]mark[roman type] for, like the tea party. She wants to teach me more stuff like that, but says I can concentrate enough, but I can too.[quotation mark][or]It sounds like Christabell has played a role in mentoring and looking after young Carol.[no line break][or]Carol says she knows all about Christabell and seems surprisingly comfortable knowing that she is a spirit.[no line break][stopping][paragraph break]".
@@ -1067,13 +1076,13 @@ After quizzing benjack-Carol about benjack-clown:
 	say "[one of][quotation mark]Malice is middle class, so before when he was a she, she was a waitress, but now I think he has a real [bold type]job[roman type] and works in a store and sells stuff. Malice lives in a house, but not a big one, and doesn[apostrophe]t have a lot of stuff.[quotation mark][or]There is little that Carol can say that would convince you that Malice the Clown is not a serial killer.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-mark:
-	say "[one of][quotation mark]I[apostrophe]ve heard about the ‘mark[apostrophe] -- can you tell me what that is?[quotation mark] you ask.[paragraph break][quotation mark]I can show you.[quotation mark] Carol pirouettes around and pulls down the shoulder of her dress, revealing a small brown mark between the base of her neck and her left shoulder blade. It looks like a birthmark, except that its edges are indistinct and seem to keep shifting, like a living thing. Carol spins back around and takes a bow. [quotation mark]Did you see it?[quotation mark][paragraph break][quotation mark]Yes, I think so. But what[apostrophe]s it for?[quotation mark][paragraph break][quotation mark][bold type]Christabell[roman type] gave it to me because she said that there[apostrophe]s something she doesn[apostrophe]t trust about these [bold type]Cragnes[roman type], so it would protect me. She also said I needed to do be able to do stuff, but I[apostrophe]m not old enough yet for most of the stuff, so I stopped bugging her about it.[quotation mark][or]Carol says that Christabell put her magical mark on her so that she could cast magical spells.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark]I[apostrophe]ve heard about the [apostrophe]mark[apostrophe] -- can you tell me what that is?[quotation mark] you ask.[paragraph break][quotation mark]I can show you.[quotation mark] Carol pirouettes around and pulls down the shoulder of her dress, revealing a small brown mark between the base of her neck and her left shoulder blade. It looks like a birthmark, except that its edges are indistinct and seem to keep shifting, like a living thing. Carol spins back around and takes a bow. [quotation mark]Did you see it?[quotation mark][paragraph break][quotation mark]Yes, I think so. But what[apostrophe]s it for?[quotation mark][paragraph break][quotation mark][bold type]Christabell[roman type] gave it to me because she said that there[apostrophe]s something she doesn[apostrophe]t trust about these [bold type]Cragnes[roman type], so it would protect me. She also said I needed to do be able to do stuff, but I[apostrophe]m not old enough yet for most of the stuff, so I stopped bugging her about it.[quotation mark][or]Carol says that Christabell put her magical mark on her so that she could cast magical spells.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-death:
 	say "[one of]Carol holds still a minute, thinking hard, [quotation mark]It[apostrophe]s funny, but I don[apostrophe]t know how I died. Not yet anyway. [bold type]Christabell[roman type] says that[apostrophe]s just a thing I go through sometimes and it[apostrophe]s pretty normal.[quotation mark][or]Death is the least of Carol[apostrophe]s worries.[no line break][stopping][paragraph break]".
 
 After quizzing benjack-Carol about benjack-witch:
-	say "[quotation mark]I[apostrophe]ve heard [bold type]dad[roman type] talk about them -- they[apostrophe]re Red [bold type]Communists[roman type] and want to [apostrophe]destroy our way of life[apostrophe], so what[apostrophe]s why we hunt them.[quotation mark][paragraph break]".
+	say "[quotation mark][if benjack-N1 is happening]I[apostrophe]ve heard [bold type]dad[roman type] talk about them -- they[apostrophe]re Red [bold type]Communists[roman type] and want to [apostrophe]destroy our way of life[apostrophe], so what[apostrophe]s why we hunt them[otherwise]I would say that the less you know, the happier you will remain[end if].[quotation mark][paragraph break]".
 
 After quizzing benjack-Carol about benjack-Vermont:
 	say "[one of][quotation mark]This is all Vermont,[quotation mark] says Carol gesturing vaguely out the window. [quotation mark]It[apostrophe]s one of the forty-eight United States.[quotation mark][paragraph break][quotation mark]Isn[apostrophe]t it fifty?[quotation mark][paragraph break][quotation mark]Maybe. I don[apostrophe]t know how that works. My parents live in Connecticut, which is another state, but they don[apostrophe]t want me at home, so I came here for nursery [bold type]school[bold type] and Kindergarten, but [bold type]dad[roman type] says I have to go back to [bold type]Stonington[roman type] next year because he pays taxes, so it[apostrophe]s where I need to go.[quotation mark][or]Carol says that aside from visiting the hillside near the mansion, she doesn[apostrophe]t get out very much.[no line break][stopping][paragraph break]".
@@ -1217,7 +1226,7 @@ After dropping mtw-teapot:
 Instead of dropping mtw-teapot when benjack-N1 is happening:
 	now mtw-teapot is nowhere;
 	now benjack-bigmirror is nowhere;
-	say "The delicate antique smashes into a million pieces that melt like snowflakes and disappear.[paragraph break]Carol stares, immobile, in horror.[paragraph break][quotation mark][quotation mark]What did you do?[quotation mark] She whispers, more to herself than you. [quotation mark][bold type]Grand-uncle[roman type] will be… he’ll be angry.[quotation mark][paragraph break]Tears well in Carol’s eyes. [quotation mark]He will be so, so angry. Even when he’s not angry, he’s so… cruel.[quotation mark] She wipes her running nose with the back of her sleeve and through choked sobs asks, [quotation mark]Why? Why did you do that?[quotation mark][paragraph break]Carol throws her arms outward, palms towards you and you experience the memorable phenomenon of being propelled through a phantasmal wall.";
+	say "The delicate antique smashes into a million pieces that melt like snowflakes and disappear.[paragraph break]Carol stares, immobile, in horror.[paragraph break][quotation mark]What did you do?[quotation mark] She whispers, more to herself than you. [quotation mark][bold type]Grand-uncle[roman type] will be… he’ll be angry.[quotation mark][paragraph break]Tears well in Carol’s eyes. [quotation mark]He will be so, so angry. Even when he’s not angry, he’s so… cruel.[quotation mark] She wipes her running nose with the back of her sleeve and through choked sobs asks, [quotation mark]Why? Why did you do that?[quotation mark][paragraph break]Carol throws her arms outward, palms towards you and you experience the memorable phenomenon of being propelled through a phantasmal wall.";
 	now benjack-Carol is teapot-angry;
 	try going south.
 
@@ -1252,12 +1261,16 @@ To say benjack-baby-door-desc:
 
 benjack-baby-door is a thing. The printed name of benjack-baby-door is "door to Carol's room". Understand "sign/door/room/kindergartner/napping/moody/teenager" as benjack-baby-door when the location is M2F3. 
 
+[otherwise, get all tries to get the door, trigger player death if between N-scenesl]
+
 A multiple action processing rule when current action is taking and the location is M2F3 (this is the don't kill player for taking all in nursery rule): 
 	let L be the multiple object list;
 	repeat with item running through L:
 		if item is benjack-baby-door:
 			remove item from L;
-	alter the multiple object list to L.
+	alter the multiple object list to L;
+	if the number of entries in L is zero:
+		say "There are none at all to get -- whatever that means."
 
 After going north from M2F2 when the benjack-baby-door is in M2F3:
 	say "Just down a side corridor, you encounter a closed door that says [benjack-baby-door-desc]"
@@ -1265,7 +1278,8 @@ After going north from M2F2 when the benjack-baby-door is in M2F3:
 Instead of going north when the player is in M2F3 and the benjack-baby-door is in M2F3:
 	try attacking the benjack-baby-door.
 			
-Before doing something other than examining to the benjack-baby-door:
+[location specified so that talking about the door does not immediately kill the player!]
+Before doing something other than examining to the benjack-baby-door when the benjack-baby-door is in M2F3:
 	say "There is nothing at all arbitrary about the justice meted out for waking a [if benjack-R1 has happened]sullen teenager[otherwise]cranky kindergartner[end if] in Crange Mansion.[paragraph break]";
 	now the printed name of M2F3 is "Dungeon";
 	now the description of M2F3 is "You find yourself in a dungeon, strapped by to a toffee table by candy cane manacles and slathered with delicious honey. A stalactite drips dark chocolate over your belly, luscious rivulets pooling in the small of your back.[paragraph break]The ants pour in, their mandibles clacking.[no line break]";
@@ -1543,7 +1557,7 @@ After quizzing benjack-Christabell about benjack-XizziSpell:
 	say "[if yourself is benjack-spell_enabled]Christabell reminds you that this is the spell that transfers magical energy from one being to another.[no line break][otherwise]Christabell gives you an odd look. [quotation mark]The best way to find out is to say it, no?[quotation mark][end if][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-PloughverSpell:
-	say "Christabell [if yourself is benjack-spell_enabled]is suprised you have heard of it at all and suggests that before discussing that spell, you talk about the bestowance[otherwise]reminds you that this is the spell that will allow you to magically blink back and forth between Carol[apostrophe]s room and this hillside -- but won't work anywhere else[end if]."
+	say "Christabell [if yourself is not benjack-spell_enabled]is suprised you have heard of it at all and suggests that before discussing that spell, you talk about the bestowance[otherwise]reminds you that this is the spell that will allow you to magically blink back and forth between Carol[apostrophe]s room and this hillside -- but won't work anywhere else[end if]."
 	
 After quizzing benjack-Christabell about benjack-KHSpell :
 	say "Christabell reminds you that this is the spell that you can use to destroy Carol[apostrophe]s book of runes."
@@ -1734,7 +1748,7 @@ Before conversing or hailing when benjack-N2 is happening for the first time:
 After quizzing benjack-Christabell about a benjack-clipping when benjack-r1 is happening:
 	say "Aye, that [one of]do have the true Ring of a Rune to it[or]haveth the Waye of the [bold type]deep ones[roman type] about it[stopping]."
 
-After quizzing benjack-Carol about benjack-thresher:
+After quizzing benjack-Carol about benjack-thresher when benjack-n2 is happening:
 	say "It’s the sub that the [bold type]Deep Ones[roman type] asked for in return for [bold type]Kennedy[roman type].”
 
 After quizzing benjack-Carol about benjack-missingIke when benjack-N2 is happening:
@@ -1921,7 +1935,7 @@ After informing or quizzing benjack-Christabell about benjack-fading when benjac
 	say "The two of you agree that Christabell's fading problem seems to be fixed now thanks to the [apostrophe]xizzi[apostrophe] spell."
 
 After quizzing benjack-Christabell about benjack-mark when benjack-R2 is happening:
-	say "[quotation mark]Christabell, you said that a person can only be marked by a spirit once, right?[quotation mark][paragraph break][quotation mark]That is the Waie of it.[quotation mark][paragraph break][quotation mark]Is there any way to remove a [bold type]mark[roman type]?[quotation mark][paragraph break][quotation mark]Nay, Friend Naomi, there be not, even with Deathe.[quotation mark][paragraph break]".
+	say "[one of][quotation mark]Christabell, you said that a person can only be marked by a spirit once, right?[quotation mark][paragraph break][quotation mark]That is the Waie of it.[quotation mark][paragraph break][quotation mark]Is there any way to remove a [bold type]mark[roman type]?[quotation mark][paragraph break][quotation mark]Nay, Friend Naomi, there be not, even with Deathe.[quotation mark][or]Christabell insists that there is no way to undo an arcane mark. Once marked, always marked.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-windowSubject:
 	say "[one of][quotation mark]The [bold type]Windowe[roman type] in that room be a Thing of her Minde; nothing moore. Open it, and you do Open her Mentally a Crack, and into that I shall slippe my Magicks and thereby her [bold type]Disruption[roman type].[quotation mark][paragraph break][quotation mark]You think this will work?[quotation mark][paragraph break][quotation mark]Mayhap. If we do not dally, for her Power groweth like unto a Balle of Snouwe rolling downward upon a Hill -- But, you will needs be clever, for onely distracted will her Eye[apostrophe]s Gaze not catch you and all be lost.[quotation mark][or]Christabell reiterates that opening Carol[apostrophe]s window will give Christabell a chance to cast a spell that will once and for all destroy Carol, who has gotten to powerful and poses a danger to all concerned.[no line break][stopping][paragraph break]".
@@ -2724,6 +2738,8 @@ Book 4 - New Actions
 
 Part 1 - Magicks
 
+Chapter 1 - BottomsUpping
+
 Instead of answering benjack-Carol that "bottoms up":	try Benjack-bottomsupping.
 
 Instead of answering benjack-Carol that "bottoms-up":	try Benjack-bottomsupping.
@@ -2792,10 +2808,16 @@ At the time when benjack-Carol stretches:
 To benjack-wrap-party:
 	say "[quotation mark]Thanks for playing tea party, Aunt Naomi. You played it just the way Christabell taught me. She[apostrophe]d be very proud.[quotation mark][paragraph break]Before you can react, she waves at you, [quotation mark]I[apostrophe]ve got some things to do now. See you in a bit![quotation mark][paragraph break]Suddenly, you find yourself in the hallway.";
 	try going south.
-
 	
+Chapter 2 - NotPouring
 
-Chapter 1 - XIZZIING
+notPouring is an action applying to nothing.  Understand "pour" or "serve" or "bestow" or "pour tea" or "serve tea" or "pour teapot" or "fill cup" or "fill cups" as notPouring when the player is in M2F3 and benjack-N1 is happening.
+
+Report notPouring:
+	say "Carol rolls her eyes. [quotation mark][one of]Good grief,[quotation mark] she says. [quotation mark]Don[apostrophe]t you know how to do anything? As [bold type]Christabell[roman type] says, it is not about the substance, but the shadow[or]The tea is not the thing. It is all about the word[or]Knock it off, okay? It[apostrophe]s not funny -- just say the word like you did before. I like tea as much as anyone, but me and my colleagues -- she glances over to the stuff animals -- we have stuff to do[or]Naomi, enough is enough. Just say the magical word [apostrophe]bottoms-up[apostrophe] and the tea will take care of itself. Why do grown ups always not get me? Seems simple enough[or]Forget the tea, just say [apostrophe]bottoms-up[apostrophe][stopping].[quotation mark][paragraph break]".
+
+
+Chapter 3 - XIZZIING
 
 Benjack-xizziing is an action applying to nothing. Understand "xizzi" as Benjack-xizziing when the location is in the benjack-realm.
 
@@ -2819,7 +2841,7 @@ Before answering someone that "xizzi":
 	say "[bracket] Hint: You can just say the magic word by itself[one of]. That's part of the magic[or] -- there's no extra charge[or][stopping]. [close bracket][paragraph break]";
 	try Benjack-xizziing instead.
 
-Chapter 2 - Ploughvering
+Chapter 4 - Ploughvering
 
 Benjack-ploughvering is an action applying to nothing. Understand "ploughver" as Benjack-ploughvering when the location is in the benjack-realm.
 
@@ -2853,7 +2875,7 @@ At the time when the benjack-ploughver spell arms:
 To say benjack-ploughver-cutscenes:
 	say "[one of]Around you, in no particular direction, you hear screams, strangled almost instantly, drowned in splashes and bubbles and ending in silence. At the same time, your vision fades to darkness and you feel yourself plunging, able to see only vast, hovering shapes above you, moving silently past. You become aware of sounds so low, that you more feel them in your bones than hear them; one such sounds passes below you, receding in endless distance. Then it is over[or]Mens voices, people shuffling around frantically, things moving, falling.[paragraph break][quotation mark]The brazing is blown, pressure is down to ten percent![quotation mark] The voice is just slightly louder than the blaring klaxon.[paragraph break][quotation mark]Dive planes up 30[quotation mark].[paragraph break][quotation mark]Moderators are full in, it[apostrophe]s no good, I[apostrophe]m scramming.[quotation mark][paragraph break][quotation mark]All hands. Prepare for emergency blow. Larsen, in five and then hit it.[quotation mark][paragraph break][quotation mark]Aye. Five. Four. Reactor quenched. Three. Two. We[apostrophe]re pitching. One. Blow![quotation mark][paragraph break][quotation mark]Tanks are good, but no blow. Sir, I think we[apostrophe]re iced up.[quotation mark][paragraph break][quotation mark]Crushing depth minus 200, minus 300.[quotation mark][paragraph break]And then silence[or][stopping]."
 
-Chapter 3 - kwisatzhaderaching
+Chapter 5 - kwisatzhaderaching
 
 Benjack-KHing is an action applying to nothing. Understand "kwisatz haderach" as Benjack-KHing when the location is in the benjack-realm.
 
