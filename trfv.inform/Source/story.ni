@@ -1277,7 +1277,7 @@ A multiple action processing rule when current action is taking and the location
 Definition: A thing is benjack-retrievable if it is portable and it is not the player.
 
 After going north from M2F2 when the benjack-baby-door is in M2F3:
-	say "Just down the side corridor to the north, you notice a closed door that says [benjack-baby-door-desc][if M2F3 holds a benjack-retrievable thing][paragraph break]There is also something on the floor here[end if]."
+	say "Just down the side corridor to the north, you notice a closed door that says [benjack-baby-door-desc][if M2F3 holds a benjack-retrievable thing].[paragraph break]There is also something on the floor here[end if]."
 	
 Instead of going north when the player is in M2F3 and the benjack-baby-door is in M2F3:
 	try attacking the benjack-baby-door.
@@ -1443,7 +1443,7 @@ After quizzing benjack-Christabell about benjack-Remedy:
 	say "[one of][quotation mark]I do see clearly a simple answer to remitte your Libertie of Mouvement: the [bold type]Bestowance[roman type].[quotation mark][or]Christabell recommends that you perform a magical ritual called [quotation mark]the bestowance[quotation mark] in order to rid yourself of magical energy, which over time can be harmful to mortals.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-Bestowance:
-	say "[one of]Christabelle replies, [quotation mark]The [bold type]Bestowance[roman type] is the Magick whereby [bold type]Potence[roman type] be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark] you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach [bold type]Carol[roman type], when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be [apostrophe][bold type]xizzi[roman type][apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little[or]Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe][bold type]xizzi[roman type][apostrophe][stopping].";
+	say "[one of]Christabell replies, [quotation mark]The [bold type]Bestowance[roman type] is the Magick whereby [bold type]Potence[roman type] be conveid from one to another. If you would deign permitte, I could shew by what meenes this Magick could be wrought.[quotation mark][paragraph break][quotation mark]You mean I could cast a spell to charge you up?[quotation mark] you ask. [quotation mark]How?[quotation mark][paragraph break][quotation mark]In so many Werdes. Yes, my Marke being upon you, you could werke it. Upon a Tymme, it were the first Magick I did teach [bold type]Carol[roman type], when she saw but five Yeares. But you a Woman full grow[apostrophe]d need no trappings of Ceremonie to conduct it, but only the Comprehension of what you do, and a Werde bespoken to set the Magick in Motion.[quotation mark][paragraph break][quotation mark]What[apostrophe]s the word?[quotation mark][paragraph break][quotation mark]It be [apostrophe][bold type]xizzi[roman type][apostrophe],[quotation mark] replies Christabelle. [quotation mark]If you do but say it, all will be put to Righte. Here, let me place my Mark that you may werke summe Magicks.[quotation mark][paragraph break][quotation mark]Hang on a…[quotation mark] Christabell pokes your shoulder before you can finish the sentence.[paragraph break][quotation mark][apostrophe]Tis done, and naught did it hurt, yes?[quotation mark][paragraph break][quotation mark]I suppose,[quotation mark] you say, rubbing your shoulder, which does tingle a little[or]Your understanding of this might not be perfect, but you believe that it[apostrophe]s a magical spell of some sort that transfers magical energy, or potence, from one being to another. To cast the bestowance, you just need to say the word [apostrophe][bold type]xizzi[roman type][apostrophe][stopping].";
 	now yourself is benjack-spell_enabled.
 
 After quizzing benjack-Christabell about benjack-Nirramonk:
@@ -2842,10 +2842,9 @@ After benjack-xizziing:
 		now benjack-Christabell is charged-up;
 	otherwise:
 		say "Your fingertips tingle briefly, but having no stored up ghostly energy, the spell fizzles."
-
+		
 Before answering someone that "xizzi":
-	say "[bracket] Hint: You can just say the magic word by itself[one of]. That's part of the magic[or] -- there's no extra charge[or][stopping]. [close bracket][paragraph break]";
-	try Benjack-xizziing instead.
+	try Benjack-xizziing.
 
 Chapter 4 - Ploughvering
 
@@ -2880,6 +2879,9 @@ At the time when the benjack-ploughver spell arms:
 		
 To say benjack-ploughver-cutscenes:
 	say "[one of]Around you, in no particular direction, you hear screams, strangled almost instantly, drowned in splashes and bubbles and ending in silence. At the same time, your vision fades to darkness and you feel yourself plunging, able to see only vast, hovering shapes above you, moving silently past. You become aware of sounds so low, that you more feel them in your bones than hear them; one such sounds passes below you, receding in endless distance. Then it is over[or]Mens voices, people shuffling around frantically, things moving, falling.[paragraph break][quotation mark]The brazing is blown, pressure is down to ten percent![quotation mark] The voice is just slightly louder than the blaring klaxon.[paragraph break][quotation mark]Dive planes up 30[quotation mark].[paragraph break][quotation mark]Moderators are full in, it[apostrophe]s no good, I[apostrophe]m scramming.[quotation mark][paragraph break][quotation mark]All hands. Prepare for emergency blow. Larsen, in five and then hit it.[quotation mark][paragraph break][quotation mark]Aye. Five. Four. Reactor quenched. Three. Two. We[apostrophe]re pitching. One. Blow![quotation mark][paragraph break][quotation mark]Tanks are good, but no blow. Sir, I think we[apostrophe]re iced up.[quotation mark][paragraph break][quotation mark]Crushing depth minus 200, minus 300.[quotation mark][paragraph break]And then silence[or][stopping]."
+	
+Before answering someone that "ploughver":
+	try Benjack-ploughvering instead.
 
 Chapter 5 - kwisatzhaderaching
 
@@ -2900,6 +2902,9 @@ Carry out benjack-KHing:
 	say "You join your fists together and aim at the [R], and speak the invocation:  [quotation mark]kwisatz haderach[quotation mark]."
 
 [The result of this then gets described in an after benjack-KHing, one for the binder, one for Naomi's book]
+
+Before answering someone that "kwisatz haderach":
+	try Benjack-KHing instead.
 
 Part 2 - Actions of a most mundane nature
 
