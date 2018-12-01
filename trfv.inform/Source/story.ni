@@ -2745,11 +2745,12 @@ Part 1 - Magicks
 
 Chapter 1 - BottomsUpping
 
-Instead of answering benjack-Carol that "bottoms up":	try Benjack-bottomsupping.
+Understand "bottoms-up" or "bottoms up" or "bottomsup" as "[bottomsup]" when benjack-N1 has happened.
 
-Instead of answering benjack-Carol that "bottoms-up":	try Benjack-bottomsupping.
+Instead of answering a person that "[bottomsup]":	
+	try Benjack-bottomsupping.
 
-Benjack-bottomsupping is an action applying to nothing. Understand "bottoms-up" or "bottoms up" or "bottomsup" as Benjack-bottomsupping when the location is in the benjack-realm.
+Benjack-bottomsupping is an action applying to nothing. Understand "[bottomsup]" as Benjack-bottomsupping when the location is in the benjack-realm.
 
 Check benjack-bottomsupping:
 	if benjack-N1 is not happening:
