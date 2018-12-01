@@ -100,6 +100,8 @@ Yourself can be benjack-KH_accomplished. Yourself is not benjack-KH_accomplished
 
 Yourself can be benjack-guilty. Yourself is not benjack-guilty.
 
+The player has a number called benjack-times_xizzied. The benjack-times_xizzied of the player is 0. [number of cups of tea consumed]
+
 Part 5 - Locations 
 
 Chapter DAN8 Hillside Path
@@ -1254,12 +1256,12 @@ When benjack-N1 ends:
 	
 Chapter 7 - After N1
 
-The description of the benjack-baby-door is "A sign on the door says [benjack-baby-door-desc]".
+The description of the benjack-baby-door is "A sign on the door says [benjack-baby-door-desc]". 
 
 To say benjack-baby-door-desc:
-	say "[quotation mark]Carol's Room[quotation mark] and below that, [quotation mark][if benjack-R1 has happened]Moody Teenager[otherwise]Napping Kindergartner[end if] -- DO NOT WAKE![quotation mark] and finally, at the bottom in smaller letters, [quotation mark]Come back later when awake. Signed, Victor Cragne[quotation mark][paragraph break]".
+	say "[quotation mark]Carol's Room[quotation mark] and below that, [quotation mark][if benjack-R1 has happened]Moody Teenager[otherwise]Napping Kindergartner[end if] -- DO NOT WAKE![quotation mark] and finally, at the bottom in smaller letters, [quotation mark]Come back later when awake. Signed, Victor Cragne[quotation mark]".
 
-benjack-baby-door is a thing. The printed name of benjack-baby-door is "door to Carol's room". Understand "sign/door/room/kindergartner/napping/moody/teenager" as benjack-baby-door when the location is M2F3. 
+benjack-baby-door is a fixed in place thing. The printed name of benjack-baby-door is "door to Carol's room". Understand "sign/door/room/kindergartner/napping/moody/teenager" as benjack-baby-door when the location is M2F3. 
 
 [otherwise, get all tries to get the door, trigger player death if between N-scenesl]
 
@@ -1271,9 +1273,11 @@ A multiple action processing rule when current action is taking and the location
 	alter the multiple object list to L;
 	if the number of entries in L is zero:
 		say "There are none at all to get -- whatever that means."
+		
+Definition: A thing is benjack-retrievable if it is portable and it is not the player.
 
 After going north from M2F2 when the benjack-baby-door is in M2F3:
-	say "Just down a side corridor, you encounter a closed door that says [benjack-baby-door-desc]"
+	say "Just down the side corridor to the north, you notice a closed door that says [benjack-baby-door-desc][if M2F3 holds a benjack-retrievable thing][paragraph break]There is also something on the floor here[end if]."
 	
 Instead of going north when the player is in M2F3 and the benjack-baby-door is in M2F3:
 	try attacking the benjack-baby-door.
@@ -1421,7 +1425,7 @@ After quizzing benjack-Christabell about benjack-DeepOnes when benjack-R1 is hap
 	say "[one of][quotation mark]I[apostrophe]m not really sure how to approach this delicately,[quotation mark] you begin, [quotation mark]but what exactly are the [bold type]Deep Ones[roman type]?[quotation mark] You refrain from air quotes, as it would just confuse her.[paragraph break][quotation mark]Your Apprehension I do gently understande, for many Miscreantes do beare false Witness against them and thow powerful they are, know you this: they do serve as me and my [bold type]Longhouse[roman type], the mighty Weal of [bold type]Mattanit[roman type].[quotation mark][paragraph break][quotation mark]Yes, but what are they -- I mean, could you draw me a mental picture of them?[quotation mark][paragraph break][quotation mark]No Representation of them can I render, for their Forme supporteth not the weake Minde of Man, but summe few jotts of Wisedom I did learne among the [bold type]Nirramonk[roman type], and these they are: firstly, they are Olde, older than the Earthe itself (this, thow we did know from the naym itself, but see you now how they did come by it); secondly, it is in the Seven Oceans and multitudinous Seas that they do dwell; and finally, and paramounte, the [bold type]marked[roman type] of [bold type]Mattanit[roman type] can call upon them to scribe their [bold type]Runes[roman type] in his Service.[quotation mark][paragraph break]Christabell adds, [quotation mark]They be not the onely of their Kinde, but the onely I did come to know in mei too brief Tymme among the Nirramonk.[quotation mark][or]According to Christabell, the Deep Ones are some sort of ancient beings that serve Mattanit.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-Potence:
-	say "[one of][quotation mark][bold type]Potence[roman type] be a Strength that lends to Magick; you do burn with it.[quotation mark] Christabell adds somberly, [quotation mark]It be also what I do most direly desire that I might cast aside my [bold type]Fusion[roman type].[quotation mark][paragraph break]Christabell pokes your aura tentatively with her index finger; the aura deforms around it, bending inward. [quotation mark]Naomi, by what Providence came you to wield such [bold type]Potence[roman type]? I can but thinke of one Sourse: my [bold type]Carol[roman type].  Could she by summe Mirickell dwell yet in this [bold type]modern[roman type] Ayge of yours?[quotation mark][paragraph break][quotation mark]When I was at [bold type]Cragne[roman type] Manor, I met her. She[apostrophe]s a spirit -- as I suppose you already know.[quotation mark] Christabell nods and you continue, [quotation mark]She is a very strange kid and it seems stuck in the 1950s.[quotation mark][paragraph break][quotation mark]Yes, such be the Nature of her [bold type]Fusion[roman type], a circular [bold type]prison[roman type]. A good Childe she was, thow gone wrong in later Life, twisted by the Crânes.[quotation mark][or]Seems pretty straightforward: according to Christabell potence is the some sort of magical energy. She mentioned that something called the [quotation mark]bestowance[quotation mark] would fix the situation.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark][bold type]Potence[roman type] be a Strength that lends to Magick; you do burn with it.[quotation mark] Christabell adds somberly, [quotation mark]It be also what I do most direly desire that I might cast aside my [bold type]Fusion[roman type].[quotation mark][paragraph break]Christabell pokes your aura tentatively with her index finger; the aura deforms around it, bending inward. [quotation mark]Naomi, by what Providence came you to wield such [bold type]Potence[roman type]? I can but thinke of one Sourse: my [bold type]Carol[roman type].  Could she by summe Mirickell dwell yet in this [bold type]modern[roman type] Ayge of yours?[quotation mark][paragraph break][quotation mark]When I was at [bold type]Cragne[roman type] Manor, I met her. She[apostrophe]s a spirit -- as I suppose you already know.[quotation mark] Christabell nods and you continue, [quotation mark]She is a very strange kid and it seems stuck in the 1950s.[quotation mark][paragraph break][quotation mark]Yes, such be the Nature of her [bold type]Fusion[roman type], a circular [bold type]prison[roman type]. A good Childe she was, thow gone wrong in later Life, twisted by the Crânes.[quotation mark][or]Seems pretty straightforward: according to Christabell potence is the some sort of magical energy which manifests as a luminance in your aura. She mentioned that there is some sort of magical rememdy to fix the situation.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Christabell about benjack-Luminance:
 	say "[one of][quotation mark]Naomi, surely you must needs have yourself remarked your terrifick Shyne in the Eyes of the Seight? Thereby doth the [bold type]Potence[roman type] with make manifest. Yet, I must needs forewarn: a [bold type]Potence[roman type] too closely held, or too long, does risk injurious Consequence.[quotation mark][paragraph break][quotation mark]Oh[quotation mark]?[paragraph break][quotation mark]Yes, it is thereby that I do pray you consider the [bold type]Bestowance[roman type].[quotation mark][or]Christabell says [bold type]creatures[roman type] with a lot of potence have an visible aura for those with spectral sight. Further, that having as much potence as you do right now is not healty for a mortal.[no line break][stopping][paragraph break]"
@@ -1736,7 +1740,7 @@ benjack-WinkelbottomSubject when the location is M2F3 and benjack-N1 has happene
 
 Section 2 - N2 Quips
 
-Before conversing or hailing when benjack-N2 is happening for the first time:
+Before conversing or hailing when benjack-N2 is happening for the first time and benjack-Carol is not n2-conversed:
 	if benjack-Carol is teapot-angry:
 		say "[quotation mark]Don[apostrophe]t you people even knock![quotation mark] screams Carol as she realizes someone is in the room. [quotation mark]You?[quotation mark] she screeches, and then, settling down, [quotation mark]Not as tall as I remember.[quotation mark][paragraph break][quotation mark]No? Maybe I got a little shorter when you threw me through the wall last time.[quotation mark][paragraph break][quotation mark]I suppose I did have a bit of a temper as a child,[quotation mark] says the teenager as she sits down at her desk. She flips through a school book and tosses it back on the pile with more drama than you thought possible. [quotation mark]I suppose it isn[apostrophe]t entirely horrible to have someone to talk to, who can hear me. You might as well stay. I haven[apostrophe]t throw anyone through the wall lately.[quotation mark][paragraph break]";
 	otherwise:
@@ -1858,6 +1862,7 @@ Instead benjack-ploughvering during benjack-N2:
 	if yourself is benjack-baby_marked, continue the action.
 	
 Carry out benjack-N2-leaving:
+	now the current interlocutor is benjack-Carol;
 	if yourself is not benjack-baby_marked:
 		if benjack-Carol is not requesting_permission:
 			now benjack-Carol is requesting_permission; [first time threatening Naomi]
@@ -2827,15 +2832,15 @@ Check Benjack-xizziing:
 		stop the action.
 
 Carry out Benjack-xizziing:
-	do nothing.
-	
-After benjack-xizziing for the first time:
-	say "[quotation mark]Let us do step summut afar the [bold type]Rayle[roman type] Tracks,[quotation mark] counsels Christabell.[paragraph break]That is probably a good idea, because as the two walk towards the edge of the woods, lighting begins to arc from every part of your body to Christabell in impossibly thin, blue-white tendrils, occasionally flashing over to the pile of railroad tracks, which begin to glow red on in the spots where they are touched.[paragraph break]You take a breath and your lungs burn, the air sharp with the smell of ozone; as you continue to walk the sparking dies down and it is easier to breathe.[paragraph break]As after images of the lightning fade, [bold type]Christabell[roman type] pats you on the shoulder, almost substantially, and you can see for yourself that the spell worked -- there is nothing translucent about her -- you literally did her a solid.[paragraph break][quotation mark]I do thank you sincerely for restoring the Integrity of my [bold type]Spirit[roman type] with this [bold type]Gifte[roman type], whych does owe Provenance to [bold type]Carol[roman type], who, however unwittingly, did preserve mee through your Kindness.[quotation mark][paragraph break][quotation mark]You[apostrophe]re welcome,[quotation mark] you add, glad to have been helpful to at least someone today.[paragraph break][quotation mark]";
-	say "[bold type]Naomi[roman type]... I would repay [bold type]Carol[roman type]; let us do help her escape her [bold type]Fusion[roman type] and persue a more wholesome [bold type]Unfolding[roman type]. If we can destroy her [bold type]Runes[roman type], that part at least of her Soul will be washed aclean. I ask you: Go and find a Booke inwhich are written the Source of her Past and Unmake it.[quotation mark][paragraph break][quotation mark]Tear it up?[quotation mark] you ask.[paragraph break][quotation mark]Nay, Violence be not the Answer to this one. Let us devise a Magick to unwrought them.[quotation mark] Christabell paces back and force, [quotation mark]A moment whilst I do Conceive a mete Werde for the Spell… Fazzah! No, too short. Mannagummoset! Not the easiest to remember.[quotation mark][paragraph break][quotation mark][bold type]Kwisatz haderach[roman type]?[quotation mark] You suggest, being a big fan of Dune (the book, not the film).[paragraph break][quotation mark]Oh, that does have a lovely ring about it, as long as you can remember it. Yes, let us do go with that.[quotation mark]  She waves her hands, and you suppose that[apostrophe]s that. Christabell continues, [quotation mark]You need only be in the same Place as the [bold type]Runes[roman type], and say those Werdes and the Spell will act. Now, getting you there… For that I do propose a trifling bit of Magick to take you thither and back to here at your Weal, for that the Spell Werde be [apostrophe][bold type]ploughver[roman type][apostrophe]. Just know you, one casting cannot follow another without pause.[quotation mark][paragraph break][quotation mark]Got it. It takes some time to recharge.[quotation mark][paragraph break]";
-	now benjack-Christabell is charged-up.
+	increase the benjack-times_xizzied of the player by one.
 	
 After benjack-xizziing:
-	say "Your fingertips tingle briefly, but having no stored up ghostly energy, the spell fizzles."
+	if the benjack-times_xizzied of the player is one:
+		say "[quotation mark]Let us do step summut afar the [bold type]Rayle[roman type] Tracks,[quotation mark] counsels Christabell.[paragraph break]That is probably a good idea, because as the two walk towards the edge of the woods, lighting begins to arc from every part of your body to Christabell in impossibly thin, blue-white tendrils, occasionally flashing over to the pile of railroad tracks, which begin to glow red on in the spots where they are touched.[paragraph break]You take a breath and your lungs burn, the air sharp with the smell of ozone; as you continue to walk the sparking dies down and it is easier to breathe.[paragraph break]As after images of the lightning fade, [bold type]Christabell[roman type] pats you on the shoulder, almost substantially, and you can see for yourself that the spell worked -- there is nothing translucent about her -- you literally did her a solid.[paragraph break][quotation mark]I do thank you sincerely for restoring the Integrity of my [bold type]Spirit[roman type] with this [bold type]Gifte[roman type], whych does owe Provenance to [bold type]Carol[roman type], who, however unwittingly, did preserve mee through your Kindness.[quotation mark][paragraph break][quotation mark]You[apostrophe]re welcome,[quotation mark] you add, glad to have been helpful to at least someone today.[paragraph break][quotation mark]";
+		say "[bold type]Naomi[roman type]... I would repay [bold type]Carol[roman type]; let us do help her escape her [bold type]Fusion[roman type] and persue a more wholesome [bold type]Unfolding[roman type]. If we can destroy her [bold type]Runes[roman type], that part at least of her Soul will be washed aclean. I ask you: Go and find a Booke inwhich are written the Source of her Past and Unmake it.[quotation mark][paragraph break][quotation mark]Tear it up?[quotation mark] you ask.[paragraph break][quotation mark]Nay, Violence be not the Answer to this one. Let us devise a Magick to unwrought them.[quotation mark] Christabell paces back and force, [quotation mark]A moment whilst I do Conceive a mete Werde for the Spell… Fazzah! No, too short. Mannagummoset! Not the easiest to remember.[quotation mark][paragraph break][quotation mark][bold type]Kwisatz haderach[roman type]?[quotation mark] You suggest, being a big fan of Dune (the book, not the film).[paragraph break][quotation mark]Oh, that does have a lovely ring about it, as long as you can remember it. Yes, let us do go with that.[quotation mark]  She waves her hands, and you suppose that[apostrophe]s that. Christabell continues, [quotation mark]You need only be in the same Place as the [bold type]Runes[roman type], and say those Werdes and the Spell will act. Now, getting you there… For that I do propose a trifling bit of Magick to take you thither and back to here at your Weal, for that the Spell Werde be [apostrophe][bold type]ploughver[roman type][apostrophe]. Just know you, one casting cannot follow another without pause.[quotation mark][paragraph break][quotation mark]Got it. It takes some time to recharge.[quotation mark][paragraph break]";
+		now benjack-Christabell is charged-up;
+	otherwise:
+		say "Your fingertips tingle briefly, but having no stored up ghostly energy, the spell fizzles."
 
 Before answering someone that "xizzi":
 	say "[bracket] Hint: You can just say the magic word by itself[one of]. That's part of the magic[or] -- there's no extra charge[or][stopping]. [close bracket][paragraph break]";
