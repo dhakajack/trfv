@@ -188,7 +188,7 @@ The M2F3 is a room in M2F. M2F3 is north from M2F2.
 
 Printed name of M2F3 is "[if benjack-N1 has ended]Carol's Room[otherwise]Nursery[end if] (Ben Collins-Sussman)".
 
-Description of M2F3 is "[benjack-nursery-description][no line break]".
+Description of M2F3 is "[benjack-nursery-description]".
 
 To say benjack-nursery-description:
 	if benjack-N1 is happening:
@@ -1300,6 +1300,7 @@ When benjack-R1 begins:
 	now Benjack-scene-specific-hint is "Bapr ntnva, lbh pna gnyx jvgu Puevfgnoryy nobhg n ahzore bs gbcvpf, ohg gur xrl bar vf nfxvat ure nobhg gur [quotation mark]orfgbjnapr[quotation mark], n zrnaf bs genafsreevat zntvpny raretl sebz bar crefba gb nabgure. Guvf jvyy eryrnfr lbh sebz orvat nggenpgrq gb gur cvyr bs envyebnq genpxf naq jvyy nyybj Puevfgnoryy gb fgbc snqvat va naq bhg[one of][or]. Gb pnfg gur orfgbjnapr fcryy, glcr [quotation mark]kvmmv[quotation mark]. Nyfb abgr gung lbh pna ninvy lbhefrys bs gur [quotation mark]cybhtuire[quotation mark] naq [quotation mark]xjvfngm unqrenpu[quotation mark] fcryyf[stopping]";
 	if benjack-Christabell is not candid, now benjack-Christabell is bypassed;
 	benjack-conversation-customize;
+	now the current interlocutor is benjack-Christabell;
 	now benjack-baby-door is nowhere.
 	
 [hint text: Once again, you can talk with Christabell about a number of topics, but the key one is asking her about the [quotation mark]bestowance[quotation mark], a means of transferring magical energy from one person to another. This will release you from being attracted to the pile of railroad tracks and will allow Christabell to stop fading in and out[one of][or]. To cast the bestowance spell, type [quotation mark]xizzi[quotation mark]. Also note that you can avail yourself of the [quotation mark]ploughver[quotation mark] and [quotation mark]kwisatz haderach[quotation mark] spells[stopping]]
@@ -1743,6 +1744,7 @@ Before conversing or hailing when benjack-N2 is happening for the first time and
 	otherwise:
 		say "[quotation mark]Oh, my heavens and stars,[quotation mark] says Carol, wide-eyed, [quotation mark]If it isn[apostrophe]t Auntie Naomi! What a pleasant surprise.[quotation mark][paragraph break][quotation mark]Did people really talk like that?[quotation mark] you ask, incredulous.[paragraph break][quotation mark]No, but I thought it would add flavor.[quotation mark] Carol pulls out the chair behind her desk and sits down. [quotation mark]I[apostrophe]d offer you a chair, but you would just go right through it.[quotation mark][paragraph break][quotation mark]Thanks, it[apostrophe]s okay, I[apostrophe]ll stand.[quotation mark][paragraph break][quotation mark]So it[apostrophe]s been, what? About a decade? Well, nice of you to look in on me again. What have you been doing with yourself?[quotation mark][paragraph break]Since smalltalk seems to be the object of the day, you reply in kind, [quotation mark]Oh, same old, same old, fritting about here and there.[quotation mark][paragraph break]Carol grins and crosses her legs.";
 	now benjack-Carol is n2-conversed;
+	now the current interlocutor is benjack-Carol;
 	stop the action.
 	
 
@@ -2478,7 +2480,7 @@ Instead of reading the benjack-TomeONaomi:
 		now benjack-TomeONaomi is open;
 	otherwise:
 		say "You see";
-	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-TomeONaomi][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-TomeONaomi][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-TomeONaomi][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-TomeONaomi][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-TomeONaomi][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-TomeONaomi][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-TomeONaomi][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][otherwise][paragraph break][end if]"
+	say " a number of entries, each corresponding to a faded newspaper clipping:[paragraph break][bold type]For Gluttony of the Bestowance:[roman type][line break][italic type][title of benjack-clipping-sable][roman type][paragraph break][if Benjack-clipping-convict is in benjack-TomeONaomi][bold type]For Gluttony of the Bestowance a second time:[roman type][line break][italic type][title of benjack-clipping-convict][roman type][paragraph break][end if][if Benjack-clipping-body is in benjack-TomeONaomi][bold type]For Gluttony of the Bestowance yet a third time:[roman type][line break][italic type][title of benjack-clipping-body][roman type][paragraph break][end if][if Benjack-clipping-orphan is in benjack-TomeONaomi][bold type]For Sloth of Mouvement:[roman type][line break][italic type][title of benjack-clipping-orphan][roman type][paragraph break][end if][if Benjack-clipping-boardwalk is in benjack-TomeONaomi][bold type]For Sloth of Mouvement a second time:[roman type][line break][italic type][title of benjack-clipping-boardwalk][roman type][paragraph break][end if][if Benjack-clipping-hargreaves is in benjack-TomeONaomi][bold type]For Sloth of Mouvement yet a third time:[roman type][line break][italic type][title of benjack-clipping-hargreaves][roman type][paragraph break][end if][if Benjack-clipping-9 is in benjack-TomeONaomi][bold type]For Pride in Erasure of the Runes of Another:[roman type][line break][italic type][title of benjack-clipping-9][roman type][paragraph break][end if][if Benjack-clipping-10 is in benjack-TomeONaomi][bold type]For Murder of Your Own Childe:[roman type][line break][italic type][title of benjack-clipping-10][roman type][paragraph break][end if]"
 
 benjack-denouement has a number called doomCounter. The doomCounter is 0.
 	
