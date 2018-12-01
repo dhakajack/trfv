@@ -1160,7 +1160,7 @@ Before going a direction when the location is juxtaDAN8 and benjack-N1 has happe
 Instead of going south when the location is M2F3 and benjack-N1 is happening and benjack-bigmirror is in M2F3:
 	say "[one of]You turn around to walk out, but the hallway isn’t there. The wall behind you is bare, except for a mirror, which is about where the entrance was.[paragraph break]That doesn’t make any sense, you think to yourself. I didn’t hear anything change, and I’m sure there wasn't a mirror there. Looking around the room, there is no other exit, which makes no sense at all since you obviously did enter the room somehow[or]Where there used to be an entrance, a full-length mirror now occupies the wall[stopping].[paragraph break]Carol [one of]gives you a puzzled look and [or][stopping]points to her tea cup[if the benjack-times_bestowed of yourself is greater than zero and the benjack-times_bestowed of yourself is less than 3]. [paragraph break]Carol shouts excitedly, [quotation mark]There's still tea left in the teapot -- do let's have another, please![quotation mark] Carol looks to her animals for support and they just sit there, inert[end if]."
 	
-Definition: A thing is benjack-Katallakh-devourable if it is not worn and it is not mtw-teapot.
+Definition: A thing is benjack-Katallakh-devourable if it is not worn and it is not mtw-teapot and it is not a person.
 
 Definition: A thing is a benjack-henchling if it is benjack-monkey or it is benjack-lamb or it is benjack-elephant or it is benjack-clown.
 
