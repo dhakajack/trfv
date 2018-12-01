@@ -457,8 +457,9 @@ At the time when Ben and Jack jump the shark:
 		say "Caught up in the conversation, the surrealism of your situation now lands with its full weight and you take a long breath.[paragraph break][quotation mark]My friend, wherefore doth your Countenance so cloud?[quotation mark][paragraph break][quotation mark]I just realized how weird it is to be talking to a [bold type]ghost[roman type].[quotation mark][paragraph break][quotation mark]A [bold type]spirit[roman type].[quotation mark][paragraph break][quotation mark]Okay, a [bold type]spirit[roman type],[quotation mark] you concede. [quotation mark]Maybe all this hanging around with the [bold type]Cragnes[roman type] has rubbed off on me. Maybe I[apostrophe]m the one who has lost her marbles.[quotation mark][paragraph break][quotation mark]Nay, your Marbles be firmly within your Skull, and your [bold type]Knotte of Reason[roman type] still tightly woven.[quotation mark][paragraph break][quotation mark]Mark my words, [bold type]Peter[roman type] is going to have a field day when I tell him how my day has gone.[quotation mark][paragraph break][quotation mark]That I cannot [bold type]mark[roman type], it being beyond my powers.[quotation mark][paragraph break]".
 
 Before quizzing or informing benjack-Christabell about a subject for the first time:
-	say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Property, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to Christabell, and she rewards you with a smile and rapt attention.";
-		continue the action.
+	if benjack-R0 is happening:
+		say "You consider whether it is prudent to kick off a conversation with this stranger, secluded as you are in this deathly quiet corner of the [bold type]Cragne[roman type] Property, but your gregarious nature carries the day. You reason that she’s only a stranger because you haven’t met her yet, and considering that you don’t really know anything about [bold type]Peter[roman type]’s family, maybe it is time to start reaching out a little more. You sit down next to the woman, and she rewards you with a smile and rapt attention.";
+	continue the action.
 
 After informing benjack-Christabell about benjack-PC:
 	say "[one of][quotation mark]Well,[quotation mark] you begin, [quotation mark]I am Naomi, and you probably already know my husband, [bold type]Peter[roman type] -- Peter [bold type]Cragne[roman type].[quotation mark][paragraph break]Christabell shakes her head, [quotation mark]A Crâne? No, I have not the Pleasure of his Acquitenance, or at least not yet. But I am sure there are many Hereabouts unknown to me of Late.[quotation mark][paragraph break][quotation mark]Yes, he[apostrophe]s a little introverted, so I’m not surprised,[quotation mark] you continue. [quotation mark]In fact, while he[apostrophe]s met my entire family, I have not even met his parents -- yet. No pressure there, right?[quotation mark][paragraph break][quotation mark]Assuredly, so.[quotation mark][paragraph break][quotation mark]We took this opportunity to shoot up to [bold type]Vermont[roman type] and I figure we[apostrophe]ll do the family thing and while we[apostrophe]re at it a little touring around: Ben & Jerry[apostrophe]s, some covered bridges, get a bucket of maple syrup -- or however they sell it -- and check out some of the mountains. Two birds with one stone![quotation mark][paragraph break][quotation mark]Two with but a single Stoning? Indeed, what you have laid out sounds a fruitful Application of your Labours.[quotation mark][or]You say a few more words about yourself.[no line break][stopping][paragraph break]".
@@ -607,10 +608,9 @@ To say benjack-talk-hint:
 	say "[bracket] Hint: You can say things like [quotation mark]yes[quotation mark], [quotation mark]no[quotation mark], [quotation mark]hello[quotation mark], [quotation mark]bye[quotation mark], and ASK / TELL [italic type]someone[roman type] about different [bold type]subjects[roman type] [close bracket]".
 
 [Stage business while awaiting Naomi's reply]
-Every turn while benjack-Christabell is eager:
-	if player is in DAN8,	say "[one of][quotation mark]Can you see me?[quotation mark][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][or]The woman seems more desperate now. [quotation mark]Milady, do you see me?[quotation mark][or]The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[stopping][paragraph break]".
-	
-[20181127 fixes to Christabell greeting state machine]
+Every turn while benjack-Christabell is eager and the location is DAN8:
+	now the current interlocutor is benjack-Christabell;
+	say "[one of][quotation mark]Can you see me?[quotation mark][or][quotation mark]Hello? Pray respond!  Can you understand me?[quotation mark][or]The woman seems more desperate now. [quotation mark]Milady, do you see me?[quotation mark][or][quotation mark]Pray, do not leave me rudely curious; am I visible to you or no?[quotation mark]. The woman stares at you nervously, waiting for a yes-or-no acknowledgement of her presence.[no line break][stopping][paragraph break]".
 
 The player has a number called benjack-guiltLevel.  The benjack-guiltLevel of the player is 0.
 Before going when benjack-Christabell is eager and the location is DAN8:
@@ -636,12 +636,9 @@ Instead of saying yes or hailing when benjack-Christabell is eager and the locat
 	now benjack-Christabell is chatty; [trigger into main conversation]
 	say "[quotation mark]How wonderfull![quotation mark] She sits on a rail jutting out of the pile and pats the space beside her. [quotation mark]Tis a frightfull long Tymme since I did haf the Oppourtunity to speake with One graced with the [bold type]Seight[roman type] -- no [bold type]Crâne[roman type], then you, but one among our Number. Do then, please, speake to me about [bold type]yourself[roman type].[quotation mark][paragraph break]She pauses for a breath, [quotation mark]Oh, but first, where are my Manners? I do beg your Pardon most sincerely: I am called [bold type]Christabell[roman type].[quotation mark][paragraph break]She looks at you with anticipation.[no line break][benjack-variousSubjects][paragraph break]".
 	
-[end 20181127 fixes to Christabell greeting state machine]
-	
 To say benjack-variousSubjects:
 	say "[one of][paragraph break][bracket] HINT: you can ask or sometimes tell people about various [bold type]subjects[roman type] [close bracket][or][stopping]"
-	
-	
+
 Instead of touching benjack-dirt:
 	say "[one of]Raspy and sharp, perhaps volcanic[or]Abrasive[stopping]."
 	
@@ -656,7 +653,6 @@ Before going a direction when the location is juxtaDAN8 and M2F3 is unvisited an
 		say "[one of][quotation mark]Ah, I do bid you again Greeting, my friend. You do seem much busy to-Daye in your Wanderings.[quotation mark][or][quotation mark]I am glad your Pilgrimage does take you mie Waie yet once moor, dear girl![quotation mark] says Christabell as she prances up beside you along the path.[no line break][or][quotation mark]It seems you are drawn like a bee to my honey, my pretty.[quotation mark][paragraph break][quotation mark]Um. Maybe a little awkwardly phrased, but it[apostrophe]s nice to see you too, Christabell.[quotation mark][or]Christabell smiles warmly with your return to her hillside.[no line break][stopping][paragraph break]";
 	otherwise:
 		continue the action.
-
 
 Chapter 5 - R0 Ends
 
@@ -1311,6 +1307,7 @@ When benjack-R1 begins:
 Chapter 2 - R1 Conversation
 
 Instead of conversing or hailing when benjack-R1 is happening for the first time:
+	now the current interlocutor is benjack-Christabell;
 	if benjack-Christabell is candid:
 		say "Christabell squints as she looks at you, shading her eyes with her hand.[paragraph break][quotation mark][bold type]Runes[roman type] of the [bold type]Deep Ones[roman type] preserve us, Naomi. By";
 	otherwise:
@@ -1869,7 +1866,7 @@ Carry out benjack-N2-leaving:
 			say "[quotation mark]I[apostrophe]ve learned a few things since you were here last time; surely, you must know that [bold type]Christabell[roman type] taught me every chance she got. She[apostrophe]s such a generous soul, and so starved for company out there on the hill.[quotation mark] Carol glances out the window towards the cliffs.[paragraph break][quotation mark]Seems like you are the one who can[apostrophe]t get enough of company. No wonder you don[apostrophe]t get a lot of visitors, if you trap everyone in your room. Not many teenagers would want to lock adults in with them.[quotation mark][paragraph break][quotation mark]Well, you are the only one who can see me, so you[apostrophe]ve got that going for you. No, I[apostrophe]m happy to let you go, I just want to be able to find you again, you know, if I need you for something.[quotation mark][paragraph break][quotation mark]It[apostrophe]s nice to be needed.[quotation mark][paragraph break][quotation mark]So I understand. I will lower my barrier for you just as soon as you agree to bear my mark. The good news, it[apostrophe]s painless, the downside: it is a stain on your immortal soul. There[apostrophe]s no such thing as a free lunch, after all. So, what[apostrophe]ll it be, shall I mark you?[quotation mark] [paragraph break]She extends an index finger towards you.";
 			now benjack-Carol is n2-conversed;
 		otherwise: [subesquent requests to Naomi]
-			say "[one of]Carol stands right in front of you, hands on her hips waiting for an answer, [quotation mark]Listen, due to the metaphysics of complicity or some such, before you go, I need an yea or nay from you -- shall I place my mark?[quotation mark][or][quotation mark]Not to be a bore,[quotation mark] say Carol, [quotation mark]but I need to ask your consent to mark you before you split; can I place it?[quotation mark][or]Carol goes about her business, ignoring you until you change your mind and say  [quotation mark]yes[quotation mark] to her placing her mark on you.[no line break][stopping][paragraph break]";
+			say "[one of]Carol stands right in front of you, hands on her hips waiting for an answer, [quotation mark]Listen, due to the metaphysics of complicity or some such, before you go, I need an answer from you -- shall I place my mark?[quotation mark][or][quotation mark]Not to be a bore,[quotation mark] say Carol, [quotation mark]but I need to ask your consent to mark you before you split; can I place it?[quotation mark][or]Carol goes about her business, ignoring you until you change your mind and say  [quotation mark]yes[quotation mark] to her placing her mark on you.[no line break][stopping][paragraph break]";
 
 Instead of saying no when benjack-Carol is requesting_permission during benjack-N2:
 	say "[one of][quotation mark]Well unless you know some way out of this room that hasn[apostrophe]t occurred to me, we[apostrophe]re going to be here together until you do agree, but no hurry on my account. We can come back to the marking issue later.[quotation mark][or]Carol shakes her head sadly.[no line break][stopping][paragraph break]"
