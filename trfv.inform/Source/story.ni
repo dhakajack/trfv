@@ -70,6 +70,8 @@ Instead of opening a benjack-runebook, try reading the noun.
 
 Instead of inserting something (called the item) into a benjack-runebook:
 	try dropping the item.
+	
+A benjack-windowDressing is a kind of thing. 
 
 Part 2 - Conversation Disambiguation
 
@@ -143,42 +145,78 @@ The benjack-trail is scenery. benjack-trail is in DAN8. The printed name of benj
 Understand "trayle/trayles/trail/trails/trailhead/trailheads" as the benjack-trail when the player is in DAN8.
 The description of the benjack-trail is "[one of]Seething nature guards its distance from this place. Between the wispy weeds and degenerate, stunted trees that edge the clearing, you can distinguish three potential escape routes, one each to the north, southwest, and southeast, as the crow flies.[or]Three trailheads hold out some chance of respite: north, southwest, and southeast.[stopping]".
 
-The benjack-sky is a backdrop. benjack-sky is in DAN8.  benjack-sky is in m2f3. The printed name of benjack-sky is "sky". 
-Understand "cloud/clouds/sky" as the benjack-sky when the location is in the benjack-realm.
-The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky."
+To say benjack-skyDesc:
+	say "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky".
 
-The benjack-cliffs are a backdrop.  benjack-cliffs is in DAN8. benjack-cliffs is in M2F3. The printed name of benjack-cliffs is "cliffs". 
-Understand "cliff/granite/hill/hillside/mica/cliffs/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
+The benjack-sky is scenery. benjack-sky is in DAN8. The printed name of benjack-sky is "sky". 
+Understand "cloud/clouds/sky" as the benjack-sky when the location is DAN8.
+The description of the benjack-sky is "[benjack-skyDesc]."
+
+The benjack-winSky is scenery benjack-windowDressing. benjack-winSky is in M2F3. The printed name of benjack-winSky is "sky". 
+Understand "cloud/clouds/sky" as the benjack-winSky when the location is M2F3.
+The description of the benjack-winSky is "[benjack-skyDesc]."
+
+To say benjack-cliffDesc:
+	say "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing[stopping]".
+
+The benjack-cliffs are scenery.  benjack-cliffs are in DAN8. The printed name of benjack-cliffs is "cliffs". 
+Understand "cliff/granite/hill/hillside/mica/cliffs/hills/hillsides" as the benjack-cliffs when the location is DAN8.
 Understand "wall/walls/black" as the benjack-cliffs when the location is DAN8.
-The description of the benjack-cliffs is "[one of]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing; they would be impossible to climb without assistance from the top. The granite itself is fine-grained, but far darker than Vermont granite, is the color of burnt candle wick, all but invisible in this light save for tiny inclusions of reflective, jet-black mica, which impart a numinous glow.[or]The granite walls are sheer and angle ever so slightly inward, overhanging the clearing.[stopping]".  
+The description of the benjack-cliffs is "[benjack-cliffDesc]."
 
 Instead of climbing the benjack-cliffs, say "Even champion rock-climbers couldn't scale them."
 
-The benjack-weeds are a backdrop. benjack-weeds is in DAN8.  benjack-weeds is in m2f3. The printed name of benjack-weeds is "vegetation".
-Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches/lichen/moss" as the benjack-weeds when the location is in the benjack-realm.
-The description of the benjack-weeds is "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood in that very place, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods.[or]Decrepit vegetation fights for a foothold at the edge of the clearing.[stopping]".
+The benjack-winCliffs are scenery benjack-windowDressing. benjack-winCliffs are in M2F3. The printed name of benjack-winCliffs is "cliffs". 
+Understand "cliff/granite/hill/hillside/mica/cliffs/hills/hillsides" as the benjack-winCliffs when the location is M2F3.
+Understand "wall/walls/black" as the benjack-winCliffs when the location is M2F3.
+The description of the benjack-winCliffs is "[benjack-cliffDesc]."
+
+To say benjack-weedDesc:
+	say "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood in that very place, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods[or]Decrepit vegetation fights for a foothold at the edge of the clearing[stopping]".
+
+The benjack-weeds are scenery. benjack-weeds are in DAN8. The printed name of benjack-weeds is "vegetation".
+Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches/lichen/moss" as the benjack-weeds when the location is DAN8.
+The description of the benjack-weeds is "[benjack-weedDesc]."
 
 Instead of touching the benjack-weeds:
 	say "The gnarled, twisted weeds are nothing but thorns and vicious spines. You pull back."
 	
-The benjack-clearing is a backdrop. benjack-clearing is in DAN8.  benjack-clearing is in m2f3.  The printed name of benjack-clearing is "clearing".
-Understand "bowl/amphitheater/amphitheatre/clearing/hillside/hollow/knoll" as the benjack-clearing when the location is in the benjack-realm.
-The description of the benjack-clearing is "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging.[or]While impressive for its natural grandeur, this place is lifeless and still.[stopping]".  
+The benjack-winWeeds are scenery benjack-windowDressing. benjack-winWeeds are in M2F3. The printed name of benjack-winWeeds is "vegetation".
+Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches/lichen/moss" as the benjack-winWeeds when the location is M2F3.
+The description of the benjack-winWeeds is "[benjack-weedDesc]."
 
-The benjack-dirt is a backdrop. benjack-dirt is in DAN8.  benjack-dirt is in m2f3.  The printed name of benjack-dirt is "[if benjack-N3 is happening or benjack-denouement is happening]snow-covered [end if]dirt".
-Understand "soil/ground/dirt" as the benjack-dirt when the location is in the benjack-realm.
-The description of the benjack-dirt is "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone.[or]Cold and dark.[or]Raspy and sharp, perhaps volcanic.[or]Abrasive.[stopping]".  
+To say benjack-clearingDesc:
+	say "[one of]In contrast to the drive up through rolling green hills studded with pines, endless tracts of lush crop lands, and an endless succession of dairy farms, life seems not to have taken hold within this tiny pocket of the Cragne Estate. It is a world apart, sterile and unchanging[or]While impressive for its natural grandeur, this place is lifeless and still[stopping]".
+	
+The benjack-clearing is a scenery. benjack-clearing is in DAN8. The printed name of benjack-clearing is "clearing".
+Understand "bowl/amphitheater/amphitheatre/clearing/hillside/hollow/knoll" as the benjack-clearing when the location is DAN8.
+The description of the benjack-clearing is "[benjack-clearingDesc]."
 
-Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge.".
+The benjack-winClearing is a scenery benjack-windowDressing. benjack-winClearing is in M2F3. The printed name of benjack-winClearing is "clearing".
+Understand "bowl/amphitheater/amphitheatre/clearing/hillside/hollow/knoll" as the benjack-winClearing when the location is M2F3.
+The description of the benjack-winClearing is "[benjack-clearingDesc]."
 
-Instead of doing something other than examining with a backdrop (called the locale) when the location is M2F3:
+To say benjack-dirtDesc:
+	say "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone[or]Cold and dark[or]Raspy and sharp, perhaps volcanic[or]Abrasive[stopping]".
+
+The benjack-dirt is scenery. benjack-dirt is in DAN8. The printed name of benjack-dirt is "dirt".
+Understand "soil/ground/dirt/grounds" as the benjack-dirt when the location is DAN8.
+The description of the benjack-dirt is "[benjack-dirtDesc]."  
+
+Instead of smelling the benjack-dirt,  say "Iron, sulfur, and coke. The odor of an idle forge."
+
+The benjack-winDirt is scenery benjack-windowDressing. benjack-winDirt is in M2F3. The printed name of benjack-winDirt is "[if benjack-N3 is happening or benjack-denouement is happening]snow-covered [end if]dirt".
+Understand "soil/ground/dirt" as the benjack-winDirt when the location is M2F3.
+The description of the benjack-winDirt is "[benjack-dirtDesc]."  
+
+Instead of doing something other than examining with a benjack-windowDressing (called the locale) when the location is M2F3:
 	say "You can only see that in the distance."
 	
-Instead of examining a backdrop (called the vista) when the location is M2F3:
+Instead of examining a benjack-windowDressing (called the vista) when the location is M2F3:
 	if benjack-denouement has ended:
 		try searching benjack-window;
 	otherwise:
-		say "Through the window's aged glass, you can see the [vista].[paragraph break][description of the vista][paragraph break]".
+		say "Through the window's aged glass, you can see the [vista].[paragraph break][description of the vista][paragraph break]"
 
 Chapter M2F3 Nursery
 
