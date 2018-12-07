@@ -2431,7 +2431,7 @@ Before opening the benjack-window when benjack-N3 is happening:
 		now the benjack-window is open;
 		stop the action;
 	if yourself is not benjack-ragchewing:
-		say "[one of]Carol is watching you too closely[or]Carol seems to have her eye on you[or]Carol if focused on what you are doing[or]Except when Carol is blathering on about something, she watches you too closely to afford you the opportunity to approach the window[or]Sometimes when Carol gets talking, she seems to zone out, but right now, her attention is on you[or]When Carol gets going on a topic, she looses track of what you are doing[or]You need to distract Carol with some conversation in order to get to the window[stopping].";
+		say "[one of]Carol is watching you too closely[or]Carol seems to have her eye on you[or]Carol is intently focused on what you are doing[or]Except when Carol is blathering on about something, she watches you too closely to afford you the opportunity to approach the window[or]Sometimes when Carol gets talking, she seems to zone out, but right now, her attention is on you[or]When Carol gets going on a topic, she looses track of what you are doing[or]You need to distract Carol with some conversation in order to get to the window[stopping].";
 	otherwise:[ragchewing]
 		if the benjack-window is closed and the benjack-window is not cracked:
 			say "She is so distracted by what you were just talking about that you are able to get near the window without her noticing.[paragraph break]You pull up on the window and it slides only a fraction of an inch up in its gritty track.";
