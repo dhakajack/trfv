@@ -175,7 +175,7 @@ To say benjack-weedDesc:
 	say "[one of]Nothing grows anywhere near the pile of railroad track in the center of the clearing; perhaps the soil has been compacted by eons of spectators who stood in that very place, watching or taking part in ceremonies, perhaps dancing around whatever had occupied the central place. Or maybe the ground here is just unwholesome, unwelcoming to life, poisoned in some way. Only at the periphery, does nature scratch its way towards redemption of this lost grotto. A somber carpet of flaky lichens and mouldering moss gives way to bent fingers of crippled weeds at the edge of the clearing. Some trailheads leading away are barely distinguishable between snaking tendrils of withered vine and fungus-covered rotting stumps that mark the boundary of the surrounding woods[or]Decrepit vegetation fights for a foothold at the edge of the clearing[stopping]".
 
 The benjack-weeds are scenery. benjack-weeds are in DAN8. The printed name of benjack-weeds is "vegetation".
-Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches/lichen/moss" as the benjack-weeds when the location is DAN8.
+Understand "hedge/hedges/bramble/brambles/shrub/shrubs/tree/trees/grass/grasses/vegetation/plant/plants/weed/weeds/stump/stumps/branch/branches/lichen/moss/fungus/lichens/fungi/mold/molds/spore/spores" as the benjack-weeds when the location is DAN8.
 The description of the benjack-weeds is "[benjack-weedDesc]."
 
 Instead of touching the benjack-weeds:
@@ -197,9 +197,9 @@ Understand "bowl/amphitheater/amphitheatre/clearing/hillside/hollow/knoll" as th
 The description of the benjack-winClearing is "[benjack-clearingDesc]."
 
 To say benjack-dirtDesc:
-	say "[one of]Compacted to the consistency of concrete, its blackness seems to eat light and sound, leaving you cold and alone[or]Cold and dark[or]Raspy and sharp, perhaps volcanic[or]Abrasive[stopping]".
+	say "[one of]Its blackness seems to eat light[or]Cold and dark[or]Raspy and sharp, perhaps volcanic[or]Abrasive[stopping]".
 
-The benjack-dirt is scenery. benjack-dirt is in DAN8. The printed name of benjack-dirt is "dirt".
+The benjack-dirt is scenery. benjack-dirt is in DAN8. The printed name of benjack-dirt is "ground".
 Understand "soil/ground/dirt/grounds" as the benjack-dirt when the location is DAN8.
 The description of the benjack-dirt is "[benjack-dirtDesc]."  
 
@@ -210,7 +210,7 @@ Understand "soil/ground/dirt" as the benjack-winDirt when the location is M2F3.
 The description of the benjack-winDirt is "[benjack-dirtDesc]."  
 
 Instead of doing something other than examining with a benjack-windowDressing (called the locale) when the location is M2F3:
-	say "You can only see that in the distance."
+	say "You can only see [those] in the distance."
 	
 Instead of examining a benjack-windowDressing (called the vista) when the location is M2F3:
 	if benjack-denouement has ended:
@@ -918,7 +918,7 @@ The N1-desc of benjack-floor is "[one of]Wall-to-wall carpet.[or]A durable blue 
 
 The benjack-window is a container.  The benjack-window is fixed in place, openable and closed.
 The printed name of the benjack-window is "window".
-Understand "window/safety/lock/child-proof/glass/pane/panes" as benjack-window when the player is in M2F3.
+Understand "window/safety/lock/child-proof/glass/pane/panes/rosewood/trim" as benjack-window when the player is in M2F3.
 Understand "curtain/curtains/blind/blinds/shutter/shutters/shade/shades" as the the benjack-window when the location is M2F3 and benjack-denouement has not ended.
 The description of benjack-window is "The large[if open], wide open[end if] bay window is framed in the same[if benjack-N2 is happening] age-worn[end if][if benjack-N2 has ended] termite-infested[end if] rosewood trim that decorates the rest of this once great mansion[if benjack-N2 has ended]. It looks like the child-proof lock that once secured the window shut has long since fallen off[end if].". 
 
@@ -2149,7 +2149,7 @@ Understand "opalescent/egg/left/leftmost/megalokyniklosaurus/vernalis/bunny/rabb
 The N3-desc of benjack-egg is "Opalescent pastel blotches swirl lazily over the ovoid sculpture. Unable to tear your eyes away, you feel yourself losing a grip on this reality.[paragraph break][one of][benjack-egg1][or][benjack-egg2][or][benjack-egg3][or][benjack-egg4][or][benjack-egg5][or][benjack-egg6][or][benjack-egg7][stopping]".
 
 To say benjack-egg1:
-	say "[quotation mark]Rover, they[apostrophe]re gaining on us --  cut in the Casimir Drive,[quotation mark] orders the woman strapped into the acceleration couch to your right. She is of medium height, dark hair, and wearing an orange space suit with a MARSPACE insignia.[paragraph break]To your right, a cybernetically enhanced Dalmatian leans forward from his customized couch to paw at a few buttons on the command panel. The view out the windows suddenly changes, as the slowly moving stars are replaced by the chaotic discharge aura of the zero point transition.[paragraph break]Suddenly, one of the pirate ships flanks you, its cutting beams chewing through the lateral ablative plating.[paragraph break][quotation mark]It must have tracked our Condensate discharge,[quotation mark] yells Janet.[paragraph break]The dog spins his couch, deftly tracking the enemy vessel and lets loose with the rail guns, slicing the marauder into two glowing red halves.[paragraph break][quotation mark]Good boy![quotation mark] Janet reaches across to scratch Rover just where he likes it, behind the ears, and pushes the Synch Regulator all the way forward, revving the ship to full Asymmetry.[no line break]".
+	say "[quotation mark]Rover, they[apostrophe]re gaining on us [unicode 8212] cut in the Casimir Drive,[quotation mark] orders the woman strapped into the acceleration couch to your right. She is of medium height, dark hair, and wearing an orange space suit with a MARSPACE insignia.[paragraph break]To your right, a cybernetically enhanced Dalmatian leans forward from his customized couch to paw at a few buttons on the command panel. The view out the windows suddenly changes, as the slowly moving stars are replaced by the chaotic discharge aura of the zero point transition.[paragraph break]Suddenly, one of the pirate ships flanks you, its cutting beams chewing through the lateral ablative plating.[paragraph break][quotation mark]It must have tracked our Condensate discharge,[quotation mark] yells Janet.[paragraph break]The dog spins his couch, deftly tracking the enemy vessel and lets loose with the rail guns, slicing the marauder into two glowing red halves.[paragraph break][quotation mark]Good boy![quotation mark] Janet reaches across to scratch Rover just where he likes it, behind the ears, and pushes the Synch Regulator all the way forward, revving the ship to full Asymmetry.[no line break]".
 	
 To say benjack-egg2:
 	say "[quotation mark]I do reckon this might just be my best plan yet,[quotation mark] observes a dust-covered cowboy, slowly stirring a pot suspended above a carefully concealed cooking fire.[paragraph break][quotation mark]Muddy, I can[apostrophe]t rightly believe you sunk all our loot into them rusting rail tracks. The metal[apostrophe]s plum awful -- cracked, lumpy -- anybody what knows anything ain[apostrophe]t going to buy them for nothing.[quotation mark][paragraph break][quotation mark]I[apostrophe]ll give you that, Rick, that[apostrophe]s why I done gone found us someone what don[apostrophe]t know nothing -- some mill owners up in Vermont. Greedy and dumb -- it don[apostrophe]t get no better.[quotation mark][paragraph break][quotation mark]Vermont? Geez, I weren[apostrophe]t hankering to leave the country.[quotation mark]".
@@ -2332,11 +2332,11 @@ After quizzing benjack-Carol about benjack-elephantSubject when benjack-N3 is ha
 	say "[one of][quotation mark]Poor Mister Snortles was getting on in years, and had some health issues, and Master [bold type]Sweetpaws[roman type] thought it best if we put him down. For his own good, really.[quotation mark][or]Carol says that Master Sweetpaws suggested doing away with Mister Snortles the Elephant when he became too weak to defend himself.[no line break][stopping][paragraph break]";
 	
 After quizzing benjack-Carol about benjack-winkelbottomSubject when benjack-N3 is happening:
-	say "[one of][quotation mark]Haven[apostrophe]t seen her for years,[quotation mark] Carol replies. [quotation mark]I don[apostrophe]t recall whatever became of her.[quotation mark][or]Carol seems to have repressed the memory of [bold type]Winkelbottom[roman type]Misses Winkelbottom[apostrophe]s gory demise and subsequent consumption by her other stuffed dolls.[no line break][stopping][paragraph break]".
+	say "[one of][quotation mark]Haven[apostrophe]t seen her for years,[quotation mark] Carol replies. [quotation mark]I don[apostrophe]t recall whatever became of her.[quotation mark][or]Carol seems to have repressed the memory of Misses [bold type]Winkelbottom[roman type][apostrophe]s gory demise and subsequent consumption by her other stuffed dolls.[no line break][stopping][paragraph break]".
 	
 After quizzing benjack-Carol about benjack-clown when benjack-N3 is happening:
 	say "[quotation mark]Malice hasn[apostrophe]t been quite himself lately; he isn[apostrophe]t eating like he used to -- I think he may be a little down.[quotation mark][paragraph break]".
-	
+	 
 After quizzing benjack-Carol about benjack-monkey when benjack-N3 is happening:
 	say "[one of][quotation mark]Am I my monkey[apostrophe]s keeper?[quotation mark] Carol asks rhetorically. [quotation mark]He keeps himself busy and comes and goes as he pleases. I try not to micromanage him.[quotation mark][or][quotation mark]He[apostrophe]s a busy, little monkey, aren[apostrophe]t you, [bold type]Sweetpaws[roman type]?[quotation mark][or]Carol neither knows nor cares what her bloodthirsty little familiar has been up to. All that matters to her is that he does what needs doing.[no line break][stopping][paragraph break]".
 	
@@ -2483,7 +2483,7 @@ Before opening the benjack-window when benjack-N3 is happening:
 			
 At the time when the benjack-sash falls:
 	if the benjack-window is closed and the benjack-window is cracked:
-		say "The window has slowly slipped back down and is now fully closed.";
+		say "The window has slowly slipped back down and is now fully closed[one of][or]. You[apostrophe]ll have to carefully time you conversation and attempts to open the window if this is going to work[stopping].";
 		now the benjack-window is not cracked.
 		
 Instead of closing the benjack-window when benjack-n3 is happening or benjack-denouement is happening:
@@ -2550,7 +2550,7 @@ Every turn when benjack-denouement is happening:
 			say "[benjack-doom3]".
 			
 To say benjack-doom1:
-	say "Christabell pours in through the window. Not literally as a person, but her powers, which you have greatly underestimated to this point. In your spectral vision, you perceive a crimson stream flooding into the room -- and into you.[paragraph break][if benjack-Carol is not disruption_informed]Carol is caught unaware and backs to a corner, for once stripped of her air of superiority. [quotation mark]Naomi,[quotation mark] she screams, [quotation mark]by the Elders Gods themselves, I swear you have sealed your doom![quotation mark] The crimson energy flings Carol left and right, but she pulls herself up again and leans heavily against the wall.[paragraph break][end if][if benjack-scrap-19 is nowhere]Through force of habit, Carol reaches behind herself to draw energy from her book of Runes, only recalling too late that you destroyed it. Instead, temporizing, with a flick of her hand she signals her minions to attack. Master Sweetpaws backhands the raggedy clown as he bounds off the shelf, his talons outstretched and jaws wide, leaping straight towards you from his perch. You reflexively lift your hand to shield your face and are surprised as raw magic pours forth, constricting to a narrow beam that slices through the ferocious sock puppet, and then continues through his charred fabric to impale Malice the Clown.[paragraph break][end if]You throw a spinning, glowing glob of magic at Carol and it engulfs her; she agonizes within it like a bug in molasses, her screams drowned in its crackling energy as she falls to the floor. As she struggles to her knees, she manages to push one hand clear of the swirling crimson miasma and with that hand she sends her own reverberating wave of cobalt blue magic towards you, more specifically, towards you belly. Something with in you shudders and kicks, an innocent caught in unaware in a cosmic conflict."
+	say "Christabell pours in through the window. Not literally as a person, but her powers, which you have greatly underestimated to this point. In your spectral vision, you perceive a crimson stream flooding into the room -- and into you.[paragraph break][if benjack-Carol is not disruption_informed]Carol is caught unaware and backs to a corner, for once stripped of her air of superiority. [quotation mark]Naomi,[quotation mark] she screams, [quotation mark]by the Elders Gods themselves, I swear you have sealed your doom![quotation mark] The crimson energy flings Carol left and right, but she pulls herself up again and leans heavily against the wall.[paragraph break][end if][if benjack-scrap-19 is nowhere]Through force of habit, Carol reaches behind herself to draw energy from her book of Runes, only recalling too late that you destroyed it. Instead, temporizing, with a flick of her hand she signals her minions to attack. Master Sweetpaws backhands the raggedy clown as he bounds off the shelf, his talons outstretched and jaws wide, leaping straight towards you from his perch. You reflexively lift your hand to shield your face and are surprised as raw magic pours forth, constricting to a narrow beam that slices through the ferocious sock puppet, and then continues through his charred fabric to impale Malice the Clown.[paragraph break][end if]You throw a spinning, glowing glob of magic at Carol and it engulfs her; she agonizes within it like a bug in molasses, her screams drowned in its crackling energy as she falls to the floor. As she struggles to her knees, she manages to push one hand clear of the swirling crimson miasma and with that hand she sends her own reverberating wave of cobalt blue magic towards you, more specifically, towards your belly. Something with in you shudders and kicks, an innocent caught in unaware in a cosmic conflict."
 	
 To say benjack-doom2:
 	say "Thundering energies wind through you in opposing directions, pitting you helplessly against your own unborn child.[paragraph break]The air vibrates, [quotation mark]Carol, I do forbid your Apostasy! You shall not unwrite the Third Covenant; the Servants that overthrew the Elder Gods will not abide their Return. I do command you: abandon forthwith your senseless Attack, for if you do destroy the Woman Naomi, so do you destroy the Vessel of your owne Mark.[quotation mark] The words are punctuated by a renewed tide of crimson force.[paragraph break]Carol only redoubles her efforts, [quotation mark]Not so, Christabell. My Vessel need only survive a heart beat beyond that of its mother for me to break from my circular prison. Then we shall see how the Elder Gods reshape the world.[quotation mark][paragraph break]".
@@ -2578,11 +2578,11 @@ Before entering the benjack-window when the benjack-window is not open:
 	stop the action.
 
 Instead of entering the benjack-window:
-	say "You hurl yourself out the window and both Carol and Christobell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.[paragraph break]";
+	say "You hurl yourself out the window and both Carol and Christabell push the last of their reserves into you. But gravity wins first. You meet the frozen ground so many stories below, bare of snow in just the spot where you land and die.[paragraph break]";
 	wait for any key;
 	say "Somewhat.[paragraph break]";
 	wait for any key;
-	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the loop at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
+	say "More accurately, the only thing that truly died that day in 1969 was the smouldering embers of two entangled spirits, who had been locked in an endless cycle of their own making. With their energies finally exhausted, the circle at last was broken.[paragraph break]You find yourself standing on the hillside just as it appeared when you first encountered it early today, except the railroad tracks are gone.[paragraph break]Instead, a large, flat black stone stands in the middle of the clearing, and on it, a book.";
 	now the benjack-altar is in DAN8;
 	now benjack-TomeONaomi is on the benjack-altar;
 	now benjack-TomeONaomi is seen;
@@ -2816,7 +2816,7 @@ To benjack-bottom1:
 		say "[quotation mark]What's this? Yech. Who puts stuff in a teapot anyhow?[quotation mark] asks Carol, pouring out [list of things enclosed by mtw-teapot with indefinite articles] on the floor before whipping up a batch of piping hot magical tea.[paragraph break]";
 		repeat with item running through things enclosed by mtw-teapot:
 			now item is in the location;
-	say "As the last syllable rolls off your tongue, you sip the last dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
+	say "As the last syllable rolls off your tongue, you sip the dregs of some delicious warm tea from your cup (English Breakfast, some sugar, a bit of milk).[paragraph break]Looking around the table, the cups set before the toy creatures drain themselves although the creatures themselves do not budge.[paragraph break]At the head of the table, Carol up-ends her cup gracefully and relishes the tea.[paragraph break]As she sets her cup down and sighs with pleasure, a curious thing happens: both you and she glow perceptibly, as does the book over on the desk. It happens so briefly, that you almost miss it.[paragraph break][quotation mark]Feel any better?[quotation mark] asks Carol.[paragraph break][quotation mark]Why yes, in fact I do. A brisk cup of tea was just the thing,[quotation mark] you agree.[paragraph break][quotation mark]You can do the honors for the second cup! See this is fun![quotation mark] Carol slides great-uncle[apostrophe]s teapot over towards you.";
 	now Benjack-clipping-body is in benjack-scrap-5;
 	now benjack-teapot is nowhere;
 	now the player carries mtw-teapot.
