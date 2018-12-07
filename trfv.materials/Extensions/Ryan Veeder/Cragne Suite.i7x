@@ -31,7 +31,7 @@ Description of the Dungeon Master’s Guide is “On the cover of the [italic ty
 
 Passage of the Dungeon Master’s Guide is “You paw through the book and read some descriptions of magical diseases.”]
 
-A book is a kind of thing. Understand “book” as a book. A library book is a kind of book. Understand “library book” as a library book.
+A book is a kind of thing. Understand “book” as a book. A library-book is a kind of book. Understand “library book” as a library-book.
 
 A book has some text called passage.
 
@@ -40,6 +40,8 @@ Understand the command “read” as something new.
 Reading is an action applying to one visible thing. Understand “read [a book]” as reading.
 
 Understand "read [something]" as examining.
+
+A book can be meta-read or meta-unread.
 
 Instead of opening a book:
 	try reading the noun.
@@ -53,6 +55,7 @@ Check reading:
 
 Carry out reading a book:
 	say “[passage of the noun][paragraph break]”;
+	now the noun is meta-read;
 	rule succeeds;
 
 
@@ -162,7 +165,10 @@ Finally, the testing command EPISTAT X (not for release) is provided to aid test
 [Version 12 of Conversation Framework by Eric Eve begins here.
 
 "A framework for conversations that allows saying hello and goodbye, abbreviated forms of ask and tell commands for conversing with the current interlocutor, and asking and telling about things as well as topics."]
+Book 0 - Cragne Safety
 
+[Test Code -- to reverse this change all instances of "cragne-safe" below to "known"]
+Definition: a thing is cragne-safe if it is a subject which is not Konstantin Teufelheim Cragne or it is enclosed by the location and it is not in a closed opaque container.
 
 Book  1 - Actions for asking and telling about things
 
@@ -177,16 +183,14 @@ Understand the command "ask" as something new.
 
 Understand "ask [someone] about [text]" as asking it about.
 
-Understand "ask [someone] for [any known thing]" as requesting it for.
+Understand "ask [someone] for [any cragne-safe thing]" as requesting it for.
 Understand "ask [someone] for [text]" as imploring it for.
 
 Quizzing it about is an action applying to two visible things.
-
-Understand "ask [someone] about [any known thing]" as quizzing it about.
+Understand "ask [someone] about [any cragne-safe thing]" as quizzing it about.
 
 Informing it about is an action applying to two visible things.
-
-Understand "tell [someone] about [any known thing]" as informing it about.
+Understand "tell [someone] about [any cragne-safe thing]" as informing it about.
 
 Section 2 - Specifications
 
@@ -194,7 +198,7 @@ The specification of the quizzing it about action is "This action responds to co
 
 The specification of the informing it about action is "This action responds to commands like TELL FRED ABOUT BOAT, where BOAT is a thing defined in the game, rather than a topic."
 
-The specification of the requesting it for action is "This action effectively replaces the library's asking it for action. Like asking it for it matches ASK BOB FOR SOMETHING, but unlike asking it for it makes no assumptions that this is equivalent to BOB, GIVE ME SOMETHING. Instead it can match any object known to the player, and the response can be anything we care to define."
+The specification of the requesting it for action is "This action effectively replaces the library's asking it for action. Like asking it for it matches ASK BOB FOR SOMETHING, but unlike asking it for it makes no assumptions that this is equivalent to BOB, GIVE ME SOMETHING. Instead it can match any object cragne-safe to the player, and the response can be anything we care to define."
 
 The specification of the imploring it for action is "This action provides handling for ASK SOMEONE ABOUT SOMETHING where SOMETHING is a topic rather than a thing, e.g. ASK BILL FOR ADVICE."
 
@@ -228,13 +232,13 @@ implicit-telling is an action applying to one topic.
 Understand "t [text]" as implicit-telling.
 
 implicit-quizzing is an action applying to one visible thing.
-  Understand "ask about [any known thing]" or "a [any known thing]" as implicit-quizzing.
+  Understand "ask about [any cragne-safe thing]" or "a [any cragne-safe thing]" as implicit-quizzing.
 
 implicit-informing is an action applying to one visible thing.
-  Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.
+  Understand "t [any cragne-safe thing]" or "talk about [any cragne-safe thing]" as implicit-informing.
 
 implicit-requesting is an action applying to one visible thing.
-  Understand "ask for [any known thing]" as implicit-requesting.
+  Understand "ask for [any cragne-safe thing]" as implicit-requesting.
 
 implicit-imploring is an action applying to one topic.
   Understand "ask for [text]" as implicit-imploring.
