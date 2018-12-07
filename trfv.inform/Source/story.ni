@@ -145,7 +145,7 @@ The description of the benjack-trail is "[one of]Seething nature guards its dist
 
 The benjack-sky is a backdrop. benjack-sky is in DAN8.  benjack-sky is in m2f3. The printed name of benjack-sky is "sky". 
 Understand "cloud/clouds/sky" as the benjack-sky when the location is in the benjack-realm.
-The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky.". 
+The description of the benjack-sky is "Leaden clouds gather from all corners, rumbling purposefully towards the area where the curved cliff face meets the sky."
 
 The benjack-cliffs are a backdrop.  benjack-cliffs is in DAN8. benjack-cliffs is in M2F3. The printed name of benjack-cliffs is "cliffs". 
 Understand "cliff/granite/hill/hillside/mica/cliffs/hills/hillsides" as the benjack-cliffs when the location is in the benjack-realm.
@@ -2983,6 +2983,8 @@ The jade frog is a person in MGR1.
 Part 3 - Items that will come from other authors
 
 The mtw-teapot is an open opaque container in MGR1. The description of the mtw-teapot is "A white, ceramic teapot." The printed name of the mtw-teapot is "teapot". Understand "teapot" or "ceramic" or "kettle" as mtw-teapot.
+
+Konstantin Teufelheim Cragne is a subject.
 
 Part 4 - Commentary
 
