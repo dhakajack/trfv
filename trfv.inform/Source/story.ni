@@ -2,7 +2,7 @@
 
 The story headline is "Two rooms for Veeder".
 The story genre is "horror".
-The release number is 4. [submitted 20181128]
+The release number is 5. [submitted 20181207] 
 The story creation year is 2018.
 
 Use MAX_NUM_STATIC_STRINGS of 30000.
